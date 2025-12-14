@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135 40" width="135" height="40">
+  <rect width="135" height="40" rx="6" fill="#000"/>
+  <rect x="0.5" y="0.5" width="134" height="39" rx="5.5" fill="none" stroke="#A6A6A6" stroke-width="1"/>
+  <!-- Google Play Triangle -->
+  <g transform="translate(10, 7)">
+    <defs>
+      <linearGradient id="playGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#00D7FE"/>
+        <stop offset="100%" style="stop-color:#00F076"/>
+      </linearGradient>
+      <linearGradient id="playGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#FFE000"/>
+        <stop offset="100%" style="stop-color:#FFA500"/>
+      </linearGradient>
+      <linearGradient id="playGrad3" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#FF3A44"/>
+        <stop offset="100%" style="stop-color:#C31162"/>
+      </linearGradient>
+    </defs>
+    <!-- Play icon components -->
+    <path fill="url(#playGrad1)" d="M1 2.5L1 23.5L13 13L1 2.5Z"/>
+    <path fill="url(#playGrad2)" d="M1 23.5L13 13L18 17L5 25L1 23.5Z"/>
+    <path fill="url(#playGrad3)" d="M1 2.5L5 1L18 9L13 13L1 2.5Z"/>
+    <path fill="#00D7FE" d="M13 13L18 9L22 13L18 17L13 13Z"/>
+  </g>
+  <!-- Text -->
+  <text x="40" y="13" fill="#fff" font-family="system-ui, sans-serif" font-size="7" font-weight="400" text-transform="uppercase" letter-spacing="0.5">GET IT ON</text>
+  <text x="40" y="28" fill="#fff" font-family="system-ui, sans-serif" font-size="15" font-weight="500">Google Play</text>
+</svg>
+

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scandora - Transform your documents into intelligence. AI-powered document scanning and management for modern businesses.">
+    <meta name="keywords" content="document scanning, AI, OCR, document management, automation, Trello, Google Drive">
+    <meta property="og:title" content="Scandora - Intelligent Document Scanning">
+    <meta property="og:description" content="Transform your documents into intelligence with AI-powered scanning and seamless cloud integration.">
+    <meta property="og:type" content="website">
+    <title>Scandora - Intelligent Document Scanning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo"><span class="logo-icon">◈</span><span class="logo-text">Scandora</span></a>
+            <div class="nav-links">
+                <a href="#features" data-i18n="nav.features">Features</a>
+                <a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a>
+                <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+            </div>
+            <div class="nav-actions">
+                <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language"><span id="lang-indicator">EN</span></button>
+                <a href="#download" class="btn btn-primary btn-sm" data-i18n="nav.download">Download</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge" data-i18n="hero.badge">AI-Powered Document Intelligence</div>
+                <h1 class="hero-title">
+                    <span data-i18n="hero.titleLine1">Transform Your Documents</span>
+                    <span class="gradient-text" data-i18n="hero.titleLine2">Into Intelligence</span>
+                </h1>
+                <p class="hero-description" data-i18n="hero.description">Scandora combines powerful scanning technology with AI to automatically extract, organize, and sync your documents to your favorite cloud services. No more manual data entry.</p>
+                <div class="hero-actions">
+                    <a href="#download" class="btn btn-primary btn-lg"><span data-i18n="hero.getStarted">Get Started Free</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    <a href="#how-it-works" class="btn btn-secondary btn-lg" data-i18n="hero.seeHow">See How It Works</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><span class="stat-value">10K+</span><span class="stat-label" data-i18n="hero.stat1">Documents Processed</span></div>
+                    <div class="stat-divider"></div>
+                    <div class="stat"><span class="stat-value">99%</span><span class="stat-label" data-i18n="hero.stat2">Accuracy Rate</span></div>
+                    <div class="stat-divider"></div>
+                    <div class="stat"><span class="stat-value">5min</span><span class="stat-label" data-i18n="hero.stat3">Average Setup Time</span></div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="app-preview">
+                    <div class="app-preview-header"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                    <div class="app-preview-content">
+                        <div class="scan-animation">
+                            <div class="document"><div class="doc-line"></div><div class="doc-line short"></div><div class="doc-line"></div><div class="doc-line medium"></div></div>
+                            <div class="scan-beam"></div>
+                        </div>
+                        <div class="ai-result">
+                            <div class="ai-badge">✨ AI Extracted</div>
+                            <div class="extracted-data">
+                                <div class="data-row"><span>Invoice #</span><span>INV-2024-1234</span></div>
+                                <div class="data-row"><span>Amount</span><span>€1,250.00</span></div>
+                                <div class="data-row"><span>Due Date</span><span>Dec 15, 2024</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-i18n="features.badge">Powerful Features</span>
+                <h2 class="section-title" data-i18n="features.title">Everything You Need to Master Your Documents</h2>
+                <p class="section-description" data-i18n="features.description">From scanning to intelligent processing, Scandora handles your entire document workflow.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+                    <h3 data-i18n="features.scan.title">Smart Scanning</h3>
+                    <p data-i18n="features.scan.desc">Scan documents with your phone camera or connect professional scanners. Automatic edge detection and image enhancement.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                    <h3 data-i18n="features.ai.title">AI-Powered Processing</h3>
+                    <p data-i18n="features.ai.desc">Our AI automatically extracts key information like dates, amounts, and names. No manual data entry required.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
+                    <h3 data-i18n="features.cloud.title">Cloud Integration</h3>
+                    <p data-i18n="features.cloud.desc">Connect your own cloud services like Trello and Google Drive. Your data stays in your control.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
+                    <h3 data-i18n="features.search.title">Intelligent Search</h3>
+                    <p data-i18n="features.search.desc">Find any document instantly with full-text and AI-powered natural language search across all your scans.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                    <h3 data-i18n="features.profiles.title">Multiple Profiles</h3>
+                    <p data-i18n="features.profiles.desc">Separate personal and business documents with distinct profiles. Each with its own settings and cloud connections.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+                    <h3 data-i18n="features.privacy.title">Privacy First</h3>
+                    <p data-i18n="features.privacy.desc">Your documents are yours. We don't store your data – everything syncs directly to your chosen cloud services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-i18n="howItWorks.badge">Simple Workflow</span>
+                <h2 class="section-title" data-i18n="howItWorks.title">From Paper to Digital in Seconds</h2>
+                <p class="section-description" data-i18n="howItWorks.description">Three simple steps to transform your document management.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 data-i18n="howItWorks.step1.title">Scan Your Document</h3>
+                        <p data-i18n="howItWorks.step1.desc">Use your phone camera or connect a scanner. Our smart technology automatically detects edges and enhances quality.</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 data-i18n="howItWorks.step2.title">AI Processes & Extracts</h3>
+                        <p data-i18n="howItWorks.step2.desc">Our AI instantly recognizes document types, extracts key data, and creates actionable tasks from your documents.</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 data-i18n="howItWorks.step3.title">Sync to Your Cloud</h3>
+                        <p data-i18n="howItWorks.step3.desc">Documents automatically sync to Trello, Google Drive, or your chosen cloud service. Organized and accessible anywhere.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-i18n="pricing.badge">Flexible Pricing</span>
+                <h2 class="section-title" data-i18n="pricing.title">Choose Your Perfect Plan</h2>
+                <p class="section-description" data-i18n="pricing.description">Start free, upgrade as you grow. Bring your own AI and cloud services for ultimate flexibility.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header"><h3 data-i18n="pricing.free.name">Free</h3><p class="pricing-tagline" data-i18n="pricing.free.tagline">Get started</p></div>
+                    <div class="pricing-price"><span class="currency">€</span><span class="amount">0</span><span class="period" data-i18n="pricing.perMonth">/month</span></div>
+                    <ul class="pricing-features">
+                        <li data-i18n="pricing.free.f1">30 scans per month</li>
+                        <li data-i18n="pricing.free.f2">Basic document management</li>
+                        <li data-i18n="pricing.free.f3">Local storage only</li>
+                        <li data-i18n="pricing.free.f4">Watermarked exports</li>
+                    </ul>
+                    <a href="#download" class="btn btn-secondary btn-full" data-i18n="pricing.free.cta">Get Started</a>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="popular-badge" data-i18n="pricing.popular">Most Popular</div>
+                    <div class="pricing-header"><h3 data-i18n="pricing.pro.name">Pro</h3><p class="pricing-tagline" data-i18n="pricing.pro.tagline">For professionals</p></div>
+                    <div class="pricing-price"><span class="currency">€</span><span class="amount">9.99</span><span class="period" data-i18n="pricing.perMonth">/month</span></div>
+                    <ul class="pricing-features">
+                        <li data-i18n="pricing.pro.f1">1,000 scans per month</li>
+                        <li data-i18n="pricing.pro.f2">1,000 AI analyses</li>
+                        <li data-i18n="pricing.pro.f3">AI-powered search</li>
+                        <li data-i18n="pricing.pro.f4">Cloud integrations</li>
+                        <li data-i18n="pricing.pro.f5">Priority support</li>
+                    </ul>
+                    <a href="#download" class="btn btn-primary btn-full" data-i18n="pricing.pro.cta">Start Pro Trial</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header"><h3 data-i18n="pricing.business.name">Business</h3><p class="pricing-tagline" data-i18n="pricing.business.tagline">For teams</p></div>
+                    <div class="pricing-price"><span class="currency">€</span><span class="amount">24.99</span><span class="period" data-i18n="pricing.perMonth">/month</span></div>
+                    <ul class="pricing-features">
+                        <li data-i18n="pricing.business.f1">5,000 scans per month</li>
+                        <li data-i18n="pricing.business.f2">5,000 AI analyses</li>
+                        <li data-i18n="pricing.business.f3">Team collaboration</li>
+                        <li data-i18n="pricing.business.f4">Unlimited profiles</li>
+                        <li data-i18n="pricing.business.f5">Dedicated support</li>
+                    </ul>
+                    <a href="#download" class="btn btn-secondary btn-full" data-i18n="pricing.business.cta">Contact Sales</a>
+                </div>
+            </div>
+            <p class="pricing-note" data-i18n="pricing.byo">💡 Bring your own AI (OpenAI, Google Gemini) and save on processing costs!</p>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <h2 class="download-title" data-i18n="download.title">Ready to Transform Your Document Workflow?</h2>
+                <p class="download-description" data-i18n="download.description">Download Scandora now and start scanning smarter. Available on iOS, macOS, and Android.</p>
+                <div class="download-buttons">
+                    <a href="#" class="store-badge" aria-label="Download on App Store"><img src="assets/badge-appstore.svg" alt="Download on App Store"></a>
+                    <a href="#" class="store-badge" aria-label="Download on Mac App Store"><img src="assets/badge-mac-appstore.svg" alt="Download on Mac App Store"></a>
+                    <a href="#" class="store-badge" aria-label="Get it on Google Play"><img src="assets/badge-google-play.svg" alt="Get it on Google Play"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo"><span class="logo-icon">◈</span><span class="logo-text">Scandora</span></a>
+                    <p data-i18n="footer.tagline">Intelligent document scanning for modern businesses.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.product">Product</h4>
+                        <a href="#features" data-i18n="nav.features">Features</a>
+                        <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+                        <a href="#download" data-i18n="nav.download">Download</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.legal">Legal</h4>
+                        <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="#" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="#" data-i18n="footer.imprint">Imprint</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.support">Support</h4>
+                        <a href="mailto:support@scandora.app" data-i18n="footer.contact">Contact Us</a>
+                        <a href="#" data-i18n="footer.faq">FAQ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Scandora. <span data-i18n="footer.rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+

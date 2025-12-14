@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156 40" width="156" height="40">
+  <rect width="156" height="40" rx="6" fill="#000"/>
+  <rect x="0.5" y="0.5" width="155" height="39" rx="5.5" fill="none" stroke="#A6A6A6" stroke-width="1"/>
+  <!-- Apple Logo -->
+  <g transform="translate(10, 8)">
+    <path fill="#fff" d="M15.769 13.298c-.035-3.039 2.477-4.501 2.591-4.573-1.412-2.066-3.608-2.349-4.387-2.382-1.863-.19-3.645 1.1-4.593 1.1-.949 0-2.412-1.074-3.966-1.045-2.04.03-3.923 1.189-4.973 3.017-2.123 3.684-.543 9.139 1.524 12.128 1.01 1.464 2.215 3.108 3.798 3.049 1.524-.062 2.1-.987 3.944-.987 1.844 0 2.36.987 3.972.955 1.64-.029 2.684-1.493 3.687-2.963 1.162-1.7 1.64-3.345 1.669-3.431-.036-.016-3.203-1.23-3.236-4.878l-.03.01z"/>
+    <path fill="#fff" d="M12.739 4.408c.839-1.019 1.406-2.433 1.251-3.843-1.209.05-2.674.806-3.541 1.823-.778.9-1.459 2.339-1.276 3.719 1.349.105 2.727-.687 3.566-1.699z"/>
+  </g>
+  <!-- Text -->
+  <text x="38" y="14" fill="#fff" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="400">Download on the</text>
+  <text x="38" y="28" fill="#fff" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600">Mac App Store</text>
+</svg>
+
