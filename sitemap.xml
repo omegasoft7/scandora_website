@@ -81,5 +81,15 @@
     <priority>0.5</priority>
   </url>
 
+  <!-- Contact -->
+  <url>
+    <loc>https://scandora.eu/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/contact?lang=de"/>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
 

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Contact Us - Scandora | Get in Touch</title>
+    <meta name="description" content="Contact Scandora - We'd love to hear from you. Reach out for support, sales inquiries, or partnership opportunities.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://scandora.eu/contact">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scandora.eu/contact">
+    <meta property="og:title" content="Contact Us - Scandora">
+    <meta property="og:description" content="Get in touch with Scandora. We're here to help with support, sales, and partnerships.">
+    <meta property="og:site_name" content="Scandora">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Analytics 4 with Consent Mode v2 -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('consent', 'default', {
+            'analytics_storage': 'denied',
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'wait_for_update': 500
+        });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7EY08N1VS0"></script>
+    <script>
+        gtag('js', new Date());
+        gtag('config', 'G-7EY08N1VS0', { 'anonymize_ip': true });
+    </script>
+
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container nav-container">
+                <a href="/" class="logo" aria-label="Scandora Home"><span class="logo-icon" aria-hidden="true">◈</span><span class="logo-text">Scandora</span></a>
+                <div class="nav-links" role="menubar">
+                    <a href="/#features" role="menuitem" data-i18n="nav.features">Features</a>
+                    <a href="/#how-it-works" role="menuitem" data-i18n="nav.howItWorks">How It Works</a>
+                    <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
+                    <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <!-- Contact Hero Section -->
+        <section class="contact-hero" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="contact-hero-content">
+                    <span class="section-badge" data-i18n="contact.badge">Get in Touch</span>
+                    <h1 id="contact-title" class="contact-title" data-i18n="contact.title">We'd Love to Hear From You</h1>
+                    <p class="contact-subtitle" data-i18n="contact.subtitle">Have a question, feedback, or need support? Our team is here to help you get the most out of Scandora.</p>
+                </div>
+            </div>
+            <div class="contact-hero-bg"></div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card">
+                        <h2 data-i18n="contact.formTitle">Send Us a Message</h2>
+                        <p class="form-description" data-i18n="contact.formDesc">Fill out the form below and we'll get back to you within 24 hours.</p>
+                        
+                        <form id="contact-form" action="https://formspree.io/f/mdkqvgdp" method="POST" class="contact-form">
+                            <input type="hidden" name="_subject" value="New Contact from Scandora Website">
+                            <input type="text" name="_gotcha" style="display:none">
+                            
+                            <div class="form-group">
+                                <label for="name" data-i18n="contact.name">Full Name</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe" autocomplete="name">
+                                <span class="input-focus"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" data-i18n="contact.email">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com" autocomplete="email">
+                                <span class="input-focus"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" data-i18n="contact.subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected data-i18n="contact.selectSubject">Select a subject</option>
+                                    <option value="General Inquiry" data-i18n="contact.subjectGeneral">General Inquiry</option>
+                                    <option value="Technical Support" data-i18n="contact.subjectSupport">Technical Support</option>
+                                    <option value="Sales & Pricing" data-i18n="contact.subjectSales">Sales & Pricing</option>
+                                    <option value="Partnership" data-i18n="contact.subjectPartnership">Partnership</option>
+                                    <option value="Feedback" data-i18n="contact.subjectFeedback">Feedback</option>
+                                </select>
+                                <span class="select-arrow">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                                </span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" data-i18n="contact.message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+                                <span class="input-focus"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span class="btn-text" data-i18n="contact.send">Send Message</span>
+                                <span class="btn-loading">
+                                    <svg class="spinner" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info Card -->
+                    <div class="contact-info-card">
+                        <div class="info-section">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div class="info-content">
+                                <h3 data-i18n="contact.responseTime">Response Time</h3>
+                                <p data-i18n="contact.responseValue">Within 24 hours</p>
+                                <p class="info-note" data-i18n="contact.responseNote">Mon - Fri, 9AM - 6PM CET</p>
+                            </div>
+                        </div>
+
+                        <div class="quick-links">
+                            <h3 data-i18n="contact.quickLinks">Quick Links</h3>
+                            <a href="/" class="quick-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                                <span data-i18n="contact.home">Homepage</span>
+                            </a>
+                            <a href="/#pricing" class="quick-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                                <span data-i18n="contact.viewPricing">View Pricing Plans</span>
+                            </a>
+                            <a href="/#download" class="quick-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                                <span data-i18n="contact.downloadApp">Download the App</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Message (hidden by default) -->
+        <div id="success-message" class="success-overlay" aria-hidden="true">
+            <div class="success-card">
+                <div class="success-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </div>
+                <h3 data-i18n="contact.successTitle">Message Sent!</h3>
+                <p data-i18n="contact.successMessage">Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                <button class="btn btn-primary" onclick="closeSuccessMessage()" data-i18n="contact.successButton">Got it</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="logo"><span class="logo-icon">◈</span><span class="logo-text">Scandora</span></a>
+                    <p data-i18n="footer.tagline">Intelligent document scanning for modern businesses.</p>
+                </div>
+                <nav class="footer-links" role="navigation" aria-label="Footer navigation">
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.product">Product</h4>
+                        <a href="/#features" data-i18n="nav.features">Features</a>
+                        <a href="/#pricing" data-i18n="nav.pricing">Pricing</a>
+                        <a href="/#download" data-i18n="nav.download">Download</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.legal">Legal</h4>
+                        <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.support">Support</h4>
+                        <a href="/contact.html" aria-current="page" data-i18n="footer.contact">Contact Us</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p><small>© 2024 Scandora. <span data-i18n="footer.rights">All rights reserved.</span></small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js" defer></script>
+    <script src="main.js" defer></script>
+</body>
+</html>
+

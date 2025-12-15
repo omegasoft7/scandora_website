@@ -15,6 +15,7 @@
         initStatsCounter();
         initCookieConsent();
         initAnalyticsEvents();
+        initContactForm();
         consoleBranding();
     });
 
@@ -441,6 +442,95 @@
 
     // Expose trackEvent globally for language toggle tracking
     window.trackEvent = trackEvent;
+
+    // ============================================
+    // CONTACT FORM HANDLING
+    // ============================================
+
+    function initContactForm() {
+        const contactForm = document.getElementById('contact-form');
+        if (!contactForm) return;
+
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const submitBtn = contactForm.querySelector('.btn-submit');
+            const formData = new FormData(contactForm);
+
+            // Show loading state
+            submitBtn.classList.add('loading');
+            submitBtn.disabled = true;
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Track successful submission
+                    trackEvent('contact_form_submit', {
+                        subject: formData.get('subject')
+                    });
+
+                    // Show success message
+                    showSuccessMessage();
+
+                    // Reset form
+                    contactForm.reset();
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                console.error('Contact form error:', error);
+                // Show error (could be enhanced with better UX)
+                alert('Sorry, there was an error sending your message. Please try again or email us directly at farhad@scandora.eu');
+                trackEvent('contact_form_error', {
+                    error: error.message
+                });
+            } finally {
+                // Reset button state
+                submitBtn.classList.remove('loading');
+                submitBtn.disabled = false;
+            }
+        });
+
+        // Real-time email validation
+        const emailInput = contactForm.querySelector('#email');
+        if (emailInput) {
+            emailInput.addEventListener('blur', function() {
+                const isValid = this.checkValidity();
+                this.parentElement.classList.toggle('error', !isValid && this.value);
+            });
+        }
+    }
+
+    /**
+     * Show success overlay after form submission
+     */
+    function showSuccessMessage() {
+        const overlay = document.getElementById('success-message');
+        if (overlay) {
+            overlay.classList.add('show');
+            overlay.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    /**
+     * Close success message overlay (exposed globally)
+     */
+    window.closeSuccessMessage = function() {
+        const overlay = document.getElementById('success-message');
+        if (overlay) {
+            overlay.classList.remove('show');
+            overlay.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+    };
 
     // ============================================
     // CONSOLE BRANDING

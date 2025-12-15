@@ -94,8 +94,35 @@ const translations = {
         'footer.terms': 'Terms of Service',
         'footer.imprint': 'Imprint',
         'footer.contact': 'Contact Us',
-        'footer.faq': 'FAQ',
-        'footer.rights': 'All rights reserved.'
+        'footer.rights': 'All rights reserved.',
+
+        // Contact Page
+        'contact.badge': 'Get in Touch',
+        'contact.title': "We'd Love to Hear From You",
+        'contact.subtitle': 'Have a question, feedback, or need support? Our team is here to help you get the most out of Scandora.',
+        'contact.formTitle': 'Send Us a Message',
+        'contact.formDesc': "Fill out the form below and we'll get back to you within 24 hours.",
+        'contact.name': 'Full Name',
+        'contact.email': 'Email Address',
+        'contact.subject': 'Subject',
+        'contact.selectSubject': 'Select a subject',
+        'contact.subjectGeneral': 'General Inquiry',
+        'contact.subjectSupport': 'Technical Support',
+        'contact.subjectSales': 'Sales & Pricing',
+        'contact.subjectPartnership': 'Partnership',
+        'contact.subjectFeedback': 'Feedback',
+        'contact.message': 'Your Message',
+        'contact.send': 'Send Message',
+        'contact.responseTime': 'Response Time',
+        'contact.responseValue': 'Within 24 hours',
+        'contact.responseNote': 'Mon - Fri, 9AM - 6PM CET',
+        'contact.quickLinks': 'Quick Links',
+        'contact.home': 'Homepage',
+        'contact.viewPricing': 'View Pricing Plans',
+        'contact.downloadApp': 'Download the App',
+        'contact.successTitle': 'Message Sent!',
+        'contact.successMessage': "Thank you for reaching out. We'll get back to you within 24 hours.",
+        'contact.successButton': 'Got it'
     },
     de: {
         // Navigation
@@ -187,8 +214,35 @@ const translations = {
         'footer.terms': 'Nutzungsbedingungen',
         'footer.imprint': 'Impressum',
         'footer.contact': 'Kontakt',
-        'footer.faq': 'FAQ',
-        'footer.rights': 'Alle Rechte vorbehalten.'
+        'footer.rights': 'Alle Rechte vorbehalten.',
+
+        // Contact Page
+        'contact.badge': 'Kontakt',
+        'contact.title': 'Wir freuen uns auf Ihre Nachricht',
+        'contact.subtitle': 'Haben Sie eine Frage, Feedback oder benötigen Sie Unterstützung? Unser Team hilft Ihnen gerne weiter.',
+        'contact.formTitle': 'Senden Sie uns eine Nachricht',
+        'contact.formDesc': 'Füllen Sie das Formular aus und wir melden uns innerhalb von 24 Stunden bei Ihnen.',
+        'contact.name': 'Vollständiger Name',
+        'contact.email': 'E-Mail-Adresse',
+        'contact.subject': 'Betreff',
+        'contact.selectSubject': 'Betreff auswählen',
+        'contact.subjectGeneral': 'Allgemeine Anfrage',
+        'contact.subjectSupport': 'Technischer Support',
+        'contact.subjectSales': 'Vertrieb & Preise',
+        'contact.subjectPartnership': 'Partnerschaft',
+        'contact.subjectFeedback': 'Feedback',
+        'contact.message': 'Ihre Nachricht',
+        'contact.send': 'Nachricht senden',
+        'contact.responseTime': 'Antwortzeit',
+        'contact.responseValue': 'Innerhalb von 24 Stunden',
+        'contact.responseNote': 'Mo - Fr, 9 - 18 Uhr MEZ',
+        'contact.quickLinks': 'Schnellzugriff',
+        'contact.home': 'Startseite',
+        'contact.viewPricing': 'Preise ansehen',
+        'contact.downloadApp': 'App herunterladen',
+        'contact.successTitle': 'Nachricht gesendet!',
+        'contact.successMessage': 'Vielen Dank für Ihre Nachricht. Wir melden uns innerhalb von 24 Stunden bei Ihnen.',
+        'contact.successButton': 'Verstanden'
     }
 };
 
