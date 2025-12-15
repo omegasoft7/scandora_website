@@ -1501,6 +1501,21 @@ img {
 
 .success-card .btn {
     min-width: 160px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: none;
+}
+
+.success-card .btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
 }
 
 /* Contact Page Responsive */
