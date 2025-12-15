@@ -1499,23 +1499,24 @@ img {
     line-height: 1.6;
 }
 
-.success-card .btn {
+.success-card .btn.btn-primary {
     min-width: 160px;
-    background: var(--primary);
-    color: white;
-    border: none;
-    padding: 14px 32px;
-    border-radius: var(--radius-md);
+    background: var(--primary) !important;
+    color: white !important;
+    border: none !important;
+    padding: 14px 32px !important;
+    border-radius: var(--radius-md) !important;
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
     transition: all 0.2s ease;
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
-.success-card .btn:hover {
-    background: var(--primary-dark);
+.success-card .btn.btn-primary:hover {
+    background: var(--primary-dark) !important;
     transform: translateY(-1px);
+    box-shadow: none !important;
 }
 
 /* Contact Page Responsive */
