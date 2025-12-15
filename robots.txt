@@ -1,0 +1,35 @@
+# Scandora Website - robots.txt
+# https://scandora.app/robots.txt
+
+# Allow all search engine crawlers
+User-agent: *
+Allow: /
+
+# Disallow common non-content paths (if any exist in future)
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /deploy.sh
+
+# Specific crawler directives
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /assets/
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Crawl delay (optional, helps with server load)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://scandora.app/sitemap.xml
+
+# Host directive (helps with canonical URL)
+Host: https://scandora.app
+
