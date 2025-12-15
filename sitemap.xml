@@ -50,6 +50,36 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-  
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://scandora.eu/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/privacy?lang=de"/>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Terms of Service -->
+  <url>
+    <loc>https://scandora.eu/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/terms?lang=de"/>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Imprint -->
+  <url>
+    <loc>https://scandora.eu/imprint</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/imprint"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/imprint?lang=de"/>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
 </urlset>
 
