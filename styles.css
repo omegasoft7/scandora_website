@@ -1504,7 +1504,9 @@ img {
     background: #2563EB !important;
     background-image: none !important;
     color: white !important;
-    border: none !important;
+    border: 0 !important;
+    border-style: none !important;
+    outline: none !important;
     padding: 14px 32px !important;
     border-radius: 12px !important;
     font-weight: 600;
@@ -1515,14 +1517,21 @@ img {
     transform: none !important;
     filter: none !important;
     -webkit-filter: none !important;
-    overflow: visible;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    text-shadow: none !important;
 }
 
-.success-card .btn.btn-primary:hover {
+.success-card .btn.btn-primary:hover,
+.success-card .btn.btn-primary:focus,
+.success-card .btn.btn-primary:active {
     background: #1D4ED8 !important;
     background-image: none !important;
     transform: none !important;
     box-shadow: none !important;
+    outline: none !important;
+    border: 0 !important;
 }
 
 /* Contact Page Responsive */
