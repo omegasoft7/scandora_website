@@ -5,15 +5,15 @@
   
   <!-- Homepage (English - default) -->
   <url>
-    <loc>https://scandora.app/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.app/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.app/?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.app/"/>
+    <loc>https://scandora.eu/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/"/>
     <lastmod>2024-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://scandora.app/assets/og-image.png</image:loc>
+      <image:loc>https://scandora.eu/assets/og-image.png</image:loc>
       <image:title>Scandora - AI-Powered Document Scanning App</image:title>
       <image:caption>Transform your documents into intelligence with AI-powered OCR scanning</image:caption>
     </image:image>
@@ -21,7 +21,7 @@
   
   <!-- Features Section -->
   <url>
-    <loc>https://scandora.app/#features</loc>
+    <loc>https://scandora.eu/#features</loc>
     <lastmod>2024-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -29,7 +29,7 @@
   
   <!-- How It Works Section -->
   <url>
-    <loc>https://scandora.app/#how-it-works</loc>
+    <loc>https://scandora.eu/#how-it-works</loc>
     <lastmod>2024-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -37,7 +37,7 @@
   
   <!-- Pricing Section -->
   <url>
-    <loc>https://scandora.app/#pricing</loc>
+    <loc>https://scandora.eu/#pricing</loc>
     <lastmod>2024-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -45,7 +45,7 @@
   
   <!-- Download Section -->
   <url>
-    <loc>https://scandora.app/#download</loc>
+    <loc>https://scandora.eu/#download</loc>
     <lastmod>2024-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>

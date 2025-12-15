@@ -1,5 +1,5 @@
 # Scandora Website - robots.txt
-# https://scandora.app/robots.txt
+# https://scandora.eu/robots.txt
 
 # Allow all search engine crawlers
 User-agent: *
@@ -28,8 +28,8 @@ Allow: /
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://scandora.app/sitemap.xml
+Sitemap: https://scandora.eu/sitemap.xml
 
 # Host directive (helps with canonical URL)
-Host: https://scandora.app
+Host: https://scandora.eu
 
