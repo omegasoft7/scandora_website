@@ -82,6 +82,11 @@
       "platform": "itunes",
       "url": "https://apps.apple.com/app/scandora/id6756135936",
       "id": "6756135936"
+    },
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=de.scandora.app",
+      "id": "de.scandora.app"
     }
   ],
   "prefer_related_applications": true
