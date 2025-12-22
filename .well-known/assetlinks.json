@@ -1,0 +1,16 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "de.scandora.app",
+      "sha256_cert_fingerprints": [
+        "6D:0D:2C:AD:74:8D:18:85:F8:52:22:11:2F:85:A7:33:72:DD:C8:BE:9C:DC:92:60:A5:C0:12:62:15:20:87:83"
+      ]
+    }
+  }
+]
+

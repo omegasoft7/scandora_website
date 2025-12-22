@@ -79,7 +79,7 @@
                 <header class="legal-header">
                     <span class="legal-badge">Privacy</span>
                     <h1 id="privacy-title" class="legal-title">Privacy Policy</h1>
-                    <p class="legal-meta">Last updated: <time datetime="2024-12-15">December 15, 2024</time></p>
+                    <p class="legal-meta">Last updated: <time datetime="2024-12-18">December 18, 2024</time></p>
                 </header>
 
                 <article class="legal-content">
@@ -93,6 +93,8 @@
                             <li><a href="#overview">Overview</a></li>
                             <li><a href="#data-collection">Data We Collect</a></li>
                             <li><a href="#data-use">How We Use Your Data</a></li>
+                            <li><a href="#legal-basis">Legal Basis for Processing</a></li>
+                            <li><a href="#consent-management">Consent Management</a></li>
                             <li><a href="#data-storage">Data Storage & Security</a></li>
                             <li><a href="#third-parties">Third-Party Services</a></li>
                             <li><a href="#your-rights">Your Rights</a></li>
@@ -144,7 +146,89 @@
                         <li>Comply with legal obligations</li>
                     </ul>
 
-                    <h2 id="data-storage">4. Data Storage & Security</h2>
+                    <h2 id="legal-basis">4. Legal Basis for Processing</h2>
+                    <p>Under GDPR, we process your data based on the following legal grounds:</p>
+
+                    <h3>Contract Performance (Art. 6(1)(b) GDPR)</h3>
+                    <p>Processing necessary to provide the Scandora service:</p>
+                    <ul>
+                        <li>Account creation and authentication</li>
+                        <li>Document scanning and processing</li>
+                        <li>Cloud integration synchronization</li>
+                        <li>Subscription management</li>
+                    </ul>
+
+                    <h3>Legitimate Interest (Art. 6(1)(f) GDPR)</h3>
+                    <p>Processing necessary for our legitimate interests, balanced against your rights:</p>
+                    <ul>
+                        <li><strong>Crash Reporting (Firebase Crashlytics):</strong> We collect crash reports and error logs to maintain app stability and fix bugs. This directly benefits you through a more reliable app experience. Data collected includes device type, OS version, app version, and crash stack traces. No document content is included.</li>
+                        <li><strong>Security Monitoring:</strong> Detecting and preventing fraudulent or malicious activity</li>
+                    </ul>
+
+                    <h3>Consent (Art. 6(1)(a) GDPR)</h3>
+                    <p>Processing based on your explicit consent, which you can withdraw at any time:</p>
+                    <ul>
+                        <li><strong>Analytics (Firebase Analytics):</strong> Understanding how users interact with the app to improve features and user experience</li>
+                        <li><strong>Performance Monitoring:</strong> Measuring app performance metrics like load times and responsiveness</li>
+                    </ul>
+
+                    <h2 id="consent-management">5. Consent Management</h2>
+                    <p>Scandora provides you with full control over optional data collection through our in-app consent management system.</p>
+
+                    <h3>How Consent Works</h3>
+                    <ul>
+                        <li><strong>First Launch:</strong> When you first use Scandora, you'll see a consent banner asking for your preferences</li>
+                        <li><strong>Granular Control:</strong> You can accept all, reject all, or customize which types of data collection you allow</li>
+                        <li><strong>Change Anytime:</strong> Access Settings → Privacy to modify your consent choices at any time</li>
+                        <li><strong>Consent Expiration:</strong> We ask for renewed consent after 12 months to ensure your preferences are current</li>
+                    </ul>
+
+                    <h3>What Requires Consent</h3>
+                    <table class="cookie-table">
+                        <thead>
+                            <tr>
+                                <th>Data Type</th>
+                                <th>Purpose</th>
+                                <th>Requires Consent</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Analytics</td>
+                                <td>Usage patterns, feature adoption, user journeys</td>
+                                <td>Yes (Opt-in)</td>
+                            </tr>
+                            <tr>
+                                <td>Performance</td>
+                                <td>App speed, load times, responsiveness</td>
+                                <td>Yes (Opt-in)</td>
+                            </tr>
+                            <tr>
+                                <td>Crash Reports</td>
+                                <td>Bug fixes, stability improvements</td>
+                                <td>No (Legitimate Interest)</td>
+                            </tr>
+                            <tr>
+                                <td>Account Data</td>
+                                <td>Service provision</td>
+                                <td>No (Contract)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Google Consent Mode v2</h3>
+                    <p>We implement Google Consent Mode v2 to ensure your consent preferences are respected by Firebase services. When you deny consent:</p>
+                    <ul>
+                        <li>Analytics data collection is disabled</li>
+                        <li>No advertising identifiers are collected</li>
+                        <li>Performance monitoring is paused</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <p><strong>No Advertising:</strong> Scandora does not use advertising identifiers (IDFA/GAID), does not show ads, and does not share your data with advertisers. We do not track you across other apps or websites.</p>
+                    </div>
+
+                    <h2 id="data-storage">6. Data Storage & Security</h2>
                     <p>Your account data is stored securely using Firebase (Google Cloud Platform) with:</p>
                     <ul>
                         <li>End-to-end encryption for data in transit</li>
@@ -154,7 +238,7 @@
                     </ul>
                     <p>Your documents are NEVER stored on our infrastructure. They remain in your control via your connected cloud services.</p>
 
-                    <h2 id="third-parties">5. Third-Party Services</h2>
+                    <h2 id="third-parties">7. Third-Party Services</h2>
                     <p>Scandora integrates with third-party services based on your choices:</p>
                     
                     <h3>Cloud Integrations (Your Choice)</h3>
@@ -178,7 +262,7 @@
                     </ul>
                     <p>Each third-party service has its own privacy policy. We encourage you to review their policies.</p>
 
-                    <h2 id="your-rights">6. Your Rights</h2>
+                    <h2 id="your-rights">8. Your Rights</h2>
                     <p>Under GDPR and other privacy regulations, you have the right to:</p>
                     <ul>
                         <li><strong>Access:</strong> Request a copy of your personal data</li>
@@ -194,7 +278,7 @@
                         <p><strong>Account Deletion:</strong> When you delete your Scandora account, we immediately and permanently remove ALL your personal data from our systems. This action is irreversible.</p>
                     </div>
 
-                    <h2 id="cookies">7. Cookies</h2>
+                    <h2 id="cookies">9. Cookies</h2>
                     <p>Our website uses cookies to ensure basic functionality and to help us understand how visitors interact with our site. You can manage your cookie preferences at any time using the cookie settings.</p>
 
                     <h3>Types of Cookies We Use</h3>
@@ -264,10 +348,10 @@
 
                     <p style="margin-top: 1.5rem;">We do not sell your browsing data to advertisers or third parties.</p>
 
-                    <h2 id="children">8. Children's Privacy</h2>
+                    <h2 id="children">10. Children's Privacy</h2>
                     <p>Scandora is not intended for children under 16 years of age. We do not knowingly collect personal information from children. If you believe we have collected data from a child, please contact us immediately.</p>
 
-                    <h2 id="changes">9. Policy Changes</h2>
+                    <h2 id="changes">11. Policy Changes</h2>
                     <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by:</p>
                     <ul>
                         <li>Posting the new policy on this page</li>
@@ -276,7 +360,7 @@
                     </ul>
                     <p>The "Last updated" date at the top of this page indicates when the policy was last revised.</p>
 
-                    <h2 id="contact">10. Contact Us</h2>
+                    <h2 id="contact">12. Contact Us</h2>
                     <p>If you have questions about this Privacy Policy or our data practices, please contact us:</p>
 
                     <div class="contact-card">
