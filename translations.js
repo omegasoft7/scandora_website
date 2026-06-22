@@ -18,9 +18,12 @@ const translations = {
         'hero.description': 'Scandora combines powerful scanning technology with AI to automatically extract, organize, and sync your documents to your favorite cloud services. No more manual data entry.',
         'hero.getStarted': 'Get Started Free',
         'hero.seeHow': 'See How It Works',
-        'hero.stat1': 'Documents Processed',
-        'hero.stat2': 'Accuracy Rate',
-        'hero.stat3': 'Average Setup Time',
+        'hero.stat1': 'Phone or scanner',
+        'hero.stat1sub': 'Scan however you work',
+        'hero.stat2': 'Your AI, your keys',
+        'hero.stat2sub': 'Bring your own API key',
+        'hero.stat3': 'Built in Germany',
+        'hero.stat3sub': 'Privacy-first by design',
 
         // Features
         'features.badge': 'Powerful Features',
@@ -138,9 +141,12 @@ const translations = {
         'hero.description': 'Scandora kombiniert leistungsstarke Scan-Technologie mit KI, um Ihre Dokumente automatisch zu extrahieren, zu organisieren und mit Ihren bevorzugten Cloud-Diensten zu synchronisieren. Keine manuelle Dateneingabe mehr.',
         'hero.getStarted': 'Kostenlos starten',
         'hero.seeHow': 'So funktioniert es',
-        'hero.stat1': 'Verarbeitete Dokumente',
-        'hero.stat2': 'Genauigkeit',
-        'hero.stat3': 'Einrichtungszeit',
+        'hero.stat1': 'Handy oder Scanner',
+        'hero.stat1sub': 'Scannen, wie Sie arbeiten',
+        'hero.stat2': 'Ihre KI, Ihre Schlüssel',
+        'hero.stat2sub': 'Eigenen API-Schlüssel nutzen',
+        'hero.stat3': 'In Deutschland entwickelt',
+        'hero.stat3sub': 'Datenschutz by design',
 
         // Features
         'features.badge': 'Leistungsstarke Funktionen',
