@@ -267,6 +267,17 @@ function applyTranslations() {
         }
     });
 
+    // Show/hide language-specific content blocks. Used by the legal pages
+    // (privacy, terms, imprint), whose rich body content — tables, lists,
+    // links — cannot be expressed through the textContent-based data-i18n
+    // mechanism above. Each block is marked data-lang="en" / data-lang="de";
+    // we reveal the block for the current language and hide the others.
+    // Pages without [data-lang] elements are unaffected.
+    const langBlocks = document.querySelectorAll('[data-lang]');
+    langBlocks.forEach(el => {
+        el.hidden = el.getAttribute('data-lang') !== currentLang;
+    });
+
     // Update language indicator
     const langIndicator = document.getElementById('lang-indicator');
     if (langIndicator) {

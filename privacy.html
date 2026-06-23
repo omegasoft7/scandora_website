@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <title>Privacy Policy - Scandora | Your Data, Your Control</title>
     <meta name="description" content="Scandora Privacy Policy. Learn how we protect your data with our privacy-first approach. Your documents stay in your control.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://scandora.eu/privacy">
-    
+
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://scandora.eu/privacy">
     <meta property="og:title" content="Privacy Policy - Scandora">
     <meta property="og:description" content="Learn how Scandora protects your privacy with our privacy-first document scanning approach.">
     <meta property="og:site_name" content="Scandora">
-    
+
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    
+
     <!-- Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,13 +55,13 @@
             <div class="container nav-container">
                 <a href="/" class="logo" aria-label="Scandora Home"><span class="logo-icon" aria-hidden="true">◈</span><span class="logo-text">Scandora</span></a>
                 <div class="nav-links" role="menubar">
-                    <a href="/#features" role="menuitem">Features</a>
-                    <a href="/#how-it-works" role="menuitem">How It Works</a>
-                    <a href="/#pricing" role="menuitem">Pricing</a>
+                    <a href="/#features" role="menuitem" data-i18n="nav.features">Features</a>
+                    <a href="/#how-it-works" role="menuitem" data-i18n="nav.howItWorks">How It Works</a>
+                    <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
                 </div>
                 <div class="nav-actions">
                     <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
-                    <a href="/#download" class="btn btn-primary btn-sm" role="button">Download</a>
+                    <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
             </div>
@@ -73,300 +73,578 @@
             <div class="legal-container">
                 <a href="/" class="back-home">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-                    Back to Home
+                    <span data-lang="en">Back to Home</span><span data-lang="de" hidden>Zur Startseite</span>
                 </a>
-                
+
                 <header class="legal-header">
-                    <span class="legal-badge">Privacy</span>
-                    <h1 id="privacy-title" class="legal-title">Privacy Policy</h1>
-                    <p class="legal-meta">Last updated: <time datetime="2024-12-18">December 18, 2024</time></p>
+                    <span class="legal-badge" data-lang="en">Privacy</span><span class="legal-badge" data-lang="de" hidden>Datenschutz</span>
+                    <h1 id="privacy-title" class="legal-title"><span data-lang="en">Privacy Policy</span><span data-lang="de" hidden>Datenschutzerklärung</span></h1>
+                    <p class="legal-meta"><span data-lang="en">Last updated: <time datetime="2026-06-23">June 23, 2026</time></span><span data-lang="de" hidden>Zuletzt aktualisiert: <time datetime="2026-06-23">23. Juni 2026</time></span></p>
                 </header>
 
-                <article class="legal-content">
+                <!-- ================= ENGLISH ================= -->
+                <article class="legal-content" data-lang="en">
                     <div class="highlight-box">
-                        <p><strong>Our Promise:</strong> Scandora is built with privacy-first principles. We don't store your documents on our servers – everything syncs directly to your chosen cloud services. You maintain full control of your data.</p>
+                        <p><strong>Our promise:</strong> Scandora is built privacy-first. <strong>We do not store your full scanned documents on our servers</strong> — on our infrastructure we keep only a small low-resolution preview thumbnail and the metadata listed in section 2. Your documents are processed on your device and sent only to the destinations you choose — the AI provider you select and your own cloud services. You stay in control of your data.</p>
                     </div>
 
                     <nav class="toc">
                         <h4>Table of Contents</h4>
                         <ol>
-                            <li><a href="#overview">Overview</a></li>
+                            <li><a href="#overview">Overview &amp; Controller</a></li>
                             <li><a href="#data-collection">Data We Collect</a></li>
-                            <li><a href="#data-use">How We Use Your Data</a></li>
+                            <li><a href="#documents">Your Documents</a></li>
+                            <li><a href="#ai">AI Processing: BYOAI vs. Managed AI Pass</a></li>
+                            <li><a href="#integrations">Cloud Integrations (Trello &amp; Google Drive)</a></li>
                             <li><a href="#legal-basis">Legal Basis for Processing</a></li>
+                            <li><a href="#subprocessors">Sub-Processors &amp; Recipients</a></li>
+                            <li><a href="#roles">Controller vs. Processor Roles</a></li>
+                            <li><a href="#transfers">International Transfers</a></li>
                             <li><a href="#consent-management">Consent Management</a></li>
-                            <li><a href="#data-storage">Data Storage & Security</a></li>
-                            <li><a href="#third-parties">Third-Party Services</a></li>
+                            <li><a href="#data-storage">Data Storage &amp; Security</a></li>
                             <li><a href="#your-rights">Your Rights</a></li>
-                            <li><a href="#cookies">Cookies</a></li>
+                            <li><a href="#cookies">Cookies (Website)</a></li>
                             <li><a href="#children">Children's Privacy</a></li>
                             <li><a href="#changes">Policy Changes</a></li>
                             <li><a href="#contact">Contact Us</a></li>
                         </ol>
                     </nav>
 
-                    <h2 id="overview">1. Overview</h2>
-                    <p>Scandora ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our document scanning application available on iOS, macOS, and Android platforms.</p>
-                    <p>By using Scandora, you agree to the collection and use of information in accordance with this policy.</p>
+                    <h2 id="overview">1. Overview &amp; Controller</h2>
+                    <p>Scandora ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our document scanning application on iOS, macOS, and Android, and our website.</p>
+                    <p>The controller responsible for the data processing described here is the operator of Scandora named in our <a href="/imprint.html">Imprint</a>. For data-protection questions, contact <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a>.</p>
 
                     <h2 id="data-collection">2. Data We Collect</h2>
-                    <h3>Account Information</h3>
-                    <p>When you create an account, we collect:</p>
+                    <h3>Account information</h3>
+                    <p>When you create an account we process:</p>
                     <ul>
-                        <li>Email address (for account identification and communication)</li>
+                        <li>Email address (account identification and communication)</li>
                         <li>Display name (optional, for personalization)</li>
-                        <li>Authentication credentials (securely hashed)</li>
+                        <li>A pseudonymous user ID (Firebase Authentication UID)</li>
+                        <li>Sign-in metadata (e.g. last sign-in time)</li>
                     </ul>
 
-                    <h3>Usage Data</h3>
-                    <p>We collect anonymized usage statistics to improve our service:</p>
+                    <h3>Profile &amp; history metadata</h3>
+                    <p>To run the app we store, in your account, metadata <em>about</em> your scans — never the documents themselves:</p>
                     <ul>
-                        <li>Number of scans performed (anonymized counts)</li>
-                        <li>Feature usage patterns (no document content)</li>
-                        <li>App performance metrics</li>
-                        <li>Crash reports (to fix bugs)</li>
+                        <li>Profile settings (name, colour, icon, preferences)</li>
+                        <li>History entries: title, page count, file size, storage type, a small thumbnail, and AI-generated labels/titles/descriptions</li>
+                        <li>The destination you chose (e.g. the name of the target Trello board/list or Google Drive folder)</li>
+                        <li>Offline-queue status (retry counters) for pending exports</li>
                     </ul>
 
-                    <h3>Document Data</h3>
-                    <p><strong>Important:</strong> Scandora does NOT store your scanned documents on our servers. Your documents are:</p>
+                    <h3>Diagnostics &amp; usage</h3>
                     <ul>
-                        <li>Processed locally on your device</li>
-                        <li>Sent directly to your connected cloud services (Trello, Google Drive, etc.)</li>
-                        <li>Temporarily processed by AI providers you choose (OpenAI, Google Gemini) if you enable AI features</li>
+                        <li><strong>Crash reports</strong> (device type, OS version, app version, stack traces — <em>no</em> document content)</li>
+                        <li><strong>Product analytics</strong> — pseudonymous usage events, collected <em>only</em> with your consent</li>
                     </ul>
 
-                    <h2 id="data-use">3. How We Use Your Data</h2>
-                    <p>We use the collected information to:</p>
+                    <h3>Subscription data</h3>
                     <ul>
-                        <li>Provide and maintain the Scandora service</li>
-                        <li>Authenticate your account and manage subscriptions</li>
-                        <li>Send important service updates and security alerts</li>
-                        <li>Improve app performance and user experience</li>
-                        <li>Provide customer support</li>
-                        <li>Comply with legal obligations</li>
+                        <li>Subscription tier, status, billing period and renewal dates, processed via our billing provider (RevenueCat) and stored against your pseudonymous user ID</li>
                     </ul>
 
-                    <h2 id="legal-basis">4. Legal Basis for Processing</h2>
-                    <p>Under GDPR, we process your data based on the following legal grounds:</p>
+                    <h2 id="documents">3. Your Documents</h2>
+                    <div class="highlight-box">
+                        <p><strong>Scandora does not store your full documents.</strong> Scanned images and full extracted text are processed on your device and transmitted only to the destination you choose. On our infrastructure we keep only the metadata listed in section 2 — including a small low-resolution first-page preview thumbnail — never the full-resolution document, the original page images, or the full extracted text.</p>
+                    </div>
+                    <p>Concretely, your document content can travel to:</p>
+                    <ul>
+                        <li>the AI provider you select, to analyse the document (see section 4);</li>
+                        <li>your own cloud destinations — your Trello board or your Google Drive — when you export (see section 5).</li>
+                    </ul>
 
-                    <h3>Contract Performance (Art. 6(1)(b) GDPR)</h3>
-                    <p>Processing necessary to provide the Scandora service:</p>
+                    <h2 id="ai">4. AI Processing: BYOAI vs. Managed AI Pass</h2>
+                    <p>AI analysis is optional and only runs when you use an AI feature. Scandora offers <strong>two distinct modes</strong>, and which one applies determines who is responsible for the data:</p>
+
+                    <h3>4.1 Bring Your Own AI (BYOAI)</h3>
+                    <p>You supply your own API key for <strong>OpenAI</strong> or <strong>Google Gemini</strong>. The key is stored encrypted on your device and never transmitted to Scandora. The document images and extracted text are sent <strong>directly from your device to that provider under your own account and contract</strong>:</p>
+                    <ul>
+                        <li>OpenAI — <code>https://api.openai.com</code></li>
+                        <li>Google Gemini — <code>https://generativelanguage.googleapis.com</code></li>
+                    </ul>
+                    <p>In BYOAI mode <strong>you are the controller</strong> of that processing and the AI provider acts under the terms of your own account with them. Scandora is not a party to that transfer.</p>
+
+                    <h3>4.2 Managed "AI Pass"</h3>
+                    <p>If you don't bring your own key, you can use Scandora's managed <strong>AI Pass</strong>. Your document images and extracted text are routed through <strong>Scandora's own AI gateway</strong> (a metered AI proxy operated by Scandora) to the underlying model provider (<strong>OpenAI</strong> or <strong>Google</strong>), which generates the analysis. In this mode Scandora is your <strong>processor</strong>, and Scandora's gateway plus the underlying model provider are <strong>sub-processors</strong> (see section 7).</p>
+                    <p>In both modes, document content is processed transiently to produce the result and is not retained by Scandora.</p>
+                    <p>Scanned documents may contain special categories of personal data (Art. 9 GDPR), e.g. health data. Where you use AI analysis or cloud export on such documents, the processing relies on your explicit consent (Art. 9(2)(a) GDPR) together with Art. 6(1)(b); you are responsible for having the right to scan and process the documents you submit.</p>
+
+                    <h2 id="integrations">5. Cloud Integrations (Trello &amp; Google Drive)</h2>
+                    <p>Cloud exports are optional and go to <strong>destinations you own and authorize</strong> via OAuth:</p>
+                    <ul>
+                        <li><strong>Trello</strong> — when you connect Trello, exported documents are created as cards (with the PDF attached, plus title, labels and due dates) on <em>your</em> Trello board.</li>
+                        <li><strong>Google Drive</strong> — when you connect Drive (scope <code>drive.file</code>, limited to files the app creates), exported documents are uploaded to <em>your</em> Drive. The OAuth code/token exchange is handled server-side by a Scandora Cloud Function hosted in the EU (<code>europe-west3</code>, Frankfurt) so the OAuth client secret never reaches the device.</li>
+                    </ul>
+                    <p>For these flows you are the controller of the destination account; the provider processes the data under your agreement with them.</p>
+
+                    <h2 id="legal-basis">6. Legal Basis for Processing</h2>
+                    <p>Under the GDPR we rely on:</p>
+                    <h3>Contract — Art. 6(1)(b) GDPR</h3>
                     <ul>
                         <li>Account creation and authentication</li>
-                        <li>Document scanning and processing</li>
-                        <li>Cloud integration synchronization</li>
+                        <li>Scanning, AI analysis (incl. managed AI Pass) and cloud sync you request</li>
                         <li>Subscription management</li>
                     </ul>
-
-                    <h3>Legitimate Interest (Art. 6(1)(f) GDPR)</h3>
-                    <p>Processing necessary for our legitimate interests, balanced against your rights:</p>
+                    <h3>Legitimate interest — Art. 6(1)(f) GDPR</h3>
                     <ul>
-                        <li><strong>Crash Reporting (Firebase Crashlytics):</strong> We collect crash reports and error logs to maintain app stability and fix bugs. This directly benefits you through a more reliable app experience. Data collected includes device type, OS version, app version, and crash stack traces. No document content is included.</li>
-                        <li><strong>Security Monitoring:</strong> Detecting and preventing fraudulent or malicious activity</li>
+                        <li><strong>Crash reporting (Firebase Crashlytics)</strong> — to keep the app stable. Device type, OS/app version and stack traces; no document content.</li>
+                        <li><strong>Security</strong> — detecting and preventing fraud and abuse.</li>
+                    </ul>
+                    <h3>Consent — Art. 6(1)(a) GDPR</h3>
+                    <ul>
+                        <li><strong>Product analytics (Google Analytics 4 / Firebase Analytics)</strong> — only when you opt in; withdrawable at any time.</li>
+                        <li><strong>Performance monitoring.</strong></li>
                     </ul>
 
-                    <h3>Consent (Art. 6(1)(a) GDPR)</h3>
-                    <p>Processing based on your explicit consent, which you can withdraw at any time:</p>
-                    <ul>
-                        <li><strong>Analytics (Firebase Analytics):</strong> Understanding how users interact with the app to improve features and user experience</li>
-                        <li><strong>Performance Monitoring:</strong> Measuring app performance metrics like load times and responsiveness</li>
-                    </ul>
-
-                    <h2 id="consent-management">5. Consent Management</h2>
-                    <p>Scandora provides you with full control over optional data collection through our in-app consent management system.</p>
-
-                    <h3>How Consent Works</h3>
-                    <ul>
-                        <li><strong>First Launch:</strong> When you first use Scandora, you'll see a consent banner asking for your preferences</li>
-                        <li><strong>Granular Control:</strong> You can accept all, reject all, or customize which types of data collection you allow</li>
-                        <li><strong>Change Anytime:</strong> Access Settings → Privacy to modify your consent choices at any time</li>
-                        <li><strong>Consent Expiration:</strong> We ask for renewed consent after 12 months to ensure your preferences are current</li>
-                    </ul>
-
-                    <h3>What Requires Consent</h3>
+                    <h2 id="subprocessors">7. Sub-Processors &amp; Recipients</h2>
+                    <p>The following providers process personal data on our behalf, or receive data you direct to them. We have a data-processing agreement (DPA) in place where we act as controller and they as processor.</p>
+                    <div style="overflow-x:auto;">
                     <table class="cookie-table">
                         <thead>
                             <tr>
-                                <th>Data Type</th>
+                                <th>Provider</th>
                                 <th>Purpose</th>
-                                <th>Requires Consent</th>
+                                <th>Data processed</th>
+                                <th>Region</th>
+                                <th>DPA</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Analytics</td>
-                                <td>Usage patterns, feature adoption, user journeys</td>
-                                <td>Yes (Opt-in)</td>
+                                <td>Scandora AI Gateway <em>(self-operated)</em></td>
+                                <td>Managed "AI Pass" — routing &amp; metering of AI requests</td>
+                                <td>Document images &amp; extracted text, prompts (managed mode only; transient)</td>
+                                <td>EU</td>
+                                <td>Operated by Scandora — this policy</td>
                             </tr>
                             <tr>
-                                <td>Performance</td>
-                                <td>App speed, load times, responsiveness</td>
-                                <td>Yes (Opt-in)</td>
+                                <td>OpenAI</td>
+                                <td>AI document analysis (model provider) — managed AI Pass and BYOAI<sup>1</sup></td>
+                                <td>Document images &amp; extracted text, prompts (transient)</td>
+                                <td>USA</td>
+                                <td><a href="https://openai.com/policies/data-processing-addendum" rel="noopener" target="_blank">openai.com/.../data-processing-addendum</a></td>
                             </tr>
                             <tr>
-                                <td>Crash Reports</td>
-                                <td>Bug fixes, stability improvements</td>
-                                <td>No (Legitimate Interest)</td>
+                                <td>Google (Gemini API)</td>
+                                <td>AI document analysis (model provider) — managed AI Pass and BYOAI<sup>1</sup></td>
+                                <td>Document images &amp; extracted text, prompts (transient)</td>
+                                <td>USA / global</td>
+                                <td><a href="https://cloud.google.com/terms/data-processing-addendum" rel="noopener" target="_blank">cloud.google.com/terms/data-processing-addendum</a></td>
                             </tr>
                             <tr>
-                                <td>Account Data</td>
-                                <td>Service provision</td>
-                                <td>No (Contract)</td>
+                                <td>Google Firebase / Google Cloud</td>
+                                <td>Authentication, Firestore (metadata only), Cloud Functions, Crashlytics</td>
+                                <td>Account &amp; profile data, history metadata, subscription &amp; consent state, diagnostics</td>
+                                <td>Cloud Functions: EU (<code>europe-west3</code>); other services: Google multi-region</td>
+                                <td><a href="https://cloud.google.com/terms/data-processing-addendum" rel="noopener" target="_blank">cloud.google.com/terms/data-processing-addendum</a></td>
+                            </tr>
+                            <tr>
+                                <td>Google Analytics 4</td>
+                                <td>Product analytics (consent-gated)<sup>2</sup></td>
+                                <td>Pseudonymous usage events (Google's default GA4 IP handling in-app; IP anonymization additionally enforced on the website)</td>
+                                <td>USA / global</td>
+                                <td><a href="https://cloud.google.com/terms/data-processing-addendum" rel="noopener" target="_blank">cloud.google.com/terms/data-processing-addendum</a></td>
+                            </tr>
+                            <tr>
+                                <td>Google Drive (API)</td>
+                                <td>Export to your own Google Drive (user-authorized)</td>
+                                <td>Exported document files &amp; file metadata you send</td>
+                                <td>Google global</td>
+                                <td><a href="https://cloud.google.com/terms/data-processing-addendum" rel="noopener" target="_blank">cloud.google.com/terms/data-processing-addendum</a></td>
+                            </tr>
+                            <tr>
+                                <td>Trello (Atlassian)</td>
+                                <td>Export to your own Trello board (user-authorized)</td>
+                                <td>Exported cards, PDF attachments, titles, labels, due dates</td>
+                                <td>USA / EU</td>
+                                <td><a href="https://www.atlassian.com/legal/data-processing-addendum" rel="noopener" target="_blank">atlassian.com/legal/data-processing-addendum</a></td>
+                            </tr>
+                            <tr>
+                                <td>RevenueCat</td>
+                                <td>Subscription &amp; billing management</td>
+                                <td>Pseudonymous app user ID (Firebase UID), purchase &amp; entitlement data</td>
+                                <td>USA</td>
+                                <td><a href="https://www.revenuecat.com/dpa/" rel="noopener" target="_blank">revenuecat.com/dpa</a></td>
                             </tr>
                         </tbody>
                     </table>
+                    </div>
+                    <p><small><sup>1</sup> In <strong>BYOAI</strong> mode you use your own API key and you are the controller; the provider processes under your own account, not as Scandora's sub-processor. The provider acts as Scandora's sub-processor only on the <strong>managed AI Pass</strong> path.<br>
+                    <sup>2</sup> Google Analytics 4 is consent-gated today and is scheduled to be replaced by self-hosted, cookieless analytics (Plausible / Umami); it will then be removed from this list.</small></p>
 
-                    <h3>Google Consent Mode v2</h3>
-                    <p>We implement Google Consent Mode v2 to ensure your consent preferences are respected by Firebase services. When you deny consent:</p>
+                    <h2 id="roles">8. Controller vs. Processor Roles</h2>
                     <ul>
-                        <li>Analytics data collection is disabled</li>
-                        <li>No advertising identifiers are collected</li>
-                        <li>Performance monitoring is paused</li>
+                        <li><strong>Scandora as controller:</strong> account &amp; profile data, history metadata, subscription and consent records, diagnostics. Firebase/Google Cloud and RevenueCat act as our processors.</li>
+                        <li><strong>Scandora as processor:</strong> the managed AI Pass path — we route your content to the model provider on your behalf; Scandora's gateway and the model provider are sub-processors.</li>
+                        <li><strong>You as controller:</strong> BYOAI (your own AI key/account) and cloud exports to your own Trello/Google Drive. The provider processes under your agreement with them.</li>
                     </ul>
 
+                    <h2 id="transfers">9. International Transfers</h2>
+                    <p>Some recipients (e.g. OpenAI, RevenueCat, and certain Google services) process data in the USA or other countries outside the EU/EEA. Where that happens, transfers are safeguarded by the EU Standard Contractual Clauses and/or the provider's certification under the EU–US Data Privacy Framework, as set out in the DPAs linked above. Our own Cloud Functions handling OAuth tokens run in the EU (<code>europe-west3</code>, Frankfurt).</p>
+
+                    <h2 id="consent-management">10. Consent Management</h2>
+                    <p>You control optional data collection through our in-app consent system.</p>
+                    <ul>
+                        <li><strong>First launch:</strong> a consent banner asks for your preferences.</li>
+                        <li><strong>Granular control:</strong> accept all, reject all, or choose per category.</li>
+                        <li><strong>Change anytime:</strong> Settings → Privacy.</li>
+                        <li><strong>Renewal:</strong> we re-ask after 12 months.</li>
+                    </ul>
+                    <table class="cookie-table">
+                        <thead><tr><th>Data type</th><th>Purpose</th><th>Requires consent</th></tr></thead>
+                        <tbody>
+                            <tr><td>Analytics</td><td>Usage patterns, feature adoption</td><td>Yes (opt-in)</td></tr>
+                            <tr><td>Performance</td><td>App speed, responsiveness</td><td>Yes (opt-in)</td></tr>
+                            <tr><td>Crash reports</td><td>Bug fixes, stability</td><td>No (legitimate interest)</td></tr>
+                            <tr><td>Account &amp; documents handling</td><td>Service provision</td><td>No (contract)</td></tr>
+                        </tbody>
+                    </table>
+                    <p>On Google services we apply Google Consent Mode v2, so denying consent disables analytics collection and advertising identifiers.</p>
                     <div class="highlight-box">
-                        <p><strong>No Advertising:</strong> Scandora does not use advertising identifiers (IDFA/GAID), does not show ads, and does not share your data with advertisers. We do not track you across other apps or websites.</p>
+                        <p><strong>No advertising:</strong> Scandora does not use advertising identifiers (IDFA/GAID), does not show ads, and does not share your data with advertisers. We do not track you across other apps or websites.</p>
                     </div>
 
-                    <h2 id="data-storage">6. Data Storage & Security</h2>
-                    <p>Your account data is stored securely using Firebase (Google Cloud Platform) with:</p>
+                    <h2 id="data-storage">11. Data Storage &amp; Security</h2>
+                    <p>Account and metadata are stored using Firebase (Google Cloud Platform) with:</p>
                     <ul>
-                        <li>End-to-end encryption for data in transit</li>
-                        <li>AES-256 encryption for data at rest</li>
-                        <li>Regular security audits and updates</li>
+                        <li>Encryption in transit (TLS) and at rest (AES-256)</li>
                         <li>Access controls and monitoring</li>
+                        <li>Regular updates</li>
                     </ul>
-                    <p>Your documents are NEVER stored on our infrastructure. They remain in your control via your connected cloud services.</p>
+                    <p><strong>We do not store your full documents on our infrastructure.</strong> We retain only the metadata in section 2 plus a small low-resolution first-page preview thumbnail; the full document remains in your control via your chosen AI provider and cloud destinations.</p>
 
-                    <h2 id="third-parties">7. Third-Party Services</h2>
-                    <p>Scandora integrates with third-party services based on your choices:</p>
-                    
-                    <h3>Cloud Integrations (Your Choice)</h3>
+                    <h3>Retention periods</h3>
                     <ul>
-                        <li><strong>Trello:</strong> Documents and tasks sync to your Trello boards</li>
-                        <li><strong>Google Drive:</strong> Documents are uploaded to your Drive</li>
+                        <li><strong>Account, profile &amp; history metadata (incl. preview thumbnails):</strong> kept for the life of your account and erased when you delete it (section 12), at the latest within 30 days.</li>
+                        <li><strong>Crash reports:</strong> up to 90 days (Firebase Crashlytics default).</li>
+                        <li><strong>Product analytics:</strong> per the configured Google Analytics 4 retention (maximum 14 months) and only while your consent is active.</li>
+                        <li><strong>Subscription &amp; billing records:</strong> kept for the statutory commercial/tax retention period under German law (§ 257 HGB / § 147 AO — generally 6 to 10 years), even after account deletion.</li>
+                        <li><strong>Document content for AI / cloud export:</strong> not retained by Scandora — processed transiently and discarded once the result is produced.</li>
                     </ul>
-                    
-                    <h3>AI Processing (Your Choice)</h3>
-                    <p>If you enable AI features, document content may be processed by:</p>
-                    <ul>
-                        <li><strong>OpenAI:</strong> For document analysis and data extraction</li>
-                        <li><strong>Google Gemini:</strong> For document analysis and data extraction</li>
-                    </ul>
-                    <p>You can also bring your own API keys (BYOAI) for complete control over AI processing.</p>
 
-                    <h3>Analytics & Infrastructure</h3>
-                    <ul>
-                        <li><strong>Firebase/Google Cloud:</strong> Authentication, database, and analytics</li>
-                        <li><strong>RevenueCat:</strong> Subscription management</li>
-                    </ul>
-                    <p>Each third-party service has its own privacy policy. We encourage you to review their policies.</p>
-
-                    <h2 id="your-rights">8. Your Rights</h2>
-                    <p>Under GDPR and other privacy regulations, you have the right to:</p>
-                    <ul>
-                        <li><strong>Access:</strong> Request a copy of your personal data</li>
-                        <li><strong>Rectification:</strong> Correct inaccurate personal data</li>
-                        <li><strong>Erasure:</strong> Request deletion of your data ("right to be forgotten")</li>
-                        <li><strong>Portability:</strong> Receive your data in a portable format</li>
-                        <li><strong>Restriction:</strong> Limit how we process your data</li>
-                        <li><strong>Objection:</strong> Object to certain types of processing</li>
-                    </ul>
-                    <p>To exercise these rights, contact us at <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a>.</p>
-
+                    <h2 id="your-rights">12. Your Rights</h2>
+                    <p>Under the GDPR you have the right to access, rectification, erasure ("right to be forgotten"), portability, restriction, and objection, and the right to withdraw consent at any time. You may also lodge a complaint with a supervisory authority.</p>
+                    <p>To exercise these rights, contact <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a>.</p>
                     <div class="highlight-box">
-                        <p><strong>Account Deletion:</strong> When you delete your Scandora account, we immediately and permanently remove ALL your personal data from our systems. This action is irreversible.</p>
+                        <p><strong>Account deletion:</strong> when you delete your Scandora account, we permanently remove your personal data from our systems. This is irreversible. Content already exported to your own Trello/Drive remains under your control there.</p>
                     </div>
 
-                    <h2 id="cookies">9. Cookies</h2>
-                    <p>Our website uses cookies to ensure basic functionality and to help us understand how visitors interact with our site. You can manage your cookie preferences at any time using the cookie settings.</p>
-
-                    <h3>Types of Cookies We Use</h3>
-
-                    <h4>Strictly Necessary Cookies</h4>
-                    <p>These cookies are essential for the website to function properly and cannot be disabled.</p>
+                    <h2 id="cookies">13. Cookies (Website)</h2>
+                    <p>Our website uses cookies for basic functionality and — only with your consent — for analytics. Manage your choices anytime via Cookie Settings.</p>
+                    <h4>Strictly necessary</h4>
                     <table class="cookie-table">
-                        <thead>
-                            <tr>
-                                <th>Cookie</th>
-                                <th>Provider</th>
-                                <th>Purpose</th>
-                                <th>Duration</th>
-                            </tr>
-                        </thead>
+                        <thead><tr><th>Cookie</th><th>Provider</th><th>Purpose</th><th>Duration</th></tr></thead>
                         <tbody>
-                            <tr>
-                                <td><code>cc_cookie</code></td>
-                                <td>Scandora</td>
-                                <td>Stores your cookie consent preferences</td>
-                                <td>1 year</td>
-                            </tr>
-                            <tr>
-                                <td><code>scandora-lang</code></td>
-                                <td>Scandora</td>
-                                <td>Remembers your language preference</td>
-                                <td>Persistent</td>
-                            </tr>
+                            <tr><td><code>cc_cookie</code></td><td>Scandora</td><td>Stores your cookie consent preferences</td><td>1 year</td></tr>
+                            <tr><td><code>scandora-lang</code></td><td>Scandora</td><td>Remembers your language preference</td><td>Persistent</td></tr>
                         </tbody>
                     </table>
-
-                    <h4>Analytics Cookies (Optional)</h4>
-                    <p>These cookies help us understand how visitors use our website. All data is anonymized and we use IP anonymization.</p>
+                    <h4>Analytics (optional)</h4>
                     <table class="cookie-table">
-                        <thead>
-                            <tr>
-                                <th>Cookie</th>
-                                <th>Provider</th>
-                                <th>Purpose</th>
-                                <th>Duration</th>
-                            </tr>
-                        </thead>
+                        <thead><tr><th>Cookie</th><th>Provider</th><th>Purpose</th><th>Duration</th></tr></thead>
                         <tbody>
-                            <tr>
-                                <td><code>_ga</code></td>
-                                <td>Google Analytics</td>
-                                <td>Distinguishes unique visitors to track site usage</td>
-                                <td>2 years</td>
-                            </tr>
-                            <tr>
-                                <td><code>_ga_*</code></td>
-                                <td>Google Analytics</td>
-                                <td>Maintains session state across page requests</td>
-                                <td>2 years</td>
-                            </tr>
+                            <tr><td><code>_ga</code></td><td>Google Analytics</td><td>Distinguishes unique visitors</td><td>2 years</td></tr>
+                            <tr><td><code>_ga_*</code></td><td>Google Analytics</td><td>Maintains session state</td><td>2 years</td></tr>
                         </tbody>
                     </table>
+                    <button type="button" class="btn btn-secondary" onclick="CookieConsent.showPreferences()" aria-label="Open cookie settings" style="margin-top:1rem;">Cookie Settings</button>
 
-                    <h3>Managing Your Preferences</h3>
-                    <p>You can change your cookie preferences at any time by clicking the "Cookie Settings" button below or in the website footer.</p>
-                    <button type="button" class="btn btn-secondary" onclick="CookieConsent.showPreferences()" aria-label="Open cookie settings">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px; vertical-align: middle;">
-                            <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
-                        </svg>
-                        Cookie Settings
-                    </button>
+                    <h2 id="children">14. Children's Privacy</h2>
+                    <p>Scandora is not intended for children under 16. We do not knowingly collect data from children. If you believe we have, contact us immediately.</p>
 
-                    <p style="margin-top: 1.5rem;">We do not sell your browsing data to advertisers or third parties.</p>
+                    <h2 id="changes">15. Policy Changes</h2>
+                    <p>We may update this policy. We will post the new version here and, for material changes, notify you by email or in-app. The "Last updated" date reflects the latest revision.</p>
 
-                    <h2 id="children">10. Children's Privacy</h2>
-                    <p>Scandora is not intended for children under 16 years of age. We do not knowingly collect personal information from children. If you believe we have collected data from a child, please contact us immediately.</p>
-
-                    <h2 id="changes">11. Policy Changes</h2>
-                    <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by:</p>
-                    <ul>
-                        <li>Posting the new policy on this page</li>
-                        <li>Sending an email notification (for material changes)</li>
-                        <li>Displaying an in-app notification</li>
-                    </ul>
-                    <p>The "Last updated" date at the top of this page indicates when the policy was last revised.</p>
-
-                    <h2 id="contact">12. Contact Us</h2>
-                    <p>If you have questions about this Privacy Policy or our data practices, please contact us:</p>
-
+                    <h2 id="contact">16. Contact Us</h2>
                     <div class="contact-card">
-                        <h3>Data Protection Contact</h3>
+                        <h3>Data protection contact</h3>
                         <p><strong>Email:</strong> <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a></p>
-                        <p><strong>General Support:</strong> <a href="mailto:support@scandora.eu">support@scandora.eu</a></p>
+                        <p><strong>General support:</strong> <a href="mailto:support@scandora.eu">support@scandora.eu</a></p>
+                        <p>Postal address and the responsible operator are listed in our <a href="/imprint.html">Imprint</a>.</p>
+                    </div>
+                </article>
+
+                <!-- ================= DEUTSCH ================= -->
+                <article class="legal-content" data-lang="de" hidden>
+                    <div class="highlight-box">
+                        <p><strong>Unser Versprechen:</strong> Scandora ist „Privacy-first" gebaut. <strong>Wir speichern Ihre vollständigen gescannten Dokumente nicht auf unseren Servern</strong> — auf unserer Infrastruktur behalten wir nur ein kleines, niedrig aufgelöstes Vorschaubild und die in Abschnitt 2 genannten Metadaten. Ihre Dokumente werden auf Ihrem Gerät verarbeitet und nur an die von Ihnen gewählten Ziele übertragen — den von Ihnen ausgewählten KI-Anbieter und Ihre eigenen Cloud-Dienste. Sie behalten die Kontrolle über Ihre Daten.</p>
+                    </div>
+
+                    <nav class="toc">
+                        <h4>Inhaltsverzeichnis</h4>
+                        <ol>
+                            <li><a href="#de-overview">Überblick &amp; Verantwortlicher</a></li>
+                            <li><a href="#de-data-collection">Welche Daten wir erheben</a></li>
+                            <li><a href="#de-documents">Ihre Dokumente</a></li>
+                            <li><a href="#de-ai">KI-Verarbeitung: BYOAI vs. Managed AI Pass</a></li>
+                            <li><a href="#de-integrations">Cloud-Integrationen (Trello &amp; Google Drive)</a></li>
+                            <li><a href="#de-legal-basis">Rechtsgrundlagen der Verarbeitung</a></li>
+                            <li><a href="#de-subprocessors">Unterauftragsverarbeiter &amp; Empfänger</a></li>
+                            <li><a href="#de-roles">Rollen: Verantwortlicher vs. Auftragsverarbeiter</a></li>
+                            <li><a href="#de-transfers">Drittlandübermittlungen</a></li>
+                            <li><a href="#de-consent-management">Einwilligungsverwaltung</a></li>
+                            <li><a href="#de-data-storage">Datenspeicherung &amp; Sicherheit</a></li>
+                            <li><a href="#de-your-rights">Ihre Rechte</a></li>
+                            <li><a href="#de-cookies">Cookies (Website)</a></li>
+                            <li><a href="#de-children">Datenschutz für Kinder</a></li>
+                            <li><a href="#de-changes">Änderungen dieser Richtlinie</a></li>
+                            <li><a href="#de-contact">Kontakt</a></li>
+                        </ol>
+                    </nav>
+
+                    <h2 id="de-overview">1. Überblick &amp; Verantwortlicher</h2>
+                    <p>Scandora („wir", „uns") verpflichtet sich zum Schutz Ihrer Privatsphäre. Diese Datenschutzerklärung erläutert, wie wir Ihre Daten erheben, nutzen und schützen, wenn Sie unsere Dokumenten-Scan-App unter iOS, macOS und Android sowie unsere Website nutzen.</p>
+                    <p>Verantwortlicher für die hier beschriebene Verarbeitung ist der im <a href="/imprint.html">Impressum</a> genannte Betreiber von Scandora. Bei Datenschutzfragen wenden Sie sich an <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a>.</p>
+
+                    <h2 id="de-data-collection">2. Welche Daten wir erheben</h2>
+                    <h3>Kontodaten</h3>
+                    <p>Bei der Kontoerstellung verarbeiten wir:</p>
+                    <ul>
+                        <li>E-Mail-Adresse (Kontoidentifikation und Kommunikation)</li>
+                        <li>Anzeigename (optional, zur Personalisierung)</li>
+                        <li>Eine pseudonyme Nutzer-ID (Firebase-Authentication-UID)</li>
+                        <li>Anmelde-Metadaten (z. B. Zeitpunkt der letzten Anmeldung)</li>
+                    </ul>
+
+                    <h3>Profil- &amp; Verlaufs-Metadaten</h3>
+                    <p>Zum Betrieb der App speichern wir in Ihrem Konto Metadaten <em>über</em> Ihre Scans — niemals die Dokumente selbst:</p>
+                    <ul>
+                        <li>Profileinstellungen (Name, Farbe, Symbol, Präferenzen)</li>
+                        <li>Verlaufseinträge: Titel, Seitenanzahl, Dateigröße, Speichertyp, ein kleines Vorschaubild sowie KI-generierte Labels/Titel/Beschreibungen</li>
+                        <li>Das von Ihnen gewählte Ziel (z. B. Name des Trello-Boards/der Liste oder des Google-Drive-Ordners)</li>
+                        <li>Status der Offline-Warteschlange (Wiederholungszähler) für ausstehende Exporte</li>
+                    </ul>
+
+                    <h3>Diagnose &amp; Nutzung</h3>
+                    <ul>
+                        <li><strong>Absturzberichte</strong> (Gerätetyp, Betriebssystem-/App-Version, Stack-Traces — <em>keine</em> Dokumentinhalte)</li>
+                        <li><strong>Produktanalyse</strong> — pseudonyme Nutzungsereignisse, <em>nur</em> mit Ihrer Einwilligung</li>
+                    </ul>
+
+                    <h3>Abonnementdaten</h3>
+                    <ul>
+                        <li>Abo-Stufe, Status, Abrechnungszeitraum und Verlängerungsdaten, verarbeitet über unseren Abrechnungsdienstleister (RevenueCat) und Ihrer pseudonymen Nutzer-ID zugeordnet</li>
+                    </ul>
+
+                    <h2 id="de-documents">3. Ihre Dokumente</h2>
+                    <div class="highlight-box">
+                        <p><strong>Scandora speichert Ihre vollständigen Dokumente nicht.</strong> Gescannte Bilder und der vollständige extrahierte Text werden auf Ihrem Gerät verarbeitet und nur an das von Ihnen gewählte Ziel übermittelt. Auf unserer Infrastruktur behalten wir nur die in Abschnitt 2 genannten Metadaten — einschließlich eines kleinen, niedrig aufgelösten Vorschaubilds der ersten Seite — niemals das vollauflösende Dokument, die Originalbilder oder den vollständigen extrahierten Text.</p>
+                    </div>
+                    <p>Konkret können Ihre Dokumentinhalte gelangen an:</p>
+                    <ul>
+                        <li>den von Ihnen ausgewählten KI-Anbieter, um das Dokument zu analysieren (siehe Abschnitt 4);</li>
+                        <li>Ihre eigenen Cloud-Ziele — Ihr Trello-Board oder Ihr Google Drive — beim Export (siehe Abschnitt 5).</li>
+                    </ul>
+
+                    <h2 id="de-ai">4. KI-Verarbeitung: BYOAI vs. Managed AI Pass</h2>
+                    <p>Die KI-Analyse ist optional und läuft nur, wenn Sie eine KI-Funktion nutzen. Scandora bietet <strong>zwei unterschiedliche Modi</strong>; welcher gilt, bestimmt, wer für die Daten verantwortlich ist:</p>
+
+                    <h3>4.1 Eigener KI-Schlüssel (BYOAI)</h3>
+                    <p>Sie stellen Ihren eigenen API-Schlüssel für <strong>OpenAI</strong> oder <strong>Google Gemini</strong> bereit. Der Schlüssel wird verschlüsselt auf Ihrem Gerät gespeichert und niemals an Scandora übertragen. Die Dokumentbilder und der extrahierte Text werden <strong>direkt von Ihrem Gerät an diesen Anbieter unter Ihrem eigenen Konto und Vertrag</strong> gesendet:</p>
+                    <ul>
+                        <li>OpenAI — <code>https://api.openai.com</code></li>
+                        <li>Google Gemini — <code>https://generativelanguage.googleapis.com</code></li>
+                    </ul>
+                    <p>Im BYOAI-Modus sind <strong>Sie der Verantwortliche</strong> für diese Verarbeitung, und der KI-Anbieter handelt nach den Bedingungen Ihres eigenen Kontos. Scandora ist an dieser Übermittlung nicht beteiligt.</p>
+
+                    <h3>4.2 Managed „AI Pass"</h3>
+                    <p>Wenn Sie keinen eigenen Schlüssel mitbringen, können Sie den verwalteten <strong>AI Pass</strong> von Scandora nutzen. Ihre Dokumentbilder und der extrahierte Text werden über das <strong>eigene KI-Gateway von Scandora</strong> (ein von Scandora betriebener, verbrauchsabhängiger KI-Proxy) an den zugrunde liegenden Modellanbieter (<strong>OpenAI</strong> oder <strong>Google</strong>) geleitet, der die Analyse erstellt. In diesem Modus ist Scandora Ihr <strong>Auftragsverarbeiter</strong>, und das Scandora-Gateway sowie der zugrunde liegende Modellanbieter sind <strong>Unterauftragsverarbeiter</strong> (siehe Abschnitt 7).</p>
+                    <p>In beiden Modi werden Dokumentinhalte nur vorübergehend zur Erzeugung des Ergebnisses verarbeitet und nicht von Scandora gespeichert.</p>
+                    <p>Gescannte Dokumente können besondere Kategorien personenbezogener Daten (Art. 9 DSGVO) enthalten, z. B. Gesundheitsdaten. Soweit Sie KI-Analyse oder Cloud-Export für solche Dokumente nutzen, stützt sich die Verarbeitung auf Ihre ausdrückliche Einwilligung (Art. 9 Abs. 2 lit. a DSGVO) in Verbindung mit Art. 6 Abs. 1 lit. b; Sie sind dafür verantwortlich, dass Sie zur Verarbeitung der übermittelten Dokumente berechtigt sind.</p>
+
+                    <h2 id="de-integrations">5. Cloud-Integrationen (Trello &amp; Google Drive)</h2>
+                    <p>Cloud-Exporte sind optional und gehen an <strong>Ziele, die Ihnen gehören und die Sie</strong> per OAuth autorisieren:</p>
+                    <ul>
+                        <li><strong>Trello</strong> — wenn Sie Trello verbinden, werden exportierte Dokumente als Karten (mit angehängtem PDF sowie Titel, Labels und Fälligkeitsdaten) auf <em>Ihrem</em> Trello-Board erstellt.</li>
+                        <li><strong>Google Drive</strong> — wenn Sie Drive verbinden (Berechtigung <code>drive.file</code>, beschränkt auf von der App erstellte Dateien), werden exportierte Dokumente in <em>Ihr</em> Drive hochgeladen. Der OAuth-Code-/Token-Austausch erfolgt serverseitig über eine in der EU gehostete Scandora-Cloud-Function (<code>europe-west3</code>, Frankfurt), damit das OAuth-Client-Secret das Gerät nie erreicht.</li>
+                    </ul>
+                    <p>Bei diesen Vorgängen sind Sie Verantwortlicher des Zielkontos; der Anbieter verarbeitet die Daten nach Ihrer Vereinbarung mit ihm.</p>
+
+                    <h2 id="de-legal-basis">6. Rechtsgrundlagen der Verarbeitung</h2>
+                    <p>Nach der DSGVO stützen wir uns auf:</p>
+                    <h3>Vertragserfüllung — Art. 6 Abs. 1 lit. b DSGVO</h3>
+                    <ul>
+                        <li>Kontoerstellung und Authentifizierung</li>
+                        <li>Von Ihnen angeforderte Scans, KI-Analyse (inkl. Managed AI Pass) und Cloud-Synchronisation</li>
+                        <li>Abonnementverwaltung</li>
+                    </ul>
+                    <h3>Berechtigtes Interesse — Art. 6 Abs. 1 lit. f DSGVO</h3>
+                    <ul>
+                        <li><strong>Absturzberichte (Firebase Crashlytics)</strong> — zur Stabilität der App. Gerätetyp, Betriebssystem-/App-Version und Stack-Traces; keine Dokumentinhalte.</li>
+                        <li><strong>Sicherheit</strong> — Erkennung und Verhinderung von Betrug und Missbrauch.</li>
+                    </ul>
+                    <h3>Einwilligung — Art. 6 Abs. 1 lit. a DSGVO</h3>
+                    <ul>
+                        <li><strong>Produktanalyse (Google Analytics 4 / Firebase Analytics)</strong> — nur bei Opt-in; jederzeit widerrufbar.</li>
+                        <li><strong>Leistungsüberwachung.</strong></li>
+                    </ul>
+
+                    <h2 id="de-subprocessors">7. Unterauftragsverarbeiter &amp; Empfänger</h2>
+                    <p>Die folgenden Anbieter verarbeiten personenbezogene Daten in unserem Auftrag oder empfangen Daten, die Sie an sie übermitteln. Wo wir Verantwortlicher und sie Auftragsverarbeiter sind, besteht ein Auftragsverarbeitungsvertrag (AVV).</p>
+                    <div style="overflow-x:auto;">
+                    <table class="cookie-table">
+                        <thead>
+                            <tr>
+                                <th>Anbieter</th>
+                                <th>Zweck</th>
+                                <th>Verarbeitete Daten</th>
+                                <th>Region</th>
+                                <th>AVV/DPA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Scandora AI-Gateway <em>(selbst betrieben)</em></td>
+                                <td>Managed „AI Pass" — Routing &amp; Abrechnung von KI-Anfragen</td>
+                                <td>Dokumentbilder &amp; extrahierter Text, Prompts (nur Managed-Modus; vorübergehend)</td>
+                                <td>EU</td>
+                                <td>Von Scandora betrieben — diese Richtlinie</td>
+                            </tr>
+                            <tr>
+                                <td>OpenAI</td>
+                                <td>KI-Dokumentanalyse (Modellanbieter) — Managed AI Pass und BYOAI<sup>1</sup></td>
+                                <td>Dokumentbilder &amp; extrahierter Text, Prompts (vorübergehend)</td>
+                                <td>USA</td>
+                                <td><a href="https://openai.com/policies/data-processing-addendum" rel="noopener" target="_blank">openai.com/.../data-processing-addendum</a></td>
+                            </tr>
+                            <tr>
+                                <td>Google (Gemini API)</td>
+                                <td>KI-Dokumentanalyse (Modellanbieter) — Managed AI Pass und BYOAI<sup>1</sup></td>
+                                <td>Dokumentbilder &amp; extrahierter Text, Prompts (vorübergehend)</td>
+                                <td>USA / global</td>
+                                <td><a href="https://cloud.google.com/terms/data-processing-addendum" rel="noopener" target="_blank">cloud.google.com/terms/data-processing-addendum</a></td>
+                            </tr>
+                            <tr>
+                                <td>Google Firebase / Google Cloud</td>
+                                <td>Authentifizierung, Firestore (nur Metadaten), Cloud Functions, Crashlytics</td>
+                                <td>Konto- &amp; Profildaten, Verlaufs-Metadaten, Abo- &amp; Einwilligungsstatus, Diagnose</td>
+                                <td>Cloud Functions: EU (<code>europe-west3</code>); übrige Dienste: Google Multi-Region</td>
+                                <td><a href="https://cloud.google.com/terms/data-processing-addendum" rel="noopener" target="_blank">cloud.google.com/terms/data-processing-addendum</a></td>
+                            </tr>
+                            <tr>
+                                <td>Google Analytics 4</td>
+                                <td>Produktanalyse (einwilligungsbasiert)<sup>2</sup></td>
+                                <td>Pseudonyme Nutzungsereignisse (GA4-Standard-IP-Verarbeitung von Google in der App; IP-Anonymisierung zusätzlich auf der Website erzwungen)</td>
+                                <td>USA / global</td>
+                                <td><a href="https://cloud.google.com/terms/data-processing-addendum" rel="noopener" target="_blank">cloud.google.com/terms/data-processing-addendum</a></td>
+                            </tr>
+                            <tr>
+                                <td>Google Drive (API)</td>
+                                <td>Export in Ihr eigenes Google Drive (von Ihnen autorisiert)</td>
+                                <td>Von Ihnen gesendete exportierte Dateien &amp; Datei-Metadaten</td>
+                                <td>Google global</td>
+                                <td><a href="https://cloud.google.com/terms/data-processing-addendum" rel="noopener" target="_blank">cloud.google.com/terms/data-processing-addendum</a></td>
+                            </tr>
+                            <tr>
+                                <td>Trello (Atlassian)</td>
+                                <td>Export auf Ihr eigenes Trello-Board (von Ihnen autorisiert)</td>
+                                <td>Exportierte Karten, PDF-Anhänge, Titel, Labels, Fälligkeitsdaten</td>
+                                <td>USA / EU</td>
+                                <td><a href="https://www.atlassian.com/legal/data-processing-addendum" rel="noopener" target="_blank">atlassian.com/legal/data-processing-addendum</a></td>
+                            </tr>
+                            <tr>
+                                <td>RevenueCat</td>
+                                <td>Abo- &amp; Abrechnungsverwaltung</td>
+                                <td>Pseudonyme App-Nutzer-ID (Firebase-UID), Kauf- &amp; Berechtigungsdaten</td>
+                                <td>USA</td>
+                                <td><a href="https://www.revenuecat.com/dpa/" rel="noopener" target="_blank">revenuecat.com/dpa</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <p><small><sup>1</sup> Im <strong>BYOAI</strong>-Modus nutzen Sie Ihren eigenen API-Schlüssel und sind Verantwortlicher; der Anbieter verarbeitet unter Ihrem eigenen Konto, nicht als Unterauftragsverarbeiter von Scandora. Nur auf dem <strong>Managed-AI-Pass</strong>-Pfad ist der Anbieter Unterauftragsverarbeiter von Scandora.<br>
+                    <sup>2</sup> Google Analytics 4 ist derzeit einwilligungsbasiert und soll durch selbst gehostete, cookielose Analyse (Plausible / Umami) ersetzt werden; danach wird es aus dieser Liste entfernt.</small></p>
+
+                    <h2 id="de-roles">8. Rollen: Verantwortlicher vs. Auftragsverarbeiter</h2>
+                    <ul>
+                        <li><strong>Scandora als Verantwortlicher:</strong> Konto- &amp; Profildaten, Verlaufs-Metadaten, Abo- und Einwilligungsdaten, Diagnose. Firebase/Google Cloud und RevenueCat handeln als unsere Auftragsverarbeiter.</li>
+                        <li><strong>Scandora als Auftragsverarbeiter:</strong> der Managed-AI-Pass-Pfad — wir leiten Ihre Inhalte in Ihrem Auftrag an den Modellanbieter weiter; das Scandora-Gateway und der Modellanbieter sind Unterauftragsverarbeiter.</li>
+                        <li><strong>Sie als Verantwortlicher:</strong> BYOAI (Ihr eigener KI-Schlüssel/Konto) und Cloud-Exporte in Ihr eigenes Trello/Google Drive. Der Anbieter verarbeitet nach Ihrer Vereinbarung mit ihm.</li>
+                    </ul>
+
+                    <h2 id="de-transfers">9. Drittlandübermittlungen</h2>
+                    <p>Einige Empfänger (z. B. OpenAI, RevenueCat und bestimmte Google-Dienste) verarbeiten Daten in den USA oder anderen Ländern außerhalb der EU/des EWR. In diesen Fällen werden die Übermittlungen durch die EU-Standardvertragsklauseln und/oder die Zertifizierung des Anbieters unter dem EU-US Data Privacy Framework abgesichert, wie in den oben verlinkten AVV dargelegt. Unsere eigenen Cloud Functions für OAuth-Token laufen in der EU (<code>europe-west3</code>, Frankfurt).</p>
+
+                    <h2 id="de-consent-management">10. Einwilligungsverwaltung</h2>
+                    <p>Sie steuern die optionale Datenerhebung über unser In-App-Einwilligungssystem.</p>
+                    <ul>
+                        <li><strong>Erststart:</strong> ein Einwilligungsbanner fragt Ihre Präferenzen ab.</li>
+                        <li><strong>Granulare Steuerung:</strong> alles akzeptieren, alles ablehnen oder pro Kategorie wählen.</li>
+                        <li><strong>Jederzeit ändern:</strong> Einstellungen → Datenschutz.</li>
+                        <li><strong>Erneuerung:</strong> wir fragen nach 12 Monaten erneut.</li>
+                    </ul>
+                    <table class="cookie-table">
+                        <thead><tr><th>Datentyp</th><th>Zweck</th><th>Einwilligung nötig</th></tr></thead>
+                        <tbody>
+                            <tr><td>Analyse</td><td>Nutzungsmuster, Funktionsnutzung</td><td>Ja (Opt-in)</td></tr>
+                            <tr><td>Leistung</td><td>App-Geschwindigkeit, Reaktionsfähigkeit</td><td>Ja (Opt-in)</td></tr>
+                            <tr><td>Absturzberichte</td><td>Fehlerbehebung, Stabilität</td><td>Nein (berechtigtes Interesse)</td></tr>
+                            <tr><td>Konto- &amp; Dokumentverarbeitung</td><td>Diensterbringung</td><td>Nein (Vertrag)</td></tr>
+                        </tbody>
+                    </table>
+                    <p>Bei Google-Diensten wenden wir Google Consent Mode v2 an; eine Ablehnung deaktiviert die Analyseerfassung und Werbe-IDs.</p>
+                    <div class="highlight-box">
+                        <p><strong>Keine Werbung:</strong> Scandora nutzt keine Werbe-IDs (IDFA/GAID), zeigt keine Werbung und gibt Ihre Daten nicht an Werbetreibende weiter. Wir verfolgen Sie nicht über andere Apps oder Websites hinweg.</p>
+                    </div>
+
+                    <h2 id="de-data-storage">11. Datenspeicherung &amp; Sicherheit</h2>
+                    <p>Konto- und Metadaten werden mit Firebase (Google Cloud Platform) gespeichert, mit:</p>
+                    <ul>
+                        <li>Verschlüsselung bei der Übertragung (TLS) und im Ruhezustand (AES-256)</li>
+                        <li>Zugriffskontrollen und Überwachung</li>
+                        <li>Regelmäßigen Aktualisierungen</li>
+                    </ul>
+                    <p><strong>Wir speichern Ihre vollständigen Dokumente nicht auf unserer Infrastruktur.</strong> Wir behalten nur die Metadaten aus Abschnitt 2 sowie ein kleines, niedrig aufgelöstes Vorschaubild der ersten Seite; das vollständige Dokument bleibt über Ihren gewählten KI-Anbieter und Ihre Cloud-Ziele unter Ihrer Kontrolle.</p>
+
+                    <h3>Speicherdauer</h3>
+                    <ul>
+                        <li><strong>Konto-, Profil- &amp; Verlaufs-Metadaten (inkl. Vorschaubilder):</strong> für die Dauer Ihres Kontos gespeichert und bei dessen Löschung (Abschnitt 12) entfernt, spätestens innerhalb von 30 Tagen.</li>
+                        <li><strong>Absturzberichte:</strong> bis zu 90 Tage (Firebase-Crashlytics-Standard).</li>
+                        <li><strong>Produktanalyse:</strong> gemäß der konfigurierten Google-Analytics-4-Aufbewahrung (max. 14 Monate) und nur solange Ihre Einwilligung aktiv ist.</li>
+                        <li><strong>Abo- &amp; Abrechnungsdaten:</strong> für die gesetzliche handels-/steuerrechtliche Aufbewahrungsfrist nach deutschem Recht (§ 257 HGB / § 147 AO — in der Regel 6 bis 10 Jahre), auch nach Kontolöschung.</li>
+                        <li><strong>Dokumentinhalte für KI / Cloud-Export:</strong> werden von Scandora nicht gespeichert — sie werden nur vorübergehend verarbeitet und nach Erzeugung des Ergebnisses verworfen.</li>
+                    </ul>
+
+                    <h2 id="de-your-rights">12. Ihre Rechte</h2>
+                    <p>Nach der DSGVO haben Sie das Recht auf Auskunft, Berichtigung, Löschung („Recht auf Vergessenwerden"), Datenübertragbarkeit, Einschränkung und Widerspruch sowie das Recht, eine Einwilligung jederzeit zu widerrufen. Sie können sich zudem bei einer Aufsichtsbehörde beschweren.</p>
+                    <p>Zur Ausübung dieser Rechte wenden Sie sich an <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a>.</p>
+                    <div class="highlight-box">
+                        <p><strong>Kontolöschung:</strong> Wenn Sie Ihr Scandora-Konto löschen, entfernen wir Ihre personenbezogenen Daten dauerhaft aus unseren Systemen. Dies ist unwiderruflich. Bereits in Ihr eigenes Trello/Drive exportierte Inhalte bleiben dort unter Ihrer Kontrolle.</p>
+                    </div>
+
+                    <h2 id="de-cookies">13. Cookies (Website)</h2>
+                    <p>Unsere Website verwendet Cookies für grundlegende Funktionen und — nur mit Ihrer Einwilligung — für Analyse. Verwalten Sie Ihre Auswahl jederzeit über die Cookie-Einstellungen.</p>
+                    <h4>Unbedingt erforderlich</h4>
+                    <table class="cookie-table">
+                        <thead><tr><th>Cookie</th><th>Anbieter</th><th>Zweck</th><th>Dauer</th></tr></thead>
+                        <tbody>
+                            <tr><td><code>cc_cookie</code></td><td>Scandora</td><td>Speichert Ihre Cookie-Einwilligung</td><td>1 Jahr</td></tr>
+                            <tr><td><code>scandora-lang</code></td><td>Scandora</td><td>Merkt sich Ihre Spracheinstellung</td><td>Dauerhaft</td></tr>
+                        </tbody>
+                    </table>
+                    <h4>Analyse (optional)</h4>
+                    <table class="cookie-table">
+                        <thead><tr><th>Cookie</th><th>Anbieter</th><th>Zweck</th><th>Dauer</th></tr></thead>
+                        <tbody>
+                            <tr><td><code>_ga</code></td><td>Google Analytics</td><td>Unterscheidet einzelne Besucher</td><td>2 Jahre</td></tr>
+                            <tr><td><code>_ga_*</code></td><td>Google Analytics</td><td>Hält den Sitzungsstatus aufrecht</td><td>2 Jahre</td></tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-secondary" onclick="CookieConsent.showPreferences()" aria-label="Cookie-Einstellungen öffnen" style="margin-top:1rem;">Cookie-Einstellungen</button>
+
+                    <h2 id="de-children">14. Datenschutz für Kinder</h2>
+                    <p>Scandora ist nicht für Kinder unter 16 Jahren bestimmt. Wir erheben wissentlich keine Daten von Kindern. Wenn Sie glauben, dass dies geschehen ist, kontaktieren Sie uns umgehend.</p>
+
+                    <h2 id="de-changes">15. Änderungen dieser Richtlinie</h2>
+                    <p>Wir können diese Richtlinie aktualisieren. Wir veröffentlichen die neue Fassung hier und benachrichtigen Sie bei wesentlichen Änderungen per E-Mail oder in der App. Das Datum „Zuletzt aktualisiert" gibt die letzte Überarbeitung an.</p>
+
+                    <h2 id="de-contact">16. Kontakt</h2>
+                    <div class="contact-card">
+                        <h3>Datenschutz-Kontakt</h3>
+                        <p><strong>E-Mail:</strong> <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a></p>
+                        <p><strong>Allgemeiner Support:</strong> <a href="mailto:support@scandora.eu">support@scandora.eu</a></p>
+                        <p>Postanschrift und verantwortlicher Betreiber sind in unserem <a href="/imprint.html">Impressum</a> aufgeführt.</p>
                     </div>
                 </article>
             </div>
@@ -401,7 +679,7 @@
                 </nav>
             </div>
             <div class="footer-bottom">
-                <p><small>© 2025 Scandora. All rights reserved.</small></p>
+                <p><small>© 2026 Scandora. All rights reserved.</small></p>
             </div>
         </div>
     </footer>
@@ -411,4 +689,3 @@
     <script src="main.js" defer></script>
 </body>
 </html>
-

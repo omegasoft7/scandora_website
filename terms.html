@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <title>Terms of Service - Scandora | Usage Terms & Conditions</title>
-    <meta name="description" content="Scandora Terms of Service. Understand your rights and responsibilities when using our AI-powered document scanning application.">
+    <meta name="description" content="Scandora Terms of Service (AGB). Your rights and responsibilities when using our AI-powered document scanning application.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://scandora.eu/terms">
-    
+
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://scandora.eu/terms">
     <meta property="og:title" content="Terms of Service - Scandora">
     <meta property="og:description" content="Terms of Service for Scandora document scanning application.">
     <meta property="og:site_name" content="Scandora">
-    
+
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    
+
     <!-- Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,13 +55,13 @@
             <div class="container nav-container">
                 <a href="/" class="logo" aria-label="Scandora Home"><span class="logo-icon" aria-hidden="true">◈</span><span class="logo-text">Scandora</span></a>
                 <div class="nav-links" role="menubar">
-                    <a href="/#features" role="menuitem">Features</a>
-                    <a href="/#how-it-works" role="menuitem">How It Works</a>
-                    <a href="/#pricing" role="menuitem">Pricing</a>
+                    <a href="/#features" role="menuitem" data-i18n="nav.features">Features</a>
+                    <a href="/#how-it-works" role="menuitem" data-i18n="nav.howItWorks">How It Works</a>
+                    <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
                 </div>
                 <div class="nav-actions">
                     <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
-                    <a href="/#download" class="btn btn-primary btn-sm" role="button">Download</a>
+                    <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
             </div>
@@ -73,177 +73,256 @@
             <div class="legal-container">
                 <a href="/" class="back-home">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-                    Back to Home
+                    <span data-lang="en">Back to Home</span><span data-lang="de" hidden>Zur Startseite</span>
                 </a>
-                
+
                 <header class="legal-header">
-                    <span class="legal-badge">Terms</span>
-                    <h1 id="terms-title" class="legal-title">Terms of Service</h1>
-                    <p class="legal-meta">Last updated: <time datetime="2024-12-15">December 15, 2024</time></p>
+                    <span class="legal-badge" data-lang="en">Terms</span><span class="legal-badge" data-lang="de" hidden>AGB</span>
+                    <h1 id="terms-title" class="legal-title"><span data-lang="en">Terms of Service</span><span data-lang="de" hidden>Allgemeine Geschäftsbedingungen</span></h1>
+                    <p class="legal-meta"><span data-lang="en">Last updated: <time datetime="2026-06-23">June 23, 2026</time></span><span data-lang="de" hidden>Zuletzt aktualisiert: <time datetime="2026-06-23">23. Juni 2026</time></span></p>
                 </header>
 
-                <article class="legal-content">
+                <!-- ================= DEUTSCH (maßgeblich) ================= -->
+                <article class="legal-content" data-lang="de" hidden>
                     <div class="highlight-box">
-                        <p><strong>Summary:</strong> By using Scandora, you agree to these terms. Use our app responsibly, respect others' rights, and enjoy intelligent document scanning!</p>
+                        <p><strong>Kurzfassung:</strong> Mit der Nutzung von Scandora stimmen Sie diesen AGB zu. Verbraucher haben ein 14-tägiges Widerrufsrecht (Abschnitt 5). Abonnements werden über den App Store bzw. Google Play abgerechnet und dort verwaltet. <strong>Maßgeblich ist die deutsche Fassung dieser AGB.</strong></p>
+                    </div>
+
+                    <nav class="toc">
+                        <h4>Inhaltsverzeichnis</h4>
+                        <ol>
+                            <li><a href="#de-geltung">Geltungsbereich &amp; Vertragspartner</a></li>
+                            <li><a href="#de-leistung">Leistungsbeschreibung</a></li>
+                            <li><a href="#de-konto">Vertragsschluss &amp; Konto</a></li>
+                            <li><a href="#de-abo">Abonnements &amp; Zahlung</a></li>
+                            <li><a href="#de-widerruf">Widerrufsrecht für Verbraucher</a></li>
+                            <li><a href="#de-byoai">Eigener KI-Schlüssel (BYOAI)</a></li>
+                            <li><a href="#de-nutzung">Zulässige Nutzung</a></li>
+                            <li><a href="#de-inhalte">Ihre Inhalte</a></li>
+                            <li><a href="#de-drittanbieter">Drittanbieter-Integrationen</a></li>
+                            <li><a href="#de-ip">Geistiges Eigentum</a></li>
+                            <li><a href="#de-haftung">Gewährleistung &amp; Haftung</a></li>
+                            <li><a href="#de-kuendigung">Laufzeit &amp; Kündigung</a></li>
+                            <li><a href="#de-aenderungen">Änderungen der AGB</a></li>
+                            <li><a href="#de-streit">Verbraucherstreitbeilegung</a></li>
+                            <li><a href="#de-recht">Anwendbares Recht &amp; Gerichtsstand</a></li>
+                            <li><a href="#de-kontakt">Kontakt</a></li>
+                        </ol>
+                    </nav>
+
+                    <h2 id="de-geltung">1. Geltungsbereich &amp; Vertragspartner</h2>
+                    <p>Diese Allgemeinen Geschäftsbedingungen („AGB") gelten für die Nutzung der Scandora-Anwendung und -Website (der „Dienst"). Vertragspartner ist der im <a href="/imprint.html">Impressum</a> genannte Betreiber. Mit der Nutzung des Dienstes erklären Sie sich mit diesen AGB einverstanden. Sie müssen mindestens 16 Jahre alt sein. Für kostenpflichtige Abonnements müssen Sie unbeschränkt geschäftsfähig (volljährig) sein oder die Einwilligung Ihres gesetzlichen Vertreters haben.</p>
+
+                    <h2 id="de-leistung">2. Leistungsbeschreibung</h2>
+                    <p>Scandora ist eine KI-gestützte Anwendung zum Scannen von Dokumenten, mit der Sie:</p>
+                    <ul>
+                        <li>Dokumente mit der Gerätekamera oder verbundenen Scannern erfassen,</li>
+                        <li>Dokumente per KI auswerten und Informationen extrahieren,</li>
+                        <li>Dokumente mit Ihren eigenen Cloud-Diensten (Trello, Google Drive) synchronisieren,</li>
+                        <li>Ihr Dokumentenarchiv organisieren und durchsuchen können.</li>
+                    </ul>
+                    <p>Scandora stellt keinen Cloud-Speicher bereit. Dokumentinhalte werden nur an die von Ihnen gewählten Ziele übertragen (siehe <a href="/privacy.html">Datenschutzerklärung</a>).</p>
+
+                    <h2 id="de-konto">3. Vertragsschluss &amp; Konto</h2>
+                    <p>Für bestimmte Funktionen ist ein Konto erforderlich. Sie verpflichten sich, zutreffende Angaben zu machen, Ihre Zugangsdaten vertraulich zu halten und uns unbefugte Zugriffe unverzüglich zu melden. Ein kostenpflichtiges Abonnement kommt mit Abschluss des Kaufvorgangs im jeweiligen App Store zustande.</p>
+
+                    <h2 id="de-abo">4. Abonnements &amp; Zahlung</h2>
+                    <h3>Kostenloser Tarif</h3>
+                    <p>Der kostenlose Tarif umfasst Grundfunktionen mit Nutzungsgrenzen; es fällt keine Zahlung an.</p>
+                    <h3>Kostenpflichtige Tarife</h3>
+                    <p>Kostenpflichtige Abonnements (Pro, Business) werden monatlich oder jährlich abgerechnet. <strong>Die Zahlungsabwicklung erfolgt ausschließlich über die Plattform-Stores:</strong></p>
+                    <ul>
+                        <li>Apple App Store (iOS/macOS)</li>
+                        <li>Google Play Store (Android)</li>
+                    </ul>
+                    <p>Die Verwaltung der Berechtigungen und des Abo-Status erfolgt technisch über unseren Dienstleister <strong>RevenueCat</strong>; die eigentliche Zahlung und Rechnungsstellung übernimmt der jeweilige Store.</p>
+                    <h3>Verlängerung &amp; Kündigung</h3>
+                    <ul>
+                        <li>Abonnements verlängern sich automatisch um die jeweils gewählte Laufzeit, sofern sie nicht mindestens 24 Stunden vor Ablauf des laufenden Zeitraums gekündigt werden.</li>
+                        <li>Die <strong>Verwaltung und Kündigung erfolgt über Ihr App-Store- bzw. Google-Play-Konto</strong> (Einstellungen → Abonnements). Eine Kündigung ist jederzeit direkt über das jeweilige Store-Konto möglich.</li>
+                        <li>Bereits gezahlte Entgelte für laufende Abrechnungszeiträume werden vorbehaltlich der Store-Richtlinien und Ihres Widerrufsrechts (Abschnitt 5) nicht anteilig erstattet.</li>
+                        <li>Preis- oder Leistungsänderungen kündigen wir rechtzeitig an; sie gelten nicht rückwirkend.</li>
+                    </ul>
+
+                    <h2 id="de-widerruf">5. Widerrufsrecht für Verbraucher</h2>
+                    <p>Verbrauchern steht ein gesetzliches Widerrufsrecht zu.</p>
+                    <h3>Widerrufsbelehrung</h3>
+                    <p><strong>Widerrufsrecht.</strong> Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsschlusses.</p>
+                    <p>Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (Kontaktdaten siehe <a href="/imprint.html">Impressum</a>, E-Mail <a href="mailto:legal@scandora.eu">legal@scandora.eu</a>) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief oder eine E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das untenstehende Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist. Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.</p>
+                    <p><strong>Folgen des Widerrufs.</strong> Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf bei uns eingegangen ist. Erfolgte die Zahlung über einen App Store, kann die Rückabwicklung über den jeweiligen Store erfolgen.</p>
+                    <p><strong>Vorzeitiges Erlöschen des Widerrufsrechts.</strong> Bei Verträgen über digitale Inhalte/Dienstleistungen erlischt Ihr Widerrufsrecht vorzeitig, wenn wir mit der Ausführung begonnen haben, nachdem Sie (1) ausdrücklich zugestimmt haben, dass wir vor Ablauf der Widerrufsfrist mit der Ausführung beginnen, und (2) Ihre Kenntnis davon bestätigt haben, dass Sie durch diese Zustimmung Ihr Widerrufsrecht verlieren (§ 356 Abs. 5 BGB). <strong>Solange wir diese ausdrückliche Zustimmung und Bestätigung nicht im Bestellvorgang einholen, bleibt Ihr Widerrufsrecht für die vollen 14 Tage bestehen.</strong></p>
+                    <h3>Muster-Widerrufsformular</h3>
+                    <p>(Wenn Sie den Vertrag widerrufen wollen, füllen Sie bitte dieses Formular aus und senden Sie es zurück.)</p>
+                    <p style="border:1px solid var(--border, #ddd); padding:1rem; border-radius:8px;">
+                        — An: [Betreiber gemäß Impressum], E-Mail: legal@scandora.eu<br>
+                        — Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über die Erbringung der folgenden Dienstleistung: Scandora-Abonnement<br>
+                        — Bestellt am (*) / erhalten am (*): __________<br>
+                        — Name des/der Verbraucher(s): __________<br>
+                        — Anschrift des/der Verbraucher(s): __________<br>
+                        — Datum: __________<br>
+                        (*) Unzutreffendes streichen.
+                    </p>
+
+                    <h2 id="de-byoai">6. Eigener KI-Schlüssel (BYOAI)</h2>
+                    <p>Sie können eigene KI-API-Schlüssel (OpenAI, Google Gemini) verwenden. Sie sind verantwortlich für die damit verbundenen Kosten, die Einhaltung der Bedingungen des KI-Anbieters und die Sicherung Ihrer Schlüssel.</p>
+
+                    <h2 id="de-nutzung">7. Zulässige Nutzung</h2>
+                    <p>Sie verpflichten sich, Scandora nicht zu nutzen, um Gesetze zu verletzen, Rechte Dritter (insb. Urheber- und Persönlichkeitsrechte) zu verletzen, Schadsoftware zu verbreiten, sich unbefugten Zugang zu unseren Systemen zu verschaffen, andere zu belästigen, den Dienst zurückzuentwickeln oder Nutzungsgrenzen bzw. Sicherheitsmaßnahmen zu umgehen.</p>
+
+                    <h2 id="de-inhalte">8. Ihre Inhalte</h2>
+                    <p><strong>Eigentum:</strong> Sie behalten alle Rechte an den von Ihnen gescannten Dokumenten und Inhalten.</p>
+                    <p><strong>Verantwortung:</strong> Sie sind allein verantwortlich für die Rechtmäßigkeit der gescannten Dokumente, das Recht zu deren Verarbeitung sowie für Sicherungskopien.</p>
+                    <p><strong>Lizenz:</strong> Mit Nutzung der KI-Funktionen räumen Sie uns eine begrenzte Lizenz ein, Ihre Dokumente ausschließlich zum Zweck der Diensterbringung zu verarbeiten.</p>
+
+                    <h2 id="de-drittanbieter">9. Drittanbieter-Integrationen</h2>
+                    <p>Scandora integriert Dienste Dritter (Trello, Google Drive, KI-Anbieter, App Stores, RevenueCat). Deren Nutzung unterliegt den jeweiligen Bedingungen und Datenschutzerklärungen. Für Verfügbarkeit, Funktion und Sicherheit der Dienste Dritter übernehmen wir keine Verantwortung.</p>
+
+                    <h2 id="de-ip">10. Geistiges Eigentum</h2>
+                    <p>Scandora und seine Inhalte, Funktionen und Gestaltung sind durch Urheber-, Marken- und sonstige Schutzrechte geschützt. Ohne ausdrückliche schriftliche Zustimmung dürfen Sie keinen Teil des Dienstes kopieren, verändern, verbreiten, verkaufen oder vermieten.</p>
+
+                    <h2 id="de-haftung">11. Gewährleistung &amp; Haftung</h2>
+                    <p>Der Dienst wird mit der gebotenen Sorgfalt bereitgestellt. KI-gestützt extrahierte Daten können fehlerhaft sein und sind von Ihnen zu prüfen.</p>
+                    <p>Wir haften unbeschränkt bei Vorsatz und grober Fahrlässigkeit sowie bei Verletzung des Lebens, des Körpers oder der Gesundheit. Bei einfacher Fahrlässigkeit haften wir nur bei Verletzung einer wesentlichen Vertragspflicht (Kardinalpflicht) und der Höhe nach begrenzt auf den vertragstypischen, vorhersehbaren Schaden. Im Übrigen ist die Haftung ausgeschlossen. Die Haftung nach dem Produkthaftungsgesetz und zwingende gesetzliche Verbraucherrechte bleiben unberührt.</p>
+
+                    <h2 id="de-kuendigung">12. Laufzeit &amp; Kündigung</h2>
+                    <p>Sie können Ihr Konto jederzeit in den App-Einstellungen löschen; kostenpflichtige Abonnements enden zum Ende des laufenden Abrechnungszeitraums (Verwaltung über den Store, siehe Abschnitt 4). Wir können den Vertrag aus wichtigem Grund kündigen oder das Konto sperren, insbesondere bei Verstößen gegen diese AGB. Bei Kontolöschung werden Ihre personenbezogenen Daten gemäß <a href="/privacy.html">Datenschutzerklärung</a> entfernt; in Ihre eigenen Cloud-Dienste exportierte Dokumente bleiben dort erhalten.</p>
+
+                    <h2 id="de-aenderungen">13. Änderungen der AGB</h2>
+                    <p>Wir können diese AGB anpassen, soweit dies aus triftigem Grund erforderlich ist (z. B. geänderte Rechtslage, Rechtsprechung oder technische Rahmenbedingungen) und Sie dadurch nicht unangemessen benachteiligt werden. Über solche Änderungen informieren wir Sie mindestens sechs Wochen vor Inkrafttreten in Textform (z. B. per E-Mail) oder in der App. Ihre Zustimmung gilt als erteilt, wenn Sie nicht innerhalb von sechs Wochen ab Zugang der Mitteilung widersprechen; auf die Bedeutung Ihres Schweigens und Ihr Widerspruchsrecht weisen wir in der Mitteilung gesondert hin. Widersprechen Sie, können Sie den Vertrag bis zum Inkrafttreten der Änderung außerordentlich und kostenfrei kündigen. Änderungen des Preises oder des wesentlichen Leistungsumfangs (Hauptleistungspflichten) werden nicht im Wege dieser Zustimmungsfiktion vereinbart, sondern bedürfen Ihrer ausdrücklichen Zustimmung.</p>
+
+                    <h2 id="de-streit">14. Verbraucherstreitbeilegung</h2>
+                    <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen (§ 36 VSBG).</p>
+                    <!-- Intern: Die EU-Online-Streitbeilegungs-Plattform wurde 2025 eingestellt; die Verlinkungspflicht nach Art. 14 ODR-VO ist damit entfallen. Kein Verbraucher-Link mehr erforderlich (kein offener Punkt). -->
+
+                    <h2 id="de-recht">15. Anwendbares Recht &amp; Gerichtsstand</h2>
+                    <p>Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts. Sind Sie Verbraucher, bleiben zwingende Verbraucherschutzvorschriften des Staates Ihres gewöhnlichen Aufenthalts unberührt (Art. 6 Rom-I-VO). Gerichtsstand für Kaufleute ist, soweit zulässig, der Sitz des Betreibers.</p>
+
+                    <h2 id="de-kontakt">16. Kontakt</h2>
+                    <div class="contact-card">
+                        <h3>Rechtliche Anfragen</h3>
+                        <p><strong>E-Mail:</strong> <a href="mailto:legal@scandora.eu">legal@scandora.eu</a></p>
+                        <p><strong>Support:</strong> <a href="mailto:support@scandora.eu">support@scandora.eu</a></p>
+                        <p>Anbieterangaben im <a href="/imprint.html">Impressum</a>.</p>
+                    </div>
+                    <p><small>Maßgeblich ist die deutsche Fassung dieser AGB.</small></p>
+                </article>
+
+                <!-- ================= ENGLISH (courtesy translation) ================= -->
+                <article class="legal-content" data-lang="en">
+                    <div class="highlight-box">
+                        <p><strong>Summary:</strong> By using Scandora you agree to these Terms. Consumers have a 14-day right of withdrawal (section 5). Subscriptions are billed and managed through the Apple App Store or Google Play. <strong>The legally binding version is the German one.</strong></p>
                     </div>
 
                     <nav class="toc">
                         <h4>Table of Contents</h4>
                         <ol>
-                            <li><a href="#acceptance">Acceptance of Terms</a></li>
+                            <li><a href="#acceptance">Scope &amp; Contracting Party</a></li>
                             <li><a href="#description">Service Description</a></li>
-                            <li><a href="#accounts">User Accounts</a></li>
-                            <li><a href="#subscriptions">Subscriptions & Payments</a></li>
+                            <li><a href="#accounts">Contract Formation &amp; Accounts</a></li>
+                            <li><a href="#subscriptions">Subscriptions &amp; Payments</a></li>
+                            <li><a href="#withdrawal">Right of Withdrawal (Consumers)</a></li>
+                            <li><a href="#byoai">Bring Your Own AI (BYOAI)</a></li>
                             <li><a href="#usage">Acceptable Use</a></li>
                             <li><a href="#content">Your Content</a></li>
                             <li><a href="#integrations">Third-Party Integrations</a></li>
                             <li><a href="#ip">Intellectual Property</a></li>
-                            <li><a href="#disclaimers">Disclaimers</a></li>
-                            <li><a href="#liability">Limitation of Liability</a></li>
-                            <li><a href="#termination">Termination</a></li>
+                            <li><a href="#liability">Warranty &amp; Limitation of Liability</a></li>
+                            <li><a href="#termination">Term &amp; Termination</a></li>
                             <li><a href="#changes">Changes to Terms</a></li>
-                            <li><a href="#governing">Governing Law</a></li>
+                            <li><a href="#dispute">Consumer Dispute Resolution</a></li>
+                            <li><a href="#governing">Governing Law &amp; Jurisdiction</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ol>
                     </nav>
 
-                    <h2 id="acceptance">1. Acceptance of Terms</h2>
-                    <p>By accessing or using Scandora (the "Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the Service.</p>
-                    <p>These Terms constitute a legally binding agreement between you and Scandora. You must be at least 16 years old to use this Service.</p>
+                    <h2 id="acceptance">1. Scope &amp; Contracting Party</h2>
+                    <p>These Terms of Service ("Terms") govern your use of the Scandora application and website (the "Service"). Your contracting party is the operator named in the <a href="/imprint.html">Imprint</a>. By using the Service you agree to these Terms. You must be at least 16 years old. For paid subscriptions you must have full legal capacity (be of full age) or have your legal guardian's consent.</p>
 
                     <h2 id="description">2. Service Description</h2>
-                    <p>Scandora is an AI-powered document scanning application that enables you to:</p>
-                    <ul>
-                        <li>Scan documents using your device's camera or connected scanners</li>
-                        <li>Process documents with AI to extract information automatically</li>
-                        <li>Sync documents to your cloud services (Trello, Google Drive, etc.)</li>
-                        <li>Organize and search your document archive</li>
-                    </ul>
-                    <p>Scandora does not provide cloud storage. You connect your own cloud services to store documents.</p>
+                    <p>Scandora is an AI-powered document scanning application that lets you scan documents, process them with AI to extract information, sync them to your own cloud services (Trello, Google Drive), and organize and search your archive. Scandora does not provide cloud storage; document content is only sent to destinations you choose (see <a href="/privacy.html">Privacy Policy</a>).</p>
 
-                    <h2 id="accounts">3. User Accounts</h2>
-                    <h3>Account Creation</h3>
-                    <p>To use certain features, you must create an account. You agree to:</p>
-                    <ul>
-                        <li>Provide accurate and complete registration information</li>
-                        <li>Keep your password secure and confidential</li>
-                        <li>Notify us immediately of any unauthorized account access</li>
-                        <li>Accept responsibility for all activities under your account</li>
-                    </ul>
+                    <h2 id="accounts">3. Contract Formation &amp; Accounts</h2>
+                    <p>Certain features require an account. You agree to provide accurate information, keep your credentials confidential, and notify us of unauthorized access. A paid subscription is concluded upon completing the purchase in the relevant app store.</p>
 
-                    <h3>Account Deletion</h3>
-                    <p>You may delete your account at any time through the app settings. Upon deletion:</p>
-                    <ul>
-                        <li>All your personal data will be permanently erased from our systems</li>
-                        <li>Active subscriptions will be cancelled at the end of the billing period</li>
-                        <li>Documents stored in your connected cloud services will remain there</li>
-                    </ul>
-
-                    <h2 id="subscriptions">4. Subscriptions & Payments</h2>
-                    <h3>Free Plan</h3>
-                    <p>Our free tier includes basic scanning features with usage limits. No payment is required.</p>
-
-                    <h3>Paid Plans</h3>
-                    <p>Paid subscriptions (Pro, Business) are billed monthly or annually through:</p>
+                    <h2 id="subscriptions">4. Subscriptions &amp; Payments</h2>
+                    <h3>Free plan</h3>
+                    <p>The free tier includes basic features with usage limits; no payment is required.</p>
+                    <h3>Paid plans</h3>
+                    <p>Paid subscriptions (Pro, Business) are billed monthly or annually. <strong>Payment is processed exclusively through the platform stores:</strong></p>
                     <ul>
                         <li>Apple App Store (iOS/macOS)</li>
                         <li>Google Play Store (Android)</li>
                     </ul>
-
-                    <h3>Subscription Terms</h3>
+                    <p>Entitlement and subscription-status management is handled technically via our provider <strong>RevenueCat</strong>; the actual payment and invoicing are handled by the respective store.</p>
+                    <h3>Renewal &amp; cancellation</h3>
                     <ul>
-                        <li>Subscriptions auto-renew unless cancelled at least 24 hours before the renewal date</li>
-                        <li>Manage subscriptions through your App Store or Play Store account</li>
-                        <li>No refunds for partial subscription periods (subject to app store policies)</li>
-                        <li>Plan features may change; we'll notify you of material changes</li>
+                        <li>Subscriptions auto-renew for the chosen period unless cancelled at least 24 hours before the end of the current period.</li>
+                        <li><strong>Management and cancellation are done through your App Store or Google Play account</strong> (Settings → Subscriptions). Cancellation is performed at any time directly through your respective store account.</li>
+                        <li>Fees already paid for current billing periods are, subject to store policies and your right of withdrawal (section 5), not refunded pro-rata.</li>
+                        <li>We announce price or feature changes in good time; they do not apply retroactively.</li>
                     </ul>
 
-                    <h3>Bring Your Own AI (BYOAI)</h3>
-                    <p>You may use your own AI API keys (OpenAI, Google Gemini). You are responsible for:</p>
-                    <ul>
-                        <li>All costs associated with your API usage</li>
-                        <li>Complying with the AI provider's terms of service</li>
-                        <li>Securing your API keys</li>
-                    </ul>
+                    <h2 id="withdrawal">5. Right of Withdrawal (Consumers)</h2>
+                    <p>Consumers have a statutory right of withdrawal.</p>
+                    <h3>Withdrawal instructions</h3>
+                    <p><strong>Right of withdrawal.</strong> You have the right to withdraw from this contract within fourteen days without giving any reason. The withdrawal period is fourteen days from the day of conclusion of the contract.</p>
+                    <p>To exercise it, you must inform us (contact details in the <a href="/imprint.html">Imprint</a>; email <a href="mailto:legal@scandora.eu">legal@scandora.eu</a>) by a clear statement (e.g. a letter sent by post or an email) of your decision to withdraw. You may use the model withdrawal form below, but it is not mandatory. To meet the deadline, it is sufficient to send your communication before the period expires.</p>
+                    <p><strong>Consequences of withdrawal.</strong> If you withdraw, we will reimburse all payments received from you without undue delay and at the latest within fourteen days from the day we receive your notice. Where payment was made via an app store, the refund may be processed through that store.</p>
+                    <p><strong>Early expiry of the right of withdrawal.</strong> For contracts about digital content/services, your right of withdrawal expires early if we have begun performance after you (1) expressly consented to us beginning performance before the withdrawal period expires and (2) confirmed your awareness that you thereby lose your right of withdrawal (§ 356 (5) BGB). <strong>Until we obtain this express consent and acknowledgment during the order process, your full 14-day right of withdrawal remains unaffected.</strong></p>
+                    <h3>Model withdrawal form</h3>
+                    <p>(If you want to withdraw from the contract, please complete and return this form.)</p>
+                    <p style="border:1px solid var(--border, #ddd); padding:1rem; border-radius:8px;">
+                        — To: [operator per the Imprint], email: legal@scandora.eu<br>
+                        — I/we (*) hereby withdraw from the contract concluded by me/us (*) for the supply of the following service: Scandora subscription<br>
+                        — Ordered on (*) / received on (*): __________<br>
+                        — Name of consumer(s): __________<br>
+                        — Address of consumer(s): __________<br>
+                        — Date: __________<br>
+                        (*) Delete as appropriate.
+                    </p>
 
-                    <h2 id="usage">5. Acceptable Use</h2>
-                    <p>You agree NOT to use Scandora to:</p>
-                    <ul>
-                        <li>Violate any laws or regulations</li>
-                        <li>Infringe on intellectual property or privacy rights of others</li>
-                        <li>Upload malicious content, viruses, or harmful code</li>
-                        <li>Attempt to gain unauthorized access to our systems</li>
-                        <li>Abuse, harass, or harm other users</li>
-                        <li>Reverse engineer or attempt to extract our source code</li>
-                        <li>Use automated systems to access the Service without permission</li>
-                        <li>Circumvent usage limits or security measures</li>
-                    </ul>
+                    <h2 id="byoai">6. Bring Your Own AI (BYOAI)</h2>
+                    <p>You may use your own AI API keys (OpenAI, Google Gemini). You are responsible for the associated costs, compliance with the AI provider's terms, and securing your keys.</p>
 
-                    <h2 id="content">6. Your Content</h2>
-                    <p><strong>Ownership:</strong> You retain all rights to the documents and content you scan with Scandora.</p>
-                    <p><strong>Responsibility:</strong> You are solely responsible for:</p>
-                    <ul>
-                        <li>The legality of documents you scan</li>
-                        <li>Having the right to scan and process those documents</li>
-                        <li>Backups of your important documents</li>
-                    </ul>
-                    <p><strong>License:</strong> By using our AI processing features, you grant us a limited license to process your documents solely for the purpose of providing the Service.</p>
+                    <h2 id="usage">7. Acceptable Use</h2>
+                    <p>You agree not to use Scandora to break laws, infringe third-party rights (especially copyright and personality rights), distribute malware, gain unauthorized access to our systems, harass others, reverse-engineer the Service, or circumvent usage limits or security measures.</p>
 
-                    <h2 id="integrations">7. Third-Party Integrations</h2>
-                    <p>Scandora integrates with third-party services (Trello, Google Drive, AI providers). Your use of these integrations is subject to their respective terms and privacy policies.</p>
-                    <p>We are not responsible for the availability, functionality, or security of third-party services.</p>
+                    <h2 id="content">8. Your Content</h2>
+                    <p><strong>Ownership:</strong> you retain all rights to the documents and content you scan.</p>
+                    <p><strong>Responsibility:</strong> you are solely responsible for the legality of the documents, your right to process them, and backups.</p>
+                    <p><strong>License:</strong> by using the AI features you grant us a limited license to process your documents solely to provide the Service.</p>
 
-                    <h2 id="ip">8. Intellectual Property</h2>
-                    <p>Scandora and its original content, features, and functionality are owned by Scandora and are protected by international copyright, trademark, and other intellectual property laws.</p>
-                    <p>You may not copy, modify, distribute, sell, or lease any part of our Service without explicit written permission.</p>
+                    <h2 id="integrations">9. Third-Party Integrations</h2>
+                    <p>Scandora integrates third-party services (Trello, Google Drive, AI providers, the app stores, RevenueCat). Your use of them is subject to their terms and privacy policies. We are not responsible for the availability, functionality, or security of third-party services.</p>
 
-                    <h2 id="disclaimers">9. Disclaimers</h2>
-                    <p>THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
-                    <ul>
-                        <li>Merchantability or fitness for a particular purpose</li>
-                        <li>Non-infringement</li>
-                        <li>Accuracy of AI-extracted data</li>
-                        <li>Uninterrupted or error-free operation</li>
-                    </ul>
-                    <p>AI-processed data should be reviewed for accuracy. Scandora is not liable for errors in AI extraction.</p>
+                    <h2 id="ip">10. Intellectual Property</h2>
+                    <p>Scandora and its content, features, and design are protected by copyright, trademark, and other laws. You may not copy, modify, distribute, sell, or lease any part of the Service without our express written consent.</p>
 
-                    <h2 id="liability">10. Limitation of Liability</h2>
-                    <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, SCANDORA SHALL NOT BE LIABLE FOR:</p>
-                    <ul>
-                        <li>Any indirect, incidental, special, consequential, or punitive damages</li>
-                        <li>Loss of profits, data, or business opportunities</li>
-                        <li>Service interruptions or data loss</li>
-                    </ul>
-                    <p>Our total liability shall not exceed the amount you paid for the Service in the 12 months preceding the claim.</p>
+                    <h2 id="liability">11. Warranty &amp; Limitation of Liability</h2>
+                    <p>The Service is provided with due care. AI-extracted data may be inaccurate and must be reviewed by you.</p>
+                    <p>We are liable without limitation for intent and gross negligence and for injury to life, body, or health. For slight negligence we are liable only for breach of a material contractual obligation (cardinal duty) and limited to the foreseeable damage typical for the contract. Otherwise liability is excluded. Liability under the Product Liability Act and mandatory statutory consumer rights remain unaffected.</p>
 
-                    <h2 id="termination">11. Termination</h2>
-                    <p>We reserve the right to suspend or terminate your account if you violate these Terms. Upon termination:</p>
-                    <ul>
-                        <li>Your right to access the Service immediately ceases</li>
-                        <li>We may delete your account data</li>
-                        <li>Provisions that should survive termination will remain in effect</li>
-                    </ul>
+                    <h2 id="termination">12. Term &amp; Termination</h2>
+                    <p>You can delete your account anytime in the app settings; paid subscriptions end at the close of the current billing period (managed via the store, see section 4). We may terminate for good cause or suspend the account, in particular for breaches of these Terms. On account deletion your personal data is removed per the <a href="/privacy.html">Privacy Policy</a>; documents exported to your own cloud services remain there.</p>
 
-                    <h2 id="changes">12. Changes to Terms</h2>
-                    <p>We may modify these Terms at any time. Material changes will be communicated via:</p>
-                    <ul>
-                        <li>Email notification to your registered address</li>
-                        <li>In-app notification</li>
-                        <li>Update to this page</li>
-                    </ul>
-                    <p>Continued use after changes constitutes acceptance of the new Terms.</p>
+                    <h2 id="changes">13. Changes to Terms</h2>
+                    <p>We may amend these Terms where there is a valid reason (e.g. changes in the law, case-law, or technical conditions) and provided this does not unreasonably disadvantage you. We will notify you of such changes at least six weeks before they take effect, in text form (e.g. by email) or in-app. Your consent is deemed given if you do not object within six weeks of receiving the notice; we will separately point out the meaning of your silence and your right to object. If you object, you may terminate the contract without notice and free of charge before the change takes effect. Changes to the price or the essential scope of services (principal obligations) are not agreed by this deemed-consent mechanism and require your express consent.</p>
 
-                    <h2 id="governing">13. Governing Law</h2>
-                    <p>These Terms are governed by the laws of Germany. Any disputes shall be resolved in the courts of Germany, without regard to conflict of law provisions.</p>
+                    <h2 id="dispute">14. Consumer Dispute Resolution</h2>
+                    <p>We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board (§ 36 VSBG).</p>
+                    <!-- Internal: the EU Commission's ODR platform was discontinued in 2025; the Art. 14 ODR-Regulation linking duty lapsed with it. No consumer-facing ODR link required (settled, not an open item). -->
 
-                    <h2 id="contact">14. Contact</h2>
-                    <p>For questions about these Terms, please contact us:</p>
+                    <h2 id="governing">15. Governing Law &amp; Jurisdiction</h2>
+                    <p>The law of the Federal Republic of Germany applies, excluding the UN Convention on Contracts for the International Sale of Goods. If you are a consumer, mandatory consumer-protection provisions of the country of your habitual residence remain unaffected (Art. 6 Rome I). For merchants, the place of jurisdiction is, to the extent permitted, the operator's registered seat.</p>
 
+                    <h2 id="contact">16. Contact</h2>
                     <div class="contact-card">
                         <h3>Legal Inquiries</h3>
                         <p><strong>Email:</strong> <a href="mailto:legal@scandora.eu">legal@scandora.eu</a></p>
-                        <p><strong>General Support:</strong> <a href="mailto:support@scandora.eu">support@scandora.eu</a></p>
+                        <p><strong>Support:</strong> <a href="mailto:support@scandora.eu">support@scandora.eu</a></p>
+                        <p>Provider details in the <a href="/imprint.html">Imprint</a>.</p>
                     </div>
+                    <p><small>The German version of these Terms is the legally binding one.</small></p>
                 </article>
             </div>
         </section>
@@ -277,7 +356,7 @@
                 </nav>
             </div>
             <div class="footer-bottom">
-                <p><small>© 2025 Scandora. All rights reserved.</small></p>
+                <p><small>© 2026 Scandora. All rights reserved.</small></p>
             </div>
         </div>
     </footer>
@@ -287,4 +366,3 @@
     <script src="main.js" defer></script>
 </body>
 </html>
-
