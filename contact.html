@@ -20,11 +20,9 @@
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     
-    <!-- Fonts & Styles -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts & Styles (Inter self-hosted — no third-party font requests, DSGVO-konform) -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/inter.css">
     <link rel="stylesheet" href="styles.css">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
@@ -45,8 +43,8 @@
         gtag('config', 'G-7EY08N1VS0', { 'anonymize_ip': true });
     </script>
 
-    <!-- Cookie Consent -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+    <!-- Cookie Consent (self-hosted) -->
+    <link rel="stylesheet" href="assets/vendor/cookieconsent.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -133,6 +131,10 @@
                                     <svg class="spinner" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
                                 </span>
                             </button>
+                            <p class="form-privacy-note"><small>
+                                <span data-lang="en">We process the name, email address and message you submit only to handle your enquiry. Our form is operated by Formspree (USA) acting as our processor; submitting it transfers this data to the USA. Legal basis: Art. 6(1)(b)/(f) GDPR. See our <a href="/privacy.html">Privacy Policy</a>.</span>
+                                <span data-lang="de" hidden>Wir verarbeiten den von Ihnen übermittelten Namen, Ihre E-Mail-Adresse und Ihre Nachricht ausschließlich zur Bearbeitung Ihrer Anfrage. Unser Formular wird von Formspree (USA) als Auftragsverarbeiter betrieben; mit dem Absenden werden diese Daten in die USA übermittelt. Rechtsgrundlage: Art. 6 Abs. 1 lit. b/f DSGVO. Siehe unsere <a href="/privacy.html">Datenschutzerklärung</a>.</span>
+                            </small></p>
                         </form>
                     </div>
 
@@ -201,6 +203,7 @@
                         <h4 data-i18n="footer.legal">Legal</h4>
                         <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
                         <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
                         <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
                     </div>
                     <div class="footer-col">
@@ -210,13 +213,13 @@
                 </nav>
             </div>
             <div class="footer-bottom">
-                <p><small>© 2025 Scandora. <span data-i18n="footer.rights">All rights reserved.</span></small></p>
+                <p><small>© 2026 Scandora. <span data-i18n="footer.rights">All rights reserved.</span></small></p>
             </div>
         </div>
     </footer>
 
     <script src="translations.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js" defer></script>
+    <script src="assets/vendor/cookieconsent.umd.js" defer></script>
     <script src="main.js" defer></script>
 </body>
 </html>

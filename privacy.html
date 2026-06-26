@@ -20,11 +20,9 @@
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-    <!-- Fonts & Styles -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts & Styles (Inter self-hosted — no third-party font requests, DSGVO-konform) -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/inter.css">
     <link rel="stylesheet" href="styles.css">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
@@ -45,8 +43,8 @@
         gtag('config', 'G-7EY08N1VS0', { 'anonymize_ip': true });
     </script>
 
-    <!-- Cookie Consent -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+    <!-- Cookie Consent (self-hosted) -->
+    <link rel="stylesheet" href="assets/vendor/cookieconsent.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -85,7 +83,7 @@
                 <!-- ================= ENGLISH ================= -->
                 <article class="legal-content" data-lang="en">
                     <div class="highlight-box">
-                        <p><strong>Our promise:</strong> Scandora is built privacy-first. <strong>We do not store your full scanned documents on our servers</strong> — on our infrastructure we keep only a small low-resolution preview thumbnail and the metadata listed in section 2. Your documents are processed on your device and sent only to the destinations you choose — the AI provider you select and your own cloud services. You stay in control of your data.</p>
+                        <p><strong>Our promise:</strong> Scandora is built privacy-first. <strong>We do not store your full scanned documents on our servers</strong> — on our infrastructure we keep only a small low-resolution preview thumbnail and the metadata listed in section 2. Your documents are processed on your device and sent only to the destinations you choose — the AI provider you select and your own cloud services. A planned, opt-in AI document search feature (Pro and above) will store derived text only (not your original files) in an EU-resident index; see sections 3, 7 and 11. You stay in control of your data.</p>
                     </div>
 
                     <nav class="toc">
@@ -112,7 +110,7 @@
 
                     <h2 id="overview">1. Overview &amp; Controller</h2>
                     <p>Scandora ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our document scanning application on iOS, macOS, and Android, and our website.</p>
-                    <p>The controller responsible for the data processing described here is the operator of Scandora named in our <a href="/imprint.html">Imprint</a>. For data-protection questions, contact <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a>.</p>
+                    <p>The controller responsible for the data processing described here is <strong>Farhad Sanaei seresht</strong> (sole proprietor, trading as "Scandora"), Burgunderweg 19G, 22453 Hamburg, Germany — the operator of Scandora named in our <a href="/imprint.html">Imprint</a>. For data-protection questions, contact <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a>.</p>
 
                     <h2 id="data-collection">2. Data We Collect</h2>
                     <h3>Account information</h3>
@@ -146,11 +144,13 @@
 
                     <h2 id="documents">3. Your Documents</h2>
                     <div class="highlight-box">
-                        <p><strong>Scandora does not store your full documents.</strong> Scanned images and full extracted text are processed on your device and transmitted only to the destination you choose. On our infrastructure we keep only the metadata listed in section 2 — including a small low-resolution first-page preview thumbnail — never the full-resolution document, the original page images, or the full extracted text.</p>
+                        <p><strong>Scandora does not store your full documents.</strong> Scanned images and full extracted text are processed on your device and transmitted only to the destination you choose. On our infrastructure we keep only the metadata listed in section 2 — including a small low-resolution first-page preview thumbnail — never the full-resolution document or the original page images.</p>
+                        <p><strong>One planned exception, only if you opt in:</strong> a planned AI document search feature (Pro and above) will let an EU-resident search index store <strong>derived text only</strong> — text excerpts and search embeddings derived from your documents, not the original files — to make documents searchable and to answer your questions. This index would be hosted in the EU (Oracle, Frankfurt), created only with your explicit consent, retained until you delete the document or withdraw consent, and purged within 30 days of account deletion. <strong>This feature is not yet available.</strong> See sections 7 and 11.</p>
                     </div>
                     <p>Concretely, your document content can travel to:</p>
                     <ul>
-                        <li>the AI provider you select, to analyse the document (see section 4);</li>
+                        <li>the AI provider you select, to analyse the document or to generate cited answers (see section 4); AI <em>generation</em> may be processed outside the EU (see section 9);</li>
+                        <li>the optional, planned EU-resident search index, which will store derived text only with your consent once available (see sections 7 and 11);</li>
                         <li>your own cloud destinations — your Trello board or your Google Drive — when you export (see section 5).</li>
                     </ul>
 
@@ -166,9 +166,10 @@
                     <p>In BYOAI mode <strong>you are the controller</strong> of that processing and the AI provider acts under the terms of your own account with them. Scandora is not a party to that transfer.</p>
 
                     <h3>4.2 Managed "AI Pass"</h3>
-                    <p>If you don't bring your own key, you can use Scandora's managed <strong>AI Pass</strong>. Your document images and extracted text are routed through <strong>Scandora's own AI gateway</strong> (a metered AI proxy operated by Scandora) to the underlying model provider (<strong>OpenAI</strong> or <strong>Google</strong>), which generates the analysis. In this mode Scandora is your <strong>processor</strong>, and Scandora's gateway plus the underlying model provider are <strong>sub-processors</strong> (see section 7).</p>
+                    <p>If you don't bring your own key, you will be able to use Scandora's managed <strong>AI Pass</strong>. <strong>This managed option is not yet available.</strong> Once launched, your document images and extracted text would be routed through <strong>Scandora's own AI gateway</strong> (a metered AI proxy operated by Scandora) to the underlying model provider (<strong>OpenAI</strong> or <strong>Google</strong>), which generates the analysis. In that mode Scandora is your <strong>processor</strong>, and Scandora's gateway plus the underlying model provider are <strong>sub-processors</strong> (see section 7).</p>
                     <p>In both modes, document content is processed transiently to produce the result and is not retained by Scandora.</p>
                     <p>Scanned documents may contain special categories of personal data (Art. 9 GDPR), e.g. health data. Where you use AI analysis or cloud export on such documents, the processing relies on your explicit consent (Art. 9(2)(a) GDPR) together with Art. 6(1)(b); you are responsible for having the right to scan and process the documents you submit.</p>
+                    <p><strong>Automated decision-making.</strong> Scandora's AI produces suggestions (e.g. titles, labels, due dates, extracted fields and answers) as <em>decision support</em>; the results remain subject to your review and control. Scandora does not carry out automated decision-making that produces legal effects concerning you or similarly significantly affects you within the meaning of Art. 22 GDPR.</p>
 
                     <h2 id="integrations">5. Cloud Integrations (Trello &amp; Google Drive)</h2>
                     <p>Cloud exports are optional and go to <strong>destinations you own and authorize</strong> via OAuth:</p>
@@ -190,6 +191,8 @@
                     <ul>
                         <li><strong>Crash reporting (Firebase Crashlytics)</strong> — to keep the app stable. Device type, OS/app version and stack traces; no document content.</li>
                         <li><strong>Security</strong> — detecting and preventing fraud and abuse.</li>
+                        <li><strong>Website contact form</strong> — to receive and respond to your enquiry; the form is delivered via Formspree (USA, see section 7). Where your message concerns a (pre-)contractual matter we also rely on Art. 6(1)(b). We keep contact-form data only as long as needed to handle the enquiry.</li>
+                        <li><strong>Website hosting &amp; server logs</strong> — our website is hosted on GitHub Pages (GitHub, Inc., USA); the host processes standard server-log data (e.g. IP address, requested page, timestamp, user agent) to deliver the site securely and reliably.</li>
                     </ul>
                     <h3>Consent — Art. 6(1)(a) GDPR</h3>
                     <ul>
@@ -212,11 +215,18 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Scandora AI Gateway <em>(self-operated)</em></td>
+                                <td>Scandora AI Gateway <em>(self-operated — planned)</em></td>
                                 <td>Managed "AI Pass" — routing &amp; metering of AI requests</td>
                                 <td>Document images &amp; extracted text, prompts (managed mode only; transient)</td>
-                                <td>EU</td>
-                                <td>Operated by Scandora — this policy</td>
+                                <td>EU (planned)</td>
+                                <td>Planned — not yet active; will be operated by Scandora under this policy</td>
+                            </tr>
+                            <tr>
+                                <td>Document AI search index <em>(self-operated, opt-in — planned)</em></td>
+                                <td>AI document search &amp; chat — indexing &amp; retrieval</td>
+                                <td>Derived text only (text excerpts &amp; search embeddings; not original files)</td>
+                                <td>Oracle Frankfurt (EU) — planned</td>
+                                <td>Planned — AVV/DPA to be concluded before launch</td>
                             </tr>
                             <tr>
                                 <td>OpenAI</td>
@@ -267,6 +277,13 @@
                                 <td>USA</td>
                                 <td><a href="https://www.revenuecat.com/dpa/" rel="noopener" target="_blank">revenuecat.com/dpa</a></td>
                             </tr>
+                            <tr>
+                                <td>Formspree</td>
+                                <td>Website contact-form delivery</td>
+                                <td>Name, email address &amp; message you submit via the contact form</td>
+                                <td>USA</td>
+                                <td><a href="https://formspree.io/legal/dpa/" rel="noopener" target="_blank">formspree.io/legal/dpa</a></td>
+                            </tr>
                         </tbody>
                     </table>
                     </div>
@@ -281,7 +298,8 @@
                     </ul>
 
                     <h2 id="transfers">9. International Transfers</h2>
-                    <p>Some recipients (e.g. OpenAI, RevenueCat, and certain Google services) process data in the USA or other countries outside the EU/EEA. Where that happens, transfers are safeguarded by the EU Standard Contractual Clauses and/or the provider's certification under the EU–US Data Privacy Framework, as set out in the DPAs linked above. Our own Cloud Functions handling OAuth tokens run in the EU (<code>europe-west3</code>, Frankfurt).</p>
+                    <p>Some recipients (e.g. OpenAI, RevenueCat, Formspree, and certain Google services) process data in the USA or other countries outside the EU/EEA. Where that happens, transfers are safeguarded by the EU Standard Contractual Clauses and/or the provider's certification under the EU–US Data Privacy Framework, as set out in the DPAs linked above. You can request a copy of the relevant safeguards (e.g. the EU SCCs), or a reference to where they have been made available, by contacting <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a>. Our own Cloud Functions handling OAuth tokens run in the EU (<code>europe-west3</code>, Frankfurt); the optional AI document search index, once launched, will be hosted in the EU (Oracle, Frankfurt).</p>
+                    <p><strong>Please note:</strong> while the planned search index will be EU-resident, AI <em>generation</em> (analysing a document or producing a cited answer) is performed by the model provider — OpenAI (USA) or Google Gemini (USA / global) — so that generation step may be processed outside the EU under the safeguards above. The EU-resident index will not make the AI generation itself EU-only.</p>
 
                     <h2 id="consent-management">10. Consent Management</h2>
                     <p>You control optional data collection through our in-app consent system.</p>
@@ -312,7 +330,7 @@
                         <li>Access controls and monitoring</li>
                         <li>Regular updates</li>
                     </ul>
-                    <p><strong>We do not store your full documents on our infrastructure.</strong> We retain only the metadata in section 2 plus a small low-resolution first-page preview thumbnail; the full document remains in your control via your chosen AI provider and cloud destinations.</p>
+                    <p><strong>We do not store your full documents on our infrastructure.</strong> We retain only the metadata in section 2 plus a small low-resolution first-page preview thumbnail; the full document remains in your control via your chosen AI provider and cloud destinations. <strong>The one planned exception will be the optional, opt-in AI document search index</strong> (Pro and above), which will store <em>derived text only</em> — text excerpts and search embeddings, not your original files — and will be hosted in the EU (Oracle, Frankfurt). This feature is not yet available.</p>
 
                     <h3>Retention periods</h3>
                     <ul>
@@ -320,11 +338,12 @@
                         <li><strong>Crash reports:</strong> up to 90 days (Firebase Crashlytics default).</li>
                         <li><strong>Product analytics:</strong> per the configured Google Analytics 4 retention (maximum 14 months) and only while your consent is active.</li>
                         <li><strong>Subscription &amp; billing records:</strong> kept for the statutory commercial/tax retention period under German law (§ 257 HGB / § 147 AO — generally 6 to 10 years), even after account deletion.</li>
-                        <li><strong>Document content for AI / cloud export:</strong> not retained by Scandora — processed transiently and discarded once the result is produced.</li>
+                        <li><strong>Document content for AI generation / cloud export:</strong> not retained by Scandora — processed transiently and discarded once the result is produced.</li>
+                        <li><strong>AI document search index (planned; opt-in, derived text only, EU-resident — Oracle Frankfurt):</strong> once available, retained until you delete the source document or withdraw consent, and purged within 30 days of account deletion.</li>
                     </ul>
 
                     <h2 id="your-rights">12. Your Rights</h2>
-                    <p>Under the GDPR you have the right to access, rectification, erasure ("right to be forgotten"), portability, restriction, and objection, and the right to withdraw consent at any time. You may also lodge a complaint with a supervisory authority.</p>
+                    <p>Under the GDPR you have the right to access, rectification, erasure ("right to be forgotten"), portability, restriction, and objection, and the right to withdraw consent at any time. You may also lodge a complaint with a supervisory authority (Art. 77 GDPR). The authority competent for us is the Hamburg Commissioner for Data Protection and Freedom of Information — <em>Der Hamburgische Beauftragte für Datenschutz und Informationsfreiheit</em> (HmbBfDI), <a href="https://datenschutz-hamburg.de" rel="noopener" target="_blank">datenschutz-hamburg.de</a>; you may also contact the supervisory authority in your country of residence.</p>
                     <p>To exercise these rights, contact <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a>.</p>
                     <div class="highlight-box">
                         <p><strong>Account deletion:</strong> when you delete your Scandora account, we permanently remove your personal data from our systems. This is irreversible. Content already exported to your own Trello/Drive remains under your control there.</p>
@@ -368,7 +387,7 @@
                 <!-- ================= DEUTSCH ================= -->
                 <article class="legal-content" data-lang="de" hidden>
                     <div class="highlight-box">
-                        <p><strong>Unser Versprechen:</strong> Scandora ist „Privacy-first" gebaut. <strong>Wir speichern Ihre vollständigen gescannten Dokumente nicht auf unseren Servern</strong> — auf unserer Infrastruktur behalten wir nur ein kleines, niedrig aufgelöstes Vorschaubild und die in Abschnitt 2 genannten Metadaten. Ihre Dokumente werden auf Ihrem Gerät verarbeitet und nur an die von Ihnen gewählten Ziele übertragen — den von Ihnen ausgewählten KI-Anbieter und Ihre eigenen Cloud-Dienste. Sie behalten die Kontrolle über Ihre Daten.</p>
+                        <p><strong>Unser Versprechen:</strong> Scandora ist „Privacy-first" gebaut. <strong>Wir speichern Ihre vollständigen gescannten Dokumente nicht auf unseren Servern</strong> — auf unserer Infrastruktur behalten wir nur ein kleines, niedrig aufgelöstes Vorschaubild und die in Abschnitt 2 genannten Metadaten. Ihre Dokumente werden auf Ihrem Gerät verarbeitet und nur an die von Ihnen gewählten Ziele übertragen — den von Ihnen ausgewählten KI-Anbieter und Ihre eigenen Cloud-Dienste. Eine geplante, optionale KI-Dokumentensuche (ab Pro) wird künftig nur abgeleiteten Text (nicht Ihre Originaldateien) in einem in der EU ansässigen Index speichern; siehe Abschnitte 3, 7 und 11. Sie behalten die Kontrolle über Ihre Daten.</p>
                     </div>
 
                     <nav class="toc">
@@ -395,7 +414,7 @@
 
                     <h2 id="de-overview">1. Überblick &amp; Verantwortlicher</h2>
                     <p>Scandora („wir", „uns") verpflichtet sich zum Schutz Ihrer Privatsphäre. Diese Datenschutzerklärung erläutert, wie wir Ihre Daten erheben, nutzen und schützen, wenn Sie unsere Dokumenten-Scan-App unter iOS, macOS und Android sowie unsere Website nutzen.</p>
-                    <p>Verantwortlicher für die hier beschriebene Verarbeitung ist der im <a href="/imprint.html">Impressum</a> genannte Betreiber von Scandora. Bei Datenschutzfragen wenden Sie sich an <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a>.</p>
+                    <p>Verantwortlicher für die hier beschriebene Verarbeitung ist <strong>Farhad Sanaei seresht</strong> (Einzelunternehmen, Geschäftsbezeichnung „Scandora"), Burgunderweg 19G, 22453 Hamburg, Deutschland — der im <a href="/imprint.html">Impressum</a> genannte Betreiber von Scandora. Bei Datenschutzfragen wenden Sie sich an <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a>.</p>
 
                     <h2 id="de-data-collection">2. Welche Daten wir erheben</h2>
                     <h3>Kontodaten</h3>
@@ -429,11 +448,13 @@
 
                     <h2 id="de-documents">3. Ihre Dokumente</h2>
                     <div class="highlight-box">
-                        <p><strong>Scandora speichert Ihre vollständigen Dokumente nicht.</strong> Gescannte Bilder und der vollständige extrahierte Text werden auf Ihrem Gerät verarbeitet und nur an das von Ihnen gewählte Ziel übermittelt. Auf unserer Infrastruktur behalten wir nur die in Abschnitt 2 genannten Metadaten — einschließlich eines kleinen, niedrig aufgelösten Vorschaubilds der ersten Seite — niemals das vollauflösende Dokument, die Originalbilder oder den vollständigen extrahierten Text.</p>
+                        <p><strong>Scandora speichert Ihre vollständigen Dokumente nicht.</strong> Gescannte Bilder und der vollständige extrahierte Text werden auf Ihrem Gerät verarbeitet und nur an das von Ihnen gewählte Ziel übermittelt. Auf unserer Infrastruktur behalten wir nur die in Abschnitt 2 genannten Metadaten — einschließlich eines kleinen, niedrig aufgelösten Vorschaubilds der ersten Seite — niemals das vollauflösende Dokument oder die Originalbilder.</p>
+                        <p><strong>Eine geplante Ausnahme, nur bei Opt-in:</strong> Eine geplante KI-Dokumentensuche (ab Pro) wird es ermöglichen, dass ein in der EU gehosteter Suchindex <strong>nur abgeleiteten Text</strong> — Textauszüge und Such-Embeddings, die aus Ihren Dokumenten abgeleitet werden, nicht die Originaldateien — speichert, um Dokumente durchsuchbar zu machen und Ihre Fragen zu beantworten. Dieser Index würde in der EU gehostet (Oracle, Frankfurt), nur mit Ihrer ausdrücklichen Einwilligung erstellt, bis zur Löschung des Dokuments oder zum Widerruf der Einwilligung aufbewahrt und innerhalb von 30 Tagen nach Kontolöschung gelöscht. <strong>Diese Funktion ist noch nicht verfügbar.</strong> Siehe Abschnitte 7 und 11.</p>
                     </div>
                     <p>Konkret können Ihre Dokumentinhalte gelangen an:</p>
                     <ul>
-                        <li>den von Ihnen ausgewählten KI-Anbieter, um das Dokument zu analysieren (siehe Abschnitt 4);</li>
+                        <li>den von Ihnen ausgewählten KI-Anbieter, um das Dokument zu analysieren oder belegte Antworten zu erzeugen (siehe Abschnitt 4); die KI-<em>Generierung</em> kann außerhalb der EU verarbeitet werden (siehe Abschnitt 9);</li>
+                        <li>den optionalen, geplanten, in der EU gehosteten Suchindex, der nach Verfügbarkeit mit Ihrer Einwilligung nur abgeleiteten Text speichern wird (siehe Abschnitte 7 und 11);</li>
                         <li>Ihre eigenen Cloud-Ziele — Ihr Trello-Board oder Ihr Google Drive — beim Export (siehe Abschnitt 5).</li>
                     </ul>
 
@@ -449,9 +470,10 @@
                     <p>Im BYOAI-Modus sind <strong>Sie der Verantwortliche</strong> für diese Verarbeitung, und der KI-Anbieter handelt nach den Bedingungen Ihres eigenen Kontos. Scandora ist an dieser Übermittlung nicht beteiligt.</p>
 
                     <h3>4.2 Managed „AI Pass"</h3>
-                    <p>Wenn Sie keinen eigenen Schlüssel mitbringen, können Sie den verwalteten <strong>AI Pass</strong> von Scandora nutzen. Ihre Dokumentbilder und der extrahierte Text werden über das <strong>eigene KI-Gateway von Scandora</strong> (ein von Scandora betriebener, verbrauchsabhängiger KI-Proxy) an den zugrunde liegenden Modellanbieter (<strong>OpenAI</strong> oder <strong>Google</strong>) geleitet, der die Analyse erstellt. In diesem Modus ist Scandora Ihr <strong>Auftragsverarbeiter</strong>, und das Scandora-Gateway sowie der zugrunde liegende Modellanbieter sind <strong>Unterauftragsverarbeiter</strong> (siehe Abschnitt 7).</p>
+                    <p>Wenn Sie keinen eigenen Schlüssel mitbringen, können Sie künftig den verwalteten <strong>AI Pass</strong> von Scandora nutzen. <strong>Diese verwaltete Option ist noch nicht verfügbar.</strong> Nach dem Start würden Ihre Dokumentbilder und der extrahierte Text über das <strong>eigene KI-Gateway von Scandora</strong> (ein von Scandora betriebener, verbrauchsabhängiger KI-Proxy) an den zugrunde liegenden Modellanbieter (<strong>OpenAI</strong> oder <strong>Google</strong>) geleitet, der die Analyse erstellt. In diesem Modus ist Scandora Ihr <strong>Auftragsverarbeiter</strong>, und das Scandora-Gateway sowie der zugrunde liegende Modellanbieter sind <strong>Unterauftragsverarbeiter</strong> (siehe Abschnitt 7).</p>
                     <p>In beiden Modi werden Dokumentinhalte nur vorübergehend zur Erzeugung des Ergebnisses verarbeitet und nicht von Scandora gespeichert.</p>
                     <p>Gescannte Dokumente können besondere Kategorien personenbezogener Daten (Art. 9 DSGVO) enthalten, z. B. Gesundheitsdaten. Soweit Sie KI-Analyse oder Cloud-Export für solche Dokumente nutzen, stützt sich die Verarbeitung auf Ihre ausdrückliche Einwilligung (Art. 9 Abs. 2 lit. a DSGVO) in Verbindung mit Art. 6 Abs. 1 lit. b; Sie sind dafür verantwortlich, dass Sie zur Verarbeitung der übermittelten Dokumente berechtigt sind.</p>
+                    <p><strong>Automatisierte Entscheidungsfindung.</strong> Die KI von Scandora erstellt Vorschläge (z. B. Titel, Labels, Fälligkeitsdaten, extrahierte Felder und Antworten) zur <em>Entscheidungsunterstützung</em>; die Ergebnisse unterliegen weiterhin Ihrer Prüfung und Kontrolle. Scandora führt keine automatisierte Entscheidungsfindung durch, die Ihnen gegenüber rechtliche Wirkung entfaltet oder Sie in ähnlicher Weise erheblich beeinträchtigt (Art. 22 DSGVO).</p>
 
                     <h2 id="de-integrations">5. Cloud-Integrationen (Trello &amp; Google Drive)</h2>
                     <p>Cloud-Exporte sind optional und gehen an <strong>Ziele, die Ihnen gehören und die Sie</strong> per OAuth autorisieren:</p>
@@ -473,6 +495,8 @@
                     <ul>
                         <li><strong>Absturzberichte (Firebase Crashlytics)</strong> — zur Stabilität der App. Gerätetyp, Betriebssystem-/App-Version und Stack-Traces; keine Dokumentinhalte.</li>
                         <li><strong>Sicherheit</strong> — Erkennung und Verhinderung von Betrug und Missbrauch.</li>
+                        <li><strong>Kontaktformular der Website</strong> — zur Entgegennahme und Beantwortung Ihrer Anfrage; das Formular wird über Formspree (USA, siehe Abschnitt 7) ausgeliefert. Betrifft Ihre Nachricht eine (vor-)vertragliche Angelegenheit, stützen wir uns zusätzlich auf Art. 6 Abs. 1 lit. b. Wir bewahren Kontaktformular-Daten nur so lange auf, wie es zur Bearbeitung der Anfrage erforderlich ist.</li>
+                        <li><strong>Website-Hosting &amp; Server-Logs</strong> — unsere Website wird über GitHub Pages (GitHub, Inc., USA) gehostet; der Hoster verarbeitet übliche Server-Log-Daten (z. B. IP-Adresse, aufgerufene Seite, Zeitstempel, User-Agent), um die Website sicher und zuverlässig bereitzustellen.</li>
                     </ul>
                     <h3>Einwilligung — Art. 6 Abs. 1 lit. a DSGVO</h3>
                     <ul>
@@ -495,11 +519,18 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Scandora AI-Gateway <em>(selbst betrieben)</em></td>
+                                <td>Scandora AI-Gateway <em>(selbst betrieben — geplant)</em></td>
                                 <td>Managed „AI Pass" — Routing &amp; Abrechnung von KI-Anfragen</td>
                                 <td>Dokumentbilder &amp; extrahierter Text, Prompts (nur Managed-Modus; vorübergehend)</td>
-                                <td>EU</td>
-                                <td>Von Scandora betrieben — diese Richtlinie</td>
+                                <td>EU (geplant)</td>
+                                <td>Geplant — noch nicht aktiv; wird von Scandora nach dieser Richtlinie betrieben</td>
+                            </tr>
+                            <tr>
+                                <td>KI-Dokumenten-Suchindex <em>(selbst betrieben, Opt-in — geplant)</em></td>
+                                <td>KI-Dokumentensuche &amp; -Chat — Indexierung &amp; Abruf</td>
+                                <td>Nur abgeleiteter Text (Textauszüge &amp; Such-Embeddings; keine Originaldateien)</td>
+                                <td>Oracle Frankfurt (EU) — geplant</td>
+                                <td>Geplant — AVV/DPA wird vor dem Start abgeschlossen</td>
                             </tr>
                             <tr>
                                 <td>OpenAI</td>
@@ -550,6 +581,13 @@
                                 <td>USA</td>
                                 <td><a href="https://www.revenuecat.com/dpa/" rel="noopener" target="_blank">revenuecat.com/dpa</a></td>
                             </tr>
+                            <tr>
+                                <td>Formspree</td>
+                                <td>Auslieferung des Website-Kontaktformulars</td>
+                                <td>Name, E-Mail-Adresse &amp; Nachricht, die Sie über das Kontaktformular übermitteln</td>
+                                <td>USA</td>
+                                <td><a href="https://formspree.io/legal/dpa/" rel="noopener" target="_blank">formspree.io/legal/dpa</a></td>
+                            </tr>
                         </tbody>
                     </table>
                     </div>
@@ -564,7 +602,8 @@
                     </ul>
 
                     <h2 id="de-transfers">9. Drittlandübermittlungen</h2>
-                    <p>Einige Empfänger (z. B. OpenAI, RevenueCat und bestimmte Google-Dienste) verarbeiten Daten in den USA oder anderen Ländern außerhalb der EU/des EWR. In diesen Fällen werden die Übermittlungen durch die EU-Standardvertragsklauseln und/oder die Zertifizierung des Anbieters unter dem EU-US Data Privacy Framework abgesichert, wie in den oben verlinkten AVV dargelegt. Unsere eigenen Cloud Functions für OAuth-Token laufen in der EU (<code>europe-west3</code>, Frankfurt).</p>
+                    <p>Einige Empfänger (z. B. OpenAI, RevenueCat, Formspree und bestimmte Google-Dienste) verarbeiten Daten in den USA oder anderen Ländern außerhalb der EU/des EWR. In diesen Fällen werden die Übermittlungen durch die EU-Standardvertragsklauseln und/oder die Zertifizierung des Anbieters unter dem EU-US Data Privacy Framework abgesichert, wie in den oben verlinkten AVV dargelegt. Eine Kopie der einschlägigen Garantien (z. B. der EU-Standardvertragsklauseln) oder einen Hinweis darauf, wo sie verfügbar gemacht wurden, können Sie unter <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a> anfordern. Unsere eigenen Cloud Functions für OAuth-Token laufen in der EU (<code>europe-west3</code>, Frankfurt); der optionale KI-Dokumenten-Suchindex wird nach dem Start in der EU gehostet (Oracle, Frankfurt).</p>
+                    <p><strong>Bitte beachten Sie:</strong> Der geplante Suchindex wird zwar in der EU ansässig sein, die KI-<em>Generierung</em> (Analyse eines Dokuments oder Erzeugung einer belegten Antwort) erfolgt jedoch durch den Modellanbieter — OpenAI (USA) oder Google Gemini (USA / global) —, sodass dieser Generierungsschritt unter den oben genannten Garantien außerhalb der EU verarbeitet werden kann. Der in der EU ansässige Index macht die KI-Generierung selbst nicht zu einer reinen EU-Verarbeitung.</p>
 
                     <h2 id="de-consent-management">10. Einwilligungsverwaltung</h2>
                     <p>Sie steuern die optionale Datenerhebung über unser In-App-Einwilligungssystem.</p>
@@ -595,7 +634,7 @@
                         <li>Zugriffskontrollen und Überwachung</li>
                         <li>Regelmäßigen Aktualisierungen</li>
                     </ul>
-                    <p><strong>Wir speichern Ihre vollständigen Dokumente nicht auf unserer Infrastruktur.</strong> Wir behalten nur die Metadaten aus Abschnitt 2 sowie ein kleines, niedrig aufgelöstes Vorschaubild der ersten Seite; das vollständige Dokument bleibt über Ihren gewählten KI-Anbieter und Ihre Cloud-Ziele unter Ihrer Kontrolle.</p>
+                    <p><strong>Wir speichern Ihre vollständigen Dokumente nicht auf unserer Infrastruktur.</strong> Wir behalten nur die Metadaten aus Abschnitt 2 sowie ein kleines, niedrig aufgelöstes Vorschaubild der ersten Seite; das vollständige Dokument bleibt über Ihren gewählten KI-Anbieter und Ihre Cloud-Ziele unter Ihrer Kontrolle. <strong>Die einzige geplante Ausnahme wird der optionale, einwilligungsbasierte KI-Dokumenten-Suchindex sein</strong> (ab Pro), der <em>nur abgeleiteten Text</em> speichern wird — Textauszüge und Such-Embeddings, nicht Ihre Originaldateien — und in der EU gehostet wird (Oracle, Frankfurt). Diese Funktion ist noch nicht verfügbar.</p>
 
                     <h3>Speicherdauer</h3>
                     <ul>
@@ -603,11 +642,12 @@
                         <li><strong>Absturzberichte:</strong> bis zu 90 Tage (Firebase-Crashlytics-Standard).</li>
                         <li><strong>Produktanalyse:</strong> gemäß der konfigurierten Google-Analytics-4-Aufbewahrung (max. 14 Monate) und nur solange Ihre Einwilligung aktiv ist.</li>
                         <li><strong>Abo- &amp; Abrechnungsdaten:</strong> für die gesetzliche handels-/steuerrechtliche Aufbewahrungsfrist nach deutschem Recht (§ 257 HGB / § 147 AO — in der Regel 6 bis 10 Jahre), auch nach Kontolöschung.</li>
-                        <li><strong>Dokumentinhalte für KI / Cloud-Export:</strong> werden von Scandora nicht gespeichert — sie werden nur vorübergehend verarbeitet und nach Erzeugung des Ergebnisses verworfen.</li>
+                        <li><strong>Dokumentinhalte für KI-Generierung / Cloud-Export:</strong> werden von Scandora nicht gespeichert — sie werden nur vorübergehend verarbeitet und nach Erzeugung des Ergebnisses verworfen.</li>
+                        <li><strong>KI-Dokumenten-Suchindex (geplant; Opt-in, nur abgeleiteter Text, EU-ansässig — Oracle Frankfurt):</strong> nach Verfügbarkeit aufbewahrt bis zur Löschung des Quelldokuments oder zum Widerruf der Einwilligung und innerhalb von 30 Tagen nach Kontolöschung gelöscht.</li>
                     </ul>
 
                     <h2 id="de-your-rights">12. Ihre Rechte</h2>
-                    <p>Nach der DSGVO haben Sie das Recht auf Auskunft, Berichtigung, Löschung („Recht auf Vergessenwerden"), Datenübertragbarkeit, Einschränkung und Widerspruch sowie das Recht, eine Einwilligung jederzeit zu widerrufen. Sie können sich zudem bei einer Aufsichtsbehörde beschweren.</p>
+                    <p>Nach der DSGVO haben Sie das Recht auf Auskunft, Berichtigung, Löschung („Recht auf Vergessenwerden"), Datenübertragbarkeit, Einschränkung und Widerspruch sowie das Recht, eine Einwilligung jederzeit zu widerrufen. Sie können sich zudem bei einer Aufsichtsbehörde beschweren (Art. 77 DSGVO). Die für uns zuständige Aufsichtsbehörde ist der <em>Hamburgische Beauftragte für Datenschutz und Informationsfreiheit</em> (HmbBfDI), <a href="https://datenschutz-hamburg.de" rel="noopener" target="_blank">datenschutz-hamburg.de</a>; Sie können sich auch an die Aufsichtsbehörde Ihres Wohnsitzlandes wenden.</p>
                     <p>Zur Ausübung dieser Rechte wenden Sie sich an <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a>.</p>
                     <div class="highlight-box">
                         <p><strong>Kontolöschung:</strong> Wenn Sie Ihr Scandora-Konto löschen, entfernen wir Ihre personenbezogenen Daten dauerhaft aus unseren Systemen. Dies ist unwiderruflich. Bereits in Ihr eigenes Trello/Drive exportierte Inhalte bleiben dort unter Ihrer Kontrolle.</p>
@@ -670,6 +710,7 @@
                         <h4 data-i18n="footer.legal">Legal</h4>
                         <a href="/privacy.html" aria-current="page" data-i18n="footer.privacy">Privacy Policy</a>
                         <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
                         <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
                     </div>
                     <div class="footer-col">
@@ -685,7 +726,7 @@
     </footer>
 
     <script src="translations.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js" defer></script>
+    <script src="assets/vendor/cookieconsent.umd.js" defer></script>
     <script src="main.js" defer></script>
 </body>
 </html>

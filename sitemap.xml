@@ -71,6 +71,16 @@
     <priority>0.5</priority>
   </url>
 
+  <!-- AVV / DPA (Data Processing Agreement) -->
+  <url>
+    <loc>https://scandora.eu/avv</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/avv"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/avv?lang=de"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
   <!-- Imprint -->
   <url>
     <loc>https://scandora.eu/imprint</loc>

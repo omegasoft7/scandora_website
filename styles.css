@@ -159,6 +159,25 @@ img {
 .btn-lg { padding: 16px 32px; font-size: 16px; }
 .btn-full { width: 100%; justify-content: center; }
 
+/* Non-actionable CTA (e.g. "Coming Soon" for not-yet-purchasable plans) */
+.btn.is-disabled {
+    background: var(--surface, #e5e7eb);
+    color: var(--text-muted, #6b7280);
+    box-shadow: none;
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+/* Contact-form data-protection notice */
+.form-privacy-note {
+    margin-top: var(--space-md, 1rem);
+    color: var(--text-muted, #6b7280);
+    font-size: 13px;
+    line-height: 1.5;
+}
+.form-privacy-note a { color: var(--primary, #2563eb); }
+
 /* ============================================
    NAVIGATION
    ============================================ */

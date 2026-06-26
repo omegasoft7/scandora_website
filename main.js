@@ -181,8 +181,7 @@
                     readOnly: false,
                     autoClear: {
                         cookies: [
-                            { name: /^_ga/ },
-                            { name: '_gid' }
+                            { name: /^_ga/ }
                         ]
                     }
                 }

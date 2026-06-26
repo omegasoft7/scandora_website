@@ -20,11 +20,9 @@
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-    <!-- Fonts & Styles -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts & Styles (Inter self-hosted — no third-party font requests, DSGVO-konform) -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/inter.css">
     <link rel="stylesheet" href="styles.css">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
@@ -45,8 +43,8 @@
         gtag('config', 'G-7EY08N1VS0', { 'anonymize_ip': true });
     </script>
 
-    <!-- Cookie Consent -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+    <!-- Cookie Consent (self-hosted) -->
+    <link rel="stylesheet" href="assets/vendor/cookieconsent.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -95,9 +93,8 @@
 
                     <h2>Kontakt</h2>
                     <div class="contact-card">
-                        <p><strong>E-Mail:</strong> <a href="mailto:contact@scandora.eu">contact@scandora.eu</a></p>
-                        <p><strong>Schneller Kontakt:</strong> per E-Mail an <a href="mailto:contact@scandora.eu">contact@scandora.eu</a>; Anfragen werden zeitnah beantwortet. Eine Telefonnummer wird nicht vorgehalten.</p>
-                        <p><strong>Support:</strong> <a href="mailto:support@scandora.eu">support@scandora.eu</a></p>
+                        <p><strong>E-Mail:</strong> <a href="mailto:support@scandora.eu">support@scandora.eu</a></p>
+                        <p><strong>Elektronischer Kontakt:</strong> per E-Mail an <a href="mailto:support@scandora.eu">support@scandora.eu</a> oder über das <a href="/contact.html">Kontaktformular</a>; Anfragen werden in der Regel innerhalb von 24 Stunden (werktags Mo–Fr, 9–18 Uhr MEZ) beantwortet.</p>
                         <p><strong>Rechtliches:</strong> <a href="mailto:legal@scandora.eu">legal@scandora.eu</a></p>
                         <p><strong>Website:</strong> <a href="https://scandora.eu">https://scandora.eu</a></p>
                     </div>
@@ -108,8 +105,8 @@
                     <h2>Umsatzsteuer-Identifikationsnummer</h2>
                     <p>Keine USt-IdNr. vorhanden — Kleinunternehmer gemäß § 19 UStG.</p>
 
-                    <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV <span style="font-weight:normal;font-size:0.85em;">(sofern journalistisch-redaktionelle Inhalte vorhanden)</span></h2>
-                    <p>Farhad Sanaei seresht; Anschrift wie unter „Diensteanbieter". <small>Diese Angabe ist nur erforderlich, soweit die Website journalistisch-redaktionelle Inhalte enthält.</small></p>
+                    <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+                    <p>Farhad Sanaei seresht, Burgunderweg 19G, 22453 Hamburg, Deutschland.</p>
 
                     <h2>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
                     <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen (§ 36 VSBG).</p>
@@ -150,9 +147,8 @@
 
                     <h2>Contact</h2>
                     <div class="contact-card">
-                        <p><strong>Email:</strong> <a href="mailto:contact@scandora.eu">contact@scandora.eu</a></p>
-                        <p><strong>Rapid contact:</strong> by email at <a href="mailto:contact@scandora.eu">contact@scandora.eu</a>; we respond promptly. No telephone number is maintained.</p>
-                        <p><strong>Support:</strong> <a href="mailto:support@scandora.eu">support@scandora.eu</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:support@scandora.eu">support@scandora.eu</a></p>
+                        <p><strong>Electronic contact:</strong> by email at <a href="mailto:support@scandora.eu">support@scandora.eu</a> or via our <a href="/contact.html">contact form</a>; we usually respond within 24 hours (business days Mon–Fri, 9 AM–6 PM CET).</p>
                         <p><strong>Legal:</strong> <a href="mailto:legal@scandora.eu">legal@scandora.eu</a></p>
                         <p><strong>Website:</strong> <a href="https://scandora.eu">https://scandora.eu</a></p>
                     </div>
@@ -163,8 +159,8 @@
                     <h2>VAT Identification Number</h2>
                     <p>No VAT identification number — small-business owner under § 19 UStG.</p>
 
-                    <h2>Responsible for Content under § 18 (2) MStV <span style="font-weight:normal;font-size:0.85em;">(where editorial content is present)</span></h2>
-                    <p>Farhad Sanaei seresht; address as under "Service Provider". <small>Required only insofar as the website carries journalistic-editorial content.</small></p>
+                    <h2>Responsible for Content under § 18 (2) MStV</h2>
+                    <p>Farhad Sanaei seresht, Burgunderweg 19G, 22453 Hamburg, Germany.</p>
 
                     <h2>Consumer Dispute Resolution</h2>
                     <p>We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board (§ 36 VSBG).</p>
@@ -214,6 +210,7 @@
                         <h4 data-i18n="footer.legal">Legal</h4>
                         <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
                         <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
                         <a href="/imprint.html" aria-current="page" data-i18n="footer.imprint">Imprint</a>
                     </div>
                     <div class="footer-col">
@@ -229,7 +226,7 @@
     </footer>
 
     <script src="translations.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js" defer></script>
+    <script src="assets/vendor/cookieconsent.umd.js" defer></script>
     <script src="main.js" defer></script>
 </body>
 </html>

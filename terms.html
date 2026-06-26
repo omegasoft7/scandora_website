@@ -20,11 +20,9 @@
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-    <!-- Fonts & Styles -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts & Styles (Inter self-hosted — no third-party font requests, DSGVO-konform) -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/inter.css">
     <link rel="stylesheet" href="styles.css">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
@@ -45,8 +43,8 @@
         gtag('config', 'G-7EY08N1VS0', { 'anonymize_ip': true });
     </script>
 
-    <!-- Cookie Consent -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+    <!-- Cookie Consent (self-hosted) -->
+    <link rel="stylesheet" href="assets/vendor/cookieconsent.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -121,7 +119,7 @@
                         <li>Dokumente mit Ihren eigenen Cloud-Diensten (Trello, Google Drive) synchronisieren,</li>
                         <li>Ihr Dokumentenarchiv organisieren und durchsuchen können.</li>
                     </ul>
-                    <p>Scandora stellt keinen Cloud-Speicher bereit. Dokumentinhalte werden nur an die von Ihnen gewählten Ziele übertragen (siehe <a href="/privacy.html">Datenschutzerklärung</a>).</p>
+                    <p>Scandora stellt keinen allgemeinen Cloud-Speicher für Ihre Dokumente bereit. Dokumentinhalte werden nur an die von Ihnen gewählten Ziele übertragen. Aktivieren Sie die optionale KI-Dokumentensuche (ab Pro), wird mit Ihrer Einwilligung ein in der EU gehosteter Suchindex (Oracle, Frankfurt) angelegt, der nur abgeleiteten Text speichert — siehe <a href="/privacy.html">Datenschutzerklärung</a>.</p>
 
                     <h2 id="de-konto">3. Vertragsschluss &amp; Konto</h2>
                     <p>Für bestimmte Funktionen ist ein Konto erforderlich. Sie verpflichten sich, zutreffende Angaben zu machen, Ihre Zugangsdaten vertraulich zu halten und uns unbefugte Zugriffe unverzüglich zu melden. Ein kostenpflichtiges Abonnement kommt mit Abschluss des Kaufvorgangs im jeweiligen App Store zustande.</p>
@@ -136,6 +134,10 @@
                         <li>Google Play Store (Android)</li>
                     </ul>
                     <p>Die Verwaltung der Berechtigungen und des Abo-Status erfolgt technisch über unseren Dienstleister <strong>RevenueCat</strong>; die eigentliche Zahlung und Rechnungsstellung übernimmt der jeweilige Store.</p>
+                    <h3>Preise</h3>
+                    <p>Die angezeigten Preise sind die im jeweiligen Store berechneten Endpreise. Der Betreiber ist Kleinunternehmer nach § 19 UStG; Umsatzsteuer wird daher nicht gesondert ausgewiesen. Referenzpreise: Pro 9,99 €/Monat bzw. 89 €/Jahr; Business 24,99 €/Monat bzw. 229 €/Jahr. Die tatsächlichen Preise können je nach Region und Store-Richtlinien abweichen; maßgeblich ist der im Kaufvorgang angezeigte Preis. Enterprise- bzw. individuelle Tarife sind auf Anfrage erhältlich.</p>
+                    <h3>KI-Guthaben (Credits)</h3>
+                    <p>Kostenpflichtige Tarife enthalten ein monatliches KI-Guthaben (Pro 1.000, Business 5.000 Credits), das zu Beginn jedes Abrechnungszeitraums zurückgesetzt wird. Zusätzliche Credits können als einmalige In-App-Käufe erworben werden (z. B. 250 Credits für 4,99 €, 1.500 Credits für 19,99 €); separat erworbene Credits verfallen nicht. Für den Erwerb digitaler Inhalte gilt das Widerrufsrecht nach Abschnitt 5 einschließlich des vorzeitigen Erlöschens nach § 356 Abs. 5 BGB.</p>
                     <h3>Verlängerung &amp; Kündigung</h3>
                     <ul>
                         <li>Abonnements verlängern sich automatisch um die jeweils gewählte Laufzeit, sofern sie nicht mindestens 24 Stunden vor Ablauf des laufenden Zeitraums gekündigt werden.</li>
@@ -149,7 +151,7 @@
                     <h3>Widerrufsbelehrung</h3>
                     <p><strong>Widerrufsrecht.</strong> Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsschlusses.</p>
                     <p>Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (Kontaktdaten siehe <a href="/imprint.html">Impressum</a>, E-Mail <a href="mailto:legal@scandora.eu">legal@scandora.eu</a>) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief oder eine E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das untenstehende Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist. Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.</p>
-                    <p><strong>Folgen des Widerrufs.</strong> Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf bei uns eingegangen ist. Erfolgte die Zahlung über einen App Store, kann die Rückabwicklung über den jeweiligen Store erfolgen.</p>
+                    <p><strong>Folgen des Widerrufs.</strong> Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf bei uns eingegangen ist. Erfolgte die Zahlung über einen App Store, kann dieser als Verkäufer (Seller of Record) auftreten und die Rückerstattung in unserem Auftrag abwickeln; unsere eigene gesetzliche Pflicht zur Rückzahlung bei einem wirksamen Widerruf bleibt davon unberührt.</p>
                     <p><strong>Vorzeitiges Erlöschen des Widerrufsrechts.</strong> Bei Verträgen über digitale Inhalte/Dienstleistungen erlischt Ihr Widerrufsrecht vorzeitig, wenn wir mit der Ausführung begonnen haben, nachdem Sie (1) ausdrücklich zugestimmt haben, dass wir vor Ablauf der Widerrufsfrist mit der Ausführung beginnen, und (2) Ihre Kenntnis davon bestätigt haben, dass Sie durch diese Zustimmung Ihr Widerrufsrecht verlieren (§ 356 Abs. 5 BGB). <strong>Solange wir diese ausdrückliche Zustimmung und Bestätigung nicht im Bestellvorgang einholen, bleibt Ihr Widerrufsrecht für die vollen 14 Tage bestehen.</strong></p>
                     <h3>Muster-Widerrufsformular</h3>
                     <p>(Wenn Sie den Vertrag widerrufen wollen, füllen Sie bitte dieses Formular aus und senden Sie es zurück.)</p>
@@ -172,7 +174,7 @@
                     <h2 id="de-inhalte">8. Ihre Inhalte</h2>
                     <p><strong>Eigentum:</strong> Sie behalten alle Rechte an den von Ihnen gescannten Dokumenten und Inhalten.</p>
                     <p><strong>Verantwortung:</strong> Sie sind allein verantwortlich für die Rechtmäßigkeit der gescannten Dokumente, das Recht zu deren Verarbeitung sowie für Sicherungskopien.</p>
-                    <p><strong>Lizenz:</strong> Mit Nutzung der KI-Funktionen räumen Sie uns eine begrenzte Lizenz ein, Ihre Dokumente ausschließlich zum Zweck der Diensterbringung zu verarbeiten.</p>
+                    <p><strong>Lizenz:</strong> Mit Nutzung der KI-, Synchronisations-/Export- oder (optionalen) Suchfunktionen räumen Sie uns eine begrenzte, nicht ausschließliche Lizenz ein, die betreffenden Dokumente ausschließlich zur Erbringung der von Ihnen genutzten Funktionen zu verarbeiten. Wir verwenden Ihre Dokumente nicht, um eigene KI-Modelle zu trainieren.</p>
 
                     <h2 id="de-drittanbieter">9. Drittanbieter-Integrationen</h2>
                     <p>Scandora integriert Dienste Dritter (Trello, Google Drive, KI-Anbieter, App Stores, RevenueCat). Deren Nutzung unterliegt den jeweiligen Bedingungen und Datenschutzerklärungen. Für Verfügbarkeit, Funktion und Sicherheit der Dienste Dritter übernehmen wir keine Verantwortung.</p>
@@ -196,6 +198,7 @@
 
                     <h2 id="de-recht">15. Anwendbares Recht &amp; Gerichtsstand</h2>
                     <p>Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts. Sind Sie Verbraucher, bleiben zwingende Verbraucherschutzvorschriften des Staates Ihres gewöhnlichen Aufenthalts unberührt (Art. 6 Rom-I-VO). Gerichtsstand für Kaufleute ist, soweit zulässig, der Sitz des Betreibers.</p>
+                    <p><strong>Salvatorische Klausel.</strong> Sollten einzelne Bestimmungen dieser AGB ganz oder teilweise unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt. Eine geltungserhaltende Reduktion unwirksamer Klauseln findet nicht statt; an die Stelle einer unwirksamen Bestimmung treten die gesetzlichen Vorschriften.</p>
 
                     <h2 id="de-kontakt">16. Kontakt</h2>
                     <div class="contact-card">
@@ -239,7 +242,7 @@
                     <p>These Terms of Service ("Terms") govern your use of the Scandora application and website (the "Service"). Your contracting party is the operator named in the <a href="/imprint.html">Imprint</a>. By using the Service you agree to these Terms. You must be at least 16 years old. For paid subscriptions you must have full legal capacity (be of full age) or have your legal guardian's consent.</p>
 
                     <h2 id="description">2. Service Description</h2>
-                    <p>Scandora is an AI-powered document scanning application that lets you scan documents, process them with AI to extract information, sync them to your own cloud services (Trello, Google Drive), and organize and search your archive. Scandora does not provide cloud storage; document content is only sent to destinations you choose (see <a href="/privacy.html">Privacy Policy</a>).</p>
+                    <p>Scandora is an AI-powered document scanning application that lets you scan documents, process them with AI to extract information, sync them to your own cloud services (Trello, Google Drive), and organize and search your archive. Scandora does not provide general cloud storage for your documents; document content is only sent to destinations you choose. If you enable the optional AI document search feature (Pro and above), an EU-hosted search index (Oracle, Frankfurt) is created with your consent and stores derived text only (see <a href="/privacy.html">Privacy Policy</a>).</p>
 
                     <h2 id="accounts">3. Contract Formation &amp; Accounts</h2>
                     <p>Certain features require an account. You agree to provide accurate information, keep your credentials confidential, and notify us of unauthorized access. A paid subscription is concluded upon completing the purchase in the relevant app store.</p>
@@ -254,6 +257,10 @@
                         <li>Google Play Store (Android)</li>
                     </ul>
                     <p>Entitlement and subscription-status management is handled technically via our provider <strong>RevenueCat</strong>; the actual payment and invoicing are handled by the respective store.</p>
+                    <h3>Prices</h3>
+                    <p>The prices shown are the final amounts charged by the respective store. The operator is a small-business owner under § 19 UStG, so no VAT is shown separately. Reference prices: Pro €9.99/month or €89/year; Business €24.99/month or €229/year. Actual prices may vary by region and store policy; the price shown during the purchase is the one that applies. Enterprise / custom plans are available on request.</p>
+                    <h3>AI credits</h3>
+                    <p>Paid plans include a monthly AI-credit allowance (Pro 1,000, Business 5,000 credits) that resets at the start of each billing period. Additional credits can be bought as one-time in-app purchases (e.g. 250 credits for €4.99, 1,500 credits for €19.99); separately purchased credits do not expire. The right of withdrawal in section 5, including its early expiry under § 356(5) BGB, applies to purchases of digital content.</p>
                     <h3>Renewal &amp; cancellation</h3>
                     <ul>
                         <li>Subscriptions auto-renew for the chosen period unless cancelled at least 24 hours before the end of the current period.</li>
@@ -267,7 +274,7 @@
                     <h3>Withdrawal instructions</h3>
                     <p><strong>Right of withdrawal.</strong> You have the right to withdraw from this contract within fourteen days without giving any reason. The withdrawal period is fourteen days from the day of conclusion of the contract.</p>
                     <p>To exercise it, you must inform us (contact details in the <a href="/imprint.html">Imprint</a>; email <a href="mailto:legal@scandora.eu">legal@scandora.eu</a>) by a clear statement (e.g. a letter sent by post or an email) of your decision to withdraw. You may use the model withdrawal form below, but it is not mandatory. To meet the deadline, it is sufficient to send your communication before the period expires.</p>
-                    <p><strong>Consequences of withdrawal.</strong> If you withdraw, we will reimburse all payments received from you without undue delay and at the latest within fourteen days from the day we receive your notice. Where payment was made via an app store, the refund may be processed through that store.</p>
+                    <p><strong>Consequences of withdrawal.</strong> If you withdraw, we will reimburse all payments received from you without undue delay and at the latest within fourteen days from the day we receive your notice. Where payment was made via an app store, that store may act as seller of record and process the refund on our behalf; this does not affect our own statutory duty to reimburse you for a valid withdrawal.</p>
                     <p><strong>Early expiry of the right of withdrawal.</strong> For contracts about digital content/services, your right of withdrawal expires early if we have begun performance after you (1) expressly consented to us beginning performance before the withdrawal period expires and (2) confirmed your awareness that you thereby lose your right of withdrawal (§ 356 (5) BGB). <strong>Until we obtain this express consent and acknowledgment during the order process, your full 14-day right of withdrawal remains unaffected.</strong></p>
                     <h3>Model withdrawal form</h3>
                     <p>(If you want to withdraw from the contract, please complete and return this form.)</p>
@@ -290,7 +297,7 @@
                     <h2 id="content">8. Your Content</h2>
                     <p><strong>Ownership:</strong> you retain all rights to the documents and content you scan.</p>
                     <p><strong>Responsibility:</strong> you are solely responsible for the legality of the documents, your right to process them, and backups.</p>
-                    <p><strong>License:</strong> by using the AI features you grant us a limited license to process your documents solely to provide the Service.</p>
+                    <p><strong>License:</strong> by using the AI, sync/export or (opt-in) search features, you grant us a limited, non-exclusive licence to process the relevant documents solely to provide the features you use. We do not use your documents to train our own AI models.</p>
 
                     <h2 id="integrations">9. Third-Party Integrations</h2>
                     <p>Scandora integrates third-party services (Trello, Google Drive, AI providers, the app stores, RevenueCat). Your use of them is subject to their terms and privacy policies. We are not responsible for the availability, functionality, or security of third-party services.</p>
@@ -314,6 +321,7 @@
 
                     <h2 id="governing">15. Governing Law &amp; Jurisdiction</h2>
                     <p>The law of the Federal Republic of Germany applies, excluding the UN Convention on Contracts for the International Sale of Goods. If you are a consumer, mandatory consumer-protection provisions of the country of your habitual residence remain unaffected (Art. 6 Rome I). For merchants, the place of jurisdiction is, to the extent permitted, the operator's registered seat.</p>
+                    <p><strong>Severability.</strong> Should individual provisions of these Terms be or become wholly or partly invalid, the validity of the remaining provisions is unaffected. No validity-preserving reduction of invalid clauses takes place; the statutory provisions apply in place of any invalid provision.</p>
 
                     <h2 id="contact">16. Contact</h2>
                     <div class="contact-card">
@@ -347,6 +355,7 @@
                         <h4 data-i18n="footer.legal">Legal</h4>
                         <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
                         <a href="/terms.html" aria-current="page" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
                         <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
                     </div>
                     <div class="footer-col">
@@ -362,7 +371,7 @@
     </footer>
 
     <script src="translations.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js" defer></script>
+    <script src="assets/vendor/cookieconsent.umd.js" defer></script>
     <script src="main.js" defer></script>
 </body>
 </html>

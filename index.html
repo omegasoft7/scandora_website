@@ -63,12 +63,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <!-- Preconnect for Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconnect for Performance (fonts are self-hosted — no Google Fonts requests) -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
@@ -95,15 +91,15 @@
         });
     </script>
 
-    <!-- Cookie Consent -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+    <!-- Cookie Consent (self-hosted) -->
+    <link rel="stylesheet" href="assets/vendor/cookieconsent.css">
 
     <!-- Preload Critical Resources -->
     <link rel="preload" href="styles.css" as="style">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="assets/fonts/inter.css" as="style">
 
-    <!-- Stylesheets -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Stylesheets (Inter self-hosted — no third-party font requests, DSGVO-konform) -->
+    <link rel="stylesheet" href="assets/fonts/inter.css">
     <link rel="stylesheet" href="styles.css">
 
     <!-- Structured Data - Organization -->
@@ -144,26 +140,30 @@
                 "name": "Free Plan",
                 "price": "0",
                 "priceCurrency": "EUR",
-                "description": "30 scans per month, basic document management"
+                "availability": "https://schema.org/InStock",
+                "description": "On-device search (private, offline), basic document management, one cloud integration, watermarked exports"
             },
             {
                 "@type": "Offer",
                 "name": "Pro Plan",
                 "price": "9.99",
                 "priceCurrency": "EUR",
-                "description": "1,000 scans per month, AI processing, cloud integrations"
+                "availability": "https://schema.org/PreOrder",
+                "description": "Planned paid plan: 1,000 monthly AI credits (extraction, indexing & AI chat), cloud integrations. Launching soon; managed AI document chat coming soon."
             },
             {
                 "@type": "Offer",
                 "name": "Business Plan",
                 "price": "24.99",
                 "priceCurrency": "EUR",
-                "description": "5,000 scans per month, team collaboration, unlimited profiles"
+                "availability": "https://schema.org/PreOrder",
+                "description": "Planned paid plan: 5,000 monthly AI credits (extraction, indexing & AI chat), unlimited profiles. Launching soon; team-wide AI search with EU-hosted index coming soon."
             }
         ],
         "featureList": [
             "AI-powered OCR scanning",
             "Automatic data extraction",
+            "On-device document search (free, private, offline)",
             "Trello integration",
             "Google Drive sync",
             "Multi-profile support",
@@ -192,7 +192,7 @@
                 "name": "Is Scandora free to use?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes! Scandora offers a free plan with 30 scans per month. For professionals needing more features, we offer Pro (€9.99/month) and Business (€24.99/month) plans with AI processing, cloud integrations, and team collaboration features."
+                    "text": "Yes! Scandora's free plan includes private, offline on-device search of your scans, basic document management, one cloud integration, and watermarked exports. Paid plans are launching soon: Pro (planned €9.99/month) will add a monthly AI-credit allowance and managed AI document chat, and Business (planned €24.99/month) will add team-wide AI search with an EU-hosted index. Prices shown are the planned subscription prices and may change at launch."
                 }
             },
             {
@@ -208,7 +208,7 @@
                 "name": "Is my data secure with Scandora?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Absolutely. Scandora is designed with privacy-first principles. We don't store your documents on our servers – everything syncs directly to your chosen cloud services like Google Drive or Trello. You maintain full control of your data."
+                    "text": "Privacy is built into Scandora's design. Your documents stay on your device by default, and on-device search is private and works offline. If you later opt in (with your consent) to the planned AI document chat, an optional EU-resident search index (Frankfurt) would store derived text only – not your original files – and managed AI generation may be processed outside the EU (e.g. OpenAI in the USA, Google Gemini) under EU Standard Contractual Clauses and the EU–US Data Privacy Framework. You stay in control of your data."
                 }
             },
             {
@@ -378,7 +378,7 @@
                     <article class="feature-card" role="listitem" itemscope itemtype="https://schema.org/Service">
                         <div class="feature-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
                         <h3 data-i18n="features.search.title" itemprop="name">Intelligent Search</h3>
-                        <p data-i18n="features.search.desc" itemprop="description">Find any document instantly with full-text and AI-powered natural language search across all your scans.</p>
+                        <p data-i18n="features.search.desc" itemprop="description">Find your scans instantly with on-device full-text search — free, private, and offline on every plan. On Pro and above, ask the AI a question and get a cited answer from your documents.</p>
                     </article>
                     <article class="feature-card" role="listitem" itemscope itemtype="https://schema.org/Service">
                         <div class="feature-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
@@ -388,7 +388,7 @@
                     <article class="feature-card" role="listitem" itemscope itemtype="https://schema.org/Service">
                         <div class="feature-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
                         <h3 data-i18n="features.privacy.title" itemprop="name">Privacy First</h3>
-                        <p data-i18n="features.privacy.desc" itemprop="description">Your documents are yours. We don't store your data – everything syncs directly to your chosen cloud services.</p>
+                        <p data-i18n="features.privacy.desc" itemprop="description">Your documents are yours. We don't store your full documents on our servers — they sync directly to the AI provider and cloud services you choose; we keep only minimal metadata and a small preview.</p>
                     </article>
                 </div>
             </div>
@@ -449,9 +449,9 @@
                             <span class="currency" aria-label="Euro">€</span><span class="amount" itemprop="price" content="0">0</span><span class="period" data-i18n="pricing.perMonth">/month</span>
                         </div>
                         <ul class="pricing-features" itemprop="description">
-                            <li data-i18n="pricing.free.f1">30 scans per month</li>
+                            <li data-i18n="pricing.free.f1">On-device search (private, offline)</li>
                             <li data-i18n="pricing.free.f2">Basic document management</li>
-                            <li data-i18n="pricing.free.f3">Local storage only</li>
+                            <li data-i18n="pricing.free.f3">One cloud integration</li>
                             <li data-i18n="pricing.free.f4">Watermarked exports</li>
                         </ul>
                         <a href="#download" class="btn btn-secondary btn-full" role="button" data-i18n="pricing.free.cta">Get Started</a>
@@ -467,13 +467,13 @@
                             <span class="currency" aria-label="Euro">€</span><span class="amount" itemprop="price" content="9.99">9.99</span><span class="period" data-i18n="pricing.perMonth">/month</span>
                         </div>
                         <ul class="pricing-features" itemprop="description">
-                            <li data-i18n="pricing.pro.f1">1,000 scans per month</li>
-                            <li data-i18n="pricing.pro.f2">1,000 AI analyses</li>
-                            <li data-i18n="pricing.pro.f3">AI-powered search</li>
+                            <li data-i18n="pricing.pro.f1">1,000 AI credits/month (shared pool: extraction, indexing &amp; AI chat)</li>
+                            <li data-i18n="pricing.pro.f2">On-device search — unlimited &amp; offline</li>
+                            <li data-i18n="pricing.pro.f3">Managed AI document chat (coming soon)</li>
                             <li data-i18n="pricing.pro.f4">Cloud integrations</li>
                             <li data-i18n="pricing.pro.f5">Priority support</li>
                         </ul>
-                        <a href="#download" class="btn btn-primary btn-full" role="button" data-i18n="pricing.pro.cta">Start Pro Trial</a>
+                        <span class="btn btn-primary btn-full is-disabled" role="button" aria-disabled="true" data-i18n="pricing.pro.cta">Coming Soon</span>
                     </article>
                     <article class="pricing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
                         <div class="pricing-header">
@@ -485,9 +485,9 @@
                             <span class="currency" aria-label="Euro">€</span><span class="amount" itemprop="price" content="24.99">24.99</span><span class="period" data-i18n="pricing.perMonth">/month</span>
                         </div>
                         <ul class="pricing-features" itemprop="description">
-                            <li data-i18n="pricing.business.f1">5,000 scans per month</li>
-                            <li data-i18n="pricing.business.f2">5,000 AI analyses</li>
-                            <li data-i18n="pricing.business.f3">Team collaboration</li>
+                            <li data-i18n="pricing.business.f1">5,000 AI credits/month (shared pool: extraction, indexing &amp; AI chat)</li>
+                            <li data-i18n="pricing.business.f2">On-device search — unlimited &amp; offline</li>
+                            <li data-i18n="pricing.business.f3">Team-wide AI search + EU-hosted index (coming soon)</li>
                             <li data-i18n="pricing.business.f4">Unlimited profiles</li>
                             <li data-i18n="pricing.business.f5">Dedicated support</li>
                         </ul>
@@ -495,6 +495,8 @@
                     </article>
                 </div>
                 <p class="pricing-note" data-i18n="pricing.byo"><span aria-hidden="true">💡</span> Bring your own AI (OpenAI, Google Gemini) and save on processing costs!</p>
+                <p class="pricing-note" data-i18n="pricing.availability">Paid plans (Pro &amp; Business) are launching soon. Prices shown are the planned subscription prices and may change at launch. Today Scandora is free to use.</p>
+                <p class="pricing-note" data-i18n="pricing.priceNote"><small>Prices are the final amounts charged via the App Store / Google Play (small-business operator — no separate VAT shown, § 19 UStG). Prices may vary by region and store.</small></p>
             </div>
         </section>
 
@@ -539,6 +541,7 @@
                         <h4 data-i18n="footer.legal">Legal</h4>
                         <a href="/privacy.html" data-i18n="footer.privacy" rel="noopener">Privacy Policy</a>
                         <a href="/terms.html" data-i18n="footer.terms" rel="noopener">Terms of Service</a>
+                        <a href="/avv.html" data-i18n="footer.avv" rel="noopener">AVV / DPA</a>
                         <a href="/imprint.html" data-i18n="footer.imprint" rel="noopener">Imprint</a>
                     </div>
                     <div class="footer-col">
@@ -548,14 +551,14 @@
                 </nav>
             </div>
             <div class="footer-bottom">
-                <p><small>© <time datetime="2025">2025</time> Scandora. <span data-i18n="footer.rights">All rights reserved.</span></small></p>
+                <p><small>© <time datetime="2026">2026</time> Scandora. <span data-i18n="footer.rights">All rights reserved.</span></small></p>
             </div>
         </div>
     </footer>
 
     <!-- Scripts with defer for better performance -->
     <script src="translations.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js" defer></script>
+    <script src="assets/vendor/cookieconsent.umd.js" defer></script>
     <script src="main.js" defer></script>
 </body>
 </html>
