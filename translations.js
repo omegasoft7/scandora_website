@@ -303,11 +303,6 @@ function toggleLanguage() {
     localStorage.setItem('scandora-lang', currentLang);
     applyTranslations();
 
-    // Update CookieConsent language if available
-    if (typeof CookieConsent !== 'undefined' && CookieConsent.setLanguage) {
-        CookieConsent.setLanguage(currentLang);
-    }
-
     // Track language switch event
     if (typeof window.trackEvent === 'function') {
         window.trackEvent('language_switch', {

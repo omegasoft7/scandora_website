@@ -21,30 +21,9 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
     <!-- Fonts & Styles (Inter self-hosted — no third-party font requests, DSGVO-konform) -->
-    <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="stylesheet" href="assets/fonts/inter.css">
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Google Analytics 4 with Consent Mode v2 -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied',
-            'ad_storage': 'denied',
-            'ad_user_data': 'denied',
-            'ad_personalization': 'denied',
-            'wait_for_update': 500
-        });
-    </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7EY08N1VS0"></script>
-    <script>
-        gtag('js', new Date());
-        gtag('config', 'G-7EY08N1VS0', { 'anonymize_ip': true });
-    </script>
-
-    <!-- Cookie Consent (self-hosted) -->
-    <link rel="stylesheet" href="assets/vendor/cookieconsent.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -134,7 +113,7 @@
                     <h3>Diagnostics &amp; usage</h3>
                     <ul>
                         <li><strong>Crash reports</strong> (device type, OS version, app version, stack traces — <em>no</em> document content)</li>
-                        <li><strong>Product analytics</strong> — pseudonymous usage events, collected <em>only</em> with your consent</li>
+                        <li><strong>Product analytics</strong> — pseudonymous usage events on our own cookieless, first-party server (no cookie, no stable identifier, no personal data)</li>
                     </ul>
 
                     <h3>Subscription data</h3>
@@ -189,6 +168,8 @@
                     </ul>
                     <h3>Legitimate interest — Art. 6(1)(f) GDPR</h3>
                     <ul>
+                        <li><strong>Product analytics (Scandora's own first-party, cookieless analytics server)</strong> — pseudonymous usage events sent to a self-hosted server that sets <em>no cookie</em>, reads no device storage and attaches <em>no stable identifier</em>; it carries no document content and no personal data, and no third party is involved. Because there is no storing of or access to information on your device, <strong>§ 25 TTDSG/TDDDG is not triggered</strong>, so no consent banner is required for this measurement.</li>
+                        <li><strong>Performance monitoring (Firebase Performance)</strong> — to measure and improve app speed and reliability.</li>
                         <li><strong>Crash reporting (Firebase Crashlytics)</strong> — to keep the app stable. Device type, OS/app version and stack traces; no document content.</li>
                         <li><strong>Security</strong> — detecting and preventing fraud and abuse.</li>
                         <li><strong>Website contact form</strong> — to receive and respond to your enquiry; the form is delivered via Formspree (USA, see section 7). Where your message concerns a (pre-)contractual matter we also rely on Art. 6(1)(b). We keep contact-form data only as long as needed to handle the enquiry.</li>
@@ -196,8 +177,8 @@
                     </ul>
                     <h3>Consent — Art. 6(1)(a) GDPR</h3>
                     <ul>
-                        <li><strong>Product analytics (Google Analytics 4 / Firebase Analytics)</strong> — only when you opt in; withdrawable at any time.</li>
-                        <li><strong>Performance monitoring.</strong></li>
+                        <li><strong>Special-category document data (Art. 9(2)(a))</strong> — where you use AI analysis or cloud export on documents that contain special categories of data (e.g. health data), the processing relies on your explicit consent (see section 5).</li>
+                        <li><strong>Planned AI document search</strong> — the optional, opt-in search index (Pro and above) will be created only with your explicit consent (see sections 7 and 11).</li>
                     </ul>
 
                     <h2 id="subprocessors">7. Sub-Processors &amp; Recipients</h2>
@@ -250,13 +231,6 @@
                                 <td><a href="https://cloud.google.com/terms/data-processing-addendum" rel="noopener" target="_blank">cloud.google.com/terms/data-processing-addendum</a></td>
                             </tr>
                             <tr>
-                                <td>Google Analytics 4</td>
-                                <td>Product analytics (consent-gated)<sup>2</sup></td>
-                                <td>Pseudonymous usage events (Google's default GA4 IP handling in-app; IP anonymization additionally enforced on the website)</td>
-                                <td>USA / global</td>
-                                <td><a href="https://cloud.google.com/terms/data-processing-addendum" rel="noopener" target="_blank">cloud.google.com/terms/data-processing-addendum</a></td>
-                            </tr>
-                            <tr>
                                 <td>Google Drive (API)</td>
                                 <td>Export to your own Google Drive (user-authorized)</td>
                                 <td>Exported document files &amp; file metadata you send</td>
@@ -288,7 +262,7 @@
                     </table>
                     </div>
                     <p><small><sup>1</sup> In <strong>BYOAI</strong> mode you use your own API key and you are the controller; the provider processes under your own account, not as Scandora's sub-processor. The provider acts as Scandora's sub-processor only on the <strong>managed AI Pass</strong> path.<br>
-                    <sup>2</sup> Google Analytics 4 is consent-gated today and is scheduled to be replaced by self-hosted, cookieless analytics (Plausible / Umami); it will then be removed from this list.</small></p>
+                    Product analytics is <strong>not</strong> a sub-processor: it runs on Scandora's own self-hosted, cookieless analytics server (no third party, no cookie, no stable identifier — see section 6).</small></p>
 
                     <h2 id="roles">8. Controller vs. Processor Roles</h2>
                     <ul>
@@ -302,23 +276,17 @@
                     <p><strong>Please note:</strong> while the planned search index will be EU-resident, AI <em>generation</em> (analysing a document or producing a cited answer) is performed by the model provider — OpenAI (USA) or Google Gemini (USA / global) — so that generation step may be processed outside the EU under the safeguards above. The EU-resident index will not make the AI generation itself EU-only.</p>
 
                     <h2 id="consent-management">10. Consent Management</h2>
-                    <p>You control optional data collection through our in-app consent system.</p>
-                    <ul>
-                        <li><strong>First launch:</strong> a consent banner asks for your preferences.</li>
-                        <li><strong>Granular control:</strong> accept all, reject all, or choose per category.</li>
-                        <li><strong>Change anytime:</strong> Settings → Privacy.</li>
-                        <li><strong>Renewal:</strong> we re-ask after 12 months.</li>
-                    </ul>
+                    <p>Product analytics, performance and crash reporting run on a <strong>legitimate-interest</strong> basis (section 6), so there is <strong>no analytics consent banner and no cookie wall</strong>. We ask for consent only where it is actually required — for special-category document data (Art. 9(2)(a)) and the planned opt-in AI document search — which you grant and can withdraw in the app.</p>
                     <table class="cookie-table">
                         <thead><tr><th>Data type</th><th>Purpose</th><th>Requires consent</th></tr></thead>
                         <tbody>
-                            <tr><td>Analytics</td><td>Usage patterns, feature adoption</td><td>Yes (opt-in)</td></tr>
-                            <tr><td>Performance</td><td>App speed, responsiveness</td><td>Yes (opt-in)</td></tr>
+                            <tr><td>Product analytics (first-party, cookieless)</td><td>Usage patterns, feature adoption</td><td>No (legitimate interest, cookieless)</td></tr>
+                            <tr><td>Performance</td><td>App speed, responsiveness</td><td>No (legitimate interest)</td></tr>
                             <tr><td>Crash reports</td><td>Bug fixes, stability</td><td>No (legitimate interest)</td></tr>
                             <tr><td>Account &amp; documents handling</td><td>Service provision</td><td>No (contract)</td></tr>
+                            <tr><td>Special-category document data / planned AI search</td><td>AI on sensitive documents; document search</td><td>Yes (explicit consent)</td></tr>
                         </tbody>
                     </table>
-                    <p>On Google services we apply Google Consent Mode v2, so denying consent disables analytics collection and advertising identifiers.</p>
                     <div class="highlight-box">
                         <p><strong>No advertising:</strong> Scandora does not use advertising identifiers (IDFA/GAID), does not show ads, and does not share your data with advertisers. We do not track you across other apps or websites.</p>
                     </div>
@@ -336,7 +304,7 @@
                     <ul>
                         <li><strong>Account, profile &amp; history metadata (incl. preview thumbnails):</strong> kept for the life of your account and erased when you delete it (section 12), at the latest within 30 days.</li>
                         <li><strong>Crash reports:</strong> up to 90 days (Firebase Crashlytics default).</li>
-                        <li><strong>Product analytics:</strong> per the configured Google Analytics 4 retention (maximum 14 months) and only while your consent is active.</li>
+                        <li><strong>Product analytics:</strong> pseudonymous events on our self-hosted analytics server, retained for at most 365 days and then pruned.</li>
                         <li><strong>Subscription &amp; billing records:</strong> kept for the statutory commercial/tax retention period under German law (§ 257 HGB / § 147 AO — generally 6 to 10 years), even after account deletion.</li>
                         <li><strong>Document content for AI generation / cloud export:</strong> not retained by Scandora — processed transiently and discarded once the result is produced.</li>
                         <li><strong>AI document search index (planned; opt-in, derived text only, EU-resident — Oracle Frankfurt):</strong> once available, retained until you delete the source document or withdraw consent, and purged within 30 days of account deletion.</li>
@@ -350,24 +318,14 @@
                     </div>
 
                     <h2 id="cookies">13. Cookies (Website)</h2>
-                    <p>Our website uses cookies for basic functionality and — only with your consent — for analytics. Manage your choices anytime via Cookie Settings.</p>
+                    <p>Our website sets <strong>no analytics or advertising cookies</strong> and shows <strong>no cookie banner</strong>. Product analytics is cookieless and first-party (section 6), so <strong>§ 25 TTDSG/TDDDG is not triggered</strong>. The only client-side storage is a single strictly-necessary entry that remembers your language choice.</p>
                     <h4>Strictly necessary</h4>
                     <table class="cookie-table">
-                        <thead><tr><th>Cookie</th><th>Provider</th><th>Purpose</th><th>Duration</th></tr></thead>
+                        <thead><tr><th>Name</th><th>Provider</th><th>Purpose</th><th>Duration</th></tr></thead>
                         <tbody>
-                            <tr><td><code>cc_cookie</code></td><td>Scandora</td><td>Stores your cookie consent preferences</td><td>1 year</td></tr>
                             <tr><td><code>scandora-lang</code></td><td>Scandora</td><td>Remembers your language preference</td><td>Persistent</td></tr>
                         </tbody>
                     </table>
-                    <h4>Analytics (optional)</h4>
-                    <table class="cookie-table">
-                        <thead><tr><th>Cookie</th><th>Provider</th><th>Purpose</th><th>Duration</th></tr></thead>
-                        <tbody>
-                            <tr><td><code>_ga</code></td><td>Google Analytics</td><td>Distinguishes unique visitors</td><td>2 years</td></tr>
-                            <tr><td><code>_ga_*</code></td><td>Google Analytics</td><td>Maintains session state</td><td>2 years</td></tr>
-                        </tbody>
-                    </table>
-                    <button type="button" class="btn btn-secondary" onclick="CookieConsent.showPreferences()" aria-label="Open cookie settings" style="margin-top:1rem;">Cookie Settings</button>
 
                     <h2 id="children">14. Children's Privacy</h2>
                     <p>Scandora is not intended for children under 16. We do not knowingly collect data from children. If you believe we have, contact us immediately.</p>
@@ -438,7 +396,7 @@
                     <h3>Diagnose &amp; Nutzung</h3>
                     <ul>
                         <li><strong>Absturzberichte</strong> (Gerätetyp, Betriebssystem-/App-Version, Stack-Traces — <em>keine</em> Dokumentinhalte)</li>
-                        <li><strong>Produktanalyse</strong> — pseudonyme Nutzungsereignisse, <em>nur</em> mit Ihrer Einwilligung</li>
+                        <li><strong>Produktanalyse</strong> — pseudonyme Nutzungsereignisse auf unserem eigenen, cookielosen First-Party-Server (kein Cookie, keine stabile Kennung, keine personenbezogenen Daten)</li>
                     </ul>
 
                     <h3>Abonnementdaten</h3>
@@ -493,6 +451,8 @@
                     </ul>
                     <h3>Berechtigtes Interesse — Art. 6 Abs. 1 lit. f DSGVO</h3>
                     <ul>
+                        <li><strong>Produktanalyse (Scandoras eigener, cookieloser First-Party-Analyseserver)</strong> — pseudonyme Nutzungsereignisse an einen selbst gehosteten Server, der <em>kein Cookie</em> setzt, keinen Gerätespeicher liest und <em>keine stabile Kennung</em> anhängt; keine Dokumentinhalte, keine personenbezogenen Daten und kein Dritter sind beteiligt. Da keine Informationen auf Ihrem Gerät gespeichert oder abgerufen werden, ist <strong>§ 25 TTDSG/TDDDG nicht einschlägig</strong>, sodass für diese Messung kein Einwilligungsbanner erforderlich ist.</li>
+                        <li><strong>Leistungsüberwachung (Firebase Performance)</strong> — zur Messung und Verbesserung von App-Geschwindigkeit und Zuverlässigkeit.</li>
                         <li><strong>Absturzberichte (Firebase Crashlytics)</strong> — zur Stabilität der App. Gerätetyp, Betriebssystem-/App-Version und Stack-Traces; keine Dokumentinhalte.</li>
                         <li><strong>Sicherheit</strong> — Erkennung und Verhinderung von Betrug und Missbrauch.</li>
                         <li><strong>Kontaktformular der Website</strong> — zur Entgegennahme und Beantwortung Ihrer Anfrage; das Formular wird über Formspree (USA, siehe Abschnitt 7) ausgeliefert. Betrifft Ihre Nachricht eine (vor-)vertragliche Angelegenheit, stützen wir uns zusätzlich auf Art. 6 Abs. 1 lit. b. Wir bewahren Kontaktformular-Daten nur so lange auf, wie es zur Bearbeitung der Anfrage erforderlich ist.</li>
@@ -500,8 +460,8 @@
                     </ul>
                     <h3>Einwilligung — Art. 6 Abs. 1 lit. a DSGVO</h3>
                     <ul>
-                        <li><strong>Produktanalyse (Google Analytics 4 / Firebase Analytics)</strong> — nur bei Opt-in; jederzeit widerrufbar.</li>
-                        <li><strong>Leistungsüberwachung.</strong></li>
+                        <li><strong>Besondere Kategorien von Dokumentdaten (Art. 9 Abs. 2 lit. a)</strong> — soweit Sie KI-Analyse oder Cloud-Export für Dokumente mit besonderen Datenkategorien (z. B. Gesundheitsdaten) nutzen, stützt sich die Verarbeitung auf Ihre ausdrückliche Einwilligung (siehe Abschnitt 5).</li>
+                        <li><strong>Geplante KI-Dokumentensuche</strong> — der optionale, einwilligungsbasierte Suchindex (ab Pro) wird nur mit Ihrer ausdrücklichen Einwilligung erstellt (siehe Abschnitte 7 und 11).</li>
                     </ul>
 
                     <h2 id="de-subprocessors">7. Unterauftragsverarbeiter &amp; Empfänger</h2>
@@ -554,13 +514,6 @@
                                 <td><a href="https://cloud.google.com/terms/data-processing-addendum" rel="noopener" target="_blank">cloud.google.com/terms/data-processing-addendum</a></td>
                             </tr>
                             <tr>
-                                <td>Google Analytics 4</td>
-                                <td>Produktanalyse (einwilligungsbasiert)<sup>2</sup></td>
-                                <td>Pseudonyme Nutzungsereignisse (GA4-Standard-IP-Verarbeitung von Google in der App; IP-Anonymisierung zusätzlich auf der Website erzwungen)</td>
-                                <td>USA / global</td>
-                                <td><a href="https://cloud.google.com/terms/data-processing-addendum" rel="noopener" target="_blank">cloud.google.com/terms/data-processing-addendum</a></td>
-                            </tr>
-                            <tr>
                                 <td>Google Drive (API)</td>
                                 <td>Export in Ihr eigenes Google Drive (von Ihnen autorisiert)</td>
                                 <td>Von Ihnen gesendete exportierte Dateien &amp; Datei-Metadaten</td>
@@ -592,7 +545,7 @@
                     </table>
                     </div>
                     <p><small><sup>1</sup> Im <strong>BYOAI</strong>-Modus nutzen Sie Ihren eigenen API-Schlüssel und sind Verantwortlicher; der Anbieter verarbeitet unter Ihrem eigenen Konto, nicht als Unterauftragsverarbeiter von Scandora. Nur auf dem <strong>Managed-AI-Pass</strong>-Pfad ist der Anbieter Unterauftragsverarbeiter von Scandora.<br>
-                    <sup>2</sup> Google Analytics 4 ist derzeit einwilligungsbasiert und soll durch selbst gehostete, cookielose Analyse (Plausible / Umami) ersetzt werden; danach wird es aus dieser Liste entfernt.</small></p>
+                    Die Produktanalyse ist <strong>kein</strong> Unterauftragsverarbeiter: Sie läuft auf Scandoras eigenem, selbst gehostetem, cookielosem Analyseserver (kein Dritter, kein Cookie, keine stabile Kennung — siehe Abschnitt 6).</small></p>
 
                     <h2 id="de-roles">8. Rollen: Verantwortlicher vs. Auftragsverarbeiter</h2>
                     <ul>
@@ -606,23 +559,17 @@
                     <p><strong>Bitte beachten Sie:</strong> Der geplante Suchindex wird zwar in der EU ansässig sein, die KI-<em>Generierung</em> (Analyse eines Dokuments oder Erzeugung einer belegten Antwort) erfolgt jedoch durch den Modellanbieter — OpenAI (USA) oder Google Gemini (USA / global) —, sodass dieser Generierungsschritt unter den oben genannten Garantien außerhalb der EU verarbeitet werden kann. Der in der EU ansässige Index macht die KI-Generierung selbst nicht zu einer reinen EU-Verarbeitung.</p>
 
                     <h2 id="de-consent-management">10. Einwilligungsverwaltung</h2>
-                    <p>Sie steuern die optionale Datenerhebung über unser In-App-Einwilligungssystem.</p>
-                    <ul>
-                        <li><strong>Erststart:</strong> ein Einwilligungsbanner fragt Ihre Präferenzen ab.</li>
-                        <li><strong>Granulare Steuerung:</strong> alles akzeptieren, alles ablehnen oder pro Kategorie wählen.</li>
-                        <li><strong>Jederzeit ändern:</strong> Einstellungen → Datenschutz.</li>
-                        <li><strong>Erneuerung:</strong> wir fragen nach 12 Monaten erneut.</li>
-                    </ul>
+                    <p>Produktanalyse, Leistungsüberwachung und Absturzberichte stützen sich auf <strong>berechtigtes Interesse</strong> (Abschnitt 6) — es gibt <strong>kein Analyse-Einwilligungsbanner und keine Cookie-Wall</strong>. Eine Einwilligung holen wir nur dort ein, wo sie tatsächlich erforderlich ist — für besondere Kategorien von Dokumentdaten (Art. 9 Abs. 2 lit. a) und die geplante, optionale KI-Dokumentensuche — die Sie in der App erteilen und widerrufen können.</p>
                     <table class="cookie-table">
                         <thead><tr><th>Datentyp</th><th>Zweck</th><th>Einwilligung nötig</th></tr></thead>
                         <tbody>
-                            <tr><td>Analyse</td><td>Nutzungsmuster, Funktionsnutzung</td><td>Ja (Opt-in)</td></tr>
-                            <tr><td>Leistung</td><td>App-Geschwindigkeit, Reaktionsfähigkeit</td><td>Ja (Opt-in)</td></tr>
+                            <tr><td>Produktanalyse (First-Party, cookielos)</td><td>Nutzungsmuster, Funktionsnutzung</td><td>Nein (berechtigtes Interesse, cookielos)</td></tr>
+                            <tr><td>Leistung</td><td>App-Geschwindigkeit, Reaktionsfähigkeit</td><td>Nein (berechtigtes Interesse)</td></tr>
                             <tr><td>Absturzberichte</td><td>Fehlerbehebung, Stabilität</td><td>Nein (berechtigtes Interesse)</td></tr>
                             <tr><td>Konto- &amp; Dokumentverarbeitung</td><td>Diensterbringung</td><td>Nein (Vertrag)</td></tr>
+                            <tr><td>Besondere Dokumentdaten / geplante KI-Suche</td><td>KI bei sensiblen Dokumenten; Dokumentensuche</td><td>Ja (ausdrückliche Einwilligung)</td></tr>
                         </tbody>
                     </table>
-                    <p>Bei Google-Diensten wenden wir Google Consent Mode v2 an; eine Ablehnung deaktiviert die Analyseerfassung und Werbe-IDs.</p>
                     <div class="highlight-box">
                         <p><strong>Keine Werbung:</strong> Scandora nutzt keine Werbe-IDs (IDFA/GAID), zeigt keine Werbung und gibt Ihre Daten nicht an Werbetreibende weiter. Wir verfolgen Sie nicht über andere Apps oder Websites hinweg.</p>
                     </div>
@@ -640,7 +587,7 @@
                     <ul>
                         <li><strong>Konto-, Profil- &amp; Verlaufs-Metadaten (inkl. Vorschaubilder):</strong> für die Dauer Ihres Kontos gespeichert und bei dessen Löschung (Abschnitt 12) entfernt, spätestens innerhalb von 30 Tagen.</li>
                         <li><strong>Absturzberichte:</strong> bis zu 90 Tage (Firebase-Crashlytics-Standard).</li>
-                        <li><strong>Produktanalyse:</strong> gemäß der konfigurierten Google-Analytics-4-Aufbewahrung (max. 14 Monate) und nur solange Ihre Einwilligung aktiv ist.</li>
+                        <li><strong>Produktanalyse:</strong> pseudonyme Ereignisse auf unserem selbst gehosteten Analyseserver, höchstens 365 Tage aufbewahrt und anschließend gelöscht.</li>
                         <li><strong>Abo- &amp; Abrechnungsdaten:</strong> für die gesetzliche handels-/steuerrechtliche Aufbewahrungsfrist nach deutschem Recht (§ 257 HGB / § 147 AO — in der Regel 6 bis 10 Jahre), auch nach Kontolöschung.</li>
                         <li><strong>Dokumentinhalte für KI-Generierung / Cloud-Export:</strong> werden von Scandora nicht gespeichert — sie werden nur vorübergehend verarbeitet und nach Erzeugung des Ergebnisses verworfen.</li>
                         <li><strong>KI-Dokumenten-Suchindex (geplant; Opt-in, nur abgeleiteter Text, EU-ansässig — Oracle Frankfurt):</strong> nach Verfügbarkeit aufbewahrt bis zur Löschung des Quelldokuments oder zum Widerruf der Einwilligung und innerhalb von 30 Tagen nach Kontolöschung gelöscht.</li>
@@ -654,24 +601,14 @@
                     </div>
 
                     <h2 id="de-cookies">13. Cookies (Website)</h2>
-                    <p>Unsere Website verwendet Cookies für grundlegende Funktionen und — nur mit Ihrer Einwilligung — für Analyse. Verwalten Sie Ihre Auswahl jederzeit über die Cookie-Einstellungen.</p>
+                    <p>Unsere Website setzt <strong>keine Analyse- oder Werbe-Cookies</strong> und zeigt <strong>kein Cookie-Banner</strong>. Die Produktanalyse ist cookielos und First-Party (Abschnitt 6), sodass <strong>§ 25 TTDSG/TDDDG nicht einschlägig ist</strong>. Die einzige clientseitige Speicherung ist ein einzelner unbedingt erforderlicher Eintrag, der sich Ihre Sprachwahl merkt.</p>
                     <h4>Unbedingt erforderlich</h4>
                     <table class="cookie-table">
-                        <thead><tr><th>Cookie</th><th>Anbieter</th><th>Zweck</th><th>Dauer</th></tr></thead>
+                        <thead><tr><th>Name</th><th>Anbieter</th><th>Zweck</th><th>Dauer</th></tr></thead>
                         <tbody>
-                            <tr><td><code>cc_cookie</code></td><td>Scandora</td><td>Speichert Ihre Cookie-Einwilligung</td><td>1 Jahr</td></tr>
                             <tr><td><code>scandora-lang</code></td><td>Scandora</td><td>Merkt sich Ihre Spracheinstellung</td><td>Dauerhaft</td></tr>
                         </tbody>
                     </table>
-                    <h4>Analyse (optional)</h4>
-                    <table class="cookie-table">
-                        <thead><tr><th>Cookie</th><th>Anbieter</th><th>Zweck</th><th>Dauer</th></tr></thead>
-                        <tbody>
-                            <tr><td><code>_ga</code></td><td>Google Analytics</td><td>Unterscheidet einzelne Besucher</td><td>2 Jahre</td></tr>
-                            <tr><td><code>_ga_*</code></td><td>Google Analytics</td><td>Hält den Sitzungsstatus aufrecht</td><td>2 Jahre</td></tr>
-                        </tbody>
-                    </table>
-                    <button type="button" class="btn btn-secondary" onclick="CookieConsent.showPreferences()" aria-label="Cookie-Einstellungen öffnen" style="margin-top:1rem;">Cookie-Einstellungen</button>
 
                     <h2 id="de-children">14. Datenschutz für Kinder</h2>
                     <p>Scandora ist nicht für Kinder unter 16 Jahren bestimmt. Wir erheben wissentlich keine Daten von Kindern. Wenn Sie glauben, dass dies geschehen ist, kontaktieren Sie uns umgehend.</p>
@@ -726,7 +663,6 @@
     </footer>
 
     <script src="translations.js" defer></script>
-    <script src="assets/vendor/cookieconsent.umd.js" defer></script>
     <script src="main.js" defer></script>
 </body>
 </html>
