@@ -14,6 +14,7 @@
         initAnimations();
         initStatsCounter();
         initContactForm();
+        initAnalyticsTracking(); // Umami event tracking
         consoleBranding();
     });
 
@@ -143,15 +144,65 @@
     // ============================================
     // ANALYTICS
     // ============================================
-    // Google Analytics 4 and the cookie-consent wall were removed: the site is
-    // now cookieless and consent-free. Marketing-site analytics is not wired
-    // yet; trackEvent is a no-op stub kept so existing callers (e.g. the
-    // language toggle in translations.js) keep working. A first-party,
-    // cookieless Umami browser tracker can be added later (Trello #79 / 5.11).
-    function trackEvent() {}
 
-    // Expose trackEvent globally for callers like the language toggle.
+    function trackEvent(eventName, properties) {
+        if (typeof window.umami !== 'undefined' && window.umami.track) {
+            window.umami.track(eventName, properties || {});
+        }
+    }
+
     window.trackEvent = trackEvent;
+
+    function initAnalyticsTracking() {
+        document.querySelectorAll('a[href*="apps.apple.com"], a[href*="play.google.com"]').forEach(link => {
+            link.addEventListener('click', function() {
+                const platform = this.href.includes('apple.com') ? 'ios' : 'android';
+                const location = this.closest('.hero-actions') ? 'hero' :
+                               this.closest('.download-section') ? 'download_section' : 'other';
+                trackEvent('download_click', {
+                    platform: platform,
+                    location: location
+                });
+            });
+        });
+
+        document.querySelectorAll('.pricing-card .btn, .pricing-card a[href*="subscribe"]').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const card = this.closest('.pricing-card');
+                const planName = card ? (card.querySelector('h3')?.textContent || 'unknown').toLowerCase() : 'unknown';
+                trackEvent('pricing_cta', {
+                    plan: planName,
+                    cta_text: this.textContent.trim()
+                });
+            });
+        });
+
+
+
+        const sections = document.querySelectorAll('section[id]');
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    trackEvent('section_view', {
+                        section: entry.target.id
+                    });
+                    sectionObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        sections.forEach(section => sectionObserver.observe(section));
+
+        document.querySelectorAll('nav a, .footer-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                const isFooter = this.closest('footer') !== null;
+                trackEvent('navigation_click', {
+                    link_text: this.textContent.trim(),
+                    location: isFooter ? 'footer' : 'header'
+                });
+            });
+        });
+    }
 
     // ============================================
     // CONTACT FORM HANDLING

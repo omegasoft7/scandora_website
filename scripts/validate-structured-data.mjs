@@ -5,8 +5,10 @@
 //   1. Every <script type="application/ld+json"> block is syntactically valid JSON.
 //   2. Every schema.org Offer has a `price` and a `priceCurrency`.
 //   3. No Offer carries a `priceValidUntil` that is already in the past.
-//   4. The visible pricing-card prices (itemprop="price") match the JSON-LD Offer prices,
-//      so the human-readable site and the machine-readable structured data never drift apart.
+//   4. The visible pricing-card prices (the €-prefixed .amount spans) match the JSON-LD
+//      Offer prices, so the human-readable site and the machine-readable structured data
+//      never drift apart.
+//   5. No aggregateRating/review markup anywhere (must stay out until real reviews exist).
 //
 // Prices themselves come from RevenueCat / App Store Connect (see STRUCTURED_DATA.md);
 // this script guards consistency and validity, not the absolute price values.
@@ -69,11 +71,9 @@ for (const page of PAGES) {
   }
 
   // 4. Visible pricing-card prices must match the JSON-LD offers.
-  const visiblePrices = [...html.matchAll(/itemprop="price"\s+content="([^"]+)"/g)].map((m) => num(m[1]));
-  const visibleCurrencies = [...html.matchAll(/itemprop="priceCurrency"\s+content="([^"]+)"/g)].map((m) => m[1]);
-  for (const c of visibleCurrencies) {
-    if (c !== 'EUR') report(page, `visible priceCurrency is "${c}", expected EUR`);
-  }
+  const visiblePrices = [
+    ...html.matchAll(/<span class="currency"[^>]*>€<\/span><span class="amount"[^>]*>([^<]+)</g),
+  ].map((m) => num(m[1]));
   // Visible cards and JSON-LD offers are both authored in the same plan order
   // (Free → Pro → Business), so compare them position-by-position. An order-sensitive
   // compare also catches a price *swap* between two plans, which a sorted compare misses.
@@ -92,6 +92,11 @@ for (const page of PAGES) {
     if (!html.includes(`€${price}`)) {
       report(page, `paid price €${price} from the JSON-LD offers is not mentioned in the page text (FAQ may be stale)`);
     }
+  }
+
+  // 6. Rating/review markup must stay removed until real, citable reviews exist.
+  if (/aggregateRating|"review"|itemprop="review"/.test(html)) {
+    report(page, 'aggregateRating/review markup found — must stay removed until real, citable reviews exist');
   }
 
   const offerCount = jsonLdOfferPrices.length;

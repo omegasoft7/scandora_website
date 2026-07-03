@@ -94,11 +94,16 @@
     }
     </script>
 
+    <!-- Umami Analytics -->
+    <script defer src="https://analytics.scandora.eu/script.js"
+            data-website-id="f8fdac29-929b-4d5c-b2ff-6a1bd5a5a112"></script>
+
     <!-- Structured Data - SoftwareApplication -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
+        "@id": "https://scandora.eu/#app",
         "name": "Scandora",
         "description": "AI-powered document scanning app that automatically extracts data from invoices, receipts, and documents. Syncs seamlessly with Trello, Google Drive, and other cloud services.",
         "url": "https://scandora.eu",
@@ -246,8 +251,7 @@
             "name": "Document Scanning Software"
         },
         "mainEntity": {
-            "@type": "SoftwareApplication",
-            "name": "Scandora"
+            "@id": "https://scandora.eu/#app"
         }
     }
     </script>
@@ -409,16 +413,15 @@
                     <p class="section-description" data-i18n="pricing.description">Start free, upgrade as you grow. Bring your own AI and cloud services for ultimate flexibility.</p>
                 </div>
                 <div class="pricing-grid" role="list" aria-label="Subscription plans">
-                    <article class="pricing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+                    <article class="pricing-card" role="listitem">
                         <div class="pricing-header">
-                            <h3 itemprop="name" data-i18n="pricing.free.name">Free</h3>
+                            <h3 data-i18n="pricing.free.name">Free</h3>
                             <p class="pricing-tagline" data-i18n="pricing.free.tagline">Get started</p>
                         </div>
-                        <div class="pricing-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                            <meta itemprop="priceCurrency" content="EUR">
-                            <span class="currency" aria-label="Euro">€</span><span class="amount" itemprop="price" content="0">0</span><span class="period" data-i18n="pricing.perMonth">/month</span>
+                        <div class="pricing-price">
+                            <span class="currency" aria-label="Euro">€</span><span class="amount">0</span><span class="period" data-i18n="pricing.perMonth">/month</span>
                         </div>
-                        <ul class="pricing-features" itemprop="description">
+                        <ul class="pricing-features">
                             <li data-i18n="pricing.free.f1">On-device search (private, offline)</li>
                             <li data-i18n="pricing.free.f2">Basic document management</li>
                             <li data-i18n="pricing.free.f3">One cloud integration</li>
@@ -426,17 +429,16 @@
                         </ul>
                         <a href="#download" class="btn btn-secondary btn-full" role="button" data-i18n="pricing.free.cta">Get Started</a>
                     </article>
-                    <article class="pricing-card popular" role="listitem" itemscope itemtype="https://schema.org/Product" aria-label="Most popular plan">
+                    <article class="pricing-card popular" role="listitem" aria-label="Most popular plan">
                         <div class="popular-badge" data-i18n="pricing.popular" aria-label="Recommended">Most Popular</div>
                         <div class="pricing-header">
-                            <h3 itemprop="name" data-i18n="pricing.pro.name">Pro</h3>
+                            <h3 data-i18n="pricing.pro.name">Pro</h3>
                             <p class="pricing-tagline" data-i18n="pricing.pro.tagline">For professionals</p>
                         </div>
-                        <div class="pricing-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                            <meta itemprop="priceCurrency" content="EUR">
-                            <span class="currency" aria-label="Euro">€</span><span class="amount" itemprop="price" content="9.99">9.99</span><span class="period" data-i18n="pricing.perMonth">/month</span>
+                        <div class="pricing-price">
+                            <span class="currency" aria-label="Euro">€</span><span class="amount">9.99</span><span class="period" data-i18n="pricing.perMonth">/month</span>
                         </div>
-                        <ul class="pricing-features" itemprop="description">
+                        <ul class="pricing-features">
                             <li data-i18n="pricing.pro.f1">1,000 AI credits/month (shared pool: extraction, indexing &amp; AI chat)</li>
                             <li data-i18n="pricing.pro.f2">On-device search — unlimited &amp; offline</li>
                             <li data-i18n="pricing.pro.f3">Managed AI document chat (coming soon)</li>
@@ -445,16 +447,15 @@
                         </ul>
                         <span class="btn btn-primary btn-full is-disabled" role="button" aria-disabled="true" data-i18n="pricing.pro.cta">Coming Soon</span>
                     </article>
-                    <article class="pricing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+                    <article class="pricing-card" role="listitem">
                         <div class="pricing-header">
-                            <h3 itemprop="name" data-i18n="pricing.business.name">Business</h3>
+                            <h3 data-i18n="pricing.business.name">Business</h3>
                             <p class="pricing-tagline" data-i18n="pricing.business.tagline">For teams</p>
                         </div>
-                        <div class="pricing-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                            <meta itemprop="priceCurrency" content="EUR">
-                            <span class="currency" aria-label="Euro">€</span><span class="amount" itemprop="price" content="24.99">24.99</span><span class="period" data-i18n="pricing.perMonth">/month</span>
+                        <div class="pricing-price">
+                            <span class="currency" aria-label="Euro">€</span><span class="amount">24.99</span><span class="period" data-i18n="pricing.perMonth">/month</span>
                         </div>
-                        <ul class="pricing-features" itemprop="description">
+                        <ul class="pricing-features">
                             <li data-i18n="pricing.business.f1">5,000 AI credits/month (shared pool: extraction, indexing &amp; AI chat)</li>
                             <li data-i18n="pricing.business.f2">On-device search — unlimited &amp; offline</li>
                             <li data-i18n="pricing.business.f3">Team-wide AI search + EU-hosted index (coming soon)</li>
