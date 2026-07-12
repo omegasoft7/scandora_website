@@ -36,7 +36,7 @@
     
     <!-- Description -->
     <text x="0" y="220" font-family="Inter, system-ui, sans-serif" font-size="24" fill="white" fill-opacity="0.9">
-      AI-Powered Document Scanning & OCR
+      AI-Powered Document Scanning &amp; OCR
     </text>
     
     <!-- Features pills -->

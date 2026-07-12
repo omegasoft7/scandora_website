@@ -9,7 +9,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/?lang=de"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/"/>
-    <lastmod>2024-12-15</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -22,7 +22,7 @@
   <!-- Features Section -->
   <url>
     <loc>https://scandora.eu/#features</loc>
-    <lastmod>2024-12-15</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -30,7 +30,7 @@
   <!-- How It Works Section -->
   <url>
     <loc>https://scandora.eu/#how-it-works</loc>
-    <lastmod>2024-12-15</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -38,7 +38,7 @@
   <!-- Pricing Section -->
   <url>
     <loc>https://scandora.eu/#pricing</loc>
-    <lastmod>2024-12-15</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -46,7 +46,7 @@
   <!-- Download Section -->
   <url>
     <loc>https://scandora.eu/#download</loc>
-    <lastmod>2024-12-15</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -56,7 +56,7 @@
     <loc>https://scandora.eu/privacy</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/privacy"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/privacy?lang=de"/>
-    <lastmod>2024-12-15</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -66,7 +66,7 @@
     <loc>https://scandora.eu/terms</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/terms"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/terms?lang=de"/>
-    <lastmod>2024-12-15</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -76,7 +76,7 @@
     <loc>https://scandora.eu/avv</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/avv"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/avv?lang=de"/>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -86,7 +86,7 @@
     <loc>https://scandora.eu/imprint</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/imprint"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/imprint?lang=de"/>
-    <lastmod>2024-12-15</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -96,7 +96,7 @@
     <loc>https://scandora.eu/contact</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/contact"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/contact?lang=de"/>
-    <lastmod>2024-12-15</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
