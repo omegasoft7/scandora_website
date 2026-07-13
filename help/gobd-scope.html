@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>What GoBD support means - Scandora Help</title>
+    <meta name="description" content="Scandora's honest GoBD scope: content hash and trusted timestamp, an immutable audit log, and a Verfahrensdokumentation. What Scandora provides and what still depends on your own archiving and retention. Not GoBD-certified.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://scandora.eu/help/gobd-scope">
+    <link rel="alternate" hreflang="en" href="https://scandora.eu/help/gobd-scope">
+    <link rel="alternate" hreflang="de" href="https://scandora.eu/help/gobd-scope?lang=de">
+    <link rel="alternate" hreflang="x-default" href="https://scandora.eu/help/gobd-scope">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://scandora.eu/help/gobd-scope">
+    <meta property="og:title" content="What GoBD support means - Scandora Help">
+    <meta property="og:description" content="Scandora's honest GoBD scope: what it provides, and what still depends on your own archiving and retention. Not GoBD-certified.">
+    <meta property="og:site_name" content="Scandora">
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/assets/fonts/inter.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container nav-container">
+                <a href="/" class="logo" aria-label="Scandora Home"><span class="logo-icon" aria-hidden="true">◈</span><span class="logo-text">Scandora</span></a>
+                <div class="nav-links" role="menubar">
+                    <a href="/#features" role="menuitem" data-i18n="nav.features">Features</a>
+                    <a href="/#how-it-works" role="menuitem" data-i18n="nav.howItWorks">How It Works</a>
+                    <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
+                    <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="legal-page" aria-labelledby="gobd-title">
+            <div class="legal-container">
+                <a href="/help/" class="back-home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span data-lang="en">Back to Help Center</span><span data-lang="de" hidden>Zurück zum Hilfe-Center</span>
+                </a>
+
+                <header class="legal-header">
+                    <span class="legal-badge" data-lang="en">Compliance</span><span class="legal-badge" data-lang="de" hidden>Compliance</span>
+                    <h1 id="gobd-title" class="legal-title"><span data-lang="en">What GoBD support means</span><span data-lang="de" hidden>Was GoBD-Unterstützung bedeutet</span></h1>
+                </header>
+
+                <!-- ================= ENGLISH ================= -->
+                <article class="legal-content" data-lang="en">
+                    <div class="highlight-box">
+                        <p><strong>The honest scope:</strong> Scandora captures documents with a content hash and a trusted timestamp, keeps an immutable audit log, and generates a Verfahrensdokumentation. <strong>GoBD compliance also depends on your own archiving and retention setup.</strong> Scandora is <strong>not "GoBD-certified"</strong> — there is no such certificate — and this page is not legal or tax advice.</p>
+                    </div>
+
+                    <h2>What GoBD is</h2>
+                    <p>GoBD are the German principles for the proper keeping and storage of books, records and documents in electronic form. For scanned documents they focus on immutability (Unveränderbarkeit), traceability (Nachvollziehbarkeit), a documented process (Verfahrensdokumentation), and orderly retention for the legally required periods. GoBD compliance is a property of <em>your</em> whole bookkeeping process — not something any single app can grant on its own.</p>
+
+                    <h2>What Scandora provides</h2>
+                    <ul>
+                        <li><strong>Immutable capture record.</strong> When you capture a document, Scandora stores a write-once record with a content hash (SHA-256) of the finalized document and a trusted, server-set capture timestamp — separate from the metadata you can edit. A "verify integrity" action re-hashes the retained document to show it is unchanged since capture.</li>
+                        <li><strong>Append-only audit log.</strong> Document events — capture, metadata edits (with before/after of the changed fields), exports, and deletion — are recorded as append-only entries with an actor and a server timestamp, so the history can be traced.</li>
+                        <li><strong>Verfahrensdokumentation.</strong> Scandora can generate a Verfahrensdokumentation PDF, auto-filled from your real profile, scanner and integration settings, to document how you capture and process documents — the basis for "ersetzendes Scannen" (destroying paper originals after scanning).</li>
+                    </ul>
+
+                    <h2>What GoBD support does <em>not</em> mean</h2>
+                    <ul>
+                        <li>It does <strong>not</strong> mean Scandora is "GoBD-certified" or "GoBD-approved" — there is no official GoBD certificate, and we do not claim one.</li>
+                        <li>It does <strong>not</strong> mean that simply syncing scans into a plain Google Drive folder (or any cloud folder) is automatically GoBD-konform. A normal file folder does not, by itself, meet the immutability and process requirements.</li>
+                        <li>It does <strong>not</strong> replace your own archiving, your retention periods, or the review of your Steuerberater.</li>
+                    </ul>
+
+                    <h2>What still depends on you</h2>
+                    <ul>
+                        <li>Keeping your records and exports for the legally required retention periods, in a system that preserves them unaltered.</li>
+                        <li>Maintaining and following your own Verfahrensdokumentation (Scandora fills in a starting point; the process is yours).</li>
+                        <li>Reviewing bookings and exports before they go to your accounting or advisor.</li>
+                    </ul>
+
+                    <h2>Not legal advice</h2>
+                    <p>This page describes the technical features Scandora provides; it is not a legal opinion and does not certify that any document or process is GoBD-compliant. If GoBD compliance matters for your business, confirm your setup with a qualified tax advisor (Steuerberater).</p>
+                </article>
+
+                <!-- ================= DEUTSCH ================= -->
+                <article class="legal-content" data-lang="de" hidden>
+                    <div class="highlight-box">
+                        <p><strong>Der ehrliche Umfang:</strong> Scandora erfasst Dokumente mit einem Inhalts-Hash und einem vertrauenswürdigen Zeitstempel, führt ein unveränderbares Änderungsprotokoll und erstellt eine Verfahrensdokumentation. <strong>Die GoBD-Konformität hängt zusätzlich von Ihrer eigenen Archivierung und Aufbewahrung ab.</strong> Scandora ist <strong>nicht „GoBD-zertifiziert"</strong> — ein solches Zertifikat gibt es nicht — und diese Seite ist keine Rechts- oder Steuerberatung.</p>
+                    </div>
+
+                    <h2>Was GoBD ist</h2>
+                    <p>Die GoBD sind die deutschen Grundsätze zur ordnungsmäßigen Führung und Aufbewahrung von Büchern, Aufzeichnungen und Unterlagen in elektronischer Form. Bei gescannten Dokumenten geht es vor allem um Unveränderbarkeit, Nachvollziehbarkeit, eine dokumentierte Vorgehensweise (Verfahrensdokumentation) und die geordnete Aufbewahrung über die gesetzlich vorgeschriebenen Fristen. Die GoBD-Konformität ist eine Eigenschaft <em>Ihres</em> gesamten Buchführungsprozesses — nicht etwas, das eine einzelne App allein gewähren kann.</p>
+
+                    <h2>Was Scandora bereitstellt</h2>
+                    <ul>
+                        <li><strong>Unveränderbarer Erfassungsdatensatz.</strong> Beim Erfassen eines Dokuments speichert Scandora einen einmalig schreibbaren Datensatz mit einem Inhalts-Hash (SHA-256) des finalisierten Dokuments und einem vertrauenswürdigen, serverseitig gesetzten Erfassungszeitstempel — getrennt von den bearbeitbaren Metadaten. Eine Aktion „Integrität prüfen" berechnet den Hash des aufbewahrten Dokuments neu und zeigt, dass es seit der Erfassung unverändert ist.</li>
+                        <li><strong>Unveränderbares Änderungsprotokoll.</strong> Dokumentereignisse — Erfassung, Metadaten-Änderungen (mit Vorher/Nachher der geänderten Felder), Exporte und Löschung — werden als anhängende Einträge mit Akteur und Server-Zeitstempel festgehalten, sodass der Verlauf nachvollziehbar ist.</li>
+                        <li><strong>Verfahrensdokumentation.</strong> Scandora kann eine Verfahrensdokumentation als PDF erzeugen, automatisch befüllt aus Ihren tatsächlichen Profil-, Scanner- und Integrationseinstellungen, um zu dokumentieren, wie Sie Dokumente erfassen und verarbeiten — die Grundlage für das „ersetzende Scannen" (Vernichtung der Papieroriginale nach dem Scannen).</li>
+                    </ul>
+
+                    <h2>Was GoBD-Unterstützung <em>nicht</em> bedeutet</h2>
+                    <ul>
+                        <li>Sie bedeutet <strong>nicht</strong>, dass Scandora „GoBD-zertifiziert" oder „GoBD-geprüft" ist — ein offizielles GoBD-Zertifikat existiert nicht, und wir behaupten kein solches.</li>
+                        <li>Sie bedeutet <strong>nicht</strong>, dass das bloße Synchronisieren von Scans in einen einfachen Google-Drive-Ordner (oder einen beliebigen Cloud-Ordner) automatisch GoBD-konform ist. Ein normaler Dateiordner erfüllt für sich genommen nicht die Anforderungen an Unveränderbarkeit und Verfahren.</li>
+                        <li>Sie ersetzt <strong>nicht</strong> Ihre eigene Archivierung, Ihre Aufbewahrungsfristen oder die Prüfung durch Ihren Steuerberater.</li>
+                    </ul>
+
+                    <h2>Was weiterhin bei Ihnen liegt</h2>
+                    <ul>
+                        <li>Die Aufbewahrung Ihrer Aufzeichnungen und Exporte über die gesetzlich vorgeschriebenen Fristen, in einem System, das sie unverändert bewahrt.</li>
+                        <li>Das Pflegen und Befolgen Ihrer eigenen Verfahrensdokumentation (Scandora liefert einen Ausgangspunkt; der Prozess ist Ihrer).</li>
+                        <li>Das Prüfen von Buchungen und Exporten, bevor sie an Ihre Buchhaltung oder Ihren Steuerberater gehen.</li>
+                    </ul>
+
+                    <h2>Keine Rechtsberatung</h2>
+                    <p>Diese Seite beschreibt die technischen Funktionen, die Scandora bereitstellt; sie ist kein Rechtsgutachten und bestätigt nicht, dass ein Dokument oder Prozess GoBD-konform ist. Wenn die GoBD-Konformität für Ihr Unternehmen relevant ist, lassen Sie Ihre Einrichtung von einem qualifizierten Steuerberater bestätigen.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="logo"><span class="logo-icon">◈</span><span class="logo-text">Scandora</span></a>
+                    <p data-i18n="footer.tagline">Intelligent document scanning for modern businesses.</p>
+                </div>
+                <nav class="footer-links" role="navigation" aria-label="Footer navigation">
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.product">Product</h4>
+                        <a href="/#features" data-i18n="nav.features">Features</a>
+                        <a href="/#pricing" data-i18n="nav.pricing">Pricing</a>
+                        <a href="/#download" data-i18n="nav.download">Download</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.legal">Legal</h4>
+                        <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
+                        <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.support">Support</h4>
+                        <a href="/help/" data-i18n="footer.help">Help Center</a>
+                        <a href="/contact.html" data-i18n="footer.contact">Contact Us</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p><small>© 2026 Scandora. <span data-i18n="footer.rights">All rights reserved.</span></small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/translations.js" defer></script>
+    <script src="/main.js" defer></script>
+</body>
+</html>

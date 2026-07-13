@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Help Center - Scandora | Setup Guides &amp; GoBD Scope</title>
+    <meta name="description" content="Scandora Help Center: set up your own AI (OpenAI/Gemini), managed AI credits, DATEV/lexoffice/sevDesk export, eSCL network scanners, and understand our honest GoBD scope.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://scandora.eu/help/">
+    <link rel="alternate" hreflang="en" href="https://scandora.eu/help/">
+    <link rel="alternate" hreflang="de" href="https://scandora.eu/help/?lang=de">
+    <link rel="alternate" hreflang="x-default" href="https://scandora.eu/help/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scandora.eu/help/">
+    <meta property="og:title" content="Scandora Help Center">
+    <meta property="og:description" content="Setup guides for BYOAI, managed AI, DATEV/lexoffice/sevDesk export, eSCL scanners, and our honest GoBD scope.">
+    <meta property="og:site_name" content="Scandora">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <!-- Fonts & Styles (Inter self-hosted — no third-party font requests, DSGVO-konform) -->
+    <link rel="stylesheet" href="/assets/fonts/inter.css">
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container nav-container">
+                <a href="/" class="logo" aria-label="Scandora Home"><span class="logo-icon" aria-hidden="true">◈</span><span class="logo-text">Scandora</span></a>
+                <div class="nav-links" role="menubar">
+                    <a href="/#features" role="menuitem" data-i18n="nav.features">Features</a>
+                    <a href="/#how-it-works" role="menuitem" data-i18n="nav.howItWorks">How It Works</a>
+                    <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
+                    <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="legal-page" aria-labelledby="help-title">
+            <div class="legal-container">
+                <a href="/" class="back-home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span data-lang="en">Back to Home</span><span data-lang="de" hidden>Zur Startseite</span>
+                </a>
+
+                <header class="legal-header">
+                    <span class="legal-badge" data-lang="en">Help Center</span><span class="legal-badge" data-lang="de" hidden>Hilfe-Center</span>
+                    <h1 id="help-title" class="legal-title"><span data-lang="en">How can we help?</span><span data-lang="de" hidden>Wie können wir helfen?</span></h1>
+                    <p class="legal-meta"><span data-lang="en">Set up every integration yourself, and understand exactly what our GoBD support does and does not cover.</span><span data-lang="de" hidden>Richten Sie jede Integration selbst ein und verstehen Sie genau, was unsere GoBD-Unterstützung abdeckt und was nicht.</span></p>
+                </header>
+
+                <!-- ================= ENGLISH ================= -->
+                <div data-lang="en">
+                    <p class="help-category">Artificial intelligence</p>
+                    <div class="help-grid">
+                        <a class="help-card" href="/help/byoai.html">
+                            <div class="help-card-icon" aria-hidden="true">🔑</div>
+                            <h3>Bring your own AI (BYOAI)</h3>
+                            <p>Connect your own OpenAI or Google Gemini key. Runs on your device, on your bill — zero Scandora credits.</p>
+                        </a>
+                        <a class="help-card" href="/help/managed-ai.html">
+                            <div class="help-card-icon" aria-hidden="true">✨</div>
+                            <h3>Managed AI &amp; credits</h3>
+                            <p>Use Scandora AI with no key setup. What a credit is, what it covers, and how top-ups work.</p>
+                        </a>
+                    </div>
+
+                    <p class="help-category">Scanning</p>
+                    <div class="help-grid">
+                        <a class="help-card" href="/help/escl-setup.html">
+                            <div class="help-card-icon" aria-hidden="true">🖨️</div>
+                            <h3>Network scanner setup (eSCL)</h3>
+                            <p>Connect a Brother, Epson, HP, Canon or other eSCL/AirScan scanner over Wi-Fi for multi-page scanning.</p>
+                        </a>
+                    </div>
+
+                    <p class="help-category">Accounting exports</p>
+                    <div class="help-grid">
+                        <a class="help-card" href="/help/datev-export.html">
+                            <div class="help-card-icon" aria-hidden="true">📊</div>
+                            <h3>DATEV export</h3>
+                            <p>Produce a DATEV EXTF file your tax advisor can import — booking rows, SKR03/SKR04, and date ranges.</p>
+                        </a>
+                        <a class="help-card" href="/help/lexoffice-export.html">
+                            <div class="help-card-icon" aria-hidden="true">🧾</div>
+                            <h3>lexoffice export</h3>
+                            <p>Send scanned vouchers straight into lexoffice with a public API key and a posting category.</p>
+                        </a>
+                        <a class="help-card" href="/help/sevdesk-export.html">
+                            <div class="help-card-icon" aria-hidden="true">🧾</div>
+                            <h3>sevDesk export</h3>
+                            <p>Upload scanned vouchers to sevDesk with your API token.</p>
+                        </a>
+                    </div>
+
+                    <p class="help-category">Compliance</p>
+                    <div class="help-grid">
+                        <a class="help-card" href="/help/gobd-scope.html">
+                            <div class="help-card-icon" aria-hidden="true">⚖️</div>
+                            <h3>What GoBD support means</h3>
+                            <p>The honest scope: what Scandora provides, and what still depends on your own archiving and retention.</p>
+                        </a>
+                    </div>
+
+                    <p style="margin-top: 2.5rem; color: var(--text-secondary);">Still stuck? <a href="/contact.html">Contact us</a> — we usually reply within 24 hours (Mon–Fri, 9 AM–6 PM CET).</p>
+                </div>
+
+                <!-- ================= DEUTSCH ================= -->
+                <div data-lang="de" hidden>
+                    <p class="help-category">Künstliche Intelligenz</p>
+                    <div class="help-grid">
+                        <a class="help-card" href="/help/byoai.html">
+                            <div class="help-card-icon" aria-hidden="true">🔑</div>
+                            <h3>Eigene KI nutzen (BYOAI)</h3>
+                            <p>Verbinden Sie Ihren eigenen OpenAI- oder Google-Gemini-Schlüssel. Läuft auf Ihrem Gerät, auf Ihre Rechnung — ohne Scandora-Credits.</p>
+                        </a>
+                        <a class="help-card" href="/help/managed-ai.html">
+                            <div class="help-card-icon" aria-hidden="true">✨</div>
+                            <h3>Verwaltete KI &amp; Credits</h3>
+                            <p>Scandora AI ohne Schlüssel-Einrichtung. Was ein Credit ist, was er abdeckt und wie Aufladungen funktionieren.</p>
+                        </a>
+                    </div>
+
+                    <p class="help-category">Scannen</p>
+                    <div class="help-grid">
+                        <a class="help-card" href="/help/escl-setup.html">
+                            <div class="help-card-icon" aria-hidden="true">🖨️</div>
+                            <h3>Netzwerkscanner einrichten (eSCL)</h3>
+                            <p>Verbinden Sie einen Brother-, Epson-, HP-, Canon- oder anderen eSCL/AirScan-Scanner per WLAN für mehrseitiges Scannen.</p>
+                        </a>
+                    </div>
+
+                    <p class="help-category">Buchhaltungs-Exporte</p>
+                    <div class="help-grid">
+                        <a class="help-card" href="/help/datev-export.html">
+                            <div class="help-card-icon" aria-hidden="true">📊</div>
+                            <h3>DATEV-Export</h3>
+                            <p>Erzeugen Sie eine DATEV-EXTF-Datei, die Ihr Steuerberater importieren kann — Buchungszeilen, SKR03/SKR04 und Zeiträume.</p>
+                        </a>
+                        <a class="help-card" href="/help/lexoffice-export.html">
+                            <div class="help-card-icon" aria-hidden="true">🧾</div>
+                            <h3>lexoffice-Export</h3>
+                            <p>Senden Sie gescannte Belege mit einem öffentlichen API-Schlüssel und einer Buchungskategorie direkt an lexoffice.</p>
+                        </a>
+                        <a class="help-card" href="/help/sevdesk-export.html">
+                            <div class="help-card-icon" aria-hidden="true">🧾</div>
+                            <h3>sevDesk-Export</h3>
+                            <p>Laden Sie gescannte Belege mit Ihrem API-Token zu sevDesk hoch.</p>
+                        </a>
+                    </div>
+
+                    <p class="help-category">Compliance</p>
+                    <div class="help-grid">
+                        <a class="help-card" href="/help/gobd-scope.html">
+                            <div class="help-card-icon" aria-hidden="true">⚖️</div>
+                            <h3>Was GoBD-Unterstützung bedeutet</h3>
+                            <p>Der ehrliche Umfang: Was Scandora bereitstellt und was weiterhin von Ihrer eigenen Archivierung und Aufbewahrung abhängt.</p>
+                        </a>
+                    </div>
+
+                    <p style="margin-top: 2.5rem; color: var(--text-secondary);">Kommen Sie nicht weiter? <a href="/contact.html">Kontaktieren Sie uns</a> — wir antworten in der Regel innerhalb von 24 Stunden (Mo–Fr, 9–18 Uhr MEZ).</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="logo"><span class="logo-icon">◈</span><span class="logo-text">Scandora</span></a>
+                    <p data-i18n="footer.tagline">Intelligent document scanning for modern businesses.</p>
+                </div>
+                <nav class="footer-links" role="navigation" aria-label="Footer navigation">
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.product">Product</h4>
+                        <a href="/#features" data-i18n="nav.features">Features</a>
+                        <a href="/#pricing" data-i18n="nav.pricing">Pricing</a>
+                        <a href="/#download" data-i18n="nav.download">Download</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.legal">Legal</h4>
+                        <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
+                        <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.support">Support</h4>
+                        <a href="/help/" aria-current="page" data-i18n="footer.help">Help Center</a>
+                        <a href="/contact.html" data-i18n="footer.contact">Contact Us</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p><small>© 2026 Scandora. <span data-i18n="footer.rights">All rights reserved.</span></small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/translations.js" defer></script>
+    <script src="/main.js" defer></script>
+</body>
+</html>

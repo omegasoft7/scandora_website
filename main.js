@@ -177,7 +177,14 @@
             });
         });
 
-
+        document.querySelectorAll('[data-managed-ai-cta]').forEach(cta => {
+            cta.addEventListener('click', function() {
+                trackEvent('managed-ai_connect_click', {
+                    plan: this.dataset.plan || 'unknown',
+                    cta_text: this.textContent.trim()
+                });
+            });
+        });
 
         const sections = document.querySelectorAll('section[id]');
         const sectionObserver = new IntersectionObserver((entries) => {

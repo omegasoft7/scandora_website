@@ -21,7 +21,14 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const websiteDir = join(dirname(fileURLToPath(import.meta.url)), '..');
-const PAGES = ['index.html', 'privacy.html', 'terms.html', 'imprint.html', 'contact.html'];
+const PAGES = [
+  'index.html',
+  'privacy.html',
+  'terms.html',
+  'imprint.html',
+  'contact.html',
+  'blog/datev-export-aus-dem-smartphone.html',
+];
 const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD (ISO dates sort chronologically)
 
 const problems = [];

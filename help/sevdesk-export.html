@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>sevDesk export - Scandora Help</title>
+    <meta name="description" content="Connect sevDesk to Scandora with your API token, confirm your account, and upload scanned vouchers to sevDesk.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://scandora.eu/help/sevdesk-export">
+    <link rel="alternate" hreflang="en" href="https://scandora.eu/help/sevdesk-export">
+    <link rel="alternate" hreflang="de" href="https://scandora.eu/help/sevdesk-export?lang=de">
+    <link rel="alternate" hreflang="x-default" href="https://scandora.eu/help/sevdesk-export">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://scandora.eu/help/sevdesk-export">
+    <meta property="og:title" content="sevDesk export - Scandora Help">
+    <meta property="og:description" content="Upload scanned vouchers to sevDesk with your API token.">
+    <meta property="og:site_name" content="Scandora">
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/assets/fonts/inter.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container nav-container">
+                <a href="/" class="logo" aria-label="Scandora Home"><span class="logo-icon" aria-hidden="true">◈</span><span class="logo-text">Scandora</span></a>
+                <div class="nav-links" role="menubar">
+                    <a href="/#features" role="menuitem" data-i18n="nav.features">Features</a>
+                    <a href="/#how-it-works" role="menuitem" data-i18n="nav.howItWorks">How It Works</a>
+                    <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
+                    <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="legal-page" aria-labelledby="sevdesk-title">
+            <div class="legal-container">
+                <a href="/help/" class="back-home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span data-lang="en">Back to Help Center</span><span data-lang="de" hidden>Zurück zum Hilfe-Center</span>
+                </a>
+
+                <header class="legal-header">
+                    <span class="legal-badge" data-lang="en">Accounting export</span><span class="legal-badge" data-lang="de" hidden>Buchhaltungs-Export</span>
+                    <h1 id="sevdesk-title" class="legal-title"><span data-lang="en">sevDesk export</span><span data-lang="de" hidden>sevDesk-Export</span></h1>
+                </header>
+
+                <!-- ================= ENGLISH ================= -->
+                <article class="legal-content" data-lang="en">
+                    <div class="highlight-box">
+                        <p><strong>In short:</strong> Connect sevDesk once with your API token, confirm the account Scandora finds, then upload scanned receipts and invoices to sevDesk as vouchers. Voucher export is part of the <strong>Business / DATEV</strong> plan.</p>
+                    </div>
+
+                    <h2>What you need</h2>
+                    <ul>
+                        <li>A sevDesk account.</li>
+                        <li>Your sevDesk <strong>API token</strong> — find it in sevDesk under your user settings (Settings → User → API token).</li>
+                    </ul>
+
+                    <h2>Step 1 — Connect with your API token</h2>
+                    <ol>
+                        <li>In Scandora, go to <strong>Settings → Integrations</strong> and choose <strong>Connect sevDesk</strong>.</li>
+                        <li>Paste your sevDesk API token and continue. Scandora verifies the token against sevDesk.</li>
+                    </ol>
+
+                    <h2>Step 2 — Confirm your account</h2>
+                    <p>Scandora shows the sevDesk user the token resolves to, so you can confirm you connected the right account before anything is saved. Accept it to complete the connection; the token is only stored once you confirm.</p>
+
+                    <h2>Send a voucher</h2>
+                    <ol>
+                        <li>Open a scanned document in your history.</li>
+                        <li>Use the <strong>Send to accounting</strong> action and choose <strong>sevDesk</strong>.</li>
+                        <li>Scandora uploads the document to sevDesk as a voucher.</li>
+                    </ol>
+
+                    <h2>Good to know</h2>
+                    <ul>
+                        <li>Your API token is stored securely for the connected profile; disconnect at any time in Integrations.</li>
+                        <li>Check the voucher in sevDesk after sending — you remain responsible for the booking.</li>
+                    </ul>
+                </article>
+
+                <!-- ================= DEUTSCH ================= -->
+                <article class="legal-content" data-lang="de" hidden>
+                    <div class="highlight-box">
+                        <p><strong>Kurz gesagt:</strong> Verbinden Sie sevDesk einmalig mit Ihrem API-Token, bestätigen Sie das von Scandora gefundene Konto und laden Sie dann gescannte Belege und Rechnungen als Belege zu sevDesk hoch. Der Belegexport ist Teil des Tarifs <strong>Business / DATEV</strong>.</p>
+                    </div>
+
+                    <h2>Was Sie benötigen</h2>
+                    <ul>
+                        <li>Ein sevDesk-Konto.</li>
+                        <li>Ihren sevDesk-<strong>API-Token</strong> — Sie finden ihn in sevDesk in Ihren Benutzereinstellungen (Einstellungen → Benutzer → API-Token).</li>
+                    </ul>
+
+                    <h2>Schritt 1 — Mit Ihrem API-Token verbinden</h2>
+                    <ol>
+                        <li>Gehen Sie in Scandora zu <strong>Einstellungen → Integrationen</strong> und wählen Sie <strong>Mit sevDesk verbinden</strong>.</li>
+                        <li>Fügen Sie Ihren sevDesk-API-Token ein und fahren Sie fort. Scandora prüft den Token bei sevDesk.</li>
+                    </ol>
+
+                    <h2>Schritt 2 — Konto bestätigen</h2>
+                    <p>Scandora zeigt den sevDesk-Benutzer an, zu dem der Token gehört, damit Sie vor dem Speichern bestätigen können, dass Sie das richtige Konto verbunden haben. Bestätigen Sie es, um die Verbindung abzuschließen; der Token wird erst nach Ihrer Bestätigung gespeichert.</p>
+
+                    <h2>Einen Beleg senden</h2>
+                    <ol>
+                        <li>Öffnen Sie ein gescanntes Dokument in Ihrem Verlauf.</li>
+                        <li>Nutzen Sie die Aktion <strong>An Buchhaltung senden</strong> und wählen Sie <strong>sevDesk</strong>.</li>
+                        <li>Scandora lädt das Dokument als Beleg zu sevDesk hoch.</li>
+                    </ol>
+
+                    <h2>Gut zu wissen</h2>
+                    <ul>
+                        <li>Ihr API-Token wird sicher für das verbundene Profil gespeichert; Sie können die Verbindung jederzeit in den Integrationen trennen.</li>
+                        <li>Prüfen Sie den Beleg nach dem Senden in sevDesk — für die Buchung bleiben Sie verantwortlich.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="logo"><span class="logo-icon">◈</span><span class="logo-text">Scandora</span></a>
+                    <p data-i18n="footer.tagline">Intelligent document scanning for modern businesses.</p>
+                </div>
+                <nav class="footer-links" role="navigation" aria-label="Footer navigation">
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.product">Product</h4>
+                        <a href="/#features" data-i18n="nav.features">Features</a>
+                        <a href="/#pricing" data-i18n="nav.pricing">Pricing</a>
+                        <a href="/#download" data-i18n="nav.download">Download</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.legal">Legal</h4>
+                        <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
+                        <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.support">Support</h4>
+                        <a href="/help/" data-i18n="footer.help">Help Center</a>
+                        <a href="/contact.html" data-i18n="footer.contact">Contact Us</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p><small>© 2026 Scandora. <span data-i18n="footer.rights">All rights reserved.</span></small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/translations.js" defer></script>
+    <script src="/main.js" defer></script>
+</body>
+</html>

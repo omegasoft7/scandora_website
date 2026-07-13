@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Bring your own AI (OpenAI / Gemini) - Scandora Help</title>
+    <meta name="description" content="Connect your own OpenAI or Google Gemini API key in Scandora. Your key stays on your device, you pay the provider directly, and no Scandora credits are used.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://scandora.eu/help/byoai">
+    <link rel="alternate" hreflang="en" href="https://scandora.eu/help/byoai">
+    <link rel="alternate" hreflang="de" href="https://scandora.eu/help/byoai?lang=de">
+    <link rel="alternate" hreflang="x-default" href="https://scandora.eu/help/byoai">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://scandora.eu/help/byoai">
+    <meta property="og:title" content="Bring your own AI (OpenAI / Gemini) - Scandora Help">
+    <meta property="og:description" content="Connect your own OpenAI or Google Gemini API key. Your key stays on your device; no Scandora credits are used.">
+    <meta property="og:site_name" content="Scandora">
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/assets/fonts/inter.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container nav-container">
+                <a href="/" class="logo" aria-label="Scandora Home"><span class="logo-icon" aria-hidden="true">◈</span><span class="logo-text">Scandora</span></a>
+                <div class="nav-links" role="menubar">
+                    <a href="/#features" role="menuitem" data-i18n="nav.features">Features</a>
+                    <a href="/#how-it-works" role="menuitem" data-i18n="nav.howItWorks">How It Works</a>
+                    <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
+                    <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="legal-page" aria-labelledby="byoai-title">
+            <div class="legal-container">
+                <a href="/help/" class="back-home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span data-lang="en">Back to Help Center</span><span data-lang="de" hidden>Zurück zum Hilfe-Center</span>
+                </a>
+
+                <header class="legal-header">
+                    <span class="legal-badge" data-lang="en">AI Setup</span><span class="legal-badge" data-lang="de" hidden>KI-Einrichtung</span>
+                    <h1 id="byoai-title" class="legal-title"><span data-lang="en">Bring your own AI</span><span data-lang="de" hidden>Eigene KI nutzen</span></h1>
+                </header>
+
+                <!-- ================= ENGLISH ================= -->
+                <article class="legal-content" data-lang="en">
+                    <div class="highlight-box">
+                        <p><strong>In short:</strong> Connect your own OpenAI or Google Gemini API key. Your documents are sent directly to the provider you choose, your key is stored only on your device, and <strong>no Scandora credits are used</strong> — you pay your AI provider directly. This is the default for the Free plan and available on every plan.</p>
+                    </div>
+
+                    <h2>What "bring your own AI" means</h2>
+                    <p>Scandora uses AI to read a scanned document and pull out details like the title, dates, amounts and supplier. With "bring your own AI" (BYOAI) you connect your own account at <strong>OpenAI</strong> or <strong>Google Gemini</strong>, and Scandora talks to that provider directly with your key. Nothing about the document passes through Scandora's servers, and you are billed by the provider based on your own usage.</p>
+                    <p>If you would rather not manage a key, see <a href="/help/managed-ai.html">Managed AI &amp; credits</a> instead.</p>
+
+                    <h2>Before you start</h2>
+                    <ul>
+                        <li>An account with OpenAI or with Google (for Gemini).</li>
+                        <li>Billing enabled at that provider if their free allowance is used up — Scandora cannot see or control your provider bill.</li>
+                    </ul>
+
+                    <h2>Connect OpenAI</h2>
+                    <ol>
+                        <li>Open Scandora and go to <strong>Settings → AI Assistant</strong>.</li>
+                        <li>Under <strong>AI Provider</strong>, tap the <strong>OpenAI</strong> card.</li>
+                        <li>Tap <strong>Get API key from OpenAI</strong> to open <a href="https://platform.openai.com/api-keys" rel="noopener" target="_blank">platform.openai.com/api-keys</a>, and create a new secret key (it starts with <code>sk-proj-</code>).</li>
+                        <li>Paste the key into the <strong>API key</strong> field and tap <strong>Verify &amp; Connect</strong>. Scandora checks the key and shows "Connected" when it works.</li>
+                    </ol>
+
+                    <h2>Connect Google Gemini</h2>
+                    <ol>
+                        <li>In <strong>Settings → AI Assistant</strong>, tap the <strong>Gemini</strong> card.</li>
+                        <li>Tap <strong>Get API key from Gemini</strong> to open <a href="https://aistudio.google.com/apikey" rel="noopener" target="_blank">aistudio.google.com/apikey</a>, and create a key (it starts with <code>AIza</code>).</li>
+                        <li>Choose a model. <strong>Gemini 2.5 Flash</strong> is the default and a good balance of speed and quality; <strong>2.5 Flash Lite</strong> is lighter, and <strong>2.5 Pro</strong> is suited to complex documents (higher latency).</li>
+                        <li>Paste the key and tap <strong>Verify &amp; Connect</strong>.</li>
+                    </ol>
+
+                    <h2>Where your key is stored</h2>
+                    <p>Your API key is stored securely <strong>on your device</strong>. You can connect only one bring-your-own provider at a time — connecting OpenAI locks Gemini and vice versa, until you disconnect. To switch providers, tap <strong>Disconnect</strong> on the active provider and connect the other; you will need to re-enter its key.</p>
+
+                    <h2>BYOAI vs. managed AI</h2>
+                    <p>BYOAI has zero Scandora processing cost and keeps you fully in control of your provider account. If you prefer no key setup and a single Scandora bill, use <a href="/help/managed-ai.html">Managed AI</a>, which runs on prepaid Scandora credits.</p>
+                </article>
+
+                <!-- ================= DEUTSCH ================= -->
+                <article class="legal-content" data-lang="de" hidden>
+                    <div class="highlight-box">
+                        <p><strong>Kurz gesagt:</strong> Verbinden Sie Ihren eigenen OpenAI- oder Google-Gemini-API-Schlüssel. Ihre Dokumente werden direkt an den von Ihnen gewählten Anbieter gesendet, Ihr Schlüssel wird nur auf Ihrem Gerät gespeichert, und es werden <strong>keine Scandora-Credits verbraucht</strong> — Sie zahlen direkt bei Ihrem KI-Anbieter. Dies ist die Standardeinstellung im kostenlosen Tarif und in jedem Tarif verfügbar.</p>
+                    </div>
+
+                    <h2>Was „eigene KI nutzen" bedeutet</h2>
+                    <p>Scandora nutzt KI, um ein gescanntes Dokument zu lesen und Angaben wie Titel, Datum, Beträge und Lieferant zu extrahieren. Mit „eigene KI nutzen" (BYOAI) verbinden Sie Ihr eigenes Konto bei <strong>OpenAI</strong> oder <strong>Google Gemini</strong>, und Scandora spricht mit Ihrem Schlüssel direkt mit diesem Anbieter. Kein Teil des Dokuments läuft über die Server von Scandora, und die Abrechnung erfolgt über den Anbieter nach Ihrer eigenen Nutzung.</p>
+                    <p>Wenn Sie keinen Schlüssel verwalten möchten, sehen Sie sich stattdessen <a href="/help/managed-ai.html">Verwaltete KI &amp; Credits</a> an.</p>
+
+                    <h2>Bevor Sie beginnen</h2>
+                    <ul>
+                        <li>Ein Konto bei OpenAI oder bei Google (für Gemini).</li>
+                        <li>Aktivierte Abrechnung beim Anbieter, falls dessen kostenloses Kontingent aufgebraucht ist — Scandora kann Ihre Anbieter-Rechnung weder einsehen noch steuern.</li>
+                    </ul>
+
+                    <h2>OpenAI verbinden</h2>
+                    <ol>
+                        <li>Öffnen Sie Scandora und gehen Sie zu <strong>Einstellungen → KI-Assistent</strong>.</li>
+                        <li>Tippen Sie unter <strong>KI-Anbieter</strong> auf die Karte <strong>OpenAI</strong>.</li>
+                        <li>Tippen Sie auf <strong>API-Schlüssel von OpenAI holen</strong>, um <a href="https://platform.openai.com/api-keys" rel="noopener" target="_blank">platform.openai.com/api-keys</a> zu öffnen, und erstellen Sie einen neuen geheimen Schlüssel (er beginnt mit <code>sk-proj-</code>).</li>
+                        <li>Fügen Sie den Schlüssel in das Feld <strong>API-Schlüssel</strong> ein und tippen Sie auf <strong>Prüfen &amp; Verbinden</strong>. Scandora prüft den Schlüssel und zeigt „Verbunden", wenn er funktioniert.</li>
+                    </ol>
+
+                    <h2>Google Gemini verbinden</h2>
+                    <ol>
+                        <li>Tippen Sie unter <strong>Einstellungen → KI-Assistent</strong> auf die Karte <strong>Gemini</strong>.</li>
+                        <li>Tippen Sie auf <strong>API-Schlüssel von Gemini holen</strong>, um <a href="https://aistudio.google.com/apikey" rel="noopener" target="_blank">aistudio.google.com/apikey</a> zu öffnen, und erstellen Sie einen Schlüssel (er beginnt mit <code>AIza</code>).</li>
+                        <li>Wählen Sie ein Modell. <strong>Gemini 2.5 Flash</strong> ist die Standardauswahl und ein guter Kompromiss aus Tempo und Qualität; <strong>2.5 Flash Lite</strong> ist leichter, und <strong>2.5 Pro</strong> eignet sich für komplexe Dokumente (höhere Latenz).</li>
+                        <li>Fügen Sie den Schlüssel ein und tippen Sie auf <strong>Prüfen &amp; Verbinden</strong>.</li>
+                    </ol>
+
+                    <h2>Wo Ihr Schlüssel gespeichert wird</h2>
+                    <p>Ihr API-Schlüssel wird sicher <strong>auf Ihrem Gerät</strong> gespeichert. Sie können jeweils nur einen eigenen Anbieter gleichzeitig verbinden — beim Verbinden von OpenAI wird Gemini gesperrt und umgekehrt, bis Sie die Verbindung trennen. Zum Wechseln tippen Sie beim aktiven Anbieter auf <strong>Trennen</strong> und verbinden den anderen; dabei müssen Sie dessen Schlüssel erneut eingeben.</p>
+
+                    <h2>BYOAI vs. verwaltete KI</h2>
+                    <p>BYOAI verursacht keine Scandora-Verarbeitungskosten und lässt Ihnen die volle Kontrolle über Ihr Anbieterkonto. Wenn Sie lieber ohne Schlüssel-Einrichtung und mit einer einzigen Scandora-Rechnung arbeiten, nutzen Sie <a href="/help/managed-ai.html">verwaltete KI</a>, die mit im Voraus bezahlten Scandora-Credits läuft.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="logo"><span class="logo-icon">◈</span><span class="logo-text">Scandora</span></a>
+                    <p data-i18n="footer.tagline">Intelligent document scanning for modern businesses.</p>
+                </div>
+                <nav class="footer-links" role="navigation" aria-label="Footer navigation">
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.product">Product</h4>
+                        <a href="/#features" data-i18n="nav.features">Features</a>
+                        <a href="/#pricing" data-i18n="nav.pricing">Pricing</a>
+                        <a href="/#download" data-i18n="nav.download">Download</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.legal">Legal</h4>
+                        <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
+                        <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.support">Support</h4>
+                        <a href="/help/" data-i18n="footer.help">Help Center</a>
+                        <a href="/contact.html" data-i18n="footer.contact">Contact Us</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p><small>© 2026 Scandora. <span data-i18n="footer.rights">All rights reserved.</span></small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/translations.js" defer></script>
+    <script src="/main.js" defer></script>
+</body>
+</html>

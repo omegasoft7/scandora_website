@@ -51,6 +51,17 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Blog / Guide: DATEV export from your smartphone (DE-first + EN) -->
+  <url>
+    <loc>https://scandora.eu/blog/datev-export-aus-dem-smartphone</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/datev-export-aus-dem-smartphone?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/blog/datev-export-aus-dem-smartphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/blog/datev-export-aus-dem-smartphone"/>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Privacy Policy -->
   <url>
     <loc>https://scandora.eu/privacy</loc>
@@ -99,6 +110,87 @@
     <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- Help Center -->
+  <url>
+    <loc>https://scandora.eu/help/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/help/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/help/"/>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Help: Bring your own AI -->
+  <url>
+    <loc>https://scandora.eu/help/byoai</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/help/byoai"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/byoai?lang=de"/>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Help: Managed AI & credits -->
+  <url>
+    <loc>https://scandora.eu/help/managed-ai</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/help/managed-ai"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/managed-ai?lang=de"/>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Help: eSCL scanner setup -->
+  <url>
+    <loc>https://scandora.eu/help/escl-setup</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/help/escl-setup"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/escl-setup?lang=de"/>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Help: DATEV export -->
+  <url>
+    <loc>https://scandora.eu/help/datev-export</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/help/datev-export"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/datev-export?lang=de"/>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Help: lexoffice export -->
+  <url>
+    <loc>https://scandora.eu/help/lexoffice-export</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/help/lexoffice-export"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/lexoffice-export?lang=de"/>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Help: sevDesk export -->
+  <url>
+    <loc>https://scandora.eu/help/sevdesk-export</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/help/sevdesk-export"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/sevdesk-export?lang=de"/>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Help: GoBD scope -->
+  <url>
+    <loc>https://scandora.eu/help/gobd-scope</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/help/gobd-scope"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/gobd-scope?lang=de"/>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 
 </urlset>

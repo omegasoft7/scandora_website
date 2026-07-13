@@ -12,10 +12,10 @@ const translations = {
         'nav.download': 'Download',
 
         // Hero
-        'hero.badge': 'Built in Germany · GDPR-safe · GoBD-ready',
+        'hero.badge': 'Built in Germany · Privacy-first · GoBD record-keeping features',
         'hero.titleLine1': 'Turn every document',
         'hero.titleLine2': 'into action',
-        'hero.description': 'Scan with your phone or your real office scanner, let your own AI understand the document, and send it straight into your Trello and Google Drive. Built in Germany — GoBD-ready, GDPR-safe, and your documents never touch our servers.',
+        'hero.description': 'Scan with your phone or your real office scanner, let your own AI understand the document, and send it straight into your Trello and Google Drive. Built in Germany — privacy-first, with GoBD record-keeping features, and your documents never touch our servers.',
         'hero.getStarted': 'Get Started Free',
         'hero.seeHow': 'See How It Works',
         'hero.stat1': 'Phone or scanner',
@@ -51,7 +51,7 @@ const translations = {
         'howItWorks.step2.title': 'Your AI Understands It',
         'howItWorks.step2.desc': 'Your own AI — with your OpenAI or Gemini key — reads the document, recognizes its type, and pulls out the key details. Nothing is stored on our servers.',
         'howItWorks.step3.title': 'It Becomes an Action',
-        'howItWorks.step3.desc': 'The result syncs straight into your own Trello and Google Drive — a card, a filed document, ready to act on. Built in Germany, GoBD-ready, DSGVO-safe.',
+        'howItWorks.step3.desc': 'The result syncs straight into your own Trello and Google Drive — a card, a filed document, ready to act on. Built in Germany, privacy-first, with GoBD record-keeping features.',
 
         // Pricing
         'pricing.badge': 'Flexible Pricing',
@@ -103,6 +103,7 @@ const translations = {
         'footer.terms': 'Terms of Service',
         'footer.avv': 'AVV / DPA',
         'footer.imprint': 'Imprint',
+        'footer.help': 'Help Center',
         'footer.contact': 'Contact Us',
         'footer.rights': 'All rights reserved.',
 
@@ -132,7 +133,11 @@ const translations = {
         'contact.downloadApp': 'Download the App',
         'contact.successTitle': 'Message Sent!',
         'contact.successMessage': "Thank you for reaching out. We'll get back to you within 24 hours.",
-        'contact.successButton': 'Got it'
+        'contact.successButton': 'Got it',
+
+        // Blog / Guides
+        'blog.badge': 'Guide',
+        'blog.backHome': 'Back to Home'
     },
     de: {
         // Navigation
@@ -142,10 +147,10 @@ const translations = {
         'nav.download': 'Download',
 
         // Hero
-        'hero.badge': 'In Deutschland entwickelt · DSGVO-sicher · GoBD-ready',
+        'hero.badge': 'In Deutschland entwickelt · Datenschutz zuerst · GoBD-Funktionen',
         'hero.titleLine1': 'Jedes Dokument wird',
         'hero.titleLine2': 'zur Aktion',
-        'hero.description': 'Scannen Sie mit dem Handy oder Ihrem echten Büroscanner, lassen Sie Ihre eigene KI das Dokument verstehen und senden Sie es direkt in Ihr Trello und Google Drive. In Deutschland entwickelt — GoBD-ready, DSGVO-sicher, und Ihre Dokumente landen nie auf unseren Servern.',
+        'hero.description': 'Scannen Sie mit dem Handy oder Ihrem echten Büroscanner, lassen Sie Ihre eigene KI das Dokument verstehen und senden Sie es direkt in Ihr Trello und Google Drive. In Deutschland entwickelt — Datenschutz zuerst, mit GoBD-Funktionen, und Ihre Dokumente landen nie auf unseren Servern.',
         'hero.getStarted': 'Kostenlos starten',
         'hero.seeHow': 'So funktioniert es',
         'hero.stat1': 'Handy oder Scanner',
@@ -181,7 +186,7 @@ const translations = {
         'howItWorks.step2.title': 'Ihre KI versteht es',
         'howItWorks.step2.desc': 'Ihre eigene KI — mit Ihrem OpenAI- oder Gemini-Schlüssel — liest das Dokument, erkennt den Typ und holt die wichtigen Angaben heraus. Nichts wird auf unseren Servern gespeichert.',
         'howItWorks.step3.title': 'Es wird zur Aktion',
-        'howItWorks.step3.desc': 'Das Ergebnis landet direkt in Ihrem eigenen Trello und Google Drive — eine Karte, ein abgelegtes Dokument, bereit zum Handeln. In Deutschland entwickelt, GoBD-ready, DSGVO-sicher.',
+        'howItWorks.step3.desc': 'Das Ergebnis landet direkt in Ihrem eigenen Trello und Google Drive — eine Karte, ein abgelegtes Dokument, bereit zum Handeln. In Deutschland entwickelt, Datenschutz zuerst, mit GoBD-Funktionen.',
 
         // Pricing
         'pricing.badge': 'Flexible Preise',
@@ -213,7 +218,7 @@ const translations = {
         'pricing.business.f1': '5.000 KI-Credits/Monat (gemeinsamer Pool: Extraktion, Indexierung & KI-Chat)',
         'pricing.business.f2': 'DATEV-Export für Ihren Steuerberater',
         'pricing.business.f3': 'lexoffice- & sevDesk-Belegexport',
-        'pricing.business.f4': 'Für GoBD- & DSGVO-konforme Aufbewahrung konzipiert',
+        'pricing.business.f4': 'Für die GoBD- & DSGVO-Aufbewahrung konzipiert',
         'pricing.business.f5': 'Dedizierter Support',
         'pricing.business.cta': 'Business holen',
         'pricing.business.save': '24 % sparen',
@@ -233,6 +238,7 @@ const translations = {
         'footer.terms': 'Nutzungsbedingungen',
         'footer.avv': 'AVV / DPA',
         'footer.imprint': 'Impressum',
+        'footer.help': 'Hilfe-Center',
         'footer.contact': 'Kontakt',
         'footer.rights': 'Alle Rechte vorbehalten.',
 
@@ -262,12 +268,26 @@ const translations = {
         'contact.downloadApp': 'App herunterladen',
         'contact.successTitle': 'Nachricht gesendet!',
         'contact.successMessage': 'Vielen Dank für Ihre Nachricht. Wir melden uns innerhalb von 24 Stunden bei Ihnen.',
-        'contact.successButton': 'Verstanden'
+        'contact.successButton': 'Verstanden',
+
+        // Blog / Guides
+        'blog.badge': 'Ratgeber',
+        'blog.backHome': 'Zur Startseite'
     }
 };
 
-// Current language
-let currentLang = localStorage.getItem('scandora-lang') || 'en';
+// Current language. A `?lang=de`/`?lang=en` query parameter wins for the initial
+// render (so shared/hreflang links land in the right language) without being
+// persisted; otherwise fall back to the stored preference, then English.
+function initialLanguage() {
+    const requested = new URLSearchParams(window.location.search).get('lang');
+    if (requested === 'de' || requested === 'en') {
+        return requested;
+    }
+    return localStorage.getItem('scandora-lang') || 'en';
+}
+
+let currentLang = initialLanguage();
 
 /**
  * Apply translations to all elements with data-i18n attribute

@@ -68,7 +68,7 @@
     <link rel="preload" href="styles.css" as="style">
     <link rel="preload" href="assets/fonts/inter.css" as="style">
 
-    <!-- Stylesheets (Inter self-hosted — no third-party font requests, DSGVO-konform) -->
+    <!-- Stylesheets (Inter self-hosted — no third-party font requests, so no visitor IP is sent to a font CDN) -->
     <link rel="stylesheet" href="assets/fonts/inter.css">
     <link rel="stylesheet" href="styles.css">
 
@@ -285,12 +285,12 @@
             <div class="hero-bg" aria-hidden="true"></div>
             <div class="container hero-container">
                 <div class="hero-content">
-                    <p class="hero-badge" data-i18n="hero.badge">Built in Germany · GDPR-safe · GoBD-ready</p>
+                    <p class="hero-badge" data-i18n="hero.badge">Built in Germany · Privacy-first · GoBD record-keeping features</p>
                     <h1 id="hero-title" class="hero-title" itemprop="headline">
                         <span data-i18n="hero.titleLine1">Turn every document</span>
                         <span class="gradient-text" data-i18n="hero.titleLine2">into action</span>
                     </h1>
-                    <p class="hero-description" itemprop="description" data-i18n="hero.description">Scan with your phone or your real office scanner, let your own AI understand the document, and send it straight into your Trello and Google Drive. Built in Germany — GoBD-ready, GDPR-safe, and your documents never touch our servers.</p>
+                    <p class="hero-description" itemprop="description" data-i18n="hero.description">Scan with your phone or your real office scanner, let your own AI understand the document, and send it straight into your Trello and Google Drive. Built in Germany — privacy-first, with GoBD record-keeping features, and your documents never touch our servers.</p>
                 <div class="hero-actions">
                     <a href="#download" class="btn btn-primary btn-lg"><span data-i18n="hero.getStarted">Get Started Free</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     <a href="#how-it-works" class="btn btn-secondary btn-lg" data-i18n="hero.seeHow">See How It Works</a>
@@ -397,7 +397,7 @@
                         <div class="step-number" aria-hidden="true">3</div>
                         <div class="step-content">
                             <h3 itemprop="name" data-i18n="howItWorks.step3.title">It Becomes an Action</h3>
-                            <p itemprop="text" data-i18n="howItWorks.step3.desc">The result syncs straight into your own Trello and Google Drive — a card, a filed document, ready to act on. Built in Germany, GoBD-ready, DSGVO-safe.</p>
+                            <p itemprop="text" data-i18n="howItWorks.step3.desc">The result syncs straight into your own Trello and Google Drive — a card, a filed document, ready to act on. Built in Germany, privacy-first, with GoBD record-keeping features.</p>
                         </div>
                     </li>
                 </ol>
@@ -451,7 +451,7 @@
                             <li data-i18n="pricing.pro.f4">Cloud integrations</li>
                             <li data-i18n="pricing.pro.f5">Priority support</li>
                         </ul>
-                        <a href="#download" class="btn btn-primary btn-full" role="button" data-i18n="pricing.pro.cta">Get Pro</a>
+                        <a href="#download" class="btn btn-primary btn-full" role="button" data-managed-ai-cta data-plan="pro" data-i18n="pricing.pro.cta">Get Pro</a>
                     </article>
                     <article class="pricing-card" role="listitem">
                         <div class="pricing-header">
@@ -468,7 +468,7 @@
                             <li data-i18n="pricing.business.f4">Designed for GoBD &amp; DSGVO record-keeping</li>
                             <li data-i18n="pricing.business.f5">Dedicated support</li>
                         </ul>
-                        <a href="#download" class="btn btn-secondary btn-full" role="button" data-i18n="pricing.business.cta">Get Business</a>
+                        <a href="#download" class="btn btn-secondary btn-full" role="button" data-managed-ai-cta data-plan="business" data-i18n="pricing.business.cta">Get Business</a>
                     </article>
                 </div>
                 <p class="pricing-note" data-i18n="pricing.byo"><span aria-hidden="true">💡</span> Bring your own AI (OpenAI, Google Gemini) and save on processing costs!</p>
@@ -522,6 +522,7 @@
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.support">Support</h4>
+                        <a href="/help/" data-i18n="footer.help">Help Center</a>
                         <a href="/contact.html" data-i18n="footer.contact">Contact Us</a>
                     </div>
                 </nav>

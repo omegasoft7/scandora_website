@@ -1166,6 +1166,58 @@ img {
     transform: translateX(-4px);
 }
 
+/* Help Center hub — reuses .legal-page scaffold; adds a card grid */
+.help-category {
+    margin: var(--space-2xl) 0 var(--space-md);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+}
+
+.help-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: var(--space-md);
+}
+
+.help-card {
+    display: block;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-card);
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.help-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--primary);
+    text-decoration: none;
+}
+
+.help-card .help-card-icon {
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: var(--space-sm);
+}
+
+.help-card h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+.help-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
 /* Legal Page Responsive */
 @media (max-width: 768px) {
     .legal-page {
