@@ -62,6 +62,105 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Comparison / landing page: GDPR document scanner -->
+  <url>
+    <loc>https://scandora.eu/gdpr-dokumentenscanner</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/gdpr-dokumentenscanner?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/gdpr-dokumentenscanner"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/gdpr-dokumentenscanner"/>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog / Guide: Set up a network scanner via eSCL (DE-first + EN) -->
+  <url>
+    <loc>https://scandora.eu/blog/netzwerkscanner-escl-einrichten</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/netzwerkscanner-escl-einrichten?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/blog/netzwerkscanner-escl-einrichten"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/blog/netzwerkscanner-escl-einrichten"/>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Comparison / landing page: Scandora vs Fileee -->
+  <url>
+    <loc>https://scandora.eu/vs-fileee</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/vs-fileee?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/vs-fileee"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/vs-fileee"/>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog / Guide: Scandora vs Fileee cornerstone comparison (DE-first + EN) -->
+  <url>
+    <loc>https://scandora.eu/blog/scandora-vs-fileee</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/scandora-vs-fileee?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/blog/scandora-vs-fileee"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/blog/scandora-vs-fileee"/>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog / Guide: Scan-to-Trello workflow (DE-first + EN) -->
+  <url>
+    <loc>https://scandora.eu/blog/scan-to-trello-workflow</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/scan-to-trello-workflow?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/blog/scan-to-trello-workflow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/blog/scan-to-trello-workflow"/>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Comparison / landing page: Scandora vs CamScanner -->
+  <url>
+    <loc>https://scandora.eu/vs-camscanner</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/vs-camscanner?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/vs-camscanner"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/vs-camscanner"/>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Comparison / landing page: DATEV / for tax advisors -->
+  <url>
+    <loc>https://scandora.eu/datev-steuerberater</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/datev-steuerberater?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/datev-steuerberater"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/datev-steuerberater"/>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog / Guide: Scanning for GoBD / ersetzendes Scannen (DE-first + EN) -->
+  <url>
+    <loc>https://scandora.eu/blog/gobd-konform-scannen</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/gobd-konform-scannen?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/blog/gobd-konform-scannen"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/blog/gobd-konform-scannen"/>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog / Guide: DSGVO-safe CamScanner alternative (DE-first + EN) -->
+  <url>
+    <loc>https://scandora.eu/blog/dsgvo-sichere-camscanner-alternative</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/dsgvo-sichere-camscanner-alternative?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/blog/dsgvo-sichere-camscanner-alternative"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/blog/dsgvo-sichere-camscanner-alternative"/>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Privacy Policy -->
   <url>
     <loc>https://scandora.eu/privacy</loc>

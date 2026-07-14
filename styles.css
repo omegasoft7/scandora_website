@@ -511,6 +511,17 @@ img {
     color: var(--text-secondary);
     font-size: 15px;
 }
+.feature-card p.feature-link {
+    margin-top: var(--space-sm);
+}
+.feature-card p.feature-link a {
+    color: var(--primary);
+    font-weight: 500;
+}
+.feature-card p.feature-link a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
 
 /* ============================================
    HOW IT WORKS SECTION
@@ -1727,4 +1738,22 @@ img {
         flex-direction: column;
         gap: var(--space-sm);
     }
+}
+
+.feature-links,
+.pricing-datev-link {
+    margin-top: var(--space-sm);
+    font-size: 0.875rem;
+}
+
+.feature-links a,
+.pricing-datev-link a {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.feature-links a:hover,
+.pricing-datev-link a:hover {
+    color: var(--primary);
+    text-decoration: underline;
 }

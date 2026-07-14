@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Netzwerkscanner per eSCL einrichten: Büroscanner mit Scandora verbinden | Scandora</title>
+    <meta name="description" content="So verbinden Sie einen Netzwerkscanner per eSCL/AirScan (z. B. Brother oder Epson) mit Scandora — WLAN-Erkennung plus USB-Fallback, mehrseitiges Scannen und Duplex, ganz ohne Treiber. Entwickelt in Deutschland.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <link rel="canonical" href="https://scandora.eu/blog/netzwerkscanner-escl-einrichten">
+
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="de" href="https://scandora.eu/blog/netzwerkscanner-escl-einrichten?lang=de">
+    <link rel="alternate" hreflang="en" href="https://scandora.eu/blog/netzwerkscanner-escl-einrichten">
+    <link rel="alternate" hreflang="x-default" href="https://scandora.eu/blog/netzwerkscanner-escl-einrichten">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://scandora.eu/blog/netzwerkscanner-escl-einrichten">
+    <meta property="og:title" content="Netzwerkscanner per eSCL einrichten: Büroscanner mit Scandora verbinden">
+    <meta property="og:description" content="Büroscanner per eSCL/AirScan mit Scandora verbinden — WLAN-Erkennung plus USB-Fallback, mehrseitiges Scannen und Duplex, ganz ohne Treiber.">
+    <meta property="og:image" content="https://scandora.eu/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Scandora — Netzwerkscanner per eSCL einrichten">
+    <meta property="og:site_name" content="Scandora">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:locale:alternate" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Netzwerkscanner per eSCL einrichten">
+    <meta name="twitter:description" content="Büroscanner per eSCL/AirScan mit Scandora verbinden — WLAN-Erkennung plus USB-Fallback, ganz ohne Treiber.">
+    <meta name="twitter:image" content="https://scandora.eu/assets/og-image.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+    <!-- Fonts & Styles (Inter self-hosted — no third-party font requests, DSGVO-konform) -->
+    <link rel="stylesheet" href="../assets/fonts/inter.css">
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Structured Data - Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Netzwerkscanner per eSCL einrichten: Büroscanner mit Scandora verbinden",
+        "description": "So verbinden Sie einen Netzwerkscanner per eSCL/AirScan (z. B. Brother oder Epson) mit Scandora — WLAN-Erkennung plus USB-Fallback, mehrseitiges Scannen und Duplex, ganz ohne Treiber.",
+        "inLanguage": "de",
+        "datePublished": "2026-07-13",
+        "dateModified": "2026-07-13",
+        "image": "https://scandora.eu/assets/og-image.png",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://scandora.eu/blog/netzwerkscanner-escl-einrichten"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Scandora",
+            "url": "https://scandora.eu"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Scandora",
+            "url": "https://scandora.eu",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://scandora.eu/assets/og-image.png"
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container nav-container">
+                <a href="/" class="logo" aria-label="Scandora Home"><span class="logo-icon" aria-hidden="true">◈</span><span class="logo-text">Scandora</span></a>
+                <div class="nav-links" role="menubar">
+                    <a href="/#features" role="menuitem" data-i18n="nav.features">Features</a>
+                    <a href="/#how-it-works" role="menuitem" data-i18n="nav.howItWorks">How It Works</a>
+                    <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
+                    <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="legal-page" aria-labelledby="article-title">
+            <div class="legal-container">
+                <a href="/" class="back-home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span data-i18n="blog.backHome">Back to Home</span>
+                </a>
+
+                <header class="legal-header">
+                    <span class="legal-badge" data-i18n="blog.badge">Guide</span>
+                    <h1 id="article-title" class="legal-title"><span data-lang="en">Set up a network scanner via eSCL</span><span data-lang="de" hidden>Netzwerkscanner per eSCL einrichten</span></h1>
+                    <p class="legal-meta"><span data-lang="en">Published: <time datetime="2026-07-13">July 13, 2026</time></span><span data-lang="de" hidden>Veröffentlicht: <time datetime="2026-07-13">13. Juli 2026</time></span></p>
+                </header>
+
+                <!-- ================= GERMAN (DE-first) ================= -->
+                <article class="legal-content" data-lang="de" hidden>
+                    <div class="highlight-box">
+                        <p><strong>Kurz gesagt:</strong> Viele deutsche Büros haben bereits einen Netzwerkscanner. Wenn er <strong>eSCL/AirScan</strong> unterstützt, verbinden Sie ihn ohne Treiber und ohne Desktop-Software mit Scandora: Scanner und Handy ins selbe WLAN, in der App die Suche starten — Scandora findet das Gerät automatisch, zieht mehrseitige Stapel über den Einzug ein und macht daraus ein Dokument, das Ihre KI lesen kann.</p>
+                    </div>
+
+                    <nav class="toc">
+                        <h4>Inhalt</h4>
+                        <ol>
+                            <li><a href="#was-ist-escl">Was ist eSCL/AirScan?</a></li>
+                            <li><a href="#voraussetzungen">Voraussetzungen</a></li>
+                            <li><a href="#aktivieren">eSCL/AirScan am Scanner aktivieren</a></li>
+                            <li><a href="#finden">Scanner in Scandora finden</a></li>
+                            <li><a href="#einstellungen">Scan-Einstellungen</a></li>
+                            <li><a href="#hersteller">Unterstützte Hersteller & ehrlicher Umfang</a></li>
+                            <li><a href="#fehler">Fehlerbehebung</a></li>
+                            <li><a href="#faq">Häufige Fragen</a></li>
+                        </ol>
+                    </nav>
+
+                    <h2 id="was-ist-escl">Was ist eSCL/AirScan?</h2>
+                    <p>eSCL (auch <strong>AirScan</strong> genannt, das Gegenstück zu Apple AirPrint für das Scannen) ist ein offener Standard, mit dem Scanner und Multifunktionsgeräte direkt über das Netzwerk scannen — ohne herstellerspezifische Treiber. Scandora spricht dieses Protokoll direkt an, sodass Sie einen echten Büroscanner genauso einfach nutzen wie die Handykamera.</p>
+                    <p>Weil eSCL ein Standard ist, funktioniert er herstellerübergreifend. Ob ein bestimmtes Gerät eSCL beherrscht, hängt von seiner Firmware ab — nicht von Scandora.</p>
+
+                    <h2 id="voraussetzungen">Voraussetzungen</h2>
+                    <ul>
+                        <li>Einen Scanner oder ein Multifunktionsgerät, das <strong>eSCL/AirScan</strong> unterstützt (in Gerätemenüs oft als „AirPrint-Scannen" oder „Apple AirPrint" bezeichnet).</li>
+                        <li>Scanner und Handy im <strong>selben WLAN</strong> (kein Gastnetz). Am Mac funktioniert zusätzlich ein per USB angeschlossener Scanner.</li>
+                        <li>Netzwerk-Scannen am Gerät aktiviert (siehe Weboberfläche oder Bedienfeld des Scanners).</li>
+                    </ul>
+
+                    <h2 id="aktivieren">eSCL/AirScan am Scanner aktivieren</h2>
+                    <p>Der genaue Weg unterscheidet sich je nach Hersteller — die Idee ist aber überall gleich:</p>
+                    <ol>
+                        <li>Öffnen Sie die Weboberfläche des Scanners (die IP-Adresse steht meist am Bedienfeld) oder gehen Sie direkt am Gerätemenü in die Netzwerk-/Scan-Einstellungen.</li>
+                        <li>Aktivieren Sie <strong>„AirPrint"</strong>, <strong>„eSCL"</strong> oder <strong>„Netzwerk-Scannen"</strong>. Bei manchen Geräten ist das ab Werk aktiv.</li>
+                        <li>Stellen Sie sicher, dass der Scanner mit Ihrem WLAN verbunden ist — nicht mit einem separaten Gäste- oder Geräte-Netz.</li>
+                    </ol>
+                    <p>Danach ist keine weitere Konfiguration nötig: Scandora braucht weder eine manuell eingegebene IP-Adresse noch einen Treiber.</p>
+
+                    <h2 id="finden">Scanner in Scandora finden</h2>
+                    <p>Starten Sie in Scandora einen Scan und wählen Sie die Option <strong>Netzwerkscanner</strong>. Die Suche läuft dann automatisch in zwei Schritten ab:</p>
+                    <ol>
+                        <li><strong>Kurze USB-/Kabelprüfung zuerst.</strong> Vor allem am Mac erkennt Scandora auch einen per USB angeschlossenen Scanner über eine lokale IPP-over-USB-Bridge. Diese Prüfung läuft schnell im Hintergrund, bevor die WLAN-Suche startet.</li>
+                        <li><strong>WLAN-Suche per eSCL/AirScan.</strong> Anschließend durchsucht Scandora das Netzwerk über den mDNS-/Bonjour-Dienst des Betriebssystems (auf iOS/macOS die Systemsuche, auf Android der <code>NsdManager</code>) nach eSCL-Scannern. Gefundene Geräte erscheinen in der Liste; tippen Sie auf Ihren Scanner, um zu verbinden.</li>
+                    </ol>
+                    <p>Beim ersten Mal fragt das System auf iPhone und Mac nach der Berechtigung für das <strong>lokale Netzwerk</strong> — bestätigen Sie diese, sonst kann Scandora keine Geräte im WLAN finden. Der Gerätestatus (bereit, beschäftigt, Papierstau, Einzug leer) wird live angezeigt.</p>
+
+                    <h2 id="einstellungen">Scan-Einstellungen</h2>
+                    <p>Vor dem Scannen wählen Sie:</p>
+                    <ul>
+                        <li><strong>Quelle:</strong> den automatischen Vorlageneinzug (ADF) für mehrseitige Stapel oder das Flachbettglas für Einzelblätter. Der Einzug ist die Standardeinstellung, damit ein Stapel in einem Durchgang eingezogen wird.</li>
+                        <li><strong>Duplex:</strong> beide Seiten in einem Durchgang scannen, wenn der Einzug Ihres Geräts das unterstützt.</li>
+                        <li><strong>Farbe</strong> und <strong>Auflösung (DPI)</strong>.</li>
+                    </ul>
+                    <p>Die Seiten aus dem Einzug werden nacheinander erfasst und zu einem einzelnen Dokument zusammengefügt. Dieses können Sie anschließend wie einen Handy-Scan weiterverarbeiten — von Ihrer KI auslesen lassen und in Trello, Google Drive oder als DATEV-Export exportieren.</p>
+
+                    <h2 id="hersteller">Unterstützte Hersteller & ehrlicher Umfang</h2>
+                    <p>Grundsätzlich funktioniert <strong>jeder eSCL/AirScan-kompatible Netzwerkscanner</strong>. Scandora bringt abgestimmte Verbindungseinstellungen für gängige Hersteller mit — darunter <strong>Brother und Epson</strong> sowie HP, Canon, Xerox, Ricoh, Kyocera, Lexmark, Samsung und Konica Minolta — und nutzt für alle übrigen Geräte einen generischen Fallback.</p>
+                    <div class="highlight-box">
+                        <p><strong>Ehrlich gesagt:</strong> Scandora ist auf <strong>Hersteller-Ebene</strong> auf eSCL abgestimmt, nicht pro Einzelmodell. Wir behaupten nicht, dass bestimmte Modellnummern „getestet" oder „zertifiziert" sind. Ob Ihr konkretes Gerät funktioniert, entscheidet dessen eSCL-Firmware. Das vollständige Hardware-Verhalten in der Praxis (etwa Papierstau-Wiederaufnahme oder die Erkennung über mehrere Netzwerk-Adapter) prüfen wir laufend im Rahmen der Qualitätssicherung.</p>
+                    </div>
+                    <p><strong>Hinweis zu Brother:</strong> Nur neuere Brother-Modelle unterstützen eSCL-Scannen (zum Beispiel die Serien MFC-L3xxx, MFC-J4xxx und ADS-4xxx). Ältere Modelle unterstützen eSCL-Scannen oft <em>nicht</em>, selbst wenn sie AirPrint-Druck können. Ausschlaggebend ist immer die Firmware des Geräts.</p>
+
+                    <h2 id="fehler">Fehlerbehebung</h2>
+                    <ul>
+                        <li><strong>Scanner wird nicht gefunden:</strong> Prüfen Sie, dass beide Geräte im selben WLAN sind (kein Gastnetz) und dass „AirPrint"/eSCL am Scanner aktiviert ist. Manche Netzwerke blockieren den Erkennungsverkehr zwischen Geräten — versuchen Sie es in einem einfacheren Netzwerk.</li>
+                        <li><strong>Berechtigung fürs lokale Netzwerk:</strong> Auf iPhone und Mac muss die Berechtigung für das lokale Netzwerk erteilt sein. Ohne sie kann die WLAN-Suche keine Geräte finden.</li>
+                        <li><strong>Verbindung bricht ab:</strong> Nach einem Neustart kann der Scanner unter einer anderen IP-Adresse erscheinen; starten Sie die Suche einfach erneut.</li>
+                        <li><strong>Keine Einzugsseiten:</strong> Stellen Sie sicher, dass das Papier korrekt in den Einzug (ADF) eingelegt ist.</li>
+                    </ul>
+                    <p>Sie können jederzeit auch mit der Handykamera scannen — dafür ist kein Scanner nötig.</p>
+
+                    <div class="highlight-box">
+                        <p><strong>Schritt-für-Schritt in der App?</strong> Die kompakte Kurzanleitung mit den Verbindungsschritten und Scan-Einstellungen finden Sie im Hilfe-Center: <a href="/help/escl-setup">Netzwerkscanner einrichten (eSCL)</a>.</p>
+                    </div>
+
+                    <h2 id="faq">Häufige Fragen</h2>
+                    <h3>Brauche ich Treiber oder eine Desktop-Software?</h3>
+                    <p>Nein. eSCL/AirScan läuft treiberlos direkt über das Netzwerk. Scanner und Handy müssen nur im selben WLAN sein.</p>
+                    <h3>Funktioniert mein genaues Scanner-Modell?</h3>
+                    <p>Wenn das Gerät eSCL/AirScan unterstützt, in aller Regel ja. Scandora ist auf Hersteller-Ebene abgestimmt und nutzt für unbekannte Geräte einen generischen Fallback. Einzelne Modelle werben wir aber nicht als „zertifiziert" aus — maßgeblich ist die Firmware Ihres Geräts.</p>
+                    <h3>Kann ich einen per USB angeschlossenen Scanner nutzen?</h3>
+                    <p>Am Mac ja: Scandora erkennt einen per USB angeschlossenen eSCL-Scanner über eine lokale IPP-over-USB-Bridge. Auf dem Handy läuft die Verbindung über WLAN.</p>
+                    <h3>Kann ich mehrseitige Dokumente und beidseitig scannen?</h3>
+                    <p>Ja. Über den Vorlageneinzug (ADF) wird ein Stapel in einem Durchgang eingezogen; Duplex scannt beide Seiten, sofern Ihr Gerät das unterstützt. Alle Seiten werden zu einem Dokument zusammengefügt.</p>
+                </article>
+
+                <!-- ================= ENGLISH ================= -->
+                <article class="legal-content" data-lang="en">
+                    <div class="highlight-box">
+                        <p><strong>In short:</strong> Many German offices already own a network scanner. If it supports <strong>eSCL/AirScan</strong>, you connect it to Scandora with no drivers and no desktop software: put the scanner and your phone on the same Wi-Fi, start a scan in the app — Scandora finds the device automatically, pulls multi-page stacks through the feeder and turns them into one document your AI can read.</p>
+                    </div>
+
+                    <nav class="toc">
+                        <h4>Contents</h4>
+                        <ol>
+                            <li><a href="#en-what">What is eSCL/AirScan?</a></li>
+                            <li><a href="#en-requirements">Requirements</a></li>
+                            <li><a href="#en-enable">Enable eSCL/AirScan on the scanner</a></li>
+                            <li><a href="#en-find">Find the scanner in Scandora</a></li>
+                            <li><a href="#en-settings">Scan settings</a></li>
+                            <li><a href="#en-vendors">Supported manufacturers & honest scope</a></li>
+                            <li><a href="#en-trouble">Troubleshooting</a></li>
+                            <li><a href="#en-faq">FAQ</a></li>
+                        </ol>
+                    </nav>
+
+                    <h2 id="en-what">What is eSCL/AirScan?</h2>
+                    <p>eSCL (also called <strong>AirScan</strong>, the scanning counterpart to Apple AirPrint) is an open standard that lets scanners and multifunction devices scan straight over the network — without vendor-specific drivers. Scandora speaks this protocol directly, so a real office scanner is as easy to use as your phone camera.</p>
+                    <p>Because eSCL is a standard, it works across manufacturers. Whether a given device supports eSCL depends on its firmware — not on Scandora.</p>
+
+                    <h2 id="en-requirements">Requirements</h2>
+                    <ul>
+                        <li>A scanner or multifunction device that supports <strong>eSCL/AirScan</strong> (often listed in device menus as "AirPrint scanning" or "Apple AirPrint").</li>
+                        <li>The scanner and your phone on the <strong>same Wi-Fi network</strong> (not a guest network). On a Mac, a scanner connected over USB also works.</li>
+                        <li>Network scanning enabled on the device (see your scanner's web interface or panel).</li>
+                    </ul>
+
+                    <h2 id="en-enable">Enable eSCL/AirScan on the scanner</h2>
+                    <p>The exact path differs by manufacturer, but the idea is the same everywhere:</p>
+                    <ol>
+                        <li>Open the scanner's web interface (the IP address is usually shown on the panel), or go straight to the network/scan settings in the device menu.</li>
+                        <li>Enable <strong>"AirPrint"</strong>, <strong>"eSCL"</strong> or <strong>"network scanning"</strong>. On some devices it is on by default.</li>
+                        <li>Make sure the scanner is joined to your Wi-Fi — not to a separate guest or device network.</li>
+                    </ol>
+                    <p>After that no further configuration is needed: Scandora requires neither a manually entered IP address nor a driver.</p>
+
+                    <h2 id="en-find">Find the scanner in Scandora</h2>
+                    <p>In Scandora, start a scan and choose the <strong>network scanner</strong> option. The search then runs automatically in two steps:</p>
+                    <ol>
+                        <li><strong>A quick USB/cable check first.</strong> On a Mac in particular, Scandora also detects a scanner connected over USB via a local IPP-over-USB bridge. This check runs quickly in the background before the Wi-Fi search starts.</li>
+                        <li><strong>Wi-Fi search via eSCL/AirScan.</strong> Scandora then browses the network for eSCL scanners using the operating system's mDNS/Bonjour resolver (the system service on iOS/macOS, <code>NsdManager</code> on Android). Devices it finds appear in the list; tap yours to connect.</li>
+                    </ol>
+                    <p>The first time, iPhone and Mac ask for <strong>local network</strong> permission — grant it, otherwise Scandora cannot find devices on the Wi-Fi. The device status (idle, busy, paper jam, feeder empty) is shown live.</p>
+
+                    <h2 id="en-settings">Scan settings</h2>
+                    <p>Before scanning you choose:</p>
+                    <ul>
+                        <li><strong>Source:</strong> the automatic document feeder (ADF) for multi-page stacks, or the flatbed glass for single sheets. The feeder is the default so a stack scans in one pass.</li>
+                        <li><strong>Duplex:</strong> scan both sides in one pass if your device's feeder supports it.</li>
+                        <li><strong>Colour</strong> and <strong>resolution (DPI)</strong>.</li>
+                    </ul>
+                    <p>Pages from the feeder are captured in sequence and assembled into a single document. You can then process it just like a phone scan — have your AI read it and export it to Trello, Google Drive or as a DATEV export.</p>
+
+                    <h2 id="en-vendors">Supported manufacturers & honest scope</h2>
+                    <p>In principle <strong>any eSCL/AirScan-compatible network scanner</strong> works. Scandora ships tuned connection settings for common manufacturers — including <strong>Brother and Epson</strong> as well as HP, Canon, Xerox, Ricoh, Kyocera, Lexmark, Samsung and Konica Minolta — and uses a generic fallback for everything else.</p>
+                    <div class="highlight-box">
+                        <p><strong>To be honest:</strong> Scandora is tuned for eSCL at the <strong>manufacturer level</strong>, not per individual model. We do not claim specific model numbers are "tested" or "certified". Whether your particular device works is decided by its eSCL firmware. The full real-world hardware behaviour (such as paper-jam resume or discovery across multiple network adapters) is something we verify on an ongoing basis as part of quality assurance.</p>
+                    </div>
+                    <p><strong>Brother note:</strong> only newer Brother models support eSCL scanning (for example the MFC-L3xxx, MFC-J4xxx and ADS-4xxx series). Older models often do <em>not</em> support eSCL scanning even if they support AirPrint printing. The device's firmware is always what matters.</p>
+
+                    <h2 id="en-trouble">Troubleshooting</h2>
+                    <ul>
+                        <li><strong>Scanner not found:</strong> confirm both devices are on the same Wi-Fi (not a guest network) and that "AirPrint"/eSCL is enabled on the scanner. Some networks block the discovery traffic between devices — try a simpler network.</li>
+                        <li><strong>Local network permission:</strong> on iPhone and Mac the local-network permission must be granted. Without it the Wi-Fi search can find no devices.</li>
+                        <li><strong>Connection drops:</strong> after a reboot the scanner may come back on a different IP address; just run the search again.</li>
+                        <li><strong>No feeder pages:</strong> make sure paper is loaded correctly in the ADF.</li>
+                    </ul>
+                    <p>You can also scan with your phone camera at any time — no scanner required.</p>
+
+                    <div class="highlight-box">
+                        <p><strong>Want the step-by-step in the app?</strong> The compact quick guide with the connection steps and scan settings lives in the Help Center: <a href="/help/escl-setup">Network scanner setup (eSCL)</a>.</p>
+                    </div>
+
+                    <h2 id="en-faq">FAQ</h2>
+                    <h3>Do I need drivers or desktop software?</h3>
+                    <p>No. eSCL/AirScan is driverless and runs straight over the network. The scanner and your phone only need to be on the same Wi-Fi.</p>
+                    <h3>Will my exact scanner model work?</h3>
+                    <p>If the device supports eSCL/AirScan, almost always yes. Scandora is tuned at the manufacturer level and uses a generic fallback for unknown devices. We do not advertise individual models as "certified" — your device's firmware is what matters.</p>
+                    <h3>Can I use a scanner connected over USB?</h3>
+                    <p>On a Mac, yes: Scandora detects a USB-connected eSCL scanner via a local IPP-over-USB bridge. On the phone, the connection runs over Wi-Fi.</p>
+                    <h3>Can I scan multi-page and double-sided documents?</h3>
+                    <p>Yes. The document feeder (ADF) pulls a stack in one pass; duplex scans both sides if your device supports it. All pages are assembled into a single document.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="logo"><span class="logo-icon">◈</span><span class="logo-text">Scandora</span></a>
+                    <p data-i18n="footer.tagline">Intelligent document scanning for modern businesses.</p>
+                </div>
+                <nav class="footer-links" role="navigation" aria-label="Footer navigation">
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.product">Product</h4>
+                        <a href="/#features" data-i18n="nav.features">Features</a>
+                        <a href="/#pricing" data-i18n="nav.pricing">Pricing</a>
+                        <a href="/#download" data-i18n="nav.download">Download</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.legal">Legal</h4>
+                        <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
+                        <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.support">Support</h4>
+                        <a href="/help/" data-i18n="footer.help">Help Center</a>
+                        <a href="/contact.html" data-i18n="footer.contact">Contact Us</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p><small>© 2026 Scandora. <span data-i18n="footer.rights">All rights reserved.</span></small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../translations.js" defer></script>
+    <script src="../main.js" defer></script>
+</body>
+</html>

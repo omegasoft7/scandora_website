@@ -137,7 +137,24 @@ const translations = {
 
         // Blog / Guides
         'blog.badge': 'Guide',
-        'blog.backHome': 'Back to Home'
+        'blog.backHome': 'Back to Home',
+        'blogFileee.badge': 'Comparison',
+        'blogFileee.backHome': 'Back to Home',
+
+        // Comparison / landing pages (5.5)
+        'features.compareFileee': 'Scandora vs Fileee',
+        'features.compareCamscanner': 'Scandora vs CamScanner',
+        'features.privacyGdprLink': 'GDPR document scanner',
+        'pricing.business.datevLink': 'For tax advisors & DATEV →',
+        'gdprScanner.badge': 'GDPR scanning',
+        'gdprScanner.backHome': 'Back to Home',
+        'vsFileee.badge': 'Comparison',
+        'vsFileee.backHome': 'Back to Home',
+        'vsCamscanner.badge': 'Comparison',
+        'vsCamscanner.backHome': 'Back to Home',
+        'datevSteuerberater.badge': 'For tax advisors',
+        'datevSteuerberater.backHome': 'Back to Home',
+        'blogTrello.homepageLink': 'Read: the scan-to-Trello workflow →'
     },
     de: {
         // Navigation
@@ -272,7 +289,24 @@ const translations = {
 
         // Blog / Guides
         'blog.badge': 'Ratgeber',
-        'blog.backHome': 'Zur Startseite'
+        'blog.backHome': 'Zur Startseite',
+        'blogFileee.badge': 'Vergleich',
+        'blogFileee.backHome': 'Zur Startseite',
+
+        // Comparison / landing pages (5.5)
+        'features.compareFileee': 'Vergleich: Scandora vs. Fileee',
+        'features.compareCamscanner': 'Vergleich: Scandora vs. CamScanner',
+        'features.privacyGdprLink': 'DSGVO-Dokumentenscanner',
+        'pricing.business.datevLink': 'Für Steuerberater & DATEV →',
+        'gdprScanner.badge': 'DSGVO-Scannen',
+        'gdprScanner.backHome': 'Zur Startseite',
+        'vsFileee.badge': 'Vergleich',
+        'vsFileee.backHome': 'Zur Startseite',
+        'vsCamscanner.badge': 'Vergleich',
+        'vsCamscanner.backHome': 'Zur Startseite',
+        'datevSteuerberater.badge': 'Für Steuerberater',
+        'datevSteuerberater.backHome': 'Zur Startseite',
+        'blogTrello.homepageLink': 'Lesen: der Scan-to-Trello-Workflow →'
     }
 };
 

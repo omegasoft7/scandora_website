@@ -9,6 +9,8 @@
 //      Offer prices, so the human-readable site and the machine-readable structured data
 //      never drift apart.
 //   5. No aggregateRating/review markup anywhere (must stay out until real reviews exist).
+//   6. Every HTML page under website/ that carries a JSON-LD block is registered in PAGES
+//      below (drift guard) — a new structured-data page can't ship uncovered by this check.
 //
 // Prices themselves come from RevenueCat / App Store Connect (see STRUCTURED_DATA.md);
 // this script guards consistency and validity, not the absolute price values.
@@ -16,9 +18,9 @@
 // Usage:  node website/scripts/validate-structured-data.mjs
 // Exit code 0 = all good, 1 = at least one problem.
 
-import { readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname, join } from 'node:path';
+import { dirname, join, sep } from 'node:path';
 
 const websiteDir = join(dirname(fileURLToPath(import.meta.url)), '..');
 const PAGES = [
@@ -27,7 +29,16 @@ const PAGES = [
   'terms.html',
   'imprint.html',
   'contact.html',
+  'vs-camscanner.html',
+  'vs-fileee.html',
+  'datev-steuerberater.html',
+  'gdpr-dokumentenscanner.html',
   'blog/datev-export-aus-dem-smartphone.html',
+  'blog/gobd-konform-scannen.html',
+  'blog/netzwerkscanner-escl-einrichten.html',
+  'blog/scan-to-trello-workflow.html',
+  'blog/dsgvo-sichere-camscanner-alternative.html',
+  'blog/scandora-vs-fileee.html',
 ];
 const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD (ISO dates sort chronologically)
 
@@ -109,6 +120,25 @@ for (const page of PAGES) {
   const offerCount = jsonLdOfferPrices.length;
   console.log(`✓ ${page}: ${blocks.length} JSON-LD block(s), ${offerCount} offer(s), ${visiblePrices.length} visible price(s)`);
 }
+
+// 7. Drift guard: sweep every HTML file under website/ and fail loudly if one carries a
+//    JSON-LD block but is missing from PAGES above — otherwise a newly shipped page's
+//    structured data would silently go unchecked.
+const registered = new Set(PAGES);
+const htmlFiles = readdirSync(websiteDir, { recursive: true })
+  .filter((p) => typeof p === 'string' && p.endsWith('.html'))
+  .map((p) => p.split(sep).join('/'));
+let jsonLdPagesOnDisk = 0;
+let unregistered = 0;
+for (const file of htmlFiles) {
+  if (!readFileSync(join(websiteDir, file), 'utf8').includes('application/ld+json')) continue;
+  jsonLdPagesOnDisk += 1;
+  if (!registered.has(file)) {
+    unregistered += 1;
+    report(file, 'carries a JSON-LD block but is not in the PAGES list of validate-structured-data.mjs — add it there and document it in STRUCTURED_DATA.md');
+  }
+}
+console.log(`✓ drift guard: ${jsonLdPagesOnDisk} JSON-LD page(s) on disk, ${unregistered} unregistered`);
 
 if (problems.length) {
   console.error(`\n✗ ${problems.length} structured-data problem(s):`);
