@@ -33,6 +33,7 @@ const PAGES = [
   'vs-fileee.html',
   'datev-steuerberater.html',
   'gdpr-dokumentenscanner.html',
+  'blog/index.html',
   'blog/datev-export-aus-dem-smartphone.html',
   'blog/gobd-konform-scannen.html',
   'blog/netzwerkscanner-escl-einrichten.html',

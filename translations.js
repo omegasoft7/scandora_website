@@ -9,6 +9,7 @@ const translations = {
         'nav.features': 'Features',
         'nav.howItWorks': 'How It Works',
         'nav.pricing': 'Pricing',
+        'nav.blog': 'Guides',
         'nav.download': 'Download',
 
         // Hero
@@ -161,6 +162,7 @@ const translations = {
         'nav.features': 'Funktionen',
         'nav.howItWorks': 'So funktioniert es',
         'nav.pricing': 'Preise',
+        'nav.blog': 'Ratgeber',
         'nav.download': 'Download',
 
         // Hero
