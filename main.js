@@ -6,8 +6,8 @@
 (function() {
     'use strict';
 
-    // Wait for DOM to be fully loaded
-    document.addEventListener('DOMContentLoaded', function() {
+    // Run once the DOM is ready
+    function init() {
         initSmoothScroll();
         initNavbarScroll();
         initMobileMenu();
@@ -16,7 +16,13 @@
         initContactForm();
         initAnalyticsTracking(); // Umami event tracking
         consoleBranding();
-    });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
 
     // ============================================
     // SMOOTH SCROLL FOR ANCHOR LINKS

@@ -376,6 +376,10 @@ function toggleLanguage() {
     }
 }
 
-// Apply translations on page load
-document.addEventListener('DOMContentLoaded', applyTranslations);
+// Apply translations once the DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', applyTranslations);
+} else {
+    applyTranslations();
+}
 

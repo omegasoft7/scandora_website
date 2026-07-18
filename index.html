@@ -64,6 +64,12 @@
     <link rel="shortcut icon" href="favicon.ico">
 
 
+    <!-- Preload above-the-fold webfonts -->
+    <link rel="preload" href="assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/inter-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/inter-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+
     <!-- Preload Critical Resources -->
     <link rel="preload" href="styles.css" as="style">
     <link rel="preload" href="assets/fonts/inter.css" as="style">
@@ -540,9 +546,17 @@
         </div>
     </footer>
 
-    <!-- Scripts with defer for better performance -->
-    <script src="translations.js" defer></script>
-    <script src="main.js" defer></script>
+    <!-- Non-critical scripts loaded after first paint to keep them off the LCP path -->
+    <script>
+      window.addEventListener('load', function () {
+        ['translations.js', 'main.js'].forEach(function (src) {
+          var s = document.createElement('script');
+          s.src = src;
+          s.async = false;
+          document.body.appendChild(s);
+        });
+      });
+    </script>
 </body>
 </html>
 
