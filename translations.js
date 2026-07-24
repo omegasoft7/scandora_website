@@ -155,7 +155,38 @@ const translations = {
         'vsCamscanner.backHome': 'Back to Home',
         'datevSteuerberater.badge': 'For tax advisors',
         'datevSteuerberater.backHome': 'Back to Home',
-        'blogTrello.homepageLink': 'Read: the scan-to-Trello workflow →'
+        'blogTrello.homepageLink': 'Read: the scan-to-Trello workflow →',
+
+        // Time-Saved Calculator
+        'calc.badge': 'Time Saved',
+        'calc.title': "See how much time you'd save",
+        'calc.description': "Scandora's AI pulls the data off each document so you don't retype it. Move the slider to estimate the manual data entry you'd skip each month.",
+        'calc.docsLabel': 'Documents scanned per week',
+        'calc.docsPerWeek': 'documents/week',
+        'calc.hoursUnit': 'hours/month saved',
+        'calc.assumption': 'Based on about 3 minutes of manual data entry saved per document.',
+        'calc.cta': 'Get Started Free',
+
+        // FAQ
+        'faq.badge': 'FAQ',
+        'faq.title': 'Frequently Asked Questions',
+        'faq.description': 'Everything you need to know about Scandora — scanning, privacy, pricing and DATEV export.',
+        'faq.q1': 'What is Scandora?',
+        'faq.a1': 'Scandora is an AI-powered document scanning app that transforms your paper documents into digital intelligence. It automatically extracts key information like dates, amounts, and names, then syncs everything to your favorite cloud services like Trello and Google Drive.',
+        'faq.q2': 'Is Scandora free to use?',
+        'faq.a2': "Yes! Scandora's free plan includes private, offline on-device search of your scans, basic document management, one cloud integration, and watermarked exports. Paid plans are available now: Pro (€9.99/month or €89/year) adds a monthly AI-credit allowance, cloud integrations and priority support, and Business / DATEV (€24.99/month or €229/year) adds DATEV, lexoffice and sevDesk export designed for GoBD & DSGVO record-keeping. Prices are the final amounts charged via the App Store or Google Play.",
+        'faq.q3': 'Which platforms does Scandora support?',
+        'faq.a3': 'Scandora is available on iOS, macOS, and Android. You can scan documents using your phone camera or connect professional scanners on desktop.',
+        'faq.q4': 'Is my data secure with Scandora?',
+        'faq.a4': "Privacy is built into Scandora's design. Your documents stay on your device by default, and on-device search is private and works offline. If you later opt in (with your consent) to the planned AI document chat, an optional EU-resident search index (Frankfurt) would store derived text only – not your original files – and managed AI generation may be processed outside the EU (e.g. OpenAI in the USA, Google Gemini) under EU Standard Contractual Clauses and the EU–US Data Privacy Framework. You stay in control of your data.",
+        'faq.q5': 'Can I use my own AI provider?',
+        'faq.a5': 'Yes! Scandora supports Bring Your Own AI (BYOAI). You can connect your OpenAI or Google Gemini API keys to process documents using your own AI accounts, giving you full control over costs and data processing.',
+        'faq.q6': 'Is Scandora GDPR-compliant?',
+        'faq.a6': "Scandora is built in Germany with GDPR (DSGVO) in mind. Your documents stay on your device by default, our servers run in the EU, and we don't embed third-party advertising trackers. For business use we provide an AVV / Data Processing Agreement (Art. 28 GDPR) you can read, download and sign.",
+        'faq.q7': 'Do I need an internet connection to scan?',
+        'faq.a7': 'No. Scanning, edge detection and on-device full-text search all work offline. You only need a connection when you sync a document to a cloud service like Trello or Google Drive, or when your chosen AI provider processes a scan.',
+        'faq.q8': 'Can Scandora export to DATEV for my tax advisor?',
+        'faq.a8': "Yes. On the Business / DATEV plan you can export your scanned receipts in DATEV format (an EXTF posting batch) together with the document images, plus lexoffice and sevDesk voucher export. It's designed for GoBD & DSGVO record-keeping for German SMBs and tax advisors."
     },
     de: {
         // Navigation
@@ -167,9 +198,9 @@ const translations = {
 
         // Hero
         'hero.badge': 'In Deutschland entwickelt · Datenschutz zuerst · GoBD-Funktionen',
-        'hero.titleLine1': 'Jedes Dokument wird',
-        'hero.titleLine2': 'zur Aktion',
-        'hero.description': 'Scannen Sie mit dem Handy oder Ihrem echten Büroscanner, lassen Sie Ihre eigene KI das Dokument verstehen und senden Sie es direkt in Ihr Trello und Google Drive. In Deutschland entwickelt — Datenschutz zuerst, mit GoBD-Funktionen, und Ihre Dokumente landen nie auf unseren Servern.',
+        'hero.titleLine1': 'Der Dokumentenscanner',
+        'hero.titleLine2': 'für jede Aktion',
+        'hero.description': 'Belege scannen mit dem Handy oder Ihrem echten Büroscanner — der Belegscanner, der jeden Beleg versteht. Ihre eigene KI liest das Dokument und sendet es direkt in Ihr Trello und Google Drive. In Deutschland entwickelt, Datenschutz zuerst, mit GoBD-Funktionen.',
         'hero.getStarted': 'Kostenlos starten',
         'hero.seeHow': 'So funktioniert es',
         'hero.stat1': 'Handy oder Scanner',
@@ -308,22 +339,387 @@ const translations = {
         'vsCamscanner.backHome': 'Zur Startseite',
         'datevSteuerberater.badge': 'Für Steuerberater',
         'datevSteuerberater.backHome': 'Zur Startseite',
-        'blogTrello.homepageLink': 'Lesen: der Scan-to-Trello-Workflow →'
+        'blogTrello.homepageLink': 'Lesen: der Scan-to-Trello-Workflow →',
+
+        // Time-Saved Calculator
+        'calc.badge': 'Zeitersparnis',
+        'calc.title': 'Sehen Sie, wie viel Zeit Sie sparen',
+        'calc.description': 'Scandoras KI liest die Daten aus jedem Dokument, damit Sie sie nicht abtippen müssen. Bewegen Sie den Regler, um die manuelle Dateneingabe zu schätzen, die Sie sich pro Monat sparen.',
+        'calc.docsLabel': 'Pro Woche gescannte Dokumente',
+        'calc.docsPerWeek': 'Dokumente/Woche',
+        'calc.hoursUnit': 'Stunden/Monat gespart',
+        'calc.assumption': 'Basierend auf etwa 3 Minuten gesparter manueller Dateneingabe pro Dokument.',
+        'calc.cta': 'Kostenlos starten',
+
+        // FAQ
+        'faq.badge': 'Häufige Fragen',
+        'faq.title': 'Häufig gestellte Fragen',
+        'faq.description': 'Alles Wichtige zu Scandora — Scannen, Datenschutz, Preise und DATEV-Export.',
+        'faq.q1': 'Was ist Scandora?',
+        'faq.a1': 'Scandora ist eine KI-gestützte Dokumentenscanner-App, die Ihre Papierdokumente in digitale Intelligenz verwandelt. Sie extrahiert automatisch wichtige Angaben wie Datum, Beträge und Namen und synchronisiert alles mit Ihren bevorzugten Cloud-Diensten wie Trello und Google Drive.',
+        'faq.q2': 'Ist Scandora kostenlos?',
+        'faq.a2': 'Ja! Der kostenlose Tarif von Scandora umfasst die private, offline funktionierende Suche Ihrer Scans auf dem Gerät, grundlegende Dokumentenverwaltung, eine Cloud-Integration und Exporte mit Wasserzeichen. Bezahlte Tarife sind jetzt verfügbar: Pro (9,99 €/Monat oder 89 €/Jahr) ergänzt ein monatliches KI-Credit-Kontingent, Cloud-Integrationen und Prioritäts-Support, und Business / DATEV (24,99 €/Monat oder 229 €/Jahr) ergänzt DATEV-, lexoffice- und sevDesk-Export für die GoBD- & DSGVO-Aufbewahrung. Die Preise sind die über App Store oder Google Play berechneten Endpreise.',
+        'faq.q3': 'Welche Plattformen unterstützt Scandora?',
+        'faq.a3': 'Scandora ist für iOS, macOS und Android verfügbar. Sie können Dokumente mit Ihrer Handykamera scannen oder auf dem Desktop professionelle Scanner verbinden.',
+        'faq.q4': 'Sind meine Daten bei Scandora sicher?',
+        'faq.a4': 'Datenschutz ist im Design von Scandora verankert. Ihre Dokumente bleiben standardmäßig auf Ihrem Gerät, und die Suche auf dem Gerät ist privat und funktioniert offline. Wenn Sie später (mit Ihrer Einwilligung) den geplanten KI-Dokumenten-Chat aktivieren, würde ein optionaler, in der EU (Frankfurt) gehosteter Suchindex nur abgeleiteten Text speichern – nicht Ihre Originaldateien – und die verwaltete KI-Generierung kann außerhalb der EU verarbeitet werden (z. B. OpenAI in den USA, Google Gemini), auf Basis der EU-Standardvertragsklauseln und des EU–US Data Privacy Framework. Sie behalten die Kontrolle über Ihre Daten.',
+        'faq.q5': 'Kann ich meinen eigenen KI-Anbieter nutzen?',
+        'faq.a5': 'Ja! Scandora unterstützt Bring Your Own AI (BYOAI). Sie können Ihre OpenAI- oder Google-Gemini-API-Schlüssel verbinden, um Dokumente mit Ihren eigenen KI-Konten zu verarbeiten — für volle Kontrolle über Kosten und Datenverarbeitung.',
+        'faq.q6': 'Ist Scandora DSGVO-konform?',
+        'faq.a6': 'Scandora wird in Deutschland mit Blick auf die DSGVO entwickelt. Ihre Dokumente bleiben standardmäßig auf Ihrem Gerät, unsere Server stehen in der EU und wir binden keine Werbe-Tracker von Dritten ein. Für die geschäftliche Nutzung stellen wir einen AVV (Art. 28 DSGVO) bereit, den Sie lesen, herunterladen und unterzeichnen können.',
+        'faq.q7': 'Brauche ich eine Internetverbindung zum Scannen?',
+        'faq.a7': 'Nein. Scannen, Kantenerkennung und die Volltextsuche auf dem Gerät funktionieren offline. Eine Verbindung brauchen Sie nur, wenn Sie ein Dokument mit einem Cloud-Dienst wie Trello oder Google Drive synchronisieren oder wenn Ihr gewählter KI-Anbieter einen Scan verarbeitet.',
+        'faq.q8': 'Kann Scandora zu DATEV für meinen Steuerberater exportieren?',
+        'faq.a8': 'Ja. Im Tarif Business / DATEV exportieren Sie Ihre gescannten Belege im DATEV-Format (EXTF-Buchungsstapel) samt Belegbildern, dazu lexoffice- und sevDesk-Belegexport. Das ist für die GoBD- & DSGVO-Aufbewahrung deutscher KMU und Steuerberater konzipiert.'
+    }
+};
+
+// Per-page <title> + meta descriptions, keyed by the page's canonical pathname.
+// applyTranslations() resolves the page from its <link rel="canonical"> and writes
+// the localized copy into document.title and the description/og/twitter meta tags,
+// so the head follows the same language the body renders in.
+const pageMeta = {
+    "/": {
+        "en": {
+            "title": "Scandora — AI Document Scanner for iOS, macOS & Android",
+            "description": "AI document scanner: scan with your phone or a real network scanner, let your own AI extract the data, and send it to Trello & Google Drive. Built in Germany."
+        },
+        "de": {
+            "title": "Scandora — Dokumentenscanner mit eigener KI",
+            "description": "Dokumentenscanner mit eigener KI: Belege scannen per Handy oder Netzwerkscanner, Daten an Trello & Google Drive senden. In Deutschland entwickelt."
+        }
+    },
+    "/vs-camscanner": {
+        "en": {
+            "title": "Scandora vs CamScanner: an honest comparison | Scandora",
+            "description": "Scandora vs CamScanner on verifiable facts: where each is built, data residency, bring-your-own-AI, network-scanner support and DATEV export."
+        },
+        "de": {
+            "title": "Scandora vs. CamScanner: der ehrliche Vergleich | Scandora",
+            "description": "Scandora vs. CamScanner nach belegbaren Fakten: Herkunft, Datenstandort, eigene KI (BYOAI), Netzwerkscanner-Support und DATEV-Export."
+        }
+    },
+    "/vs-fileee": {
+        "en": {
+            "title": "Scandora vs Fileee: an honest comparison | Scandora",
+            "description": "Scandora vs Fileee on verifiable features: where it's built, bring-your-own-AI, document storage, network-scanner support and DATEV export."
+        },
+        "de": {
+            "title": "Scandora vs. Fileee: der ehrliche Vergleich | Scandora",
+            "description": "Scandora vs. Fileee nach belegbaren Merkmalen: Herkunft, eigene KI (BYOAI), Dokumentenablage, Netzwerkscanner-Support und DATEV-Export."
+        }
+    },
+    "/contact": {
+        "en": {
+            "title": "Contact Scandora | Get in Touch",
+            "description": "Contact Scandora for support, sales inquiries or partnership opportunities. We usually reply within 24 hours, Monday to Friday."
+        },
+        "de": {
+            "title": "Kontakt | Scandora",
+            "description": "Kontaktieren Sie Scandora bei Fragen zu Support, Vertrieb oder Partnerschaften. Wir antworten in der Regel innerhalb von 24 Stunden, Mo–Fr."
+        }
+    },
+    "/gdpr-dokumentenscanner": {
+        "en": {
+            "title": "GDPR document scanner (DSGVO) | Scandora",
+            "description": "What makes a document scanner GDPR-ready: EU hosting, documents that stay on your device, no third-party trackers and an AVV/DPA. Built in Germany."
+        },
+        "de": {
+            "title": "DSGVO-Dokumentenscanner | Scandora",
+            "description": "Was einen Dokumentenscanner DSGVO-konform macht: EU-Hosting, Dokumente bleiben auf dem Gerät, keine Drittanbieter-Tracker und ein AVV. Aus Deutschland."
+        }
+    },
+    "/datev-steuerberater": {
+        "en": {
+            "title": "DATEV export for tax advisors & clients | Scandora",
+            "description": "Scan receipts and send them to your tax advisor as a DATEV-format export (EXTF batch) with document images. Built in Germany."
+        },
+        "de": {
+            "title": "DATEV-Export für Steuerberater & Mandanten | Scandora",
+            "description": "Belege scannen und als DATEV-Format-Export (EXTF-Buchungsstapel) mit Belegbildern an Ihren Steuerberater senden. In Deutschland entwickelt."
+        }
+    },
+    "/avv": {
+        "en": {
+            "title": "AVV / DPA — Data Processing Agreement | Scandora",
+            "description": "Scandora's AVV / Data Processing Agreement (Art. 28 GDPR) for the managed AI path. Read, download and sign it before business data is processed."
+        },
+        "de": {
+            "title": "AVV / DPA — Auftragsverarbeitungsvertrag | Scandora",
+            "description": "Der Scandora-AVV (Art. 28 DSGVO) für den Weg über verwaltete KI. Lesen, herunterladen und unterzeichnen, bevor Geschäftsdaten verarbeitet werden."
+        }
+    },
+    "/privacy": {
+        "en": {
+            "title": "Privacy Policy | Scandora",
+            "description": "Scandora's Privacy Policy: how our privacy-first, on-device approach protects your data and keeps your documents in your control. Built in Germany."
+        },
+        "de": {
+            "title": "Datenschutzerklärung | Scandora",
+            "description": "Die Scandora-Datenschutzerklärung: wie unser gerätebasierter Ansatz Ihre Daten schützt und Dokumente in Ihrer Kontrolle hält. In Deutschland entwickelt."
+        }
+    },
+    "/terms": {
+        "en": {
+            "title": "Terms of Service | Scandora",
+            "description": "Scandora's Terms of Service (AGB): your rights and responsibilities when using our AI-powered document scanning app. Built in Germany."
+        },
+        "de": {
+            "title": "Allgemeine Geschäftsbedingungen | Scandora",
+            "description": "Die Scandora-AGB: Ihre Rechte und Pflichten bei der Nutzung unserer KI-gestützten Dokumentenscanner-App. In Deutschland entwickelt."
+        }
+    },
+    "/imprint": {
+        "en": {
+            "title": "Imprint | Scandora",
+            "description": "Scandora Imprint (Impressum): legal notice and contact information pursuant to § 5 DDG."
+        },
+        "de": {
+            "title": "Impressum | Scandora",
+            "description": "Scandora-Impressum: rechtliche Angaben und Kontakt gemäß § 5 DDG."
+        }
+    },
+    "/blog/": {
+        "en": {
+            "title": "Scandora Guides: scanning, exports & privacy | Scandora",
+            "description": "Scandora Guides: practical how-tos and honest comparisons on DATEV export, GoBD scanning, network scanners (eSCL), scan-to-Trello and privacy."
+        },
+        "de": {
+            "title": "Scandora Ratgeber: Scannen, Exporte & Datenschutz | Scandora",
+            "description": "Der Scandora-Ratgeber: Anleitungen und ehrliche Vergleiche zu DATEV-Export, GoBD-konformem Scannen, Netzwerkscannern (eSCL) und Scan-to-Trello."
+        }
+    },
+    "/blog/datev-export-aus-dem-smartphone": {
+        "en": {
+            "title": "DATEV export from your smartphone | Scandora",
+            "description": "Send scanned receipts as a DATEV-format export (EXTF batch) with document images straight from your smartphone to your tax advisor. Built in Germany."
+        },
+        "de": {
+            "title": "DATEV-Export aus dem Smartphone | Scandora",
+            "description": "Gescannte Belege als DATEV-Format-Export (EXTF-Buchungsstapel) mit Belegbildern direkt vom Smartphone an den Steuerberater. In Deutschland entwickelt."
+        }
+    },
+    "/blog/dsgvo-sichere-camscanner-alternative": {
+        "en": {
+            "title": "A GDPR-safe CamScanner alternative | Scandora",
+            "description": "A GDPR-safe alternative to CamScanner and Microsoft Lens: built in Germany, documents stay on-device, EU hosting, and bring your own AI."
+        },
+        "de": {
+            "title": "DSGVO-sichere CamScanner-Alternative | Scandora",
+            "description": "DSGVO-sichere Alternative zu CamScanner und Microsoft Lens: in Deutschland entwickelt, Dokumente bleiben auf dem Gerät, EU-Hosting und eigene KI."
+        }
+    },
+    "/blog/gobd-konform-scannen": {
+        "en": {
+            "title": "GoBD-compliant scanning explained | Scandora",
+            "description": "What GoBD-compliant scanning really means — immutability, traceability, process docs — and which parts Scandora covers with hash, log and timestamp."
+        },
+        "de": {
+            "title": "GoBD-konform scannen: ersetzendes Scannen | Scandora",
+            "description": "Was „GoBD-konform scannen“ bedeutet und welche Anforderungen Scandora mit Inhalts-Hash, Änderungsprotokoll und Zeitstempel abdeckt. Kein GoBD-Siegel."
+        }
+    },
+    "/blog/netzwerkscanner-escl-einrichten": {
+        "en": {
+            "title": "Set up a network scanner over eSCL | Scandora",
+            "description": "Connect an eSCL/AirScan network scanner (e.g. Brother, Epson) to Scandora: Wi-Fi discovery, USB fallback, multi-page and duplex, no drivers."
+        },
+        "de": {
+            "title": "Netzwerkscanner per eSCL einrichten | Scandora",
+            "description": "Netzwerkscanner per eSCL/AirScan (z. B. Brother, Epson) mit Scandora verbinden: WLAN-Erkennung, USB-Fallback, mehrseitig und Duplex, ohne Treiber."
+        }
+    },
+    "/blog/scan-to-trello-workflow": {
+        "en": {
+            "title": "Scan to Trello: from document to card | Scandora",
+            "description": "Turn a scanned document into a Trello card: title, attached PDF, labels, due date and a pre-filled checklist, straight into your own Trello board."
+        },
+        "de": {
+            "title": "Scan-to-Trello: vom Dokument zur Trello-Karte | Scandora",
+            "description": "So wird aus einem gescannten Dokument eine Trello-Karte: mit Titel, PDF-Anhang, Labels, Fälligkeit und Checkliste — in Ihrem eigenen Trello-Board."
+        }
+    },
+    "/blog/scandora-vs-fileee": {
+        "en": {
+            "title": "Scandora vs Fileee: the honest comparison | Scandora",
+            "description": "Scandora vs Fileee in detail: your own storage vs a cloud archive, bring-your-own-AI, eSCL network scanners, and DATEV/GoBD for German SMBs."
+        },
+        "de": {
+            "title": "Scandora vs. Fileee: der ehrliche Vergleich | Scandora",
+            "description": "Scandora vs. Fileee im Detail: eigene Ablage statt Cloud-Archiv, eigene KI (BYOAI), Netzwerkscanner per eSCL und DATEV/GoBD für deutsche KMU."
+        }
+    },
+    "/help/": {
+        "en": {
+            "title": "Help Center | Scandora",
+            "description": "Scandora Help Center: set up your own AI, managed AI credits, DATEV/lexoffice/sevDesk export and eSCL scanners, and understand our GoBD scope."
+        },
+        "de": {
+            "title": "Hilfe-Center | Scandora",
+            "description": "Scandora Hilfe-Center: eigene KI einrichten, verwaltete KI-Credits, DATEV-/lexoffice-/sevDesk-Export, eSCL-Scanner und unser ehrlicher GoBD-Umfang."
+        }
+    },
+    "/help/byoai": {
+        "en": {
+            "title": "Bring your own AI (OpenAI / Gemini) | Scandora Help",
+            "description": "Connect your own OpenAI or Google Gemini API key in Scandora. Your key stays on your device, you pay the provider directly, no Scandora credits used."
+        },
+        "de": {
+            "title": "Eigene KI nutzen (OpenAI / Gemini) | Scandora Hilfe",
+            "description": "Eigenen OpenAI- oder Google-Gemini-API-Schlüssel in Scandora verbinden. Der Schlüssel bleibt auf dem Gerät, Sie zahlen direkt beim Anbieter."
+        }
+    },
+    "/help/datev-export": {
+        "en": {
+            "title": "DATEV export (EXTF) | Scandora Help",
+            "description": "Create a DATEV EXTF export your tax advisor can import: pick a profile and date range, enter Berater/Mandant and SKR03/SKR04, review rows, export."
+        },
+        "de": {
+            "title": "DATEV-Export (EXTF) | Scandora Hilfe",
+            "description": "DATEV-EXTF-Export für Ihren Steuerberater erstellen: Profil und Zeitraum wählen, Berater/Mandant und SKR03/SKR04 eingeben, Buchungen prüfen."
+        }
+    },
+    "/help/escl-setup": {
+        "en": {
+            "title": "Network scanner setup (eSCL / AirScan) | Scandora Help",
+            "description": "Connect a Brother, Epson, HP or Canon eSCL/AirScan network scanner to Scandora over Wi-Fi for multi-page scanning. Setup, settings and troubleshooting."
+        },
+        "de": {
+            "title": "Netzwerkscanner einrichten (eSCL) | Scandora Hilfe",
+            "description": "Brother-, Epson-, HP- oder Canon-Netzwerkscanner per eSCL/AirScan über WLAN mit Scandora verbinden. Einrichtung, Einstellungen und Fehlerbehebung."
+        }
+    },
+    "/help/gobd-scope": {
+        "en": {
+            "title": "What GoBD support means | Scandora Help",
+            "description": "Scandora's honest GoBD scope: content hash, trusted timestamp, an immutable audit log and a Verfahrensdokumentation — and what still depends on you."
+        },
+        "de": {
+            "title": "Was GoBD-Unterstützung bedeutet | Scandora Hilfe",
+            "description": "Ehrlicher GoBD-Umfang von Scandora: Inhalts-Hash, Zeitstempel, unveränderbares Protokoll und Verfahrensdokumentation — und was von Ihnen abhängt."
+        }
+    },
+    "/help/lexoffice-export": {
+        "en": {
+            "title": "lexoffice export | Scandora Help",
+            "description": "Connect lexoffice to Scandora with a public API key and a posting category, then send scanned vouchers straight into lexoffice."
+        },
+        "de": {
+            "title": "lexoffice-Export | Scandora Hilfe",
+            "description": "lexoffice mit Scandora verbinden: öffentlichen API-Schlüssel und Buchungskategorie hinterlegen und gescannte Belege direkt an lexoffice senden."
+        }
+    },
+    "/help/managed-ai": {
+        "en": {
+            "title": "Managed AI & credits | Scandora Help",
+            "description": "How Scandora's managed AI works: prepaid credits, what a credit covers, monthly allowances, top-ups, and where processing happens."
+        },
+        "de": {
+            "title": "Verwaltete KI & Credits | Scandora Hilfe",
+            "description": "So funktioniert die verwaltete KI von Scandora: Prepaid-Credits, was ein Credit abdeckt, monatliches Kontingent, Aufladungen und wo verarbeitet wird."
+        }
+    },
+    "/help/sevdesk-export": {
+        "en": {
+            "title": "sevDesk export | Scandora Help",
+            "description": "Connect sevDesk to Scandora with your API token, confirm your account, and upload scanned vouchers to sevDesk."
+        },
+        "de": {
+            "title": "sevDesk-Export | Scandora Hilfe",
+            "description": "sevDesk mit Scandora verbinden: API-Token hinterlegen, Konto bestätigen und gescannte Belege zu sevDesk hochladen."
+        }
     }
 };
 
 // Current language. A `?lang=de`/`?lang=en` query parameter wins for the initial
 // render (so shared/hreflang links land in the right language) without being
-// persisted; otherwise fall back to the stored preference, then English.
+// persisted; otherwise the stored preference wins; otherwise the page's own
+// data-default-lang (DE-first pages), falling back to English.
 function initialLanguage() {
     const requested = new URLSearchParams(window.location.search).get('lang');
     if (requested === 'de' || requested === 'en') {
         return requested;
     }
-    return localStorage.getItem('scandora-lang') || 'en';
+    const stored = localStorage.getItem('scandora-lang');
+    if (stored === 'de' || stored === 'en') {
+        return stored;
+    }
+    return document.documentElement.getAttribute('data-default-lang') === 'de' ? 'de' : 'en';
+}
+
+// True when German is reached by an explicit signal (`?lang=de` or the stored
+// preference) rather than a page's DE-first default. The canonical/og/twitter URLs
+// only carry the `?lang=de` suffix in that explicit case.
+function germanSelectedExplicitly() {
+    const requested = new URLSearchParams(window.location.search).get('lang');
+    if (requested === 'de') {
+        return true;
+    }
+    if (requested === 'en') {
+        return false;
+    }
+    return localStorage.getItem('scandora-lang') === 'de';
 }
 
 let currentLang = initialLanguage();
+
+function setMetaContent(selector, content) {
+    const el = document.querySelector(selector);
+    if (el) {
+        el.setAttribute('content', content);
+    }
+}
+
+function canonicalPathname() {
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+        return null;
+    }
+    try {
+        return new URL(canonical.getAttribute('href'), window.location.href).pathname;
+    } catch (e) {
+        return null;
+    }
+}
+
+function applyPageMeta() {
+    const key = canonicalPathname();
+    const meta = key && pageMeta[key];
+    if (!meta) {
+        return;
+    }
+    const localized = meta[currentLang] || meta.en;
+    if (!localized) {
+        return;
+    }
+    if (localized.title) {
+        document.title = localized.title;
+    }
+    if (localized.description) {
+        setMetaContent('meta[name="description"]', localized.description);
+        setMetaContent('meta[property="og:description"]', localized.description);
+        setMetaContent('meta[name="twitter:description"]', localized.description);
+    }
+}
+
+function applyCanonicalUrls() {
+    const enAlt = document.querySelector('link[rel="alternate"][hreflang="en"]');
+    const deAlt = document.querySelector('link[rel="alternate"][hreflang="de"]');
+    if (!enAlt || !deAlt) {
+        return;
+    }
+    const useDe = currentLang === 'de' && germanSelectedExplicitly();
+    const href = (useDe ? deAlt : enAlt).getAttribute('href');
+    if (!href) {
+        return;
+    }
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) {
+        canonical.setAttribute('href', href);
+    }
+    setMetaContent('meta[property="og:url"]', href);
+    setMetaContent('meta[name="twitter:url"]', href);
+}
 
 /**
  * Apply translations to all elements with data-i18n attribute
@@ -356,6 +752,10 @@ function applyTranslations() {
 
     // Update HTML lang attribute
     document.documentElement.lang = currentLang;
+
+    // Localize the <head>: title/description meta and the canonical/og/twitter URLs.
+    applyPageMeta();
+    applyCanonicalUrls();
 }
 
 /**

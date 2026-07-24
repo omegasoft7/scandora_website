@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Primary SEO Meta Tags -->
-    <title>Scandora - AI-Powered Document Scanning & OCR | Transform Documents Into Intelligence</title>
+    <title>Scandora — AI Document Scanner for iOS, macOS &amp; Android</title>
     <meta name="title" content="Scandora - AI-Powered Document Scanning & OCR | Transform Documents Into Intelligence">
-    <meta name="description" content="Scandora transforms your documents into actionable intelligence with AI-powered OCR scanning. Auto-extract data, sync to Trello & Google Drive. Free for iOS, macOS & Android.">
+    <meta name="description" content="AI document scanner: scan with your phone or a real network scanner, let your own AI extract the data, and send it to Trello & Google Drive. Built in Germany.">
     <meta name="keywords" content="document scanning app, AI document scanner, OCR software, invoice scanner, receipt scanner, document management, Trello integration, Google Drive sync, mobile scanner app, AI data extraction, paperless office, document digitization, business document scanner, smart scanning, automated data entry">
     <meta name="author" content="Scandora">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -198,6 +198,30 @@
                 "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Yes! Scandora supports Bring Your Own AI (BYOAI). You can connect your OpenAI or Google Gemini API keys to process documents using your own AI accounts, giving you full control over costs and data processing."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Scandora GDPR-compliant?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Scandora is built in Germany with GDPR (DSGVO) in mind. Your documents stay on your device by default, our servers run in the EU, and we don't embed third-party advertising trackers. For business use we provide an AVV / Data Processing Agreement (Art. 28 GDPR) you can read, download and sign."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need an internet connection to scan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Scanning, edge detection and on-device full-text search all work offline. You only need a connection when you sync a document to a cloud service like Trello or Google Drive, or when your chosen AI provider processes a scan."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can Scandora export to DATEV for my tax advisor?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. On the Business / DATEV plan you can export your scanned receipts in DATEV format (an EXTF posting batch) together with the document images, plus lexoffice and sevDesk voucher export. It's designed for GoBD & DSGVO record-keeping for German SMBs and tax advisors."
                 }
             }
         ]
@@ -412,6 +436,70 @@
                         </div>
                     </li>
                 </ol>
+            </div>
+        </section>
+
+        <!-- Time-Saved Calculator Section -->
+        <section id="calculator" class="calculator" aria-labelledby="calculator-title">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-badge" data-i18n="calc.badge">Time Saved</p>
+                    <h2 id="calculator-title" class="section-title" data-i18n="calc.title">See how much time you'd save</h2>
+                    <p class="section-description" data-i18n="calc.description">Scandora's AI pulls the data off each document so you don't retype it. Move the slider to estimate the manual data entry you'd skip each month.</p>
+                </div>
+                <div class="calc-card">
+                    <label for="calc-docs" class="calc-label" data-i18n="calc.docsLabel">Documents scanned per week</label>
+                    <input type="range" id="calc-docs" class="calc-range" min="1" max="150" step="1" value="25" aria-describedby="calc-docs-readout">
+                    <p id="calc-docs-readout" class="calc-docs-readout"><span id="calc-docs-value">25</span> <span data-i18n="calc.docsPerWeek">documents/week</span></p>
+                    <p class="calc-result" aria-live="polite">~ <output id="calc-hours" for="calc-docs" class="calc-hours-value">5.4</output> <span data-i18n="calc.hoursUnit">hours/month saved</span></p>
+                    <p class="calc-assumption" data-i18n="calc.assumption">Based on about 3 minutes of manual data entry saved per document.</p>
+                    <a href="#download" class="btn btn-primary btn-lg" role="button" data-i18n="calc.cta">Get Started Free</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-badge" data-i18n="faq.badge">FAQ</p>
+                    <h2 id="faq-title" class="section-title" data-i18n="faq.title">Frequently Asked Questions</h2>
+                    <p class="section-description" data-i18n="faq.description">Everything you need to know about Scandora — scanning, privacy, pricing and DATEV export.</p>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-1" aria-expanded="false" aria-controls="faq-panel-1"><span data-i18n="faq.q1">What is Scandora?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+                        <div id="faq-panel-1" class="faq-answer" role="region" aria-labelledby="faq-trigger-1"><div class="faq-answer-inner"><p data-i18n="faq.a1">Scandora is an AI-powered document scanning app that transforms your paper documents into digital intelligence. It automatically extracts key information like dates, amounts, and names, then syncs everything to your favorite cloud services like Trello and Google Drive.</p></div></div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-2" aria-expanded="false" aria-controls="faq-panel-2"><span data-i18n="faq.q2">Is Scandora free to use?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+                        <div id="faq-panel-2" class="faq-answer" role="region" aria-labelledby="faq-trigger-2"><div class="faq-answer-inner"><p data-i18n="faq.a2">Yes! Scandora's free plan includes private, offline on-device search of your scans, basic document management, one cloud integration, and watermarked exports. Paid plans are available now: Pro (€9.99/month or €89/year) adds a monthly AI-credit allowance, cloud integrations and priority support, and Business / DATEV (€24.99/month or €229/year) adds DATEV, lexoffice and sevDesk export designed for GoBD &amp; DSGVO record-keeping. Prices are the final amounts charged via the App Store or Google Play.</p></div></div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-3" aria-expanded="false" aria-controls="faq-panel-3"><span data-i18n="faq.q3">Which platforms does Scandora support?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+                        <div id="faq-panel-3" class="faq-answer" role="region" aria-labelledby="faq-trigger-3"><div class="faq-answer-inner"><p data-i18n="faq.a3">Scandora is available on iOS, macOS, and Android. You can scan documents using your phone camera or connect professional scanners on desktop.</p></div></div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-4" aria-expanded="false" aria-controls="faq-panel-4"><span data-i18n="faq.q4">Is my data secure with Scandora?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+                        <div id="faq-panel-4" class="faq-answer" role="region" aria-labelledby="faq-trigger-4"><div class="faq-answer-inner"><p data-i18n="faq.a4">Privacy is built into Scandora's design. Your documents stay on your device by default, and on-device search is private and works offline. If you later opt in (with your consent) to the planned AI document chat, an optional EU-resident search index (Frankfurt) would store derived text only – not your original files – and managed AI generation may be processed outside the EU (e.g. OpenAI in the USA, Google Gemini) under EU Standard Contractual Clauses and the EU–US Data Privacy Framework. You stay in control of your data.</p></div></div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-5" aria-expanded="false" aria-controls="faq-panel-5"><span data-i18n="faq.q5">Can I use my own AI provider?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+                        <div id="faq-panel-5" class="faq-answer" role="region" aria-labelledby="faq-trigger-5"><div class="faq-answer-inner"><p data-i18n="faq.a5">Yes! Scandora supports Bring Your Own AI (BYOAI). You can connect your OpenAI or Google Gemini API keys to process documents using your own AI accounts, giving you full control over costs and data processing.</p></div></div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-6" aria-expanded="false" aria-controls="faq-panel-6"><span data-i18n="faq.q6">Is Scandora GDPR-compliant?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+                        <div id="faq-panel-6" class="faq-answer" role="region" aria-labelledby="faq-trigger-6"><div class="faq-answer-inner"><p data-i18n="faq.a6">Scandora is built in Germany with GDPR (DSGVO) in mind. Your documents stay on your device by default, our servers run in the EU, and we don't embed third-party advertising trackers. For business use we provide an AVV / Data Processing Agreement (Art. 28 GDPR) you can read, download and sign.</p></div></div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-7" aria-expanded="false" aria-controls="faq-panel-7"><span data-i18n="faq.q7">Do I need an internet connection to scan?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+                        <div id="faq-panel-7" class="faq-answer" role="region" aria-labelledby="faq-trigger-7"><div class="faq-answer-inner"><p data-i18n="faq.a7">No. Scanning, edge detection and on-device full-text search all work offline. You only need a connection when you sync a document to a cloud service like Trello or Google Drive, or when your chosen AI provider processes a scan.</p></div></div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-8" aria-expanded="false" aria-controls="faq-panel-8"><span data-i18n="faq.q8">Can Scandora export to DATEV for my tax advisor?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+                        <div id="faq-panel-8" class="faq-answer" role="region" aria-labelledby="faq-trigger-8"><div class="faq-answer-inner"><p data-i18n="faq.a8">Yes. On the Business / DATEV plan you can export your scanned receipts in DATEV format (an EXTF posting batch) together with the document images, plus lexoffice and sevDesk voucher export. It's designed for GoBD &amp; DSGVO record-keeping for German SMBs and tax advisors.</p></div></div>
+                    </div>
+                </div>
             </div>
         </section>
 

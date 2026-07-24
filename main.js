@@ -13,6 +13,8 @@
         initMobileMenu();
         initAnimations();
         initStatsCounter();
+        initFaqAccordion();
+        initCalculator();
         initContactForm();
         initAnalyticsTracking(); // Umami event tracking
         consoleBranding();
@@ -145,6 +147,63 @@
         }, { threshold: 0.5 });
 
         stats.forEach(stat => statsObserver.observe(stat));
+    }
+
+    // ============================================
+    // FAQ ACCORDION
+    // ============================================
+
+    function initFaqAccordion() {
+        document.querySelectorAll('.faq-trigger').forEach(trigger => {
+            trigger.addEventListener('click', function() {
+                const item = this.closest('.faq-item');
+                const isOpen = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', String(!isOpen));
+                if (item) {
+                    item.classList.toggle('open', !isOpen);
+                }
+                trackEvent('faq_toggle', {
+                    question: this.textContent.trim(),
+                    expanded: !isOpen
+                });
+            });
+        });
+    }
+
+    // ============================================
+    // TIME-SAVED CALCULATOR
+    // ============================================
+
+    function calcTimeSaved() {
+        const slider = document.getElementById('calc-docs');
+        const hoursOut = document.getElementById('calc-hours');
+        const docsOut = document.getElementById('calc-docs-value');
+        if (!slider || !hoursOut) return;
+
+        const docsPerWeek = Number(slider.value);
+        const hoursPerMonth = docsPerWeek * 3 * 4.33 / 60;
+        const lang = document.documentElement.lang === 'de' ? 'de' : 'en';
+
+        hoursOut.textContent = hoursPerMonth.toLocaleString(lang, {
+            minimumFractionDigits: 1,
+            maximumFractionDigits: 1
+        });
+        if (docsOut) {
+            docsOut.textContent = docsPerWeek.toLocaleString(lang);
+        }
+    }
+
+    function initCalculator() {
+        const slider = document.getElementById('calc-docs');
+        if (!slider) return;
+
+        slider.addEventListener('input', calcTimeSaved);
+        calcTimeSaved();
+
+        const langToggle = document.querySelector('.lang-toggle');
+        if (langToggle) {
+            langToggle.addEventListener('click', calcTimeSaved);
+        }
     }
 
     // ============================================
