@@ -67,7 +67,7 @@
                 <!-- ================= ENGLISH ================= -->
                 <article class="legal-content" data-lang="en">
                     <div class="highlight-box">
-                        <p><strong>Our promise:</strong> Scandora is built privacy-first. <strong>We do not store your full scanned documents on our servers</strong> — on our infrastructure we keep only a small low-resolution preview thumbnail and the metadata listed in section 2. Your documents are processed on your device and sent only to the destinations you choose — the AI provider you select and your own cloud services. A planned, opt-in AI document search feature (Pro and above) will store derived text only (not your original files) in an EU-resident index; see sections 3, 7 and 11. You stay in control of your data.</p>
+                        <p><strong>Our promise:</strong> Scandora is built privacy-first. <strong>We do not store your full scanned documents on our servers</strong> — on our infrastructure we keep only a small low-resolution preview thumbnail and the metadata listed in section 2. Your documents are processed on your device and sent only to the destinations you choose — the AI provider you select and your own cloud services. An optional, opt-in AI document search feature (Pro and above) stores derived text only (not your original files) in an EU-resident index; see sections 3, 7 and 11. You stay in control of your data.</p>
                     </div>
 
                     <nav class="toc">
@@ -129,12 +129,12 @@
                     <h2 id="documents">3. Your Documents</h2>
                     <div class="highlight-box">
                         <p><strong>Scandora does not store your full documents.</strong> Scanned images and full extracted text are processed on your device and transmitted only to the destination you choose. On our infrastructure we keep only the metadata listed in section 2 — including a small low-resolution first-page preview thumbnail — never the full-resolution document or the original page images.</p>
-                        <p><strong>One planned exception, only if you opt in:</strong> a planned AI document search feature (Pro and above) will let an EU-resident search index store <strong>derived text only</strong> — text excerpts and search embeddings derived from your documents, not the original files — to make documents searchable and to answer your questions. This index would be hosted in the EU on Scandora's own server (Hetzner, Falkenstein, Germany), created only with your explicit consent, retained until you delete the document or withdraw consent, and purged within 30 days of account deletion. <strong>This feature is not yet available.</strong> See sections 7 and 11.</p>
+                        <p><strong>One exception, only if you opt in:</strong> an optional AI document search feature (Pro and above) lets an EU-resident search index store <strong>derived text only</strong> — text excerpts and search embeddings derived from your documents, not the original files — to make documents searchable and to answer your questions. This index is hosted in the EU on Scandora's own server (Hetzner, Falkenstein, Germany), created only with your explicit consent, retained until you delete the document or withdraw consent, and purged within 30 days of account deletion. See sections 7 and 11.</p>
                     </div>
                     <p>Concretely, your document content can travel to:</p>
                     <ul>
                         <li>the AI provider you select, to analyse the document or to generate cited answers (see section 4); AI <em>generation</em> may be processed outside the EU (see section 9);</li>
-                        <li>the optional, planned EU-resident search index, which will store derived text only with your consent once available (see sections 7 and 11);</li>
+                        <li>the optional EU-resident search index, which stores derived text only with your consent (see sections 7 and 11);</li>
                         <li>your own cloud destinations — your Trello board or your Google Drive — when you export (see section 5).</li>
                     </ul>
 
@@ -182,7 +182,7 @@
                     <h3>Consent — Art. 6(1)(a) GDPR</h3>
                     <ul>
                         <li><strong>Special-category document data (Art. 9(2)(a))</strong> — where you use AI analysis or cloud export on documents that contain special categories of data (e.g. health data), the processing relies on your explicit consent (see section 5).</li>
-                        <li><strong>Planned AI document search</strong> — the optional, opt-in search index (Pro and above) will be created only with your explicit consent (see sections 7 and 11).</li>
+                        <li><strong>AI document search</strong> — the optional, opt-in search index (Pro and above) is created only with your explicit consent (see sections 7 and 11).</li>
                     </ul>
 
                     <h2 id="subprocessors">7. Sub-Processors &amp; Recipients</h2>
@@ -276,18 +276,18 @@
                     </ul>
 
                     <h2 id="transfers">9. International Transfers</h2>
-                    <p>Some recipients (e.g. OpenAI, RevenueCat, Formspree, and certain Google services) process data in the USA or other countries outside the EU/EEA. Where that happens, transfers are safeguarded by the EU Standard Contractual Clauses and/or the provider's certification under the EU–US Data Privacy Framework, as set out in the DPAs linked above. Firebase Crashlytics also transmits diagnostic data to Google in the USA under these safeguards; crash diagnostics are off by default and are only transmitted if you opt in via Settings → Diagnostics (see section 6). You can request a copy of the relevant safeguards (e.g. the EU SCCs), or a reference to where they have been made available, by contacting <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a>. Our own Google Drive OAuth token exchange runs in the EU on Scandora's own server (<code>api.scandora.eu/oauth/google</code>, Hetzner, Falkenstein, Germany); the optional AI document search index, once launched, will be hosted in the EU on the same server (Hetzner, Falkenstein, Germany).</p>
-                    <p><strong>Please note:</strong> while the planned search index will be EU-resident, AI <em>generation</em> (analysing a document or producing a cited answer) is performed by the model provider — OpenAI (USA) or Google Gemini (USA / global) — so that generation step may be processed outside the EU under the safeguards above. The EU-resident index will not make the AI generation itself EU-only.</p>
+                    <p>Some recipients (e.g. OpenAI, RevenueCat, Formspree, and certain Google services) process data in the USA or other countries outside the EU/EEA. Where that happens, transfers are safeguarded by the EU Standard Contractual Clauses and/or the provider's certification under the EU–US Data Privacy Framework, as set out in the DPAs linked above. Firebase Crashlytics also transmits diagnostic data to Google in the USA under these safeguards; crash diagnostics are off by default and are only transmitted if you opt in via Settings → Diagnostics (see section 6). You can request a copy of the relevant safeguards (e.g. the EU SCCs), or a reference to where they have been made available, by contacting <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a>. Our own Google Drive OAuth token exchange runs in the EU on Scandora's own server (<code>api.scandora.eu/oauth/google</code>, Hetzner, Falkenstein, Germany); the optional AI document search index is hosted in the EU on the same server (Hetzner, Falkenstein, Germany).</p>
+                    <p><strong>Please note:</strong> while the search index is EU-resident, AI <em>generation</em> (analysing a document or producing a cited answer) is performed by the model provider — OpenAI (USA) or Google Gemini (USA / global) — so that generation step may be processed outside the EU under the safeguards above. The EU-resident index does not make the AI generation itself EU-only.</p>
 
                     <h2 id="consent-management">10. Consent Management</h2>
-                    <p>Product analytics runs on a <strong>legitimate-interest</strong> basis (section 6), so there is <strong>no analytics consent banner and no cookie wall</strong>; you can object to it at any time. Crash diagnostics are <strong>off by default</strong> and are collected only if you opt in via <strong>Settings → Diagnostics</strong>; you can turn them off again at any time (see section 6). We otherwise ask for consent only where it is actually required — for special-category document data (Art. 9(2)(a)) and the planned opt-in AI document search — which you grant and can withdraw in the app.</p>
+                    <p>Product analytics runs on a <strong>legitimate-interest</strong> basis (section 6), so there is <strong>no analytics consent banner and no cookie wall</strong>; you can object to it at any time. Crash diagnostics are <strong>off by default</strong> and are collected only if you opt in via <strong>Settings → Diagnostics</strong>; you can turn them off again at any time (see section 6). We otherwise ask for consent only where it is actually required — for special-category document data (Art. 9(2)(a)) and the opt-in AI document search — which you grant and can withdraw in the app.</p>
                     <table class="cookie-table">
                         <thead><tr><th>Data type</th><th>Purpose</th><th>Requires consent</th></tr></thead>
                         <tbody>
                             <tr><td>Product analytics (first-party, cookieless)</td><td>Usage patterns, feature adoption</td><td>No (legitimate interest, cookieless)</td></tr>
                             <tr><td>Crash reports (Firebase)</td><td>Bug fixes, stability</td><td>Opt-in (off by default; Settings → Diagnostics)</td></tr>
                             <tr><td>Account &amp; documents handling</td><td>Service provision</td><td>No (contract)</td></tr>
-                            <tr><td>Special-category document data / planned AI search</td><td>AI on sensitive documents; document search</td><td>Yes (explicit consent)</td></tr>
+                            <tr><td>Special-category document data / AI document search</td><td>AI on sensitive documents; document search</td><td>Yes (explicit consent)</td></tr>
                         </tbody>
                     </table>
                     <div class="highlight-box">
@@ -301,7 +301,7 @@
                         <li>Access controls and monitoring</li>
                         <li>Regular updates</li>
                     </ul>
-                    <p><strong>We do not store your full documents on our infrastructure.</strong> We retain only the metadata in section 2 plus a small low-resolution first-page preview thumbnail; the full document remains in your control via your chosen AI provider and cloud destinations. <strong>The one planned exception will be the optional, opt-in AI document search index</strong> (Pro and above), which will store <em>derived text only</em> — text excerpts and search embeddings, not your original files — and will be hosted in the EU on Scandora's own server (Hetzner, Falkenstein, Germany). This feature is not yet available.</p>
+                    <p><strong>We do not store your full documents on our infrastructure.</strong> We retain only the metadata in section 2 plus a small low-resolution first-page preview thumbnail; the full document remains in your control via your chosen AI provider and cloud destinations. <strong>The one exception is the optional, opt-in AI document search index</strong> (Pro and above), which stores <em>derived text only</em> — text excerpts and search embeddings, not your original files — and is hosted in the EU on Scandora's own server (Hetzner, Falkenstein, Germany).</p>
 
                     <h3>Retention periods</h3>
                     <ul>
@@ -310,7 +310,7 @@
                         <li><strong>Product analytics:</strong> pseudonymous events on our self-hosted analytics server, retained for at most 365 days and then pruned.</li>
                         <li><strong>Subscription &amp; billing records:</strong> kept for the statutory commercial/tax retention period under German law (§ 257 HGB / § 147 AO — generally 6 to 10 years), even after account deletion.</li>
                         <li><strong>Document content for AI generation / cloud export:</strong> not retained by Scandora — processed transiently and discarded once the result is produced.</li>
-                        <li><strong>AI document search index (planned; opt-in, derived text only, EU-resident — Hetzner, Falkenstein):</strong> once available, retained until you delete the source document or withdraw consent, and purged within 30 days of account deletion.</li>
+                        <li><strong>AI document search index (opt-in, derived text only, EU-resident — Hetzner, Falkenstein):</strong> retained until you delete the source document or withdraw consent, and purged within 30 days of account deletion.</li>
                     </ul>
 
                     <h2 id="your-rights">12. Your Rights</h2>
@@ -348,7 +348,7 @@
                 <!-- ================= DEUTSCH ================= -->
                 <article class="legal-content" data-lang="de" hidden>
                     <div class="highlight-box">
-                        <p><strong>Unser Versprechen:</strong> Scandora ist „Privacy-first" gebaut. <strong>Wir speichern Ihre vollständigen gescannten Dokumente nicht auf unseren Servern</strong> — auf unserer Infrastruktur behalten wir nur ein kleines, niedrig aufgelöstes Vorschaubild und die in Abschnitt 2 genannten Metadaten. Ihre Dokumente werden auf Ihrem Gerät verarbeitet und nur an die von Ihnen gewählten Ziele übertragen — den von Ihnen ausgewählten KI-Anbieter und Ihre eigenen Cloud-Dienste. Eine geplante, optionale KI-Dokumentensuche (ab Pro) wird künftig nur abgeleiteten Text (nicht Ihre Originaldateien) in einem in der EU ansässigen Index speichern; siehe Abschnitte 3, 7 und 11. Sie behalten die Kontrolle über Ihre Daten.</p>
+                        <p><strong>Unser Versprechen:</strong> Scandora ist „Privacy-first" gebaut. <strong>Wir speichern Ihre vollständigen gescannten Dokumente nicht auf unseren Servern</strong> — auf unserer Infrastruktur behalten wir nur ein kleines, niedrig aufgelöstes Vorschaubild und die in Abschnitt 2 genannten Metadaten. Ihre Dokumente werden auf Ihrem Gerät verarbeitet und nur an die von Ihnen gewählten Ziele übertragen — den von Ihnen ausgewählten KI-Anbieter und Ihre eigenen Cloud-Dienste. Eine optionale KI-Dokumentensuche (ab Pro, nur mit Opt-in) speichert nur abgeleiteten Text (nicht Ihre Originaldateien) in einem in der EU ansässigen Index; siehe Abschnitte 3, 7 und 11. Sie behalten die Kontrolle über Ihre Daten.</p>
                     </div>
 
                     <nav class="toc">
@@ -410,12 +410,12 @@
                     <h2 id="de-documents">3. Ihre Dokumente</h2>
                     <div class="highlight-box">
                         <p><strong>Scandora speichert Ihre vollständigen Dokumente nicht.</strong> Gescannte Bilder und der vollständige extrahierte Text werden auf Ihrem Gerät verarbeitet und nur an das von Ihnen gewählte Ziel übermittelt. Auf unserer Infrastruktur behalten wir nur die in Abschnitt 2 genannten Metadaten — einschließlich eines kleinen, niedrig aufgelösten Vorschaubilds der ersten Seite — niemals das vollauflösende Dokument oder die Originalbilder.</p>
-                        <p><strong>Eine geplante Ausnahme, nur bei Opt-in:</strong> Eine geplante KI-Dokumentensuche (ab Pro) wird es ermöglichen, dass ein in der EU gehosteter Suchindex <strong>nur abgeleiteten Text</strong> — Textauszüge und Such-Embeddings, die aus Ihren Dokumenten abgeleitet werden, nicht die Originaldateien — speichert, um Dokumente durchsuchbar zu machen und Ihre Fragen zu beantworten. Dieser Index würde in der EU auf Scandoras eigenem Server gehostet (Hetzner, Falkenstein, Deutschland), nur mit Ihrer ausdrücklichen Einwilligung erstellt, bis zur Löschung des Dokuments oder zum Widerruf der Einwilligung aufbewahrt und innerhalb von 30 Tagen nach Kontolöschung gelöscht. <strong>Diese Funktion ist noch nicht verfügbar.</strong> Siehe Abschnitte 7 und 11.</p>
+                        <p><strong>Eine Ausnahme, nur bei Opt-in:</strong> Eine optionale KI-Dokumentensuche (ab Pro) ermöglicht, dass ein in der EU gehosteter Suchindex <strong>nur abgeleiteten Text</strong> — Textauszüge und Such-Embeddings, die aus Ihren Dokumenten abgeleitet werden, nicht die Originaldateien — speichert, um Dokumente durchsuchbar zu machen und Ihre Fragen zu beantworten. Dieser Index wird in der EU auf Scandoras eigenem Server gehostet (Hetzner, Falkenstein, Deutschland), nur mit Ihrer ausdrücklichen Einwilligung erstellt, bis zur Löschung des Dokuments oder zum Widerruf der Einwilligung aufbewahrt und innerhalb von 30 Tagen nach Kontolöschung gelöscht. Siehe Abschnitte 7 und 11.</p>
                     </div>
                     <p>Konkret können Ihre Dokumentinhalte gelangen an:</p>
                     <ul>
                         <li>den von Ihnen ausgewählten KI-Anbieter, um das Dokument zu analysieren oder belegte Antworten zu erzeugen (siehe Abschnitt 4); die KI-<em>Generierung</em> kann außerhalb der EU verarbeitet werden (siehe Abschnitt 9);</li>
-                        <li>den optionalen, geplanten, in der EU gehosteten Suchindex, der nach Verfügbarkeit mit Ihrer Einwilligung nur abgeleiteten Text speichern wird (siehe Abschnitte 7 und 11);</li>
+                        <li>den optionalen, in der EU gehosteten Suchindex, der mit Ihrer Einwilligung nur abgeleiteten Text speichert (siehe Abschnitte 7 und 11);</li>
                         <li>Ihre eigenen Cloud-Ziele — Ihr Trello-Board oder Ihr Google Drive — beim Export (siehe Abschnitt 5).</li>
                     </ul>
 
@@ -463,7 +463,7 @@
                     <h3>Einwilligung — Art. 6 Abs. 1 lit. a DSGVO</h3>
                     <ul>
                         <li><strong>Besondere Kategorien von Dokumentdaten (Art. 9 Abs. 2 lit. a)</strong> — soweit Sie KI-Analyse oder Cloud-Export für Dokumente mit besonderen Datenkategorien (z. B. Gesundheitsdaten) nutzen, stützt sich die Verarbeitung auf Ihre ausdrückliche Einwilligung (siehe Abschnitt 5).</li>
-                        <li><strong>Geplante KI-Dokumentensuche</strong> — der optionale, einwilligungsbasierte Suchindex (ab Pro) wird nur mit Ihrer ausdrücklichen Einwilligung erstellt (siehe Abschnitte 7 und 11).</li>
+                        <li><strong>KI-Dokumentensuche</strong> — der optionale, einwilligungsbasierte Suchindex (ab Pro) wird nur mit Ihrer ausdrücklichen Einwilligung erstellt (siehe Abschnitte 7 und 11).</li>
                     </ul>
 
                     <h2 id="de-subprocessors">7. Unterauftragsverarbeiter &amp; Empfänger</h2>
@@ -557,18 +557,18 @@
                     </ul>
 
                     <h2 id="de-transfers">9. Drittlandübermittlungen</h2>
-                    <p>Einige Empfänger (z. B. OpenAI, RevenueCat, Formspree und bestimmte Google-Dienste) verarbeiten Daten in den USA oder anderen Ländern außerhalb der EU/des EWR. In diesen Fällen werden die Übermittlungen durch die EU-Standardvertragsklauseln und/oder die Zertifizierung des Anbieters unter dem EU-US Data Privacy Framework abgesichert, wie in den oben verlinkten AVV dargelegt. Firebase Crashlytics übermittelt Diagnosedaten an Google in den USA unter diesen Garantien; die Absturzdiagnose ist standardmäßig deaktiviert und wird nur übermittelt, wenn Sie sie über Einstellungen → Diagnose aktivieren (siehe Abschnitt 6). Eine Kopie der einschlägigen Garantien (z. B. der EU-Standardvertragsklauseln) oder einen Hinweis darauf, wo sie verfügbar gemacht wurden, können Sie unter <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a> anfordern. Unser eigener Google-Drive-OAuth-Token-Austausch läuft in der EU auf Scandoras eigenem Server (<code>api.scandora.eu/oauth/google</code>, Hetzner, Falkenstein, Deutschland); der optionale KI-Dokumenten-Suchindex wird nach dem Start in der EU auf demselben Server gehostet (Hetzner, Falkenstein, Deutschland).</p>
-                    <p><strong>Bitte beachten Sie:</strong> Der geplante Suchindex wird zwar in der EU ansässig sein, die KI-<em>Generierung</em> (Analyse eines Dokuments oder Erzeugung einer belegten Antwort) erfolgt jedoch durch den Modellanbieter — OpenAI (USA) oder Google Gemini (USA / global) —, sodass dieser Generierungsschritt unter den oben genannten Garantien außerhalb der EU verarbeitet werden kann. Der in der EU ansässige Index macht die KI-Generierung selbst nicht zu einer reinen EU-Verarbeitung.</p>
+                    <p>Einige Empfänger (z. B. OpenAI, RevenueCat, Formspree und bestimmte Google-Dienste) verarbeiten Daten in den USA oder anderen Ländern außerhalb der EU/des EWR. In diesen Fällen werden die Übermittlungen durch die EU-Standardvertragsklauseln und/oder die Zertifizierung des Anbieters unter dem EU-US Data Privacy Framework abgesichert, wie in den oben verlinkten AVV dargelegt. Firebase Crashlytics übermittelt Diagnosedaten an Google in den USA unter diesen Garantien; die Absturzdiagnose ist standardmäßig deaktiviert und wird nur übermittelt, wenn Sie sie über Einstellungen → Diagnose aktivieren (siehe Abschnitt 6). Eine Kopie der einschlägigen Garantien (z. B. der EU-Standardvertragsklauseln) oder einen Hinweis darauf, wo sie verfügbar gemacht wurden, können Sie unter <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a> anfordern. Unser eigener Google-Drive-OAuth-Token-Austausch läuft in der EU auf Scandoras eigenem Server (<code>api.scandora.eu/oauth/google</code>, Hetzner, Falkenstein, Deutschland); der optionale KI-Dokumenten-Suchindex wird in der EU auf demselben Server gehostet (Hetzner, Falkenstein, Deutschland).</p>
+                    <p><strong>Bitte beachten Sie:</strong> Der Suchindex ist zwar in der EU ansässig, die KI-<em>Generierung</em> (Analyse eines Dokuments oder Erzeugung einer belegten Antwort) erfolgt jedoch durch den Modellanbieter — OpenAI (USA) oder Google Gemini (USA / global) —, sodass dieser Generierungsschritt unter den oben genannten Garantien außerhalb der EU verarbeitet werden kann. Der in der EU ansässige Index macht die KI-Generierung selbst nicht zu einer reinen EU-Verarbeitung.</p>
 
                     <h2 id="de-consent-management">10. Einwilligungsverwaltung</h2>
-                    <p>Die Produktanalyse stützt sich auf <strong>berechtigtes Interesse</strong> (Abschnitt 6) — es gibt <strong>kein Analyse-Einwilligungsbanner und keine Cookie-Wall</strong>; Sie können jederzeit widersprechen. Die Absturzdiagnose ist <strong>standardmäßig deaktiviert</strong> und wird nur erhoben, wenn Sie sie über <strong>Einstellungen → Diagnose</strong> aktivieren; Sie können sie jederzeit wieder deaktivieren (siehe Abschnitt 6). Im Übrigen holen wir eine Einwilligung nur dort ein, wo sie tatsächlich erforderlich ist — für besondere Kategorien von Dokumentdaten (Art. 9 Abs. 2 lit. a) und die geplante, optionale KI-Dokumentensuche — die Sie in der App erteilen und widerrufen können.</p>
+                    <p>Die Produktanalyse stützt sich auf <strong>berechtigtes Interesse</strong> (Abschnitt 6) — es gibt <strong>kein Analyse-Einwilligungsbanner und keine Cookie-Wall</strong>; Sie können jederzeit widersprechen. Die Absturzdiagnose ist <strong>standardmäßig deaktiviert</strong> und wird nur erhoben, wenn Sie sie über <strong>Einstellungen → Diagnose</strong> aktivieren; Sie können sie jederzeit wieder deaktivieren (siehe Abschnitt 6). Im Übrigen holen wir eine Einwilligung nur dort ein, wo sie tatsächlich erforderlich ist — für besondere Kategorien von Dokumentdaten (Art. 9 Abs. 2 lit. a) und die optionale KI-Dokumentensuche — die Sie in der App erteilen und widerrufen können.</p>
                     <table class="cookie-table">
                         <thead><tr><th>Datentyp</th><th>Zweck</th><th>Einwilligung nötig</th></tr></thead>
                         <tbody>
                             <tr><td>Produktanalyse (First-Party, cookielos)</td><td>Nutzungsmuster, Funktionsnutzung</td><td>Nein (berechtigtes Interesse, cookielos)</td></tr>
                             <tr><td>Absturzberichte (Firebase)</td><td>Fehlerbehebung, Stabilität</td><td>Opt-in (standardmäßig deaktiviert; Einstellungen → Diagnose)</td></tr>
                             <tr><td>Konto- &amp; Dokumentverarbeitung</td><td>Diensterbringung</td><td>Nein (Vertrag)</td></tr>
-                            <tr><td>Besondere Dokumentdaten / geplante KI-Suche</td><td>KI bei sensiblen Dokumenten; Dokumentensuche</td><td>Ja (ausdrückliche Einwilligung)</td></tr>
+                            <tr><td>Besondere Dokumentdaten / KI-Dokumentensuche</td><td>KI bei sensiblen Dokumenten; Dokumentensuche</td><td>Ja (ausdrückliche Einwilligung)</td></tr>
                         </tbody>
                     </table>
                     <div class="highlight-box">
@@ -582,7 +582,7 @@
                         <li>Zugriffskontrollen und Überwachung</li>
                         <li>Regelmäßigen Aktualisierungen</li>
                     </ul>
-                    <p><strong>Wir speichern Ihre vollständigen Dokumente nicht auf unserer Infrastruktur.</strong> Wir behalten nur die Metadaten aus Abschnitt 2 sowie ein kleines, niedrig aufgelöstes Vorschaubild der ersten Seite; das vollständige Dokument bleibt über Ihren gewählten KI-Anbieter und Ihre Cloud-Ziele unter Ihrer Kontrolle. <strong>Die einzige geplante Ausnahme wird der optionale, einwilligungsbasierte KI-Dokumenten-Suchindex sein</strong> (ab Pro), der <em>nur abgeleiteten Text</em> speichern wird — Textauszüge und Such-Embeddings, nicht Ihre Originaldateien — und in der EU auf Scandoras eigenem Server gehostet wird (Hetzner, Falkenstein, Deutschland). Diese Funktion ist noch nicht verfügbar.</p>
+                    <p><strong>Wir speichern Ihre vollständigen Dokumente nicht auf unserer Infrastruktur.</strong> Wir behalten nur die Metadaten aus Abschnitt 2 sowie ein kleines, niedrig aufgelöstes Vorschaubild der ersten Seite; das vollständige Dokument bleibt über Ihren gewählten KI-Anbieter und Ihre Cloud-Ziele unter Ihrer Kontrolle. <strong>Die einzige Ausnahme ist der optionale, einwilligungsbasierte KI-Dokumenten-Suchindex</strong> (ab Pro), der <em>nur abgeleiteten Text</em> speichert — Textauszüge und Such-Embeddings, nicht Ihre Originaldateien — und in der EU auf Scandoras eigenem Server gehostet wird (Hetzner, Falkenstein, Deutschland).</p>
 
                     <h3>Speicherdauer</h3>
                     <ul>
@@ -591,7 +591,7 @@
                         <li><strong>Produktanalyse:</strong> pseudonyme Ereignisse auf unserem selbst gehosteten Analyseserver, höchstens 365 Tage aufbewahrt und anschließend gelöscht.</li>
                         <li><strong>Abo- &amp; Abrechnungsdaten:</strong> für die gesetzliche handels-/steuerrechtliche Aufbewahrungsfrist nach deutschem Recht (§ 257 HGB / § 147 AO — in der Regel 6 bis 10 Jahre), auch nach Kontolöschung.</li>
                         <li><strong>Dokumentinhalte für KI-Generierung / Cloud-Export:</strong> werden von Scandora nicht gespeichert — sie werden nur vorübergehend verarbeitet und nach Erzeugung des Ergebnisses verworfen.</li>
-                        <li><strong>KI-Dokumenten-Suchindex (geplant; Opt-in, nur abgeleiteter Text, EU-ansässig — Hetzner, Falkenstein):</strong> nach Verfügbarkeit aufbewahrt bis zur Löschung des Quelldokuments oder zum Widerruf der Einwilligung und innerhalb von 30 Tagen nach Kontolöschung gelöscht.</li>
+                        <li><strong>KI-Dokumenten-Suchindex (Opt-in, nur abgeleiteter Text, EU-ansässig — Hetzner, Falkenstein):</strong> aufbewahrt bis zur Löschung des Quelldokuments oder zum Widerruf der Einwilligung und innerhalb von 30 Tagen nach Kontolöschung gelöscht.</li>
                     </ul>
 
                     <h2 id="de-your-rights">12. Ihre Rechte</h2>
