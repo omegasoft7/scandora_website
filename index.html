@@ -101,8 +101,18 @@
     </script>
 
     <!-- Umami Analytics -->
-    <script defer src="https://analytics.scandora.eu/script.js"
-            data-website-id="f8fdac29-929b-4d5c-b2ff-6a1bd5a5a112"></script>
+    <script>
+        (function () {
+            if (navigator.globalPrivacyControl === true) {
+                return;
+            }
+            var tracker = document.createElement('script');
+            tracker.src = 'https://analytics.scandora.eu/script.js';
+            tracker.setAttribute('data-website-id', 'f8fdac29-929b-4d5c-b2ff-6a1bd5a5a112');
+            tracker.setAttribute('data-do-not-track', 'true');
+            document.head.appendChild(tracker);
+        })();
+    </script>
 
     <!-- Structured Data - SoftwareApplication -->
     <script type="application/ld+json">
@@ -189,7 +199,7 @@
                 "name": "Is my data secure with Scandora?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Privacy is built into Scandora's design. Your documents stay on your device by default, and on-device search is private and works offline. On Pro and above, if you opt in to AI document chat, an optional EU-resident search index (Frankfurt) stores derived text only — not your original files. Managed AI generation may be processed outside the EU (e.g. OpenAI in the USA, Google Gemini) under EU Standard Contractual Clauses and the EU–US Data Privacy Framework. You stay in control of your data."
+                    "text": "Privacy is built into Scandora's design. Your documents stay on your device by default, and on-device search is private and works offline. On Pro and above, if you opt in to AI document chat, an optional EU-resident search index (Frankfurt) stores derived text only — not your original files. Managed AI generation may be processed outside the EU (e.g. Google Gemini in the USA) under EU Standard Contractual Clauses and the EU–US Data Privacy Framework. You stay in control of your data."
                 }
             },
             {
@@ -197,7 +207,7 @@
                 "name": "Can I use my own AI provider?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes! Scandora supports Bring Your Own AI (BYOAI). You can connect your OpenAI or Google Gemini API keys to process documents using your own AI accounts, giving you full control over costs and data processing."
+                    "text": "Yes! Scandora supports Bring Your Own AI (BYOAI). You can connect your Google Gemini API key to process documents using your own AI accounts, giving you full control over costs and data processing."
                 }
             },
             {
@@ -375,7 +385,7 @@
                     <article class="feature-card" role="listitem" itemscope itemtype="https://schema.org/Service">
                         <div class="feature-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
                         <h3 data-i18n="features.ai.title" itemprop="name">Your AI, Your Keys</h3>
-                        <p data-i18n="features.ai.desc" itemprop="description">Use managed AI credits, or bring your own OpenAI or Google Gemini key. Either way, AI reads every document — pulling out dates, amounts, and suppliers so you skip manual entry.</p>
+                        <p data-i18n="features.ai.desc" itemprop="description">Use managed AI credits, or bring your own Google Gemini key. Either way, AI reads every document — pulling out dates, amounts, and suppliers so you skip manual entry.</p>
                     </article>
                     <article class="feature-card" role="listitem" itemscope itemtype="https://schema.org/Service">
                         <div class="feature-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
@@ -424,7 +434,7 @@
                         <div class="step-number" aria-hidden="true">2</div>
                         <div class="step-content">
                             <h3 itemprop="name" data-i18n="howItWorks.step2.title">Your AI Understands It</h3>
-                            <p itemprop="text" data-i18n="howItWorks.step2.desc">Your own AI — with your OpenAI or Gemini key — reads the document, recognizes its type, and pulls out the key details. Nothing is stored on our servers.</p>
+                            <p itemprop="text" data-i18n="howItWorks.step2.desc">Your own AI — with your Gemini key — reads the document, recognizes its type, and pulls out the key details. Nothing is stored on our servers.</p>
                         </div>
                     </li>
                     <li class="step-connector" aria-hidden="true"></li>
@@ -481,11 +491,11 @@
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-4" aria-expanded="false" aria-controls="faq-panel-4"><span data-i18n="faq.q4">Is my data secure with Scandora?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
-                        <div id="faq-panel-4" class="faq-answer" role="region" aria-labelledby="faq-trigger-4"><div class="faq-answer-inner"><p data-i18n="faq.a4">Privacy is built into Scandora's design. Your documents stay on your device by default, and on-device search is private and works offline. On Pro and above, if you opt in to AI document chat, an optional EU-resident search index (Frankfurt) stores derived text only — not your original files. Managed AI generation may be processed outside the EU (e.g. OpenAI in the USA, Google Gemini) under EU Standard Contractual Clauses and the EU–US Data Privacy Framework. You stay in control of your data.</p></div></div>
+                        <div id="faq-panel-4" class="faq-answer" role="region" aria-labelledby="faq-trigger-4"><div class="faq-answer-inner"><p data-i18n="faq.a4">Privacy is built into Scandora's design. Your documents stay on your device by default, and on-device search is private and works offline. On Pro and above, if you opt in to AI document chat, an optional EU-resident search index (Frankfurt) stores derived text only — not your original files. Managed AI generation may be processed outside the EU (e.g. Google Gemini in the USA) under EU Standard Contractual Clauses and the EU–US Data Privacy Framework. You stay in control of your data.</p></div></div>
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-5" aria-expanded="false" aria-controls="faq-panel-5"><span data-i18n="faq.q5">Can I use my own AI provider?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
-                        <div id="faq-panel-5" class="faq-answer" role="region" aria-labelledby="faq-trigger-5"><div class="faq-answer-inner"><p data-i18n="faq.a5">Yes! Scandora supports Bring Your Own AI (BYOAI). You can connect your OpenAI or Google Gemini API keys to process documents using your own AI accounts, giving you full control over costs and data processing.</p></div></div>
+                        <div id="faq-panel-5" class="faq-answer" role="region" aria-labelledby="faq-trigger-5"><div class="faq-answer-inner"><p data-i18n="faq.a5">Yes! Scandora supports Bring Your Own AI (BYOAI). You can connect your Google Gemini API key to process documents using your own AI accounts, giving you full control over costs and data processing.</p></div></div>
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-6" aria-expanded="false" aria-controls="faq-panel-6"><span data-i18n="faq.q6">Is Scandora GDPR-compliant?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
@@ -571,7 +581,7 @@
                         <a href="#download" class="btn btn-secondary btn-full" role="button" data-managed-ai-cta data-plan="business" data-i18n="pricing.business.cta">Get Business</a>
                     </article>
                 </div>
-                <p class="pricing-note" data-i18n="pricing.byo"><span aria-hidden="true">💡</span> Bring your own AI (OpenAI, Google Gemini) and save on processing costs!</p>
+                <p class="pricing-note" data-i18n="pricing.byo"><span aria-hidden="true">💡</span> Bring your own AI (Google Gemini) and save on processing costs!</p>
                 <p class="pricing-note" data-i18n="pricing.priceNote"><small>Prices are the final amounts charged via the App Store / Google Play (small-business operator — no separate VAT shown, § 19 UStG). Prices may vary by region and store.</small></p>
             </div>
         </section>
