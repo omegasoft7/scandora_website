@@ -61,7 +61,7 @@
                 <header class="legal-header">
                     <span class="legal-badge" data-lang="en">Privacy</span><span class="legal-badge" data-lang="de" hidden>Datenschutz</span>
                     <h1 id="privacy-title" class="legal-title"><span data-lang="en">Privacy Policy</span><span data-lang="de" hidden>Datenschutzerklärung</span></h1>
-                    <p class="legal-meta"><span data-lang="en">Last updated: <time datetime="2026-07-30">July 30, 2026</time></span><span data-lang="de" hidden>Zuletzt aktualisiert: <time datetime="2026-07-30">30. Juli 2026</time></span></p>
+                    <p class="legal-meta"><span data-lang="en">Last updated: <time datetime="2026-08-03">August 3, 2026</time></span><span data-lang="de" hidden>Zuletzt aktualisiert: <time datetime="2026-08-03">3. August 2026</time></span></p>
                 </header>
 
                 <!-- ================= ENGLISH ================= -->
@@ -136,7 +136,8 @@
                     <ul>
                         <li>the AI provider you select, to analyse the document or to generate cited answers (see section 4); AI <em>generation</em> may be processed outside the EU (see section 9);</li>
                         <li>the optional EU-resident search index, which stores derived text only with your consent (see sections 7 and 11);</li>
-                        <li>your own cloud destinations — your Trello board or your Google Drive — when you export (see section 5).</li>
+                        <li>your own cloud destinations — your Trello board or your Google Drive — when you export (see section 5);</li>
+                        <li><strong>your own Google Drive folder, when you use the optional "Import from Google Drive" feature</strong> — to import existing PDFs already in your Drive as local reports, the app reads the file names and contents of the PDFs in the folder you choose (see section 5). This reads files you already stored in Drive; it does not modify them, and only you authorise it.</li>
                     </ul>
 
                     <h2 id="ai">4. AI Processing: BYOAI vs. Managed AI</h2>
@@ -159,9 +160,10 @@
                     <p>Cloud exports are optional and go to <strong>destinations you own and authorize</strong> via OAuth:</p>
                     <ul>
                         <li><strong>Trello</strong> — when you connect Trello, exported documents are created as cards (with the PDF attached, plus title, labels and due dates) on <em>your</em> Trello board.</li>
-                        <li><strong>Google Drive</strong> — when you connect Drive (scope <code>drive.file</code>, limited to files the app creates), exported documents are uploaded to <em>your</em> Drive. The OAuth code/token exchange is handled server-side by Scandora's own OAuth endpoint (<code>api.scandora.eu/oauth/google</code>), hosted in the EU on Scandora's own server (Hetzner, Falkenstein, Germany), so the OAuth client secret never reaches the device.</li>
+                        <li><strong>Google Drive (export)</strong> — when you connect Drive for export (scope <code>drive.file</code>, limited to files the app creates), exported documents are uploaded to <em>your</em> Drive.</li>
+                        <li><strong>Google Drive (import)</strong> — the optional "Import from Google Drive" feature requests additional read-only scopes (<code>drive.metadata.readonly</code> and <code>drive.readonly</code>) so it can list and read the PDFs already in a folder you choose, to import them as local reports and estimate the AI credit cost before you commit. The app <strong>reads</strong> your existing PDFs (file names and contents) and does <strong>not</strong> modify or delete them; only you authorise this access, and you can revoke it at any time from your Google account. The OAuth code/token exchange is handled server-side by Scandora's own OAuth endpoint (<code>api.scandora.eu/oauth/google</code>), hosted in the EU on Scandora's own server (Hetzner, Falkenstein, Germany), so the OAuth client secret never reaches the device.</li>
                     </ul>
-                    <p>For these flows you are the controller of the destination account; the provider processes the data under your agreement with them.</p>
+                    <p>For these flows you are the controller of the destination account; the provider processes the data under your agreement with them. The Drive scopes are classified by Google as <strong>sensitive/restricted</strong> and have been submitted for Google's OAuth verification; until verification is approved, the import feature is unavailable.</p>
 
                     <h2 id="legal-basis">6. Legal Basis for Processing</h2>
                     <p>Under the GDPR we rely on:</p>
@@ -223,8 +225,8 @@
                             </tr>
                             <tr>
                                 <td>Google Drive (API)</td>
-                                <td>Export to your own Google Drive (user-authorized)</td>
-                                <td>Exported document files &amp; file metadata you send</td>
+                                <td>Export to your own Google Drive and optional import of PDFs from your Drive folder (user-authorized)</td>
+                                <td>Exported document files &amp; file metadata you send; for import, file names &amp; contents of PDFs you choose to import (read-only, not modified)</td>
                                 <td>Google global</td>
                                 <td><a href="https://cloud.google.com/terms/data-processing-addendum" rel="noopener" target="_blank">cloud.google.com/terms/data-processing-addendum</a></td>
                             </tr>
@@ -412,7 +414,8 @@
                     <ul>
                         <li>den von Ihnen ausgewählten KI-Anbieter, um das Dokument zu analysieren oder belegte Antworten zu erzeugen (siehe Abschnitt 4); die KI-<em>Generierung</em> kann außerhalb der EU verarbeitet werden (siehe Abschnitt 9);</li>
                         <li>den optionalen, in der EU gehosteten Suchindex, der mit Ihrer Einwilligung nur abgeleiteten Text speichert (siehe Abschnitte 7 und 11);</li>
-                        <li>Ihre eigenen Cloud-Ziele — Ihr Trello-Board oder Ihr Google Drive — beim Export (siehe Abschnitt 5).</li>
+                        <li>Ihre eigenen Cloud-Ziele — Ihr Trello-Board oder Ihr Google Drive — beim Export (siehe Abschnitt 5);</li>
+                        <li><strong>Ihren eigenen Google-Drive-Ordner, wenn Sie die optionale Funktion „Aus Google Drive importieren" nutzen</strong> — um bereits in Ihrem Drive vorhandene PDFs als lokale Berichte zu importieren, liest die App die Dateinamen und Inhalte der PDFs in dem von Ihnen gewählten Ordner (siehe Abschnitt 5). Dabei werden Dateien gelesen, die Sie bereits in Drive gespeichert haben; sie werden nicht verändert, und nur Sie autorisieren diesen Zugriff.</li>
                     </ul>
 
                     <h2 id="de-ai">4. KI-Verarbeitung: BYOAI vs. Managed AI</h2>
@@ -435,9 +438,10 @@
                     <p>Cloud-Exporte sind optional und gehen an <strong>Ziele, die Ihnen gehören und die Sie</strong> per OAuth autorisieren:</p>
                     <ul>
                         <li><strong>Trello</strong> — wenn Sie Trello verbinden, werden exportierte Dokumente als Karten (mit angehängtem PDF sowie Titel, Labels und Fälligkeitsdaten) auf <em>Ihrem</em> Trello-Board erstellt.</li>
-                        <li><strong>Google Drive</strong> — wenn Sie Drive verbinden (Berechtigung <code>drive.file</code>, beschränkt auf von der App erstellte Dateien), werden exportierte Dokumente in <em>Ihr</em> Drive hochgeladen. Der OAuth-Code-/Token-Austausch erfolgt serverseitig über Scandoras eigenen OAuth-Endpunkt (<code>api.scandora.eu/oauth/google</code>), in der EU auf Scandoras eigenem Server gehostet (Hetzner, Falkenstein, Deutschland), damit das OAuth-Client-Secret das Gerät nie erreicht.</li>
+                        <li><strong>Google Drive (Export)</strong> — wenn Sie Drive für den Export verbinden (Berechtigung <code>drive.file</code>, beschränkt auf von der App erstellte Dateien), werden exportierte Dokumente in <em>Ihr</em> Drive hochgeladen.</li>
+                        <li><strong>Google Drive (Import)</strong> — die optionale Funktion „Aus Google Drive importieren" fordert zusätzliche Lese-Berechtigungen (<code>drive.metadata.readonly</code> und <code>drive.readonly</code>) an, um die bereits in einem von Ihnen gewählten Ordner vorhandenen PDFs aufzulisten und zu lesen, sie als lokale Berichte zu importieren und die KI-Kreditkosten vorab zu schätzen. Die App <strong>liest</strong> Ihre vorhandenen PDFs (Dateinamen und Inhalte) und <strong>verändert oder löscht</strong> sie nicht; nur Sie autorisieren diesen Zugriff, und Sie können ihn jederzeit in Ihrem Google-Konto widerrufen. Der OAuth-Code-/Token-Austausch erfolgt serverseitig über Scandoras eigenen OAuth-Endpunkt (<code>api.scandora.eu/oauth/google</code>), in der EU auf Scandoras eigenem Server gehostet (Hetzner, Falkenstein, Deutschland), damit das OAuth-Client-Secret das Gerät nie erreicht.</li>
                     </ul>
-                    <p>Bei diesen Vorgängen sind Sie Verantwortlicher des Zielkontos; der Anbieter verarbeitet die Daten nach Ihrer Vereinbarung mit ihm.</p>
+                    <p>Bei diesen Vorgängen sind Sie Verantwortlicher des Zielkontos; der Anbieter verarbeitet die Daten nach Ihrer Vereinbarung mit ihm. Die Drive-Berechtigungen werden von Google als <strong>sensibel/eingeschränkt</strong> eingestuft und wurden zur OAuth-Verifizierung bei Google eingereicht; bis zur Genehmigung der Verifizierung steht die Import-Funktion nicht zur Verfügung.</p>
 
                     <h2 id="de-legal-basis">6. Rechtsgrundlagen der Verarbeitung</h2>
                     <p>Nach der DSGVO stützen wir uns auf:</p>
@@ -499,8 +503,8 @@
                             </tr>
                             <tr>
                                 <td>Google Drive (API)</td>
-                                <td>Export in Ihr eigenes Google Drive (von Ihnen autorisiert)</td>
-                                <td>Von Ihnen gesendete exportierte Dateien &amp; Datei-Metadaten</td>
+                                <td>Export in Ihr eigenes Google Drive und optionaler Import von PDFs aus Ihrem Drive-Ordner (von Ihnen autorisiert)</td>
+                                <td>Von Ihnen gesendete exportierte Dateien &amp; Datei-Metadaten; beim Import Dateinamen &amp; Inhalte der PDFs, die Sie importieren möchten (nur Lesezugriff, keine Veränderung)</td>
                                 <td>Google global</td>
                                 <td><a href="https://cloud.google.com/terms/data-processing-addendum" rel="noopener" target="_blank">cloud.google.com/terms/data-processing-addendum</a></td>
                             </tr>
