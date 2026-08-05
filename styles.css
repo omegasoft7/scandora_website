@@ -210,8 +210,9 @@ img {
     color: var(--text-primary);
 }
 .logo-icon {
-    color: var(--primary);
-    font-size: 28px;
+    display: block;
+    width: 34px;
+    height: auto;
 }
 
 .nav-links {
@@ -931,7 +932,7 @@ img {
     margin-bottom: var(--space-xl);
 }
 .footer-brand .logo { margin-bottom: var(--space-md); }
-.footer-brand .logo-icon { color: var(--primary-light); }
+.footer-brand .logo-icon { background: white; border-radius: 6px; padding: 3px 4px; }
 .footer-brand p { color: var(--text-tertiary); font-size: 14px; }
 .footer-links {
     display: grid;

@@ -370,7 +370,7 @@
     // ============================================
 
     function consoleBranding() {
-        console.log('%c◈ Scandora', 'color: #2563EB; font-size: 24px; font-weight: bold;');
+        console.log('%cScandora', 'color: #2563EB; font-size: 24px; font-weight: bold;');
         console.log('%cIntelligent Document Scanning', 'color: #64748B; font-size: 14px;');
         console.log('%chttps://scandora.eu', 'color: #3B82F6; font-size: 12px;');
     }

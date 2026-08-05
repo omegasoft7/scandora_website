@@ -21,10 +21,8 @@
   <!-- Main content area -->
   <g transform="translate(100, 150)">
     <!-- Logo -->
-    <text x="0" y="0" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="bold" fill="white">
-      <tspan>◈</tspan>
-      <tspan dx="10">Scandora</tspan>
-    </text>
+    <image href="logo.png" x="0" y="-52" width="64" height="64"/>
+    <text x="80" y="0" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="bold" fill="white">Scandora</text>
     
     <!-- Tagline -->
     <text x="0" y="80" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="700" fill="white">
