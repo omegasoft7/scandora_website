@@ -320,7 +320,7 @@
             } catch (error) {
                 console.error('Contact form error:', error);
                 // Show error (could be enhanced with better UX)
-                alert('Sorry, there was an error sending your message. Please try again or email us directly at farhad@scandora.eu');
+                alert('Sorry, there was an error sending your message. Please try again or email us directly at support@scandora.eu');
                 trackEvent('contact_form_error', {
                     error: error.message
                 });
