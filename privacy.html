@@ -61,7 +61,7 @@
                 <header class="legal-header">
                     <span class="legal-badge" data-lang="en">Privacy</span><span class="legal-badge" data-lang="de" hidden>Datenschutz</span>
                     <h1 id="privacy-title" class="legal-title"><span data-lang="en">Privacy Policy</span><span data-lang="de" hidden>Datenschutzerklärung</span></h1>
-                    <p class="legal-meta"><span data-lang="en">Last updated: <time datetime="2026-08-03">August 3, 2026</time></span><span data-lang="de" hidden>Zuletzt aktualisiert: <time datetime="2026-08-03">3. August 2026</time></span></p>
+                    <p class="legal-meta"><span data-lang="en">Last updated: <time datetime="2026-08-11">August 11, 2026</time></span><span data-lang="de" hidden>Zuletzt aktualisiert: <time datetime="2026-08-11">11. August 2026</time></span></p>
                 </header>
 
                 <!-- ================= ENGLISH ================= -->
@@ -189,7 +189,7 @@
                     </ul>
 
                     <h2 id="subprocessors">7. Sub-Processors &amp; Recipients</h2>
-                    <p>The following providers process personal data on our behalf, or receive data you direct to them. We have a data-processing agreement (DPA) in place where we act as controller and they as processor. <strong>Scandora stores no user documents</strong> — only the account and history metadata described in section 2 (plus a small low-resolution preview thumbnail) is held on our own infrastructure.</p>
+                    <p>The following providers process personal data on our behalf, or receive data you direct to them. We have a data-processing agreement (DPA) in place where we act as controller and they as processor, except where the table below states otherwise. <strong>Scandora stores no user documents</strong> — only the account and history metadata described in section 2 (plus a small low-resolution preview thumbnail) is held on our own infrastructure.</p>
                     <div style="overflow-x:auto;">
                     <table class="cookie-table">
                         <thead>
@@ -258,11 +258,33 @@
                                 <td>USA</td>
                                 <td><a href="https://formspree.io/legal/dpa/" rel="noopener" target="_blank">formspree.io/legal/dpa</a></td>
                             </tr>
+                            <tr>
+                                <td>Brevo (Sendinblue SAS, France)</td>
+                                <td>Outbound email — transactional mail (order confirmations, account &amp; lifecycle messages) sent from <code>noreply@scandora.eu</code>, and the SMTP relay through which our human replies from <code>support@</code>, <code>privacy@</code> and <code>legal@scandora.eu</code> leave the domain</td>
+                                <td>Your email address &amp; the content of the message we send you (e.g. order and subscription details); for a reply to your enquiry, the content of that reply — which typically quotes your original message, including anything you put in a data-protection request; plus delivery metadata</td>
+                                <td>EU (France, Belgium, Germany) for sending &amp; storage; Brevo's own sub-processors additionally reach the USA and India</td>
+                                <td>Brevo's standard DPA terms, Appendix 3 of its <a href="https://www.brevo.com/legal/termsofuse/" rel="noopener" target="_blank">Terms of Service</a>; a signed DPA between us and Brevo is not yet in place</td>
+                            </tr>
+                            <tr>
+                                <td>Cloudflare (Email Routing)</td>
+                                <td>Inbound email routing — mail to <code>support@</code>, <code>privacy@</code> and <code>legal@scandora.eu</code> is received and forwarded to our mailbox; forwarding only, Cloudflare provides no mailbox and stores no message at rest</td>
+                                <td>Sender address, subject, message body &amp; attachments of the email you send us, plus connection metadata (in transit)</td>
+                                <td>Cloudflare's global anycast network (company seat USA)</td>
+                                <td><a href="https://www.cloudflare.com/cloudflare-customer-dpa/" rel="noopener" target="_blank">cloudflare.com/cloudflare-customer-dpa</a> — not signed separately; it is incorporated by reference into the Cloudflare Self-Serve Subscription Agreement (section 6.1) that governs our account</td>
+                            </tr>
+                            <tr>
+                                <td>Google (mailbox behind <code>support@</code> / <code>privacy@</code> / <code>legal@</code>)</td>
+                                <td>Storage of the email forwarded to those addresses, so we can read it and reply</td>
+                                <td>The full content &amp; metadata of your email correspondence with us, including anything you put in a data-protection request</td>
+                                <td>Google global</td>
+                                <td>None — the destination is an ordinary Google consumer mailbox, for which no Art. 28 processor agreement is available</td>
+                            </tr>
                         </tbody>
                     </table>
                     </div>
                     <p><small><sup>1</sup> In <strong>BYOAI</strong> mode you use your own API key and you are the controller; the provider processes under your own account, not as Scandora's sub-processor. The provider acts as Scandora's sub-processor only on the <strong>managed AI</strong> path.<br>
                     Product analytics is <strong>not</strong> a sub-processor: it runs on Scandora's own self-hosted, cookieless analytics server (no third party, no cookie, no identifier from your device — see section 6).</small></p>
+                    <p><strong>Email you send to us:</strong> messages to <code>support@</code>, <code>privacy@</code> or <code>legal@scandora.eu</code> are routed by Cloudflare Email Routing and delivered into a Google-hosted mailbox that we read. Cloudflare only forwards the message; Google then stores it. That mailbox is an ordinary Google consumer account, so it is not covered by a processor agreement with Google. Our reply leaves the domain through Brevo, our outbound mail provider, so where the reply quotes your message — as replies usually do — your own text passes through Brevo as well. If you would rather not send us sensitive content this way, you can write to the postal address in our <a href="/imprint.html">Imprint</a>.</p>
 
                     <h2 id="roles">8. Controller vs. Processor Roles</h2>
                     <ul>
@@ -272,7 +294,8 @@
                     </ul>
 
                     <h2 id="transfers">9. International Transfers</h2>
-                    <p>Some recipients (e.g. Google Gemini, RevenueCat, Formspree, and certain Google services) process data in the USA or other countries outside the EU/EEA. Where that happens, transfers are safeguarded by the EU Standard Contractual Clauses and/or the provider's certification under the EU–US Data Privacy Framework, as set out in the DPAs linked above. Firebase Crashlytics also transmits diagnostic data to Google in the USA under these safeguards; crash diagnostics are off by default and are only transmitted if you opt in via Settings → Diagnostics (see section 6). You can request a copy of the relevant safeguards (e.g. the EU SCCs), or a reference to where they have been made available, by contacting <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a>. Our own Google Drive OAuth token exchange runs in the EU on Scandora's own server (<code>api.scandora.eu/oauth/google</code>, Hetzner, Falkenstein, Germany); the optional AI document search index is hosted in the EU on the same server (Hetzner, Falkenstein, Germany).</p>
+                    <p>Some recipients (e.g. Google Gemini, RevenueCat, Formspree, Cloudflare, and certain Google services) process data in the USA or other countries outside the EU/EEA. Where that happens, transfers are safeguarded by the EU Standard Contractual Clauses and/or the provider's certification under the EU–US Data Privacy Framework, as set out in the DPAs linked above. Firebase Crashlytics also transmits diagnostic data to Google in the USA under these safeguards; crash diagnostics are off by default and are only transmitted if you opt in via Settings → Diagnostics (see section 6). You can request a copy of the relevant safeguards (e.g. the EU SCCs), or a reference to where they have been made available, by contacting <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a>. Our own Google Drive OAuth token exchange runs in the EU on Scandora's own server (<code>api.scandora.eu/oauth/google</code>, Hetzner, Falkenstein, Germany); the optional AI document search index is hosted in the EU on the same server (Hetzner, Falkenstein, Germany).</p>
+                    <p><strong>Email:</strong> the mail we send out — both transactional messages and our human replies to your enquiries — is sent and stored by Brevo in the EU (France, Belgium, Germany); Brevo's own sub-processors in the USA and India are covered by the EU Standard Contractual Clauses and, where certified, the EU–US Data Privacy Framework, as listed in Annex 2 ("List of Sub-Processors") of Brevo's standard DPA terms — Appendix 3 of its Terms of Service. Email you send to <code>support@</code>, <code>privacy@</code> or <code>legal@scandora.eu</code> is forwarded over Cloudflare's global network into a Google-hosted mailbox (see section 7); because that mailbox is an ordinary Google consumer account, this correspondence is processed under Google's consumer terms and not under a processor agreement or SCCs concluded by us.</p>
                     <p><strong>Please note:</strong> while the search index is EU-resident, AI <em>generation</em> (analysing a document or producing a cited answer) is performed by the model provider — Google Gemini (USA / global) — so that generation step may be processed outside the EU under the safeguards above. The EU-resident index does not make the AI generation itself EU-only.</p>
 
                     <h2 id="consent-management">10. Consent Management</h2>
@@ -307,6 +330,7 @@
                         <li><strong>Subscription &amp; billing records:</strong> kept for the statutory commercial/tax retention period under German law (§ 257 HGB / § 147 AO — generally 6 to 10 years), even after account deletion.</li>
                         <li><strong>Document content for AI generation / cloud export:</strong> not retained by Scandora — processed transiently and discarded once the result is produced.</li>
                         <li><strong>AI document search index (opt-in, derived text only, EU-resident — Hetzner, Falkenstein):</strong> retained until you delete the source document or withdraw consent, and purged within 30 days of account deletion.</li>
+                        <li><strong>Email correspondence (<code>support@</code>, <code>privacy@</code>, <code>legal@</code>) and the mail we send you:</strong> your message and our reply stay in the Google-hosted mailbox for as long as we need them to handle your matter and to document how it was handled, and are deleted once it is closed and no statutory retention period or legal claim applies; correspondence that is commercially or tax-relevant (e.g. about an order or an invoice) is kept for the statutory period above (§ 257 HGB / § 147 AO). For the mail Brevo sends for us, we — not Brevo — set the retention period (§ 4.3 of Brevo's DPA); when our contract with Brevo ends, Brevo destroys the data it holds for us within three months of our request (§ 5.3), unless it has to keep it longer by law.</li>
                     </ul>
 
                     <h2 id="your-rights">12. Your Rights</h2>
@@ -467,7 +491,7 @@
                     </ul>
 
                     <h2 id="de-subprocessors">7. Unterauftragsverarbeiter &amp; Empfänger</h2>
-                    <p>Die folgenden Anbieter verarbeiten personenbezogene Daten in unserem Auftrag oder empfangen Daten, die Sie an sie übermitteln. Wo wir Verantwortlicher und sie Auftragsverarbeiter sind, besteht ein Auftragsverarbeitungsvertrag (AVV). <strong>Scandora speichert keine Nutzerdokumente</strong> — auf unserer eigenen Infrastruktur werden nur die in Abschnitt 2 beschriebenen Konto- und Verlaufs-Metadaten (sowie ein kleines, niedrig aufgelöstes Vorschaubild) vorgehalten.</p>
+                    <p>Die folgenden Anbieter verarbeiten personenbezogene Daten in unserem Auftrag oder empfangen Daten, die Sie an sie übermitteln. Wo wir Verantwortlicher und sie Auftragsverarbeiter sind, besteht ein Auftragsverarbeitungsvertrag (AVV), sofern die nachstehende Tabelle nichts anderes angibt. <strong>Scandora speichert keine Nutzerdokumente</strong> — auf unserer eigenen Infrastruktur werden nur die in Abschnitt 2 beschriebenen Konto- und Verlaufs-Metadaten (sowie ein kleines, niedrig aufgelöstes Vorschaubild) vorgehalten.</p>
                     <div style="overflow-x:auto;">
                     <table class="cookie-table">
                         <thead>
@@ -536,11 +560,33 @@
                                 <td>USA</td>
                                 <td><a href="https://formspree.io/legal/dpa/" rel="noopener" target="_blank">formspree.io/legal/dpa</a></td>
                             </tr>
+                            <tr>
+                                <td>Brevo (Sendinblue SAS, Frankreich)</td>
+                                <td>Ausgehende E-Mails — transaktionale Nachrichten (Bestellbestätigungen, Konto- und Lifecycle-Mails), gesendet von <code>noreply@scandora.eu</code>, sowie das SMTP-Relay, über das unsere persönlichen Antworten von <code>support@</code>, <code>privacy@</code> und <code>legal@scandora.eu</code> die Domain verlassen</td>
+                                <td>Ihre E-Mail-Adresse &amp; der Inhalt der an Sie gesendeten Nachricht (z. B. Bestell- und Abodaten); bei einer Antwort auf Ihre Anfrage der Inhalt dieser Antwort — der typischerweise Ihre ursprüngliche Nachricht zitiert, einschließlich aller Angaben aus einer Datenschutzanfrage; sowie Zustellungs-Metadaten</td>
+                                <td>EU (Frankreich, Belgien, Deutschland) für Versand &amp; Speicherung; die eigenen Unterauftragsverarbeiter von Brevo reichen zusätzlich in die USA und nach Indien</td>
+                                <td>Brevos Standard-AVV-Bedingungen, Anlage 3 („Appendix 3") der <a href="https://www.brevo.com/legal/termsofuse/" rel="noopener" target="_blank">Nutzungsbedingungen</a>; ein zwischen uns und Brevo unterzeichneter AVV besteht noch nicht</td>
+                            </tr>
+                            <tr>
+                                <td>Cloudflare (Email Routing)</td>
+                                <td>Eingehendes E-Mail-Routing — Nachrichten an <code>support@</code>, <code>privacy@</code> und <code>legal@scandora.eu</code> werden entgegengenommen und an unser Postfach weitergeleitet; reine Weiterleitung, Cloudflare stellt kein Postfach bereit und speichert keine Nachricht dauerhaft</td>
+                                <td>Absenderadresse, Betreff, Nachrichtentext &amp; Anhänge Ihrer E-Mail sowie Verbindungs-Metadaten (während der Übermittlung)</td>
+                                <td>Globales Anycast-Netz von Cloudflare (Unternehmenssitz USA)</td>
+                                <td><a href="https://www.cloudflare.com/cloudflare-customer-dpa/" rel="noopener" target="_blank">cloudflare.com/cloudflare-customer-dpa</a> — nicht gesondert unterzeichnet; er ist durch Verweis in das für unser Konto geltende Cloudflare Self-Serve Subscription Agreement (Ziffer 6.1) einbezogen</td>
+                            </tr>
+                            <tr>
+                                <td>Google (Postfach hinter <code>support@</code> / <code>privacy@</code> / <code>legal@</code>)</td>
+                                <td>Speicherung der an diese Adressen weitergeleiteten E-Mails, damit wir sie lesen und beantworten können</td>
+                                <td>Vollständiger Inhalt &amp; Metadaten Ihrer E-Mail-Korrespondenz mit uns, einschließlich aller Angaben, die Sie in eine Datenschutzanfrage aufnehmen</td>
+                                <td>Google global</td>
+                                <td>Keiner — Ziel ist ein gewöhnliches Google-Privatpostfach, für das kein Auftragsverarbeitungsvertrag nach Art. 28 DSGVO verfügbar ist</td>
+                            </tr>
                         </tbody>
                     </table>
                     </div>
                     <p><small><sup>1</sup> Im <strong>BYOAI</strong>-Modus nutzen Sie Ihren eigenen API-Schlüssel und sind Verantwortlicher; der Anbieter verarbeitet unter Ihrem eigenen Konto, nicht als Unterauftragsverarbeiter von Scandora. Nur auf dem <strong>Managed-AI</strong>-Pfad ist der Anbieter Unterauftragsverarbeiter von Scandora.<br>
                     Die Produktanalyse ist <strong>kein</strong> Unterauftragsverarbeiter: Sie läuft auf Scandoras eigenem, selbst gehostetem, cookielosem Analyseserver (kein Dritter, kein Cookie, keine Kennung von Ihrem Gerät — siehe Abschnitt 6).</small></p>
+                    <p><strong>E-Mails, die Sie an uns senden:</strong> Nachrichten an <code>support@</code>, <code>privacy@</code> oder <code>legal@scandora.eu</code> werden über Cloudflare Email Routing weitergeleitet und in ein von Google gehostetes Postfach zugestellt, in dem wir sie lesen. Cloudflare leitet die Nachricht nur weiter; gespeichert wird sie anschließend bei Google. Dieses Postfach ist ein gewöhnliches Google-Privatkonto und daher nicht durch einen Auftragsverarbeitungsvertrag mit Google abgedeckt. Unsere Antwort verlässt die Domain über Brevo, unseren Anbieter für den E-Mail-Versand; soweit die Antwort Ihre Nachricht zitiert — wie bei Antworten üblich —, durchläuft auch Ihr eigener Text Brevo. Wenn Sie uns sensible Inhalte nicht auf diesem Weg senden möchten, können Sie uns postalisch unter der Anschrift in unserem <a href="/imprint.html">Impressum</a> schreiben.</p>
 
                     <h2 id="de-roles">8. Rollen: Verantwortlicher vs. Auftragsverarbeiter</h2>
                     <ul>
@@ -550,7 +596,8 @@
                     </ul>
 
                     <h2 id="de-transfers">9. Drittlandübermittlungen</h2>
-                    <p>Einige Empfänger (z. B. Google Gemini, RevenueCat, Formspree und bestimmte Google-Dienste) verarbeiten Daten in den USA oder anderen Ländern außerhalb der EU/des EWR. In diesen Fällen werden die Übermittlungen durch die EU-Standardvertragsklauseln und/oder die Zertifizierung des Anbieters unter dem EU-US Data Privacy Framework abgesichert, wie in den oben verlinkten AVV dargelegt. Firebase Crashlytics übermittelt Diagnosedaten an Google in den USA unter diesen Garantien; die Absturzdiagnose ist standardmäßig deaktiviert und wird nur übermittelt, wenn Sie sie über Einstellungen → Diagnose aktivieren (siehe Abschnitt 6). Eine Kopie der einschlägigen Garantien (z. B. der EU-Standardvertragsklauseln) oder einen Hinweis darauf, wo sie verfügbar gemacht wurden, können Sie unter <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a> anfordern. Unser eigener Google-Drive-OAuth-Token-Austausch läuft in der EU auf Scandoras eigenem Server (<code>api.scandora.eu/oauth/google</code>, Hetzner, Falkenstein, Deutschland); der optionale KI-Dokumenten-Suchindex wird in der EU auf demselben Server gehostet (Hetzner, Falkenstein, Deutschland).</p>
+                    <p>Einige Empfänger (z. B. Google Gemini, RevenueCat, Formspree, Cloudflare und bestimmte Google-Dienste) verarbeiten Daten in den USA oder anderen Ländern außerhalb der EU/des EWR. In diesen Fällen werden die Übermittlungen durch die EU-Standardvertragsklauseln und/oder die Zertifizierung des Anbieters unter dem EU-US Data Privacy Framework abgesichert, wie in den oben verlinkten AVV dargelegt. Firebase Crashlytics übermittelt Diagnosedaten an Google in den USA unter diesen Garantien; die Absturzdiagnose ist standardmäßig deaktiviert und wird nur übermittelt, wenn Sie sie über Einstellungen → Diagnose aktivieren (siehe Abschnitt 6). Eine Kopie der einschlägigen Garantien (z. B. der EU-Standardvertragsklauseln) oder einen Hinweis darauf, wo sie verfügbar gemacht wurden, können Sie unter <a href="mailto:privacy@scandora.eu">privacy@scandora.eu</a> anfordern. Unser eigener Google-Drive-OAuth-Token-Austausch läuft in der EU auf Scandoras eigenem Server (<code>api.scandora.eu/oauth/google</code>, Hetzner, Falkenstein, Deutschland); der optionale KI-Dokumenten-Suchindex wird in der EU auf demselben Server gehostet (Hetzner, Falkenstein, Deutschland).</p>
+                    <p><strong>E-Mail:</strong> Die von uns versendeten E-Mails — sowohl transaktionale Nachrichten als auch unsere persönlichen Antworten auf Ihre Anfragen — werden von Brevo in der EU (Frankreich, Belgien, Deutschland) versandt und gespeichert; die eigenen Unterauftragsverarbeiter von Brevo in den USA und Indien sind durch die EU-Standardvertragsklauseln und, soweit zertifiziert, das EU-US Data Privacy Framework abgesichert, wie in Annex 2 („List of Sub-Processors") von Brevos Standard-AVV-Bedingungen — Anlage 3 der Nutzungsbedingungen — aufgeführt. E-Mails, die Sie an <code>support@</code>, <code>privacy@</code> oder <code>legal@scandora.eu</code> senden, werden über das globale Netz von Cloudflare in ein von Google gehostetes Postfach weitergeleitet (siehe Abschnitt 7); da dieses Postfach ein gewöhnliches Google-Privatkonto ist, wird diese Korrespondenz nach den Verbraucherbedingungen von Google verarbeitet und nicht auf Grundlage eines von uns geschlossenen Auftragsverarbeitungsvertrags oder von Standardvertragsklauseln.</p>
                     <p><strong>Bitte beachten Sie:</strong> Der Suchindex ist zwar in der EU ansässig, die KI-<em>Generierung</em> (Analyse eines Dokuments oder Erzeugung einer belegten Antwort) erfolgt jedoch durch den Modellanbieter — Google Gemini (USA / global) —, sodass dieser Generierungsschritt unter den oben genannten Garantien außerhalb der EU verarbeitet werden kann. Der in der EU ansässige Index macht die KI-Generierung selbst nicht zu einer reinen EU-Verarbeitung.</p>
 
                     <h2 id="de-consent-management">10. Einwilligungsverwaltung</h2>
@@ -585,6 +632,7 @@
                         <li><strong>Abo- &amp; Abrechnungsdaten:</strong> für die gesetzliche handels-/steuerrechtliche Aufbewahrungsfrist nach deutschem Recht (§ 257 HGB / § 147 AO — in der Regel 6 bis 10 Jahre), auch nach Kontolöschung.</li>
                         <li><strong>Dokumentinhalte für KI-Generierung / Cloud-Export:</strong> werden von Scandora nicht gespeichert — sie werden nur vorübergehend verarbeitet und nach Erzeugung des Ergebnisses verworfen.</li>
                         <li><strong>KI-Dokumenten-Suchindex (Opt-in, nur abgeleiteter Text, EU-ansässig — Hetzner, Falkenstein):</strong> aufbewahrt bis zur Löschung des Quelldokuments oder zum Widerruf der Einwilligung und innerhalb von 30 Tagen nach Kontolöschung gelöscht.</li>
+                        <li><strong>E-Mail-Korrespondenz (<code>support@</code>, <code>privacy@</code>, <code>legal@</code>) und die an Sie versandten E-Mails:</strong> Ihre Nachricht und unsere Antwort verbleiben in dem von Google gehosteten Postfach, solange wir sie zur Bearbeitung Ihres Anliegens und zum Nachweis der Bearbeitung benötigen, und werden gelöscht, sobald der Vorgang abgeschlossen ist und keine gesetzliche Aufbewahrungsfrist und kein Rechtsanspruch entgegensteht; handels- oder steuerrechtlich relevante Korrespondenz (z. B. zu einer Bestellung oder Rechnung) wird für die oben genannte gesetzliche Frist aufbewahrt (§ 257 HGB / § 147 AO). Für die von Brevo in unserem Auftrag versandten Nachrichten legen wir — nicht Brevo — die Speicherdauer fest (Ziff. 4.3 des Brevo-AVV); endet unser Vertrag mit Brevo, löscht Brevo die für uns gespeicherten Daten auf unsere Anforderung hin innerhalb von drei Monaten (Ziff. 5.3), sofern keine längere gesetzliche Aufbewahrungspflicht besteht.</li>
                     </ul>
 
                     <h2 id="de-your-rights">12. Ihre Rechte</h2>
