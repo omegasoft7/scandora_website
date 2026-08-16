@@ -14,9 +14,9 @@ const translations = {
 
         // Hero
         'hero.badge': 'Built in Germany · Privacy-first · GoBD record-keeping features',
-        'hero.titleLine1': 'Turn every document',
+        'hero.titleLine1': 'Scandora turns every document',
         'hero.titleLine2': 'into action',
-        'hero.description': 'Scan with your phone or your real office scanner, let your own AI understand the document, and send it straight into your Trello and Google Drive. Built in Germany — privacy-first, with GoBD record-keeping features, and your documents never touch our servers.',
+        'hero.description': 'Scandora is an AI document scanner for iPhone, iPad, Mac and Android. Scan with your phone or your real office scanner, let your own AI understand the document, and send it straight into your Trello and Google Drive. Built in Germany — privacy-first, with GoBD record-keeping features, and your documents never touch our servers.',
         'hero.getStarted': 'Get Started Free',
         'hero.seeHow': 'See How It Works',
         'hero.stat1': 'Phone or scanner',
@@ -198,9 +198,9 @@ const translations = {
 
         // Hero
         'hero.badge': 'In Deutschland entwickelt · Datenschutz zuerst · GoBD-Funktionen',
-        'hero.titleLine1': 'Der Dokumentenscanner',
+        'hero.titleLine1': 'Scandora — der Dokumentenscanner',
         'hero.titleLine2': 'für jede Aktion',
-        'hero.description': 'Belege scannen mit dem Handy oder Ihrem echten Büroscanner — der Belegscanner, der jeden Beleg versteht. Ihre eigene KI liest das Dokument und sendet es direkt in Ihr Trello und Google Drive. In Deutschland entwickelt, Datenschutz zuerst, mit GoBD-Funktionen.',
+        'hero.description': 'Scandora ist ein KI-Dokumentenscanner für iPhone, iPad, Mac und Android. Belege scannen mit dem Handy oder Ihrem echten Büroscanner — der Belegscanner, der jeden Beleg versteht. Ihre eigene KI liest das Dokument und sendet es direkt in Ihr Trello und Google Drive. In Deutschland entwickelt, Datenschutz zuerst, mit GoBD-Funktionen.',
         'hero.getStarted': 'Kostenlos starten',
         'hero.seeHow': 'So funktioniert es',
         'hero.stat1': 'Handy oder Scanner',

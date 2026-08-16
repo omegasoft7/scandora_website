@@ -115,12 +115,25 @@ function collectFiles() {
   return files;
 }
 
+/** Read a file, or null when it disappeared between the listing and the read. */
+function readIfPresent(path) {
+  try {
+    return readFileSync(path, 'utf8');
+  } catch (error) {
+    if (error.code === 'ENOENT') return null;
+    throw error;
+  }
+}
+
 const violations = [];
 let anchorHit = false;
+let scannedCount = 0;
 
 const files = collectFiles();
 for (const { path, kind } of files) {
-  const raw = readFileSync(path, 'utf8');
+  const raw = readIfPresent(path);
+  if (raw === null) continue;
+  scannedCount += 1;
   const text = collapse(kind === 'html' ? htmlToText(raw) : raw);
   const rel = relative(repoRoot, path);
 
@@ -155,7 +168,7 @@ function snippet(text, idx, len) {
   return `${start > 0 ? '…' : ''}${text.slice(start, end).trim()}${end < text.length ? '…' : ''}`;
 }
 
-console.log(`✓ scanned ${files.length} file(s) across the website + fastlane store metadata`);
+console.log(`✓ scanned ${scannedCount} file(s) across the website + fastlane store metadata`);
 
 if (!anchorHit) {
   console.error(

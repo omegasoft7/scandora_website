@@ -23,6 +23,17 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join, sep } from 'node:path';
 
 const websiteDir = join(dirname(fileURLToPath(import.meta.url)), '..');
+
+/** Read a file, or null when it disappeared between the listing and the read. */
+function readIfPresent(path) {
+  try {
+    return readFileSync(path, 'utf8');
+  } catch (error) {
+    if (error.code === 'ENOENT') return null;
+    throw error;
+  }
+}
+
 const PAGES = [
   'index.html',
   'privacy.html',
@@ -132,7 +143,8 @@ const htmlFiles = readdirSync(websiteDir, { recursive: true })
 let jsonLdPagesOnDisk = 0;
 let unregistered = 0;
 for (const file of htmlFiles) {
-  if (!readFileSync(join(websiteDir, file), 'utf8').includes('application/ld+json')) continue;
+  const raw = readIfPresent(join(websiteDir, file));
+  if (raw === null || !raw.includes('application/ld+json')) continue;
   jsonLdPagesOnDisk += 1;
   if (!registered.has(file)) {
     unregistered += 1;
