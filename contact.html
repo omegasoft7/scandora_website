@@ -72,10 +72,10 @@
                         <h2 data-i18n="contact.formTitle">Send Us a Message</h2>
                         <p class="form-description" data-i18n="contact.formDesc">Fill out the form below and we'll get back to you within 24 hours.</p>
                         
-                        <form id="contact-form" action="https://formspree.io/f/mdkqvgdp" method="POST" class="contact-form">
-                            <input type="hidden" name="_subject" value="New Contact from Scandora Website">
-                            <input type="text" name="_gotcha" style="display:none">
-                            
+                        <form id="contact-form" action="https://userdata.scandora.eu/api/contact" method="POST" class="contact-form">
+                            <!-- Spam honeypot: hidden from people, filled by bots, rejected server-side. -->
+                            <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
                             <div class="form-group">
                                 <label for="name" data-i18n="contact.name">Full Name</label>
                                 <input type="text" id="name" name="name" required placeholder="John Doe" autocomplete="name">
@@ -116,8 +116,8 @@
                                 </span>
                             </button>
                             <p class="form-privacy-note"><small>
-                                <span data-lang="en">We process the name, email address and message you submit only to handle your enquiry. Our form is operated by Formspree (USA) acting as our processor; submitting it transfers this data to the USA. Legal basis: Art. 6(1)(b)/(f) GDPR. See our <a href="/privacy.html">Privacy Policy</a>.</span>
-                                <span data-lang="de" hidden>Wir verarbeiten den von Ihnen übermittelten Namen, Ihre E-Mail-Adresse und Ihre Nachricht ausschließlich zur Bearbeitung Ihrer Anfrage. Unser Formular wird von Formspree (USA) als Auftragsverarbeiter betrieben; mit dem Absenden werden diese Daten in die USA übermittelt. Rechtsgrundlage: Art. 6 Abs. 1 lit. b/f DSGVO. Siehe unsere <a href="/privacy.html">Datenschutzerklärung</a>.</span>
+                                <span data-lang="en">We process the name, email address and message you submit only to handle your enquiry. Submitting the form sends your message to our own server in Germany, which delivers it by email to our support mailbox (see sections 7 and 9 of the Privacy Policy). Legal basis: Art. 6(1)(b)/(f) GDPR. See our <a href="/privacy.html">Privacy Policy</a>.</span>
+                                <span data-lang="de" hidden>Wir verarbeiten den von Ihnen übermittelten Namen, Ihre E-Mail-Adresse und Ihre Nachricht ausschließlich zur Bearbeitung Ihrer Anfrage. Mit dem Absenden geht Ihre Nachricht an unseren eigenen Server in Deutschland, der sie per E-Mail an unser Support-Postfach zustellt (siehe Abschnitte 7 und 9 der Datenschutzerklärung). Rechtsgrundlage: Art. 6 Abs. 1 lit. b/f DSGVO. Siehe unsere <a href="/privacy.html">Datenschutzerklärung</a>.</span>
                             </small></p>
                         </form>
                     </div>
