@@ -90,8 +90,6 @@ button:focus-visible {
 img {
     max-width: 100%;
     height: auto;
-    /* Prevent layout shift */
-    aspect-ratio: attr(width) / attr(height);
 }
 
 /* Skip Link for Accessibility (Screen Readers) */
@@ -126,7 +124,10 @@ img {
 .btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: var(--space-sm);
+    min-height: 44px;
+    padding: 12px 24px;
     font-family: var(--font-family);
     font-weight: 600;
     border-radius: var(--radius-md);
@@ -233,6 +234,11 @@ img {
 }
 
 .lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
     background: var(--surface-variant);
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
@@ -254,9 +260,6 @@ img {
     position: relative;
     padding: 140px 0 80px;
     overflow: hidden;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
 }
 
 .hero-bg {
@@ -685,7 +688,10 @@ img {
 }
 .billing-toggle {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: fit-content;
+    max-width: 100%;
     margin: 0 auto var(--space-xl);
     padding: var(--space-xs);
     gap: var(--space-xs);
@@ -784,6 +790,7 @@ img {
 }
 .calc-range {
     width: 100%;
+    height: 44px;
     accent-color: var(--primary);
     cursor: pointer;
 }
@@ -997,6 +1004,9 @@ img {
 }
 
 @media (max-width: 768px) {
+    .logo {
+        flex-shrink: 0;
+    }
     .nav-links {
         display: none;
         position: absolute;
@@ -1015,13 +1025,21 @@ img {
         display: flex;
     }
     .nav-links a {
+        display: flex;
+        align-items: center;
+        min-height: 44px;
         padding: var(--space-sm) 0;
         font-size: 16px;
     }
     .mobile-menu-toggle {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 4px;
+        flex-shrink: 0;
+        width: 44px;
+        height: 44px;
         background: none;
         border: none;
         cursor: pointer;
@@ -1054,11 +1072,32 @@ img {
     .features-grid { grid-template-columns: 1fr; }
     .step { flex-direction: column; text-align: center; }
     .footer-links { grid-template-columns: 1fr; text-align: center; }
+    .footer-col a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0;
+    }
     .download-title { font-size: 28px; }
     .calc-card { padding: var(--space-xl); }
     .calc-hours-value { font-size: 36px; }
     .faq-trigger { font-size: 16px; padding: var(--space-md); }
     .faq-answer-inner p { padding: 0 var(--space-md) var(--space-md); }
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        gap: var(--space-sm);
+        padding-left: var(--space-sm);
+        padding-right: var(--space-sm);
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-actions .btn {
+        display: none;
+    }
 }
 
 /* ============================================
@@ -1102,6 +1141,7 @@ img {
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: -0.5px;
+    overflow-wrap: break-word;
     margin-bottom: var(--space-md);
     background: linear-gradient(135deg, var(--text-primary), var(--primary));
     -webkit-background-clip: text;
@@ -1153,6 +1193,14 @@ img {
     font-size: 16px;
     line-height: 1.8;
     margin-bottom: var(--space-md);
+}
+
+.legal-content p,
+.legal-content li,
+.legal-content td,
+.legal-content a,
+.legal-content code {
+    overflow-wrap: break-word;
 }
 
 .legal-content ul,
@@ -1408,6 +1456,12 @@ img {
         padding: 120px 0 60px;
     }
 
+    .cookie-table {
+        display: block;
+        width: 100%;
+        overflow: auto;
+    }
+
     .legal-title {
         font-size: 32px;
     }
@@ -1433,7 +1487,7 @@ img {
 /* Contact Hero Section */
 .contact-hero {
     position: relative;
-    padding: 160px 0 80px;
+    padding: 140px 0 80px;
     text-align: center;
     overflow: hidden;
 }
