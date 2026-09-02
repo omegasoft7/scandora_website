@@ -73,7 +73,6 @@ const allowedCases = [
   { name: 'negated GoBD certification disclaimer', body: '<p>Scandora ist nicht GoBD-zertifiziert.</p>' },
   { name: 'kein GoBD-Siegel disclaimer', body: '<p>Scandora führt kein GoBD-Siegel — ein solches gibt es nicht.</p>' },
   { name: 'FAQ-form GoBD disclaimer', body: '<p>Gibt es eine GoBD-Zertifizierung für Scandora? Nein.</p>' },
-  { name: 'on-device instant search attribute', body: '<p>Find your scans instantly with on-device full-text search.</p>' },
 ];
 
 for (const { name, body } of allowedCases) {

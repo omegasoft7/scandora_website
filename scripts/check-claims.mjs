@@ -12,12 +12,10 @@
 //   - website/translations.js (the bilingual copy served into the pages at runtime)
 //   - flutter_app/{android,ios,macos}/fastlane/metadata/**/*.txt (store listings)
 //
-// Two carve-outs keep the guard honest without flagging sanctioned copy:
+// One carve-out keeps the guard honest without flagging sanctioned copy:
 //   - NEGATION-AWARE GoBD claims: "GoBD-certified"/"GoBD-Siegel"/… only violate when asserted
 //     as a positive claim. The shipped disclaimers ("nicht GoBD-zertifiziert", "kein
 //     GoBD-Siegel — ein solches gibt es nicht") negate the claim and are allowed.
-//   - ALLOWED phrases: verbatim, pre-vetted product-attribute copy (on-device full-text search
-//     is genuinely instant/sofort — a factual local-search attribute, not a speed promise).
 //
 // Usage:  node website/scripts/check-claims.mjs
 // Exit code 0 = no unbacked claims found, 1 = at least one violation (or a wrong-directory run).
@@ -39,14 +37,6 @@ const FASTLANE_METADATA = [
 // "pass" on an empty/wrong directory (mirrors the Dart guard's positive anchor).
 const ANCHOR_FILE = join(websiteDir, 'translations.js');
 const ANCHOR_TEXT = 'Built in Germany';
-
-// Sanctioned, pre-vetted copy. A forbidden pattern matched inside one of these verbatim
-// phrases is a factual product attribute, not a claim (see docs/CLAIMS_POLICY.md — product
-// attributes are not claims). Keep each entry exact; adding one is a deliberate decision.
-const ALLOWED = [
-  'Find your scans instantly with on-device full-text search',
-  'Finden Sie Ihre Scans sofort mit Volltextsuche',
-];
 
 // German + English negations that turn a GoBD claim into an honest disclaimer.
 const NEGATION = /\b(kein\w*|nein|nicht|ohne|no|not|never|without)\b/i;
@@ -144,21 +134,9 @@ for (const { path, kind } of files) {
     for (const match of text.matchAll(pattern)) {
       const hit = match[0];
       const idx = match.index ?? 0;
-      if (ALLOWED.some((phrase) => text.includes(phrase) && withinPhrase(text, idx, hit, phrase))) continue;
       if (negatable && NEGATION.test(windowAround(text, idx, hit.length))) continue;
       violations.push({ rel, label, hit, context: snippet(text, idx, hit.length) });
     }
-  }
-}
-
-/** True when the match at idx falls inside an occurrence of an allowed verbatim phrase. */
-function withinPhrase(text, idx, hit, phrase) {
-  let from = 0;
-  for (;;) {
-    const at = text.indexOf(phrase, from);
-    if (at === -1) return false;
-    if (idx >= at && idx + hit.length <= at + phrase.length) return true;
-    from = at + 1;
   }
 }
 

@@ -132,7 +132,7 @@
                 "price": "0",
                 "priceCurrency": "EUR",
                 "availability": "https://schema.org/InStock",
-                "description": "On-device search (private, offline), unlimited scans, 10 AI credits/month (extraction, indexing \u0026 AI chat), cloud integrations, watermark-free exports"
+                "description": "Bring your own Google Gemini key (BYOAI), unlimited scans, 10 AI credits/month (extraction, indexing \u0026 AI chat), cloud integrations, watermark-free exports"
             },
             {
                 "@type": "Offer",
@@ -154,7 +154,7 @@
         "featureList": [
             "AI-powered OCR scanning",
             "Automatic data extraction",
-            "On-device document search (free, private, offline)",
+            "AI document chat with cited answers (Pro and above)",
             "Trello integration",
             "Google Drive sync",
             "Multi-profile support",
@@ -183,7 +183,7 @@
                 "name": "Is Scandora free to use?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes! Scandora's free plan includes private, offline on-device search of your scans, unlimited scans, 10 AI credits a month (extraction, indexing and AI document chat), cloud integrations, and watermark-free exports. Paid plans are available now: Pro (€9.99/month or €89/year) adds a much larger monthly AI-credit allowance and priority support, and Business / DATEV (€24.99/month or €229/year) adds DATEV, lexoffice and sevDesk export designed for GoBD & DSGVO record-keeping. Prices are the final amounts charged via the App Store or Google Play."
+                    "text": "Yes! Scandora's free plan includes unlimited scans, 10 AI credits a month (extraction, indexing and AI document chat), cloud integrations, and watermark-free exports. Paid plans are available now: Pro (€9.99/month or €89/year) adds a much larger monthly AI-credit allowance and priority support, and Business / DATEV (€24.99/month or €229/year) adds DATEV, lexoffice and sevDesk export designed for GoBD & DSGVO record-keeping. Prices are the final amounts charged via the App Store or Google Play."
                 }
             },
             {
@@ -199,7 +199,7 @@
                 "name": "Is my data secure with Scandora?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Privacy is built into Scandora's design. Your documents stay on your device by default, and on-device search is private and works offline. On Pro and above, if you opt in to AI document chat, an optional EU-resident search index (Frankfurt) stores derived text only — not your original files. Managed AI generation may be processed outside the EU (e.g. Google Gemini in the USA) under EU Standard Contractual Clauses and the EU–US Data Privacy Framework. You stay in control of your data."
+                    "text": "Privacy is built into Scandora's design. Your documents never touch our servers — they sync straight to the cloud services and AI provider you choose. On Pro and above, if you opt in to AI document chat, an optional EU-resident search index (Frankfurt) stores derived text only — not your original files. Managed AI generation may be processed outside the EU (e.g. Google Gemini in the USA) under EU Standard Contractual Clauses and the EU–US Data Privacy Framework. You stay in control of your data."
                 }
             },
             {
@@ -215,7 +215,7 @@
                 "name": "Is Scandora GDPR-compliant?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Scandora is built in Germany with GDPR (DSGVO) in mind. Your documents stay on your device by default, our servers run in the EU, and we don't embed third-party advertising trackers. For business use we provide an AVV / Data Processing Agreement (Art. 28 GDPR) you can read, download and sign."
+                    "text": "Scandora is built in Germany with GDPR (DSGVO) in mind. Your documents never touch our servers, the servers we do run are in the EU, and we don't embed third-party advertising trackers. For business use we provide an AVV / Data Processing Agreement (Art. 28 GDPR) you can read, download and sign."
                 }
             },
             {
@@ -223,7 +223,7 @@
                 "name": "Do I need an internet connection to scan?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "No. Scanning, edge detection and on-device full-text search all work offline. You only need a connection when you sync a document to a cloud service like Trello or Google Drive, or when your chosen AI provider processes a scan."
+                    "text": "No. Scanning and edge detection both work offline. You only need a connection when you sync a document to a cloud service like Trello or Google Drive, or when your chosen AI provider processes a scan."
                 }
             },
             {
@@ -400,7 +400,7 @@
                     <article class="feature-card" role="listitem" itemscope itemtype="https://schema.org/Service">
                         <div class="feature-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
                         <h3 data-i18n="features.search.title" itemprop="name">Intelligent Search</h3>
-                        <p data-i18n="features.search.desc" itemprop="description">Find your scans instantly with on-device full-text search — free, private, and offline on every plan. On Pro and above, ask the AI a question and get a cited answer from your documents.</p>
+                        <p data-i18n="features.search.desc" itemprop="description">On Pro and above, ask the AI a question and get a cited answer from your own documents, with a link to the source it used.</p>
                     </article>
                     <article class="feature-card" role="listitem" itemscope itemtype="https://schema.org/Service">
                         <div class="feature-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
@@ -487,7 +487,7 @@
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-2" aria-expanded="false" aria-controls="faq-panel-2"><span data-i18n="faq.q2">Is Scandora free to use?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
-                        <div id="faq-panel-2" class="faq-answer" role="region" aria-labelledby="faq-trigger-2"><div class="faq-answer-inner"><p data-i18n="faq.a2">Yes! Scandora's free plan includes private, offline on-device search of your scans, unlimited scans, 10 AI credits a month (extraction, indexing and AI document chat), cloud integrations, and watermark-free exports. Paid plans are available now: Pro (€9.99/month or €89/year) adds a much larger monthly AI-credit allowance and priority support, and Business / DATEV (€24.99/month or €229/year) adds DATEV, lexoffice and sevDesk export designed for GoBD &amp; DSGVO record-keeping. Prices are the final amounts charged via the App Store or Google Play.</p></div></div>
+                        <div id="faq-panel-2" class="faq-answer" role="region" aria-labelledby="faq-trigger-2"><div class="faq-answer-inner"><p data-i18n="faq.a2">Yes! Scandora's free plan includes unlimited scans, 10 AI credits a month (extraction, indexing and AI document chat), cloud integrations, and watermark-free exports. Paid plans are available now: Pro (€9.99/month or €89/year) adds a much larger monthly AI-credit allowance and priority support, and Business / DATEV (€24.99/month or €229/year) adds DATEV, lexoffice and sevDesk export designed for GoBD &amp; DSGVO record-keeping. Prices are the final amounts charged via the App Store or Google Play.</p></div></div>
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-3" aria-expanded="false" aria-controls="faq-panel-3"><span data-i18n="faq.q3">Which platforms does Scandora support?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
@@ -495,7 +495,7 @@
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-4" aria-expanded="false" aria-controls="faq-panel-4"><span data-i18n="faq.q4">Is my data secure with Scandora?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
-                        <div id="faq-panel-4" class="faq-answer" role="region" aria-labelledby="faq-trigger-4"><div class="faq-answer-inner"><p data-i18n="faq.a4">Privacy is built into Scandora's design. Your documents stay on your device by default, and on-device search is private and works offline. On Pro and above, if you opt in to AI document chat, an optional EU-resident search index (Frankfurt) stores derived text only — not your original files. Managed AI generation may be processed outside the EU (e.g. Google Gemini in the USA) under EU Standard Contractual Clauses and the EU–US Data Privacy Framework. You stay in control of your data.</p></div></div>
+                        <div id="faq-panel-4" class="faq-answer" role="region" aria-labelledby="faq-trigger-4"><div class="faq-answer-inner"><p data-i18n="faq.a4">Privacy is built into Scandora's design. Your documents never touch our servers — they sync straight to the cloud services and AI provider you choose. On Pro and above, if you opt in to AI document chat, an optional EU-resident search index (Frankfurt) stores derived text only — not your original files. Managed AI generation may be processed outside the EU (e.g. Google Gemini in the USA) under EU Standard Contractual Clauses and the EU–US Data Privacy Framework. You stay in control of your data.</p></div></div>
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-5" aria-expanded="false" aria-controls="faq-panel-5"><span data-i18n="faq.q5">Can I use my own AI provider?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
@@ -503,11 +503,11 @@
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-6" aria-expanded="false" aria-controls="faq-panel-6"><span data-i18n="faq.q6">Is Scandora GDPR-compliant?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
-                        <div id="faq-panel-6" class="faq-answer" role="region" aria-labelledby="faq-trigger-6"><div class="faq-answer-inner"><p data-i18n="faq.a6">Scandora is built in Germany with GDPR (DSGVO) in mind. Your documents stay on your device by default, our servers run in the EU, and we don't embed third-party advertising trackers. For business use we provide an AVV / Data Processing Agreement (Art. 28 GDPR) you can read, download and sign.</p></div></div>
+                        <div id="faq-panel-6" class="faq-answer" role="region" aria-labelledby="faq-trigger-6"><div class="faq-answer-inner"><p data-i18n="faq.a6">Scandora is built in Germany with GDPR (DSGVO) in mind. Your documents never touch our servers, the servers we do run are in the EU, and we don't embed third-party advertising trackers. For business use we provide an AVV / Data Processing Agreement (Art. 28 GDPR) you can read, download and sign.</p></div></div>
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-7" aria-expanded="false" aria-controls="faq-panel-7"><span data-i18n="faq.q7">Do I need an internet connection to scan?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
-                        <div id="faq-panel-7" class="faq-answer" role="region" aria-labelledby="faq-trigger-7"><div class="faq-answer-inner"><p data-i18n="faq.a7">No. Scanning, edge detection and on-device full-text search all work offline. You only need a connection when you sync a document to a cloud service like Trello or Google Drive, or when your chosen AI provider processes a scan.</p></div></div>
+                        <div id="faq-panel-7" class="faq-answer" role="region" aria-labelledby="faq-trigger-7"><div class="faq-answer-inner"><p data-i18n="faq.a7">No. Scanning and edge detection both work offline. You only need a connection when you sync a document to a cloud service like Trello or Google Drive, or when your chosen AI provider processes a scan.</p></div></div>
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-8" aria-expanded="false" aria-controls="faq-panel-8"><span data-i18n="faq.q8">Can Scandora export to DATEV for my tax advisor?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
@@ -541,7 +541,7 @@
                             <span class="currency" aria-label="Euro">€</span><span class="price-monthly"><span class="amount">0</span><span class="period" data-i18n="pricing.perMonth">/month</span></span><span class="price-annual"><span class="amount">0</span><span class="period" data-i18n="pricing.perYear">/year</span></span>
                         </div>
                         <ul class="pricing-features">
-                            <li data-i18n="pricing.free.f1">On-device search (private, offline)</li>
+                            <li data-i18n="pricing.free.f1">Bring your own Google Gemini key (BYOAI)</li>
                             <li data-i18n="pricing.free.f2">Unlimited scans, unlimited pages</li>
                             <li data-i18n="pricing.free.f3">10 AI credits/month (1 credit ≈ 5 pages; shared: extraction, indexing &amp; AI chat)</li>
                             <li data-i18n="pricing.free.f4">Watermark-free exports</li>
@@ -560,7 +560,7 @@
                         </div>
                         <ul class="pricing-features">
                             <li data-i18n="pricing.pro.f1">1,000 AI credits/month (1 credit ≈ 5 pages; shared: extraction, indexing &amp; AI chat)</li>
-                            <li data-i18n="pricing.pro.f2">On-device search — unlimited &amp; offline</li>
+                            <li data-i18n="pricing.pro.f2">Network scanner support (eSCL/AirScan)</li>
                             <li data-i18n="pricing.pro.f3">AI document chat with cited answers</li>
                             <li data-i18n="pricing.pro.f4">Cloud integrations</li>
                             <li data-i18n="pricing.pro.f5">Priority support</li>
