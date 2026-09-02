@@ -90,6 +90,9 @@ const translations = {
         'pricing.business.cta': 'Get Business',
         'pricing.business.save': 'Save 24%',
         'pricing.byo': '💡 Bring your own AI (Google Gemini) and save on processing costs!',
+        'pricing.aiSplit.title': 'What runs on your AI, what runs on ours',
+        'pricing.aiSplit.ownKey': 'On your own Gemini key, billed to you by Google: analyzing the documents you scan.',
+        'pricing.aiSplit.scandoraAi': "On Scandora's AI and servers, and you cannot switch this to your key: document-chat answers, search indexing, retrieval and EU index storage. This work spends Scandora credits.",
         'pricing.priceNote': 'Prices are the final amounts charged via the App Store / Google Play (small-business operator — no separate VAT shown, § 19 UStG). Prices may vary by region and store.',
 
         // Download
@@ -275,6 +278,9 @@ const translations = {
         'pricing.business.cta': 'Business holen',
         'pricing.business.save': '24 % sparen',
         'pricing.byo': '💡 Bringen Sie Ihre eigene KI (Google Gemini) und sparen Sie Verarbeitungskosten!',
+        'pricing.aiSplit.title': 'Was auf Ihrer KI läuft und was auf unserer',
+        'pricing.aiSplit.ownKey': 'Auf Ihrem eigenen Gemini-Schlüssel, abgerechnet von Google: die Analyse der Dokumente, die Sie scannen.',
+        'pricing.aiSplit.scandoraAi': 'Auf Scandoras KI und Servern, und das lässt sich nicht auf Ihren Schlüssel umstellen: Antworten im Dokument-Chat, Suchindex, Retrieval und EU-Index-Speicher. Diese Arbeit verbraucht Scandora-Credits.',
         'pricing.priceNote': 'Die Preise sind die über App Store / Google Play berechneten Endpreise (Kleinunternehmer – keine gesonderte MwSt., § 19 UStG). Preise können je nach Region und Store variieren.',
 
         // Download
@@ -564,7 +570,7 @@ const pageMeta = {
     "/help/byoai": {
         "en": {
             "title": "Bring your own AI (Google Gemini) | Scandora Help",
-            "description": "Connect your own Google Gemini API key in Scandora. Your key stays on your device, you pay the provider directly, no Scandora credits used."
+            "description": "Connect your own Google Gemini API key in Scandora. Your key stays on your device, you pay the provider directly, no Scandora credits for that document analysis."
         },
         "de": {
             "title": "Eigene KI nutzen (Google Gemini) | Scandora Hilfe",

@@ -763,6 +763,24 @@ img {
     font-size: 15px;
 }
 
+.pricing-ai-split {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 14px;
+}
+
+.pricing-ai-split ul {
+    margin: var(--space-xs) 0 0;
+    padding-left: 20px;
+}
+
+.pricing-ai-split li {
+    margin-bottom: var(--space-xs);
+    line-height: 1.6;
+}
+
 /* ============================================
    TIME-SAVED CALCULATOR SECTION
    ============================================ */
