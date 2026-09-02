@@ -8,14 +8,17 @@
 // one appears.
 //
 // Scanned surfaces:
-//   - every website/**/*.html (visible text only — <script>/<style>/comments/tags stripped)
+//   - every website/**/*.html: visible text (<script>/<style>/comments/tags stripped) plus the
+//     string values of its application/ld+json blocks, which the visible-text pass drops
 //   - website/translations.js (the bilingual copy served into the pages at runtime)
 //   - flutter_app/{android,ios,macos}/fastlane/metadata/**/*.txt (store listings)
 //
-// One carve-out keeps the guard honest without flagging sanctioned copy:
+// Two carve-outs keep the guard honest without flagging sanctioned copy:
 //   - NEGATION-AWARE GoBD claims: "GoBD-certified"/"GoBD-Siegel"/… only violate when asserted
 //     as a positive claim. The shipped disclaimers ("nicht GoBD-zertifiziert", "kein
 //     GoBD-Siegel — ein solches gibt es nicht") negate the claim and are allowed.
+//   - The paid-tier gate on the AI search index is only a violation when the tier wording and
+//     the feature share one sentence, so naming a tier for a genuinely paid feature is fine.
 //
 // Usage:  node website/scripts/check-claims.mjs
 // Exit code 0 = no unbacked claims found, 1 = at least one violation (or a wrong-directory run).
@@ -43,6 +46,10 @@ const NEGATION = /\b(kein\w*|nein|nicht|ohne|no|not|never|without)\b/i;
 // Chars each side of a match inspected for a negation (covers the FAQ "…? Nein."/"…? No." form).
 const NEGATION_WINDOW = 80;
 
+// The opt-in AI search index / document chat, and wording that restricts it to a paid tier.
+const INDEX_FEATURE = String.raw`(?:AI )?document (?:search|chat)|search index|smart search|cited answer|Dokumentensuche|Dokumenten-?(?:Suchindex|Chat)|Suchindex|belegte Antwort`;
+const PAID_TIER_GATE = String.raw`Pro and above|Pro or above|Pro und höher|\bab Pro\b|requires Pro|Pro plan required`;
+
 const forbidden = [
   { pattern: /\b99\s*%/gi, label: '"99%" precision claim' },
   {
@@ -64,6 +71,14 @@ const forbidden = [
     label: 'GoBD certification/seal asserted as a positive claim',
     negatable: true,
   },
+  {
+    pattern: new RegExp(
+      `(?:${PAID_TIER_GATE})[^.!?]{0,120}?(?:${INDEX_FEATURE})` +
+        `|(?:${INDEX_FEATURE})[^.!?]{0,120}?(?:${PAID_TIER_GATE})`,
+      'gi',
+    ),
+    label: 'opt-in AI search index/document chat restricted to a paid tier (the Free plan grants it)',
+  },
 ];
 
 const ENTITIES = { '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'", '&nbsp;': ' ', '&euro;': '€' };
@@ -76,6 +91,28 @@ function htmlToText(html) {
     .replace(/<!--[\s\S]*?-->/g, ' ')
     .replace(/<[^>]+>/g, ' ')
     .replace(/&#?\w+;/g, (e) => ENTITIES[e] ?? ' ');
+}
+
+/** Every string leaf of a parsed JSON value, flattened into `out`. */
+function collectStrings(node, out) {
+  if (typeof node === 'string') out.push(node);
+  else if (Array.isArray(node)) for (const item of node) collectStrings(item, out);
+  else if (node && typeof node === 'object') for (const value of Object.values(node)) collectStrings(value, out);
+  return out;
+}
+
+/** The JSON-LD copy on a page — structured data the visible-text pass drops with <script>. */
+function ldJsonText(html) {
+  const parts = [];
+  const blocks = html.matchAll(/<script\b[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi);
+  for (const [, block] of blocks) {
+    try {
+      collectStrings(JSON.parse(block), parts);
+    } catch {
+      parts.push(block);
+    }
+  }
+  return parts.join(' . ');
 }
 
 const collapse = (text) => text.replace(/\s+/g, ' ');
@@ -124,7 +161,7 @@ for (const { path, kind } of files) {
   const raw = readIfPresent(path);
   if (raw === null) continue;
   scannedCount += 1;
-  const text = collapse(kind === 'html' ? htmlToText(raw) : raw);
+  const text = collapse(kind === 'html' ? `${htmlToText(raw)} . ${ldJsonText(raw)}` : raw);
   const rel = relative(repoRoot, path);
 
   if (path === ANCHOR_FILE && raw.includes(ANCHOR_TEXT)) anchorHit = true;

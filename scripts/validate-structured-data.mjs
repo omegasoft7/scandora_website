@@ -11,6 +11,7 @@
 //   5. No aggregateRating/review markup anywhere (must stay out until real reviews exist).
 //   6. Every HTML page under website/ that carries a JSON-LD block is registered in PAGES
 //      below (drift guard) — a new structured-data page can't ship uncovered by this check.
+//      `__*_test__.html` is reserved for a sibling suite's temporary fixture and is skipped.
 //
 // Prices themselves come from RevenueCat / App Store Connect (see STRUCTURED_DATA.md);
 // this script guards consistency and validity, not the absolute price values.
@@ -53,6 +54,9 @@ const PAGES = [
   'blog/scandora-vs-fileee.html',
 ];
 const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD (ISO dates sort chronologically)
+
+// Reserved name for a temporary fixture a sibling test suite plants in website/ — never a site page.
+const TEST_FIXTURE = /(?:^|\/)__[^/]*_test__\.html$/;
 
 const problems = [];
 const report = (page, msg) => problems.push(`${page}: ${msg}`);
@@ -139,7 +143,8 @@ for (const page of PAGES) {
 const registered = new Set(PAGES);
 const htmlFiles = readdirSync(websiteDir, { recursive: true })
   .filter((p) => typeof p === 'string' && p.endsWith('.html'))
-  .map((p) => p.split(sep).join('/'));
+  .map((p) => p.split(sep).join('/'))
+  .filter((p) => !TEST_FIXTURE.test(p));
 let jsonLdPagesOnDisk = 0;
 let unregistered = 0;
 for (const file of htmlFiles) {

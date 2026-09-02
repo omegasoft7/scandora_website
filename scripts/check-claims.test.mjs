@@ -48,6 +48,26 @@ const forbiddenCases = [
   { name: 'incl. VAT claim', body: '<p>All prices incl. VAT.</p>', label: /inkl\. MwSt \/ incl\. VAT/ },
   { name: 'GoBD-certified positive claim', body: '<p>Scandora is GoBD-certified.</p>', label: /GoBD certification\/seal/ },
   { name: 'GoBD-Siegel positive claim', body: '<p>Wir bieten ein GoBD-Siegel an.</p>', label: /GoBD certification\/seal/ },
+  {
+    name: 'paid-tier gate on the AI search index',
+    body: '<p>An optional, opt-in AI document search feature (Pro and above) stores derived text only.</p>',
+    label: /restricted to a paid tier/,
+  },
+  {
+    name: 'German paid-tier gate on the AI search index',
+    body: '<p>Eine optionale KI-Dokumentensuche (ab Pro) speichert nur abgeleiteten Text.</p>',
+    label: /restricted to a paid tier/,
+  },
+  {
+    name: 'paid-tier gate written after the feature',
+    body: '<p>The opt-in search index requires Pro.</p>',
+    label: /restricted to a paid tier/,
+  },
+  {
+    name: 'paid-tier gate hidden in a JSON-LD featureList',
+    body: '<script type="application/ld+json">{"@type":"SoftwareApplication","featureList":["AI document chat with cited answers (Pro and above)"]}</script>',
+    label: /restricted to a paid tier/,
+  },
 ];
 
 for (const { name, body, label } of forbiddenCases) {
@@ -73,6 +93,13 @@ const allowedCases = [
   { name: 'negated GoBD certification disclaimer', body: '<p>Scandora ist nicht GoBD-zertifiziert.</p>' },
   { name: 'kein GoBD-Siegel disclaimer', body: '<p>Scandora führt kein GoBD-Siegel — ein solches gibt es nicht.</p>' },
   { name: 'FAQ-form GoBD disclaimer', body: '<p>Gibt es eine GoBD-Zertifizierung für Scandora? Nein.</p>' },
+  { name: 'paid tier named for a genuinely paid feature', body: '<p>Pro and above add priority email support.</p>' },
+  { name: 'German paid tier named for a credit allowance', body: '<p>Ab Pro erhalten Sie eine größere Credit-Menge.</p>' },
+  {
+    name: 'search index and a paid tier in separate sentences',
+    body: '<p>Smart Search covers every document you scan. Pro and above add priority email support.</p>',
+  },
+  { name: 'search index described without any tier wording', body: '<p>The opt-in AI document search index stores derived text only.</p>' },
 ];
 
 for (const { name, body } of allowedCases) {

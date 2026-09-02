@@ -24,7 +24,7 @@ test('when all JSON-LD pages are registered it should exit 0 and cover every liv
 });
 
 test('when a page carries JSON-LD but is not registered it should fail loudly', () => {
-  const stray = join(websiteDir, '__drift_guard_test__.html');
+  const stray = join(websiteDir, 'drift-guard-fixture.html');
   writeFileSync(
     stray,
     '<html><head><script type="application/ld+json">' +
@@ -35,7 +35,7 @@ test('when a page carries JSON-LD but is not registered it should fail loudly', 
     const result = run();
     assert.equal(result.status, 1);
     assert.match(result.stdout, /1 unregistered/);
-    assert.match(result.stderr, /__drift_guard_test__\.html: carries a JSON-LD block but is not in the PAGES list/);
+    assert.match(result.stderr, /drift-guard-fixture\.html: carries a JSON-LD block but is not in the PAGES list/);
   } finally {
     rmSync(stray, { force: true });
   }
