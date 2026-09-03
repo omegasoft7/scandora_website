@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Delete Your Account | Scandora</title>
+    <meta name="description" content="Request the deletion of your Scandora account and associated data. You can also delete your account directly in the app under Settings.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://scandora.eu/delete-account">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scandora.eu/delete-account">
+    <meta property="og:title" content="Delete Your Account - Scandora">
+    <meta property="og:description" content="Request the deletion of your Scandora account and associated data.">
+    <meta property="og:site_name" content="Scandora">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Fonts & Styles (Inter self-hosted) -->
+    <link rel="preload" href="assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/inter-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/inter-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/fonts/inter.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container nav-container">
+                <a href="/" class="logo" aria-label="Scandora Home"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
+                <div class="nav-links" role="menubar">
+                    <a href="/#features" role="menuitem" data-i18n="nav.features">Features</a>
+                    <a href="/#how-it-works" role="menuitem" data-i18n="nav.howItWorks">How It Works</a>
+                    <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
+                    <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="legal-page" aria-labelledby="delete-title">
+            <div class="legal-container">
+                <a href="/" class="back-home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span data-lang="en">Back to Home</span><span data-lang="de" hidden>Zur Startseite</span>
+                </a>
+
+                <header class="legal-header">
+                    <span class="legal-badge" data-lang="en">Account</span><span class="legal-badge" data-lang="de" hidden>Konto</span>
+                    <h1 id="delete-title" class="legal-title"><span data-lang="en">Delete Your Account</span><span data-lang="de" hidden>Konto löschen</span></h1>
+                    <p class="legal-meta"><span data-lang="en">Last updated: <time datetime="2026-09-03">September 3, 2026</time></span><span data-lang="de" hidden>Zuletzt aktualisiert: <time datetime="2026-09-03">3. September 2026</time></span></p>
+                </header>
+
+                <article class="legal-content" data-lang="en">
+                    <div class="highlight-box">
+                        <p><strong>You have two ways to delete your Scandora account:</strong></p>
+                        <ol>
+                            <li><strong>In the app (fastest):</strong> open Settings &rarr; Delete Account. This removes your account immediately and is irreversible.</li>
+                            <li><strong>Using this form:</strong> fill it in and we will process your request within 30 days. Use this if you can no longer access the app.</li>
+                        </ol>
+                    </div>
+                    <p>When you delete your account, we permanently remove your personal data from our systems. This is irreversible. Content already exported to your own Trello or Google Drive remains under your control there. Subscription and billing records are kept for the statutory tax retention period under German law (&sect; 257 HGB / &sect; 147 AO) even after deletion. See our <a href="/privacy.html">Privacy Policy</a> for full details.</p>
+                </article>
+
+                <article class="legal-content" data-lang="de" hidden>
+                    <div class="highlight-box">
+                        <p><strong>Sie haben zwei Möglichkeiten, Ihr Scandora-Konto zu löschen:</strong></p>
+                        <ol>
+                            <li><strong>In der App (am schnellsten):</strong> öffnen Sie Einstellungen &rarr; Konto löschen. Dies entfernt Ihr Konto sofort und ist unwiderruflich.</li>
+                            <li><strong>Über dieses Formular:</strong> füllen Sie es aus und wir bearbeiten Ihre Anfrage innerhalb von 30 Tagen. Verwenden Sie dies, wenn Sie keinen Zugriff mehr auf die App haben.</li>
+                        </ol>
+                    </div>
+                    <p>Wenn Sie Ihr Konto löschen, entfernen wir Ihre personenbezogenen Daten dauerhaft aus unseren Systemen. Dies ist unwiderruflich. Inhalte, die Sie bereits in Ihr eigenes Trello oder Google Drive exportiert haben, bleiben dort unter Ihrer Kontrolle. Abonnement- und Abrechnungsunterlagen werden für die gesetzliche Aufbewahrungsfrist nach deutschem Recht (&sect; 257 HGB / &sect; 147 AO) auch nach der Löschung aufbewahrt. Siehe unsere <a href="/privacy.html">Datenschutzerklärung</a> für alle Details.</p>
+                </article>
+
+                <!-- Deletion request form — reuses the contact endpoint with a fixed subject -->
+                <form id="contact-form" action="https://userdata.scandora.eu/api/contact" method="POST" class="contact-form" style="margin-top:2rem;">
+                    <input type="hidden" name="subject" value="Account Deletion Request">
+                    <!-- Spam honeypot -->
+                    <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                    <div class="form-group">
+                        <label for="name" data-lang="en">Full Name</label>
+                        <label for="name" data-lang="de" hidden>Vollständiger Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe" autocomplete="name">
+                        <span class="input-focus"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" data-lang="en">Email Address (the one linked to your Scandora account)</label>
+                        <label for="email" data-lang="de" hidden>E-Mail-Adresse (die mit Ihrem Scandora-Konto verknüpfte)</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com" autocomplete="email">
+                        <span class="input-focus"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" data-lang="en">Confirm you want to delete your account (add any details that help us identify it)</label>
+                        <label for="message" data-lang="de" hidden>Bestätigen Sie, dass Sie Ihr Konto löschen möchten (fügen Sie Details hinzu, die uns bei der Identifizierung helfen)</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="I confirm that I want to delete my Scandora account."></textarea>
+                        <span class="input-focus"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span class="btn-text" data-lang="en">Submit Deletion Request</span>
+                        <span class="btn-text" data-lang="de" hidden>Löschanfrage senden</span>
+                        <span class="btn-loading">
+                            <svg class="spinner" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+                        </span>
+                    </button>
+                    <p class="form-privacy-note"><small>
+                        <span data-lang="en">We process the name, email address and message you submit only to handle your deletion request. Legal basis: Art. 6(1)(b)/(f) GDPR. See our <a href="/privacy.html">Privacy Policy</a>.</span>
+                        <span data-lang="de" hidden>Wir verarbeiten den von Ihnen übermittelten Namen, Ihre E-Mail-Adresse und Ihre Nachricht ausschließlich zur Bearbeitung Ihrer Löschanfrage. Rechtsgrundlage: Art. 6 Abs. 1 lit. b/f DSGVO. Siehe unsere <a href="/privacy.html">Datenschutzerklärung</a>.</span>
+                    </small></p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Success Message (hidden by default) -->
+        <div id="success-message" class="success-overlay" aria-hidden="true">
+            <div class="success-card">
+                <div class="success-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </div>
+                <h3 data-i18n="contact.successTitle">Request Sent!</h3>
+                <p data-lang="en">Thank you. We will process your account deletion request within 30 days and confirm by email.</p>
+                <p data-lang="de" hidden>Vielen Dank. Wir bearbeiten Ihre Kontolösch-Anfrage innerhalb von 30 Tagen und bestätigen per E-Mail.</p>
+                <button class="btn btn-primary" onclick="closeSuccessMessage()" data-lang="en">Got it</button>
+                <button class="btn btn-primary" onclick="closeSuccessMessage()" data-lang="de" hidden>Verstanden</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="logo"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
+                    <p data-i18n="footer.tagline">Intelligent document scanning for modern businesses.</p>
+                </div>
+                <nav class="footer-links" role="navigation" aria-label="Footer navigation">
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.product">Product</h4>
+                        <a href="/#features" data-i18n="nav.features">Features</a>
+                        <a href="/#pricing" data-i18n="nav.pricing">Pricing</a>
+                        <a href="/#download" data-i18n="nav.download">Download</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.legal">Legal</h4>
+                        <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
+                        <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.support">Support</h4>
+                        <a href="/help/" data-i18n="footer.help">Help Center</a>
+                        <a href="/contact.html" data-i18n="footer.contact">Contact Us</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p><small>&copy; 2026 Scandora. <span data-i18n="footer.rights">All rights reserved.</span></small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js" defer></script>
+    <script src="main.js" defer></script>
+</body>
+</html>
