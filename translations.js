@@ -16,24 +16,24 @@ const translations = {
         'hero.badge': 'Built in Germany · Privacy-first · GoBD record-keeping features',
         'hero.titleLine1': 'Scandora turns every document',
         'hero.titleLine2': 'into action',
-        'hero.description': 'Scandora is an AI document scanner for iPhone, iPad, Mac and Android. Scan with your phone or your real office scanner, let your own AI understand the document, and send it straight into your Trello and Google Drive. Built in Germany — privacy-first, with GoBD record-keeping features, and your documents never touch our servers.',
+        'hero.description': 'Scandora is an AI document scanner for iPhone, iPad, Mac and Android. Scan with your phone or your real office scanner, let the managed AI understand the document, and send it straight into your Trello and Google Drive. Built in Germany — privacy-first, with GoBD record-keeping features, and your documents never touch our servers.',
         'hero.getStarted': 'Get Started Free',
         'hero.seeHow': 'See How It Works',
         'hero.stat1': 'Phone or scanner',
         'hero.stat1sub': 'Scan however you work',
-        'hero.stat2': 'Your AI, your keys',
-        'hero.stat2sub': 'Bring your own API key',
+        'hero.stat2': 'AI that reads it',
+        'hero.stat2sub': 'Extraction without retyping',
         'hero.stat3': 'Built in Germany',
         'hero.stat3sub': 'Privacy-first by design',
 
         // Features
         'features.badge': 'What Makes Scandora Different',
         'features.title': 'Built for Action, Not Just Scanning',
-        'features.description': 'Bring your own AI, connect a real scanner, and turn every document into a task or file you can act on — with your data under your control.',
+        'features.description': 'AI reads every document, connect a real scanner, and turn each scan into a task or file you can act on — with your data under your control.',
         'features.scan.title': 'Phone or Real Scanner',
         'features.scan.desc': 'Scan with your phone camera or connect a real network scanner over eSCL/AirScan (such as Brother and Epson). Automatic edge detection and image enhancement on every page.',
-        'features.ai.title': 'Your AI, Your Keys',
-        'features.ai.desc': 'Use managed AI credits, or bring your own Google Gemini key. Either way, AI reads every document — pulling out dates, amounts, and suppliers so you skip manual entry.',
+        'features.ai.title': 'AI That Reads Every Document',
+        'features.ai.desc': 'Managed AI reads every scan and pulls out dates, amounts, and suppliers so you skip manual entry. Credits cover extraction, indexing, and AI chat — no key to manage.',
         'features.cloud.title': 'Straight Into Trello & Drive',
         'features.cloud.desc': 'Every scan can become a Trello card or a filed Google Drive document, connected to your own accounts. Your documents become actions, not just PDFs.',
         'features.search.title': 'Intelligent Search',
@@ -50,14 +50,14 @@ const translations = {
         'howItWorks.step1.title': 'Scan It',
         'howItWorks.step1.desc': 'Use your phone camera or a network scanner (eSCL/AirScan). Automatic edge detection keeps every page clean.',
         'howItWorks.step2.title': 'Your AI Understands It',
-        'howItWorks.step2.desc': 'Your own AI — with your Gemini key — reads the document, recognizes its type, and pulls out the key details. Nothing is stored on our servers.',
+        'howItWorks.step2.desc': 'Scandora\u2019s AI reads the document, recognizes its type, and pulls out the key details. Nothing is stored on our servers.',
         'howItWorks.step3.title': 'It Becomes an Action',
         'howItWorks.step3.desc': 'The result syncs straight into your own Trello and Google Drive — a card, a filed document, ready to act on. Built in Germany, privacy-first, with GoBD record-keeping features.',
 
         // Pricing
         'pricing.badge': 'Flexible Pricing',
         'pricing.title': 'Choose Your Perfect Plan',
-        'pricing.description': 'Start free, upgrade as you grow. Bring your own AI and cloud services for ultimate flexibility.',
+        'pricing.description': 'Start free, upgrade as you grow. Managed AI and cloud integrations on every plan.',
         'pricing.perMonth': '/month',
         'pricing.perYear': '/year',
         'pricing.billingMonthly': 'Monthly',
@@ -65,7 +65,7 @@ const translations = {
         'pricing.popular': 'Most Popular',
         'pricing.free.name': 'Free',
         'pricing.free.tagline': 'Get started',
-        'pricing.free.f1': 'Bring your own Google Gemini key (BYOAI)',
+        'pricing.free.f1': 'Managed AI extraction (10 credits/month)',
         'pricing.free.f2': 'Unlimited scans, unlimited pages',
         'pricing.free.f3': '10 AI credits/month (1 credit ≈ 5 pages; shared: extraction, indexing & AI chat)',
         'pricing.free.f4': 'Watermark-free exports',
@@ -89,10 +89,10 @@ const translations = {
         'pricing.business.f5': 'Dedicated support',
         'pricing.business.cta': 'Get Business',
         'pricing.business.save': 'Save 24%',
-        'pricing.byo': '💡 Bring your own AI (Google Gemini) and save on processing costs!',
-        'pricing.aiSplit.title': 'What runs on your AI, what runs on ours',
-        'pricing.aiSplit.ownKey': 'On your own Gemini key, billed to you by Google: analyzing the documents you scan.',
-        'pricing.aiSplit.scandoraAi': "On Scandora's AI and servers, and you cannot switch this to your key: document-chat answers, search indexing, retrieval and EU index storage. This work spends Scandora credits.",
+        'pricing.byo': '💡 Managed AI covers extraction, indexing, and AI chat — no API key to set up.',
+        'pricing.aiSplit.title': 'What the AI does for you',
+        'pricing.aiSplit.ownKey': 'AI reads each scan and pulls out dates, amounts, and suppliers — covered by your monthly credits.',
+        'pricing.aiSplit.scandoraAi': "Document-chat answers, search indexing, retrieval and EU index storage run on Scandora's AI and servers, and spend Scandora credits.",
         'pricing.priceNote': 'Prices are the final amounts charged via the App Store / Google Play (small-business operator — no separate VAT shown, § 19 UStG). Prices may vary by region and store.',
 
         // Download
@@ -183,8 +183,8 @@ const translations = {
         'faq.a3': 'Scandora is available on iOS, macOS, and Android. You can scan documents using your phone camera or connect professional scanners on desktop.',
         'faq.q4': 'Is my data secure with Scandora?',
         'faq.a4': "Privacy is built into Scandora's design. Your documents never touch our servers — they sync straight to the cloud services and AI provider you choose. If you opt in to AI document chat, an optional EU-resident search index (Falkenstein, Germany) stores derived text only — not your original files. Managed AI generation may be processed outside the EU (e.g. Google Gemini in the USA) under EU Standard Contractual Clauses and the EU–US Data Privacy Framework. You stay in control of your data.",
-        'faq.q5': 'Can I use my own AI provider?',
-        'faq.a5': 'Yes! Scandora supports Bring Your Own AI (BYOAI). You can connect your Google Gemini API key to process documents using your own AI accounts, giving you full control over costs and data processing.',
+        'faq.q5': 'Do I need my own API key to use the AI?',
+        'faq.a5': 'No. Scandora runs on managed AI — your monthly credits cover document extraction, indexing, and AI chat. You do not need to bring or manage your own API key.',
         'faq.q6': 'Is Scandora GDPR-compliant?',
         'faq.a6': "Scandora is built in Germany with GDPR (DSGVO) in mind. Your documents never touch our servers, the servers we do run are in the EU, and we don't embed third-party advertising trackers. For business use we provide an AVV / Data Processing Agreement (Art. 28 GDPR) you can read, download and sign.",
         'faq.q7': 'Do I need an internet connection to scan?',
@@ -204,24 +204,24 @@ const translations = {
         'hero.badge': 'In Deutschland entwickelt · Datenschutz zuerst · GoBD-Funktionen',
         'hero.titleLine1': 'Scandora — der Dokumentenscanner',
         'hero.titleLine2': 'für jede Aktion',
-        'hero.description': 'Scandora ist ein KI-Dokumentenscanner für iPhone, iPad, Mac und Android. Belege scannen mit dem Handy oder Ihrem echten Büroscanner — der Belegscanner, der jeden Beleg versteht. Ihre eigene KI liest das Dokument und sendet es direkt in Ihr Trello und Google Drive. In Deutschland entwickelt, Datenschutz zuerst, mit GoBD-Funktionen.',
+        'hero.description': 'Scandora ist ein KI-Dokumentenscanner für iPhone, iPad, Mac und Android. Belege scannen mit dem Handy oder Ihrem echten Büroscanner — der Belegscanner, der jeden Beleg versteht. Die verwaltete KI liest das Dokument und sendet es direkt in Ihr Trello und Google Drive. In Deutschland entwickelt, Datenschutz zuerst, mit GoBD-Funktionen.',
         'hero.getStarted': 'Kostenlos starten',
         'hero.seeHow': 'So funktioniert es',
         'hero.stat1': 'Handy oder Scanner',
         'hero.stat1sub': 'Scannen, wie Sie arbeiten',
-        'hero.stat2': 'Ihre KI, Ihre Schlüssel',
-        'hero.stat2sub': 'Eigenen API-Schlüssel nutzen',
+        'hero.stat2': 'KI liest es aus',
+        'hero.stat2sub': 'Extraktion ohne Abtippen',
         'hero.stat3': 'In Deutschland entwickelt',
         'hero.stat3sub': 'Datenschutz by design',
 
         // Features
         'features.badge': 'Was Scandora anders macht',
         'features.title': 'Gebaut für Aktion, nicht nur zum Scannen',
-        'features.description': 'Bringen Sie Ihre eigene KI mit, verbinden Sie einen echten Scanner und machen Sie aus jedem Dokument eine Aufgabe oder Datei, mit der Sie handeln können — Ihre Daten bleiben unter Ihrer Kontrolle.',
+        'features.description': 'KI liest jedes Dokument, verbinden Sie einen echten Scanner und machen Sie aus jedem Scan eine Aufgabe oder Datei, mit der Sie handeln können — Ihre Daten bleiben unter Ihrer Kontrolle.',
         'features.scan.title': 'Handy oder echter Scanner',
         'features.scan.desc': 'Scannen Sie mit der Handykamera oder verbinden Sie einen echten Netzwerkscanner per eSCL/AirScan (z. B. Brother und Epson). Automatische Kantenerkennung und Bildoptimierung auf jeder Seite.',
-        'features.ai.title': 'Ihre KI, Ihre Schlüssel',
-        'features.ai.desc': 'Nutzen Sie verwaltete KI-Credits oder bringen Sie Ihren eigenen Google-Gemini-Schlüssel mit. In beiden Fällen liest die KI jedes Dokument und extrahiert Datum, Beträge und Lieferant — ganz ohne manuelle Eingabe.',
+        'features.ai.title': 'KI liest jedes Dokument',
+        'features.ai.desc': 'Verwaltete KI liest jeden Scan und extrahiert Datum, Beträge und Lieferant — ganz ohne manuelle Eingabe. Credits decken Extraktion, Indexierung und KI-Chat — kein Schlüssel nötig.',
         'features.cloud.title': 'Direkt in Trello & Drive',
         'features.cloud.desc': 'Jeder Scan kann zu einer Trello-Karte oder einem abgelegten Google-Drive-Dokument werden, verbunden mit Ihren eigenen Konten. Ihre Dokumente werden zu Aktionen, nicht nur zu PDFs.',
         'features.search.title': 'Intelligente Suche',
@@ -238,14 +238,14 @@ const translations = {
         'howItWorks.step1.title': 'Scannen',
         'howItWorks.step1.desc': 'Nutzen Sie die Handykamera oder einen Netzwerkscanner (eSCL/AirScan). Die automatische Kantenerkennung hält jede Seite sauber.',
         'howItWorks.step2.title': 'Ihre KI versteht es',
-        'howItWorks.step2.desc': 'Ihre eigene KI — mit Ihrem Google-Gemini-Schlüssel — liest das Dokument, erkennt den Typ und holt die wichtigen Angaben heraus. Nichts wird auf unseren Servern gespeichert.',
+        'howItWorks.step2.desc': 'Scandoras KI liest das Dokument, erkennt den Typ und holt die wichtigen Angaben heraus. Nichts wird auf unseren Servern gespeichert.',
         'howItWorks.step3.title': 'Es wird zur Aktion',
         'howItWorks.step3.desc': 'Das Ergebnis landet direkt in Ihrem eigenen Trello und Google Drive — eine Karte, ein abgelegtes Dokument, bereit zum Handeln. In Deutschland entwickelt, Datenschutz zuerst, mit GoBD-Funktionen.',
 
         // Pricing
         'pricing.badge': 'Flexible Preise',
         'pricing.title': 'Wählen Sie Ihren perfekten Plan',
-        'pricing.description': 'Starten Sie kostenlos, upgraden Sie bei Bedarf. Bringen Sie Ihre eigene KI und Cloud-Dienste für maximale Flexibilität.',
+        'pricing.description': 'Starten Sie kostenlos, upgraden Sie bei Bedarf. Verwaltete KI und Cloud-Integrationen in jedem Tarif.',
         'pricing.perMonth': '/Monat',
         'pricing.perYear': '/Jahr',
         'pricing.billingMonthly': 'Monatlich',
@@ -253,7 +253,7 @@ const translations = {
         'pricing.popular': 'Beliebteste',
         'pricing.free.name': 'Kostenlos',
         'pricing.free.tagline': 'Zum Einstieg',
-        'pricing.free.f1': 'Eigener Google-Gemini-Schlüssel (BYOAI)',
+        'pricing.free.f1': 'Verwaltete KI-Extraktion (10 Credits/Monat)',
         'pricing.free.f2': 'Unbegrenzte Scans, unbegrenzte Seiten',
         'pricing.free.f3': '10 KI-Credits/Monat (1 Credit ≈ 5 Seiten; gemeinsam: Extraktion, Indexierung & KI-Chat)',
         'pricing.free.f4': 'Exporte ohne Wasserzeichen',
@@ -277,10 +277,10 @@ const translations = {
         'pricing.business.f5': 'Dedizierter Support',
         'pricing.business.cta': 'Business holen',
         'pricing.business.save': '24 % sparen',
-        'pricing.byo': '💡 Bringen Sie Ihre eigene KI (Google Gemini) und sparen Sie Verarbeitungskosten!',
-        'pricing.aiSplit.title': 'Was auf Ihrer KI läuft und was auf unserer',
-        'pricing.aiSplit.ownKey': 'Auf Ihrem eigenen Gemini-Schlüssel, abgerechnet von Google: die Analyse der Dokumente, die Sie scannen.',
-        'pricing.aiSplit.scandoraAi': 'Auf Scandoras KI und Servern, und das lässt sich nicht auf Ihren Schlüssel umstellen: Antworten im Dokument-Chat, Suchindex, Retrieval und EU-Index-Speicher. Diese Arbeit verbraucht Scandora-Credits.',
+        'pricing.byo': '💡 Verwaltete KI deckt Extraktion, Indexierung und KI-Chat — kein API-Schlüssel nötig.',
+        'pricing.aiSplit.title': 'Was die KI für Sie tut',
+        'pricing.aiSplit.ownKey': 'KI liest jeden Scan und extrahiert Datum, Beträge und Lieferant — abgedeckt durch Ihre monatlichen Credits.',
+        'pricing.aiSplit.scandoraAi': 'Antworten im Dokument-Chat, Suchindex, Retrieval und EU-Index-Speicher laufen auf Scandoras KI und Servern und verbrauchen Scandora-Credits.',
         'pricing.priceNote': 'Die Preise sind die über App Store / Google Play berechneten Endpreise (Kleinunternehmer – keine gesonderte MwSt., § 19 UStG). Preise können je nach Region und Store variieren.',
 
         // Download
@@ -371,8 +371,8 @@ const translations = {
         'faq.a3': 'Scandora ist für iOS, macOS und Android verfügbar. Sie können Dokumente mit Ihrer Handykamera scannen oder auf dem Desktop professionelle Scanner verbinden.',
         'faq.q4': 'Sind meine Daten bei Scandora sicher?',
         'faq.a4': 'Datenschutz ist im Design von Scandora verankert. Ihre Dokumente landen nicht auf unseren Servern – sie werden direkt mit den von Ihnen gewählten Cloud-Diensten und Ihrem KI-Anbieter synchronisiert. Mit Ihrer Einwilligung können Sie den KI-Dokumenten-Chat nutzen: ein optionaler, in der EU (Falkenstein, Deutschland) gehosteter Suchindex speichert dann nur abgeleiteten Text – nicht Ihre Originaldateien. Die verwaltete KI-Generierung kann außerhalb der EU verarbeitet werden (z. B. Google Gemini in den USA), auf Basis der EU-Standardvertragsklauseln und des EU–US Data Privacy Framework. Sie behalten die Kontrolle über Ihre Daten.',
-        'faq.q5': 'Kann ich meinen eigenen KI-Anbieter nutzen?',
-        'faq.a5': 'Ja! Scandora unterstützt Bring Your Own AI (BYOAI). Sie können Ihren Google-Gemini-API-Schlüssel verbinden, um Dokumente mit Ihren eigenen KI-Konten zu verarbeiten — für volle Kontrolle über Kosten und Datenverarbeitung.',
+        'faq.q5': 'Brauche ich einen eigenen API-Schlüssel für die KI?',
+        'faq.a5': 'Nein. Scandora läuft auf verwalteter KI — Ihre monatlichen Credits decken Dokumentextraktion, Indexierung und KI-Chat. Sie brauchen keinen eigenen API-Schlüssel.',
         'faq.q6': 'Ist Scandora DSGVO-konform?',
         'faq.a6': 'Scandora wird in Deutschland mit Blick auf die DSGVO entwickelt. Ihre Dokumente landen nicht auf unseren Servern, die Server, die wir betreiben, stehen in der EU und wir binden keine Werbe-Tracker von Dritten ein. Für die geschäftliche Nutzung stellen wir einen AVV (Art. 28 DSGVO) bereit, den Sie lesen, herunterladen und unterzeichnen können.',
         'faq.q7': 'Brauche ich eine Internetverbindung zum Scannen?',
@@ -390,7 +390,7 @@ const pageMeta = {
     "/": {
         "en": {
             "title": "Scandora — AI Document Scanner for iOS, macOS & Android",
-            "description": "AI document scanner: scan with your phone or a real network scanner, let your own AI extract the data, and send it to Trello & Google Drive. Built in Germany."
+            "description": "AI document scanner: scan with your phone or a real network scanner, let managed AI extract the data, and send it to Trello & Google Drive. Built in Germany."
         },
         "de": {
             "title": "Scandora — Dokumentenscanner mit eigener KI",
@@ -400,21 +400,21 @@ const pageMeta = {
     "/vs-camscanner": {
         "en": {
             "title": "Scandora vs CamScanner: an honest comparison | Scandora",
-            "description": "Scandora vs CamScanner on verifiable facts: where each is built, data residency, bring-your-own-AI, network-scanner support and DATEV export."
+            "description": "Scandora vs CamScanner on verifiable facts: where each is built, data residency, managed AI, network-scanner support and DATEV export."
         },
         "de": {
             "title": "Scandora vs. CamScanner: der ehrliche Vergleich | Scandora",
-            "description": "Scandora vs. CamScanner nach belegbaren Fakten: Herkunft, Datenstandort, eigene KI (BYOAI), Netzwerkscanner-Support und DATEV-Export."
+            "description": "Scandora vs. CamScanner nach belegbaren Fakten: Herkunft, Datenstandort, verwaltete KI, Netzwerkscanner-Support und DATEV-Export."
         }
     },
     "/vs-fileee": {
         "en": {
             "title": "Scandora vs Fileee: an honest comparison | Scandora",
-            "description": "Scandora vs Fileee on verifiable features: where it's built, bring-your-own-AI, document storage, network-scanner support and DATEV export."
+            "description": "Scandora vs Fileee on verifiable features: where it's built, managed AI, document storage, network-scanner support and DATEV export."
         },
         "de": {
             "title": "Scandora vs. Fileee: der ehrliche Vergleich | Scandora",
-            "description": "Scandora vs. Fileee nach belegbaren Merkmalen: Herkunft, eigene KI (BYOAI), Dokumentenablage, Netzwerkscanner-Support und DATEV-Export."
+            "description": "Scandora vs. Fileee nach belegbaren Merkmalen: Herkunft, verwaltete KI, Dokumentenablage, Netzwerkscanner-Support und DATEV-Export."
         }
     },
     "/contact": {
@@ -510,11 +510,11 @@ const pageMeta = {
     "/blog/dsgvo-sichere-camscanner-alternative": {
         "en": {
             "title": "A GDPR-safe CamScanner alternative | Scandora",
-            "description": "A GDPR-safe alternative to CamScanner and Microsoft Lens: built in Germany, documents stay on-device, EU hosting, and bring your own AI."
+            "description": "A GDPR-safe alternative to CamScanner and Microsoft Lens: built in Germany, documents stay on-device, EU hosting, and managed AI."
         },
         "de": {
             "title": "DSGVO-sichere CamScanner-Alternative | Scandora",
-            "description": "DSGVO-sichere Alternative zu CamScanner und Microsoft Lens: in Deutschland entwickelt, Dokumente bleiben auf dem Gerät, EU-Hosting und eigene KI."
+            "description": "DSGVO-sichere Alternative zu CamScanner und Microsoft Lens: in Deutschland entwickelt, Dokumente bleiben auf dem Gerät, EU-Hosting und verwaltete KI."
         }
     },
     "/blog/gobd-konform-scannen": {
@@ -550,21 +550,21 @@ const pageMeta = {
     "/blog/scandora-vs-fileee": {
         "en": {
             "title": "Scandora vs Fileee: the honest comparison | Scandora",
-            "description": "Scandora vs Fileee in detail: your own storage vs a cloud archive, bring-your-own-AI, eSCL network scanners, and DATEV/GoBD for German SMBs."
+            "description": "Scandora vs Fileee in detail: your own storage vs a cloud archive, managed AI, eSCL network scanners, and DATEV/GoBD for German SMBs."
         },
         "de": {
             "title": "Scandora vs. Fileee: der ehrliche Vergleich | Scandora",
-            "description": "Scandora vs. Fileee im Detail: eigene Ablage statt Cloud-Archiv, eigene KI (BYOAI), Netzwerkscanner per eSCL und DATEV/GoBD für deutsche KMU."
+            "description": "Scandora vs. Fileee im Detail: eigene Ablage statt Cloud-Archiv, verwaltete KI, Netzwerkscanner per eSCL und DATEV/GoBD für deutsche KMU."
         }
     },
     "/help/": {
         "en": {
             "title": "Help Center | Scandora",
-            "description": "Scandora Help Center: set up your own AI, managed AI credits, DATEV/lexoffice/sevDesk export and eSCL scanners, and understand our GoBD scope."
+            "description": "Scandora Help Center: managed AI credits, DATEV/lexoffice/sevDesk export and eSCL scanners, and understand our GoBD scope."
         },
         "de": {
             "title": "Hilfe-Center | Scandora",
-            "description": "Scandora Hilfe-Center: eigene KI einrichten, verwaltete KI-Credits, DATEV-/lexoffice-/sevDesk-Export, eSCL-Scanner und unser ehrlicher GoBD-Umfang."
+            "description": "Scandora Hilfe-Center: verwaltete KI-Credits, DATEV-/lexoffice-/sevDesk-Export, eSCL-Scanner und unser ehrlicher GoBD-Umfang."
         }
     },
     "/help/byoai": {
