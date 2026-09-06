@@ -122,7 +122,7 @@ function checkSitePrices() {
   const priceNote = pricingSection.match(/class="pricing-note"[^>]*data-i18n="pricing\.priceNote"[\s\S]*?<\/p>/);
   if (!priceNote) fail('index.html #pricing has no data-i18n="pricing.priceNote" note');
   if (FORBIDDEN_VAT_WORDING.test(pricingSection)) {
-    fail('index.html #pricing contains VAT-inclusive wording (forbidden under § 19 UStG — see docs/CLAIMS_POLICY.md)');
+    fail('index.html #pricing contains VAT-inclusive wording (forbidden under § 19 UStG — see CONTRIBUTING.md)');
   }
 }
 

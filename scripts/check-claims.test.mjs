@@ -6,7 +6,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
-import { writeFileSync, rmSync } from 'node:fs';
+import { readFileSync, writeFileSync, rmSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -16,14 +16,7 @@ const websiteDir = join(scriptDir, '..');
 const repoRoot = join(websiteDir, '..');
 
 // One swept file per internal-doc root, mirroring INTERNAL_ANCHORS in the guard.
-const INTERNAL_ANCHORS = [
-  'legal/data-flow-inventory.md',
-  'website/legal/SUBPROCESSORS.md',
-  'docs/support/CANNED_ANSWERS.md',
-  'business/PRODUCT_MAP.md',
-  'MONETIZATION_COSTS.md',
-  'LEGAL_REVIEW.md',
-];
+const INTERNAL_ANCHORS = ['docs/BYOM_VS_MANAGED_MODEL.md', 'MONETIZATION_COSTS.md'];
 
 const run = () => spawnSync(process.execPath, [guard], { encoding: 'utf8' });
 
@@ -53,18 +46,18 @@ function withPlantedDocIn(relDir, body, fn) {
   }
 }
 
-const withPlantedDoc = (body, fn) => withPlantedDocIn('website/legal', body, fn);
+const withPlantedDoc = (body, fn) => withPlantedDocIn('docs', body, fn);
 
 test('on the current clean tree it exits 0 and confirms the positive anchor', () => {
   const result = run();
   assert.equal(result.status, 0, result.stderr);
   assert.match(result.stdout, /anchor: "Built in Germany" found in website\/translations\.js/);
-  assert.match(result.stdout, /anchor: website\/legal\/SUBPROCESSORS\.md is in the internal-doc sweep/);
+  assert.match(result.stdout, /anchor: docs\/BYOM_VS_MANAGED_MODEL\.md is in the internal-doc sweep/);
   assert.match(result.stdout, /internal docs/);
   assert.match(result.stdout, /No unbacked marketing claims found/);
 });
 
-test('it reaches every internal-doc root, not only legal/ and docs/support/', () => {
+test('it reaches every internal-doc root, the root-level file included', () => {
   const result = run();
   assert.equal(result.status, 0, result.stderr);
   for (const anchor of INTERNAL_ANCHORS) {
@@ -75,17 +68,29 @@ test('it reaches every internal-doc root, not only legal/ and docs/support/', ()
   }
 });
 
-test('it does not flag the claims policy itself for quoting the banned phrasings', () => {
-  const result = run();
-  assert.equal(result.status, 0, result.stderr);
-  assert.doesNotMatch(result.stderr, /CLAIMS_POLICY\.md/);
+// The anchors are the guard's own tripwire: a dropped root or renamed doc must fail loudly
+// instead of passing quietly on a smaller tree. Proven on a copy whose anchor list names a
+// file that is not there, so the real guard's list stays untouched.
+test('it fails loudly when an internal-doc anchor is not scanned', () => {
+  const source = readFileSync(guard, 'utf8');
+  const marker = 'const INTERNAL_ANCHORS = [';
+  assert.equal(source.split(marker).length - 1, 1, 'anchor list not found in the guard source');
+  const probe = join(scriptDir, '__claims_guard_anchor_probe__.mjs');
+  writeFileSync(probe, source.replace(marker, `${marker}'docs/__no_such_anchor__.md', `));
+  try {
+    const result = spawnSync(process.execPath, [probe], { encoding: 'utf8' });
+    assert.equal(result.status, 1, result.stdout);
+    assert.match(result.stderr, /anchor check failed: docs\/__no_such_anchor__\.md not scanned/);
+  } finally {
+    rmSync(probe, { force: true });
+  }
 });
 
 test('it sweeps the internal docs, not only the website', () => {
   const result = run();
   const scanned = /(\d+) of them internal docs/.exec(result.stdout);
   assert.ok(scanned, result.stdout);
-  assert.ok(Number(scanned[1]) >= 8, `expected the legal/support docs in the sweep, got ${scanned[1]}`);
+  assert.ok(Number(scanned[1]) >= 8, `expected the docs/ tree in the sweep, got ${scanned[1]}`);
 });
 
 // Each forbidden pattern, planted as visible copy, must fail with the file + a clear label.
@@ -247,8 +252,8 @@ for (const { name, body } of allowedCases) {
   });
 }
 
-// The internal docs (legal/, website/legal/, docs/support/) carry the same two AI-index facts,
-// so a claim fixed on the site cannot be left standing in a register or a canned answer.
+// The internal docs under docs/ carry the same two AI-index facts, so a claim fixed on the
+// site cannot be left standing in a plan table or a runbook.
 const internalForbiddenCases = [
   {
     name: 'paid-tier gate on the AI search index',
@@ -291,15 +296,15 @@ for (const { name, body, label } of internalForbiddenCases) {
   test(`it fails when a ${name} is planted in an internal doc`, () => {
     withPlantedDoc(body, (result) => {
       assert.equal(result.status, 1, `expected non-zero exit for planted ${name}`);
-      assert.match(result.stderr, /legal\/__claims_guard_test__\.md/);
+      assert.match(result.stderr, /docs\/__claims_guard_test__\.md/);
       assert.match(result.stderr, label);
     });
   });
 }
 
-// The widened roots are only guarded if the rules actually run there, not merely if the files
-// are counted — and the policy-doc carve-out must not spill over to its neighbours in docs/.
-for (const relDir of ['business', 'docs', 'docs/support']) {
+// The swept root is only guarded if the rules actually run there, not merely if the files are
+// counted — subdirectories of docs/ included.
+for (const relDir of ['docs', 'docs/ops', 'docs/deployment']) {
   test(`it fails when a paid-tier gate is planted in ${relDir}/`, () => {
     withPlantedDocIn(relDir, '- The AI document search index is Pro / Business only.', (result) => {
       assert.equal(result.status, 1, `expected non-zero exit for a gate planted in ${relDir}/`);
@@ -309,12 +314,12 @@ for (const relDir of ['business', 'docs', 'docs/support']) {
   });
 }
 
-// The hype bans stay scoped to marketing copy: legal/ holds claim-review docs that quote the
-// banned phrases in order to forbid them, and those must not fail the guard.
+// The hype bans stay scoped to marketing copy: a doc that quotes the banned phrases in order
+// to forbid them must not fail the guard.
 const internalAllowedCases = [
   {
     name: 'hype phrases quoted by a claims-review doc',
-    body: 'Never write "99% accuracy", "guaranteed" or "instant" results — see docs/CLAIMS_POLICY.md.',
+    body: 'Never write "99% accuracy", "guaranteed" or "instant" results — see CONTRIBUTING.md.',
   },
   {
     name: 'Frankfurt named for the Vertex AI region, not the index',

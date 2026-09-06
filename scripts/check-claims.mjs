@@ -2,10 +2,10 @@
 // Claims guard for the website + app-store metadata — the public-copy counterpart to the
 // Dart in-app guard (flutter_app/packages/scandora_localization/test/unit/claims_policy_test.dart).
 //
-// docs/CLAIMS_POLICY.md applies to every public surface, but until now only the in-app
-// strings were auto-checked. This script closes the gap: it scans the visible website copy
-// and the fastlane store listings for the same unverifiable marketing claims and fails if
-// one appears.
+// CONTRIBUTING.md "Public-facing copy: claims need a source" applies to every public
+// surface, but until now only the in-app strings were auto-checked. This script closes the
+// gap: it scans the visible website copy and the fastlane store listings for the same
+// unverifiable marketing claims and fails if one appears.
 //
 // Public surfaces (every rule applies):
 //   - every website/**/*.html: visible text (<script>/<style>/comments/tags stripped) plus the
@@ -14,13 +14,11 @@
 //   - flutter_app/{android,ios,macos}/fastlane/metadata/**/*.txt (store listings)
 //
 // Internal doc surfaces (only the AI-index facts below apply — the hype bans are scoped to
-// marketing copy by docs/CLAIMS_POLICY.md, and legal/ holds two docs that quote the banned
-// phrases on purpose): every *.md under legal/, website/legal/, docs/ and business/, plus the
-// root-level MONETIZATION_COSTS.md and LEGAL_REVIEW.md. These carry the same claims to
-// customers and to auditors, so a tier gate or a wrong index location cannot be fixed on the
-// site and left behind here (Trello #537).
+// marketing copy by CONTRIBUTING.md): every *.md under docs/, plus the root-level
+// MONETIZATION_COSTS.md. These carry the same claims to customers and to auditors, so a tier
+// gate or a wrong index location cannot be fixed on the site and left behind here (Trello #537).
 //
-// Four carve-outs keep the guard honest without flagging sanctioned copy:
+// Three carve-outs keep the guard honest without flagging sanctioned copy:
 //   - NEGATION-AWARE GoBD claims: "GoBD-certified"/"GoBD-Siegel"/… only violate when asserted
 //     as a positive claim. The shipped disclaimers ("nicht GoBD-zertifiziert", "kein
 //     GoBD-Siegel — ein solches gibt es nicht") negate the claim and are allowed.
@@ -31,8 +29,6 @@
 //   - The index-location rule only fires when the feature and "Frankfurt" sit within
 //     INDEX_LOCATION_WINDOW characters of each other, so naming Frankfurt for what really is
 //     there — Vertex AI / Firestore `europe-west3` — in its own clause stays allowed.
-//   - POLICY_DOCS: docs/CLAIMS_POLICY.md spells out every banned phrasing in order to forbid it,
-//     so the AI-index rules skip it exactly as the hype bans skip legal/'s claim-review docs.
 //
 // Usage:  node website/scripts/check-claims.mjs
 // Exit code 0 = no unbacked claims found, 1 = at least one violation (or a wrong-directory run).
@@ -51,9 +47,9 @@ const FASTLANE_METADATA = [
 ];
 
 // Repo docs that repeat the same customer-facing claims outside the website.
-const INTERNAL_DOC_DIRS = ['legal', 'website/legal', 'docs', 'business'];
+const INTERNAL_DOC_DIRS = ['docs'];
 // The same, for claim-carrying docs that sit at the repo root instead of in a swept directory.
-const INTERNAL_DOC_FILES = ['MONETIZATION_COSTS.md', 'LEGAL_REVIEW.md'];
+const INTERNAL_DOC_FILES = ['MONETIZATION_COSTS.md'];
 
 // A known file with known copy — proves the scan hit the real tree and did not silently
 // "pass" on an empty/wrong directory (mirrors the Dart guard's positive anchor).
@@ -62,14 +58,7 @@ const ANCHOR_TEXT = 'Built in Germany';
 
 // The same positive anchors for the internal-doc sweep — one per swept root, so a renamed
 // directory or a dropped root file fails loudly instead of silently leaving the scan.
-const INTERNAL_ANCHORS = [
-  'legal/data-flow-inventory.md',
-  'website/legal/SUBPROCESSORS.md',
-  'docs/support/CANNED_ANSWERS.md',
-  'business/PRODUCT_MAP.md',
-  'MONETIZATION_COSTS.md',
-  'LEGAL_REVIEW.md',
-];
+const INTERNAL_ANCHORS = ['docs/BYOM_VS_MANAGED_MODEL.md', 'MONETIZATION_COSTS.md'];
 
 // German + English negations that turn a GoBD claim into an honest disclaimer.
 const NEGATION = /\b(kein\w*|nein|nicht|ohne|no|not|never|without)\b/i;
@@ -79,10 +68,6 @@ const NEGATION_WINDOW = 80;
 // The opt-in AI search index / document chat, and wording that restricts it to a paid tier.
 const INDEX_FEATURE = String.raw`(?:AI )?document (?:search|chat|index)|search index|smart search|cited answer|Dokument(?:en)?suche|Dokument(?:en)?-?(?:Suchindex|Index|Chat)|Suchindex|belegte Antwort`;
 const PAID_TIER_GATE = String.raw`Pro and above|Pro or above|Pro und höher|\bab Pro\b|requires Pro|Pro plan required|Pro\+|\bonly Pro\b|paid \(Pro|\bnur ab Pro\b|Pro\s*(?:/|&|and|und)\s*Business`;
-
-// docs/CLAIMS_POLICY.md quotes every phrasing below in order to forbid it, so the AI-index rules
-// skip it the same way the hype bans skip legal/'s claim-review docs.
-const POLICY_DOCS = ['docs/CLAIMS_POLICY.md'];
 
 // A bare "paid"/"kostenpflichtig" next to the feature gates it just as effectively as a tier name.
 const PAID_QUALIFIER = String.raw`\bpaid\b|kostenpflichtig\w*`;
@@ -274,9 +259,8 @@ for (const { path, kind, internal } of files) {
   if (path === ANCHOR_FILE && raw.includes(ANCHOR_TEXT)) anchorHit = true;
   if (INTERNAL_ANCHORS.includes(relPosix)) internalAnchorsHit.add(relPosix);
 
-  const isPolicyDoc = POLICY_DOCS.includes(relPosix);
   for (const { pattern, label, negatable, appliesToDocs } of forbidden) {
-    if (internal && (!appliesToDocs || isPolicyDoc)) continue;
+    if (internal && !appliesToDocs) continue;
     pattern.lastIndex = 0;
     for (const match of text.matchAll(pattern)) {
       const hit = match[0];
@@ -320,7 +304,7 @@ if (!anchorHit) {
 console.log(`✓ anchor: "${ANCHOR_TEXT}" found in ${relative(repoRoot, ANCHOR_FILE)}`);
 
 if (violations.length) {
-  console.error(`\n✗ ${violations.length} unbacked claim(s) found (see docs/CLAIMS_POLICY.md):`);
+  console.error(`\n✗ ${violations.length} unbacked claim(s) found (see CONTRIBUTING.md "claims need a source"):`);
   for (const v of violations) {
     console.error(`  - ${v.rel}: ${v.label} — matched "${v.hit}"\n      ${v.context}`);
   }

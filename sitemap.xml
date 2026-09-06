@@ -233,16 +233,6 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- Help: Bring your own AI -->
-  <url>
-    <loc>https://scandora.eu/help/byoai</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/help/byoai"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/byoai?lang=de"/>
-    <lastmod>2026-07-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
   <!-- Help: Managed AI & credits -->
   <url>
     <loc>https://scandora.eu/help/managed-ai</loc>

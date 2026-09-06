@@ -16,7 +16,7 @@ const translations = {
         'hero.badge': 'Built in Germany · Privacy-first · GoBD record-keeping features',
         'hero.titleLine1': 'Scandora turns every document',
         'hero.titleLine2': 'into action',
-        'hero.description': 'Scandora is an AI document scanner for iPhone, iPad, Mac and Android. Scan with your phone or your real office scanner, let the managed AI understand the document, and send it straight into your Trello and Google Drive. Built in Germany — privacy-first, with GoBD record-keeping features, and your documents never touch our servers.',
+        'hero.description': 'Scandora is an AI document scanner for iPhone, iPad, Mac and Android. Scan with your phone or your real office scanner, let the managed AI understand the document, and send it straight into your Trello and Google Drive. Built in Germany — privacy-first, with GoBD record-keeping features, and your original scans stay on your device and in the storage you choose.',
         'hero.getStarted': 'Get Started Free',
         'hero.seeHow': 'See How It Works',
         'hero.stat1': 'Phone or scanner',
@@ -46,7 +46,7 @@ const translations = {
         // How It Works
         'howItWorks.badge': 'From Scan to Action',
         'howItWorks.title': 'From Paper to Action in Three Steps',
-        'howItWorks.description': 'Scan it, let your AI understand it, send it into your own tools. Your documents never touch our servers.',
+        'howItWorks.description': 'Scan it, let your AI understand it, send it into your own tools. Your original scans stay on your device and in the storage you choose.',
         'howItWorks.step1.title': 'Scan It',
         'howItWorks.step1.desc': 'Use your phone camera or a network scanner (eSCL/AirScan). Automatic edge detection keeps every page clean.',
         'howItWorks.step2.title': 'Your AI Understands It',
@@ -182,11 +182,11 @@ const translations = {
         'faq.q3': 'Which platforms does Scandora support?',
         'faq.a3': 'Scandora is available on iOS, macOS, and Android. You can scan documents using your phone camera or connect professional scanners on desktop.',
         'faq.q4': 'Is my data secure with Scandora?',
-        'faq.a4': "Privacy is built into Scandora's design. Your documents never touch our servers — they sync straight to the cloud services and AI provider you choose. If you opt in to AI document chat, an optional EU-resident search index (Falkenstein, Germany) stores derived text only — not your original files. Managed AI generation may be processed outside the EU (e.g. Google Gemini in the USA) under EU Standard Contractual Clauses and the EU–US Data Privacy Framework. You stay in control of your data.",
+        'faq.a4': "Privacy is built into Scandora's design. Your original scans stay on your device and go only to the cloud services and AI provider you choose. So your history syncs across your devices, we store a low-resolution preview and the extracted text on our EU servers — never your original files. If you opt in to AI document chat, an optional EU-resident search index (Falkenstein, Germany) stores derived text only — not your original files. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. If you bring your own AI key, your device calls Google's global Gemini API directly, so that processing happens outside the EU, including in the US. You stay in control of your data.",
         'faq.q5': 'Do I need my own API key to use the AI?',
         'faq.a5': 'No. Scandora runs on managed AI — your monthly credits cover document extraction, indexing, and AI chat. You do not need to bring or manage your own API key.',
         'faq.q6': 'Is Scandora GDPR-compliant?',
-        'faq.a6': "Scandora is built in Germany with GDPR (DSGVO) in mind. Your documents never touch our servers, the servers we do run are in the EU, and we don't embed third-party advertising trackers. For business use we provide an AVV / Data Processing Agreement (Art. 28 GDPR) you can read, download and sign.",
+        'faq.a6': "Scandora is built in Germany with GDPR (DSGVO) in mind. Your original scans stay on your device and in the storage you choose, the servers we do run are in the EU, and we don't embed third-party advertising trackers. For business use we provide an AVV / Data Processing Agreement (Art. 28 GDPR) you can read, download and sign.",
         'faq.q7': 'Do I need an internet connection to scan?',
         'faq.a7': 'No. Scanning and edge detection both work offline. You only need a connection when you sync a document to a cloud service like Trello or Google Drive, or when your chosen AI provider processes a scan.',
         'faq.q8': 'Can Scandora export to DATEV for my tax advisor?',
@@ -234,7 +234,7 @@ const translations = {
         // How It Works
         'howItWorks.badge': 'Vom Scan zur Aktion',
         'howItWorks.title': 'Vom Papier zur Aktion in drei Schritten',
-        'howItWorks.description': 'Scannen, von Ihrer KI verstehen lassen, in Ihre eigenen Tools senden. Ihre Dokumente landen nie auf unseren Servern.',
+        'howItWorks.description': 'Scannen, von Ihrer KI verstehen lassen, in Ihre eigenen Tools senden. Ihre Original-Scans bleiben auf Ihrem Gerät und im von Ihnen gewählten Speicher.',
         'howItWorks.step1.title': 'Scannen',
         'howItWorks.step1.desc': 'Nutzen Sie die Handykamera oder einen Netzwerkscanner (eSCL/AirScan). Die automatische Kantenerkennung hält jede Seite sauber.',
         'howItWorks.step2.title': 'Ihre KI versteht es',
@@ -370,11 +370,11 @@ const translations = {
         'faq.q3': 'Welche Plattformen unterstützt Scandora?',
         'faq.a3': 'Scandora ist für iOS, macOS und Android verfügbar. Sie können Dokumente mit Ihrer Handykamera scannen oder auf dem Desktop professionelle Scanner verbinden.',
         'faq.q4': 'Sind meine Daten bei Scandora sicher?',
-        'faq.a4': 'Datenschutz ist im Design von Scandora verankert. Ihre Dokumente landen nicht auf unseren Servern – sie werden direkt mit den von Ihnen gewählten Cloud-Diensten und Ihrem KI-Anbieter synchronisiert. Mit Ihrer Einwilligung können Sie den KI-Dokumenten-Chat nutzen: ein optionaler, in der EU (Falkenstein, Deutschland) gehosteter Suchindex speichert dann nur abgeleiteten Text – nicht Ihre Originaldateien. Die verwaltete KI-Generierung kann außerhalb der EU verarbeitet werden (z. B. Google Gemini in den USA), auf Basis der EU-Standardvertragsklauseln und des EU–US Data Privacy Framework. Sie behalten die Kontrolle über Ihre Daten.',
+        'faq.a4': 'Datenschutz ist im Design von Scandora verankert. Ihre Original-Scans bleiben auf Ihrem Gerät und gehen nur an die von Ihnen gewählten Cloud-Dienste und Ihren KI-Anbieter. Damit Ihr Verlauf geräteübergreifend synchronisiert, speichern wir eine Vorschau in niedriger Auflösung und den extrahierten Text auf unseren EU-Servern — niemals Ihre Originaldateien. Mit Ihrer Einwilligung können Sie den KI-Dokumenten-Chat nutzen: ein optionaler, in der EU (Falkenstein, Deutschland) gehosteter Suchindex speichert dann nur abgeleiteten Text – nicht Ihre Originaldateien. Die verwaltete KI-Generierung wird in der EU verarbeitet — Google Gemini auf Vertex AI in Frankfurt, Deutschland. Wenn Sie Ihren eigenen KI-Schlüssel nutzen, ruft Ihr Gerät Googles globale Gemini-API direkt auf; diese Verarbeitung findet außerhalb der EU statt, auch in den USA. Sie behalten die Kontrolle über Ihre Daten.',
         'faq.q5': 'Brauche ich einen eigenen API-Schlüssel für die KI?',
         'faq.a5': 'Nein. Scandora läuft auf verwalteter KI — Ihre monatlichen Credits decken Dokumentextraktion, Indexierung und KI-Chat. Sie brauchen keinen eigenen API-Schlüssel.',
         'faq.q6': 'Ist Scandora DSGVO-konform?',
-        'faq.a6': 'Scandora wird in Deutschland mit Blick auf die DSGVO entwickelt. Ihre Dokumente landen nicht auf unseren Servern, die Server, die wir betreiben, stehen in der EU und wir binden keine Werbe-Tracker von Dritten ein. Für die geschäftliche Nutzung stellen wir einen AVV (Art. 28 DSGVO) bereit, den Sie lesen, herunterladen und unterzeichnen können.',
+        'faq.a6': 'Scandora wird in Deutschland mit Blick auf die DSGVO entwickelt. Ihre Original-Scans bleiben auf Ihrem Gerät und im von Ihnen gewählten Speicher, die Server, die wir betreiben, stehen in der EU und wir binden keine Werbe-Tracker von Dritten ein. Für die geschäftliche Nutzung stellen wir einen AVV (Art. 28 DSGVO) bereit, den Sie lesen, herunterladen und unterzeichnen können.',
         'faq.q7': 'Brauche ich eine Internetverbindung zum Scannen?',
         'faq.a7': 'Nein. Scannen und Kantenerkennung funktionieren offline. Eine Verbindung brauchen Sie nur, wenn Sie ein Dokument mit einem Cloud-Dienst wie Trello oder Google Drive synchronisieren oder wenn Ihr gewählter KI-Anbieter einen Scan verarbeitet.',
         'faq.q8': 'Kann Scandora zu DATEV für meinen Steuerberater exportieren?',
@@ -565,16 +565,6 @@ const pageMeta = {
         "de": {
             "title": "Hilfe-Center | Scandora",
             "description": "Scandora Hilfe-Center: verwaltete KI-Credits, DATEV-/lexoffice-/sevDesk-Export, eSCL-Scanner und unser ehrlicher GoBD-Umfang."
-        }
-    },
-    "/help/byoai": {
-        "en": {
-            "title": "Bring your own AI (Google Gemini) | Scandora Help",
-            "description": "Connect your own Google Gemini API key in Scandora. Your key stays on your device, you pay the provider directly, no Scandora credits for that document analysis."
-        },
-        "de": {
-            "title": "Eigene KI nutzen (Google Gemini) | Scandora Hilfe",
-            "description": "Eigenen Google-Gemini-API-Schlüssel in Scandora verbinden. Der Schlüssel bleibt auf dem Gerät, Sie zahlen direkt beim Anbieter."
         }
     },
     "/help/datev-export": {
