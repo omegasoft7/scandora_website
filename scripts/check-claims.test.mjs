@@ -48,6 +48,20 @@ function withPlantedDocIn(relDir, body, fn) {
 
 const withPlantedDoc = (body, fn) => withPlantedDocIn('docs', body, fn);
 
+/**
+ * Same, for the store-slide sweep. `tools/store-assets` loads `config/slides.json` by name, so
+ * the reserved fixture name stays out of that package's own runner too.
+ */
+function withPlantedSlideConfig(value, fn) {
+  const stray = join(repoRoot, 'tools/store-assets/config', '__claims_guard_test__.json');
+  writeFileSync(stray, JSON.stringify(value, null, 2));
+  try {
+    return fn(run());
+  } finally {
+    rmSync(stray, { force: true });
+  }
+}
+
 test('on the current clean tree it exits 0 and confirms the positive anchor', () => {
   const result = run();
   assert.equal(result.status, 0, result.stderr);
@@ -339,3 +353,28 @@ for (const { name, body } of internalAllowedCases) {
     });
   });
 }
+
+// The store screenshots carry headlines the listing text never repeats, so the same bans apply
+// to the slide config they are rendered from.
+test('when a store slide headline carries a banned claim it should fail with the config path', () => {
+  const slide = { slides: [{ headline: { 'en-US': 'Find anything, instantly', 'de-DE': 'Alles sofort finden' } }] };
+  withPlantedSlideConfig(slide, (result) => {
+    assert.equal(result.status, 1, result.stdout);
+    assert.match(result.stderr, /tools\/store-assets\/config\/__claims_guard_test__\.json/);
+    assert.match(result.stderr, /"instant\/instantly" speed claim/);
+    assert.match(result.stderr, /"sofort" speed claim/);
+  });
+});
+
+// Only the string values are copy. Keys name the layout, numbers are canvas geometry, and two
+// sibling strings are two separate lines on the slide — never one sentence.
+test('when a store slide config holds structure, not copy, it should scan the string values only', () => {
+  const slide = {
+    guaranteed: { instantly: [1080, 1920] },
+    slides: [{ chips: { 'en-US': ['Pro and above', 'AI document chat'] } }],
+  };
+  withPlantedSlideConfig(slide, (result) => {
+    assert.equal(result.status, 0, result.stderr);
+    assert.match(result.stdout, /No unbacked marketing claims found/);
+  });
+});

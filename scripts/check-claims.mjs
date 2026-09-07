@@ -12,6 +12,8 @@
 //     string values of its application/ld+json blocks, which the visible-text pass drops
 //   - website/translations.js (the bilingual copy served into the pages at runtime)
 //   - flutter_app/{android,ios,macos}/fastlane/metadata/**/*.txt (store listings)
+//   - tools/store-assets/config/*.json: the string values only — the headlines, sublines and
+//     chips rendered into the uploaded store screenshots, which the listings never repeat
 //
 // Internal doc surfaces (only the AI-index facts below apply — the hype bans are scoped to
 // marketing copy by CONTRIBUTING.md): every *.md under docs/, plus the root-level
@@ -45,6 +47,9 @@ const FASTLANE_METADATA = [
   'flutter_app/ios/fastlane/metadata',
   'flutter_app/macos/fastlane/metadata',
 ];
+
+// The store-screenshot copy: rendered into the images the stores show above the listing text.
+const STORE_ASSET_CONFIG_DIRS = ['tools/store-assets/config'];
 
 // Repo docs that repeat the same customer-facing claims outside the website.
 const INTERNAL_DOC_DIRS = ['docs'];
@@ -190,6 +195,19 @@ function ldJsonText(html) {
   return parts.join(' . ');
 }
 
+/**
+ * A JSON config reduced to its string values, one sentence apart. Keys, numbers and the file's
+ * punctuation are structure, not copy, so scanning them would flag layout data as a claim and
+ * let a window rule span two unrelated strings.
+ */
+function jsonText(raw) {
+  try {
+    return collectStrings(JSON.parse(raw), []).join(' . ');
+  } catch {
+    return raw;
+  }
+}
+
 const collapse = (text) => text.replace(/\s+/g, ' ');
 
 /** The window of text around index i inspected for a negation. */
@@ -211,6 +229,15 @@ function collectFiles() {
     for (const rel of readdirSync(dir, { recursive: true })) {
       if (typeof rel === 'string' && rel.endsWith('.txt')) {
         files.push({ path: join(dir, rel.split(sep).join('/')), kind: 'text' });
+      }
+    }
+  }
+  for (const base of STORE_ASSET_CONFIG_DIRS) {
+    const dir = join(repoRoot, base);
+    if (!existsSync(dir)) continue;
+    for (const rel of readdirSync(dir, { recursive: true })) {
+      if (typeof rel === 'string' && rel.endsWith('.json')) {
+        files.push({ path: join(dir, rel.split(sep).join('/')), kind: 'json' });
       }
     }
   }
@@ -252,7 +279,10 @@ for (const { path, kind, internal } of files) {
   if (raw === null) continue;
   scannedCount += 1;
   if (internal) internalCount += 1;
-  const text = collapse(kind === 'html' ? `${htmlToText(raw)} . ${ldJsonText(raw)}` : raw);
+  let text = raw;
+  if (kind === 'html') text = `${htmlToText(raw)} . ${ldJsonText(raw)}`;
+  else if (kind === 'json') text = jsonText(raw);
+  text = collapse(text);
   const rel = relative(repoRoot, path);
   const relPosix = rel.split(sep).join('/');
 
@@ -278,7 +308,7 @@ function snippet(text, idx, len) {
 }
 
 console.log(
-  `✓ scanned ${scannedCount} file(s) across the website + fastlane store metadata, ` +
+  `✓ scanned ${scannedCount} file(s) across the website + fastlane store metadata + store slide copy, ` +
     `${internalCount} of them internal docs`,
 );
 
