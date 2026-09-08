@@ -190,7 +190,11 @@ const translations = {
         'faq.q7': 'Do I need an internet connection to scan?',
         'faq.a7': 'No. Scanning and edge detection both work offline. You only need a connection when you sync a document to a cloud service like Trello or Google Drive, or when your chosen AI provider processes a scan.',
         'faq.q8': 'Can Scandora export to DATEV for my tax advisor?',
-        'faq.a8': "Yes. On the Business / DATEV plan you can export your scanned receipts in DATEV format (an EXTF posting batch) together with the document images, plus lexoffice and sevDesk voucher export. It's designed for GoBD & DSGVO record-keeping for German SMBs and tax advisors."
+        'faq.a8': "Yes. On the Business / DATEV plan you can export your scanned receipts in DATEV format (an EXTF posting batch) together with the document images, plus lexoffice and sevDesk voucher export. It's designed for GoBD & DSGVO record-keeping for German SMBs and tax advisors.",
+
+        // Footer — DSA report route and accessibility statement
+        'footer.reportContent': 'Report Illegal Content',
+        'footer.accessibility': 'Accessibility'
     },
     de: {
         // Navigation
@@ -378,7 +382,11 @@ const translations = {
         'faq.q7': 'Brauche ich eine Internetverbindung zum Scannen?',
         'faq.a7': 'Nein. Scannen und Kantenerkennung funktionieren offline. Eine Verbindung brauchen Sie nur, wenn Sie ein Dokument mit einem Cloud-Dienst wie Trello oder Google Drive synchronisieren oder wenn Ihr gewählter KI-Anbieter einen Scan verarbeitet.',
         'faq.q8': 'Kann Scandora zu DATEV für meinen Steuerberater exportieren?',
-        'faq.a8': 'Ja. Im Tarif Business / DATEV exportieren Sie Ihre gescannten Belege im DATEV-Format (EXTF-Buchungsstapel) samt Belegbildern, dazu lexoffice- und sevDesk-Belegexport. Das ist für die GoBD- & DSGVO-Aufbewahrung deutscher KMU und Steuerberater konzipiert.'
+        'faq.a8': 'Ja. Im Tarif Business / DATEV exportieren Sie Ihre gescannten Belege im DATEV-Format (EXTF-Buchungsstapel) samt Belegbildern, dazu lexoffice- und sevDesk-Belegexport. Das ist für die GoBD- & DSGVO-Aufbewahrung deutscher KMU und Steuerberater konzipiert.',
+
+        // Footer — DSA report route and accessibility statement
+        'footer.reportContent': 'Rechtswidrige Inhalte melden',
+        'footer.accessibility': 'Barrierefreiheit'
     }
 };
 
@@ -485,6 +493,26 @@ const pageMeta = {
         "de": {
             "title": "Impressum | Scandora",
             "description": "Scandora-Impressum: rechtliche Angaben und Kontakt gemäß § 5 DDG."
+        }
+    },
+    "/report-content": {
+        "en": {
+            "title": "Report Illegal Content (DSA) | Scandora",
+            "description": "Report content you consider illegal under Art. 16 DSA: the notice form, what a notice must contain, our points of contact and how we handle a report."
+        },
+        "de": {
+            "title": "Rechtswidrige Inhalte melden (DSA) | Scandora",
+            "description": "Inhalte melden, die Sie für rechtswidrig halten (Art. 16 DSA): das Meldeformular, der Inhalt einer Meldung, unsere Kontaktstellen und der Ablauf."
+        }
+    },
+    "/accessibility": {
+        "en": {
+            "title": "Accessibility Statement | Scandora",
+            "description": "Scandora's voluntary accessibility statement: the WCAG 2.1 AA and EN 301 549 target we aim at, known limitations and how to send us feedback."
+        },
+        "de": {
+            "title": "Erklärung zur Barrierefreiheit | Scandora",
+            "description": "Die freiwillige Erklärung zur Barrierefreiheit von Scandora: das Ziel WCAG 2.1 AA und EN 301 549, bekannte Einschränkungen und Ihr Weg zum Feedback."
         }
     },
     "/blog/": {

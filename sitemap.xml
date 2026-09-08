@@ -212,6 +212,26 @@
     <priority>0.5</priority>
   </url>
 
+  <!-- Report illegal content (DSA Art. 16 notice and action) -->
+  <url>
+    <loc>https://scandora.eu/report-content</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/report-content"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/report-content?lang=de"/>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Accessibility statement -->
+  <url>
+    <loc>https://scandora.eu/accessibility</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/accessibility"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/accessibility?lang=de"/>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
   <!-- Contact -->
   <url>
     <loc>https://scandora.eu/contact</loc>

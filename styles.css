@@ -1659,6 +1659,29 @@ img {
     color: var(--text-tertiary-strong);
 }
 
+/* Consent Checkbox */
+.form-consent {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+}
+
+.form-consent input[type="checkbox"] {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+.form-consent label {
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
 /* Submit Button */
 .btn-submit {
     width: 100%;

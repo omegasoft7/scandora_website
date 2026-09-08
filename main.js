@@ -280,6 +280,20 @@
     // CONTACT FORM HANDLING
     // ============================================
 
+    /** Returns the message with the form's labelled fields prefixed, or unchanged when it has none. */
+    function composeMessage(form, message) {
+        const parts = [];
+        form.querySelectorAll('[data-compose-label]').forEach(function(field) {
+            const value = field.type === 'checkbox'
+                ? (field.checked ? field.value : '')
+                : String(field.value || '').trim();
+            if (value) parts.push(field.getAttribute('data-compose-label') + ': ' + value);
+        });
+        if (!parts.length) return message;
+
+        return parts.concat(message).join('\n\n');
+    }
+
     function initContactForm() {
         const contactForm = document.getElementById('contact-form');
         if (!contactForm) return;
@@ -289,6 +303,8 @@
 
             const submitBtn = contactForm.querySelector('.btn-submit');
             const formData = new FormData(contactForm);
+            const payload = Object.fromEntries(formData);
+            payload.message = composeMessage(contactForm, payload.message || '');
 
             // Show loading state
             submitBtn.classList.add('loading');
@@ -297,7 +313,7 @@
             try {
                 const response = await fetch(contactForm.action, {
                     method: 'POST',
-                    body: JSON.stringify(Object.fromEntries(formData)),
+                    body: JSON.stringify(payload),
                     headers: {
                         'Content-Type': 'application/json',
                         'Accept': 'application/json'
