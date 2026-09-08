@@ -148,7 +148,7 @@
                 "price": "24.99",
                 "priceCurrency": "EUR",
                 "availability": "https://schema.org/InStock",
-                "description": "Paid plan for German SMBs (€24.99/month or €229/year): DATEV, lexoffice & sevDesk export, designed for GoBD & DSGVO record-keeping, 5,000 monthly AI credits, dedicated support."
+                "description": "Paid plan for German SMBs (€24.99/month or €229/year): 5,000 monthly AI credits, dedicated support and capture designed for GoBD & DSGVO record-keeping. DATEV, lexoffice & sevDesk export is coming soon and is not available in this version yet."
             }
         ],
         "featureList": [
@@ -183,7 +183,7 @@
                 "name": "Is Scandora free to use?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes! Scandora's free plan includes unlimited scans, 10 AI credits a month (extraction, indexing and AI document chat), cloud integrations, and watermark-free exports. Paid plans are available now: Pro (€9.99/month or €89/year) adds a much larger monthly AI-credit allowance and priority support, and Business / DATEV (€24.99/month or €229/year) adds DATEV, lexoffice and sevDesk export designed for GoBD & DSGVO record-keeping. Prices are the final amounts charged via the App Store or Google Play."
+                    "text": "Yes! Scandora's free plan includes unlimited scans, 10 AI credits a month (extraction, indexing and AI document chat), cloud integrations, and watermark-free exports. Paid plans are available now: Pro (€9.99/month or €89/year) adds a much larger monthly AI-credit allowance and priority support, and Business / DATEV (€24.99/month or €229/year) adds 5,000 AI credits a month, dedicated support and capture designed for GoBD & DSGVO record-keeping — its DATEV, lexoffice and sevDesk export is coming soon and is not available in this version yet. Prices are the final amounts charged via the App Store or Google Play."
                 }
             },
             {
@@ -199,7 +199,7 @@
                 "name": "Is my data secure with Scandora?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Privacy is built into Scandora's design. Your original scans stay on your device and go only to the cloud services and AI provider you choose. So your history syncs across your devices, we store a low-resolution preview and the extracted text on our EU servers — never your original files. If you opt in to AI document chat, an optional EU-resident search index (Falkenstein, Germany) stores derived text only — not your original files. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. If you bring your own AI key, your device calls Google's global Gemini API directly, so that processing happens outside the EU, including in the US. You stay in control of your data."
+                    "text": "Privacy is built into Scandora's design. Your original scans stay on your device and go only to Scandora's managed AI gateway — which forwards the page to Google Gemini for extraction — and to the cloud services you choose. So your history syncs across your devices, we store a low-resolution preview and the extracted text on our EU servers — never your original files. If you opt in to AI document chat, an optional EU-resident search index (Falkenstein, Germany) stores derived text only — not your original files. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. You stay in control of your data."
                 }
             },
             {
@@ -207,7 +207,7 @@
                 "name": "Do I need my own API key to use the AI?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "No. Scandora runs on managed AI — your monthly credits cover document extraction, indexing, and AI chat. You do not need to bring or manage your own API key."
+                    "text": "No. Scandora runs on managed AI — your monthly credits cover document extraction, indexing, and AI chat. There is no bring-your-own-key mode, so there is no API key to obtain or enter."
                 }
             },
             {
@@ -223,7 +223,7 @@
                 "name": "Do I need an internet connection to scan?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "No. Scanning and edge detection both work offline. You only need a connection when you sync a document to a cloud service like Trello or Google Drive, or when your chosen AI provider processes a scan."
+                    "text": "No. Scanning and edge detection both work offline. You only need a connection when you sync a document to a cloud service like Trello or Google Drive, or when managed AI processes a scan."
                 }
             },
             {
@@ -231,7 +231,7 @@
                 "name": "Can Scandora export to DATEV for my tax advisor?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. On the Business / DATEV plan you can export your scanned receipts in DATEV format (an EXTF posting batch) together with the document images, plus lexoffice and sevDesk voucher export. It's designed for GoBD & DSGVO record-keeping for German SMBs and tax advisors."
+                    "text": "Coming soon. DATEV export (an EXTF posting batch together with the document images) and the lexoffice and sevDesk voucher export are being prepared for the Business / DATEV plan and are not available in this version yet. What ships today is capture designed for GoBD & DSGVO record-keeping for German SMBs and tax advisors."
                 }
             }
         ]
@@ -410,7 +410,7 @@
                     <article class="feature-card" role="listitem" itemscope itemtype="https://schema.org/Service">
                         <div class="feature-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
                         <h3 data-i18n="features.privacy.title" itemprop="name">Your Data Stays Yours</h3>
-                        <p data-i18n="features.privacy.desc" itemprop="description">Your documents are yours. We don't store your full documents on our servers — they sync directly to the AI provider and cloud services you choose; we keep only minimal metadata and a small preview. Built in Germany, with GoBD and DSGVO in mind.</p>
+                        <p data-i18n="features.privacy.desc" itemprop="description">Your documents are yours. We don't store your full documents or page images on our servers — they go only to the managed AI service we operate and to the cloud services you choose. While you're signed in, your scan history syncs to our servers in Germany: the history details, a small low-resolution preview and the text we extracted from the pages. Built in Germany, with GoBD and DSGVO in mind.</p>
                         <p class="feature-links"><a href="/gdpr-dokumentenscanner.html" data-i18n="features.privacyGdprLink">GDPR document scanner</a></p>
                     </article>
                 </div>
@@ -423,7 +423,7 @@
                 <div class="section-header">
                     <p class="section-badge" data-i18n="howItWorks.badge">From Scan to Action</p>
                     <h2 id="how-it-works-title" class="section-title" itemprop="name" data-i18n="howItWorks.title">From Paper to Action in Three Steps</h2>
-                    <p class="section-description" itemprop="description" data-i18n="howItWorks.description">Scan it, let your AI understand it, send it into your own tools. Your original scans stay on your device and in the storage you choose.</p>
+                    <p class="section-description" itemprop="description" data-i18n="howItWorks.description">Scan it, let managed AI understand it, send it into your own tools. Your original scans stay on your device and in the storage you choose.</p>
                 </div>
                 <ol class="steps" role="list">
                     <li class="step" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
@@ -437,8 +437,8 @@
                     <li class="step" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
                         <div class="step-number" aria-hidden="true">2</div>
                         <div class="step-content">
-                            <h3 itemprop="name" data-i18n="howItWorks.step2.title">Your AI Understands It</h3>
-                            <p itemprop="text" data-i18n="howItWorks.step2.desc">Scandora’s AI reads the document, recognizes its type, and pulls out the key details. Nothing is stored on our servers.</p>
+                            <h3 itemprop="name" data-i18n="howItWorks.step2.title">Managed AI Understands It</h3>
+                            <p itemprop="text" data-i18n="howItWorks.step2.desc">Scandora’s managed AI reads the document, recognizes its type, and pulls out the key details. Only a low-resolution preview and the extracted text are stored on our EU servers — never your original files.</p>
                         </div>
                     </li>
                     <li class="step-connector" aria-hidden="true"></li>
@@ -487,7 +487,7 @@
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-2" aria-expanded="false" aria-controls="faq-panel-2"><span data-i18n="faq.q2">Is Scandora free to use?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
-                        <div id="faq-panel-2" class="faq-answer" role="region" aria-labelledby="faq-trigger-2"><div class="faq-answer-inner"><p data-i18n="faq.a2">Yes! Scandora's free plan includes unlimited scans, 10 AI credits a month (extraction, indexing and AI document chat), cloud integrations, and watermark-free exports. Paid plans are available now: Pro (€9.99/month or €89/year) adds a much larger monthly AI-credit allowance and priority support, and Business / DATEV (€24.99/month or €229/year) adds DATEV, lexoffice and sevDesk export designed for GoBD &amp; DSGVO record-keeping. Prices are the final amounts charged via the App Store or Google Play.</p></div></div>
+                        <div id="faq-panel-2" class="faq-answer" role="region" aria-labelledby="faq-trigger-2"><div class="faq-answer-inner"><p data-i18n="faq.a2">Yes! Scandora's free plan includes unlimited scans, 10 AI credits a month (extraction, indexing and AI document chat), cloud integrations, and watermark-free exports. Paid plans are available now: Pro (€9.99/month or €89/year) adds a much larger monthly AI-credit allowance and priority support, and Business / DATEV (€24.99/month or €229/year) adds 5,000 AI credits a month, dedicated support and capture designed for GoBD &amp; DSGVO record-keeping — its DATEV, lexoffice and sevDesk export is coming soon and is not available in this version yet. Prices are the final amounts charged via the App Store or Google Play.</p></div></div>
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-3" aria-expanded="false" aria-controls="faq-panel-3"><span data-i18n="faq.q3">Which platforms does Scandora support?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
@@ -495,11 +495,11 @@
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-4" aria-expanded="false" aria-controls="faq-panel-4"><span data-i18n="faq.q4">Is my data secure with Scandora?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
-                        <div id="faq-panel-4" class="faq-answer" role="region" aria-labelledby="faq-trigger-4"><div class="faq-answer-inner"><p data-i18n="faq.a4">Privacy is built into Scandora's design. Your original scans stay on your device and go only to the cloud services and AI provider you choose. So your history syncs across your devices, we store a low-resolution preview and the extracted text on our EU servers — never your original files. If you opt in to AI document chat, an optional EU-resident search index (Falkenstein, Germany) stores derived text only — not your original files. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. If you bring your own AI key, your device calls Google's global Gemini API directly, so that processing happens outside the EU, including in the US. You stay in control of your data.</p></div></div>
+                        <div id="faq-panel-4" class="faq-answer" role="region" aria-labelledby="faq-trigger-4"><div class="faq-answer-inner"><p data-i18n="faq.a4">Privacy is built into Scandora's design. Your original scans stay on your device and go only to Scandora's managed AI gateway — which forwards the page to Google Gemini for extraction — and to the cloud services you choose. So your history syncs across your devices, we store a low-resolution preview and the extracted text on our EU servers — never your original files. If you opt in to AI document chat, an optional EU-resident search index (Falkenstein, Germany) stores derived text only — not your original files. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. You stay in control of your data.</p></div></div>
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-5" aria-expanded="false" aria-controls="faq-panel-5"><span data-i18n="faq.q5">Do I need my own API key to use the AI?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
-                        <div id="faq-panel-5" class="faq-answer" role="region" aria-labelledby="faq-trigger-5"><div class="faq-answer-inner"><p data-i18n="faq.a5">No. Scandora runs on managed AI — your monthly credits cover document extraction, indexing, and AI chat. You do not need to bring or manage your own API key.</p></div></div>
+                        <div id="faq-panel-5" class="faq-answer" role="region" aria-labelledby="faq-trigger-5"><div class="faq-answer-inner"><p data-i18n="faq.a5">No. Scandora runs on managed AI — your monthly credits cover document extraction, indexing, and AI chat. There is no bring-your-own-key mode, so there is no API key to obtain or enter.</p></div></div>
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-6" aria-expanded="false" aria-controls="faq-panel-6"><span data-i18n="faq.q6">Is Scandora GDPR-compliant?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
@@ -507,11 +507,11 @@
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-7" aria-expanded="false" aria-controls="faq-panel-7"><span data-i18n="faq.q7">Do I need an internet connection to scan?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
-                        <div id="faq-panel-7" class="faq-answer" role="region" aria-labelledby="faq-trigger-7"><div class="faq-answer-inner"><p data-i18n="faq.a7">No. Scanning and edge detection both work offline. You only need a connection when you sync a document to a cloud service like Trello or Google Drive, or when your chosen AI provider processes a scan.</p></div></div>
+                        <div id="faq-panel-7" class="faq-answer" role="region" aria-labelledby="faq-trigger-7"><div class="faq-answer-inner"><p data-i18n="faq.a7">No. Scanning and edge detection both work offline. You only need a connection when you sync a document to a cloud service like Trello or Google Drive, or when managed AI processes a scan.</p></div></div>
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-8" aria-expanded="false" aria-controls="faq-panel-8"><span data-i18n="faq.q8">Can Scandora export to DATEV for my tax advisor?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
-                        <div id="faq-panel-8" class="faq-answer" role="region" aria-labelledby="faq-trigger-8"><div class="faq-answer-inner"><p data-i18n="faq.a8">Yes. On the Business / DATEV plan you can export your scanned receipts in DATEV format (an EXTF posting batch) together with the document images, plus lexoffice and sevDesk voucher export. It's designed for GoBD &amp; DSGVO record-keeping for German SMBs and tax advisors.</p></div></div>
+                        <div id="faq-panel-8" class="faq-answer" role="region" aria-labelledby="faq-trigger-8"><div class="faq-answer-inner"><p data-i18n="faq.a8">Coming soon. DATEV export (an EXTF posting batch together with the document images) and the lexoffice and sevDesk voucher export are being prepared for the Business / DATEV plan and are not available in this version yet. What ships today is capture designed for GoBD &amp; DSGVO record-keeping for German SMBs and tax advisors.</p></div></div>
                     </div>
                 </div>
             </div>
@@ -577,8 +577,8 @@
                         </div>
                         <ul class="pricing-features">
                             <li data-i18n="pricing.business.f1">5,000 AI credits/month (1 credit ≈ 5 pages; shared: extraction, indexing &amp; AI chat)</li>
-                            <li data-i18n="pricing.business.f2">DATEV export for your tax advisor</li>
-                            <li data-i18n="pricing.business.f3">lexoffice &amp; sevDesk voucher export</li>
+                            <li data-i18n="pricing.business.f2">DATEV export for your tax advisor (coming soon)</li>
+                            <li data-i18n="pricing.business.f3">lexoffice &amp; sevDesk voucher export (coming soon)</li>
                             <li data-i18n="pricing.business.f4">Designed for GoBD &amp; DSGVO record-keeping</li>
                             <li data-i18n="pricing.business.f5">Dedicated support</li>
                         </ul>

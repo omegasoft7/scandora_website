@@ -31,6 +31,9 @@
 //   - The index-location rule only fires when the feature and "Frankfurt" sit within
 //     INDEX_LOCATION_WINDOW characters of each other, so naming Frankfurt for what really is
 //     there — Vertex AI / Firestore `europe-west3` — in its own clause stays allowed.
+//   - The bring-your-own-AI rule is NOT negation-aware. It clears a hit only when the hit sits
+//     inside one of the BYO_DISCLAIMERS phrases, so a nearby "not"/"nicht" in an unrelated clause
+//     cannot green-light an offer of the mode.
 //
 // Usage:  node website/scripts/check-claims.mjs
 // Exit code 0 = no unbacked claims found, 1 = at least one violation (or a wrong-directory run).
@@ -65,7 +68,7 @@ const ANCHOR_TEXT = 'Built in Germany';
 // directory or a dropped root file fails loudly instead of silently leaving the scan.
 const INTERNAL_ANCHORS = ['docs/BYOM_VS_MANAGED_MODEL.md', 'MONETIZATION_COSTS.md'];
 
-// German + English negations that turn a GoBD claim into an honest disclaimer.
+// German + English negations that turn a claim into an honest disclaimer.
 const NEGATION = /\b(kein\w*|nein|nicht|ohne|no|not|never|without)\b/i;
 // Chars each side of a match inspected for a negation (covers the FAQ "…? Nein."/"…? No." form).
 const NEGATION_WINDOW = 80;
@@ -96,6 +99,93 @@ const FREE_DEVICE_ONLY_WINDOW = 80;
 // The index runs on Hetzner in Falkenstein; Frankfurt is the Vertex AI / Firestore region.
 // Chars allowed between the feature and "Frankfurt" before it reads as the index's location.
 const INDEX_LOCATION_WINDOW = 20;
+
+// Bring-your-own-AI: a user-supplied model key, a user-owned AI, or a user-picked model
+// provider. Managed AI is the only shipped mode (website/terms.html § 6), so an offer of it is a
+// dead claim. NOT negation-aware: the shipped store sentence carried its own "not"/"nicht" in the
+// trailing clause and disarmed the rule, so the sanctioned disclaimers are whitelisted verbatim in
+// BYO_DISCLAIMERS instead. "eigenes KI-Gateway" and "eigene KI-Modelle" are Scandora's own, not the
+// user's, so the German own-AI branch excludes both. The bare possessive ("your AI", "Ihre KI") is
+// the same claim without the word "own", so it is matched too; the credits really are the user's,
+// so "your AI credits" / "Ihre KI-Credits" stay out of that branch.
+const BYO_AI_MODE = String.raw`bring[-\s](?:your|my|their)[-\s]own[-\s](?:ai|key|api[-\s]?key|model|llm)|\bBYO(?:AI|K|M)\b|Mitbring[-\s]?(?:Funktion|Modus)`;
+const OWN_AI_KEY =
+  String.raw`(?:your|my|their)\s+own\s+(?:[\w-]+\s+){0,2}(?:AI|Gemini|model|LLM)[-\s]?keys?\b` +
+  String.raw`|(?:your|my|their)\s+own\s+(?:API\s+)?keys?\b|(?:your|my|their)\s+own\s+AI\b` +
+  String.raw`|let\s+(?:your|my|their)\s+AI\b|von\s+Ihrer\s+(?:eigenen\s+)?KI\b` +
+  String.raw`|eigene[mnrs]?\s+(?:[\w-]+[-\s]){0,2}(?:KI|Gemini|Modell)[-\s]?Schlüssel` +
+  String.raw`|eigene[mnrs]?\s+(?:API[-\s]?)?Schlüssel\b|eigene[mnrs]?\s+KI\b(?![-\s]?(?:Gateway|Modell))` +
+  String.raw`|(?:your|my|their)\s+AI\b(?![-\s]?(?:credits?|gateway|model))` +
+  String.raw`|Ihre[mnr]?\s+KI\b(?![-\s]?(?:Gateway|Modell|Credits?))`;
+// The provider may be named before or after the choosing clause, and German writes the choice as
+// either "Ihr (gewählter) KI-Anbieter" or "der von Ihnen gewählte KI-Anbieter".
+const OWN_AI_PROVIDER =
+  String.raw`(?:your|my|their)\s+(?:own\s+|chosen\s+)?AI\s+provider` +
+  String.raw`|AI\s+provider\b[^.!?]{0,60}?\b(?:you|they|I)\s+choose` +
+  String.raw`|Ihre?[mnrs]?\s+(?:gewählte[mnrs]?\s+)?KI-Anbieter` +
+  String.raw`|von\s+(?:Ihnen|mir|ihnen)\s+gewählte[mnrs]?\s+(?:[\w-]+\s+){0,2}KI-Anbieter`;
+
+// The sanctioned denials of the mode, matched as whole phrases: a BYO hit inside one of these is
+// the disclaimer itself, not an offer. Anything outside them is a violation even when a "not"
+// happens to sit nearby.
+const BYO_DISCLAIMERS = [
+  /\b(?:no|kein\w*)\s+bring[-\s](?:your|my|their)[-\s]own[-\s](?:ai|key|api[-\s]?key|model|llm)[-\s]mode\b/gi,
+  /bring[-\s](?:your|my|their)[-\s]own[-\s](?:ai|key|api[-\s]?key|model|llm)\s+option is not part of this version/gi,
+  /\b(?:do not|don['’]t|does not|doesn['’]t|never)\s+(?:need\s+)?(?:to\s+)?(?:bring|set up|enter|manage)?\s*(?:your|my|their)\s+own\s+(?:[\w-]+\s+){0,2}keys?\b/gi,
+  /\bwithout\s+(?:your|my|their)\s+own\s+(?:[\w-]+\s+){0,2}keys?\b/gi,
+  /\b(?:Can I|Do I need)\s+(?:to\s+)?(?:bring\s+)?(?:my|your)\s+own\s+(?:[\w-]+\s+){0,2}keys?\b[\s\S]{0,60}?(?:\bNo\b|\b(?:do|does) not\b|\bdo(?:es)?n['’]t\b)/gi,
+  /Mitbring[-\s]?(?:Funktion|Modus)[^.!?]{0,60}?ist nicht Bestandteil dieser Version/gi,
+  /\b(?:kein\w*|ohne)\s+(?:[^\s.!?]+\s+){0,3}?eigene[mnrs]?\s+(?:[^\s.!?]+[-\s]){0,2}Schlüssel/gi,
+  /\bModus für eigene\s+(?:[^\s.!?]+[-\s]){0,2}Schlüssel[^.!?]{0,40}?gibt es nicht/gi,
+  /\b(?:Brauche ich|Kann ich)\s+(?:[^\s.!?]+\s+){0,3}?(?:einen|meinen)\s+eigene[mnrs]?\s+(?:[^\s.!?]+[-\s]){0,2}Schlüssel[\s\S]{0,60}?(?:\bNein\b|\bkein\w*\b)/gi,
+];
+
+// The Business / DATEV features production Remote Config keeps switched off — `datev_export`,
+// `voucher_lexoffice`, `voucher_sevdesk` and `gobd_layer` (read with
+// `python3 infra/remote_config_flags.py list`). The app renders each of them as "coming soon"
+// at those values (`settings_datev_export_tile.dart`, `feature_comparison_sheet.dart`,
+// `plan_card.dart`, `profile_management_screen.dart`), and the voucher connectors are not even
+// registered (`scandora_integrations/lib/src/di/setup.dart`), so public copy may name them only
+// with the same marker. The plan name "Business / DATEV" carries no export word and stays free.
+const GATED_FEATURE = String.raw`DATEV[-\s]?(?:format|export|EXTF)|\bEXTF\b|lexoffice|sevDesk|GoBD[-\s]?(?:layer|Schicht|Ebene)|Verfahrensdokumentation`;
+// Wording that sells the feature as shipped: an availability or inclusion word, a plan that
+// "adds" it, or the "Yes"/"Ja" of an FAQ answer and of a comparison-table cell. How-to prose
+// that only describes what the screen does ("Scandora generates the EXTF file") is not an
+// availability claim and stays out, so a help page keeps its steps and carries the
+// coming-soon status once, where it states the plan.
+const AVAILABILITY_CLAIM = String.raw`\bavailable\b|\binclude[sd]?\b|\boffers?\b|\bprovides?\b|\bsupports\b|\badds\b|\bcomes with\b|\bYes\b|verfügbar|enthält|enthalten|umfasst|bietet|unterstützt|ergänzt|\bJa\b`;
+// Chars allowed between the claim and the feature before the claim reads as being about it.
+const GATED_CLAIM_WINDOW = 120;
+// The second claim shape: the feature named next to the paid tier that is supposed to grant it.
+// A pricing-card bullet ("DATEV export for your tax advisor") and a German FAQ answer
+// ("Ja. Im Tarif Business / DATEV exportieren Sie …") carry no availability word at all — the
+// plan beside the feature is what makes them an offer. Sentence punctuation is no boundary here:
+// the price "€24.99" and the German "5.000 KI-Credits" both contain a period.
+const PAID_PLAN = String.raw`Business\s*\/\s*DATEV|Business[-\s](?:plan|Tarif)|Tarif Business|24[.,]99`;
+const PLAN_OFFER_WINDOW = 160;
+// The markers that turn the claim into an honest announcement. "(coming soon)" / "(demnächst)" are
+// the app's own words (`comingSoonFeature` in strings_en.dart / strings_de.dart).
+const COMING_SOON =
+  /coming soon|not (?:yet )?available|in preparation|demnächst|in Kürze|in Vorbereitung|noch nicht verfügbar|noch nicht enthalten|geplant/i;
+// Chars each side of the claim inspected for a coming-soon marker.
+const COMING_SOON_WINDOW = 200;
+
+// The head tags applyPageMeta() (translations.js) rewrites from the pageMeta table on every
+// page load. The static tag is what a non-JS crawler reads; the pageMeta twin is what the
+// reader ends up with, so the two copies must carry the same availability status — which here
+// means every gated feature named in either copy carries a coming-soon marker in the same
+// string. Neither claim rule above sees this shape: a meta description names no availability
+// word and no plan, and the visible-text pass strips tags before the attributes are read.
+const PAGE_META_SOURCE = join(websiteDir, 'translations.js');
+const PAGE_META_TABLE = /const pageMeta = (\{[\s\S]*?\n\});/;
+const CANONICAL_HREF = /<link[^>]+rel="canonical"[^>]+href="([^"]*)"/i;
+const HEAD_TAGS = [
+  { name: '<title>', pattern: /<title>([\s\S]*?)<\/title>/i },
+  { name: 'meta[name="description"]', pattern: /<meta[^>]+name="description"[^>]+content="([^"]*)"/i },
+  { name: 'meta[property="og:description"]', pattern: /<meta[^>]+property="og:description"[^>]+content="([^"]*)"/i },
+  { name: 'meta[name="twitter:description"]', pattern: /<meta[^>]+name="twitter:description"[^>]+content="([^"]*)"/i },
+];
+const GATED_FEATURE_RE = new RegExp(GATED_FEATURE, 'i');
 
 const forbidden = [
   { pattern: /\b99\s*%/gi, label: '"99%" precision claim' },
@@ -159,6 +249,25 @@ const forbidden = [
     label: 'AI search index placed in Frankfurt (it is EU-resident in Falkenstein, Germany)',
     appliesToDocs: true,
   },
+  {
+    pattern: new RegExp(`${BYO_AI_MODE}|${OWN_AI_KEY}|${OWN_AI_PROVIDER}`, 'gi'),
+    label: 'bring-your-own-AI offered as a user choice (managed AI is the only shipped mode)',
+    allow: BYO_DISCLAIMERS,
+  },
+  {
+    pattern: new RegExp(
+      `(?:${AVAILABILITY_CLAIM})[^.!?]{0,${GATED_CLAIM_WINDOW}}?(?:${GATED_FEATURE})` +
+        `|(?:${GATED_FEATURE})[^.!?]{0,${GATED_CLAIM_WINDOW}}?(?:${AVAILABILITY_CLAIM})` +
+        `|(?:${PAID_PLAN})[\\s\\S]{0,${PLAN_OFFER_WINDOW}}?(?:${GATED_FEATURE})` +
+        `|(?:${GATED_FEATURE})[\\s\\S]{0,${PLAN_OFFER_WINDOW}}?(?:${PAID_PLAN})`,
+      'gi',
+    ),
+    label:
+      'DATEV / lexoffice / sevDesk export or the GoBD layer sold as available ' +
+      '(all four are switched off in production; say "coming soon" / „demnächst")',
+    clearedBy: COMING_SOON,
+    clearedByWindow: COMING_SOON_WINDOW,
+  },
 ];
 
 const ENTITIES = { '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'", '&nbsp;': ' ', '&euro;': '€' };
@@ -210,9 +319,21 @@ function jsonText(raw) {
 
 const collapse = (text) => text.replace(/\s+/g, ' ');
 
-/** The window of text around index i inspected for a negation. */
-function windowAround(text, i, len) {
-  return text.slice(Math.max(0, i - NEGATION_WINDOW), Math.min(text.length, i + len + NEGATION_WINDOW));
+/** The window of `width` chars each side of the match at [i, i+len). */
+function windowAround(text, i, len, width = NEGATION_WINDOW) {
+  return text.slice(Math.max(0, i - width), Math.min(text.length, i + len + width));
+}
+
+/** True when the match at [i, i+len) lies wholly inside one of the sanctioned phrases. */
+function insideAllowedPhrase(text, i, len, allow) {
+  for (const phrase of allow) {
+    phrase.lastIndex = 0;
+    for (const match of text.matchAll(phrase)) {
+      const start = match.index ?? 0;
+      if (start <= i && i + len <= start + match[0].length) return true;
+    }
+  }
+  return false;
 }
 
 function collectFiles() {
@@ -289,13 +410,15 @@ for (const { path, kind, internal } of files) {
   if (path === ANCHOR_FILE && raw.includes(ANCHOR_TEXT)) anchorHit = true;
   if (INTERNAL_ANCHORS.includes(relPosix)) internalAnchorsHit.add(relPosix);
 
-  for (const { pattern, label, negatable, appliesToDocs } of forbidden) {
+  for (const { pattern, label, negatable, appliesToDocs, allow, clearedBy, clearedByWindow } of forbidden) {
     if (internal && !appliesToDocs) continue;
     pattern.lastIndex = 0;
     for (const match of text.matchAll(pattern)) {
       const hit = match[0];
       const idx = match.index ?? 0;
       if (negatable && NEGATION.test(windowAround(text, idx, hit.length))) continue;
+      if (clearedBy && clearedBy.test(windowAround(text, idx, hit.length, clearedByWindow))) continue;
+      if (allow && insideAllowedPhrase(text, idx, hit.length, allow)) continue;
       violations.push({ rel, label, hit, context: snippet(text, idx, hit.length) });
     }
   }
@@ -305,6 +428,90 @@ function snippet(text, idx, len) {
   const start = Math.max(0, idx - 40);
   const end = Math.min(text.length, idx + len + 40);
   return `${start > 0 ? '…' : ''}${text.slice(start, end).trim()}${end < text.length ? '…' : ''}`;
+}
+
+/** The gated features named in `value` without a coming-soon marker in that same string. */
+function unmarkedGatedFeatures(value) {
+  if (typeof value !== 'string' || !GATED_FEATURE_RE.test(value) || COMING_SOON.test(value)) return [];
+  return [...value.matchAll(new RegExp(GATED_FEATURE, 'gi'))].map((match) => match[0]);
+}
+
+/** The pageMeta table read out of translations.js, or null when it is gone or unparseable. */
+function readPageMeta() {
+  const raw = readIfPresent(PAGE_META_SOURCE);
+  const table = raw && raw.match(PAGE_META_TABLE);
+  if (!table) return null;
+  try {
+    return JSON.parse(table[1]);
+  } catch {
+    return null;
+  }
+}
+
+/** The canonical pathname a page declares, the same way applyPageMeta() resolves it. */
+function canonicalRoute(html) {
+  const href = html.match(CANONICAL_HREF);
+  if (!href) return null;
+  try {
+    return new URL(href[1], 'https://scandora.eu').pathname;
+  } catch {
+    return null;
+  }
+}
+
+function checkPageMetaParity(htmlFiles) {
+  const pageMeta = readPageMeta();
+  if (!pageMeta) {
+    console.error(
+      `\n✗ pageMeta check failed: no parseable "const pageMeta = { … };" table in ` +
+        `${relative(repoRoot, PAGE_META_SOURCE)} — the head copy applyPageMeta() serves went unchecked.`,
+    );
+    process.exit(1);
+  }
+  const metaRel = relative(repoRoot, PAGE_META_SOURCE);
+  for (const [route, langs] of Object.entries(pageMeta)) {
+    for (const [lang, copy] of Object.entries(langs)) {
+      for (const field of ['title', 'description']) {
+        for (const hit of unmarkedGatedFeatures(copy?.[field])) {
+          violations.push({
+            rel: metaRel,
+            label: `pageMeta ${lang}.${field} for ${route} sells a gated feature as shipped (applyPageMeta() writes it over the marked static head tag)`,
+            hit,
+            context: copy[field],
+          });
+        }
+      }
+    }
+  }
+  let matched = 0;
+  for (const { path } of htmlFiles) {
+    const html = readIfPresent(path);
+    if (html === null) continue;
+    const route = canonicalRoute(html);
+    if (!route || !pageMeta[route]) continue;
+    matched += 1;
+    for (const { name, pattern } of HEAD_TAGS) {
+      const tag = html.match(pattern);
+      for (const hit of unmarkedGatedFeatures(tag?.[1])) {
+        violations.push({
+          rel: relative(repoRoot, path),
+          label: `static ${name} for ${route} sells a gated feature as shipped (it and its pageMeta twin must carry the same coming-soon status)`,
+          hit,
+          context: tag[1],
+        });
+      }
+    }
+  }
+  if (matched === 0) {
+    console.error(
+      `\n✗ pageMeta check failed: none of the ${htmlFiles.length} page(s) matched a pageMeta route — ` +
+        'the canonical links and the table keys have drifted apart.',
+    );
+    process.exit(1);
+  }
+  console.log(
+    `✓ pageMeta ↔ static head: ${Object.keys(pageMeta).length} route(s) in ${metaRel}, ${matched} page(s) matched`,
+  );
 }
 
 console.log(
@@ -332,6 +539,8 @@ if (!anchorHit) {
   process.exit(1);
 }
 console.log(`✓ anchor: "${ANCHOR_TEXT}" found in ${relative(repoRoot, ANCHOR_FILE)}`);
+
+checkPageMetaParity(files.filter(({ kind }) => kind === 'html'));
 
 if (violations.length) {
   console.error(`\n✗ ${violations.length} unbacked claim(s) found (see CONTRIBUTING.md "claims need a source"):`);

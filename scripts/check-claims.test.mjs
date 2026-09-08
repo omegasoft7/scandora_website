@@ -201,6 +201,199 @@ const forbiddenCases = [
     body: '<p>Ein in der EU (Frankfurt) gehosteter Suchindex speichert nur abgeleiteten Text.</p>',
     label: /placed in Frankfurt/,
   },
+  {
+    name: 'bring-your-own-AI offered as a plan bullet',
+    body: '<p>- Bring your own AI: connect your own Google Gemini key, or use managed AI credits.</p>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'German bring-your-own-AI plan bullet',
+    body: '<p>- Eigene KI nutzen: Verbinden Sie Ihren eigenen Google-Gemini-Schlüssel.</p>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'model provider presented as the user’s choice',
+    body: '<p>Your scans go only to the cloud services and AI provider you choose.</p>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'German model provider presented as the user’s own',
+    body: '<p>Mit eigenem Schlüssel gehen Anfragen direkt an Ihren KI-Anbieter.</p>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'shipped English data-handling sentence whose own trailing "not" used to disarm the rule',
+    body:
+      '<p>Data handling: your documents are processed for extraction using the AI provider you choose. ' +
+      'With bring-your-own-key, requests go directly to your provider and are not stored on our servers.</p>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'shipped German data-handling sentence whose own trailing "nicht" used to disarm the rule',
+    body:
+      '<p>Datenverarbeitung: Mit eigenem Schlüssel gehen Anfragen direkt an Ihren KI-Anbieter und werden ' +
+      'nicht auf unseren Servern gespeichert.</p>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'model provider named before the choosing clause',
+    body: '<p>Your scans go only to the AI provider and cloud services you choose.</p>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'model provider written as the user’s chosen one',
+    body: '<p>You only need a connection when your chosen AI provider processes a scan.</p>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'German model provider written as the one you selected',
+    body: '<p>Ihre Scans gehen nur an den von Ihnen gewählten KI-Anbieter und Ihre Cloud-Dienste.</p>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'German model provider written with a bare possessive',
+    body: '<p>Eine Verbindung brauchen Sie nur, wenn Ihr gewählter KI-Anbieter einen Scan verarbeitet.</p>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'the AI presented as the user’s own in the how-it-works line',
+    body: '<p>Scan it, let your AI understand it, send it into your own tools.</p>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'German AI presented as the user’s own in the how-it-works line',
+    body: '<p>Scannen, von Ihrer KI verstehen lassen, in Ihre eigenen Tools senden.</p>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'bare possessive in the how-it-works step heading',
+    body: '<h3>Your AI Understands It</h3>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'German bare possessive in the how-it-works step heading',
+    body: '<h3>Ihre KI versteht es</h3>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'bare possessive in a blog step lead-in',
+    body: '<li><strong>Your AI reads it.</strong> Scandora recognises the booking date.</li>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'German bare possessive in a blog step lead-in',
+    body: '<li><strong>Ihre KI liest den Beleg.</strong> Scandora erkennt das Belegdatum.</li>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'bare possessive as a relative clause about the scanner output',
+    body: '<p>Scandora turns them into one document your AI can read.</p>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'German bare possessive as a relative clause about the scanner output',
+    body: '<p>Scandora macht daraus ein Dokument, das Ihre KI lesen kann.</p>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'bare possessive as an imperative next step',
+    body: '<p>Process it just like a phone scan — have your AI read it and export it to Trello.</p>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'German bare possessive in the dative after a preposition',
+    body: '<p>Das Dokument können Sie von Ihrer KI auslesen lassen.</p>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'bring-your-own-key question hidden in a JSON-LD FAQ block',
+    body:
+      '<script type="application/ld+json">{"@type":"FAQPage","mainEntity":[{"@type":"Question",' +
+      '"name":"Can I bring my own AI key?"}]}</script>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'withdrawn add-on still kept for holders who already connected a key',
+    body:
+      '<p>Scandora has a <em>Bring your own AI</em> add-on, which it does not currently offer for ' +
+      'purchase: it stays usable only for customers who already connected their own key.</p>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'German withdrawn add-on still kept for existing key holders',
+    body:
+      '<p>Scandora verfügt über das Add-on <em>Eigener KI-Schlüssel</em>, das es derzeit nicht zum ' +
+      'Erwerb anbietet: Es bleibt nur für Kunden nutzbar, die ihren eigenen Schlüssel bereits ' +
+      'verbunden haben.</p>',
+    label: /bring-your-own-AI offered as a user choice/,
+  },
+  {
+    name: 'paid plan advertised as adding DATEV, lexoffice and sevDesk export',
+    body:
+      '<p>Business / DATEV (€24.99/month) adds DATEV, lexoffice and sevDesk export ' +
+      'designed for GoBD &amp; DSGVO record-keeping.</p>',
+    label: /DATEV \/ lexoffice \/ sevDesk export or the GoBD layer sold as available/,
+  },
+  {
+    name: 'German paid plan advertised as adding the same three exports',
+    body:
+      '<p>Business / DATEV (24,99 €/Monat) ergänzt DATEV-, lexoffice- und sevDesk-Export ' +
+      'für die GoBD- &amp; DSGVO-Aufbewahrung.</p>',
+    label: /DATEV \/ lexoffice \/ sevDesk export or the GoBD layer sold as available/,
+  },
+  {
+    name: 'FAQ answering "Yes" to the DATEV export question',
+    body:
+      '<p>Yes. On the Business / DATEV plan you can export your scanned receipts in DATEV format ' +
+      '(an EXTF posting batch), plus lexoffice and sevDesk voucher export.</p>',
+    label: /DATEV \/ lexoffice \/ sevDesk export or the GoBD layer sold as available/,
+  },
+  {
+    name: 'German FAQ whose "Ja." is a sentence of its own',
+    body:
+      '<p>Ja. Im Tarif Business / DATEV exportieren Sie Ihre gescannten Belege im DATEV-Format ' +
+      '(EXTF-Buchungsstapel), dazu lexoffice- und sevDesk-Belegexport.</p>',
+    label: /DATEV \/ lexoffice \/ sevDesk export or the GoBD layer sold as available/,
+  },
+  {
+    name: 'pricing-card bullet that names the export with no availability word at all',
+    body:
+      '<h3>Business / DATEV</h3><div>€24.99/month</div><ul>' +
+      '<li>5,000 AI credits/month</li><li>DATEV export for your tax advisor</li>' +
+      '<li>lexoffice &amp; sevDesk voucher export</li></ul>',
+    label: /DATEV \/ lexoffice \/ sevDesk export or the GoBD layer sold as available/,
+  },
+  {
+    name: 'German pricing-card bullet whose thousands separator breaks the sentence window',
+    body:
+      '<h3>Business / DATEV</h3><div>24,99 €/Monat</div><ul>' +
+      '<li>5.000 KI-Credits/Monat</li><li>DATEV-Export für Ihren Steuerberater</li></ul>',
+    label: /DATEV \/ lexoffice \/ sevDesk export or the GoBD layer sold as available/,
+  },
+  {
+    name: 'machine-readable Offer for the paid plan',
+    body:
+      '<script type="application/ld+json">{"@type":"Offer","name":"Business / DATEV Plan",' +
+      '"description":"DATEV, lexoffice & sevDesk export, designed for GoBD & DSGVO record-keeping."}</script>',
+    label: /DATEV \/ lexoffice \/ sevDesk export or the GoBD layer sold as available/,
+  },
+  {
+    name: 'comparison-table cell answering "Yes" for DATEV export',
+    body: '<table><tr><td>DATEV export</td><td>Yes</td><td>No</td></tr></table>',
+    label: /DATEV \/ lexoffice \/ sevDesk export or the GoBD layer sold as available/,
+  },
+  {
+    name: 'GoBD layer with Verfahrensdokumentation listed as included',
+    body: '<p>- Business / DATEV plan: the GoBD layer with Verfahrensdokumentation is included.</p>',
+    label: /DATEV \/ lexoffice \/ sevDesk export or the GoBD layer sold as available/,
+  },
+  {
+    name: 'German "gehören zum Tarif" phrasing that names no availability word',
+    body:
+      '<p>Ein DATEV-Format-Export sowie ein lexoffice- und sevDesk-Belegexport ' +
+      'gehören zum Tarif Business / DATEV.</p>',
+    label: /DATEV \/ lexoffice \/ sevDesk export or the GoBD layer sold as available/,
+  },
 ];
 
 for (const { name, body, label } of forbiddenCases) {
@@ -252,8 +445,109 @@ const allowedCases = [
     body: '<p>- Free: 10 AI credits a month shared across extraction, indexing and AI document chat.</p>',
   },
   {
-    name: 'BYOM described as device-only without naming the free plan',
-    body: '<p>With your own key the AI runs on your device and never touches our servers.</p>',
+    name: 'device-only AI described without naming the free plan',
+    body: '<p>In offline mode the AI runs on your device and never touches our servers.</p>',
+  },
+  {
+    name: 'shipped disclaimer that there is no bring-your-own-key mode',
+    body: '<p>There is no bring-your-own-key mode, so there is no API key to obtain or enter.</p>',
+  },
+  {
+    name: 'English contraction denying the bring-your-own-key mode',
+    body: '<p>With managed AI you don’t bring your own key.</p>',
+  },
+  {
+    name: 'German disclaimer that no key of your own is needed',
+    body: '<p>Die Extraktion läuft über die verwaltete KI — kein eigener Schlüssel nötig.</p>',
+  },
+  {
+    name: 'Scandora’s own AI gateway, which is not a key the user brings',
+    body: '<p>Scandoras eigenes KI-Gateway leitet die Anfrage an Google Gemini weiter.</p>',
+  },
+  {
+    name: 'integration key the user really does supply',
+    body: '<p>Hinterlegen Sie Ihren lexoffice-API-Schlüssel in den Integrationen.</p>',
+  },
+  {
+    name: 'shipped terms clause denying the bring-your-own-API-key option',
+    body: '<p>A bring-your-own-API-key option is not part of this version.</p>',
+  },
+  {
+    name: 'shipped German terms clause denying the Mitbring-Funktion',
+    body: '<p>Eine Mitbring-Funktion für eigene API-Schlüssel ist nicht Bestandteil dieser Version.</p>',
+  },
+  {
+    name: 'FAQ question asking for the mode, answered by the disclaimer below it',
+    body: '<h3>Do I need my own API key to use the AI?</h3><p>No. Scandora runs on managed AI.</p>',
+  },
+  {
+    name: 'German FAQ question asking for the mode, answered by the disclaimer below it',
+    body: '<h3>Brauche ich einen eigenen API-Schlüssel für die KI?</h3><p>Nein.</p>',
+  },
+  {
+    name: 'German disclaimer that no own-key mode exists',
+    body: '<p>Einen Modus für eigene Schlüssel gibt es nicht.</p>',
+  },
+  {
+    name: 'Scandora’s own AI models, which are not a model the user brings',
+    body: '<p>Wir verwenden Ihre Dokumente nicht, um eigene KI-Modelle zu trainieren.</p>',
+  },
+  {
+    name: 'credit allowance that really does belong to the user',
+    body: '<p>Your AI credits cover document extraction and the opt-in AI document search.</p>',
+  },
+  {
+    name: 'German credit allowance that really does belong to the user',
+    body: '<p>Ihre KI-Credits decken die Dokumentextraktion sowie die optionale KI-Dokumentensuche.</p>',
+  },
+  {
+    name: 'shipped store bullet naming the monthly allowance',
+    body: '<p>- Managed AI included: your monthly AI credits cover document extraction.</p>',
+  },
+  {
+    name: 'shipped store line marking the three exports coming soon',
+    body:
+      '<p>- DATEV, lexoffice and sevDesk export for your bookkeeping and your Steuerberater: ' +
+      'coming soon, not available in this version yet.</p>',
+  },
+  {
+    name: 'shipped German store line marking the three exports coming soon',
+    body:
+      '<p>- Export nach DATEV, lexoffice und sevDesk, für Ihre Buchhaltung und Ihren Steuerberater: ' +
+      'kommt in Kürze, in dieser Version noch nicht verfügbar.</p>',
+  },
+  {
+    name: 'pricing-card bullets that carry the coming-soon marker',
+    body:
+      '<h3>Business / DATEV</h3><div>€24.99/month</div><ul>' +
+      '<li>DATEV export for your tax advisor (coming soon)</li>' +
+      '<li>lexoffice &amp; sevDesk voucher export (coming soon)</li></ul>',
+  },
+  {
+    name: 'German pricing-card bullets that carry the demnächst marker',
+    body:
+      '<h3>Business / DATEV</h3><div>24,99 €/Monat</div><ul>' +
+      '<li>DATEV-Export für Ihren Steuerberater (demnächst)</li>' +
+      '<li>lexoffice- &amp; sevDesk-Belegexport (demnächst)</li></ul>',
+  },
+  {
+    name: 'shipped FAQ answer that leads with the coming-soon status',
+    body:
+      '<p>Coming soon. DATEV export (an EXTF posting batch together with the document images) and the ' +
+      'lexoffice and sevDesk voucher export are being prepared for the Business / DATEV plan and are ' +
+      'not available in this version yet.</p>',
+  },
+  {
+    name: 'help-page step that only describes what the screen does',
+    body: "<p>Open the DATEV export from the profile's export options and pick a date range.</p>",
+  },
+  {
+    name: 'GoBD record-keeping the capture really is designed for',
+    body: '<h3>Business / DATEV</h3><ul><li>Designed for GoBD &amp; DSGVO record-keeping</li></ul>',
+  },
+  {
+    name: 'lexoffice named as a recipient in the processing table',
+    body: '<p>lexoffice (Lexware / Haufe Group) — export to your own lexoffice account (user-authorized).</p>',
   },
 ];
 
@@ -376,5 +670,132 @@ test('when a store slide config holds structure, not copy, it should scan the st
   withPlantedSlideConfig(slide, (result) => {
     assert.equal(result.status, 0, result.stderr);
     assert.match(result.stdout, /No unbacked marketing claims found/);
+  });
+});
+
+// applyPageMeta() in translations.js overwrites <title>, meta[name=description],
+// og:description and twitter:description on every page load, so the static tag and its
+// pageMeta twin are two copies of one claim. Neither claim rule above sees a meta attribute
+// (the visible-text pass strips tags) or a pageMeta sentence (no availability word, no plan
+// name), which is why an unmarked twin can hide behind a green matrix.
+
+/** Drop a page with a chosen <head> into website/, so the guard resolves its canonical route. */
+function withPlantedPage(head, fn) {
+  const stray = join(websiteDir, '__claims_guard_page_test__.html');
+  writeFileSync(stray, `<!DOCTYPE html><html lang="en"><head>${head}</head><body></body></html>`);
+  try {
+    return fn(run());
+  } finally {
+    rmSync(stray, { force: true });
+  }
+}
+
+/** Run a guard copy whose pageMeta table is read from `body` instead of translations.js. */
+function withPatchedPageMetaSource(body, fn) {
+  const source = readFileSync(guard, 'utf8');
+  const marker = "const PAGE_META_SOURCE = join(websiteDir, 'translations.js');";
+  assert.equal(source.split(marker).length - 1, 1, 'pageMeta source not found in the guard source');
+  const fixture = join(scriptDir, '__claims_guard_pagemeta_fixture__.js');
+  const probe = join(scriptDir, '__claims_guard_pagemeta_probe__.mjs');
+  writeFileSync(fixture, body);
+  writeFileSync(probe, source.replace(marker, `const PAGE_META_SOURCE = ${JSON.stringify(fixture)};`));
+  try {
+    return fn(spawnSync(process.execPath, [probe], { encoding: 'utf8' }));
+  } finally {
+    rmSync(probe, { force: true });
+    rmSync(fixture, { force: true });
+  }
+}
+
+const CANONICAL = '<link rel="canonical" href="https://scandora.eu/help/datev-export">';
+
+test('when a static meta description sells a gated feature it should fail on the pageMeta parity rule', () => {
+  const head = `${CANONICAL}<title>t</title><meta name="description" content="Create a DATEV EXTF export your tax advisor can import: pick a profile and a date range.">`;
+  withPlantedPage(head, (result) => {
+    assert.equal(result.status, 1, result.stdout);
+    assert.match(result.stderr, /__claims_guard_page_test__\.html/);
+    assert.match(result.stderr, /static meta\[name="description"\] for \/help\/datev-export sells a gated feature/);
+    assert.match(result.stderr, /same coming-soon status/);
+  });
+});
+
+test('when a static og:description sells a gated feature it should fail on the pageMeta parity rule', () => {
+  const head = `${CANONICAL}<title>t</title><meta property="og:description" content="Send scanned vouchers straight into lexoffice and sevDesk.">`;
+  withPlantedPage(head, (result) => {
+    assert.equal(result.status, 1, result.stdout);
+    assert.match(result.stderr, /static meta\[property="og:description"\] for \/help\/datev-export sells a gated feature/);
+  });
+});
+
+test('when a static head marks the gated feature it should pass the pageMeta parity rule', () => {
+  const head =
+    `${CANONICAL}<title>DATEV-Export (EXTF) — in Vorbereitung | Scandora Hilfe</title>` +
+    '<meta name="description" content="The DATEV EXTF export your tax advisor can import is coming soon: pick a profile and a date range.">';
+  withPlantedPage(head, (result) => {
+    assert.equal(result.status, 0, result.stderr);
+    assert.match(result.stdout, /pageMeta ↔ static head: \d+ route\(s\)/);
+    assert.match(result.stdout, /No unbacked marketing claims found/);
+  });
+});
+
+// The other half of the pin: the table itself. Proven on a copy that reads a fixture table, so
+// the real translations.js stays untouched while a parallel suite runs.
+test('when a pageMeta description sells a gated feature it should fail and name the route', () => {
+  const table = `const pageMeta = {
+    "/help/datev-export": {
+        "en": {
+            "title": "DATEV export (EXTF) | Scandora Help",
+            "description": "Create a DATEV EXTF export your tax advisor can import: pick a profile and a date range."
+        },
+        "de": {
+            "title": "DATEV-Export (EXTF) — in Vorbereitung | Scandora Hilfe",
+            "description": "DATEV-EXTF-Export für Ihren Steuerberater (in Vorbereitung): Profil und Zeitraum wählen."
+        }
+    }
+};
+`;
+  withPatchedPageMetaSource(table, (result) => {
+    assert.equal(result.status, 1, result.stdout);
+    assert.match(result.stderr, /pageMeta en\.title for \/help\/datev-export sells a gated feature as shipped/);
+    assert.match(result.stderr, /pageMeta en\.description for \/help\/datev-export sells a gated feature as shipped/);
+    assert.match(result.stderr, /applyPageMeta\(\) writes it over the marked static head tag/);
+    assert.doesNotMatch(result.stderr, /pageMeta de\./);
+  });
+});
+
+test('when a pageMeta entry marks the gated feature in both languages it should pass', () => {
+  const table = `const pageMeta = {
+    "/help/datev-export": {
+        "en": {
+            "title": "DATEV export (EXTF) — coming soon | Scandora Help",
+            "description": "The DATEV EXTF export your tax advisor can import is coming soon: pick a profile and a date range."
+        },
+        "de": {
+            "title": "DATEV-Export (EXTF) — in Vorbereitung | Scandora Hilfe",
+            "description": "DATEV-EXTF-Export für Ihren Steuerberater (in Vorbereitung): Profil und Zeitraum wählen."
+        }
+    }
+};
+`;
+  withPatchedPageMetaSource(table, (result) => {
+    assert.equal(result.status, 0, result.stderr);
+    assert.match(result.stdout, /pageMeta ↔ static head: 1 route\(s\)/);
+  });
+});
+
+// The check's own tripwire: a renamed or reshaped table must fail loudly, not leave the head
+// copy unchecked while the rest of the guard reports success.
+test('when the pageMeta table cannot be parsed it should fail loudly instead of skipping', () => {
+  withPatchedPageMetaSource('const somethingElse = {};\n', (result) => {
+    assert.equal(result.status, 1, result.stdout);
+    assert.match(result.stderr, /pageMeta check failed: no parseable/);
+    assert.match(result.stderr, /went unchecked/);
+  });
+});
+
+test('when no page matches a pageMeta route it should fail loudly instead of skipping', () => {
+  withPatchedPageMetaSource('const pageMeta = {\n    "/no-such-route": { "en": {}, "de": {} }\n};\n', (result) => {
+    assert.equal(result.status, 1, result.stdout);
+    assert.match(result.stderr, /pageMeta check failed: none of the \d+ page\(s\) matched a pageMeta route/);
   });
 });
