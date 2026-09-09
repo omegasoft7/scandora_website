@@ -93,7 +93,7 @@ const translations = {
         'pricing.aiSplit.title': 'What the AI does for you',
         'pricing.aiSplit.ownKey': 'AI reads each scan and pulls out dates, amounts, and suppliers — covered by your monthly credits.',
         'pricing.aiSplit.scandoraAi': "Document-chat answers, search indexing, retrieval and EU index storage run on Scandora's AI and servers, and spend Scandora credits.",
-        'pricing.priceNote': 'Prices are the final amounts charged via the App Store / Google Play (small-business operator — no separate VAT shown, § 19 UStG). Prices may vary by region and store.',
+        'pricing.priceNote': 'The prices shown in the App Store / Google Play are the final prices for the respective product (small-business operator — no separate VAT shown, § 19 UStG); with a trial, an introductory or promotional offer, or a prorated plan change the amount actually charged can differ, and the amount the store states on your receipt is the one that applies. Prices may vary by region and store.',
 
         // Download
         'download.title': 'Ready to Turn Documents Into Action?',
@@ -178,7 +178,7 @@ const translations = {
         'faq.q1': 'What is Scandora?',
         'faq.a1': 'Scandora is an AI-powered document scanning app that transforms your paper documents into digital intelligence. It automatically extracts key information like dates, amounts, and names, then syncs everything to your favorite cloud services like Trello and Google Drive.',
         'faq.q2': 'Is Scandora free to use?',
-        'faq.a2': "Yes! Scandora's free plan includes unlimited scans, 10 AI credits a month (extraction, indexing and AI document chat), cloud integrations, and watermark-free exports. Paid plans are available now: Pro (€9.99/month or €89/year) adds a much larger monthly AI-credit allowance and priority support, and Business / DATEV (€24.99/month or €229/year) adds 5,000 AI credits a month, dedicated support and capture designed for GoBD & DSGVO record-keeping — its DATEV, lexoffice and sevDesk export is coming soon and is not available in this version yet. Prices are the final amounts charged via the App Store or Google Play.",
+        'faq.a2': "Yes! Scandora's free plan includes unlimited scans, 10 AI credits a month (extraction, indexing and AI document chat), cloud integrations, and watermark-free exports. Paid plans are available now: Pro (€9.99/month or €89/year) adds a much larger monthly AI-credit allowance and priority support, and Business / DATEV (€24.99/month or €229/year) adds 5,000 AI credits a month, dedicated support and capture designed for GoBD & DSGVO record-keeping — its DATEV, lexoffice and sevDesk export is coming soon and is not available in this version yet. The prices shown in the App Store or Google Play are the final prices for the respective product; with a trial, an introductory or promotional offer, or a prorated plan change the amount actually charged can differ, and the amount the store states on your receipt is the one that applies.",
         'faq.q3': 'Which platforms does Scandora support?',
         'faq.a3': 'Scandora is available on iOS, macOS, and Android. You can scan documents using your phone camera or connect professional scanners on desktop.',
         'faq.q4': 'Is my data secure with Scandora?',
@@ -285,7 +285,7 @@ const translations = {
         'pricing.aiSplit.title': 'Was die KI für Sie tut',
         'pricing.aiSplit.ownKey': 'KI liest jeden Scan und extrahiert Datum, Beträge und Lieferant — abgedeckt durch Ihre monatlichen Credits.',
         'pricing.aiSplit.scandoraAi': 'Antworten im Dokument-Chat, Suchindex, Retrieval und EU-Index-Speicher laufen auf Scandoras KI und Servern und verbrauchen Scandora-Credits.',
-        'pricing.priceNote': 'Die Preise sind die über App Store / Google Play berechneten Endpreise (Kleinunternehmer – keine gesonderte MwSt., § 19 UStG). Preise können je nach Region und Store variieren.',
+        'pricing.priceNote': 'Die im App Store / bei Google Play angezeigten Preise sind die Endpreise für das jeweilige Produkt (Kleinunternehmer – keine gesonderte MwSt., § 19 UStG); bei einer Testphase, einem Einführungs- oder Aktionsangebot oder einem anteilig verrechneten Wechsel kann der tatsächlich berechnete Betrag abweichen, und maßgeblich ist der Betrag, den der Store in Ihrem Kaufbeleg ausweist. Preise können je nach Region und Store variieren.',
 
         // Download
         'download.title': 'Bereit, Dokumente zur Aktion zu machen?',
@@ -370,7 +370,7 @@ const translations = {
         'faq.q1': 'Was ist Scandora?',
         'faq.a1': 'Scandora ist eine KI-gestützte Dokumentenscanner-App, die Ihre Papierdokumente in digitale Intelligenz verwandelt. Sie extrahiert automatisch wichtige Angaben wie Datum, Beträge und Namen und synchronisiert alles mit Ihren bevorzugten Cloud-Diensten wie Trello und Google Drive.',
         'faq.q2': 'Ist Scandora kostenlos?',
-        'faq.a2': 'Ja! Der kostenlose Tarif von Scandora umfasst unbegrenzte Scans, 10 KI-Credits pro Monat (Extraktion, Indexierung und KI-Dokumenten-Chat), Cloud-Integrationen und Exporte ohne Wasserzeichen. Bezahlte Tarife sind jetzt verfügbar: Pro (9,99 €/Monat oder 89 €/Jahr) ergänzt ein deutlich größeres monatliches KI-Credit-Kontingent und Prioritäts-Support, und Business / DATEV (24,99 €/Monat oder 229 €/Jahr) ergänzt 5.000 KI-Credits pro Monat, dedizierten Support und eine für die GoBD- & DSGVO-Aufbewahrung konzipierte Erfassung — der DATEV-, lexoffice- und sevDesk-Export kommt demnächst und ist in dieser Version noch nicht verfügbar. Die Preise sind die über App Store oder Google Play berechneten Endpreise.',
+        'faq.a2': 'Ja! Der kostenlose Tarif von Scandora umfasst unbegrenzte Scans, 10 KI-Credits pro Monat (Extraktion, Indexierung und KI-Dokumenten-Chat), Cloud-Integrationen und Exporte ohne Wasserzeichen. Bezahlte Tarife sind jetzt verfügbar: Pro (9,99 €/Monat oder 89 €/Jahr) ergänzt ein deutlich größeres monatliches KI-Credit-Kontingent und Prioritäts-Support, und Business / DATEV (24,99 €/Monat oder 229 €/Jahr) ergänzt 5.000 KI-Credits pro Monat, dedizierten Support und eine für die GoBD- & DSGVO-Aufbewahrung konzipierte Erfassung — der DATEV-, lexoffice- und sevDesk-Export kommt demnächst und ist in dieser Version noch nicht verfügbar. Die im App Store bzw. bei Google Play angezeigten Preise sind die Endpreise für das jeweilige Produkt; bei einer Testphase, einem Einführungs- oder Aktionsangebot oder einem anteilig verrechneten Wechsel kann der tatsächlich berechnete Betrag abweichen, und maßgeblich ist der Betrag, den der Store in Ihrem Kaufbeleg ausweist.',
         'faq.q3': 'Welche Plattformen unterstützt Scandora?',
         'faq.a3': 'Scandora ist für iOS, macOS und Android verfügbar. Sie können Dokumente mit Ihrer Handykamera scannen oder auf dem Desktop professionelle Scanner verbinden.',
         'faq.q4': 'Sind meine Daten bei Scandora sicher?',

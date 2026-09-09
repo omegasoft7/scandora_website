@@ -75,60 +75,133 @@ test('when the shipped purchase flow collects the consent the terms should not c
   );
 });
 
-test('when the confirmation is sent only once per product the terms should state that as the present limitation', () => {
+test('when a confirmation is sent for every contract the terms should promise one for a repeat purchase', () => {
   for (const stale of [
     'Diese Bestätigung versenden wir einmal je Produkt',
     'We send that confirmation once per product',
+    'Derzeit erhalten Sie diese Bestätigung nur einmal je Produkt',
+    'At present you receive this confirmation only once per product',
+    'wenn wir Ihnen keine Bestätigung senden — etwa beim wiederholten Kauf desselben Produkts',
+    'if we send you no confirmation — for example when you buy the same product again',
   ]) {
-    assert.ok(!terms.includes(stale), `terms.html turns the once-per-product limit into a contractual rule: ${stale}`);
+    assert.ok(!terms.includes(stale), `terms.html still carries the once-per-product limit: ${stale}`);
   }
   assertBothLanguages(
     {
-      de: 'Derzeit erhalten Sie diese Bestätigung nur einmal je Produkt',
-      en: 'At present you receive this confirmation only once per product',
+      de: 'Diese Bestätigung erhalten Sie für jeden Vertrag, den Sie in der App abschließen, also auch dann, wenn '
+        + 'Sie dasselbe Produkt später erneut kaufen',
+      en: 'You receive that confirmation for every contract you conclude in the app, including when you buy the '
+        + 'same product again later',
     },
-    'the terms do not state the once-per-product limit as the current state of the implementation',
+    'the terms do not promise a confirmation for every contract concluded in the app',
   );
   assertBothLanguages(
     {
-      de: 'wenn wir Ihnen keine Bestätigung senden — etwa beim wiederholten Kauf desselben Produkts',
-      en: 'if we send you no confirmation — for example when you buy the same product again',
+      de: 'Verlängert sich Ihr Abonnement automatisch im Store, senden wir keine neue Bestätigung',
+      en: 'If your subscription renews automatically in the store we send no new confirmation',
     },
-    'the fallback does not keep the full 14 days when no confirmation is sent at all',
+    'the terms do not say a store renewal owes no new confirmation',
   );
 });
 
-test('when the confirmation email carries no price the terms should list only what it does contain', () => {
+test('when a contract is concluded in the store the terms should not promise a confirmation the app never sends', () => {
+  for (const stale of [
+    'Diese Bestätigung erhalten Sie für jeden geschlossenen Vertrag',
+    'You receive that confirmation for every contract concluded,',
+  ]) {
+    assert.ok(!terms.includes(stale), `terms.html promises a confirmation for contracts the code never sees: ${stale}`);
+  }
+  assertBothLanguages(
+    {
+      de: 'Schließen Sie einen Vertrag ohne Kaufvorgang in der App — etwa durch erneutes Abonnieren unmittelbar im '
+        + 'Store oder durch Einlösen eines Angebotscodes im Store —, senden wir keine Bestätigung',
+      en: 'If you conclude a contract without a purchase in the app — for example by resubscribing directly in the '
+        + 'store or by redeeming a store offer code — we send no confirmation',
+    },
+    'the terms do not name the store-side conclusion that produces no confirmation',
+  );
+});
+
+test('when the confirmation email states the price the terms should list it among the contents', () => {
   for (const stale of [
     'dauerhaften Datenträger mit den Bestelldaten',
     'durable medium containing the order details',
+    'Den Endpreis nennt diese E-Mail nicht',
+    'That email does not state the final price',
+    'den im Store gezahlten Preis',
+    'the price charged by the store',
+    'Der genannte Preis ist der Preis, den der Store Ihnen im Kaufvorgang angezeigt und berechnet hat',
+    'The price stated is the one the store showed and charged you during the purchase',
+    'den Abrechnungszeitraum, Ihre Erklärung samt Zeitpunkt',
+    'the billing period, your declaration with its timestamp',
   ]) {
-    assert.ok(!terms.includes(stale), `terms.html still promises order details the email never carries: ${stale}`);
+    assert.ok(!terms.includes(stale), `terms.html misstates what the confirmation email carries: ${stale}`);
   }
   assertBothLanguages(
     {
-      de: 'Sie enthält die Angaben zum gekauften Produkt, Ihre Erklärung samt Zeitpunkt, die Widerrufsbelehrung '
-        + 'und die Anbieterangaben',
-      en: 'It contains the details of the purchased product, your declaration with its timestamp, the withdrawal '
-        + 'instruction and the provider details',
+      de: 'Sie enthält die Angaben zum gekauften Produkt, den vom Store angezeigten Preis und bei einem Abonnement '
+        + 'den Abrechnungszeitraum, soweit die App uns diese Angaben übermittelt hat, Ihre Erklärung samt '
+        + 'Zeitpunkt, die Widerrufsbelehrung und die Anbieterangaben',
+      en: 'It contains the details of the purchased product, the price the store showed for that product and, for '
+        + 'a subscription, the billing period, insofar as the app has sent us those details, your declaration with '
+        + 'its timestamp, the withdrawal instruction and the provider details',
     },
-    'the terms do not list what the confirmation email actually contains',
+    'the terms do not condition the price and billing period on the app having sent them',
   );
   assertBothLanguages(
     {
-      de: 'Den Endpreis nennt diese E-Mail nicht',
-      en: 'That email does not state the final price',
+      de: 'Der genannte Preis ist der Preis, den der Store im Kaufvorgang für dieses Produkt angezeigt hat',
+      en: 'The price stated is the one the store showed for that product during the purchase',
     },
-    'the terms do not say the confirmation email carries no price',
+    'the terms do not name the store-shown list price as the one the email states',
+  );
+  assertBothLanguages(
+    {
+      de: 'bei einer Testphase, einem Einführungs- oder Aktionsangebot oder einem anteilig verrechneten Wechsel '
+        + 'kann der tatsächlich berechnete Betrag abweichen — maßgeblich ist der Kaufbeleg des Stores',
+      en: 'with a trial, an introductory or promotional offer, or a prorated plan change the amount actually '
+        + "charged can differ — the store's receipt (section 1) governs",
+    },
+    'the terms do not warn that the charged amount can differ from the price the email states',
   );
 });
 
-test('when the app shows the declaration on every in-app buy the terms should limit the exception to a store renewal', () => {
+test('when a paid purchase needs an account the terms should say so and never describe a purchase without one', () => {
+  for (const stale of [
+    'etwa bei einem Kauf ohne Konto',
+    'because you purchased without an account',
+  ]) {
+    assert.ok(!terms.includes(stale), `terms.html still describes a purchase the app refuses: ${stale}`);
+  }
+  assertBothLanguages(
+    {
+      de: 'Ein kostenpflichtiger Kauf setzt ein Scandora-Konto voraus; ohne Anmeldung lässt sich in der App kein '
+        + 'kostenpflichtiger Vertrag schließen',
+      en: 'A paid purchase requires a Scandora account; without signing in, no paid contract can be concluded in '
+        + 'the app',
+    },
+    'the terms do not require an account for a paid purchase',
+  );
+});
+
+test('when the confirmation can fail to arrive at all the terms should keep the 14 days for any other reason', () => {
+  assertBothLanguages(
+    {
+      de: 'oder wenn Sie aus einem anderen Grund keine Bestätigung von uns erhalten',
+      en: 'or if for any other reason no confirmation reaches you',
+    },
+    'the terms do not keep the full 14 days when no confirmation reaches the buyer for any other reason',
+  );
+});
+
+test('when the app shows the declaration on every in-app buy the terms should name each case that skips it', () => {
   for (const stale of [
     'erhalten Sie keine weitere Bestätigung und sehen die Erklärung nicht noch einmal',
     'you receive no further confirmation and are not shown the declaration again',
+    'nur bei einer automatischen Verlängerung im Store',
+    'only for an automatic renewal in the store',
   ]) {
-    assert.ok(!terms.includes(stale), `terms.html still claims the declaration is never shown again: ${stale}`);
+    assert.ok(!terms.includes(stale), `terms.html misstates when the declaration is not shown again: ${stale}`);
   }
   assertBothLanguages(
     {
@@ -139,10 +212,39 @@ test('when the app shows the declaration on every in-app buy the terms should li
   );
   assertBothLanguages(
     {
-      de: 'nur bei einer automatischen Verlängerung im Store',
-      en: 'only for an automatic renewal in the store',
+      de: 'nicht erneut angezeigt wird sie bei einer automatischen Verlängerung im Store und bei einem '
+        + 'Vertragsschluss ohne Kaufvorgang in der App',
+      en: 'it is not shown again for an automatic renewal in the store, nor for a contract concluded without a '
+        + 'purchase in the app',
     },
-    'the terms do not confine the missing declaration to a store-side renewal',
+    'the terms do not cover both cases in which the declaration is not shown again',
+  );
+});
+
+test('when section 5 concedes the charged amount can differ section 4 should not bind the displayed price', () => {
+  for (const stale of [
+    'Die angezeigten Preise sind die im jeweiligen Store berechneten Endpreise',
+    'The prices shown are the final amounts charged by the respective store',
+    'maßgeblich ist der im Kaufvorgang angezeigte Preis',
+    'the price shown during the purchase is the one that applies',
+  ]) {
+    assert.ok(!terms.includes(stale), `section 4 still equates the displayed price with the amount charged: ${stale}`);
+  }
+  assertBothLanguages(
+    {
+      de: 'bei einer Testphase, einem Einführungs- oder Aktionsangebot oder einem anteilig verrechneten Wechsel '
+        + 'kann der tatsächlich berechnete Betrag davon abweichen',
+      en: 'with a trial, an introductory or promotional offer, or a prorated plan change the amount actually '
+        + 'charged can differ from them',
+    },
+    'section 4 does not admit that the charged amount can differ from the displayed price',
+  );
+  assertBothLanguages(
+    {
+      de: 'maßgeblich ist der Betrag, den der Store Ihnen im Kaufvorgang berechnet und im Kaufbeleg ausweist',
+      en: 'the amount the store charges you during the purchase and states on your receipt is the one that applies',
+    },
+    'section 4 does not make the amount on the store receipt the governing figure',
   );
 });
 
