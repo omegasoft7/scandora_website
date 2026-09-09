@@ -394,6 +394,31 @@ const forbiddenCases = [
       'gehören zum Tarif Business / DATEV.</p>',
     label: /DATEV \/ lexoffice \/ sevDesk export or the GoBD layer sold as available/,
   },
+  {
+    name: 'store-listing plan bullet promising team seats',
+    body: '<p>- Business / DATEV: team seats and a data processing agreement.</p>',
+    label: /team seats offered/,
+  },
+  {
+    name: 'German store-listing plan bullet promising Team-Sitze',
+    body: '<p>- Business / DATEV: Team-Sitze und ein Auftragsverarbeitungsvertrag.</p>',
+    label: /team seats offered/,
+  },
+  {
+    name: 'singular team seat written without the hyphen',
+    body: '<p>Add a second team seat whenever your business grows.</p>',
+    label: /team seats offered/,
+  },
+  {
+    name: 'seats offered without the word "team" in front',
+    body: '<p>The plan includes seats for your team.</p>',
+    label: /team seats offered/,
+  },
+  {
+    name: 'German Team-Plätze phrasing of the same offer',
+    body: '<p>Der Tarif bringt zusätzliche Team-Plätze für Ihr Büro.</p>',
+    label: /team seats offered/,
+  },
 ];
 
 for (const { name, body, label } of forbiddenCases) {
@@ -548,6 +573,14 @@ const allowedCases = [
   {
     name: 'lexoffice named as a recipient in the processing table',
     body: '<p>lexoffice (Lexware / Haufe Group) — export to your own lexoffice account (user-authorized).</p>',
+  },
+  {
+    name: 'shipped Business / DATEV bullet that offers the DPA and no seats',
+    body: '<p>- Business / DATEV: a data processing agreement for your business.</p>',
+  },
+  {
+    name: 'single-seat wording that promises no second seat',
+    body: '<p>Every plan is a single-user plan.</p>',
   },
 ];
 

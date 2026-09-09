@@ -24,6 +24,7 @@ function readIfPresent(page) {
 }
 
 const APP_ICON = '/assets/logo.png';
+const APP_ICON_SOURCE = 'brand/ask_the_page/icon-master.svg';
 const RETIRED_MARK = '/assets/logo-mark.svg';
 
 function htmlPages() {
@@ -71,6 +72,26 @@ test('when a lockup drifts back to the old mark it should be reported', () => {
 
 test('when the app icon is referenced it should exist as a shipped asset', () => {
   assert.ok(existsSync(join(websiteDir, APP_ICON.slice(1))), `${APP_ICON} is missing from website/assets`);
+});
+
+test('when the retired mark is dropped it should no longer ship as an asset', () => {
+  assert.ok(!existsSync(join(websiteDir, RETIRED_MARK.slice(1))), `${RETIRED_MARK} is still shipped`);
+});
+
+/** The drawing instructions of an SVG — every line after its <defs>, indentation removed. */
+function artworkLines(svg) {
+  const body = svg.split('</defs>').pop().split('</svg>')[0];
+  return body.split('\n').map((line) => line.trim()).filter((line) => line !== '');
+}
+
+test('when the favicon is rasterized it should draw the same artwork as the shipped app icon', () => {
+  const favicon = read('favicon.svg');
+  const master = readFileSync(join(websiteDir, '..', APP_ICON_SOURCE), 'utf8');
+  assert.ok(favicon.includes(APP_ICON_SOURCE), `favicon.svg does not name ${APP_ICON_SOURCE} as its source`);
+  assert.match(favicon, /<clipPath id="squircle">/);
+  const drawn = new Set(artworkLines(favicon));
+  const missing = artworkLines(master).filter((line) => !drawn.has(line));
+  assert.deepEqual(missing, [], 'favicon.svg drifted from the app icon — rerun website/scripts/generate-icons.sh');
 });
 
 test('when the homepage loads it should show the app icon above the fold', () => {

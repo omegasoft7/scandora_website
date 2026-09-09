@@ -13,18 +13,18 @@ const translations = {
         'nav.download': 'Download',
 
         // Hero
-        'hero.badge': 'Built in Germany · Privacy-first · GoBD record-keeping features',
-        'hero.titleLine1': 'Scandora turns every document',
-        'hero.titleLine2': 'into action',
-        'hero.description': 'Scandora is an AI document scanner for iPhone, iPad, Mac and Android. Scan with your phone or your real office scanner, let the managed AI understand the document, and send it straight into your Trello and Google Drive. Built in Germany — privacy-first, with GoBD record-keeping features, and your original scans stay on your device and in the storage you choose.',
+        'hero.badge': 'Built in Germany · GDPR-first · EU servers',
+        'hero.titleLine1': 'Scan it with Scandora.',
+        'hero.titleLine2': 'Then ask it anything.',
+        'hero.description': 'Scandora is an AI document scanner for iPhone, iPad, Mac and Android whose output you can talk to. Scan an invoice with your phone or your real office scanner, then ask it when the invoice is due or what its IBAN is. The AI pulls out supplier, amount, IBAN, due date and to-dos without a template, your files land in your own Google Drive and Trello, and every scan stays searchable on your device. Built in Germany, GDPR-first, on EU servers, with no ads.',
         'hero.getStarted': 'Get Started Free',
         'hero.seeHow': 'See How It Works',
-        'hero.stat1': 'Phone or scanner',
-        'hero.stat1sub': 'Scan however you work',
-        'hero.stat2': 'AI that reads it',
-        'hero.stat2sub': 'Extraction without retyping',
-        'hero.stat3': 'Built in Germany',
-        'hero.stat3sub': 'Privacy-first by design',
+        'hero.stat1': 'Ask your document',
+        'hero.stat1sub': 'Answers from your scan',
+        'hero.stat2': 'AI reads the details',
+        'hero.stat2sub': 'Supplier, amount, IBAN, due date',
+        'hero.stat3': 'Your cloud, not ours',
+        'hero.stat3sub': 'Straight into Drive and Trello',
 
         // Features
         'features.badge': 'What Makes Scandora Different',
@@ -96,8 +96,8 @@ const translations = {
         'pricing.priceNote': 'The prices shown in the App Store / Google Play are the final prices for the respective product (small-business operator — no separate VAT shown, § 19 UStG); with a trial, an introductory or promotional offer, or a prorated plan change the amount actually charged can differ, and the amount the store states on your receipt is the one that applies. Prices may vary by region and store.',
 
         // Download
-        'download.title': 'Ready to Turn Documents Into Action?',
-        'download.description': 'Download Scandora and put your documents to work — built in Germany, your data stays yours. Available on iOS, macOS, and Android.',
+        'download.title': 'Ready to Ask Your Documents Anything?',
+        'download.description': 'Download Scandora, scan your first document and ask it a question — built in Germany, your data stays yours. Available on iOS, macOS, and Android.',
 
         // Footer
         'footer.tagline': 'Intelligent document scanning for modern businesses.',
@@ -205,18 +205,18 @@ const translations = {
         'nav.download': 'Download',
 
         // Hero
-        'hero.badge': 'In Deutschland entwickelt · Datenschutz zuerst · GoBD-Funktionen',
-        'hero.titleLine1': 'Scandora — der Dokumentenscanner',
-        'hero.titleLine2': 'für jede Aktion',
-        'hero.description': 'Scandora ist ein KI-Dokumentenscanner für iPhone, iPad, Mac und Android. Belege scannen mit dem Handy oder Ihrem echten Büroscanner — der Belegscanner, der jeden Beleg versteht. Die verwaltete KI liest das Dokument und sendet es direkt in Ihr Trello und Google Drive. In Deutschland entwickelt, Datenschutz zuerst, mit GoBD-Funktionen.',
+        'hero.badge': 'Entwickelt in Deutschland · DSGVO-freundlich · EU-Server',
+        'hero.titleLine1': 'Mit Scandora scannen.',
+        'hero.titleLine2': 'Einfach alles fragen.',
+        'hero.description': 'Scandora ist ein KI-Dokumentenscanner für iPhone, iPad, Mac und Android, der Ihre Fragen zum Dokument beantwortet. Scannen Sie eine Rechnung mit dem Handy oder Ihrem echten Büroscanner und fragen Sie dann, wann sie fällig ist oder wie die IBAN lautet. Die KI liest Lieferant, Betrag, IBAN, Fälligkeit und To-dos ohne Vorlage aus, Ihre Dateien landen in Ihrem eigenen Google Drive und Trello, und jeder Scan bleibt auf Ihrem Gerät durchsuchbar. Entwickelt in Deutschland, DSGVO-freundlich, auf EU-Servern, ohne Werbung.',
         'hero.getStarted': 'Kostenlos starten',
         'hero.seeHow': 'So funktioniert es',
-        'hero.stat1': 'Handy oder Scanner',
-        'hero.stat1sub': 'Scannen, wie Sie arbeiten',
-        'hero.stat2': 'KI liest es aus',
-        'hero.stat2sub': 'Extraktion ohne Abtippen',
-        'hero.stat3': 'In Deutschland entwickelt',
-        'hero.stat3sub': 'Datenschutz by design',
+        'hero.stat1': 'Dokument fragen',
+        'hero.stat1sub': 'Antworten aus dem Scan',
+        'hero.stat2': 'KI liest die Details',
+        'hero.stat2sub': 'Lieferant, Betrag, IBAN, Fälligkeit',
+        'hero.stat3': 'Ihre Cloud, nicht unsere',
+        'hero.stat3sub': 'Direkt in Drive und Trello',
 
         // Features
         'features.badge': 'Was Scandora anders macht',
@@ -288,8 +288,8 @@ const translations = {
         'pricing.priceNote': 'Die im App Store / bei Google Play angezeigten Preise sind die Endpreise für das jeweilige Produkt (Kleinunternehmer – keine gesonderte MwSt., § 19 UStG); bei einer Testphase, einem Einführungs- oder Aktionsangebot oder einem anteilig verrechneten Wechsel kann der tatsächlich berechnete Betrag abweichen, und maßgeblich ist der Betrag, den der Store in Ihrem Kaufbeleg ausweist. Preise können je nach Region und Store variieren.',
 
         // Download
-        'download.title': 'Bereit, Dokumente zur Aktion zu machen?',
-        'download.description': 'Laden Sie Scandora herunter und lassen Sie Ihre Dokumente arbeiten — in Deutschland entwickelt, Ihre Daten bleiben Ihre. Verfügbar für iOS, macOS und Android.',
+        'download.title': 'Bereit, Ihre Dokumente zu fragen?',
+        'download.description': 'Laden Sie Scandora herunter, scannen Sie Ihr erstes Dokument und stellen Sie ihm eine Frage — in Deutschland entwickelt, Ihre Daten bleiben Ihre. Verfügbar für iOS, macOS und Android.',
 
         // Footer
         'footer.tagline': 'Intelligentes Dokumentenscannen für moderne Unternehmen.',

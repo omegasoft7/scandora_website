@@ -187,6 +187,17 @@ const HEAD_TAGS = [
 ];
 const GATED_FEATURE_RE = new RegExp(GATED_FEATURE, 'i');
 
+// Team seats: `supportsTeamSeats` needs `teamSeatsEnabled` AND a limit above one
+// (`scandora_core/lib/src/entities/features/user_feature.dart`), and every seeded plan ships
+// `teamSeatsEnabled: false` (`infra/hetzner/userdata/sql/003_seed_pricing.sql`), so no sold plan
+// grants a second seat. The MVP is B2C-only, which makes an offer of seats a dead claim like
+// bring-your-own-AI (Trello #607). Scoped to marketing copy: the tier tables in
+// `docs/BYOM_VS_MANAGED_MODEL.md` and `MONETIZATION_COSTS.md` name the dimension in a row label
+// with the honest value "1", which is a fact, not an offer.
+const TEAM_SEATS =
+  String.raw`\bteam[-\s]?seats?\b|\bseats?\s+for\s+your\s+team\b` +
+  String.raw`|\bTeam[-\s]?Sitz(?:e|en|es)?\b|\bTeam[-\s]?Pl(?:ä|a)tze?\b`;
+
 const forbidden = [
   { pattern: /\b99\s*%/gi, label: '"99%" precision claim' },
   {
@@ -253,6 +264,10 @@ const forbidden = [
     pattern: new RegExp(`${BYO_AI_MODE}|${OWN_AI_KEY}|${OWN_AI_PROVIDER}`, 'gi'),
     label: 'bring-your-own-AI offered as a user choice (managed AI is the only shipped mode)',
     allow: BYO_DISCLAIMERS,
+  },
+  {
+    pattern: new RegExp(TEAM_SEATS, 'gi'),
+    label: 'team seats offered (no sold plan grants a second seat)',
   },
   {
     pattern: new RegExp(
