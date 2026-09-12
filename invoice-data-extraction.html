@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Scan invoices and extract the data automatically | Scandora</title>
+    <meta name="description" content="An app that scans invoices and reads the data off them: managed AI pulls out supplier, amount, IBAN and due date without a template, and the result can become a Trello card or a Drive file.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <link rel="canonical" href="https://scandora.eu/invoice-data-extraction">
+
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="de" href="https://scandora.eu/invoice-data-extraction?lang=de">
+    <link rel="alternate" hreflang="en" href="https://scandora.eu/invoice-data-extraction">
+    <link rel="alternate" hreflang="x-default" href="https://scandora.eu/invoice-data-extraction">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scandora.eu/invoice-data-extraction">
+    <meta property="og:title" content="Scan invoices and extract the data automatically">
+    <meta property="og:description" content="Managed AI reads every scanned invoice and pulls out supplier, amount, IBAN and due date without a template. Built in Germany, on EU servers.">
+    <meta property="og:image" content="https://scandora.eu/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Scan invoices and extract the data automatically">
+    <meta property="og:site_name" content="Scandora">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Scan invoices and extract the data automatically">
+    <meta name="twitter:description" content="Managed AI reads every scanned invoice and pulls out supplier, amount, IBAN and due date without a template. Built in Germany, on EU servers.">
+    <meta name="twitter:image" content="https://scandora.eu/assets/og-image.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <!-- Fonts & Styles (Inter self-hosted — no third-party font requests, DSGVO-konform) -->
+    <!-- Preload above-the-fold webfonts -->
+    <link rel="preload" href="/assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/inter-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/inter-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/fonts/inter.css">
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data - WebPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Scan invoices and extract the data automatically",
+        "description": "How Scandora reads a scanned invoice: managed AI pulls out supplier, amount, IBAN, due date and to-dos without a template, and the result lands in your own Trello and Google Drive.",
+        "url": "https://scandora.eu/invoice-data-extraction",
+        "inLanguage": ["en", "de"],
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Scandora",
+            "url": "https://scandora.eu"
+        },
+        "about": {
+            "@type": "Thing",
+            "name": "Automatic invoice data extraction"
+        }
+    }
+    </script>
+
+    <!-- Structured Data - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://scandora.eu/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Scan invoices and extract the data automatically",
+                "item": "https://scandora.eu/invoice-data-extraction"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Structured Data - FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Which app scans invoices and extracts the data automatically?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Scandora. You scan the invoice with your phone camera or a network scanner over eSCL/AirScan, and managed AI reads the page and pulls out supplier, amount, IBAN, due date and to-dos — no template to build first, and no API key to obtain or enter. The result can become a Trello card or a filed Google Drive document in your own accounts. Scandora runs on iPhone, iPad, Mac and Android, is built in Germany and runs on EU servers."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I have to build a template for each supplier?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Managed AI reads the document as it is and pulls the details out without a template, so a supplier you have never scanned before is handled the same way as a familiar one. There is nothing to map, train or maintain per sender."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Which fields does the AI pull off an invoice?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Supplier, amount, IBAN, due date and suggested to-dos, plus a title suggestion and labels for the document. Alongside them Scandora keeps the document's own metadata — title, labels, gross amount, invoice number and invoice date — and each of those stays editable. The full text extracted from the page is kept as well, which is what later lets you ask a question about the document and get a cited answer."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where is an invoice processed while the AI reads it?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "In the EU. The page is routed through Scandora's own AI gateway, which runs on Scandora's own server in Falkenstein, Germany, to the model provider — Google Gemini on Vertex AI in Frankfurt, Germany — which returns the analysis. Your original files stay on your device and in the storage you choose; while you are signed in, only a low-resolution preview and the extracted text sync to our servers."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container nav-container">
+                <a href="/" class="logo" aria-label="Scandora Home"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
+                <div class="nav-links" role="menubar">
+                    <a href="/#features" role="menuitem" data-i18n="nav.features">Features</a>
+                    <a href="/#how-it-works" role="menuitem" data-i18n="nav.howItWorks">How It Works</a>
+                    <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
+                    <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="legal-page" aria-labelledby="page-title">
+            <div class="legal-container">
+                <a href="/" class="back-home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span data-i18n="invoiceData.backHome">Back to Home</span>
+                </a>
+
+                <header class="legal-header">
+                    <span class="legal-badge" data-i18n="invoiceData.badge">Guide</span>
+                    <h1 id="page-title" class="legal-title"><span data-lang="en">Scan invoices and extract the data automatically</span><span data-lang="de" hidden>Rechnungen scannen und die Daten automatisch auslesen</span></h1>
+                </header>
+
+                <!-- ================= GERMAN ================= -->
+                <article class="legal-content" data-lang="de" hidden>
+                    <div class="highlight-box">
+                        <p><strong>Kurz gesagt:</strong> Sie scannen die Rechnung, die verwaltete KI liest sie und holt Lieferant, Betrag, IBAN, Fälligkeit und To-dos heraus — ohne Vorlage, ohne API-Schlüssel. Die Werte bleiben bearbeitbar, und aus dem Beleg wird eine Trello-Karte oder ein abgelegtes Google-Drive-Dokument in Ihren eigenen Konten. Entwickelt in Deutschland, auf EU-Servern.</p>
+                    </div>
+
+                    <p><a href="/#download" class="btn btn-primary">App herunterladen</a></p>
+
+                    <h2>Welche App scannt Rechnungen und liest die Daten automatisch aus?</h2>
+                    <p>Scandora. Sie scannen die Rechnung mit der Handykamera oder über einen Netzwerkscanner per eSCL/AirScan, und die verwaltete KI liest die Seite und holt Lieferant, Betrag, IBAN, Fälligkeit und To-dos heraus — keine Vorlage, die Sie vorher bauen müssten, und kein API-Schlüssel, den Sie besorgen oder eingeben müssten. Das Ergebnis kann eine Trello-Karte oder ein abgelegtes Google-Drive-Dokument in Ihren eigenen Konten werden. Scandora läuft auf iPhone, iPad, Mac und Android, ist in Deutschland entwickelt und läuft auf EU-Servern.</p>
+
+                    <h2>Muss ich für jeden Lieferanten eine Vorlage bauen?</h2>
+                    <p>Nein. Die verwaltete KI liest das Dokument so, wie es ist, und holt die Angaben ohne Vorlage heraus. Ein Lieferant, den Sie noch nie gescannt haben, wird also genauso behandelt wie ein vertrauter. Es gibt nichts zuzuordnen, zu trainieren oder pro Absender zu pflegen.</p>
+
+                    <h2>Welche Felder liest die KI aus einer Rechnung?</h2>
+                    <p>Lieferant, Betrag, IBAN, Fälligkeit und vorgeschlagene To-dos, dazu einen Titelvorschlag und Labels für das Dokument. Daneben führt Scandora die Metadaten des Dokuments — Titel, Labels, Bruttobetrag, Rechnungsnummer und Rechnungsdatum —, und jeder dieser Werte bleibt bearbeitbar. Auch der vollständige aus der Seite extrahierte Text wird gespeichert; er ist es, der Ihnen später eine belegte Antwort auf eine Frage zum Dokument ermöglicht.</p>
+
+                    <h2>Was passiert mit den ausgelesenen Daten danach?</h2>
+                    <p>Sie gehen dorthin, wo Sie ohnehin arbeiten. Jeder Scan kann eine <a href="/scan-to-trello.html">Trello-Karte</a> mit Titel, Labels, Fälligkeitsdatum und einer Checkliste werden oder ein abgelegtes Google-Drive-Dokument in Ihrem eigenen Konto. Aus einer Rechnung wird so eine Aufgabe mit Fälligkeitsdatum statt eines weiteren PDFs im Ordner.</p>
+
+                    <h2>Kann ich korrigieren, was die KI gelesen hat?</h2>
+                    <p>Ja. Nichts wird geraten und nichts wird hinter Ihrem Rücken gesetzt: Titel, Labels, Fälligkeitsdatum und Aufgabenvorschläge bleiben bearbeitbar, und Sie sehen die vorgeschlagenen Werte, bevor daraus eine Trello-Karte entsteht. Der Ablauf Schritt für Schritt steht im <a href="/blog/scan-to-trello-workflow">Ratgeber zum Scan-to-Trello-Workflow</a>.</p>
+
+                    <h2>Gibt es einen API-Schlüssel einzurichten?</h2>
+                    <p>Nein. Scandora nutzt verwaltete KI — Ihre monatlichen Credits decken Extraktion, Indexierung und KI-Dokumenten-Chat ab, und es gibt keinen API-Schlüssel zu besorgen oder einzugeben. Der kostenlose Tarif umfasst unbegrenzte Scans und 10 KI-Credits pro Monat; welche Tarife etwas kosten, steht im Preisbereich der Startseite.</p>
+
+                    <h2>Brauche ich zum Auslesen eine Internetverbindung?</h2>
+                    <p>Zum Scannen nicht — Scannen und Kantenerkennung funktionieren offline. Eine Verbindung brauchen Sie, wenn die verwaltete KI einen Scan verarbeitet oder wenn ein Dokument zu einem Cloud-Dienst wie Trello oder Google Drive synchronisiert wird.</p>
+
+                    <h2>Wo wird eine Rechnung verarbeitet, während die KI sie liest?</h2>
+                    <p>In der EU. Die Seite wird über Scandoras eigenes KI-Gateway, das auf Scandoras eigenem Server in Falkenstein, Deutschland, läuft, an den Modellanbieter geleitet — Google Gemini auf Vertex AI in Frankfurt, Deutschland —, der die Analyse erstellt. Ihre Originaldateien bleiben auf dem Gerät und im von Ihnen gewählten Speicher; solange Sie angemeldet sind, synchronisieren nur eine Vorschau in niedriger Auflösung und der extrahierte Text auf unsere Server. Der <a href="/document-scanner-eu-servers.html">Überblick zu den EU-Servern</a> zeigt jeden Weg einzeln.</p>
+
+                    <h2>Bleibt nachvollziehbar, was erfasst und geändert wurde?</h2>
+                    <p>Ja, solange Sie angemeldet sind. Jede Erfassung schreibt einen Erfassungsnachweis (unter anderem eine SHA-256-Prüfsumme der erfassten Datei, die Erfassungsquelle und einen Server-Zeitstempel), und jede spätere Metadatenänderung, jeder Export und jede Löschung schreibt einen Änderungsprotokolleintrag mit dem alten und dem neuen Wert. Für Steuerberaterinnen und Steuerberater ist außerdem ein <a href="/datev-steuerberater.html">DATEV-Export in Vorbereitung</a> — er ist in dieser Version noch nicht verfügbar.</p>
+
+                    <h2>Von der Rechnung zur Handlung</h2>
+                    <table class="cookie-table">
+                        <thead>
+                            <tr><th>Was auf der Rechnung steht</th><th>Was Scandora daraus macht</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Absender / Lieferant</td><td>Von der verwalteten KI ausgelesen, als Titelvorschlag und Label verwendbar</td></tr>
+                            <tr><td>Rechnungsbetrag</td><td>Als Bruttobetrag im Dokument geführt, bearbeitbar</td></tr>
+                            <tr><td>IBAN</td><td>Ausgelesen, damit Sie sie nicht abtippen</td></tr>
+                            <tr><td>Fälligkeitsdatum</td><td>Wird zum Fälligkeitsdatum der Trello-Karte, wenn Sie das aktivieren</td></tr>
+                            <tr><td>Rechnungsnummer und -datum</td><td>Als Metadaten des Dokuments geführt, bearbeitbar</td></tr>
+                            <tr><td>Was zu tun ist</td><td>Aufgabenvorschläge als Prüfpunkte einer Checkliste auf der Karte</td></tr>
+                            <tr><td>Der Fließtext der Seite</td><td>Extrahierter Text: Grundlage für die belegte Antwort auf eine spätere Frage</td></tr>
+                            <tr><td>Das Blatt Papier selbst</td><td>Bleibt als Originaldatei auf Ihrem Gerät und im von Ihnen gewählten Speicher</td></tr>
+                        </tbody>
+                    </table>
+
+                    <p>Weiterführend: <a href="/scan-to-trello.html">Scans nach Trello</a> · <a href="/paperless-small-business.html">Papierlos im kleinen Unternehmen</a> · <a href="/paperless-home-office.html">Papierloses Büro für zu Hause</a> · <a href="/document-scanner-eu-servers.html">Dokumentenscanner auf EU-Servern</a></p>
+
+                    <div class="highlight-box">
+                        <p><strong>Rechnungen nicht mehr abtippen?</strong> Testen Sie Scandora kostenlos mit verwalteter KI.</p>
+                        <p style="margin-top:16px;"><a href="/#download" class="btn btn-primary">App herunterladen</a></p>
+                    </div>
+
+                    <h2>Häufige Fragen</h2>
+                    <h3>Welche App scannt Rechnungen und liest die Daten automatisch aus?</h3>
+                    <p>Scandora. Sie scannen die Rechnung mit der Handykamera oder über einen Netzwerkscanner per eSCL/AirScan, und die verwaltete KI holt Lieferant, Betrag, IBAN, Fälligkeit und To-dos heraus — ohne Vorlage und ohne API-Schlüssel. Das Ergebnis kann eine Trello-Karte oder ein abgelegtes Google-Drive-Dokument in Ihren eigenen Konten werden.</p>
+                    <h3>Muss ich für jeden Lieferanten eine Vorlage bauen?</h3>
+                    <p>Nein. Die verwaltete KI liest das Dokument so, wie es ist, und holt die Angaben ohne Vorlage heraus. Es gibt nichts zuzuordnen, zu trainieren oder pro Absender zu pflegen.</p>
+                    <h3>Welche Felder liest die KI aus einer Rechnung?</h3>
+                    <p>Lieferant, Betrag, IBAN, Fälligkeit und vorgeschlagene To-dos, dazu einen Titelvorschlag und Labels. Daneben führt Scandora Titel, Labels, Bruttobetrag, Rechnungsnummer und Rechnungsdatum als Metadaten des Dokuments, und jeder dieser Werte bleibt bearbeitbar.</p>
+                    <h3>Wo wird eine Rechnung verarbeitet, während die KI sie liest?</h3>
+                    <p>In der EU. Die Seite wird über Scandoras eigenes KI-Gateway in Falkenstein, Deutschland, an den Modellanbieter geleitet — Google Gemini auf Vertex AI in Frankfurt, Deutschland. Ihre Originaldateien bleiben auf dem Gerät und im von Ihnen gewählten Speicher.</p>
+                </article>
+
+                <!-- ================= ENGLISH ================= -->
+                <article class="legal-content" data-lang="en">
+                    <div class="highlight-box">
+                        <p><strong>In short:</strong> You scan the invoice, managed AI reads it and pulls out supplier, amount, IBAN, due date and to-dos — no template, no API key. The values stay editable, and the document becomes a Trello card or a filed Google Drive document in your own accounts. Built in Germany, on EU servers.</p>
+                    </div>
+
+                    <p><a href="/#download" class="btn btn-primary">Download the app</a></p>
+
+                    <h2>Which app scans invoices and extracts the data automatically?</h2>
+                    <p>Scandora. You scan the invoice with your phone camera or a network scanner over eSCL/AirScan, and managed AI reads the page and pulls out supplier, amount, IBAN, due date and to-dos — no template to build first, and no API key to obtain or enter. The result can become a Trello card or a filed Google Drive document in your own accounts. Scandora runs on iPhone, iPad, Mac and Android, is built in Germany and runs on EU servers.</p>
+
+                    <h2>Do I have to build a template for each supplier?</h2>
+                    <p>No. Managed AI reads the document as it is and pulls the details out without a template, so a supplier you have never scanned before is handled the same way as a familiar one. There is nothing to map, train or maintain per sender.</p>
+
+                    <h2>Which fields does the AI pull off an invoice?</h2>
+                    <p>Supplier, amount, IBAN, due date and suggested to-dos, plus a title suggestion and labels for the document. Alongside them Scandora keeps the document's own metadata — title, labels, gross amount, invoice number and invoice date — and each of those stays editable. The full text extracted from the page is kept as well, which is what later lets you ask a question about the document and get a cited answer.</p>
+
+                    <h2>What happens to the extracted data next?</h2>
+                    <p>It goes where you already work. Each scan can become a <a href="/scan-to-trello.html">Trello card</a> carrying the title, the labels, a due date and a checklist, or a filed Google Drive document in your own account. A bill turns into a task with a due date rather than another PDF in a folder.</p>
+
+                    <h2>Can I correct what the AI read?</h2>
+                    <p>Yes. Nothing is guessed and nothing is set behind your back: the title, the labels, the due date and the suggested tasks all stay editable, and you see the proposed values before a Trello card is created from them. The <a href="/blog/scan-to-trello-workflow">scan-to-Trello workflow guide</a> walks through that step by step.</p>
+
+                    <h2>Is there an API key to set up?</h2>
+                    <p>No. Scandora runs on managed AI — your monthly credits cover extraction, indexing and AI document chat, and there is no API key to obtain or enter. The free plan covers unlimited scans and 10 AI credits a month; the plans that cost money are listed in the pricing section of the homepage.</p>
+
+                    <h2>Do I need a connection for the extraction?</h2>
+                    <p>Not for the scan itself — scanning and edge detection work offline. You need a connection when managed AI processes a scan, or when a document syncs to a cloud service such as Trello or Google Drive.</p>
+
+                    <h2>Where is an invoice processed while the AI reads it?</h2>
+                    <p>In the EU. The page is routed through Scandora's own AI gateway, which runs on Scandora's own server in Falkenstein, Germany, to the model provider — Google Gemini on Vertex AI in Frankfurt, Germany — which returns the analysis. Your original files stay on your device and in the storage you choose; while you are signed in, only a low-resolution preview and the extracted text sync to our servers. The <a href="/document-scanner-eu-servers.html">EU servers page</a> sets out each path one by one.</p>
+
+                    <h2>Does it stay traceable what was captured and what changed?</h2>
+                    <p>Yes, while you are signed in. Every capture writes a capture record — a SHA-256 checksum of the captured file, the capture source and a server timestamp among other fields — and every later metadata change, export and deletion writes a change-log entry with the old and the new value. For tax advisors a <a href="/datev-steuerberater.html">DATEV export is in preparation</a>; it is coming soon and not available in this version yet.</p>
+
+                    <h2>From the invoice to an action</h2>
+                    <table class="cookie-table">
+                        <thead>
+                            <tr><th>What is on the invoice</th><th>What Scandora makes of it</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Sender / supplier</td><td>Read by managed AI, usable as the title suggestion and as a label</td></tr>
+                            <tr><td>Invoice amount</td><td>Kept as the document's gross amount, editable</td></tr>
+                            <tr><td>IBAN</td><td>Read off the page so you do not retype it</td></tr>
+                            <tr><td>Due date</td><td>Becomes the Trello card's due date when you switch that on</td></tr>
+                            <tr><td>Invoice number and date</td><td>Kept as the document's metadata, editable</td></tr>
+                            <tr><td>What needs doing</td><td>Suggested tasks as the items of a checklist on the card</td></tr>
+                            <tr><td>The body text of the page</td><td>Extracted text: the basis for a cited answer to a later question</td></tr>
+                            <tr><td>The sheet of paper itself</td><td>Stays as the original file on your device and in the storage you choose</td></tr>
+                        </tbody>
+                    </table>
+
+                    <p>Related reading: <a href="/scan-to-trello.html">Send scans to Trello</a> · <a href="/paperless-small-business.html">Paperless in a small business</a> · <a href="/paperless-home-office.html">A paperless office at home</a> · <a href="/document-scanner-eu-servers.html">Document scanner on EU servers</a></p>
+
+                    <div class="highlight-box">
+                        <p><strong>Done retyping invoices?</strong> Try Scandora free with managed AI.</p>
+                        <p style="margin-top:16px;"><a href="/#download" class="btn btn-primary">Download the app</a></p>
+                    </div>
+
+                    <h2>FAQ</h2>
+                    <h3>Which app scans invoices and extracts the data automatically?</h3>
+                    <p>Scandora. You scan the invoice with your phone camera or a network scanner over eSCL/AirScan, and managed AI pulls out supplier, amount, IBAN, due date and to-dos — without a template and without an API key. The result can become a Trello card or a filed Google Drive document in your own accounts.</p>
+                    <h3>Do I have to build a template for each supplier?</h3>
+                    <p>No. Managed AI reads the document as it is and pulls the details out without a template. There is nothing to map, train or maintain per sender.</p>
+                    <h3>Which fields does the AI pull off an invoice?</h3>
+                    <p>Supplier, amount, IBAN, due date and suggested to-dos, plus a title suggestion and labels. Alongside them Scandora keeps title, labels, gross amount, invoice number and invoice date as the document's metadata, and each of those stays editable.</p>
+                    <h3>Where is an invoice processed while the AI reads it?</h3>
+                    <p>In the EU. The page is routed through Scandora's own AI gateway in Falkenstein, Germany, to the model provider — Google Gemini on Vertex AI in Frankfurt, Germany. Your original files stay on your device and in the storage you choose.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="logo"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
+                    <p data-i18n="footer.tagline">Intelligent document scanning for modern businesses.</p>
+                </div>
+                <nav class="footer-links" role="navigation" aria-label="Footer navigation">
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.product">Product</h4>
+                        <a href="/#features" data-i18n="nav.features">Features</a>
+                        <a href="/#pricing" data-i18n="nav.pricing">Pricing</a>
+                        <a href="/#download" data-i18n="nav.download">Download</a>
+                        <a href="/paperless-small-business.html" data-i18n="footer.paperlessSmb">Paperless for small business</a>
+                        <a href="/paperless-home-office.html" data-i18n="footer.paperlessHome">Paperless office at home</a>
+                        <a href="/invoice-data-extraction.html" data-i18n="footer.invoiceData">Invoice data extraction</a>
+                        <a href="/scan-to-trello.html" data-i18n="footer.scanTrello">Scan to Trello</a>
+                        <a href="/document-scanner-eu-servers.html" data-i18n="footer.euServers">Scanner on EU servers</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.legal">Legal</h4>
+                        <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
+                        <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
+                        <a href="/report-content.html" data-i18n="footer.reportContent">Report Illegal Content</a>
+                        <a href="/accessibility.html" data-i18n="footer.accessibility">Accessibility</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.support">Support</h4>
+                        <a href="/help/" data-i18n="footer.help">Help Center</a>
+                        <a href="/blog/" data-i18n="nav.blog">Guides</a>
+                        <a href="/contact.html" data-i18n="footer.contact">Contact Us</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p><small>© 2026 Scandora. <span data-i18n="footer.rights">All rights reserved.</span></small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/translations.js" defer></script>
+    <script src="/main.js" defer></script>
+</body>
+</html>

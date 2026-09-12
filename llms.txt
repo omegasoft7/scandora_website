@@ -15,7 +15,11 @@ The site is bilingual: every page serves English by default and German at the sa
 
 - [Scandora home](https://scandora.eu/): what the app does, the three-step flow, the plan table and the store links.
 - [Paperless document scanning for a small business](https://scandora.eu/paperless-small-business): the question-and-answer page for a small business or home office going paperless.
+- [A paperless office solution for home](https://scandora.eu/paperless-home-office): the same question-and-answer shape for a household — phone or the Wi-Fi scanner already in the house, separate profiles for private and work paperwork.
+- [Scan invoices and extract the data automatically](https://scandora.eu/invoice-data-extraction): which fields managed AI reads off an invoice, what happens to them, and where the page is processed.
+- [A document scanner that exports to Trello](https://scandora.eu/scan-to-trello): what lands on the card, how Trello is connected, and why a free Trello account is enough.
 - [GDPR document scanner](https://scandora.eu/gdpr-dokumentenscanner): what makes a scanner GDPR-ready — EU hosting, on-device originals, no third-party trackers, an AVV.
+- [Document scanner on EU servers](https://scandora.eu/document-scanner-eu-servers): path by path, where each piece of a scan is processed and which sub-processors are involved.
 - [For tax advisors and DATEV](https://scandora.eu/datev-steuerberater): the tax-advisor page; the DATEV export it describes is coming soon and is not in this version yet.
 
 ## Comparisons

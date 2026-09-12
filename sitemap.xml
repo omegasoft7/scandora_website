@@ -95,6 +95,50 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Landing page: a paperless office solution for home (EN-first + DE) -->
+  <url>
+    <loc>https://scandora.eu/paperless-home-office</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/paperless-home-office?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/paperless-home-office"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/paperless-home-office"/>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Landing page: scan invoices and extract the data automatically (EN-first + DE) -->
+  <url>
+    <loc>https://scandora.eu/invoice-data-extraction</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/invoice-data-extraction?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/invoice-data-extraction"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/invoice-data-extraction"/>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Landing page: a document scanner that exports to Trello (EN-first + DE) -->
+  <url>
+    <loc>https://scandora.eu/scan-to-trello</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/scan-to-trello?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/scan-to-trello"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/scan-to-trello"/>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Landing page: document scanner on EU servers / data residency (EN-first + DE) -->
+  <url>
+    <loc>https://scandora.eu/document-scanner-eu-servers</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/document-scanner-eu-servers?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/document-scanner-eu-servers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/document-scanner-eu-servers"/>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Blog / Guide: Set up a network scanner via eSCL (DE-first + EN) -->
   <url>
     <loc>https://scandora.eu/blog/netzwerkscanner-escl-einrichten</loc>

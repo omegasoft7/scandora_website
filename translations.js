@@ -111,6 +111,10 @@ const translations = {
         'footer.help': 'Help Center',
         'footer.contact': 'Contact Us',
         'footer.paperlessSmb': 'Paperless for small business',
+        'footer.paperlessHome': 'Paperless office at home',
+        'footer.invoiceData': 'Invoice data extraction',
+        'footer.scanTrello': 'Scan to Trello',
+        'footer.euServers': 'Scanner on EU servers',
         'footer.rights': 'All rights reserved.',
 
         // Contact Page
@@ -161,6 +165,14 @@ const translations = {
         'vsCamscanner.backHome': 'Back to Home',
         'paperlessSmb.badge': 'Guide',
         'paperlessSmb.backHome': 'Back to Home',
+        'paperlessHome.badge': 'Guide',
+        'paperlessHome.backHome': 'Back to Home',
+        'invoiceData.badge': 'Guide',
+        'invoiceData.backHome': 'Back to Home',
+        'scanTrello.badge': 'Integration',
+        'scanTrello.backHome': 'Back to Home',
+        'euServers.badge': 'Data residency',
+        'euServers.backHome': 'Back to Home',
         'datevSteuerberater.badge': 'For tax advisors',
         'datevSteuerberater.backHome': 'Back to Home',
         'blogTrello.homepageLink': 'Read: the scan-to-Trello workflow →',
@@ -319,6 +331,10 @@ const translations = {
         'footer.help': 'Hilfe-Center',
         'footer.contact': 'Kontakt',
         'footer.paperlessSmb': 'Papierlos für kleine Unternehmen',
+        'footer.paperlessHome': 'Papierloses Büro für zu Hause',
+        'footer.invoiceData': 'Rechnungsdaten auslesen',
+        'footer.scanTrello': 'Scan nach Trello',
+        'footer.euServers': 'Scanner auf EU-Servern',
         'footer.rights': 'Alle Rechte vorbehalten.',
 
         // Contact Page
@@ -369,6 +385,14 @@ const translations = {
         'vsCamscanner.backHome': 'Zur Startseite',
         'paperlessSmb.badge': 'Ratgeber',
         'paperlessSmb.backHome': 'Zur Startseite',
+        'paperlessHome.badge': 'Ratgeber',
+        'paperlessHome.backHome': 'Zur Startseite',
+        'invoiceData.badge': 'Ratgeber',
+        'invoiceData.backHome': 'Zur Startseite',
+        'scanTrello.badge': 'Integration',
+        'scanTrello.backHome': 'Zur Startseite',
+        'euServers.badge': 'Datenstandort',
+        'euServers.backHome': 'Zur Startseite',
         'datevSteuerberater.badge': 'Für Steuerberater',
         'datevSteuerberater.backHome': 'Zur Startseite',
         'blogTrello.homepageLink': 'Lesen: der Scan-to-Trello-Workflow →',
@@ -455,6 +479,46 @@ const pageMeta = {
         "de": {
             "title": "Papierloses Dokumentenscannen für kleine Unternehmen | Scandora",
             "description": "Wie kleine Unternehmen und Homeoffices papierlos werden: per Handy oder Netzwerkscanner scannen, verwaltete KI liest jedes Dokument, Ablage in Ihrem Trello und Drive."
+        }
+    },
+    "/paperless-home-office": {
+        "en": {
+            "title": "A paperless office solution for home | Scandora",
+            "description": "How to run a paperless office at home: scan the post with your phone or the Wi-Fi scanner you already own, let managed AI read each page, and keep household and work paperwork in separate profiles."
+        },
+        "de": {
+            "title": "Papierloses Büro für zu Hause | Scandora",
+            "description": "Wie ein papierloses Büro zu Hause funktioniert: Post mit dem Handy oder dem vorhandenen WLAN-Scanner scannen, verwaltete KI liest jede Seite, getrennte Profile für Privates und Berufliches."
+        }
+    },
+    "/invoice-data-extraction": {
+        "en": {
+            "title": "Scan invoices and extract the data automatically | Scandora",
+            "description": "An app that scans invoices and reads the data off them: managed AI pulls out supplier, amount, IBAN and due date without a template, and the result can become a Trello card or a Drive file."
+        },
+        "de": {
+            "title": "Rechnungen scannen und Daten automatisch auslesen | Scandora",
+            "description": "Eine App, die Rechnungen scannt und die Daten ausliest: verwaltete KI holt Lieferant, Betrag, IBAN und Fälligkeit ohne Vorlage heraus — als Trello-Karte oder Drive-Dokument."
+        }
+    },
+    "/scan-to-trello": {
+        "en": {
+            "title": "A document scanner that exports to Trello | Scandora",
+            "description": "A document scanner that turns each scan into a Trello card in your own board: the scanned PDF attached, an AI-read title, labels, a due date and a Tasks checklist. Free Trello accounts work."
+        },
+        "de": {
+            "title": "Dokumentenscanner mit Trello-Export | Scandora",
+            "description": "Ein Dokumentenscanner, der jeden Scan zur Trello-Karte in Ihrem eigenen Board macht: PDF als Anhang, KI-gelesener Titel, Labels, Fälligkeitsdatum und eine Tasks-Checkliste."
+        }
+    },
+    "/document-scanner-eu-servers": {
+        "en": {
+            "title": "Document scanner on EU servers: where your data sits | Scandora",
+            "description": "Which parts of a scan reach a server and which never leave your device, and exactly where each one is processed: Scandora's own servers in Falkenstein, Germany, and managed AI in Frankfurt."
+        },
+        "de": {
+            "title": "Dokumentenscanner auf EU-Servern: wo Ihre Daten liegen | Scandora",
+            "description": "Welche Teile eines Scans auf einen Server gehen und welche das Gerät nie verlassen — und wo jeder Weg verarbeitet wird: Scandoras Server in Falkenstein und verwaltete KI in Frankfurt."
         }
     },
     "/vs-fileee": {

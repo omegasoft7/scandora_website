@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>A document scanner that exports to Trello | Scandora</title>
+    <meta name="description" content="A document scanner that turns each scan into a Trello card in your own board: the scanned PDF attached, an AI-read title, labels, a due date and a Tasks checklist. Free Trello accounts work.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <link rel="canonical" href="https://scandora.eu/scan-to-trello">
+
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="de" href="https://scandora.eu/scan-to-trello?lang=de">
+    <link rel="alternate" hreflang="en" href="https://scandora.eu/scan-to-trello">
+    <link rel="alternate" hreflang="x-default" href="https://scandora.eu/scan-to-trello">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scandora.eu/scan-to-trello">
+    <meta property="og:title" content="A document scanner that exports to Trello">
+    <meta property="og:description" content="Each scan becomes a Trello card in your own board — the PDF attached, an AI-read title, labels, a due date and a Tasks checklist. Built in Germany, on EU servers.">
+    <meta property="og:image" content="https://scandora.eu/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="A document scanner that exports to Trello">
+    <meta property="og:site_name" content="Scandora">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="A document scanner that exports to Trello">
+    <meta name="twitter:description" content="Each scan becomes a Trello card in your own board — the PDF attached, an AI-read title, labels, a due date and a Tasks checklist.">
+    <meta name="twitter:image" content="https://scandora.eu/assets/og-image.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <!-- Fonts & Styles (Inter self-hosted — no third-party font requests, DSGVO-konform) -->
+    <!-- Preload above-the-fold webfonts -->
+    <link rel="preload" href="/assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/inter-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/inter-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/fonts/inter.css">
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data - WebPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "A document scanner that exports to Trello",
+        "description": "How Scandora sends a scanned document into your own Trello board: the scanned PDF as an attachment, an AI-read title, labels, an optional due date and a Tasks checklist.",
+        "url": "https://scandora.eu/scan-to-trello",
+        "inLanguage": ["en", "de"],
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Scandora",
+            "url": "https://scandora.eu"
+        },
+        "about": {
+            "@type": "Thing",
+            "name": "Document scanning into Trello"
+        }
+    }
+    </script>
+
+    <!-- Structured Data - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://scandora.eu/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "A document scanner that exports to Trello",
+                "item": "https://scandora.eu/scan-to-trello"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Structured Data - FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Which document scanner exports to Trello?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Scandora. You scan a document with your phone camera or a network scanner over eSCL/AirScan, managed AI reads a title, labels, a possible due date and suggested tasks off the page, and Scandora creates the card in the Trello list you picked — with the scanned PDF attached. The card is created in your own Trello workspace with the Trello credentials you entered."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What exactly lands on the Trello card?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The card title comes from the AI title suggestion and stays editable. The scanned PDF is attached to the card. The labels the AI recognised are matched to your board's labels by name, and a label that does not exist yet is created with a colour and added. A due date is set when you switch on due-date extraction, and a checklist called Tasks is filled with one item per suggested task when you switch on task suggestions."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need a paid Trello plan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. The integration works with a free Trello account. A Premium account raises the maximum attachment size and lets single checklist items carry a due date of their own; on a free account the attachment limit is smaller and checklist items carry no separate due date."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where do my documents go in this workflow?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Into your own Trello workspace, created with your own Trello credentials, so the document lands where you already work. Your original files stay on your device and in the storage you choose; while you are signed in, only a low-resolution preview and the extracted text sync to our servers in Falkenstein, Germany, and managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container nav-container">
+                <a href="/" class="logo" aria-label="Scandora Home"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
+                <div class="nav-links" role="menubar">
+                    <a href="/#features" role="menuitem" data-i18n="nav.features">Features</a>
+                    <a href="/#how-it-works" role="menuitem" data-i18n="nav.howItWorks">How It Works</a>
+                    <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
+                    <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="legal-page" aria-labelledby="page-title">
+            <div class="legal-container">
+                <a href="/" class="back-home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span data-i18n="scanTrello.backHome">Back to Home</span>
+                </a>
+
+                <header class="legal-header">
+                    <span class="legal-badge" data-i18n="scanTrello.badge">Integration</span>
+                    <h1 id="page-title" class="legal-title"><span data-lang="en">A document scanner that exports to Trello</span><span data-lang="de" hidden>Ein Dokumentenscanner, der nach Trello exportiert</span></h1>
+                </header>
+
+                <!-- ================= GERMAN ================= -->
+                <article class="legal-content" data-lang="de" hidden>
+                    <div class="highlight-box">
+                        <p><strong>Kurz gesagt:</strong> Scandora macht aus jedem Scan eine Trello-Karte in Ihrem eigenen Board — mit dem gescannten PDF als Anhang, einem von der KI gelesenen Titel, den erkannten Labels, auf Wunsch einem Fälligkeitsdatum und einer Checkliste namens <em>Tasks</em>. Ein kostenloses Trello-Konto genügt.</p>
+                    </div>
+
+                    <p><a href="/#download" class="btn btn-primary">App herunterladen</a></p>
+
+                    <h2>Welcher Dokumentenscanner exportiert nach Trello?</h2>
+                    <p>Scandora. Sie scannen ein Dokument mit der Handykamera oder über einen Netzwerkscanner per eSCL/AirScan, die verwaltete KI liest Titel, Labels, ein mögliches Fälligkeitsdatum und Aufgabenvorschläge aus der Seite, und Scandora legt die Karte in der von Ihnen gewählten Trello-Liste an — mit dem gescannten PDF als Anhang. Die Karte entsteht in Ihrem eigenen Trello-Arbeitsbereich mit den Trello-Zugangsdaten, die Sie hinterlegt haben.</p>
+
+                    <h2>Wie verbinde ich Trello mit dem Scanner?</h2>
+                    <p>Über Ihre Trello-Zugangsdaten. In den Trello-Einstellungen von Scandora hinterlegen Sie Ihren Trello-API-Schlüssel und ein Token; Scandora prüft die Verbindung und zeigt Ihren Trello-Namen zur Bestätigung an. Danach wählen Sie Kontotyp, Board und Zielliste — oder legen Board und Liste direkt in der App an. Alle Schritte im Detail stehen im <a href="/blog/scan-to-trello-workflow">Ratgeber zum Scan-to-Trello-Workflow</a>.</p>
+
+                    <h2>Was genau landet auf der Trello-Karte?</h2>
+                    <p>Der Kartentitel stammt aus dem KI-Titelvorschlag und bleibt bearbeitbar. Das gescannte PDF wird an die Karte angehängt. Die von der KI erkannten Labels werden per Name den Labels Ihres Boards zugeordnet; ein Label, das es noch nicht gibt, wird mit einer Farbe neu angelegt und hinzugefügt. Ein Fälligkeitsdatum wird gesetzt, wenn Sie „Fälligkeitsdatum extrahieren“ aktivieren, und eine Checkliste namens <em>Tasks</em> wird mit je einem Prüfpunkt pro Aufgabenvorschlag gefüllt, wenn Sie „Aufgaben vorschlagen“ aktivieren.</p>
+
+                    <h2>Brauche ich einen kostenpflichtigen Trello-Tarif?</h2>
+                    <p>Nein. Die Integration funktioniert mit einem kostenlosen Trello-Konto. Ein Premium-Konto erhöht die maximale Anhanggröße und erlaubt einzelnen Checklistenpunkten ein eigenes Fälligkeitsdatum; bei einem kostenlosen Konto ist die Anhanggröße kleiner und Checklistenpunkte tragen kein eigenes Fälligkeitsdatum.</p>
+
+                    <h2>Legt die KI Karten an, ohne dass ich sie sehe?</h2>
+                    <p>Nein. Sie sehen die vorgeschlagenen Werte und können sie ändern, bevor daraus eine Karte wird. Titel, Labels, Fälligkeitsdatum und Aufgaben bleiben bis zuletzt bearbeitbar, und die Karte entsteht so, wie Sie sie bestätigen.</p>
+
+                    <h2>Was passiert, wenn das gescannte PDF zu groß ist?</h2>
+                    <p>Scandora meldet das offen, statt die Karte stillschweigend unvollständig anzulegen. Welche Grenze gilt, hängt vom Typ Ihres Trello-Kontos ab, den Sie bei der Einrichtung angeben.</p>
+
+                    <h2>Wohin gehen meine Dokumente in diesem Ablauf?</h2>
+                    <p>In Ihren eigenen Trello-Arbeitsbereich, angelegt mit Ihren eigenen Trello-Zugangsdaten — das Dokument landet also dort, wo Sie ohnehin arbeiten. Ihre Originaldateien bleiben auf dem Gerät und im von Ihnen gewählten Speicher; solange Sie angemeldet sind, synchronisieren nur eine Vorschau in niedriger Auflösung und der extrahierte Text auf unsere Server in Falkenstein, Deutschland, und die verwaltete KI-Generierung wird in der EU verarbeitet — Google Gemini auf Vertex AI in Frankfurt, Deutschland. Mehr dazu im <a href="/document-scanner-eu-servers.html">Überblick zu den EU-Servern</a>.</p>
+
+                    <h2>Kann derselbe Scan auch woanders hin?</h2>
+                    <p>Ja. Jeder Scan kann ebenso ein abgelegtes Google-Drive-Dokument in Ihrem eigenen Konto werden. Welche Daten die KI dabei aus einer Rechnung liest, steht auf der Seite <a href="/invoice-data-extraction.html">Rechnungsdaten automatisch auslesen</a>.</p>
+
+                    <h2>Was auf der Karte steht — und woher es kommt</h2>
+                    <table class="cookie-table">
+                        <thead>
+                            <tr><th>Trello-Element</th><th>Woraus es entsteht</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Kartentitel</td><td>Der KI-Titelvorschlag des Dokuments (bleibt bearbeitbar)</td></tr>
+                            <tr><td>Beschreibung</td><td>Eine optionale Beschreibung, sofern vorhanden</td></tr>
+                            <tr><td>Anhang</td><td>Das gescannte PDF</td></tr>
+                            <tr><td>Labels</td><td>Die KI-erkannten Labels; fehlende werden mit einer Farbe neu angelegt</td></tr>
+                            <tr><td>Fälligkeitsdatum</td><td>Das KI-erkannte Datum — nur wenn „Fälligkeitsdatum extrahieren“ aktiv ist</td></tr>
+                            <tr><td>Checkliste <em>Tasks</em></td><td>Je Aufgabenvorschlag ein Prüfpunkt — nur wenn „Aufgaben vorschlagen“ aktiv ist</td></tr>
+                            <tr><td>Zielliste</td><td>Die Liste, die Sie bei der Einrichtung gewählt oder angelegt haben</td></tr>
+                        </tbody>
+                    </table>
+
+                    <p>Weiterführend: <a href="/blog/scan-to-trello-workflow">Der Scan-to-Trello-Workflow Schritt für Schritt</a> · <a href="/invoice-data-extraction.html">Rechnungsdaten automatisch auslesen</a> · <a href="/paperless-small-business.html">Papierlos im kleinen Unternehmen</a> · <a href="/document-scanner-eu-servers.html">Dokumentenscanner auf EU-Servern</a></p>
+
+                    <div class="highlight-box">
+                        <p><strong>Aus Scans echte Aufgaben machen?</strong> Testen Sie Scandora kostenlos mit verwalteter KI.</p>
+                        <p style="margin-top:16px;"><a href="/#download" class="btn btn-primary">App herunterladen</a></p>
+                    </div>
+
+                    <h2>Häufige Fragen</h2>
+                    <h3>Welcher Dokumentenscanner exportiert nach Trello?</h3>
+                    <p>Scandora. Sie scannen ein Dokument mit der Handykamera oder über einen Netzwerkscanner per eSCL/AirScan, die verwaltete KI liest Titel, Labels, ein mögliches Fälligkeitsdatum und Aufgabenvorschläge aus der Seite, und Scandora legt die Karte in der von Ihnen gewählten Trello-Liste an — mit dem gescannten PDF als Anhang.</p>
+                    <h3>Was genau landet auf der Trello-Karte?</h3>
+                    <p>Titel aus dem KI-Vorschlag (bearbeitbar), das gescannte PDF als Anhang, die erkannten Labels — fehlende werden mit einer Farbe neu angelegt —, auf Wunsch ein Fälligkeitsdatum und eine Checkliste namens <em>Tasks</em> mit je einem Prüfpunkt pro Aufgabenvorschlag.</p>
+                    <h3>Brauche ich einen kostenpflichtigen Trello-Tarif?</h3>
+                    <p>Nein. Die Integration funktioniert mit einem kostenlosen Trello-Konto. Bei einem Premium-Konto sind größere Anhänge möglich und einzelne Checklistenpunkte können ein eigenes Fälligkeitsdatum tragen.</p>
+                    <h3>Wohin gehen meine Dokumente in diesem Ablauf?</h3>
+                    <p>In Ihren eigenen Trello-Arbeitsbereich, angelegt mit Ihren eigenen Trello-Zugangsdaten. Ihre Originaldateien bleiben auf dem Gerät und im von Ihnen gewählten Speicher; solange Sie angemeldet sind, synchronisieren nur eine Vorschau in niedriger Auflösung und der extrahierte Text auf unsere Server in Falkenstein, Deutschland.</p>
+                </article>
+
+                <!-- ================= ENGLISH ================= -->
+                <article class="legal-content" data-lang="en">
+                    <div class="highlight-box">
+                        <p><strong>In short:</strong> Scandora turns each scan into a Trello card in your own board — the scanned PDF attached, a title read by the AI, the recognised labels, optionally a due date and a checklist called <em>Tasks</em>. A free Trello account is enough.</p>
+                    </div>
+
+                    <p><a href="/#download" class="btn btn-primary">Download the app</a></p>
+
+                    <h2>Which document scanner exports to Trello?</h2>
+                    <p>Scandora. You scan a document with your phone camera or a network scanner over eSCL/AirScan, managed AI reads a title, labels, a possible due date and suggested tasks off the page, and Scandora creates the card in the Trello list you picked — with the scanned PDF attached. The card is created in your own Trello workspace with the Trello credentials you entered.</p>
+
+                    <h2>How do I connect Trello to the scanner?</h2>
+                    <p>With your Trello credentials. In Scandora's Trello settings you enter your Trello API key and a token; Scandora checks the connection and shows your Trello name back to you as confirmation. After that you pick the account type, the board and the target list — or create the board and the list from inside the app. Every step is set out in the <a href="/blog/scan-to-trello-workflow">scan-to-Trello workflow guide</a>.</p>
+
+                    <h2>What exactly lands on the Trello card?</h2>
+                    <p>The card title comes from the AI title suggestion and stays editable. The scanned PDF is attached to the card. The labels the AI recognised are matched to your board's labels by name, and a label that does not exist yet is created with a colour and added. A due date is set when you switch on due-date extraction, and a checklist called <em>Tasks</em> is filled with one item per suggested task when you switch on task suggestions.</p>
+
+                    <h2>Do I need a paid Trello plan?</h2>
+                    <p>No. The integration works with a free Trello account. A Premium account raises the maximum attachment size and lets single checklist items carry a due date of their own; on a free account the attachment limit is smaller and checklist items carry no separate due date.</p>
+
+                    <h2>Does the AI create cards without me seeing them?</h2>
+                    <p>No. You see the proposed values and can change them before a card is created. Title, labels, due date and tasks all stay editable to the end, and the card is created exactly as you confirm it.</p>
+
+                    <h2>What happens if the scanned PDF is too large?</h2>
+                    <p>Scandora reports it openly rather than quietly creating an incomplete card. Which limit applies depends on the type of Trello account you state during setup.</p>
+
+                    <h2>Where do my documents go in this workflow?</h2>
+                    <p>Into your own Trello workspace, created with your own Trello credentials, so the document lands where you already work. Your original files stay on your device and in the storage you choose; while you are signed in, only a low-resolution preview and the extracted text sync to our servers in Falkenstein, Germany, and managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. The <a href="/document-scanner-eu-servers.html">EU servers page</a> goes through it path by path.</p>
+
+                    <h2>Can the same scan go somewhere other than Trello?</h2>
+                    <p>Yes. Each scan can just as well become a filed Google Drive document in your own account. What the AI reads off a bill on the way there is set out on the <a href="/invoice-data-extraction.html">invoice data extraction page</a>.</p>
+
+                    <h2>What is on the card, and where it comes from</h2>
+                    <table class="cookie-table">
+                        <thead>
+                            <tr><th>Trello element</th><th>Where it comes from</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Card title</td><td>The AI title suggestion for the document (stays editable)</td></tr>
+                            <tr><td>Description</td><td>An optional description, where there is one</td></tr>
+                            <tr><td>Attachment</td><td>The scanned PDF</td></tr>
+                            <tr><td>Labels</td><td>The labels the AI recognised; missing ones are created with a colour</td></tr>
+                            <tr><td>Due date</td><td>The date the AI recognised — only with due-date extraction switched on</td></tr>
+                            <tr><td>Checklist <em>Tasks</em></td><td>One item per suggested task — only with task suggestions switched on</td></tr>
+                            <tr><td>Target list</td><td>The list you picked or created during setup</td></tr>
+                        </tbody>
+                    </table>
+
+                    <p>Related reading: <a href="/blog/scan-to-trello-workflow">The scan-to-Trello workflow, step by step</a> · <a href="/invoice-data-extraction.html">Extract invoice data automatically</a> · <a href="/paperless-small-business.html">Paperless in a small business</a> · <a href="/document-scanner-eu-servers.html">Document scanner on EU servers</a></p>
+
+                    <div class="highlight-box">
+                        <p><strong>Turn scans into real tasks?</strong> Try Scandora free with managed AI.</p>
+                        <p style="margin-top:16px;"><a href="/#download" class="btn btn-primary">Download the app</a></p>
+                    </div>
+
+                    <h2>FAQ</h2>
+                    <h3>Which document scanner exports to Trello?</h3>
+                    <p>Scandora. You scan a document with your phone camera or a network scanner over eSCL/AirScan, managed AI reads a title, labels, a possible due date and suggested tasks off the page, and Scandora creates the card in the Trello list you picked — with the scanned PDF attached.</p>
+                    <h3>What exactly lands on the Trello card?</h3>
+                    <p>The title from the AI suggestion (editable), the scanned PDF as an attachment, the recognised labels — missing ones are created with a colour — optionally a due date, and a checklist called <em>Tasks</em> with one item per suggested task.</p>
+                    <h3>Do I need a paid Trello plan?</h3>
+                    <p>No. The integration works with a free Trello account. A Premium account allows larger attachments and lets single checklist items carry a due date of their own.</p>
+                    <h3>Where do my documents go in this workflow?</h3>
+                    <p>Into your own Trello workspace, created with your own Trello credentials. Your original files stay on your device and in the storage you choose; while you are signed in, only a low-resolution preview and the extracted text sync to our servers in Falkenstein, Germany.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="logo"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
+                    <p data-i18n="footer.tagline">Intelligent document scanning for modern businesses.</p>
+                </div>
+                <nav class="footer-links" role="navigation" aria-label="Footer navigation">
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.product">Product</h4>
+                        <a href="/#features" data-i18n="nav.features">Features</a>
+                        <a href="/#pricing" data-i18n="nav.pricing">Pricing</a>
+                        <a href="/#download" data-i18n="nav.download">Download</a>
+                        <a href="/paperless-small-business.html" data-i18n="footer.paperlessSmb">Paperless for small business</a>
+                        <a href="/paperless-home-office.html" data-i18n="footer.paperlessHome">Paperless office at home</a>
+                        <a href="/invoice-data-extraction.html" data-i18n="footer.invoiceData">Invoice data extraction</a>
+                        <a href="/scan-to-trello.html" data-i18n="footer.scanTrello">Scan to Trello</a>
+                        <a href="/document-scanner-eu-servers.html" data-i18n="footer.euServers">Scanner on EU servers</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.legal">Legal</h4>
+                        <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
+                        <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
+                        <a href="/report-content.html" data-i18n="footer.reportContent">Report Illegal Content</a>
+                        <a href="/accessibility.html" data-i18n="footer.accessibility">Accessibility</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.support">Support</h4>
+                        <a href="/help/" data-i18n="footer.help">Help Center</a>
+                        <a href="/blog/" data-i18n="nav.blog">Guides</a>
+                        <a href="/contact.html" data-i18n="footer.contact">Contact Us</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p><small>© 2026 Scandora. <span data-i18n="footer.rights">All rights reserved.</span></small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/translations.js" defer></script>
+    <script src="/main.js" defer></script>
+</body>
+</html>
