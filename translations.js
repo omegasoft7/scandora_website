@@ -110,6 +110,7 @@ const translations = {
         'footer.imprint': 'Imprint',
         'footer.help': 'Help Center',
         'footer.contact': 'Contact Us',
+        'footer.paperlessSmb': 'Paperless for small business',
         'footer.rights': 'All rights reserved.',
 
         // Contact Page
@@ -151,12 +152,15 @@ const translations = {
         'features.compareCamscanner': 'Scandora vs CamScanner',
         'features.privacyGdprLink': 'GDPR document scanner',
         'pricing.business.datevLink': 'For tax advisors & DATEV →',
+        'pricing.free.paperlessLink': 'Going paperless in a small business →',
         'gdprScanner.badge': 'GDPR scanning',
         'gdprScanner.backHome': 'Back to Home',
         'vsFileee.badge': 'Comparison',
         'vsFileee.backHome': 'Back to Home',
         'vsCamscanner.badge': 'Comparison',
         'vsCamscanner.backHome': 'Back to Home',
+        'paperlessSmb.badge': 'Guide',
+        'paperlessSmb.backHome': 'Back to Home',
         'datevSteuerberater.badge': 'For tax advisors',
         'datevSteuerberater.backHome': 'Back to Home',
         'blogTrello.homepageLink': 'Read: the scan-to-Trello workflow →',
@@ -191,6 +195,18 @@ const translations = {
         'faq.a7': 'No. Scanning and edge detection both work offline. You only need a connection when you sync a document to a cloud service like Trello or Google Drive, or when managed AI processes a scan.',
         'faq.q8': 'Can Scandora export to DATEV for my tax advisor?',
         'faq.a8': "Coming soon. DATEV export (an EXTF posting batch together with the document images) and the lexoffice and sevDesk voucher export are being prepared for the Business / DATEV plan and are not available in this version yet. What ships today is capture designed for GoBD & DSGVO record-keeping for German SMBs and tax advisors.",
+        'faq.q9': 'What is a good paperless document scanning solution for a small business?',
+        'faq.a9': 'Scandora is an AI document scanner for iPhone, iPad, Mac and Android built for exactly that. You scan with your phone camera or a real network scanner, managed AI pulls out supplier, amount, IBAN and due date without a template, and each scan can land in your own Trello and Google Drive. It is built in Germany, runs on EU servers and carries no ads. The free plan covers unlimited scans and 10 AI credits a month, so a one-person business can start without spending anything.',
+        'faq.q10': 'Which document scanner app works with a real office scanner and not just a phone camera?',
+        'faq.a10': 'Scandora does. You can scan with your phone camera or pull pages in from a network scanner over eSCL/AirScan — Brother and Epson devices, for example. Automatic edge detection and image enhancement run on every page, and both scanning and edge detection work offline.',
+        'faq.q11': 'How do I stop retyping the data from my invoices and receipts?',
+        'faq.a11': "Let the managed AI read them. Scandora's AI pulls supplier, amount, IBAN, due date and to-dos out of each scan without a template, so there is nothing to type in by hand. From there the scan can become a Trello card or a filed Google Drive document in your own accounts, which turns the document into something you can act on instead of another PDF.",
+        'faq.q12': 'Can I ask questions about my own scanned documents and get an answer with a source?',
+        'faq.a12': 'Yes. Ask the AI a question and you get a cited answer drawn from your own documents, with a link to the source it used. Document chat is part of every plan and spends the same monthly AI credits as extraction and indexing. It uses an optional EU-resident search index in Falkenstein, Germany, which stores derived text only — never your original files.',
+        'faq.q13': 'Can I keep personal and business documents separate in one scanner app?',
+        'faq.a13': 'Yes. Scandora has multiple profiles, so you can separate personal and business documents. Each profile carries its own settings and its own cloud connections.',
+        'faq.q14': 'Is there a document scanner with an AVV / data processing agreement for business use?',
+        'faq.a14': "Yes. For business use Scandora provides an AVV / Data Processing Agreement (Art. 28 GDPR) that you can read, download and sign. The app itself is built in Germany with GDPR (DSGVO) in mind: your original scans stay on your device and in the storage you choose, the servers we do run are in the EU, and we don't embed third-party advertising trackers.",
 
         // Footer — DSA report route and accessibility statement
         'footer.reportContent': 'Report Illegal Content',
@@ -302,6 +318,7 @@ const translations = {
         'footer.imprint': 'Impressum',
         'footer.help': 'Hilfe-Center',
         'footer.contact': 'Kontakt',
+        'footer.paperlessSmb': 'Papierlos für kleine Unternehmen',
         'footer.rights': 'Alle Rechte vorbehalten.',
 
         // Contact Page
@@ -343,12 +360,15 @@ const translations = {
         'features.compareCamscanner': 'Vergleich: Scandora vs. CamScanner',
         'features.privacyGdprLink': 'DSGVO-Dokumentenscanner',
         'pricing.business.datevLink': 'Für Steuerberater & DATEV →',
+        'pricing.free.paperlessLink': 'Papierlos im kleinen Unternehmen →',
         'gdprScanner.badge': 'DSGVO-Scannen',
         'gdprScanner.backHome': 'Zur Startseite',
         'vsFileee.badge': 'Vergleich',
         'vsFileee.backHome': 'Zur Startseite',
         'vsCamscanner.badge': 'Vergleich',
         'vsCamscanner.backHome': 'Zur Startseite',
+        'paperlessSmb.badge': 'Ratgeber',
+        'paperlessSmb.backHome': 'Zur Startseite',
         'datevSteuerberater.badge': 'Für Steuerberater',
         'datevSteuerberater.backHome': 'Zur Startseite',
         'blogTrello.homepageLink': 'Lesen: der Scan-to-Trello-Workflow →',
@@ -383,6 +403,18 @@ const translations = {
         'faq.a7': 'Nein. Scannen und Kantenerkennung funktionieren offline. Eine Verbindung brauchen Sie nur, wenn Sie ein Dokument mit einem Cloud-Dienst wie Trello oder Google Drive synchronisieren oder wenn die verwaltete KI einen Scan verarbeitet.',
         'faq.q8': 'Kann Scandora zu DATEV für meinen Steuerberater exportieren?',
         'faq.a8': 'Demnächst. Der DATEV-Export (EXTF-Buchungsstapel samt Belegbildern) sowie der lexoffice- und sevDesk-Belegexport werden für den Tarif Business / DATEV vorbereitet und sind in dieser Version noch nicht verfügbar. Bereits heute ist die Erfassung für die GoBD- & DSGVO-Aufbewahrung deutscher KMU und Steuerberater konzipiert.',
+        'faq.q9': 'Was ist eine gute papierlose Dokumentenscan-Lösung für kleine Unternehmen?',
+        'faq.a9': 'Scandora ist genau dafür gebaut: ein KI-Dokumentenscanner für iPhone, iPad, Mac und Android. Sie scannen mit der Handykamera oder einem echten Netzwerkscanner, die verwaltete KI liest Lieferant, Betrag, IBAN und Fälligkeit ohne Vorlage aus, und jeder Scan landet in Ihrem eigenen Trello und Google Drive. Entwickelt in Deutschland, auf EU-Servern, ohne Werbung. Der kostenlose Tarif umfasst unbegrenzte Scans und 10 KI-Credits pro Monat — ein Ein-Personen-Betrieb kann also ohne Ausgaben starten.',
+        'faq.q10': 'Welche Dokumentenscanner-App funktioniert mit einem echten Büroscanner und nicht nur mit der Handykamera?',
+        'faq.a10': 'Scandora. Sie scannen mit der Handykamera oder ziehen Seiten über einen Netzwerkscanner per eSCL/AirScan ein — zum Beispiel von Brother und Epson. Automatische Kantenerkennung und Bildverbesserung laufen auf jeder Seite, und Scannen und Kantenerkennung funktionieren auch offline.',
+        'faq.q11': 'Wie höre ich auf, Daten aus Rechnungen und Belegen abzutippen?',
+        'faq.a11': 'Lassen Sie die verwaltete KI lesen. Die KI von Scandora holt Lieferant, Betrag, IBAN, Fälligkeit und To-dos ohne Vorlage aus jedem Scan, sodass nichts mehr abzutippen ist. Von dort wird der Scan zur Trello-Karte oder zum abgelegten Google-Drive-Dokument in Ihren eigenen Konten — aus dem Dokument wird eine Aufgabe statt nur ein weiteres PDF.',
+        'faq.q12': 'Kann ich Fragen zu meinen eigenen gescannten Dokumenten stellen und eine belegte Antwort bekommen?',
+        'faq.a12': 'Ja. Stellen Sie der KI eine Frage und Sie erhalten eine belegte Antwort aus Ihren eigenen Dokumenten, mit Link auf die verwendete Quelle. Der Dokumenten-Chat gehört zu jedem Tarif und verbraucht dieselben monatlichen KI-Credits wie Extraktion und Indexierung. Er nutzt einen optionalen, in der EU (Falkenstein, Deutschland) gehosteten Suchindex, der nur abgeleiteten Text speichert — niemals Ihre Originaldateien.',
+        'faq.q13': 'Kann ich private und geschäftliche Dokumente in einer Scanner-App trennen?',
+        'faq.a13': 'Ja. Scandora hat mehrere Profile, sodass private und geschäftliche Dokumente getrennt bleiben. Jedes Profil hat eigene Einstellungen und eigene Cloud-Verbindungen.',
+        'faq.q14': 'Gibt es einen Dokumentenscanner mit AVV für die geschäftliche Nutzung?',
+        'faq.a14': 'Ja. Für die geschäftliche Nutzung stellt Scandora einen AVV (Art. 28 DSGVO) bereit, den Sie lesen, herunterladen und unterzeichnen können. Die App selbst wird in Deutschland mit Blick auf die DSGVO entwickelt: Ihre Original-Scans bleiben auf Ihrem Gerät und im von Ihnen gewählten Speicher, die Server, die wir betreiben, stehen in der EU, und wir binden keine Werbe-Tracker von Dritten ein.',
 
         // Footer — DSA report route and accessibility statement
         'footer.reportContent': 'Rechtswidrige Inhalte melden',
@@ -413,6 +445,16 @@ const pageMeta = {
         "de": {
             "title": "Scandora vs. CamScanner: der ehrliche Vergleich | Scandora",
             "description": "Scandora vs. CamScanner nach belegbaren Fakten: Herkunft, Datenstandort, verwaltete KI, Netzwerkscanner-Support und DATEV-Export (in Vorbereitung)."
+        }
+    },
+    "/paperless-small-business": {
+        "en": {
+            "title": "Paperless document scanning for a small business | Scandora",
+            "description": "How a small business or home office goes paperless: scan by phone or network scanner, managed AI reads each document, files land in your own Trello and Google Drive."
+        },
+        "de": {
+            "title": "Papierloses Dokumentenscannen für kleine Unternehmen | Scandora",
+            "description": "Wie kleine Unternehmen und Homeoffices papierlos werden: per Handy oder Netzwerkscanner scannen, verwaltete KI liest jedes Dokument, Ablage in Ihrem Trello und Drive."
         }
     },
     "/vs-fileee": {

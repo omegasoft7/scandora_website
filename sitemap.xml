@@ -84,6 +84,17 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Landing page: paperless document scanning for a small business (EN-first + DE) -->
+  <url>
+    <loc>https://scandora.eu/paperless-small-business</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/paperless-small-business?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/paperless-small-business"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/paperless-small-business"/>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Blog / Guide: Set up a network scanner via eSCL (DE-first + EN) -->
   <url>
     <loc>https://scandora.eu/blog/netzwerkscanner-escl-einrichten</loc>

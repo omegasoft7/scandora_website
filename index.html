@@ -83,7 +83,9 @@
     {
         "@context": "https://schema.org",
         "@type": "Organization",
+        "@id": "https://scandora.eu/#organization",
         "name": "Scandora",
+        "alternateName": ["Scandora: Document Scanner", "Scandora: Document Scanner AI"],
         "url": "https://scandora.eu",
         "logo": "https://scandora.eu/assets/logo.png",
         "description": "AI-powered document scanning and management application",
@@ -95,7 +97,9 @@
             "availableLanguage": ["English", "German"]
         },
         "sameAs": [
-            "https://twitter.com/scandora_app"
+            "https://twitter.com/scandora_app",
+            "https://apps.apple.com/app/scandora/id6756135936",
+            "https://play.google.com/store/apps/details?id=de.scandora.app"
         ]
     }
     </script>
@@ -124,7 +128,20 @@
         "description": "AI-powered document scanning app that automatically extracts data from invoices, receipts, and documents. Syncs seamlessly with Trello, Google Drive, and other cloud services.",
         "url": "https://scandora.eu",
         "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Document scanning and OCR",
         "operatingSystem": ["iOS", "macOS", "Android"],
+        "inLanguage": ["en", "de"],
+        "downloadUrl": [
+            "https://apps.apple.com/app/scandora/id6756135936",
+            "https://play.google.com/store/apps/details?id=de.scandora.app"
+        ],
+        "installUrl": [
+            "https://apps.apple.com/app/scandora/id6756135936",
+            "https://play.google.com/store/apps/details?id=de.scandora.app"
+        ],
+        "publisher": {
+            "@id": "https://scandora.eu/#organization"
+        },
         "offers": [
             {
                 "@type": "Offer",
@@ -232,6 +249,54 @@
                 "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Coming soon. DATEV export (an EXTF posting batch together with the document images) and the lexoffice and sevDesk voucher export are being prepared for the Business / DATEV plan and are not available in this version yet. What ships today is capture designed for GoBD & DSGVO record-keeping for German SMBs and tax advisors."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is a good paperless document scanning solution for a small business?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Scandora is an AI document scanner for iPhone, iPad, Mac and Android built for exactly that. You scan with your phone camera or a real network scanner, managed AI pulls out supplier, amount, IBAN and due date without a template, and each scan can land in your own Trello and Google Drive. It is built in Germany, runs on EU servers and carries no ads. The free plan covers unlimited scans and 10 AI credits a month, so a one-person business can start without spending anything."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Which document scanner app works with a real office scanner and not just a phone camera?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Scandora does. You can scan with your phone camera or pull pages in from a network scanner over eSCL/AirScan — Brother and Epson devices, for example. Automatic edge detection and image enhancement run on every page, and both scanning and edge detection work offline."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I stop retyping the data from my invoices and receipts?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Let the managed AI read them. Scandora's AI pulls supplier, amount, IBAN, due date and to-dos out of each scan without a template, so there is nothing to type in by hand. From there the scan can become a Trello card or a filed Google Drive document in your own accounts, which turns the document into something you can act on instead of another PDF."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I ask questions about my own scanned documents and get an answer with a source?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Ask the AI a question and you get a cited answer drawn from your own documents, with a link to the source it used. Document chat is part of every plan and spends the same monthly AI credits as extraction and indexing. It uses an optional EU-resident search index in Falkenstein, Germany, which stores derived text only — never your original files."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I keep personal and business documents separate in one scanner app?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Scandora has multiple profiles, so you can separate personal and business documents. Each profile carries its own settings and its own cloud connections."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is there a document scanner with an AVV / data processing agreement for business use?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. For business use Scandora provides an AVV / Data Processing Agreement (Art. 28 GDPR) that you can read, download and sign. The app itself is built in Germany with GDPR (DSGVO) in mind: your original scans stay on your device and in the storage you choose, the servers we do run are in the EU, and we don't embed third-party advertising trackers."
                 }
             }
         ]
@@ -513,6 +578,30 @@
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-8" aria-expanded="false" aria-controls="faq-panel-8"><span data-i18n="faq.q8">Can Scandora export to DATEV for my tax advisor?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
                         <div id="faq-panel-8" class="faq-answer" role="region" aria-labelledby="faq-trigger-8"><div class="faq-answer-inner"><p data-i18n="faq.a8">Coming soon. DATEV export (an EXTF posting batch together with the document images) and the lexoffice and sevDesk voucher export are being prepared for the Business / DATEV plan and are not available in this version yet. What ships today is capture designed for GoBD &amp; DSGVO record-keeping for German SMBs and tax advisors.</p></div></div>
                     </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-9" aria-expanded="false" aria-controls="faq-panel-9"><span data-i18n="faq.q9">What is a good paperless document scanning solution for a small business?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+                        <div id="faq-panel-9" class="faq-answer" role="region" aria-labelledby="faq-trigger-9"><div class="faq-answer-inner"><p data-i18n="faq.a9">Scandora is an AI document scanner for iPhone, iPad, Mac and Android built for exactly that. You scan with your phone camera or a real network scanner, managed AI pulls out supplier, amount, IBAN and due date without a template, and each scan can land in your own Trello and Google Drive. It is built in Germany, runs on EU servers and carries no ads. The free plan covers unlimited scans and 10 AI credits a month, so a one-person business can start without spending anything.</p></div></div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-10" aria-expanded="false" aria-controls="faq-panel-10"><span data-i18n="faq.q10">Which document scanner app works with a real office scanner and not just a phone camera?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+                        <div id="faq-panel-10" class="faq-answer" role="region" aria-labelledby="faq-trigger-10"><div class="faq-answer-inner"><p data-i18n="faq.a10">Scandora does. You can scan with your phone camera or pull pages in from a network scanner over eSCL/AirScan — Brother and Epson devices, for example. Automatic edge detection and image enhancement run on every page, and both scanning and edge detection work offline.</p></div></div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-11" aria-expanded="false" aria-controls="faq-panel-11"><span data-i18n="faq.q11">How do I stop retyping the data from my invoices and receipts?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+                        <div id="faq-panel-11" class="faq-answer" role="region" aria-labelledby="faq-trigger-11"><div class="faq-answer-inner"><p data-i18n="faq.a11">Let the managed AI read them. Scandora's AI pulls supplier, amount, IBAN, due date and to-dos out of each scan without a template, so there is nothing to type in by hand. From there the scan can become a Trello card or a filed Google Drive document in your own accounts, which turns the document into something you can act on instead of another PDF.</p></div></div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-12" aria-expanded="false" aria-controls="faq-panel-12"><span data-i18n="faq.q12">Can I ask questions about my own scanned documents and get an answer with a source?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+                        <div id="faq-panel-12" class="faq-answer" role="region" aria-labelledby="faq-trigger-12"><div class="faq-answer-inner"><p data-i18n="faq.a12">Yes. Ask the AI a question and you get a cited answer drawn from your own documents, with a link to the source it used. Document chat is part of every plan and spends the same monthly AI credits as extraction and indexing. It uses an optional EU-resident search index in Falkenstein, Germany, which stores derived text only — never your original files.</p></div></div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-13" aria-expanded="false" aria-controls="faq-panel-13"><span data-i18n="faq.q13">Can I keep personal and business documents separate in one scanner app?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+                        <div id="faq-panel-13" class="faq-answer" role="region" aria-labelledby="faq-trigger-13"><div class="faq-answer-inner"><p data-i18n="faq.a13">Yes. Scandora has multiple profiles, so you can separate personal and business documents. Each profile carries its own settings and its own cloud connections.</p></div></div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-14" aria-expanded="false" aria-controls="faq-panel-14"><span data-i18n="faq.q14">Is there a document scanner with an AVV / data processing agreement for business use?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+                        <div id="faq-panel-14" class="faq-answer" role="region" aria-labelledby="faq-trigger-14"><div class="faq-answer-inner"><p data-i18n="faq.a14">Yes. For business use Scandora provides an AVV / Data Processing Agreement (Art. 28 GDPR) that you can read, download and sign. The app itself is built in Germany with GDPR (DSGVO) in mind: your original scans stay on your device and in the storage you choose, the servers we do run are in the EU, and we don't embed third-party advertising trackers.</p></div></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -547,6 +636,7 @@
                             <li data-i18n="pricing.free.f4">Watermark-free exports</li>
                             <li data-i18n="pricing.free.f5">Cloud integrations (Trello, Google Drive)</li>
                         </ul>
+                        <p class="pricing-datev-link"><a href="/paperless-small-business.html" data-i18n="pricing.free.paperlessLink">Going paperless in a small business →</a></p>
                         <a href="#download" class="btn btn-secondary btn-full" role="button" data-i18n="pricing.free.cta">Get Started</a>
                     </article>
                     <article class="pricing-card popular" role="listitem" aria-label="Most popular plan">
@@ -634,6 +724,7 @@
                         <a href="#features" data-i18n="nav.features">Features</a>
                         <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
                         <a href="#download" data-i18n="nav.download">Download</a>
+                        <a href="/paperless-small-business.html" data-i18n="footer.paperlessSmb">Paperless for small business</a>
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.legal">Legal</h4>

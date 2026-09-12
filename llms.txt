@@ -1,0 +1,59 @@
+# Scandora
+
+> Scandora is an AI document scanner for iPhone, iPad, Mac and Android: scan with your phone camera or a real network scanner, let managed AI pull out the details, and send the result into your own Trello and Google Drive. Built in Germany, GDPR-first, on EU servers, with no ads.
+
+Scandora keeps original scans on your device and in the storage you choose. While you are
+signed in, only a low-resolution preview and the extracted text sync to our EU servers.
+Managed AI covers extraction, indexing and AI document chat out of a monthly credit
+allowance — there is no key to obtain or enter. Free, Pro and Business / DATEV plans exist;
+the store listing is the binding source for what a plan costs.
+
+The site is bilingual: every page serves English by default and German at the same URL with
+`?lang=de`.
+
+## Product
+
+- [Scandora home](https://scandora.eu/): what the app does, the three-step flow, the plan table and the store links.
+- [Paperless document scanning for a small business](https://scandora.eu/paperless-small-business): the question-and-answer page for a small business or home office going paperless.
+- [GDPR document scanner](https://scandora.eu/gdpr-dokumentenscanner): what makes a scanner GDPR-ready — EU hosting, on-device originals, no third-party trackers, an AVV.
+- [For tax advisors and DATEV](https://scandora.eu/datev-steuerberater): the tax-advisor page; the DATEV export it describes is coming soon and is not in this version yet.
+
+## Comparisons
+
+- [Scandora vs CamScanner](https://scandora.eu/vs-camscanner): sourced comparison — who develops each app, where data is processed, network-scanner support.
+- [Scandora vs Fileee](https://scandora.eu/vs-fileee): sourced comparison on the same material facts.
+
+## Help centre
+
+- [Help centre](https://scandora.eu/help/): the topic index.
+- [Managed AI and credits](https://scandora.eu/help/managed-ai): what a credit covers, the monthly allowance, top-ups, where processing happens.
+- [Set up a network scanner (eSCL)](https://scandora.eu/help/escl-setup): connecting a Brother or Epson network scanner over eSCL/AirScan.
+- [GoBD scope](https://scandora.eu/help/gobd-scope): which record-keeping features ship today and which do not.
+- [DATEV export](https://scandora.eu/help/datev-export): coming soon, not available in this version yet.
+- [lexoffice export](https://scandora.eu/help/lexoffice-export): coming soon, not available in this version yet.
+- [sevDesk export](https://scandora.eu/help/sevdesk-export): coming soon, not available in this version yet.
+
+## Guides
+
+- [Guides hub](https://scandora.eu/blog/): the German-first Ratgeber index.
+- [DATEV export from your smartphone](https://scandora.eu/blog/datev-export-aus-dem-smartphone)
+- [A GDPR-safe CamScanner alternative](https://scandora.eu/blog/dsgvo-sichere-camscanner-alternative)
+- [Scanning for GoBD record-keeping](https://scandora.eu/blog/gobd-konform-scannen)
+- [Set up a network scanner via eSCL](https://scandora.eu/blog/netzwerkscanner-escl-einrichten)
+- [The scan-to-Trello workflow](https://scandora.eu/blog/scan-to-trello-workflow)
+- [Scandora vs Fileee, in depth](https://scandora.eu/blog/scandora-vs-fileee)
+
+## Legal and contact
+
+- [Privacy policy](https://scandora.eu/privacy): what is stored where, and which processors are involved.
+- [Terms of service](https://scandora.eu/terms): the AGB, including how prices and plan changes work.
+- [AVV / DPA](https://scandora.eu/avv): the Art. 28 GDPR data processing agreement, readable and signable.
+- [Imprint](https://scandora.eu/imprint): the § 5 DDG provider identification.
+- [Accessibility statement](https://scandora.eu/accessibility)
+- [Report illegal content](https://scandora.eu/report-content): the DSA Art. 16 notice-and-action route.
+- [Contact](https://scandora.eu/contact)
+
+## Get the app
+
+- [App Store (iPhone, iPad, Mac)](https://apps.apple.com/app/scandora/id6756135936)
+- [Google Play (Android)](https://play.google.com/store/apps/details?id=de.scandora.app)
