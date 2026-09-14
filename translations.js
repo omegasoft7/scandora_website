@@ -13,10 +13,12 @@ const translations = {
         'nav.download': 'Download',
 
         // Hero
+        'hero.brandDescriptor': 'AI document scanner',
         'hero.badge': 'Built in Germany · GDPR-first · EU servers',
         'hero.titleLine1': 'Scan it with Scandora.',
         'hero.titleLine2': 'Then ask it anything.',
-        'hero.description': 'Scandora is an AI document scanner for iPhone, iPad, Mac and Android whose output you can talk to. Scan an invoice with your phone or your real office scanner, then ask it when the invoice is due or what its IBAN is. The AI pulls out supplier, amount, IBAN, due date and to-dos without a template, your files land in your own Google Drive and Trello, and every scan stays searchable on your device. Built in Germany, GDPR-first, on EU servers, with no ads.',
+        'hero.lede': 'Scandora is an AI document scanner for iPhone, iPad, Mac and Android whose output you can talk to.',
+        'hero.description': 'Scan an invoice with your phone or your real office scanner, then ask it when the invoice is due or what its IBAN is. The AI pulls out supplier, amount, IBAN, due date and to-dos without a template, your files land in your own Google Drive and Trello, and every scan stays searchable on your device. Built in Germany, GDPR-first, on EU servers, with no ads.',
         'hero.getStarted': 'Get Started Free',
         'hero.seeHow': 'See How It Works',
         'hero.stat1': 'Ask your document',
@@ -233,10 +235,12 @@ const translations = {
         'nav.download': 'Download',
 
         // Hero
+        'hero.brandDescriptor': 'KI-Dokumentenscanner',
         'hero.badge': 'Entwickelt in Deutschland · DSGVO-freundlich · EU-Server',
         'hero.titleLine1': 'Mit Scandora scannen.',
         'hero.titleLine2': 'Einfach alles fragen.',
-        'hero.description': 'Scandora ist ein KI-Dokumentenscanner für iPhone, iPad, Mac und Android, der Ihre Fragen zum Dokument beantwortet. Scannen Sie eine Rechnung mit dem Handy oder Ihrem echten Büroscanner und fragen Sie dann, wann sie fällig ist oder wie die IBAN lautet. Die KI liest Lieferant, Betrag, IBAN, Fälligkeit und To-dos ohne Vorlage aus, Ihre Dateien landen in Ihrem eigenen Google Drive und Trello, und jeder Scan bleibt auf Ihrem Gerät durchsuchbar. Entwickelt in Deutschland, DSGVO-freundlich, auf EU-Servern, ohne Werbung.',
+        'hero.lede': 'Scandora ist ein KI-Dokumentenscanner für iPhone, iPad, Mac und Android, der Ihre Fragen zum Dokument beantwortet.',
+        'hero.description': 'Scannen Sie eine Rechnung mit dem Handy oder Ihrem echten Büroscanner und fragen Sie dann, wann sie fällig ist oder wie die IBAN lautet. Die KI liest Lieferant, Betrag, IBAN, Fälligkeit und To-dos ohne Vorlage aus, Ihre Dateien landen in Ihrem eigenen Google Drive und Trello, und jeder Scan bleibt auf Ihrem Gerät durchsuchbar. Entwickelt in Deutschland, DSGVO-freundlich, auf EU-Servern, ohne Werbung.',
         'hero.getStarted': 'Kostenlos starten',
         'hero.seeHow': 'So funktioniert es',
         'hero.stat1': 'Dokument fragen',

@@ -302,11 +302,22 @@ img {
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-card);
 }
+.hero-brand-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
 .hero-brand-name {
     font-size: 28px;
     font-weight: 700;
     letter-spacing: -0.5px;
     color: var(--text-primary);
+}
+.hero-brand-descriptor {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: var(--text-secondary);
 }
 
 .hero-badge {
@@ -333,6 +344,15 @@ img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.hero-lede {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.45;
+    color: var(--text-primary);
+    margin-bottom: var(--space-md);
+    max-width: 560px;
 }
 
 .hero-description {
@@ -1082,7 +1102,9 @@ img {
     .hero { padding: 120px 0 60px; }
     .hero-brand-icon { width: 56px; height: 56px; }
     .hero-brand-name { font-size: 22px; }
+    .hero-brand-descriptor { font-size: 14px; }
     .hero-title { font-size: 36px; }
+    .hero-lede { font-size: 19px; }
     .hero-description { font-size: 16px; }
     .hero-stats { flex-direction: column; gap: var(--space-md); }
     .stat-divider { width: 40px; height: 1px; }
