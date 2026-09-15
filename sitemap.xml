@@ -297,6 +297,17 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Careers -->
+  <url>
+    <loc>https://scandora.eu/careers</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/careers"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/careers?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/careers"/>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Help Center -->
   <url>
     <loc>https://scandora.eu/help/</loc>
