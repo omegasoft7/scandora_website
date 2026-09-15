@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Careers at Scandora | Open Roles</title>
+    <meta name="description" content="Open roles at Scandora, the AI document scanner built in Germany: Flutter, TypeScript backend, EU hosting and bilingual content. Apply by email to jobs@scandora.eu.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://scandora.eu/careers">
+
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="en" href="https://scandora.eu/careers">
+    <link rel="alternate" hreflang="de" href="https://scandora.eu/careers?lang=de">
+    <link rel="alternate" hreflang="x-default" href="https://scandora.eu/careers">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scandora.eu/careers">
+    <meta property="og:title" content="Careers at Scandora">
+    <meta property="og:description" content="Open roles at Scandora, the AI document scanner built in Germany: Flutter, TypeScript backend, EU hosting and bilingual content.">
+    <meta property="og:image" content="https://scandora.eu/assets/og-image.png">
+    <meta property="og:site_name" content="Scandora">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://scandora.eu/careers">
+    <meta name="twitter:title" content="Careers at Scandora">
+    <meta name="twitter:description" content="Open roles at Scandora, the AI document scanner built in Germany: Flutter, TypeScript backend, EU hosting and bilingual content.">
+    <meta name="twitter:image" content="https://scandora.eu/assets/og-image.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Fonts & Styles (Inter self-hosted — no third-party font requests, so no visitor IP is sent to a font CDN) -->
+    <!-- Preload above-the-fold webfonts -->
+    <link rel="preload" href="assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/inter-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/inter-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/fonts/inter.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container nav-container">
+                <a href="/" class="logo" aria-label="Scandora Home"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
+                <div class="nav-links" role="menubar">
+                    <a href="/#features" role="menuitem" data-i18n="nav.features">Features</a>
+                    <a href="/#how-it-works" role="menuitem" data-i18n="nav.howItWorks">How It Works</a>
+                    <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
+                    <a href="/careers.html" role="menuitem" aria-current="page" data-i18n="nav.careers">Careers</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
+                    <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="legal-page" aria-labelledby="careers-title">
+            <div class="legal-container">
+                <a href="/" class="back-home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span data-i18n="careers.backHome">Back to Home</span>
+                </a>
+
+                <header class="legal-header">
+                    <span class="legal-badge" data-i18n="careers.badge">Careers</span>
+                    <h1 id="careers-title" class="legal-title" data-i18n="careers.title">Build Scandora with us</h1>
+                    <p class="legal-meta" data-i18n="careers.subtitle">Scandora is a small, remote-first company building an AI document scanner in Germany. Customer documents stay in the EU, and so does the work.</p>
+                </header>
+
+                <h2 class="job-heading" data-i18n="careers.openRoles">Open roles</h2>
+                <div id="job-postings" class="job-list"></div>
+                <noscript>
+                    <div class="careers-empty">
+                        <p>Our open roles are rendered with JavaScript. With JavaScript switched off, write to <a href="mailto:jobs@scandora.eu">jobs@scandora.eu</a> and we will send you the current list.</p>
+                        <p lang="de">Unsere offenen Stellen werden per JavaScript dargestellt. Ohne JavaScript schreiben Sie an <a href="mailto:jobs@scandora.eu">jobs@scandora.eu</a> — wir senden Ihnen die aktuelle Liste.</p>
+                    </div>
+                </noscript>
+
+                <h2 class="job-heading" data-i18n="careers.howTitle">How to apply</h2>
+                <p class="job-howto" data-i18n="careers.howBody">Write to jobs@scandora.eu with a short note, a CV or a profile link, and the role in the subject line. No form, no account, no tracking.</p>
+
+                <div class="careers-general">
+                    <h3 data-i18n="careers.generalTitle">None of these fit?</h3>
+                    <p data-i18n="careers.generalBody">Send a short note about what you do and a link to something you have built. We read every application.</p>
+                    <a class="btn btn-primary btn-sm" href="mailto:jobs@scandora.eu?subject=General%20application" data-i18n="careers.generalApply">Send a general application</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="logo"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
+                    <p data-i18n="footer.tagline">Intelligent document scanning for modern businesses.</p>
+                </div>
+                <nav class="footer-links" role="navigation" aria-label="Footer navigation">
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.product">Product</h4>
+                        <a href="/#features" data-i18n="nav.features">Features</a>
+                        <a href="/#pricing" data-i18n="nav.pricing">Pricing</a>
+                        <a href="/#download" data-i18n="nav.download">Download</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.legal">Legal</h4>
+                        <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
+                        <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
+                        <a href="/report-content.html" data-i18n="footer.reportContent">Report Illegal Content</a>
+                        <a href="/accessibility.html" data-i18n="footer.accessibility">Accessibility</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.support">Support</h4>
+                        <a href="/help/" data-i18n="footer.help">Help Center</a>
+                        <a href="/contact.html" data-i18n="footer.contact">Contact Us</a>
+                        <a href="/careers.html" aria-current="page" data-i18n="footer.careers">Careers</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p><small>© 2026 Scandora. <span data-i18n="footer.rights">All rights reserved.</span></small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="careers-data.js" defer></script>
+    <script src="careers.js" defer></script>
+    <script src="translations.js" defer></script>
+    <script src="main.js" defer></script>
+</body>
+</html>

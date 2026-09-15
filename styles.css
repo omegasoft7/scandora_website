@@ -1490,6 +1490,118 @@ img {
     margin: 0;
 }
 
+/* Careers hub — reuses .legal-page scaffold; cards are rendered from careers-data.js */
+.job-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary);
+    overflow-wrap: break-word;
+    margin: var(--space-2xl) 0 var(--space-md);
+}
+
+.job-howto {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--space-lg);
+}
+
+.job-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+    box-shadow: var(--shadow-card);
+}
+
+.job-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-primary);
+    overflow-wrap: break-word;
+    margin-bottom: var(--space-sm);
+}
+
+.job-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-md);
+}
+
+.job-chip {
+    background: var(--surface-variant);
+    color: var(--text-secondary);
+    border-radius: var(--radius-full);
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    overflow-wrap: break-word;
+}
+
+.job-summary {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--space-md);
+}
+
+.job-section-title {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text-tertiary-strong);
+    margin: var(--space-md) 0 var(--space-sm);
+}
+
+.job-points {
+    margin: 0 0 var(--space-md) var(--space-lg);
+    padding: 0;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.job-points li {
+    margin-bottom: var(--space-xs);
+    overflow-wrap: break-word;
+}
+
+.job-apply {
+    margin-top: var(--space-sm);
+}
+
+.careers-empty,
+.careers-general {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    margin-bottom: var(--space-lg);
+}
+
+.careers-empty {
+    border-style: dashed;
+    text-align: center;
+}
+
+.careers-empty h3,
+.careers-general h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+    overflow-wrap: break-word;
+    margin-bottom: var(--space-sm);
+}
+
+.careers-empty p,
+.careers-general p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--space-md);
+}
+
 /* Legal Page Responsive */
 @media (max-width: 768px) {
     .legal-page {

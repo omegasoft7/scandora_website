@@ -224,7 +224,26 @@ const translations = {
 
         // Footer — DSA report route and accessibility statement
         'footer.reportContent': 'Report Illegal Content',
-        'footer.accessibility': 'Accessibility'
+        'footer.accessibility': 'Accessibility',
+
+        // Careers
+        'nav.careers': 'Careers',
+        'footer.careers': 'Careers',
+        'careers.backHome': 'Back to Home',
+        'careers.badge': 'Careers',
+        'careers.title': 'Build Scandora with us',
+        'careers.subtitle': 'Scandora is a small, remote-first company building an AI document scanner in Germany. Customer documents stay in the EU, and so does the work.',
+        'careers.openRoles': 'Open roles',
+        'careers.responsibilities': 'What you would do',
+        'careers.requirements': 'What we look for',
+        'careers.apply': 'Apply by email',
+        'careers.howTitle': 'How to apply',
+        'careers.howBody': 'Write to jobs@scandora.eu with a short note, a CV or a profile link, and the role in the subject line. No form, no account, no tracking.',
+        'careers.emptyTitle': 'No open positions right now',
+        'careers.emptyBody': 'No role is advertised at the moment. If you think you belong here anyway, write to us — we read every message.',
+        'careers.generalTitle': 'None of these fit?',
+        'careers.generalBody': 'Send a short note about what you do and a link to something you have built. We read every application.',
+        'careers.generalApply': 'Send a general application'
     },
     de: {
         // Navigation
@@ -446,7 +465,26 @@ const translations = {
 
         // Footer — DSA report route and accessibility statement
         'footer.reportContent': 'Rechtswidrige Inhalte melden',
-        'footer.accessibility': 'Barrierefreiheit'
+        'footer.accessibility': 'Barrierefreiheit',
+
+        // Careers
+        'nav.careers': 'Karriere',
+        'footer.careers': 'Karriere',
+        'careers.backHome': 'Zur Startseite',
+        'careers.badge': 'Karriere',
+        'careers.title': 'Scandora mit uns bauen',
+        'careers.subtitle': 'Scandora ist ein kleines, remote arbeitendes Unternehmen aus Deutschland, das einen KI-Dokumentenscanner baut. Kundendokumente bleiben in der EU — und die Arbeit ebenso.',
+        'careers.openRoles': 'Offene Stellen',
+        'careers.responsibilities': 'Ihre Aufgaben',
+        'careers.requirements': 'Was wir suchen',
+        'careers.apply': 'Per E-Mail bewerben',
+        'careers.howTitle': 'So bewerben Sie sich',
+        'careers.howBody': 'Schreiben Sie an jobs@scandora.eu: kurze Nachricht, Lebenslauf oder Profillink, Stelle im Betreff. Kein Formular, kein Konto, kein Tracking.',
+        'careers.emptyTitle': 'Derzeit keine offenen Stellen',
+        'careers.emptyBody': 'Zurzeit ist keine Stelle ausgeschrieben. Wenn Sie trotzdem zu uns passen, schreiben Sie uns — wir lesen jede Nachricht.',
+        'careers.generalTitle': 'Nichts Passendes dabei?',
+        'careers.generalBody': 'Schreiben Sie kurz, was Sie tun, und verlinken Sie etwas, das Sie gebaut haben. Wir lesen jede Bewerbung.',
+        'careers.generalApply': 'Initiativbewerbung senden'
     }
 };
 
@@ -543,6 +581,16 @@ const pageMeta = {
         "de": {
             "title": "Kontakt | Scandora",
             "description": "Kontaktieren Sie Scandora bei Fragen zu Support, Vertrieb oder Partnerschaften. Wir antworten in der Regel innerhalb von 24 Stunden, Mo–Fr."
+        }
+    },
+    "/careers": {
+        "en": {
+            "title": "Careers at Scandora | Open Roles",
+            "description": "Open roles at Scandora, the AI document scanner built in Germany: Flutter, TypeScript backend, EU hosting and bilingual content. Apply by email to jobs@scandora.eu."
+        },
+        "de": {
+            "title": "Karriere bei Scandora | Offene Stellen",
+            "description": "Offene Stellen bei Scandora, dem KI-Dokumentenscanner aus Deutschland: Flutter, TypeScript-Backend, EU-Hosting und zweisprachige Inhalte. Bewerbung an jobs@scandora.eu."
         }
     },
     "/gdpr-dokumentenscanner": {
