@@ -125,7 +125,7 @@
                 "name": "Where is an invoice processed while the AI reads it?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "In the EU. The page is routed through Scandora's own AI gateway, which runs on Scandora's own server in Falkenstein, Germany, to the model provider — Google Gemini on Vertex AI in Frankfurt, Germany — which returns the analysis. Your original files stay on your device and in the storage you choose; while you are signed in, only a low-resolution preview and the extracted text sync to our servers."
+                    "text": "In the EU. Your device sends the page directly to the model provider — Google Gemini on Vertex AI in Frankfurt, Germany — using a short-lived credential Scandora's server issues, and the model provider returns the analysis. Your original files stay on your device and in the storage you choose; while you are signed in, only a low-resolution preview and the extracted text sync to our servers."
                 }
             }
         ]
@@ -195,7 +195,7 @@
                     <p>Zum Scannen nicht — Scannen und Kantenerkennung funktionieren offline. Eine Verbindung brauchen Sie, wenn die verwaltete KI einen Scan verarbeitet oder wenn ein Dokument zu einem Cloud-Dienst wie Trello oder Google Drive synchronisiert wird.</p>
 
                     <h2>Wo wird eine Rechnung verarbeitet, während die KI sie liest?</h2>
-                    <p>In der EU. Die Seite wird über Scandoras eigenes KI-Gateway, das auf Scandoras eigenem Server in Falkenstein, Deutschland, läuft, an den Modellanbieter geleitet — Google Gemini auf Vertex AI in Frankfurt, Deutschland —, der die Analyse erstellt. Ihre Originaldateien bleiben auf dem Gerät und im von Ihnen gewählten Speicher; solange Sie angemeldet sind, synchronisieren nur eine Vorschau in niedriger Auflösung und der extrahierte Text auf unsere Server. Der <a href="/document-scanner-eu-servers.html">Überblick zu den EU-Servern</a> zeigt jeden Weg einzeln.</p>
+                    <p>In der EU. Ihr Gerät sendet die Seite direkt an den Modellanbieter — Google Gemini auf Vertex AI in Frankfurt, Deutschland —, mit einer kurzlebigen Zugangsberechtigung, die der Server von Scandora ausstellt, und der Modellanbieter erstellt die Analyse. Ihre Originaldateien bleiben auf dem Gerät und im von Ihnen gewählten Speicher; solange Sie angemeldet sind, synchronisieren nur eine Vorschau in niedriger Auflösung und der extrahierte Text auf unsere Server. Der <a href="/document-scanner-eu-servers.html">Überblick zu den EU-Servern</a> zeigt jeden Weg einzeln.</p>
 
                     <h2>Bleibt nachvollziehbar, was erfasst und geändert wurde?</h2>
                     <p>Ja, solange Sie angemeldet sind. Jede Erfassung schreibt einen Erfassungsnachweis (unter anderem eine SHA-256-Prüfsumme der erfassten Datei, die Erfassungsquelle und einen Server-Zeitstempel), und jede spätere Metadatenänderung, jeder Export und jede Löschung schreibt einen Änderungsprotokolleintrag mit dem alten und dem neuen Wert. Für Steuerberaterinnen und Steuerberater ist außerdem ein <a href="/datev-steuerberater.html">DATEV-Export in Vorbereitung</a> — er ist in dieser Version noch nicht verfügbar.</p>
@@ -232,7 +232,7 @@
                     <h3>Welche Felder liest die KI aus einer Rechnung?</h3>
                     <p>Lieferant, Betrag, IBAN, Fälligkeit und vorgeschlagene To-dos, dazu einen Titelvorschlag und Labels. Daneben führt Scandora Titel, Labels, Bruttobetrag, Rechnungsnummer und Rechnungsdatum als Metadaten des Dokuments, und jeder dieser Werte bleibt bearbeitbar.</p>
                     <h3>Wo wird eine Rechnung verarbeitet, während die KI sie liest?</h3>
-                    <p>In der EU. Die Seite wird über Scandoras eigenes KI-Gateway in Falkenstein, Deutschland, an den Modellanbieter geleitet — Google Gemini auf Vertex AI in Frankfurt, Deutschland. Ihre Originaldateien bleiben auf dem Gerät und im von Ihnen gewählten Speicher.</p>
+                    <p>In der EU. Ihr Gerät sendet die Seite direkt an den Modellanbieter — Google Gemini auf Vertex AI in Frankfurt, Deutschland — mit einer kurzlebigen Zugangsberechtigung, die der Server von Scandora ausstellt. Ihre Originaldateien bleiben auf dem Gerät und im von Ihnen gewählten Speicher.</p>
                 </article>
 
                 <!-- ================= ENGLISH ================= -->
@@ -265,7 +265,7 @@
                     <p>Not for the scan itself — scanning and edge detection work offline. You need a connection when managed AI processes a scan, or when a document syncs to a cloud service such as Trello or Google Drive.</p>
 
                     <h2>Where is an invoice processed while the AI reads it?</h2>
-                    <p>In the EU. The page is routed through Scandora's own AI gateway, which runs on Scandora's own server in Falkenstein, Germany, to the model provider — Google Gemini on Vertex AI in Frankfurt, Germany — which returns the analysis. Your original files stay on your device and in the storage you choose; while you are signed in, only a low-resolution preview and the extracted text sync to our servers. The <a href="/document-scanner-eu-servers.html">EU servers page</a> sets out each path one by one.</p>
+                    <p>In the EU. Your device sends the page directly to the model provider — Google Gemini on Vertex AI in Frankfurt, Germany — using a short-lived credential Scandora's server issues, and the model provider returns the analysis. Your original files stay on your device and in the storage you choose; while you are signed in, only a low-resolution preview and the extracted text sync to our servers. The <a href="/document-scanner-eu-servers.html">EU servers page</a> sets out each path one by one.</p>
 
                     <h2>Does it stay traceable what was captured and what changed?</h2>
                     <p>Yes, while you are signed in. Every capture writes a capture record — a SHA-256 checksum of the captured file, the capture source and a server timestamp among other fields — and every later metadata change, export and deletion writes a change-log entry with the old and the new value. For tax advisors a <a href="/datev-steuerberater.html">DATEV export is in preparation</a>; it is coming soon and not available in this version yet.</p>
@@ -302,7 +302,7 @@
                     <h3>Which fields does the AI pull off an invoice?</h3>
                     <p>Supplier, amount, IBAN, due date and suggested to-dos, plus a title suggestion and labels. Alongside them Scandora keeps title, labels, gross amount, invoice number and invoice date as the document's metadata, and each of those stays editable.</p>
                     <h3>Where is an invoice processed while the AI reads it?</h3>
-                    <p>In the EU. The page is routed through Scandora's own AI gateway in Falkenstein, Germany, to the model provider — Google Gemini on Vertex AI in Frankfurt, Germany. Your original files stay on your device and in the storage you choose.</p>
+                    <p>In the EU. Your device sends the page directly to the model provider — Google Gemini on Vertex AI in Frankfurt, Germany — using a short-lived credential Scandora's server issues. Your original files stay on your device and in the storage you choose.</p>
                 </article>
             </div>
         </section>

@@ -217,7 +217,7 @@
                 "name": "Is my data secure with Scandora?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Privacy is built into Scandora's design. Your original scans stay on your device and go only to Scandora's managed AI gateway — which forwards the page to Google Gemini for extraction — and to the cloud services you choose. So your history syncs across your devices, we store a low-resolution preview and the extracted text on our EU servers — never your original files. If you opt in to AI document chat, an optional EU-resident search index (Falkenstein, Germany) stores derived text only — not your original files. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. You stay in control of your data."
+                    "text": "Privacy is built into Scandora's design. Your original scans stay on your device and go only directly to Google Gemini for extraction — using a short-lived credential our server issues — and to the cloud services you choose. So your history syncs across your devices, we store a low-resolution preview and the extracted text on our EU servers — never your original files. AI document search and chat run on your device; only the passages your device selects for an answer are ever sent, directly to Google. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. You stay in control of your data."
                 }
             },
             {
@@ -281,7 +281,7 @@
                 "name": "Can I ask questions about my own scanned documents and get an answer with a source?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. Ask the AI a question and you get a cited answer drawn from your own documents, with a link to the source it used. Document chat is part of every plan and spends the same monthly AI credits as extraction and indexing. It uses an optional EU-resident search index in Falkenstein, Germany, which stores derived text only — never your original files."
+                    "text": "Yes. Ask the AI a question and you get a cited answer drawn from your own documents, with a link to the source it used. Document chat is part of every plan and spends the same monthly AI credits as extraction. Retrieval runs on your device against an on-device index; only the passages it selects for an answer are ever sent, directly to Google — never your original files."
                 }
             },
             {
@@ -568,7 +568,7 @@
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-4" aria-expanded="false" aria-controls="faq-panel-4"><span data-i18n="faq.q4">Is my data secure with Scandora?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
-                        <div id="faq-panel-4" class="faq-answer" role="region" aria-labelledby="faq-trigger-4"><div class="faq-answer-inner"><p data-i18n="faq.a4">Privacy is built into Scandora's design. Your original scans stay on your device and go only to Scandora's managed AI gateway — which forwards the page to Google Gemini for extraction — and to the cloud services you choose. So your history syncs across your devices, we store a low-resolution preview and the extracted text on our EU servers — never your original files. If you opt in to AI document chat, an optional EU-resident search index (Falkenstein, Germany) stores derived text only — not your original files. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. You stay in control of your data.</p></div></div>
+                        <div id="faq-panel-4" class="faq-answer" role="region" aria-labelledby="faq-trigger-4"><div class="faq-answer-inner"><p data-i18n="faq.a4">Privacy is built into Scandora's design. Your original scans stay on your device and go only directly to Google Gemini for extraction — using a short-lived credential our server issues — and to the cloud services you choose. So your history syncs across your devices, we store a low-resolution preview and the extracted text on our EU servers — never your original files. AI document search and chat run on your device; only the passages your device selects for an answer are ever sent, directly to Google. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. You stay in control of your data.</p></div></div>
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-5" aria-expanded="false" aria-controls="faq-panel-5"><span data-i18n="faq.q5">Do I need my own API key to use the AI?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
@@ -600,7 +600,7 @@
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-12" aria-expanded="false" aria-controls="faq-panel-12"><span data-i18n="faq.q12">Can I ask questions about my own scanned documents and get an answer with a source?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
-                        <div id="faq-panel-12" class="faq-answer" role="region" aria-labelledby="faq-trigger-12"><div class="faq-answer-inner"><p data-i18n="faq.a12">Yes. Ask the AI a question and you get a cited answer drawn from your own documents, with a link to the source it used. Document chat is part of every plan and spends the same monthly AI credits as extraction and indexing. It uses an optional EU-resident search index in Falkenstein, Germany, which stores derived text only — never your original files.</p></div></div>
+                        <div id="faq-panel-12" class="faq-answer" role="region" aria-labelledby="faq-trigger-12"><div class="faq-answer-inner"><p data-i18n="faq.a12">Yes. Ask the AI a question and you get a cited answer drawn from your own documents, with a link to the source it used. Document chat is part of every plan and spends the same monthly AI credits as extraction. Retrieval runs on your device against an on-device index; only the passages it selects for an answer are ever sent, directly to Google — never your original files.</p></div></div>
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-13" aria-expanded="false" aria-controls="faq-panel-13"><span data-i18n="faq.q13">Can I keep personal and business documents separate in one scanner app?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
@@ -640,7 +640,7 @@
                         <ul class="pricing-features">
                             <li data-i18n="pricing.free.f1">Managed AI extraction (10 credits/month)</li>
                             <li data-i18n="pricing.free.f2">Unlimited scans, unlimited pages</li>
-                            <li data-i18n="pricing.free.f3">10 AI credits/month (1 credit ≈ 5 pages; shared: extraction, indexing &amp; AI chat)</li>
+                            <li data-i18n="pricing.free.f3">10 AI credits/month (1 credit = 1 document analysis or AI chat answer; shared: extraction, indexing &amp; AI chat)</li>
                             <li data-i18n="pricing.free.f4">Watermark-free exports</li>
                             <li data-i18n="pricing.free.f5">Cloud integrations (Trello, Google Drive)</li>
                         </ul>
@@ -657,7 +657,7 @@
                             <span class="currency" aria-label="Euro">€</span><span class="price-monthly"><span class="amount">9.99</span><span class="period" data-i18n="pricing.perMonth">/month</span></span><span class="price-annual"><span class="amount">89</span><span class="period" data-i18n="pricing.perYear">/year</span><span class="pricing-save" data-i18n="pricing.pro.save">Save 26%</span></span>
                         </div>
                         <ul class="pricing-features">
-                            <li data-i18n="pricing.pro.f1">1,000 AI credits/month (1 credit ≈ 5 pages; shared: extraction, indexing &amp; AI chat)</li>
+                            <li data-i18n="pricing.pro.f1">1,000 AI credits/month (1 credit = 1 document analysis or AI chat answer; shared: extraction, indexing &amp; AI chat)</li>
                             <li data-i18n="pricing.pro.f2">Network scanner support (eSCL/AirScan)</li>
                             <li data-i18n="pricing.pro.f3">AI document chat with cited answers</li>
                             <li data-i18n="pricing.pro.f4">Cloud integrations</li>
@@ -674,7 +674,7 @@
                             <span class="currency" aria-label="Euro">€</span><span class="price-monthly"><span class="amount">24.99</span><span class="period" data-i18n="pricing.perMonth">/month</span></span><span class="price-annual"><span class="amount">229</span><span class="period" data-i18n="pricing.perYear">/year</span><span class="pricing-save" data-i18n="pricing.business.save">Save 24%</span></span>
                         </div>
                         <ul class="pricing-features">
-                            <li data-i18n="pricing.business.f1">5,000 AI credits/month (1 credit ≈ 5 pages; shared: extraction, indexing &amp; AI chat)</li>
+                            <li data-i18n="pricing.business.f1">5,000 AI credits/month (1 credit = 1 document analysis or AI chat answer; shared: extraction, indexing &amp; AI chat)</li>
                             <li data-i18n="pricing.business.f2">DATEV export for your tax advisor (coming soon)</li>
                             <li data-i18n="pricing.business.f3">lexoffice &amp; sevDesk voucher export (coming soon)</li>
                             <li data-i18n="pricing.business.f4">Designed for GoBD &amp; DSGVO record-keeping</li>
@@ -689,7 +689,7 @@
                     <p><strong data-i18n="pricing.aiSplit.title">What the AI does for you</strong></p>
                     <ul>
                         <li data-i18n="pricing.aiSplit.ownKey">AI reads each scan and pulls out dates, amounts, and suppliers — covered by your monthly credits.</li>
-                        <li data-i18n="pricing.aiSplit.scandoraAi">Document-chat answers, search indexing, retrieval and EU index storage run on Scandora's AI and servers, and spend Scandora credits.</li>
+                        <li data-i18n="pricing.aiSplit.scandoraAi">Document-chat and search run on your device and Scandora's AI, and spend Scandora credits.</li>
                     </ul>
                 </div>
                 <p class="pricing-note" data-i18n="pricing.priceNote"><small>The prices shown in the App Store / Google Play are the final prices for the respective product (small-business operator — no separate VAT shown, § 19 UStG); with a trial, an introductory or promotional offer, or a prorated plan change the amount actually charged can differ, and the amount the store states on your receipt is the one that applies. Prices may vary by region and store.</small></p>

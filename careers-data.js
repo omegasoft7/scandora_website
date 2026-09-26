@@ -26,9 +26,9 @@ const jobPostings = [
         location: 'Remote within the EU',
         employmentType: 'Full-time',
         summary:
-            'Our backend is TypeScript Cloud Functions pinned to europe-west3 in Frankfurt, Firestore, and a Postgres database holding accounts, entitlements and AI credits. You would own the gateway that meters managed AI and the rules that protect customer documents.',
+            'Our backend is TypeScript Cloud Functions pinned to europe-west3 in Frankfurt, Firestore, and a Postgres database holding accounts, entitlements and AI credits. You would own the credential-mint endpoint that lets the app call the model provider directly, its metering of managed AI, and the rules that protect customer documents.',
         responsibilities: [
-            'Extend the AI gateway: request metering, credit settlement, and honest error paths when a model call fails.',
+            'Extend the credential-mint endpoint for managed AI: request metering, credit settlement, and honest error paths when a model call fails.',
             'Own the Firestore security rules and the suite that proves them.',
             'Build webhook delivery and the endpoints third-party tools call.',
             'Keep every function in its EU region, and keep customer content out of the logs.',

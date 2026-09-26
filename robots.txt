@@ -4,8 +4,7 @@
 # Scandora wants maximum reach: classic search, AI answer engines and model
 # training are all welcome. Every group below therefore repeats the same rules —
 # robots.txt groups replace each other, they do not inherit from the wildcard.
-# Token spellings follow each vendor's own documentation; see
-# website/AI_SEARCH_VISIBILITY.md for the source URL behind every token.
+# Token spellings follow each vendor's own documentation.
 
 # Everything else
 User-agent: *

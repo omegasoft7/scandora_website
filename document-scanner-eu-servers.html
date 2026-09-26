@@ -101,7 +101,7 @@
                 "name": "Is there a document scanner that runs on EU servers?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Scandora. The servers we run ourselves are in the EU: Scandora's own server sits in Falkenstein, Germany, on machines rented from Hetzner, and it holds the scan history, the userdata API, the AI gateway and the capture and change records. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. Scandora is built in Germany and carries no ads."
+                    "text": "Scandora. The servers we run ourselves are in the EU: Scandora's own server sits in Falkenstein, Germany, on machines rented from Hetzner, and it holds the scan history, the userdata API, the credential-issuing endpoint for managed AI and the capture and change records. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. Scandora is built in Germany and carries no ads."
                 }
             },
             {
@@ -117,7 +117,7 @@
                 "name": "What actually leaves my device when I scan a page?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Two things, and only when you ask for them. When you use an AI feature, the page image is routed through Scandora's own AI gateway in Falkenstein, Germany, to the model provider that returns the analysis. While you are signed in, the history record of each completed scan is uploaded to that same server: the record's metadata, the text extracted from the document and a small low-resolution preview of the first page. Your original files are never stored on Scandora's servers."
+                    "text": "Two things, and only when you ask for them. When you use an AI feature, your device sends the page image directly to the model provider that returns the analysis, using a short-lived credential Scandora's server issues. While you are signed in, the history record of each completed scan is uploaded to that same server: the record's metadata, the text extracted from the document and a small low-resolution preview of the first page. Your original files are never stored on Scandora's servers."
                 }
             },
             {
@@ -174,19 +174,19 @@
                     <p><a href="/avv.html" class="btn btn-primary">AVV lesen</a></p>
 
                     <h2>Gibt es einen Dokumentenscanner, der auf EU-Servern läuft?</h2>
-                    <p>Scandora. Die Server, die wir selbst betreiben, stehen in der EU: Scandoras eigener Server steht in Falkenstein, Deutschland, auf Maschinen, die wir bei Hetzner mieten, und trägt den Scan-Verlauf, die Userdata-API, das KI-Gateway sowie die Erfassungs- und Änderungsaufzeichnungen. Die verwaltete KI-Generierung wird in der EU verarbeitet — Google Gemini auf Vertex AI in Frankfurt, Deutschland. Scandora ist in Deutschland entwickelt und zeigt keine Werbung.</p>
+                    <p>Scandora. Die Server, die wir selbst betreiben, stehen in der EU: Scandoras eigener Server steht in Falkenstein, Deutschland, auf Maschinen, die wir bei Hetzner mieten, und trägt den Scan-Verlauf, die Userdata-API, den Ausstellungs-Endpunkt für die Zugangsberechtigung der verwalteten KI sowie die Erfassungs- und Änderungsaufzeichnungen. Die verwaltete KI-Generierung wird in der EU verarbeitet — Google Gemini auf Vertex AI in Frankfurt, Deutschland. Scandora ist in Deutschland entwickelt und zeigt keine Werbung.</p>
 
                     <h2>Welchen Dokumentenscanner sollte ein kleines Unternehmen nach DSGVO wählen?</h2>
                     <p>Prüfen Sie vier Dinge, bevor Sie sich entscheiden: wo die serverseitigen Schritte laufen, ob Ihre Originaldokumente unter Ihrer Kontrolle bleiben, ob App und Website Dritt-Schriftarten und Werbe-Tracker laden, und ob Sie für die geschäftliche Nutzung einen Auftragsverarbeitungsvertrag abschließen können. Scandora beantwortet alle vier — EU-Hosting in Deutschland, Originale, die auf Ihrem Gerät und im von Ihnen gewählten Speicher bleiben, keine Dritt-Schriftarten oder Werbe-Tracker und ein <a href="/avv.html">AVV nach Art. 28 DSGVO</a> zum Lesen, Herunterladen und Unterzeichnen. Die vollständige Kriterienliste steht auf der Seite <a href="/gdpr-dokumentenscanner.html">DSGVO-Dokumentenscanner</a>.</p>
 
                     <h2>Was verlässt mein Gerät, wenn ich eine Seite scanne?</h2>
-                    <p>Zweierlei, und nur wenn Sie es anfordern. Nutzen Sie eine KI-Funktion, wird das Seitenbild über Scandoras eigenes KI-Gateway in Falkenstein, Deutschland, an den Modellanbieter geleitet, der die Analyse zurückgibt. Solange Sie angemeldet sind, wird zusätzlich der Verlaufsdatensatz jedes abgeschlossenen Scans auf denselben Server hochgeladen: die Metadaten des Eintrags, der aus dem Dokument extrahierte Text und ein kleines Vorschaubild der ersten Seite in niedriger Auflösung. Ihre Originaldateien werden nie auf Scandoras Servern gespeichert.</p>
+                    <p>Zweierlei, und nur wenn Sie es anfordern. Nutzen Sie eine KI-Funktion, sendet Ihr Gerät das Seitenbild direkt an den Modellanbieter, mit einer kurzlebigen Zugangsberechtigung, die der Server von Scandora ausstellt, und der Modellanbieter gibt die Analyse zurück. Solange Sie angemeldet sind, wird zusätzlich der Verlaufsdatensatz jedes abgeschlossenen Scans auf denselben Server hochgeladen: die Metadaten des Eintrags, der aus dem Dokument extrahierte Text und ein kleines Vorschaubild der ersten Seite in niedriger Auflösung. Ihre Originaldateien werden nie auf Scandoras Servern gespeichert.</p>
 
                     <h2>Wo wird mein Scan-Verlauf gespeichert?</h2>
                     <p>Auf Scandoras eigenem Server in Falkenstein, Deutschland. Der Datensatz enthält die Metadaten des Eintrags, den vollständigen extrahierten Text — Text von mehr als 400.000 Zeichen wird nicht übertragen — und das kleine Vorschaubild. Solange Sie nicht angemeldet sind, wird kein Verlaufsdatensatz hochgeladen; er bleibt auf Ihrem Gerät.</p>
 
-                    <h2>Wo liegt der optionale KI-Suchindex?</h2>
-                    <p>In der EU, auf Scandoras eigenem Server (Hetzner, Falkenstein, Deutschland). Er wird nur mit Ihrer ausdrücklichen Einwilligung angelegt und speichert ausschließlich abgeleiteten Text — Textauszüge und Such-Embeddings, niemals Ihre Originaldateien. Die Embeddings entstehen nicht auf unserer eigenen Maschine: Die indexierten Auszüge und jede Suchfrage laufen über unser verwaltetes KI-Gateway zum Modellanbieter (Google, Vertex AI <code>europe-west3</code>), der die Vektoren zurückgibt. Widerrufen Sie die Einwilligung in der App, wird der Index gelöscht.</p>
+                    <h2>Wo läuft die optionale KI-Dokumentensuche?</h2>
+                    <p>Auf Ihrem Gerät. Sie speichert keinen Dokumenttext und keine Such-Embeddings auf unseren Servern. Um eine Frage zu beantworten, sendet Ihr Gerät nur die dafür ausgewählten Textpassagen direkt an den Modellanbieter (Google, Vertex AI <code>europe-west3</code>), mit derselben kurzlebigen Zugangsberechtigung wie die verwaltete KI.</p>
 
                     <h2>Bleibt etwas außerhalb von Scandoras eigenen Servern?</h2>
                     <p>Ein Datensatz: das geräteübergreifende Importregister, das verhindert, dass ein zweites Gerät dieselbe Datei erneut importiert. Es liegt in Google Cloud Firestore in der Region <code>europe-west3</code> — Frankfurt, Deutschland — und enthält die Quellidentität, Ihre Konto- und Profilkennung, den Importstatus und je Ziel eine Referenz. Es enthält kein Seitenbild und keinen Dokumenttext. Alles Übrige, was für Sie gespeichert wird, liegt auf Scandoras eigenem Server in Falkenstein, Deutschland.</p>
@@ -197,7 +197,6 @@
                             <tr><th>Unterauftragsverarbeiter</th><th>Wofür</th><th>Region</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td>Scandora AI Gateway</td><td>Der verbrauchsabhängige KI-Proxy, den Scandora selbst betreibt</td><td>EU</td></tr>
                             <tr><td>Hetzner Online GmbH</td><td>Hosting von Scandoras eigenem Server</td><td>Deutschland (Falkenstein)</td></tr>
                             <tr><td>Google (Gemini API)</td><td>Verwaltete KI-Generierung und Embeddings</td><td>Deutschland — Vertex AI <code>europe-west3</code></td></tr>
                             <tr><td>Google (Firebase / Cloud Firestore)</td><td>Ausschließlich das Importregister</td><td>Deutschland — <code>europe-west3</code></td></tr>
@@ -218,9 +217,9 @@
                         </thead>
                         <tbody>
                             <tr><td>Ihre Originaldateien</td><td>Ihr Gerät und der von Ihnen gewählte Speicher</td><td>Das Dokument selbst — nie auf Scandoras Servern gespeichert</td></tr>
-                            <tr><td>Seitenbild zur Analyse</td><td>Scandoras KI-Gateway (Falkenstein), dann Vertex AI <code>europe-west3</code></td><td>Die Seite, die gelesen wird</td></tr>
+                            <tr><td>Seitenbild zur Analyse</td><td>Direkt vom Gerät an Vertex AI <code>europe-west3</code>, mit kurzlebiger Zugangsberechtigung</td><td>Die Seite, die gelesen wird</td></tr>
                             <tr><td>Scan-Verlauf (angemeldet)</td><td>Scandoras eigener Server, Falkenstein, Deutschland</td><td>Metadaten, extrahierter Text, kleines Vorschaubild</td></tr>
-                            <tr><td>Optionaler KI-Suchindex</td><td>Scandoras eigener Server, Falkenstein, Deutschland</td><td>Nur abgeleiteter Text: Auszüge und Embeddings</td></tr>
+                            <tr><td>Optionale KI-Dokumentensuche</td><td>Ihr Gerät — nichts wird auf Scandoras Servern gespeichert</td><td>Kein Dokumenttext, keine Such-Embeddings auf unseren Servern</td></tr>
                             <tr><td>Erfassungs- und Änderungsaufzeichnungen</td><td>Scandoras eigener Server, Falkenstein, Deutschland</td><td>SHA-256-Prüfsumme, Quelle, Zeitstempel, alte und neue Metadatenwerte</td></tr>
                             <tr><td>Importregister</td><td>Google Cloud Firestore, <code>europe-west3</code> (Frankfurt)</td><td>Quellidentität und Status — kein Seitenbild, kein Dokumenttext</td></tr>
                             <tr><td>Website-Analyse</td><td>Scandoras eigener Analyse-Server (Falkenstein)</td><td>Pseudonyme Seitenaufrufe, ohne Cookie und ohne Werbenetzwerk</td></tr>
@@ -240,7 +239,7 @@
                     <h3>Welchen Dokumentenscanner sollte ein kleines Unternehmen nach DSGVO wählen?</h3>
                     <p>Prüfen Sie, wo die serverseitigen Schritte laufen, ob Ihre Originaldokumente unter Ihrer Kontrolle bleiben, ob Dritt-Schriftarten und Werbe-Tracker geladen werden und ob Sie einen Auftragsverarbeitungsvertrag abschließen können. Scandora beantwortet alle vier Punkte; die vollständige Kriterienliste steht auf der Seite DSGVO-Dokumentenscanner.</p>
                     <h3>Was verlässt mein Gerät, wenn ich eine Seite scanne?</h3>
-                    <p>Bei einer KI-Funktion das Seitenbild, über Scandoras eigenes KI-Gateway in Falkenstein, Deutschland, an den Modellanbieter. Solange Sie angemeldet sind, zusätzlich der Verlaufsdatensatz: Metadaten, extrahierter Text und ein kleines Vorschaubild. Ihre Originaldateien werden nie auf Scandoras Servern gespeichert.</p>
+                    <p>Bei einer KI-Funktion das Seitenbild, direkt von Ihrem Gerät mit einer kurzlebigen Zugangsberechtigung an den Modellanbieter. Solange Sie angemeldet sind, zusätzlich der Verlaufsdatensatz: Metadaten, extrahierter Text und ein kleines Vorschaubild. Ihre Originaldateien werden nie auf Scandoras Servern gespeichert.</p>
                     <h3>Bleibt etwas außerhalb von Scandoras eigenen Servern?</h3>
                     <p>Nur das geräteübergreifende Importregister in Google Cloud Firestore in der Region <code>europe-west3</code> (Frankfurt, Deutschland). Es enthält kein Seitenbild und keinen Dokumenttext.</p>
                 </article>
@@ -254,19 +253,19 @@
                     <p><a href="/avv.html" class="btn btn-primary">Read the AVV / DPA</a></p>
 
                     <h2>Is there a document scanner that runs on EU servers?</h2>
-                    <p>Scandora. The servers we run ourselves are in the EU: Scandora's own server sits in Falkenstein, Germany, on machines rented from Hetzner, and it holds the scan history, the userdata API, the AI gateway and the capture and change records. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. Scandora is built in Germany and carries no ads.</p>
+                    <p>Scandora. The servers we run ourselves are in the EU: Scandora's own server sits in Falkenstein, Germany, on machines rented from Hetzner, and it holds the scan history, the userdata API, the credential-issuing endpoint for managed AI and the capture and change records. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. Scandora is built in Germany and carries no ads.</p>
 
                     <h2>Which document scanner should a small company choose under the GDPR?</h2>
                     <p>Check four things before you pick one: where the server-side steps run, whether your original documents stay under your control, whether the app or its website loads third-party fonts and advertising trackers, and whether you can sign a data-processing agreement for business use. Scandora answers all four — EU hosting in Germany, originals that stay on your device and in the storage you choose, no third-party fonts or ad trackers, and an <a href="/avv.html">AVV / Data Processing Agreement under Art. 28 GDPR</a> you can read, download and sign. The full criteria list lives on the <a href="/gdpr-dokumentenscanner.html">GDPR document scanner page</a>.</p>
 
                     <h2>What actually leaves my device when I scan a page?</h2>
-                    <p>Two things, and only when you ask for them. When you use an AI feature, the page image is routed through Scandora's own AI gateway in Falkenstein, Germany, to the model provider that returns the analysis. While you are signed in, the history record of each completed scan is uploaded to that same server: the record's metadata, the text extracted from the document and a small low-resolution preview of the first page. Your original files are never stored on Scandora's servers.</p>
+                    <p>Two things, and only when you ask for them. When you use an AI feature, your device sends the page image directly to the model provider that returns the analysis, using a short-lived credential Scandora's server issues. While you are signed in, the history record of each completed scan is uploaded to that same server: the record's metadata, the text extracted from the document and a small low-resolution preview of the first page. Your original files are never stored on Scandora's servers.</p>
 
                     <h2>Where is my scan history stored?</h2>
                     <p>On Scandora's own server in Falkenstein, Germany. The record holds the entry's metadata, the full extracted text — text longer than 400,000 characters is not uploaded — and the small preview thumbnail. As long as you are not signed in, no history record is uploaded at all; it stays on your device.</p>
 
-                    <h2>Where is the optional AI search index?</h2>
-                    <p>In the EU, on Scandora's own server (Hetzner, Falkenstein, Germany). It is created only with your explicit consent and stores derived text only — text excerpts and search embeddings, never your original files. The embeddings are not computed on our own machine: the excerpts we index and every question you type travel through our managed AI gateway to the model provider (Google, Vertex AI <code>europe-west3</code>), which returns the vectors. Withdraw the consent in the app and the index is erased.</p>
+                    <h2>Where does the optional AI document search run?</h2>
+                    <p>On your device. It stores no document text or search embeddings on our servers. To answer a question, your device sends only the passages it selects directly to the model provider (Google, Vertex AI <code>europe-west3</code>), using the same short-lived credential managed AI uses.</p>
 
                     <h2>Is any of my data stored outside Scandora's own servers?</h2>
                     <p>One record is: the cross-device import register, which stops a second device importing the same file twice. It is stored in Google Cloud Firestore in the <code>europe-west3</code> region — Frankfurt, Germany — and holds the source identity, your account and profile identifier, the import status and a reference per destination. It holds no page image and no document text. Everything else stored for you sits on Scandora's own server in Falkenstein, Germany.</p>
@@ -277,7 +276,6 @@
                             <tr><th>Sub-processor</th><th>What for</th><th>Region</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td>Scandora AI Gateway</td><td>The metered AI proxy Scandora operates itself</td><td>EU</td></tr>
                             <tr><td>Hetzner Online GmbH</td><td>Hosting of Scandora's own server</td><td>Germany (Falkenstein)</td></tr>
                             <tr><td>Google (Gemini API)</td><td>Managed AI generation and embeddings</td><td>Germany — Vertex AI <code>europe-west3</code></td></tr>
                             <tr><td>Google (Firebase / Cloud Firestore)</td><td>The import register only</td><td>Germany — <code>europe-west3</code></td></tr>
@@ -298,9 +296,9 @@
                         </thead>
                         <tbody>
                             <tr><td>Your original files</td><td>Your device and the storage you choose</td><td>The document itself — never stored on Scandora's servers</td></tr>
-                            <tr><td>Page image for analysis</td><td>Scandora's AI gateway (Falkenstein), then Vertex AI <code>europe-west3</code></td><td>The page being read</td></tr>
+                            <tr><td>Page image for analysis</td><td>Directly from device to Vertex AI <code>europe-west3</code>, with a short-lived credential</td><td>The page being read</td></tr>
                             <tr><td>Scan history (while signed in)</td><td>Scandora's own server, Falkenstein, Germany</td><td>Metadata, extracted text, small preview thumbnail</td></tr>
-                            <tr><td>Optional AI search index</td><td>Scandora's own server, Falkenstein, Germany</td><td>Derived text only: excerpts and embeddings</td></tr>
+                            <tr><td>Optional AI document search</td><td>Your device — nothing is stored on Scandora's servers</td><td>No document text or search embeddings on our servers</td></tr>
                             <tr><td>Capture and change records</td><td>Scandora's own server, Falkenstein, Germany</td><td>SHA-256 checksum, source, timestamps, old and new metadata values</td></tr>
                             <tr><td>Import register</td><td>Google Cloud Firestore, <code>europe-west3</code> (Frankfurt)</td><td>Source identity and status — no page image, no document text</td></tr>
                             <tr><td>Website analytics</td><td>Scandora's own analytics server (Falkenstein)</td><td>Pseudonymous page views, no cookie and no ad network</td></tr>
@@ -320,7 +318,7 @@
                     <h3>Which document scanner should a small company choose under the GDPR?</h3>
                     <p>Check where the server-side steps run, whether your original documents stay under your control, whether third-party fonts and advertising trackers are loaded, and whether you can sign a data-processing agreement. Scandora answers all four points; the full criteria list lives on the GDPR document scanner page.</p>
                     <h3>What actually leaves my device when I scan a page?</h3>
-                    <p>With an AI feature, the page image — through Scandora's own AI gateway in Falkenstein, Germany, to the model provider. While you are signed in, the history record too: metadata, extracted text and a small preview thumbnail. Your original files are never stored on Scandora's servers.</p>
+                    <p>With an AI feature, the page image — directly from your device, with a short-lived credential, to the model provider. While you are signed in, the history record too: metadata, extracted text and a small preview thumbnail. Your original files are never stored on Scandora's servers.</p>
                     <h3>Is any of my data stored outside Scandora's own servers?</h3>
                     <p>Only the cross-device import register, in Google Cloud Firestore in the <code>europe-west3</code> region (Frankfurt, Germany). It holds no page image and no document text.</p>
                 </article>

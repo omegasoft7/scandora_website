@@ -69,13 +69,13 @@ const translations = {
         'pricing.free.tagline': 'Get started',
         'pricing.free.f1': 'Managed AI extraction (10 credits/month)',
         'pricing.free.f2': 'Unlimited scans, unlimited pages',
-        'pricing.free.f3': '10 AI credits/month (1 credit ≈ 5 pages; shared: extraction, indexing & AI chat)',
+        'pricing.free.f3': '10 AI credits/month (1 credit = 1 document analysis or AI chat answer; shared: extraction, indexing & AI chat)',
         'pricing.free.f4': 'Watermark-free exports',
         'pricing.free.f5': 'Cloud integrations (Trello, Google Drive)',
         'pricing.free.cta': 'Get Started',
         'pricing.pro.name': 'Pro',
         'pricing.pro.tagline': 'For professionals',
-        'pricing.pro.f1': '1,000 AI credits/month (1 credit ≈ 5 pages; shared: extraction, indexing & AI chat)',
+        'pricing.pro.f1': '1,000 AI credits/month (1 credit = 1 document analysis or AI chat answer; shared: extraction, indexing & AI chat)',
         'pricing.pro.f2': 'Network scanner support (eSCL/AirScan)',
         'pricing.pro.f3': 'AI document chat with cited answers',
         'pricing.pro.f4': 'Cloud integrations',
@@ -84,7 +84,7 @@ const translations = {
         'pricing.pro.save': 'Save 26%',
         'pricing.business.name': 'Business / DATEV',
         'pricing.business.tagline': 'For German SMBs & tax advisors',
-        'pricing.business.f1': '5,000 AI credits/month (1 credit ≈ 5 pages; shared: extraction, indexing & AI chat)',
+        'pricing.business.f1': '5,000 AI credits/month (1 credit = 1 document analysis or AI chat answer; shared: extraction, indexing & AI chat)',
         'pricing.business.f2': 'DATEV export for your tax advisor (coming soon)',
         'pricing.business.f3': 'lexoffice & sevDesk voucher export (coming soon)',
         'pricing.business.f4': 'Designed for GoBD & DSGVO record-keeping',
@@ -94,7 +94,7 @@ const translations = {
         'pricing.byo': '💡 Managed AI covers extraction, indexing, and AI chat — no API key to set up.',
         'pricing.aiSplit.title': 'What the AI does for you',
         'pricing.aiSplit.ownKey': 'AI reads each scan and pulls out dates, amounts, and suppliers — covered by your monthly credits.',
-        'pricing.aiSplit.scandoraAi': "Document-chat answers, search indexing, retrieval and EU index storage run on Scandora's AI and servers, and spend Scandora credits.",
+        'pricing.aiSplit.scandoraAi': "Document-chat and search run on your device and Scandora's AI, and spend Scandora credits.",
         'pricing.priceNote': 'The prices shown in the App Store / Google Play are the final prices for the respective product (small-business operator — no separate VAT shown, § 19 UStG); with a trial, an introductory or promotional offer, or a prorated plan change the amount actually charged can differ, and the amount the store states on your receipt is the one that applies. Prices may vary by region and store.',
 
         // Download
@@ -200,7 +200,7 @@ const translations = {
         'faq.q3': 'Which platforms does Scandora support?',
         'faq.a3': 'Scandora is available on iOS, macOS, and Android. You can scan documents using your phone camera or connect professional scanners on desktop.',
         'faq.q4': 'Is my data secure with Scandora?',
-        'faq.a4': "Privacy is built into Scandora's design. Your original scans stay on your device and go only to Scandora's managed AI gateway — which forwards the page to Google Gemini for extraction — and to the cloud services you choose. So your history syncs across your devices, we store a low-resolution preview and the extracted text on our EU servers — never your original files. If you opt in to AI document chat, an optional EU-resident search index (Falkenstein, Germany) stores derived text only — not your original files. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. You stay in control of your data.",
+        'faq.a4': "Privacy is built into Scandora's design. Your original scans stay on your device and go only directly to Google Gemini for extraction — using a short-lived credential our server issues — and to the cloud services you choose. So your history syncs across your devices, we store a low-resolution preview and the extracted text on our EU servers — never your original files. AI document search and chat run on your device; only the passages your device selects for an answer are ever sent, directly to Google. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. You stay in control of your data.",
         'faq.q5': 'Do I need my own API key to use the AI?',
         'faq.a5': 'No. Scandora runs on managed AI — your monthly credits cover document extraction, indexing, and AI chat. There is no bring-your-own-key mode, so there is no API key to obtain or enter.',
         'faq.q6': 'Is Scandora GDPR-compliant?',
@@ -216,7 +216,7 @@ const translations = {
         'faq.q11': 'How do I stop retyping the data from my invoices and receipts?',
         'faq.a11': "Let the managed AI read them. Scandora's AI pulls supplier, amount, IBAN, due date and to-dos out of each scan without a template, so there is nothing to type in by hand. From there the scan can become a Trello card or a filed Google Drive document in your own accounts, which turns the document into something you can act on instead of another PDF.",
         'faq.q12': 'Can I ask questions about my own scanned documents and get an answer with a source?',
-        'faq.a12': 'Yes. Ask the AI a question and you get a cited answer drawn from your own documents, with a link to the source it used. Document chat is part of every plan and spends the same monthly AI credits as extraction and indexing. It uses an optional EU-resident search index in Falkenstein, Germany, which stores derived text only — never your original files.',
+        'faq.a12': 'Yes. Ask the AI a question and you get a cited answer drawn from your own documents, with a link to the source it used. Document chat is part of every plan and spends the same monthly AI credits as extraction. Retrieval runs on your device against an on-device index; only the passages it selects for an answer are ever sent, directly to Google — never your original files.',
         'faq.q13': 'Can I keep personal and business documents separate in one scanner app?',
         'faq.a13': 'Yes. Scandora has multiple profiles, so you can separate personal and business documents. Each profile carries its own settings and its own cloud connections.',
         'faq.q14': 'Is there a document scanner with an AVV / data processing agreement for business use?',
@@ -310,13 +310,13 @@ const translations = {
         'pricing.free.tagline': 'Zum Einstieg',
         'pricing.free.f1': 'Verwaltete KI-Extraktion (10 Credits/Monat)',
         'pricing.free.f2': 'Unbegrenzte Scans, unbegrenzte Seiten',
-        'pricing.free.f3': '10 KI-Credits/Monat (1 Credit ≈ 5 Seiten; gemeinsam: Extraktion, Indexierung & KI-Chat)',
+        'pricing.free.f3': '10 KI-Credits/Monat (1 Credit = 1 Dokumentanalyse oder KI-Chat-Antwort; gemeinsam: Extraktion, Indexierung & KI-Chat)',
         'pricing.free.f4': 'Exporte ohne Wasserzeichen',
         'pricing.free.f5': 'Cloud-Integrationen (Trello, Google Drive)',
         'pricing.free.cta': 'Jetzt starten',
         'pricing.pro.name': 'Pro',
         'pricing.pro.tagline': 'Für Profis',
-        'pricing.pro.f1': '1.000 KI-Credits/Monat (1 Credit ≈ 5 Seiten; gemeinsam: Extraktion, Indexierung & KI-Chat)',
+        'pricing.pro.f1': '1.000 KI-Credits/Monat (1 Credit = 1 Dokumentanalyse oder KI-Chat-Antwort; gemeinsam: Extraktion, Indexierung & KI-Chat)',
         'pricing.pro.f2': 'Netzwerkscanner-Unterstützung (eSCL/AirScan)',
         'pricing.pro.f3': 'KI-Dokumenten-Chat mit belegten Antworten',
         'pricing.pro.f4': 'Cloud-Integrationen',
@@ -325,7 +325,7 @@ const translations = {
         'pricing.pro.save': '26 % sparen',
         'pricing.business.name': 'Business / DATEV',
         'pricing.business.tagline': 'Für deutsche KMU & Steuerberater',
-        'pricing.business.f1': '5.000 KI-Credits/Monat (1 Credit ≈ 5 Seiten; gemeinsam: Extraktion, Indexierung & KI-Chat)',
+        'pricing.business.f1': '5.000 KI-Credits/Monat (1 Credit = 1 Dokumentanalyse oder KI-Chat-Antwort; gemeinsam: Extraktion, Indexierung & KI-Chat)',
         'pricing.business.f2': 'DATEV-Export für Ihren Steuerberater (demnächst)',
         'pricing.business.f3': 'lexoffice- & sevDesk-Belegexport (demnächst)',
         'pricing.business.f4': 'Für die GoBD- & DSGVO-Aufbewahrung konzipiert',
@@ -335,7 +335,7 @@ const translations = {
         'pricing.byo': '💡 Verwaltete KI deckt Extraktion, Indexierung und KI-Chat — kein API-Schlüssel nötig.',
         'pricing.aiSplit.title': 'Was die KI für Sie tut',
         'pricing.aiSplit.ownKey': 'KI liest jeden Scan und extrahiert Datum, Beträge und Lieferant — abgedeckt durch Ihre monatlichen Credits.',
-        'pricing.aiSplit.scandoraAi': 'Antworten im Dokument-Chat, Suchindex, Retrieval und EU-Index-Speicher laufen auf Scandoras KI und Servern und verbrauchen Scandora-Credits.',
+        'pricing.aiSplit.scandoraAi': 'Dokument-Chat und Suche laufen auf Ihrem Gerät und Scandoras KI und verbrauchen Scandora-Credits.',
         'pricing.priceNote': 'Die im App Store / bei Google Play angezeigten Preise sind die Endpreise für das jeweilige Produkt (Kleinunternehmer – keine gesonderte MwSt., § 19 UStG); bei einer Testphase, einem Einführungs- oder Aktionsangebot oder einem anteilig verrechneten Wechsel kann der tatsächlich berechnete Betrag abweichen, und maßgeblich ist der Betrag, den der Store in Ihrem Kaufbeleg ausweist. Preise können je nach Region und Store variieren.',
 
         // Download
@@ -441,7 +441,7 @@ const translations = {
         'faq.q3': 'Welche Plattformen unterstützt Scandora?',
         'faq.a3': 'Scandora ist für iOS, macOS und Android verfügbar. Sie können Dokumente mit Ihrer Handykamera scannen oder auf dem Desktop professionelle Scanner verbinden.',
         'faq.q4': 'Sind meine Daten bei Scandora sicher?',
-        'faq.a4': 'Datenschutz ist im Design von Scandora verankert. Ihre Original-Scans bleiben auf Ihrem Gerät und gehen nur an Scandoras verwaltetes KI-Gateway — das die Seite zur Extraktion an Google Gemini weiterleitet — und an die von Ihnen gewählten Cloud-Dienste. Damit Ihr Verlauf geräteübergreifend synchronisiert, speichern wir eine Vorschau in niedriger Auflösung und den extrahierten Text auf unseren EU-Servern — niemals Ihre Originaldateien. Mit Ihrer Einwilligung können Sie den KI-Dokumenten-Chat nutzen: ein optionaler, in der EU (Falkenstein, Deutschland) gehosteter Suchindex speichert dann nur abgeleiteten Text – nicht Ihre Originaldateien. Die verwaltete KI-Generierung wird in der EU verarbeitet — Google Gemini auf Vertex AI in Frankfurt, Deutschland. Sie behalten die Kontrolle über Ihre Daten.',
+        'faq.a4': 'Datenschutz ist im Design von Scandora verankert. Ihre Original-Scans bleiben auf Ihrem Gerät und gehen nur direkt an Google Gemini zur Extraktion — mit einer kurzlebigen Zugangsberechtigung, die unser Server ausstellt — und an die von Ihnen gewählten Cloud-Dienste. Damit Ihr Verlauf geräteübergreifend synchronisiert, speichern wir eine Vorschau in niedriger Auflösung und den extrahierten Text auf unseren EU-Servern — niemals Ihre Originaldateien. Die KI-Dokumentensuche und der -Chat laufen auf Ihrem Gerät; nur die von Ihrem Gerät für eine Antwort ausgewählten Textpassagen werden versendet, direkt an Google. Die verwaltete KI-Generierung wird in der EU verarbeitet — Google Gemini auf Vertex AI in Frankfurt, Deutschland. Sie behalten die Kontrolle über Ihre Daten.',
         'faq.q5': 'Brauche ich einen eigenen API-Schlüssel für die KI?',
         'faq.a5': 'Nein. Scandora läuft auf verwalteter KI — Ihre monatlichen Credits decken Dokumentextraktion, Indexierung und KI-Chat. Einen Modus für eigene Schlüssel gibt es nicht, Sie müssen also keinen API-Schlüssel besorgen oder eingeben.',
         'faq.q6': 'Ist Scandora DSGVO-konform?',
@@ -457,7 +457,7 @@ const translations = {
         'faq.q11': 'Wie höre ich auf, Daten aus Rechnungen und Belegen abzutippen?',
         'faq.a11': 'Lassen Sie die verwaltete KI lesen. Die KI von Scandora holt Lieferant, Betrag, IBAN, Fälligkeit und To-dos ohne Vorlage aus jedem Scan, sodass nichts mehr abzutippen ist. Von dort wird der Scan zur Trello-Karte oder zum abgelegten Google-Drive-Dokument in Ihren eigenen Konten — aus dem Dokument wird eine Aufgabe statt nur ein weiteres PDF.',
         'faq.q12': 'Kann ich Fragen zu meinen eigenen gescannten Dokumenten stellen und eine belegte Antwort bekommen?',
-        'faq.a12': 'Ja. Stellen Sie der KI eine Frage und Sie erhalten eine belegte Antwort aus Ihren eigenen Dokumenten, mit Link auf die verwendete Quelle. Der Dokumenten-Chat gehört zu jedem Tarif und verbraucht dieselben monatlichen KI-Credits wie Extraktion und Indexierung. Er nutzt einen optionalen, in der EU (Falkenstein, Deutschland) gehosteten Suchindex, der nur abgeleiteten Text speichert — niemals Ihre Originaldateien.',
+        'faq.a12': 'Ja. Stellen Sie der KI eine Frage und Sie erhalten eine belegte Antwort aus Ihren eigenen Dokumenten, mit Link auf die verwendete Quelle. Der Dokumenten-Chat gehört zu jedem Tarif und verbraucht dieselben monatlichen KI-Credits wie die Extraktion. Der Abruf erfolgt auf Ihrem Gerät gegen einen geräteseitigen Index; nur die dafür ausgewählten Textpassagen werden versendet, direkt an Google — niemals Ihre Originaldateien.',
         'faq.q13': 'Kann ich private und geschäftliche Dokumente in einer Scanner-App trennen?',
         'faq.a13': 'Ja. Scandora hat mehrere Profile, sodass private und geschäftliche Dokumente getrennt bleiben. Jedes Profil hat eigene Einstellungen und eigene Cloud-Verbindungen.',
         'faq.q14': 'Gibt es einen Dokumentenscanner mit AVV für die geschäftliche Nutzung?',
@@ -616,11 +616,11 @@ const pageMeta = {
     "/avv": {
         "en": {
             "title": "AVV / DPA — Data Processing Agreement | Scandora",
-            "description": "Scandora's AVV / Data Processing Agreement (Art. 28 GDPR) for managed AI, cloud history sync, the opt-in AI search index, the server-side DATEV export (coming soon), the GoBD capture and change records and the cross-device import register. Read, download and sign it before business data is processed."
+            "description": "Scandora's AVV / Data Processing Agreement (Art. 28 GDPR) for managed AI (document analysis, search and chat), cloud history sync, the server-side DATEV export (coming soon), the GoBD capture and change records and the cross-device import register. Read, download and sign it before business data is processed."
         },
         "de": {
             "title": "AVV / DPA — Auftragsverarbeitungsvertrag | Scandora",
-            "description": "Der Scandora-AVV (Art. 28 DSGVO) für verwaltete KI, Cloud-Verlaufssynchronisation, den einwilligungsbasierten KI-Dokumenten-Suchindex, den serverseitigen DATEV-Export (in Vorbereitung), die GoBD-Erfassungs- und Änderungsaufzeichnungen und das geräteübergreifende Importregister. Lesen, herunterladen und unterzeichnen, bevor Geschäftsdaten verarbeitet werden."
+            "description": "Der Scandora-AVV (Art. 28 DSGVO) für verwaltete KI (Dokumentanalyse, Suche und Chat), Cloud-Verlaufssynchronisation, den serverseitigen DATEV-Export (in Vorbereitung), die GoBD-Erfassungs- und Änderungsaufzeichnungen und das geräteübergreifende Importregister. Lesen, herunterladen und unterzeichnen, bevor Geschäftsdaten verarbeitet werden."
         }
     },
     "/privacy": {
