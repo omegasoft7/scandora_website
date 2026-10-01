@@ -14,11 +14,11 @@ const translations = {
 
         // Hero
         'hero.brandDescriptor': 'AI document scanner',
-        'hero.badge': 'Built in Germany · GDPR-first · EU servers',
+        'hero.badge': 'GDPR-first · EU servers · No ads',
         'hero.titleLine1': 'Scan it with Scandora.',
         'hero.titleLine2': 'Then ask it anything.',
         'hero.lede': 'Scandora is an AI document scanner for iPhone, iPad, Mac and Android whose output you can talk to.',
-        'hero.description': 'Scan an invoice with your phone or your real office scanner, then ask it when the invoice is due or what its IBAN is. The AI pulls out supplier, amount, IBAN, due date and to-dos without a template, your files land in your own Google Drive and Trello, and every scan stays searchable on your device. Built in Germany, GDPR-first, on EU servers, with no ads.',
+        'hero.description': 'Scan an invoice with your phone or your real office scanner, then ask it when the invoice is due or what its IBAN is. The AI pulls out supplier, amount, IBAN, due date and to-dos without a template, your files land in your own Google Drive and Trello, and every scan stays searchable on your device. Scandora is GDPR-first, runs on EU servers and carries no ads.',
         'hero.getStarted': 'Get Started Free',
         'hero.seeHow': 'See How It Works',
         'hero.stat1': 'Ask your document',
@@ -43,7 +43,7 @@ const translations = {
         'features.profiles.title': 'Multiple Profiles',
         'features.profiles.desc': 'Separate personal and business documents with distinct profiles. Each with its own settings and cloud connections.',
         'features.privacy.title': 'Your Data Stays Yours',
-        'features.privacy.desc': "Your documents are yours. We don't store your full documents or page images on our servers — they go only to the managed AI service we operate and to the cloud services you choose. While you're signed in, your scan history syncs to our servers in Germany: the history details, a small low-resolution preview and the text we extracted from the pages. Built in Germany, with GoBD and DSGVO in mind.",
+        'features.privacy.desc': "Your documents are yours. We don't store your full documents or page images on our servers — they go only to the managed AI service we operate and to the cloud services you choose. While you're signed in, your scan history syncs to our servers in Germany: the history details, a small low-resolution preview and the text we extracted from the pages. Scandora is designed with GoBD and DSGVO in mind.",
 
         // How It Works
         'howItWorks.badge': 'From Scan to Action',
@@ -54,7 +54,7 @@ const translations = {
         'howItWorks.step2.title': 'Managed AI Understands It',
         'howItWorks.step2.desc': 'Scandora\u2019s managed AI reads the document, recognizes its type, and pulls out the key details. Only a low-resolution preview and the extracted text are stored on our EU servers \u2014 never your original files.',
         'howItWorks.step3.title': 'It Becomes an Action',
-        'howItWorks.step3.desc': 'The result syncs straight into your own Trello and Google Drive — a card, a filed document, ready to act on. Built in Germany, privacy-first, with GoBD record-keeping features.',
+        'howItWorks.step3.desc': 'The result syncs straight into your own Trello and Google Drive — a card, a filed document, ready to act on. Scandora is privacy-first and comes with GoBD record-keeping features.',
 
         // Pricing
         'pricing.badge': 'Flexible Pricing',
@@ -83,7 +83,7 @@ const translations = {
         'pricing.pro.cta': 'Get Pro',
         'pricing.pro.save': 'Save 26%',
         'pricing.business.name': 'Business / DATEV',
-        'pricing.business.tagline': 'For German SMBs & tax advisors',
+        'pricing.business.tagline': 'For small businesses & tax advisors',
         'pricing.business.f1': '5,000 AI credits/month (1 credit = 1 document analysis or AI chat answer; shared: extraction, indexing & AI chat)',
         'pricing.business.f2': 'DATEV export for your tax advisor (coming soon)',
         'pricing.business.f3': 'lexoffice & sevDesk voucher export (coming soon)',
@@ -99,7 +99,7 @@ const translations = {
 
         // Download
         'download.title': 'Ready to Ask Your Documents Anything?',
-        'download.description': 'Download Scandora, scan your first document and ask it a question — built in Germany, your data stays yours. Available on iOS, macOS, and Android.',
+        'download.description': 'Download Scandora, scan your first document and ask it a question — your data stays yours. Available on iOS, macOS, and Android.',
 
         // Footer
         'footer.tagline': 'Intelligent document scanning for modern businesses.',
@@ -204,13 +204,13 @@ const translations = {
         'faq.q5': 'Do I need my own API key to use the AI?',
         'faq.a5': 'No. Scandora runs on managed AI — your monthly credits cover document extraction, indexing, and AI chat. There is no bring-your-own-key mode, so there is no API key to obtain or enter.',
         'faq.q6': 'Is Scandora GDPR-compliant?',
-        'faq.a6': "Scandora is built in Germany with GDPR (DSGVO) in mind. Your original scans stay on your device and in the storage you choose, the servers we do run are in the EU, and we don't embed third-party advertising trackers. For business use we provide an AVV / Data Processing Agreement (Art. 28 GDPR) you can read, download and sign.",
+        'faq.a6': "Scandora is built with GDPR (DSGVO) in mind. Your original scans stay on your device and in the storage you choose, the servers we do run are in the EU, and we don't embed third-party advertising trackers. For business use we provide an AVV / Data Processing Agreement (Art. 28 GDPR) you can read, download and sign.",
         'faq.q7': 'Do I need an internet connection to scan?',
         'faq.a7': 'No. Scanning and edge detection both work offline. You only need a connection when you sync a document to a cloud service like Trello or Google Drive, or when managed AI processes a scan.',
         'faq.q8': 'Can Scandora export to DATEV for my tax advisor?',
-        'faq.a8': "Coming soon. DATEV export (an EXTF posting batch together with the document images) and the lexoffice and sevDesk voucher export are being prepared for the Business / DATEV plan and are not available in this version yet. What ships today is capture designed for GoBD & DSGVO record-keeping for German SMBs and tax advisors.",
+        'faq.a8': "Coming soon. DATEV export (an EXTF posting batch together with the document images) and the lexoffice and sevDesk voucher export are being prepared for the Business / DATEV plan and are not available in this version yet. What ships today is capture designed for GoBD & DSGVO record-keeping for small businesses and tax advisors.",
         'faq.q9': 'What is a good paperless document scanning solution for a small business?',
-        'faq.a9': 'Scandora is an AI document scanner for iPhone, iPad, Mac and Android built for exactly that. You scan with your phone camera or a real network scanner, managed AI pulls out supplier, amount, IBAN and due date without a template, and each scan can land in your own Trello and Google Drive. It is built in Germany, runs on EU servers and carries no ads. The free plan covers unlimited scans and 10 AI credits a month, so a one-person business can start without spending anything.',
+        'faq.a9': 'Scandora is an AI document scanner for iPhone, iPad, Mac and Android built for exactly that. You scan with your phone camera or a real network scanner, managed AI pulls out supplier, amount, IBAN and due date without a template, and each scan can land in your own Trello and Google Drive. It runs on EU servers and carries no ads. The free plan covers unlimited scans and 10 AI credits a month, so a one-person business can start without spending anything.',
         'faq.q10': 'Which document scanner app works with a real office scanner and not just a phone camera?',
         'faq.a10': 'Scandora does. You can scan with your phone camera or pull pages in from a network scanner over eSCL/AirScan — Brother and Epson devices, for example. Automatic edge detection and image enhancement run on every page, and both scanning and edge detection work offline.',
         'faq.q11': 'How do I stop retyping the data from my invoices and receipts?',
@@ -220,7 +220,7 @@ const translations = {
         'faq.q13': 'Can I keep personal and business documents separate in one scanner app?',
         'faq.a13': 'Yes. Scandora has multiple profiles, so you can separate personal and business documents. Each profile carries its own settings and its own cloud connections.',
         'faq.q14': 'Is there a document scanner with an AVV / data processing agreement for business use?',
-        'faq.a14': "Yes. For business use Scandora provides an AVV / Data Processing Agreement (Art. 28 GDPR) that you can read, download and sign. The app itself is built in Germany with GDPR (DSGVO) in mind: your original scans stay on your device and in the storage you choose, the servers we do run are in the EU, and we don't embed third-party advertising trackers.",
+        'faq.a14': "Yes. For business use Scandora provides an AVV / Data Processing Agreement (Art. 28 GDPR) that you can read, download and sign. The app itself is built with GDPR (DSGVO) in mind: your original scans stay on your device and in the storage you choose, the servers we do run are in the EU, and we don't embed third-party advertising trackers.",
 
         // Footer — DSA report route and accessibility statement
         'footer.reportContent': 'Report Illegal Content',
@@ -232,7 +232,7 @@ const translations = {
         'careers.backHome': 'Back to Home',
         'careers.badge': 'Careers',
         'careers.title': 'Build Scandora with us',
-        'careers.subtitle': 'Scandora is a small, remote-first company building an AI document scanner in Germany. Customer documents stay in the EU, and so does the work.',
+        'careers.subtitle': 'Scandora is a small, remote-first company building an AI document scanner. Customer documents stay in the EU, and so does the work.',
         'careers.openRoles': 'Open roles',
         'careers.responsibilities': 'What you would do',
         'careers.requirements': 'What we look for',
@@ -255,11 +255,11 @@ const translations = {
 
         // Hero
         'hero.brandDescriptor': 'KI-Dokumentenscanner',
-        'hero.badge': 'Entwickelt in Deutschland · DSGVO-freundlich · EU-Server',
+        'hero.badge': 'DSGVO-freundlich · EU-Server · Keine Werbung',
         'hero.titleLine1': 'Mit Scandora scannen.',
         'hero.titleLine2': 'Einfach alles fragen.',
         'hero.lede': 'Scandora ist ein KI-Dokumentenscanner für iPhone, iPad, Mac und Android, der Ihre Fragen zum Dokument beantwortet.',
-        'hero.description': 'Scannen Sie eine Rechnung mit dem Handy oder Ihrem echten Büroscanner und fragen Sie dann, wann sie fällig ist oder wie die IBAN lautet. Die KI liest Lieferant, Betrag, IBAN, Fälligkeit und To-dos ohne Vorlage aus, Ihre Dateien landen in Ihrem eigenen Google Drive und Trello, und jeder Scan bleibt auf Ihrem Gerät durchsuchbar. Entwickelt in Deutschland, DSGVO-freundlich, auf EU-Servern, ohne Werbung.',
+        'hero.description': 'Scannen Sie eine Rechnung mit dem Handy oder Ihrem echten Büroscanner und fragen Sie dann, wann sie fällig ist oder wie die IBAN lautet. Die KI liest Lieferant, Betrag, IBAN, Fälligkeit und To-dos ohne Vorlage aus, Ihre Dateien landen in Ihrem eigenen Google Drive und Trello, und jeder Scan bleibt auf Ihrem Gerät durchsuchbar. Scandora ist DSGVO-freundlich, läuft auf EU-Servern und enthält keine Werbung.',
         'hero.getStarted': 'Kostenlos starten',
         'hero.seeHow': 'So funktioniert es',
         'hero.stat1': 'Dokument fragen',
@@ -284,7 +284,7 @@ const translations = {
         'features.profiles.title': 'Mehrere Profile',
         'features.profiles.desc': 'Trennen Sie private und geschäftliche Dokumente mit verschiedenen Profilen. Jedes mit eigenen Einstellungen und Cloud-Verbindungen.',
         'features.privacy.title': 'Ihre Daten bleiben Ihre',
-        'features.privacy.desc': 'Ihre Dokumente gehören Ihnen. Wir speichern Ihre vollständigen Dokumente und Seitenbilder nicht auf unseren Servern — sie gehen nur an unseren verwalteten KI-Dienst und an die von Ihnen gewählten Cloud-Dienste. Solange Sie angemeldet sind, wird Ihr Scan-Verlauf mit unseren Servern in Deutschland synchronisiert: die Verlaufsdaten, eine kleine, niedrig aufgelöste Vorschau und der aus den Seiten extrahierte Text. In Deutschland entwickelt, mit Blick auf GoBD und DSGVO.',
+        'features.privacy.desc': 'Ihre Dokumente gehören Ihnen. Wir speichern Ihre vollständigen Dokumente und Seitenbilder nicht auf unseren Servern — sie gehen nur an unseren verwalteten KI-Dienst und an die von Ihnen gewählten Cloud-Dienste. Solange Sie angemeldet sind, wird Ihr Scan-Verlauf mit unseren Servern in Deutschland synchronisiert: die Verlaufsdaten, eine kleine, niedrig aufgelöste Vorschau und der aus den Seiten extrahierte Text. Scandora ist mit Blick auf GoBD und DSGVO entwickelt.',
 
         // How It Works
         'howItWorks.badge': 'Vom Scan zur Aktion',
@@ -295,7 +295,7 @@ const translations = {
         'howItWorks.step2.title': 'Verwaltete KI versteht es',
         'howItWorks.step2.desc': 'Scandoras verwaltete KI liest das Dokument, erkennt den Typ und holt die wichtigen Angaben heraus. Auf unseren EU-Servern liegen nur eine Vorschau in niedriger Auflösung und der extrahierte Text — niemals Ihre Originaldateien.',
         'howItWorks.step3.title': 'Es wird zur Aktion',
-        'howItWorks.step3.desc': 'Das Ergebnis landet direkt in Ihrem eigenen Trello und Google Drive — eine Karte, ein abgelegtes Dokument, bereit zum Handeln. In Deutschland entwickelt, Datenschutz zuerst, mit GoBD-Funktionen.',
+        'howItWorks.step3.desc': 'Das Ergebnis landet direkt in Ihrem eigenen Trello und Google Drive — eine Karte, ein abgelegtes Dokument, bereit zum Handeln. Scandora stellt den Datenschutz an erste Stelle und bietet GoBD-Funktionen.',
 
         // Pricing
         'pricing.badge': 'Flexible Preise',
@@ -324,7 +324,7 @@ const translations = {
         'pricing.pro.cta': 'Pro holen',
         'pricing.pro.save': '26 % sparen',
         'pricing.business.name': 'Business / DATEV',
-        'pricing.business.tagline': 'Für deutsche KMU & Steuerberater',
+        'pricing.business.tagline': 'Für kleine Unternehmen & Steuerberater',
         'pricing.business.f1': '5.000 KI-Credits/Monat (1 Credit = 1 Dokumentanalyse oder KI-Chat-Antwort; gemeinsam: Extraktion, Indexierung & KI-Chat)',
         'pricing.business.f2': 'DATEV-Export für Ihren Steuerberater (demnächst)',
         'pricing.business.f3': 'lexoffice- & sevDesk-Belegexport (demnächst)',
@@ -340,7 +340,7 @@ const translations = {
 
         // Download
         'download.title': 'Bereit, Ihre Dokumente zu fragen?',
-        'download.description': 'Laden Sie Scandora herunter, scannen Sie Ihr erstes Dokument und stellen Sie ihm eine Frage — in Deutschland entwickelt, Ihre Daten bleiben Ihre. Verfügbar für iOS, macOS und Android.',
+        'download.description': 'Laden Sie Scandora herunter, scannen Sie Ihr erstes Dokument und stellen Sie ihm eine Frage — Ihre Daten bleiben Ihre. Verfügbar für iOS, macOS und Android.',
 
         // Footer
         'footer.tagline': 'Intelligentes Dokumentenscannen für moderne Unternehmen.',
@@ -445,13 +445,13 @@ const translations = {
         'faq.q5': 'Brauche ich einen eigenen API-Schlüssel für die KI?',
         'faq.a5': 'Nein. Scandora läuft auf verwalteter KI — Ihre monatlichen Credits decken Dokumentextraktion, Indexierung und KI-Chat. Einen Modus für eigene Schlüssel gibt es nicht, Sie müssen also keinen API-Schlüssel besorgen oder eingeben.',
         'faq.q6': 'Ist Scandora DSGVO-konform?',
-        'faq.a6': 'Scandora wird in Deutschland mit Blick auf die DSGVO entwickelt. Ihre Original-Scans bleiben auf Ihrem Gerät und im von Ihnen gewählten Speicher, die Server, die wir betreiben, stehen in der EU und wir binden keine Werbe-Tracker von Dritten ein. Für die geschäftliche Nutzung stellen wir einen AVV (Art. 28 DSGVO) bereit, den Sie lesen, herunterladen und unterzeichnen können.',
+        'faq.a6': 'Scandora wird mit Blick auf die DSGVO entwickelt. Ihre Original-Scans bleiben auf Ihrem Gerät und im von Ihnen gewählten Speicher, die Server, die wir betreiben, stehen in der EU und wir binden keine Werbe-Tracker von Dritten ein. Für die geschäftliche Nutzung stellen wir einen AVV (Art. 28 DSGVO) bereit, den Sie lesen, herunterladen und unterzeichnen können.',
         'faq.q7': 'Brauche ich eine Internetverbindung zum Scannen?',
         'faq.a7': 'Nein. Scannen und Kantenerkennung funktionieren offline. Eine Verbindung brauchen Sie nur, wenn Sie ein Dokument mit einem Cloud-Dienst wie Trello oder Google Drive synchronisieren oder wenn die verwaltete KI einen Scan verarbeitet.',
         'faq.q8': 'Kann Scandora zu DATEV für meinen Steuerberater exportieren?',
-        'faq.a8': 'Demnächst. Der DATEV-Export (EXTF-Buchungsstapel samt Belegbildern) sowie der lexoffice- und sevDesk-Belegexport werden für den Tarif Business / DATEV vorbereitet und sind in dieser Version noch nicht verfügbar. Bereits heute ist die Erfassung für die GoBD- & DSGVO-Aufbewahrung deutscher KMU und Steuerberater konzipiert.',
+        'faq.a8': 'Demnächst. Der DATEV-Export (EXTF-Buchungsstapel samt Belegbildern) sowie der lexoffice- und sevDesk-Belegexport werden für den Tarif Business / DATEV vorbereitet und sind in dieser Version noch nicht verfügbar. Bereits heute ist die Erfassung für die GoBD- & DSGVO-Aufbewahrung von kleinen Unternehmen und Steuerberatern konzipiert.',
         'faq.q9': 'Was ist eine gute papierlose Dokumentenscan-Lösung für kleine Unternehmen?',
-        'faq.a9': 'Scandora ist genau dafür gebaut: ein KI-Dokumentenscanner für iPhone, iPad, Mac und Android. Sie scannen mit der Handykamera oder einem echten Netzwerkscanner, die verwaltete KI liest Lieferant, Betrag, IBAN und Fälligkeit ohne Vorlage aus, und jeder Scan landet in Ihrem eigenen Trello und Google Drive. Entwickelt in Deutschland, auf EU-Servern, ohne Werbung. Der kostenlose Tarif umfasst unbegrenzte Scans und 10 KI-Credits pro Monat — ein Ein-Personen-Betrieb kann also ohne Ausgaben starten.',
+        'faq.a9': 'Scandora ist genau dafür gebaut: ein KI-Dokumentenscanner für iPhone, iPad, Mac und Android. Sie scannen mit der Handykamera oder einem echten Netzwerkscanner, die verwaltete KI liest Lieferant, Betrag, IBAN und Fälligkeit ohne Vorlage aus, und jeder Scan landet in Ihrem eigenen Trello und Google Drive. Scandora läuft auf EU-Servern und enthält keine Werbung. Der kostenlose Tarif umfasst unbegrenzte Scans und 10 KI-Credits pro Monat — ein Ein-Personen-Betrieb kann also ohne Ausgaben starten.',
         'faq.q10': 'Welche Dokumentenscanner-App funktioniert mit einem echten Büroscanner und nicht nur mit der Handykamera?',
         'faq.a10': 'Scandora. Sie scannen mit der Handykamera oder ziehen Seiten über einen Netzwerkscanner per eSCL/AirScan ein — zum Beispiel von Brother und Epson. Automatische Kantenerkennung und Bildverbesserung laufen auf jeder Seite, und Scannen und Kantenerkennung funktionieren auch offline.',
         'faq.q11': 'Wie höre ich auf, Daten aus Rechnungen und Belegen abzutippen?',
@@ -461,7 +461,7 @@ const translations = {
         'faq.q13': 'Kann ich private und geschäftliche Dokumente in einer Scanner-App trennen?',
         'faq.a13': 'Ja. Scandora hat mehrere Profile, sodass private und geschäftliche Dokumente getrennt bleiben. Jedes Profil hat eigene Einstellungen und eigene Cloud-Verbindungen.',
         'faq.q14': 'Gibt es einen Dokumentenscanner mit AVV für die geschäftliche Nutzung?',
-        'faq.a14': 'Ja. Für die geschäftliche Nutzung stellt Scandora einen AVV (Art. 28 DSGVO) bereit, den Sie lesen, herunterladen und unterzeichnen können. Die App selbst wird in Deutschland mit Blick auf die DSGVO entwickelt: Ihre Original-Scans bleiben auf Ihrem Gerät und im von Ihnen gewählten Speicher, die Server, die wir betreiben, stehen in der EU, und wir binden keine Werbe-Tracker von Dritten ein.',
+        'faq.a14': 'Ja. Für die geschäftliche Nutzung stellt Scandora einen AVV (Art. 28 DSGVO) bereit, den Sie lesen, herunterladen und unterzeichnen können. Die App selbst wird mit Blick auf die DSGVO entwickelt: Ihre Original-Scans bleiben auf Ihrem Gerät und im von Ihnen gewählten Speicher, die Server, die wir betreiben, stehen in der EU, und wir binden keine Werbe-Tracker von Dritten ein.',
 
         // Footer — DSA report route and accessibility statement
         'footer.reportContent': 'Rechtswidrige Inhalte melden',
@@ -473,7 +473,7 @@ const translations = {
         'careers.backHome': 'Zur Startseite',
         'careers.badge': 'Karriere',
         'careers.title': 'Scandora mit uns bauen',
-        'careers.subtitle': 'Scandora ist ein kleines, remote arbeitendes Unternehmen aus Deutschland, das einen KI-Dokumentenscanner baut. Kundendokumente bleiben in der EU — und die Arbeit ebenso.',
+        'careers.subtitle': 'Scandora ist ein kleines, remote arbeitendes Unternehmen, das einen KI-Dokumentenscanner baut. Kundendokumente bleiben in der EU — und die Arbeit ebenso.',
         'careers.openRoles': 'Offene Stellen',
         'careers.responsibilities': 'Ihre Aufgaben',
         'careers.requirements': 'Was wir suchen',
@@ -496,11 +496,11 @@ const pageMeta = {
     "/": {
         "en": {
             "title": "Scandora — AI Document Scanner for iOS, macOS & Android",
-            "description": "AI document scanner: scan with your phone or a real network scanner, let managed AI extract the data, and send it to Trello & Google Drive. Built in Germany."
+            "description": "AI document scanner: scan with your phone or a real network scanner, let managed AI extract the data, and send it to Trello & Google Drive."
         },
         "de": {
             "title": "Scandora — KI-Dokumentenscanner für iOS, macOS & Android",
-            "description": "KI-Dokumentenscanner: Belege per Handy oder Netzwerkscanner scannen, verwaltete KI extrahiert die Daten, Versand an Trello & Google Drive. Aus Deutschland."
+            "description": "KI-Dokumentenscanner: Belege per Handy oder Netzwerkscanner scannen, verwaltete KI extrahiert die Daten, Versand an Trello & Google Drive."
         }
     },
     "/vs-camscanner": {
@@ -586,27 +586,27 @@ const pageMeta = {
     "/careers": {
         "en": {
             "title": "Careers at Scandora | Open Roles",
-            "description": "Open roles at Scandora, the AI document scanner built in Germany: Flutter, TypeScript backend, EU hosting and bilingual content. Apply by email to jobs@scandora.eu."
+            "description": "Open roles at Scandora, the AI document scanner: Flutter, TypeScript backend, EU hosting and bilingual content. Apply by email to jobs@scandora.eu."
         },
         "de": {
             "title": "Karriere bei Scandora | Offene Stellen",
-            "description": "Offene Stellen bei Scandora, dem KI-Dokumentenscanner aus Deutschland: Flutter, TypeScript-Backend, EU-Hosting und zweisprachige Inhalte. Bewerbung an jobs@scandora.eu."
+            "description": "Offene Stellen bei Scandora, dem KI-Dokumentenscanner: Flutter, TypeScript-Backend, EU-Hosting und zweisprachige Inhalte. Bewerbung an jobs@scandora.eu."
         }
     },
     "/gdpr-dokumentenscanner": {
         "en": {
             "title": "GDPR document scanner (DSGVO) | Scandora",
-            "description": "What makes a document scanner GDPR-ready: EU hosting, documents that stay on your device, no third-party trackers and an AVV/DPA. Built in Germany."
+            "description": "What makes a document scanner GDPR-ready: EU hosting, documents that stay on your device, no third-party trackers and an AVV/DPA."
         },
         "de": {
             "title": "DSGVO-Dokumentenscanner | Scandora",
-            "description": "Was einen Dokumentenscanner DSGVO-konform macht: EU-Hosting, Dokumente bleiben auf dem Gerät, keine Drittanbieter-Tracker und ein AVV. Aus Deutschland."
+            "description": "Was einen Dokumentenscanner DSGVO-konform macht: EU-Hosting, Dokumente bleiben auf dem Gerät, keine Drittanbieter-Tracker und ein AVV."
         }
     },
     "/datev-steuerberater": {
         "en": {
             "title": "DATEV export (coming soon) for tax advisors | Scandora",
-            "description": "DATEV-format export (EXTF batch) with document images for your tax advisor — in preparation, not available in this version yet. Built in Germany."
+            "description": "DATEV-format export (EXTF batch) with document images for your tax advisor — in preparation, not available in this version yet."
         },
         "de": {
             "title": "DATEV-Export (demnächst) für Steuerberater | Scandora",
@@ -626,21 +626,21 @@ const pageMeta = {
     "/privacy": {
         "en": {
             "title": "Privacy Policy | Scandora",
-            "description": "Scandora's Privacy Policy: how our privacy-first, on-device approach protects your data and keeps your documents in your control. Built in Germany."
+            "description": "Scandora's Privacy Policy: how our privacy-first, on-device approach protects your data and keeps your documents in your control."
         },
         "de": {
             "title": "Datenschutzerklärung | Scandora",
-            "description": "Die Scandora-Datenschutzerklärung: wie unser gerätebasierter Ansatz Ihre Daten schützt und Dokumente in Ihrer Kontrolle hält. In Deutschland entwickelt."
+            "description": "Die Scandora-Datenschutzerklärung: wie unser gerätebasierter Ansatz Ihre Daten schützt und Dokumente in Ihrer Kontrolle hält."
         }
     },
     "/terms": {
         "en": {
             "title": "Terms of Service | Scandora",
-            "description": "Scandora's Terms of Service (AGB): your rights and responsibilities when using our AI-powered document scanning app. Built in Germany."
+            "description": "Scandora's Terms of Service (AGB): your rights and responsibilities when using our AI-powered document scanning app."
         },
         "de": {
             "title": "Allgemeine Geschäftsbedingungen | Scandora",
-            "description": "Die Scandora-AGB: Ihre Rechte und Pflichten bei der Nutzung unserer KI-gestützten Dokumentenscanner-App. In Deutschland entwickelt."
+            "description": "Die Scandora-AGB: Ihre Rechte und Pflichten bei der Nutzung unserer KI-gestützten Dokumentenscanner-App."
         }
     },
     "/imprint": {
@@ -696,11 +696,11 @@ const pageMeta = {
     "/blog/dsgvo-sichere-camscanner-alternative": {
         "en": {
             "title": "A GDPR-safe CamScanner alternative | Scandora",
-            "description": "A GDPR-safe alternative to CamScanner and Microsoft Lens: built in Germany, documents stay on-device, EU hosting, and managed AI."
+            "description": "A GDPR-safe alternative to CamScanner and Microsoft Lens: documents stay on-device, EU hosting, and managed AI."
         },
         "de": {
             "title": "DSGVO-sichere CamScanner-Alternative | Scandora",
-            "description": "DSGVO-sichere Alternative zu CamScanner und Microsoft Lens: in Deutschland entwickelt, Dokumente bleiben auf dem Gerät, EU-Hosting und verwaltete KI."
+            "description": "DSGVO-sichere Alternative zu CamScanner und Microsoft Lens: Dokumente bleiben auf dem Gerät, EU-Hosting und verwaltete KI."
         }
     },
     "/blog/gobd-konform-scannen": {
@@ -736,11 +736,11 @@ const pageMeta = {
     "/blog/scandora-vs-fileee": {
         "en": {
             "title": "Scandora vs Fileee: the honest comparison | Scandora",
-            "description": "Scandora vs Fileee in detail: your own storage vs a cloud archive, managed AI, eSCL network scanners, and DATEV/GoBD (coming soon) for German SMBs."
+            "description": "Scandora vs Fileee in detail: your own storage vs a cloud archive, managed AI, eSCL network scanners, and DATEV/GoBD (coming soon)."
         },
         "de": {
             "title": "Scandora vs. Fileee: der ehrliche Vergleich | Scandora",
-            "description": "Scandora vs. Fileee im Detail: eigene Ablage statt Cloud-Archiv, verwaltete KI, Netzwerkscanner per eSCL und DATEV/GoBD (in Vorbereitung) für deutsche KMU."
+            "description": "Scandora vs. Fileee im Detail: eigene Ablage statt Cloud-Archiv, verwaltete KI, Netzwerkscanner per eSCL und DATEV/GoBD (in Vorbereitung)."
         }
     },
     "/help/": {

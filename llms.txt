@@ -1,6 +1,6 @@
 # Scandora
 
-> Scandora is an AI document scanner for iPhone, iPad, Mac and Android: scan with your phone camera or a real network scanner, let managed AI pull out the details, and send the result into your own Trello and Google Drive. Built in Germany, GDPR-first, on EU servers, with no ads.
+> Scandora is an AI document scanner for iPhone, iPad, Mac and Android: scan with your phone camera or a real network scanner, let managed AI pull out the details, and send the result into your own Trello and Google Drive. It is GDPR-first, runs on EU servers and carries no ads.
 
 Scandora keeps original scans on your device and in the storage you choose. While you are
 signed in, only a low-resolution preview and the extracted text sync to our EU servers.
