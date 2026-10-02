@@ -506,11 +506,11 @@ const pageMeta = {
     "/vs-camscanner": {
         "en": {
             "title": "Scandora vs CamScanner: an honest comparison | Scandora",
-            "description": "Scandora vs CamScanner on verifiable facts: where each is built, data residency, managed AI, network-scanner support and the DATEV export coming soon."
+            "description": "Scandora vs CamScanner on verifiable facts: who develops each, data residency, managed AI, network-scanner support and the DATEV export coming soon."
         },
         "de": {
             "title": "Scandora vs. CamScanner: der ehrliche Vergleich | Scandora",
-            "description": "Scandora vs. CamScanner nach belegbaren Fakten: Herkunft, Datenstandort, verwaltete KI, Netzwerkscanner-Support und DATEV-Export (in Vorbereitung)."
+            "description": "Scandora vs. CamScanner nach belegbaren Fakten: Anbieter, Datenstandort, verwaltete KI, Netzwerkscanner-Support und DATEV-Export (in Vorbereitung)."
         }
     },
     "/paperless-small-business": {
@@ -566,11 +566,11 @@ const pageMeta = {
     "/vs-fileee": {
         "en": {
             "title": "Scandora vs Fileee: an honest comparison | Scandora",
-            "description": "Scandora vs Fileee on verifiable features: where it's built, managed AI, document storage, network-scanner support and the DATEV export coming soon."
+            "description": "Scandora vs Fileee on verifiable features: who develops each, managed AI, document storage, network-scanner support and the DATEV export coming soon."
         },
         "de": {
             "title": "Scandora vs. Fileee: der ehrliche Vergleich | Scandora",
-            "description": "Scandora vs. Fileee nach belegbaren Merkmalen: Herkunft, verwaltete KI, Dokumentenablage, Netzwerkscanner-Support und DATEV-Export (in Vorbereitung)."
+            "description": "Scandora vs. Fileee nach belegbaren Merkmalen: Anbieter, verwaltete KI, Dokumentenablage, Netzwerkscanner-Support und DATEV-Export (in Vorbereitung)."
         }
     },
     "/contact": {
