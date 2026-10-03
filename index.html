@@ -217,7 +217,7 @@
                 "name": "Is my data secure with Scandora?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Privacy is built into Scandora's design. Your original scans stay on your device and go only directly to Google Gemini for extraction — using a short-lived credential our server issues — and to the cloud services you choose. So your history syncs across your devices, we store a low-resolution preview and the extracted text on our EU servers — never your original files. AI document search and chat run on your device; only the passages your device selects for an answer are ever sent, directly to Google. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. You stay in control of your data."
+                    "text": "Privacy is built into Scandora's design. Your original scans stay on your device and go only directly to Google Gemini for extraction — using a short-lived credential our server issues — and to the cloud services you choose. So your history syncs across your devices, we store a low-resolution preview and the extracted text on our EU servers — never your original files. AI document search and chat run on your device. To build their index, your device sends Google (Vertex AI in the EU) the extracted text and the AI description of every document you scan while signed in; a search then sends only the search query, and an answer only your question and the passages it draws on. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. You stay in control of your data."
                 }
             },
             {
@@ -265,7 +265,7 @@
                 "name": "Which document scanner app works with a real office scanner and not just a phone camera?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Scandora does. You can scan with your phone camera or pull pages in from a network scanner over eSCL/AirScan — Brother and Epson devices, for example. Automatic edge detection and image enhancement run on every page, and both scanning and edge detection work offline."
+                    "text": "Scandora does. You can scan with your phone camera or pull pages in from a network scanner over eSCL/AirScan — Brother and Epson devices, for example. Automatic edge detection runs on every page, and both scanning and edge detection work offline."
                 }
             },
             {
@@ -281,7 +281,7 @@
                 "name": "Can I ask questions about my own scanned documents and get an answer with a source?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. Ask the AI a question and you get a cited answer drawn from your own documents, with a link to the source it used. Document chat is part of every plan and spends the same monthly AI credits as extraction. Retrieval runs on your device against an on-device index; only the passages it selects for an answer are ever sent, directly to Google — never your original files."
+                    "text": "Yes. Ask the AI a question and you get a cited answer drawn from your own documents, with a link to the source it used. Document chat is part of every plan and spends the same monthly AI credits as extraction. Retrieval runs on your device against an on-device index, which your device builds by sending Google the extracted text and the AI description of every document you scan while signed in; an answer then sends your question and the passages it selects, directly to Google — never your original files."
                 }
             },
             {
@@ -453,7 +453,7 @@
                     <article class="feature-card" role="listitem" itemscope itemtype="https://schema.org/Service">
                         <div class="feature-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
                         <h3 data-i18n="features.scan.title" itemprop="name">Phone or Real Scanner</h3>
-                        <p data-i18n="features.scan.desc" itemprop="description">Scan with your phone camera or connect a real network scanner over eSCL/AirScan (such as Brother and Epson). Automatic edge detection and image enhancement on every page.</p>
+                        <p data-i18n="features.scan.desc" itemprop="description">Scan with your phone camera or connect a real network scanner over eSCL/AirScan (such as Brother and Epson). Automatic edge detection on every page.</p>
                         <p class="feature-links"><a href="/vs-fileee.html" data-i18n="features.compareFileee">Scandora vs Fileee</a> · <a href="/vs-camscanner.html" data-i18n="features.compareCamscanner">Scandora vs CamScanner</a></p>
                         <p class="feature-link"><a href="/blog/netzwerkscanner-escl-einrichten"><span data-lang="en">Set up a network scanner via eSCL →</span><span data-lang="de" hidden>Netzwerkscanner per eSCL einrichten →</span></a></p>
                     </article>
@@ -568,7 +568,7 @@
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-4" aria-expanded="false" aria-controls="faq-panel-4"><span data-i18n="faq.q4">Is my data secure with Scandora?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
-                        <div id="faq-panel-4" class="faq-answer" role="region" aria-labelledby="faq-trigger-4"><div class="faq-answer-inner"><p data-i18n="faq.a4">Privacy is built into Scandora's design. Your original scans stay on your device and go only directly to Google Gemini for extraction — using a short-lived credential our server issues — and to the cloud services you choose. So your history syncs across your devices, we store a low-resolution preview and the extracted text on our EU servers — never your original files. AI document search and chat run on your device; only the passages your device selects for an answer are ever sent, directly to Google. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. You stay in control of your data.</p></div></div>
+                        <div id="faq-panel-4" class="faq-answer" role="region" aria-labelledby="faq-trigger-4"><div class="faq-answer-inner"><p data-i18n="faq.a4">Privacy is built into Scandora's design. Your original scans stay on your device and go only directly to Google Gemini for extraction — using a short-lived credential our server issues — and to the cloud services you choose. So your history syncs across your devices, we store a low-resolution preview and the extracted text on our EU servers — never your original files. AI document search and chat run on your device. To build their index, your device sends Google (Vertex AI in the EU) the extracted text and the AI description of every document you scan while signed in; a search then sends only the search query, and an answer only your question and the passages it draws on. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. You stay in control of your data.</p></div></div>
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-5" aria-expanded="false" aria-controls="faq-panel-5"><span data-i18n="faq.q5">Do I need my own API key to use the AI?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
@@ -592,7 +592,7 @@
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-10" aria-expanded="false" aria-controls="faq-panel-10"><span data-i18n="faq.q10">Which document scanner app works with a real office scanner and not just a phone camera?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
-                        <div id="faq-panel-10" class="faq-answer" role="region" aria-labelledby="faq-trigger-10"><div class="faq-answer-inner"><p data-i18n="faq.a10">Scandora does. You can scan with your phone camera or pull pages in from a network scanner over eSCL/AirScan — Brother and Epson devices, for example. Automatic edge detection and image enhancement run on every page, and both scanning and edge detection work offline.</p></div></div>
+                        <div id="faq-panel-10" class="faq-answer" role="region" aria-labelledby="faq-trigger-10"><div class="faq-answer-inner"><p data-i18n="faq.a10">Scandora does. You can scan with your phone camera or pull pages in from a network scanner over eSCL/AirScan — Brother and Epson devices, for example. Automatic edge detection runs on every page, and both scanning and edge detection work offline.</p></div></div>
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-11" aria-expanded="false" aria-controls="faq-panel-11"><span data-i18n="faq.q11">How do I stop retyping the data from my invoices and receipts?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
@@ -600,7 +600,7 @@
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-12" aria-expanded="false" aria-controls="faq-panel-12"><span data-i18n="faq.q12">Can I ask questions about my own scanned documents and get an answer with a source?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
-                        <div id="faq-panel-12" class="faq-answer" role="region" aria-labelledby="faq-trigger-12"><div class="faq-answer-inner"><p data-i18n="faq.a12">Yes. Ask the AI a question and you get a cited answer drawn from your own documents, with a link to the source it used. Document chat is part of every plan and spends the same monthly AI credits as extraction. Retrieval runs on your device against an on-device index; only the passages it selects for an answer are ever sent, directly to Google — never your original files.</p></div></div>
+                        <div id="faq-panel-12" class="faq-answer" role="region" aria-labelledby="faq-trigger-12"><div class="faq-answer-inner"><p data-i18n="faq.a12">Yes. Ask the AI a question and you get a cited answer drawn from your own documents, with a link to the source it used. Document chat is part of every plan and spends the same monthly AI credits as extraction. Retrieval runs on your device against an on-device index, which your device builds by sending Google the extracted text and the AI description of every document you scan while signed in; an answer then sends your question and the passages it selects, directly to Google — never your original files.</p></div></div>
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-13" aria-expanded="false" aria-controls="faq-panel-13"><span data-i18n="faq.q13">Can I keep personal and business documents separate in one scanner app?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>

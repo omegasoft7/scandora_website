@@ -42,14 +42,14 @@ const jobPostings = [
     },
     {
         id: 'platform-engineer-eu-hosting',
-        title: 'Platform Engineer (EU hosting, search infrastructure)',
+        title: 'Platform Engineer (EU hosting)',
         location: 'Remote within the EU, occasional days in Hamburg',
         employmentType: 'Part-time or contract',
         summary:
-            'Scandora runs its own server in Falkenstein, Germany: Coolify, Docker, a Postgres database with pgvector behind document search, and cookieless analytics. We want that box boring, documented and restorable.',
+            'Scandora runs its own server in Falkenstein, Germany: Coolify, Docker, a Postgres database behind the scan history, and cookieless analytics. We want that box boring, documented and restorable.',
         responsibilities: [
             'Own the Hetzner host: provisioning, hardening, backups and upgrades.',
-            'Run the Postgres and pgvector instance behind document search, including sizing, indexes and restores you have rehearsed.',
+            'Run the Postgres instance behind the scan history, including sizing, indexes and restores you have rehearsed.',
             'Keep every deployment scripted, so no server is configured by hand.',
             'Set up alerting that wakes a person only when a person is needed.',
         ],
