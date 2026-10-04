@@ -243,7 +243,37 @@ const translations = {
         'careers.emptyBody': 'No role is advertised at the moment. If you think you belong here anyway, write to us — we read every message.',
         'careers.generalTitle': 'None of these fit?',
         'careers.generalBody': 'Send a short note about what you do and a link to something you have built. We read every application.',
-        'careers.generalApply': 'Send a general application'
+        'careers.generalApply': 'Send a general application',
+
+        'footer.comingSoon': 'Coming soon',
+        'footer.scanNextcloud': 'Scan to Nextcloud (coming soon)',
+        'footer.scanOneDrive': 'Scan to OneDrive (coming soon)',
+        'footer.scanDropbox': 'Scan to Dropbox (coming soon)',
+        'comingSoon.backHome': 'Back to Home',
+        'comingSoon.badge': 'Coming soon',
+        'comingSoon.howTitle': 'What is being built',
+        'comingSoon.interestTitle': 'Do you want this?',
+        'comingSoon.interestBody': 'One click tells us. There is no form and no email field, and the click sets no cookie.',
+        'comingSoon.interestButton': 'Tell us you want this',
+        'comingSoon.interestThanks': 'Thanks, we noted it. Nothing else to do.',
+        'comingSoon.interestPrivate': "Thanks. Your browser's privacy setting switches our visitor counter off, so this click was not counted. Nothing else to do.",
+        'comingSoon.interestUncounted': 'Thanks. This click was not counted. Nothing else to do.',
+        'comingSoon.alsoLead': 'See also:',
+        'comingSoon.todayLead': 'Available in the app today:',
+        'comingSoon.todayTrello': 'scan to Trello',
+        'comingSoon.todayDrive': 'and Google Drive.',
+        'scanNextcloud.title': 'Scan to Nextcloud — coming soon',
+        'scanNextcloud.lead': 'Coming soon: send finished scans to your Nextcloud and bring files in from it. This connection is not available in the app yet.',
+        'scanNextcloud.how': "Nextcloud support is coming soon. You enter your server address, your username and an app password, and you can name a target folder. Scandora sends a finished scan into that folder as a PDF named after the document's title, and you can pick files on your server to bring into the app. None of this is in the app yet.",
+        'scanNextcloud.trademark': 'Nextcloud is a trademark of Nextcloud GmbH. Scandora is not affiliated with Nextcloud GmbH.',
+        'scanOneDrive.title': 'Scan to OneDrive — coming soon',
+        'scanOneDrive.lead': 'Coming soon: send finished scans to your OneDrive and bring files in from it. This connection is not available in the app yet.',
+        'scanOneDrive.how': "OneDrive support is coming soon. You sign in with your account and choose a folder. Scandora sends a finished scan into that folder as a PDF named after the document's title, and you can pick files from your account to bring into the app. None of this is in the app yet.",
+        'scanOneDrive.trademark': 'OneDrive is a trademark of the Microsoft group of companies. Scandora is not affiliated with Microsoft.',
+        'scanDropbox.title': 'Scan to Dropbox — coming soon',
+        'scanDropbox.lead': 'Coming soon: send finished scans to your Dropbox and bring files in from it. This connection is not available in the app yet.',
+        'scanDropbox.how': "Dropbox support is coming soon. You sign in with your account and choose a folder. Scandora sends a finished scan into that folder as a PDF named after the document's title, and you can pick files from your account to bring into the app. None of this is in the app yet.",
+        'scanDropbox.trademark': 'Dropbox is a trademark of Dropbox, Inc. Scandora is not affiliated with Dropbox, Inc.'
     },
     de: {
         // Navigation
@@ -484,7 +514,37 @@ const translations = {
         'careers.emptyBody': 'Zurzeit ist keine Stelle ausgeschrieben. Wenn Sie trotzdem zu uns passen, schreiben Sie uns — wir lesen jede Nachricht.',
         'careers.generalTitle': 'Nichts Passendes dabei?',
         'careers.generalBody': 'Schreiben Sie kurz, was Sie tun, und verlinken Sie etwas, das Sie gebaut haben. Wir lesen jede Bewerbung.',
-        'careers.generalApply': 'Initiativbewerbung senden'
+        'careers.generalApply': 'Initiativbewerbung senden',
+
+        'footer.comingSoon': 'Demnächst',
+        'footer.scanNextcloud': 'Scan nach Nextcloud (demnächst)',
+        'footer.scanOneDrive': 'Scan nach OneDrive (demnächst)',
+        'footer.scanDropbox': 'Scan nach Dropbox (demnächst)',
+        'comingSoon.backHome': 'Zur Startseite',
+        'comingSoon.badge': 'Demnächst',
+        'comingSoon.howTitle': 'Was gerade entsteht',
+        'comingSoon.interestTitle': 'Möchten Sie das?',
+        'comingSoon.interestBody': 'Ein Klick genügt, damit wir es erfahren. Es gibt kein Formular und kein E-Mail-Feld, und der Klick setzt kein Cookie.',
+        'comingSoon.interestButton': 'Ja, das möchte ich',
+        'comingSoon.interestThanks': 'Danke, wir haben es notiert. Sonst ist nichts zu tun.',
+        'comingSoon.interestPrivate': 'Danke. Die Datenschutzeinstellung Ihres Browsers schaltet unseren Besucherzähler ab, daher wurde dieser Klick nicht gezählt. Sonst ist nichts zu tun.',
+        'comingSoon.interestUncounted': 'Danke. Dieser Klick wurde nicht gezählt. Sonst ist nichts zu tun.',
+        'comingSoon.alsoLead': 'Siehe auch:',
+        'comingSoon.todayLead': 'Heute schon in der App:',
+        'comingSoon.todayTrello': 'Scan nach Trello',
+        'comingSoon.todayDrive': 'und Google Drive.',
+        'scanNextcloud.title': 'Scan nach Nextcloud — demnächst',
+        'scanNextcloud.lead': 'Demnächst: fertige Scans an Ihre Nextcloud senden und Dateien von dort in die App holen. Diese Verbindung ist in der App noch nicht verfügbar.',
+        'scanNextcloud.how': 'Die Nextcloud-Anbindung kommt demnächst. Sie geben die Adresse Ihres Servers, Ihren Benutzernamen und ein App-Passwort ein und können einen Zielordner festlegen. Scandora legt einen fertigen Scan als PDF mit dem Titel des Dokuments als Dateinamen in diesem Ordner ab, und Sie können Dateien von Ihrem Server auswählen und in die App holen. All das ist noch nicht in der App.',
+        'scanNextcloud.trademark': 'Nextcloud ist eine Marke der Nextcloud GmbH. Scandora ist mit der Nextcloud GmbH nicht verbunden.',
+        'scanOneDrive.title': 'Scan nach OneDrive — demnächst',
+        'scanOneDrive.lead': 'Demnächst: fertige Scans an Ihr OneDrive senden und Dateien von dort in die App holen. Diese Verbindung ist in der App noch nicht verfügbar.',
+        'scanOneDrive.how': 'Die OneDrive-Anbindung kommt demnächst. Sie melden sich mit Ihrem Konto an und wählen einen Ordner. Scandora legt einen fertigen Scan als PDF mit dem Titel des Dokuments als Dateinamen in diesem Ordner ab, und Sie können Dateien aus Ihrem Konto auswählen und in die App holen. All das ist noch nicht in der App.',
+        'scanOneDrive.trademark': 'OneDrive ist eine Marke der Microsoft-Unternehmensgruppe. Scandora ist mit Microsoft nicht verbunden.',
+        'scanDropbox.title': 'Scan nach Dropbox — demnächst',
+        'scanDropbox.lead': 'Demnächst: fertige Scans an Ihre Dropbox senden und Dateien von dort in die App holen. Diese Verbindung ist in der App noch nicht verfügbar.',
+        'scanDropbox.how': 'Die Dropbox-Anbindung kommt demnächst. Sie melden sich mit Ihrem Konto an und wählen einen Ordner. Scandora legt einen fertigen Scan als PDF mit dem Titel des Dokuments als Dateinamen in diesem Ordner ab, und Sie können Dateien aus Ihrem Konto auswählen und in die App holen. All das ist noch nicht in der App.',
+        'scanDropbox.trademark': 'Dropbox ist eine Marke von Dropbox, Inc. Scandora ist mit Dropbox, Inc. nicht verbunden.'
     }
 };
 
@@ -551,6 +611,36 @@ const pageMeta = {
         "de": {
             "title": "Dokumentenscanner mit Trello-Export | Scandora",
             "description": "Ein Dokumentenscanner, der jeden Scan zur Trello-Karte in Ihrem Board macht: PDF als Anhang, KI-gelesener Titel, Labels, Fälligkeit und Checkliste."
+        }
+    },
+    "/scan-to-nextcloud": {
+        "en": {
+            "title": "Scan to Nextcloud (coming soon) | Scandora",
+            "description": "Scan to Nextcloud is coming soon to Scandora: send finished scans to a folder on your Nextcloud and bring files in from it. Not in the app yet."
+        },
+        "de": {
+            "title": "Scan nach Nextcloud (demnächst) | Scandora",
+            "description": "Scan nach Nextcloud kommt demnächst zu Scandora: fertige Scans in einen Ordner Ihrer Nextcloud senden und Dateien von dort holen. Noch nicht in der App."
+        }
+    },
+    "/scan-to-onedrive": {
+        "en": {
+            "title": "Scan to OneDrive (coming soon) | Scandora",
+            "description": "Scan to OneDrive is coming soon to Scandora: send finished scans to a folder in your OneDrive and bring files in from it. Not in the app yet."
+        },
+        "de": {
+            "title": "Scan nach OneDrive (demnächst) | Scandora",
+            "description": "Scan nach OneDrive kommt demnächst zu Scandora: fertige Scans in einen Ordner Ihres OneDrive senden und Dateien von dort holen. Noch nicht in der App."
+        }
+    },
+    "/scan-to-dropbox": {
+        "en": {
+            "title": "Scan to Dropbox (coming soon) | Scandora",
+            "description": "Scan to Dropbox is coming soon to Scandora: send finished scans to a folder in your Dropbox and bring files in from it. Not in the app yet."
+        },
+        "de": {
+            "title": "Scan nach Dropbox (demnächst) | Scandora",
+            "description": "Scan nach Dropbox kommt demnächst zu Scandora: fertige Scans in einen Ordner Ihrer Dropbox senden und Dateien von dort holen. Noch nicht in der App."
         }
     },
     "/document-scanner-eu-servers": {

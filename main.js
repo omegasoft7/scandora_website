@@ -19,6 +19,7 @@
         initCalculator();
         initContactForm();
         initAnalyticsTracking(); // Umami event tracking
+        initIntegrationInterest();
         consoleBranding();
     }
 
@@ -303,6 +304,63 @@
                     link_text: this.textContent.trim(),
                     location: isFooter ? 'footer' : 'header'
                 });
+            });
+        });
+    }
+
+    function privacySettingOn() {
+        const nav = window.navigator || {};
+        if (nav.globalPrivacyControl === true) {
+            return true;
+        }
+        return [window.doNotTrack, nav.doNotTrack, nav.msDoNotTrack].some(
+            value => value === 1 || value === '1' || value === 'yes'
+        );
+    }
+
+    function interestStatus() {
+        if (privacySettingOn()) {
+            return '[data-interest-private]';
+        }
+        if (typeof window.umami === 'undefined' || !window.umami.track) {
+            return '[data-interest-uncounted]';
+        }
+        return '[data-interest-thanks]';
+    }
+
+    function canonicalPath() {
+        const canonical = document.querySelector('link[rel="canonical"]');
+        const href = canonical ? canonical.getAttribute('href') : window.location.href;
+        return new URL(href, window.location.href).pathname;
+    }
+
+    function initIntegrationInterest() {
+        document.querySelectorAll('[data-interest-provider]').forEach(button => {
+            button.addEventListener('click', function() {
+                if (this.disabled) {
+                    return;
+                }
+                this.disabled = true;
+                const selector = interestStatus();
+                if (selector === '[data-interest-thanks]') {
+                    trackEvent('integration_interest', {
+                        provider: this.getAttribute('data-interest-provider'),
+                        page: canonicalPath(),
+                        language: (document.documentElement.lang || '').slice(0, 2).toLowerCase()
+                    });
+                }
+                const box = this.closest('.interest-signal');
+                if (!box) {
+                    return;
+                }
+                const action = box.querySelector('[data-interest-action]');
+                const status = box.querySelector(selector);
+                if (action) {
+                    action.hidden = true;
+                }
+                if (status) {
+                    status.hidden = false;
+                }
             });
         });
     }

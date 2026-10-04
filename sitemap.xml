@@ -273,7 +273,34 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://scandora.eu/scan-to-dropbox</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/scan-to-dropbox"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/scan-to-dropbox?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/scan-to-dropbox"/>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://scandora.eu/scan-to-google-drive</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/scan-to-nextcloud</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/scan-to-nextcloud"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/scan-to-nextcloud?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/scan-to-nextcloud"/>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/scan-to-onedrive</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/scan-to-onedrive"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/scan-to-onedrive?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/scan-to-onedrive"/>
     <lastmod>2026-10-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
