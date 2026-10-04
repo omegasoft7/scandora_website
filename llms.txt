@@ -9,7 +9,8 @@ allowance — there is no key to obtain or enter. Free, Pro and Business / DATEV
 the store listing is the binding source for what a plan costs.
 
 The site is bilingual: every page serves English by default and German at the same URL with
-`?lang=de`.
+`?lang=de`, except three single-language pages — `/receipt-scanner` and
+`/scan-to-google-drive` are English only, `/belege-scannen-app` is German only.
 
 ## Product
 
@@ -18,6 +19,9 @@ The site is bilingual: every page serves English by default and German at the sa
 - [A paperless office solution for home](https://scandora.eu/paperless-home-office): the same question-and-answer shape for a household — phone or the Wi-Fi scanner already in the house, separate profiles for private and work paperwork.
 - [Scan invoices and extract the data automatically](https://scandora.eu/invoice-data-extraction): which fields managed AI reads off an invoice, what happens to them, and where the page is processed.
 - [A document scanner that exports to Trello](https://scandora.eu/scan-to-trello): what lands on the card, how Trello is connected, and why a free Trello account is enough.
+- [Receipt scanner app](https://scandora.eu/receipt-scanner): English only — scanning receipts with the phone camera or an office network scanner, which details managed AI reads off them, and filing the PDF in your own Google Drive or Trello.
+- [Scan documents to Google Drive](https://scandora.eu/scan-to-google-drive): English only — how each scan lands as a PDF named by AI in a folder of your own Drive, and why the drive.file permission covers only the files the app made.
+- [Belege scannen mit der App](https://scandora.eu/belege-scannen-app): the German-only receipt page — Belege mit Handy oder Netzwerkscanner scannen und als PDF in Google Drive oder Trello ablegen.
 - [GDPR document scanner](https://scandora.eu/gdpr-dokumentenscanner): what makes a scanner GDPR-ready — EU hosting, on-device originals, no third-party trackers, an AVV.
 - [Document scanner on EU servers](https://scandora.eu/document-scanner-eu-servers): path by path, where each piece of a scan is processed and which sub-processors are involved.
 - [For tax advisors and DATEV](https://scandora.eu/datev-steuerberater): the tax-advisor page; the DATEV export it describes is coming soon and is not in this version yet.

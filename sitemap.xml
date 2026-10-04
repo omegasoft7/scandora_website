@@ -36,6 +36,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://scandora.eu/belege-scannen-app</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://scandora.eu/blog/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/blog/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/?lang=de"/>
@@ -252,6 +258,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://scandora.eu/receipt-scanner</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://scandora.eu/report-content</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/report-content"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/report-content?lang=de"/>
@@ -259,6 +271,12 @@
     <lastmod>2026-10-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/scan-to-google-drive</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/scan-to-trello</loc>

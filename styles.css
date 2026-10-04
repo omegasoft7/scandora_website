@@ -1256,13 +1256,13 @@ img {
     margin-bottom: var(--space-sm);
 }
 
-.legal-content a {
+.legal-content a:where(:not(.btn)) {
     color: var(--primary);
     font-weight: 500;
     transition: color 0.2s;
 }
 
-.legal-content a:hover {
+.legal-content a:where(:not(.btn)):hover {
     color: var(--primary-dark);
     text-decoration: underline;
 }
