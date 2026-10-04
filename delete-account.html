@@ -17,6 +17,11 @@
     <meta property="og:description" content="Request the deletion of your Scandora account and associated data.">
     <meta property="og:site_name" content="Scandora">
 
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Delete Your Account - Scandora">
+    <meta name="twitter:description" content="Request the deletion of your Scandora account and associated data.">
+    <meta name="twitter:image" content="https://scandora.eu/assets/og-image.png">
+
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
@@ -28,6 +33,19 @@
     <link rel="stylesheet" href="assets/fonts/inter.css">
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Umami Analytics -->
+    <script>
+        (function () {
+            if (navigator.globalPrivacyControl === true) {
+                return;
+            }
+            var tracker = document.createElement('script');
+            tracker.src = 'https://analytics.scandora.eu/script.js';
+            tracker.setAttribute('data-website-id', 'f8fdac29-929b-4d5c-b2ff-6a1bd5a5a112');
+            tracker.setAttribute('data-do-not-track', 'true');
+            document.head.appendChild(tracker);
+        })();
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -71,7 +89,7 @@
                             <li><strong>Using this form:</strong> fill it in and we will process your request within 30 days. Use this if you can no longer access the app.</li>
                         </ol>
                     </div>
-                    <p>When you delete your account, we permanently remove your personal data from our systems. This is irreversible. Content already exported to your own Trello or Google Drive remains under your control there. Subscription and billing records are kept for the statutory tax retention period under German law (&sect; 147 AO) even after deletion. See our <a href="/privacy.html">Privacy Policy</a> for full details.</p>
+                    <p>When you delete your account, we permanently remove your personal data from our systems. This is irreversible. Content already exported to your own Trello or Google Drive remains under your control there. Subscription and billing records are kept for the statutory tax retention period under German law (&sect; 147 AO) even after deletion. See our <a href="/privacy">Privacy Policy</a> for full details.</p>
                 </article>
 
                 <article class="legal-content" data-lang="de" hidden>
@@ -82,7 +100,7 @@
                             <li><strong>Über dieses Formular:</strong> füllen Sie es aus und wir bearbeiten Ihre Anfrage innerhalb von 30 Tagen. Verwenden Sie dies, wenn Sie keinen Zugriff mehr auf die App haben.</li>
                         </ol>
                     </div>
-                    <p>Wenn Sie Ihr Konto löschen, entfernen wir Ihre personenbezogenen Daten dauerhaft aus unseren Systemen. Dies ist unwiderruflich. Inhalte, die Sie bereits in Ihr eigenes Trello oder Google Drive exportiert haben, bleiben dort unter Ihrer Kontrolle. Abonnement- und Abrechnungsunterlagen werden für die gesetzliche Aufbewahrungsfrist nach deutschem Recht (&sect; 147 AO) auch nach der Löschung aufbewahrt. Siehe unsere <a href="/privacy.html">Datenschutzerklärung</a> für alle Details.</p>
+                    <p>Wenn Sie Ihr Konto löschen, entfernen wir Ihre personenbezogenen Daten dauerhaft aus unseren Systemen. Dies ist unwiderruflich. Inhalte, die Sie bereits in Ihr eigenes Trello oder Google Drive exportiert haben, bleiben dort unter Ihrer Kontrolle. Abonnement- und Abrechnungsunterlagen werden für die gesetzliche Aufbewahrungsfrist nach deutschem Recht (&sect; 147 AO) auch nach der Löschung aufbewahrt. Siehe unsere <a href="/privacy">Datenschutzerklärung</a> für alle Details.</p>
                 </article>
 
                 <!-- Deletion request form — reuses the contact endpoint with a fixed subject -->
@@ -120,8 +138,8 @@
                         </span>
                     </button>
                     <p class="form-privacy-note"><small>
-                        <span data-lang="en">We process the name, email address and message you submit only to handle your deletion request. Legal basis: Art. 6(1)(b)/(f) GDPR. See our <a href="/privacy.html">Privacy Policy</a>.</span>
-                        <span data-lang="de" hidden>Wir verarbeiten den von Ihnen übermittelten Namen, Ihre E-Mail-Adresse und Ihre Nachricht ausschließlich zur Bearbeitung Ihrer Löschanfrage. Rechtsgrundlage: Art. 6 Abs. 1 lit. b/f DSGVO. Siehe unsere <a href="/privacy.html">Datenschutzerklärung</a>.</span>
+                        <span data-lang="en">We process the name, email address and message you submit only to handle your deletion request. Legal basis: Art. 6(1)(b)/(f) GDPR. See our <a href="/privacy">Privacy Policy</a>.</span>
+                        <span data-lang="de" hidden>Wir verarbeiten den von Ihnen übermittelten Namen, Ihre E-Mail-Adresse und Ihre Nachricht ausschließlich zur Bearbeitung Ihrer Löschanfrage. Rechtsgrundlage: Art. 6 Abs. 1 lit. b/f DSGVO. Siehe unsere <a href="/privacy">Datenschutzerklärung</a>.</span>
                     </small></p>
                 </form>
             </div>
@@ -159,18 +177,18 @@
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.legal">Legal</h4>
-                        <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
-                        <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
-                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
-                        <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
-                        <a href="/report-content.html" data-i18n="footer.reportContent">Report Illegal Content</a>
-                        <a href="/accessibility.html" data-i18n="footer.accessibility">Accessibility</a>
+                        <a href="/privacy" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="/terms" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv" data-i18n="footer.avv">AVV / DPA</a>
+                        <a href="/imprint" data-i18n="footer.imprint">Imprint</a>
+                        <a href="/report-content" data-i18n="footer.reportContent">Report Illegal Content</a>
+                        <a href="/accessibility" data-i18n="footer.accessibility">Accessibility</a>
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.support">Support</h4>
                         <a href="/help/" data-i18n="footer.help">Help Center</a>
-                        <a href="/contact.html" data-i18n="footer.contact">Contact Us</a>
-                        <a href="/careers.html" data-i18n="footer.careers">Careers</a>
+                        <a href="/contact" data-i18n="footer.contact">Contact Us</a>
+                        <a href="/careers" data-i18n="footer.careers">Careers</a>
                     </div>
                 </nav>
             </div>

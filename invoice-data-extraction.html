@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Scan invoices and extract the data automatically | Scandora</title>
-    <meta name="description" content="An app that scans invoices and reads the data off them: managed AI pulls out supplier, amount, IBAN and due date without a template, and the result can become a Trello card or a Drive file.">
+    <meta name="description" content="An app that scans invoices and reads the data off them: managed AI pulls out supplier, amount, IBAN and due date, ready for a Trello card or Drive file.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="https://scandora.eu/invoice-data-extraction">
 
@@ -131,6 +131,22 @@
         ]
     }
     </script>
+
+    <meta name="apple-itunes-app" content="app-id=6756135936">
+
+    <!-- Umami Analytics -->
+    <script>
+        (function () {
+            if (navigator.globalPrivacyControl === true) {
+                return;
+            }
+            var tracker = document.createElement('script');
+            tracker.src = 'https://analytics.scandora.eu/script.js';
+            tracker.setAttribute('data-website-id', 'f8fdac29-929b-4d5c-b2ff-6a1bd5a5a112');
+            tracker.setAttribute('data-do-not-track', 'true');
+            document.head.appendChild(tracker);
+        })();
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -183,7 +199,7 @@
                     <p>Lieferant, Betrag, IBAN, Fälligkeit und vorgeschlagene To-dos, dazu einen Titelvorschlag und Labels für das Dokument. Daneben führt Scandora die Metadaten des Dokuments — Titel, Labels, Bruttobetrag, Rechnungsnummer und Rechnungsdatum —, und jeder dieser Werte bleibt bearbeitbar. Auch der vollständige aus der Seite extrahierte Text wird gespeichert; er ist es, der Ihnen später eine belegte Antwort auf eine Frage zum Dokument ermöglicht.</p>
 
                     <h2>Was passiert mit den ausgelesenen Daten danach?</h2>
-                    <p>Sie gehen dorthin, wo Sie ohnehin arbeiten. Jeder Scan kann eine <a href="/scan-to-trello.html">Trello-Karte</a> mit Titel, Labels, Fälligkeitsdatum und einer Checkliste werden oder ein abgelegtes Google-Drive-Dokument in Ihrem eigenen Konto. Aus einer Rechnung wird so eine Aufgabe mit Fälligkeitsdatum statt eines weiteren PDFs im Ordner.</p>
+                    <p>Sie gehen dorthin, wo Sie ohnehin arbeiten. Jeder Scan kann eine <a href="/scan-to-trello">Trello-Karte</a> mit Titel, Labels, Fälligkeitsdatum und einer Checkliste werden oder ein abgelegtes Google-Drive-Dokument in Ihrem eigenen Konto. Aus einer Rechnung wird so eine Aufgabe mit Fälligkeitsdatum statt eines weiteren PDFs im Ordner.</p>
 
                     <h2>Kann ich korrigieren, was die KI gelesen hat?</h2>
                     <p>Ja. Nichts wird geraten und nichts wird hinter Ihrem Rücken gesetzt: Titel, Labels, Fälligkeitsdatum und Aufgabenvorschläge bleiben bearbeitbar, und Sie sehen die vorgeschlagenen Werte, bevor daraus eine Trello-Karte entsteht. Der Ablauf Schritt für Schritt steht im <a href="/blog/scan-to-trello-workflow">Ratgeber zum Scan-to-Trello-Workflow</a>.</p>
@@ -195,10 +211,10 @@
                     <p>Zum Scannen nicht — Scannen und Kantenerkennung funktionieren offline. Eine Verbindung brauchen Sie, wenn die verwaltete KI einen Scan verarbeitet oder wenn ein Dokument zu einem Cloud-Dienst wie Trello oder Google Drive synchronisiert wird.</p>
 
                     <h2>Wo wird eine Rechnung verarbeitet, während die KI sie liest?</h2>
-                    <p>In der EU. Ihr Gerät sendet die Seite direkt an den Modellanbieter — Google Gemini auf Vertex AI in Frankfurt, Deutschland —, mit einer kurzlebigen Zugangsberechtigung, die der Server von Scandora ausstellt, und der Modellanbieter erstellt die Analyse. Ihre Originaldateien bleiben auf dem Gerät und im von Ihnen gewählten Speicher; solange Sie angemeldet sind, synchronisieren nur eine Vorschau in niedriger Auflösung und der extrahierte Text auf unsere Server. Der <a href="/document-scanner-eu-servers.html">Überblick zu den EU-Servern</a> zeigt jeden Weg einzeln.</p>
+                    <p>In der EU. Ihr Gerät sendet die Seite direkt an den Modellanbieter — Google Gemini auf Vertex AI in Frankfurt, Deutschland —, mit einer kurzlebigen Zugangsberechtigung, die der Server von Scandora ausstellt, und der Modellanbieter erstellt die Analyse. Ihre Originaldateien bleiben auf dem Gerät und im von Ihnen gewählten Speicher; solange Sie angemeldet sind, synchronisieren nur eine Vorschau in niedriger Auflösung und der extrahierte Text auf unsere Server. Der <a href="/document-scanner-eu-servers">Überblick zu den EU-Servern</a> zeigt jeden Weg einzeln.</p>
 
                     <h2>Bleibt nachvollziehbar, was erfasst und geändert wurde?</h2>
-                    <p>Ja, solange Sie angemeldet sind. Jede Erfassung schreibt einen Erfassungsnachweis (unter anderem eine SHA-256-Prüfsumme der erfassten Datei, die Erfassungsquelle und einen Server-Zeitstempel), und jede spätere Metadatenänderung, jeder Export und jede Löschung schreibt einen Änderungsprotokolleintrag mit dem alten und dem neuen Wert. Für Steuerberaterinnen und Steuerberater ist außerdem ein <a href="/datev-steuerberater.html">DATEV-Export in Vorbereitung</a> — er ist in dieser Version noch nicht verfügbar.</p>
+                    <p>Ja, solange Sie angemeldet sind. Jede Erfassung schreibt einen Erfassungsnachweis (unter anderem eine SHA-256-Prüfsumme der erfassten Datei, die Erfassungsquelle und einen Server-Zeitstempel), und jede spätere Metadatenänderung, jeder Export und jede Löschung schreibt einen Änderungsprotokolleintrag mit dem alten und dem neuen Wert. Für Steuerberaterinnen und Steuerberater ist außerdem ein <a href="/datev-steuerberater">DATEV-Export in Vorbereitung</a> — er ist in dieser Version noch nicht verfügbar.</p>
 
                     <h2>Von der Rechnung zur Handlung</h2>
                     <table class="cookie-table">
@@ -217,7 +233,7 @@
                         </tbody>
                     </table>
 
-                    <p>Weiterführend: <a href="/scan-to-trello.html">Scans nach Trello</a> · <a href="/paperless-small-business.html">Papierlos im kleinen Unternehmen</a> · <a href="/paperless-home-office.html">Papierloses Büro für zu Hause</a> · <a href="/document-scanner-eu-servers.html">Dokumentenscanner auf EU-Servern</a></p>
+                    <p>Weiterführend: <a href="/scan-to-trello">Scans nach Trello</a> · <a href="/paperless-small-business">Papierlos im kleinen Unternehmen</a> · <a href="/paperless-home-office">Papierloses Büro für zu Hause</a> · <a href="/document-scanner-eu-servers">Dokumentenscanner auf EU-Servern</a></p>
 
                     <div class="highlight-box">
                         <p><strong>Rechnungen nicht mehr abtippen?</strong> Testen Sie Scandora kostenlos mit verwalteter KI.</p>
@@ -253,7 +269,7 @@
                     <p>Supplier, amount, IBAN, due date and suggested to-dos, plus a title suggestion and labels for the document. Alongside them Scandora keeps the document's own metadata — title, labels, gross amount, invoice number and invoice date — and each of those stays editable. The full text extracted from the page is kept as well, which is what later lets you ask a question about the document and get a cited answer.</p>
 
                     <h2>What happens to the extracted data next?</h2>
-                    <p>It goes where you already work. Each scan can become a <a href="/scan-to-trello.html">Trello card</a> carrying the title, the labels, a due date and a checklist, or a filed Google Drive document in your own account. A bill turns into a task with a due date rather than another PDF in a folder.</p>
+                    <p>It goes where you already work. Each scan can become a <a href="/scan-to-trello">Trello card</a> carrying the title, the labels, a due date and a checklist, or a filed Google Drive document in your own account. A bill turns into a task with a due date rather than another PDF in a folder.</p>
 
                     <h2>Can I correct what the AI read?</h2>
                     <p>Yes. Nothing is guessed and nothing is set behind your back: the title, the labels, the due date and the suggested tasks all stay editable, and you see the proposed values before a Trello card is created from them. The <a href="/blog/scan-to-trello-workflow">scan-to-Trello workflow guide</a> walks through that step by step.</p>
@@ -265,10 +281,10 @@
                     <p>Not for the scan itself — scanning and edge detection work offline. You need a connection when managed AI processes a scan, or when a document syncs to a cloud service such as Trello or Google Drive.</p>
 
                     <h2>Where is an invoice processed while the AI reads it?</h2>
-                    <p>In the EU. Your device sends the page directly to the model provider — Google Gemini on Vertex AI in Frankfurt, Germany — using a short-lived credential Scandora's server issues, and the model provider returns the analysis. Your original files stay on your device and in the storage you choose; while you are signed in, only a low-resolution preview and the extracted text sync to our servers. The <a href="/document-scanner-eu-servers.html">EU servers page</a> sets out each path one by one.</p>
+                    <p>In the EU. Your device sends the page directly to the model provider — Google Gemini on Vertex AI in Frankfurt, Germany — using a short-lived credential Scandora's server issues, and the model provider returns the analysis. Your original files stay on your device and in the storage you choose; while you are signed in, only a low-resolution preview and the extracted text sync to our servers. The <a href="/document-scanner-eu-servers">EU servers page</a> sets out each path one by one.</p>
 
                     <h2>Does it stay traceable what was captured and what changed?</h2>
-                    <p>Yes, while you are signed in. Every capture writes a capture record — a SHA-256 checksum of the captured file, the capture source and a server timestamp among other fields — and every later metadata change, export and deletion writes a change-log entry with the old and the new value. For tax advisors a <a href="/datev-steuerberater.html">DATEV export is in preparation</a>; it is coming soon and not available in this version yet.</p>
+                    <p>Yes, while you are signed in. Every capture writes a capture record — a SHA-256 checksum of the captured file, the capture source and a server timestamp among other fields — and every later metadata change, export and deletion writes a change-log entry with the old and the new value. For tax advisors a <a href="/datev-steuerberater">DATEV export is in preparation</a>; it is coming soon and not available in this version yet.</p>
 
                     <h2>From the invoice to an action</h2>
                     <table class="cookie-table">
@@ -287,7 +303,7 @@
                         </tbody>
                     </table>
 
-                    <p>Related reading: <a href="/scan-to-trello.html">Send scans to Trello</a> · <a href="/paperless-small-business.html">Paperless in a small business</a> · <a href="/paperless-home-office.html">A paperless office at home</a> · <a href="/document-scanner-eu-servers.html">Document scanner on EU servers</a></p>
+                    <p>Related reading: <a href="/scan-to-trello">Send scans to Trello</a> · <a href="/paperless-small-business">Paperless in a small business</a> · <a href="/paperless-home-office">A paperless office at home</a> · <a href="/document-scanner-eu-servers">Document scanner on EU servers</a></p>
 
                     <div class="highlight-box">
                         <p><strong>Done retyping invoices?</strong> Try Scandora free with managed AI.</p>
@@ -304,6 +320,18 @@
                     <h3>Where is an invoice processed while the AI reads it?</h3>
                     <p>In the EU. Your device sends the page directly to the model provider — Google Gemini on Vertex AI in Frankfurt, Germany — using a short-lived credential Scandora's server issues. Your original files stay on your device and in the storage you choose.</p>
                 </article>
+
+                <div class="download-buttons" role="group" aria-label="Download links" style="margin-top:32px;">
+                    <a href="https://apps.apple.com/app/scandora/id6756135936?ct=invoice-data-extraction&amp;mt=8" class="store-badge" aria-label="Download Scandora on the App Store for iPhone and iPad" rel="noopener" target="_blank">
+                        <img src="/assets/badge-appstore.svg" alt="Download on the App Store" width="120" height="40" loading="lazy">
+                    </a>
+                    <a href="https://apps.apple.com/app/scandora/id6756135936?ct=invoice-data-extraction&amp;mt=8" class="store-badge" aria-label="Download Scandora on the Mac App Store for macOS" rel="noopener" target="_blank">
+                        <img src="/assets/badge-mac-appstore.svg" alt="Download on the Mac App Store" width="156" height="40" loading="lazy">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=de.scandora.app&amp;referrer=utm_source%3Dscandora.eu%26utm_medium%3Dwebsite%26utm_campaign%3Dinvoice-data-extraction" class="store-badge" aria-label="Get Scandora on Google Play for Android" rel="noopener" target="_blank">
+                        <img src="/assets/badge-google-play.svg" alt="Get it on Google Play" width="135" height="40" loading="lazy">
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -322,27 +350,27 @@
                         <a href="/#features" data-i18n="nav.features">Features</a>
                         <a href="/#pricing" data-i18n="nav.pricing">Pricing</a>
                         <a href="/#download" data-i18n="nav.download">Download</a>
-                        <a href="/paperless-small-business.html" data-i18n="footer.paperlessSmb">Paperless for small business</a>
-                        <a href="/paperless-home-office.html" data-i18n="footer.paperlessHome">Paperless office at home</a>
-                        <a href="/invoice-data-extraction.html" data-i18n="footer.invoiceData">Invoice data extraction</a>
-                        <a href="/scan-to-trello.html" data-i18n="footer.scanTrello">Scan to Trello</a>
-                        <a href="/document-scanner-eu-servers.html" data-i18n="footer.euServers">Scanner on EU servers</a>
+                        <a href="/paperless-small-business" data-i18n="footer.paperlessSmb">Paperless for small business</a>
+                        <a href="/paperless-home-office" data-i18n="footer.paperlessHome">Paperless office at home</a>
+                        <a href="/invoice-data-extraction" data-i18n="footer.invoiceData">Invoice data extraction</a>
+                        <a href="/scan-to-trello" data-i18n="footer.scanTrello">Scan to Trello</a>
+                        <a href="/document-scanner-eu-servers" data-i18n="footer.euServers">Scanner on EU servers</a>
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.legal">Legal</h4>
-                        <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
-                        <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
-                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
-                        <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
-                        <a href="/report-content.html" data-i18n="footer.reportContent">Report Illegal Content</a>
-                        <a href="/accessibility.html" data-i18n="footer.accessibility">Accessibility</a>
+                        <a href="/privacy" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="/terms" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv" data-i18n="footer.avv">AVV / DPA</a>
+                        <a href="/imprint" data-i18n="footer.imprint">Imprint</a>
+                        <a href="/report-content" data-i18n="footer.reportContent">Report Illegal Content</a>
+                        <a href="/accessibility" data-i18n="footer.accessibility">Accessibility</a>
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.support">Support</h4>
                         <a href="/help/" data-i18n="footer.help">Help Center</a>
                         <a href="/blog/" data-i18n="nav.blog">Guides</a>
-                        <a href="/contact.html" data-i18n="footer.contact">Contact Us</a>
-                        <a href="/careers.html" data-i18n="footer.careers">Careers</a>
+                        <a href="/contact" data-i18n="footer.contact">Contact Us</a>
+                        <a href="/careers" data-i18n="footer.careers">Careers</a>
                     </div>
                 </nav>
             </div>

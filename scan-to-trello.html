@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>A document scanner that exports to Trello | Scandora</title>
-    <meta name="description" content="A document scanner that turns each scan into a Trello card in your own board: the scanned PDF attached, an AI-read title, labels, a due date and a Tasks checklist. Free Trello accounts work.">
+    <meta name="description" content="A document scanner that turns each scan into a Trello card in your own board, with the PDF attached, an AI-read title, labels, a due date and a checklist.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="https://scandora.eu/scan-to-trello">
 
@@ -31,7 +31,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="A document scanner that exports to Trello">
-    <meta name="twitter:description" content="Each scan becomes a Trello card in your own board — the PDF attached, an AI-read title, labels, a due date and a Tasks checklist.">
+    <meta name="twitter:description" content="A document scanner that turns each scan into a Trello card in your own board, with the PDF attached, an AI-read title, labels, a due date and a checklist.">
     <meta name="twitter:image" content="https://scandora.eu/assets/og-image.png">
 
     <!-- Favicons -->
@@ -131,6 +131,22 @@
         ]
     }
     </script>
+
+    <meta name="apple-itunes-app" content="app-id=6756135936">
+
+    <!-- Umami Analytics -->
+    <script>
+        (function () {
+            if (navigator.globalPrivacyControl === true) {
+                return;
+            }
+            var tracker = document.createElement('script');
+            tracker.src = 'https://analytics.scandora.eu/script.js';
+            tracker.setAttribute('data-website-id', 'f8fdac29-929b-4d5c-b2ff-6a1bd5a5a112');
+            tracker.setAttribute('data-do-not-track', 'true');
+            document.head.appendChild(tracker);
+        })();
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -192,10 +208,10 @@
                     <p>Scandora meldet das offen, statt die Karte stillschweigend unvollständig anzulegen. Welche Grenze gilt, hängt vom Typ Ihres Trello-Kontos ab, den Sie bei der Einrichtung angeben.</p>
 
                     <h2>Wohin gehen meine Dokumente in diesem Ablauf?</h2>
-                    <p>In Ihren eigenen Trello-Arbeitsbereich, angelegt mit Ihren eigenen Trello-Zugangsdaten — das Dokument landet also dort, wo Sie ohnehin arbeiten. Ihre Originaldateien bleiben auf dem Gerät und im von Ihnen gewählten Speicher; solange Sie angemeldet sind, synchronisieren nur eine Vorschau in niedriger Auflösung und der extrahierte Text auf unsere Server in Falkenstein, Deutschland, und die verwaltete KI-Generierung wird in der EU verarbeitet — Google Gemini auf Vertex AI in Frankfurt, Deutschland. Mehr dazu im <a href="/document-scanner-eu-servers.html">Überblick zu den EU-Servern</a>.</p>
+                    <p>In Ihren eigenen Trello-Arbeitsbereich, angelegt mit Ihren eigenen Trello-Zugangsdaten — das Dokument landet also dort, wo Sie ohnehin arbeiten. Ihre Originaldateien bleiben auf dem Gerät und im von Ihnen gewählten Speicher; solange Sie angemeldet sind, synchronisieren nur eine Vorschau in niedriger Auflösung und der extrahierte Text auf unsere Server in Falkenstein, Deutschland, und die verwaltete KI-Generierung wird in der EU verarbeitet — Google Gemini auf Vertex AI in Frankfurt, Deutschland. Mehr dazu im <a href="/document-scanner-eu-servers">Überblick zu den EU-Servern</a>.</p>
 
                     <h2>Kann derselbe Scan auch woanders hin?</h2>
-                    <p>Ja. Jeder Scan kann ebenso ein abgelegtes Google-Drive-Dokument in Ihrem eigenen Konto werden. Welche Daten die KI dabei aus einer Rechnung liest, steht auf der Seite <a href="/invoice-data-extraction.html">Rechnungsdaten automatisch auslesen</a>.</p>
+                    <p>Ja. Jeder Scan kann ebenso ein abgelegtes Google-Drive-Dokument in Ihrem eigenen Konto werden. Welche Daten die KI dabei aus einer Rechnung liest, steht auf der Seite <a href="/invoice-data-extraction">Rechnungsdaten automatisch auslesen</a>.</p>
 
                     <h2>Was auf der Karte steht — und woher es kommt</h2>
                     <table class="cookie-table">
@@ -213,7 +229,7 @@
                         </tbody>
                     </table>
 
-                    <p>Weiterführend: <a href="/blog/scan-to-trello-workflow">Der Scan-to-Trello-Workflow Schritt für Schritt</a> · <a href="/invoice-data-extraction.html">Rechnungsdaten automatisch auslesen</a> · <a href="/paperless-small-business.html">Papierlos im kleinen Unternehmen</a> · <a href="/document-scanner-eu-servers.html">Dokumentenscanner auf EU-Servern</a></p>
+                    <p>Weiterführend: <a href="/blog/scan-to-trello-workflow">Der Scan-to-Trello-Workflow Schritt für Schritt</a> · <a href="/invoice-data-extraction">Rechnungsdaten automatisch auslesen</a> · <a href="/paperless-small-business">Papierlos im kleinen Unternehmen</a> · <a href="/document-scanner-eu-servers">Dokumentenscanner auf EU-Servern</a></p>
 
                     <div class="highlight-box">
                         <p><strong>Aus Scans echte Aufgaben machen?</strong> Testen Sie Scandora kostenlos mit verwalteter KI.</p>
@@ -258,10 +274,10 @@
                     <p>Scandora reports it openly rather than quietly creating an incomplete card. Which limit applies depends on the type of Trello account you state during setup.</p>
 
                     <h2>Where do my documents go in this workflow?</h2>
-                    <p>Into your own Trello workspace, created with your own Trello credentials, so the document lands where you already work. Your original files stay on your device and in the storage you choose; while you are signed in, only a low-resolution preview and the extracted text sync to our servers in Falkenstein, Germany, and managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. The <a href="/document-scanner-eu-servers.html">EU servers page</a> goes through it path by path.</p>
+                    <p>Into your own Trello workspace, created with your own Trello credentials, so the document lands where you already work. Your original files stay on your device and in the storage you choose; while you are signed in, only a low-resolution preview and the extracted text sync to our servers in Falkenstein, Germany, and managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. The <a href="/document-scanner-eu-servers">EU servers page</a> goes through it path by path.</p>
 
                     <h2>Can the same scan go somewhere other than Trello?</h2>
-                    <p>Yes. Each scan can just as well become a filed Google Drive document in your own account. What the AI reads off a bill on the way there is set out on the <a href="/invoice-data-extraction.html">invoice data extraction page</a>.</p>
+                    <p>Yes. Each scan can just as well become a filed Google Drive document in your own account. What the AI reads off a bill on the way there is set out on the <a href="/invoice-data-extraction">invoice data extraction page</a>.</p>
 
                     <h2>What is on the card, and where it comes from</h2>
                     <table class="cookie-table">
@@ -279,7 +295,7 @@
                         </tbody>
                     </table>
 
-                    <p>Related reading: <a href="/blog/scan-to-trello-workflow">The scan-to-Trello workflow, step by step</a> · <a href="/invoice-data-extraction.html">Extract invoice data automatically</a> · <a href="/paperless-small-business.html">Paperless in a small business</a> · <a href="/document-scanner-eu-servers.html">Document scanner on EU servers</a></p>
+                    <p>Related reading: <a href="/blog/scan-to-trello-workflow">The scan-to-Trello workflow, step by step</a> · <a href="/invoice-data-extraction">Extract invoice data automatically</a> · <a href="/paperless-small-business">Paperless in a small business</a> · <a href="/document-scanner-eu-servers">Document scanner on EU servers</a></p>
 
                     <div class="highlight-box">
                         <p><strong>Turn scans into real tasks?</strong> Try Scandora free with managed AI.</p>
@@ -296,6 +312,18 @@
                     <h3>Where do my documents go in this workflow?</h3>
                     <p>Into your own Trello workspace, created with your own Trello credentials. Your original files stay on your device and in the storage you choose; while you are signed in, only a low-resolution preview and the extracted text sync to our servers in Falkenstein, Germany.</p>
                 </article>
+
+                <div class="download-buttons" role="group" aria-label="Download links" style="margin-top:32px;">
+                    <a href="https://apps.apple.com/app/scandora/id6756135936?ct=scan-to-trello&amp;mt=8" class="store-badge" aria-label="Download Scandora on the App Store for iPhone and iPad" rel="noopener" target="_blank">
+                        <img src="/assets/badge-appstore.svg" alt="Download on the App Store" width="120" height="40" loading="lazy">
+                    </a>
+                    <a href="https://apps.apple.com/app/scandora/id6756135936?ct=scan-to-trello&amp;mt=8" class="store-badge" aria-label="Download Scandora on the Mac App Store for macOS" rel="noopener" target="_blank">
+                        <img src="/assets/badge-mac-appstore.svg" alt="Download on the Mac App Store" width="156" height="40" loading="lazy">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=de.scandora.app&amp;referrer=utm_source%3Dscandora.eu%26utm_medium%3Dwebsite%26utm_campaign%3Dscan-to-trello" class="store-badge" aria-label="Get Scandora on Google Play for Android" rel="noopener" target="_blank">
+                        <img src="/assets/badge-google-play.svg" alt="Get it on Google Play" width="135" height="40" loading="lazy">
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -314,27 +342,27 @@
                         <a href="/#features" data-i18n="nav.features">Features</a>
                         <a href="/#pricing" data-i18n="nav.pricing">Pricing</a>
                         <a href="/#download" data-i18n="nav.download">Download</a>
-                        <a href="/paperless-small-business.html" data-i18n="footer.paperlessSmb">Paperless for small business</a>
-                        <a href="/paperless-home-office.html" data-i18n="footer.paperlessHome">Paperless office at home</a>
-                        <a href="/invoice-data-extraction.html" data-i18n="footer.invoiceData">Invoice data extraction</a>
-                        <a href="/scan-to-trello.html" data-i18n="footer.scanTrello">Scan to Trello</a>
-                        <a href="/document-scanner-eu-servers.html" data-i18n="footer.euServers">Scanner on EU servers</a>
+                        <a href="/paperless-small-business" data-i18n="footer.paperlessSmb">Paperless for small business</a>
+                        <a href="/paperless-home-office" data-i18n="footer.paperlessHome">Paperless office at home</a>
+                        <a href="/invoice-data-extraction" data-i18n="footer.invoiceData">Invoice data extraction</a>
+                        <a href="/scan-to-trello" data-i18n="footer.scanTrello">Scan to Trello</a>
+                        <a href="/document-scanner-eu-servers" data-i18n="footer.euServers">Scanner on EU servers</a>
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.legal">Legal</h4>
-                        <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
-                        <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
-                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
-                        <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
-                        <a href="/report-content.html" data-i18n="footer.reportContent">Report Illegal Content</a>
-                        <a href="/accessibility.html" data-i18n="footer.accessibility">Accessibility</a>
+                        <a href="/privacy" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="/terms" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv" data-i18n="footer.avv">AVV / DPA</a>
+                        <a href="/imprint" data-i18n="footer.imprint">Imprint</a>
+                        <a href="/report-content" data-i18n="footer.reportContent">Report Illegal Content</a>
+                        <a href="/accessibility" data-i18n="footer.accessibility">Accessibility</a>
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.support">Support</h4>
                         <a href="/help/" data-i18n="footer.help">Help Center</a>
                         <a href="/blog/" data-i18n="nav.blog">Guides</a>
-                        <a href="/contact.html" data-i18n="footer.contact">Contact Us</a>
-                        <a href="/careers.html" data-i18n="footer.careers">Careers</a>
+                        <a href="/contact" data-i18n="footer.contact">Contact Us</a>
+                        <a href="/careers" data-i18n="footer.careers">Careers</a>
                     </div>
                 </nav>
             </div>

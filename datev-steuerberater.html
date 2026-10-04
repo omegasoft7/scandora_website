@@ -117,6 +117,22 @@
         ]
     }
     </script>
+
+    <meta name="apple-itunes-app" content="app-id=6756135936">
+
+    <!-- Umami Analytics -->
+    <script>
+        (function () {
+            if (navigator.globalPrivacyControl === true) {
+                return;
+            }
+            var tracker = document.createElement('script');
+            tracker.src = 'https://analytics.scandora.eu/script.js';
+            tracker.setAttribute('data-website-id', 'f8fdac29-929b-4d5c-b2ff-6a1bd5a5a112');
+            tracker.setAttribute('data-do-not-track', 'true');
+            document.head.appendChild(tracker);
+        })();
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -252,6 +268,18 @@
                     <h3>Which plan will include the DATEV export?</h3>
                     <p>The Business / DATEV plan, together with the lexoffice and sevDesk voucher export — coming soon, not available in this version yet.</p>
                 </article>
+
+                <div class="download-buttons" role="group" aria-label="Download links" style="margin-top:32px;">
+                    <a href="https://apps.apple.com/app/scandora/id6756135936?ct=datev-steuerberater&amp;mt=8" class="store-badge" aria-label="Download Scandora on the App Store for iPhone and iPad" rel="noopener" target="_blank">
+                        <img src="/assets/badge-appstore.svg" alt="Download on the App Store" width="120" height="40" loading="lazy">
+                    </a>
+                    <a href="https://apps.apple.com/app/scandora/id6756135936?ct=datev-steuerberater&amp;mt=8" class="store-badge" aria-label="Download Scandora on the Mac App Store for macOS" rel="noopener" target="_blank">
+                        <img src="/assets/badge-mac-appstore.svg" alt="Download on the Mac App Store" width="156" height="40" loading="lazy">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=de.scandora.app&amp;referrer=utm_source%3Dscandora.eu%26utm_medium%3Dwebsite%26utm_campaign%3Ddatev-steuerberater" class="store-badge" aria-label="Get Scandora on Google Play for Android" rel="noopener" target="_blank">
+                        <img src="/assets/badge-google-play.svg" alt="Get it on Google Play" width="135" height="40" loading="lazy">
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -273,18 +301,18 @@
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.legal">Legal</h4>
-                        <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
-                        <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
-                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
-                        <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
-                        <a href="/report-content.html" data-i18n="footer.reportContent">Report Illegal Content</a>
-                        <a href="/accessibility.html" data-i18n="footer.accessibility">Accessibility</a>
+                        <a href="/privacy" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="/terms" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv" data-i18n="footer.avv">AVV / DPA</a>
+                        <a href="/imprint" data-i18n="footer.imprint">Imprint</a>
+                        <a href="/report-content" data-i18n="footer.reportContent">Report Illegal Content</a>
+                        <a href="/accessibility" data-i18n="footer.accessibility">Accessibility</a>
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.support">Support</h4>
                         <a href="/help/" data-i18n="footer.help">Help Center</a>
-                        <a href="/contact.html" data-i18n="footer.contact">Contact Us</a>
-                        <a href="/careers.html" data-i18n="footer.careers">Careers</a>
+                        <a href="/contact" data-i18n="footer.contact">Contact Us</a>
+                        <a href="/careers" data-i18n="footer.careers">Careers</a>
                     </div>
                 </nav>
             </div>

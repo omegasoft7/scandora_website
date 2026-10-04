@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Document scanner on EU servers: where your data sits | Scandora</title>
-    <meta name="description" content="Which parts of a scan reach a server and which never leave your device, and exactly where each one is processed: Scandora's own servers in Falkenstein, Germany, and managed AI in Frankfurt.">
+    <meta name="description" content="What reaches a server, what stays on your device, and where each is processed: Scandora's own servers in Falkenstein, Germany, and managed AI in Frankfurt.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="https://scandora.eu/document-scanner-eu-servers">
 
@@ -131,6 +131,22 @@
         ]
     }
     </script>
+
+    <meta name="apple-itunes-app" content="app-id=6756135936">
+
+    <!-- Umami Analytics -->
+    <script>
+        (function () {
+            if (navigator.globalPrivacyControl === true) {
+                return;
+            }
+            var tracker = document.createElement('script');
+            tracker.src = 'https://analytics.scandora.eu/script.js';
+            tracker.setAttribute('data-website-id', 'f8fdac29-929b-4d5c-b2ff-6a1bd5a5a112');
+            tracker.setAttribute('data-do-not-track', 'true');
+            document.head.appendChild(tracker);
+        })();
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -168,16 +184,16 @@
                 <!-- ================= GERMAN ================= -->
                 <article class="legal-content" data-lang="de" hidden>
                     <div class="highlight-box">
-                        <p><strong>Kurz gesagt:</strong> „EU-Server“ ist keine Zusicherung, sondern eine Liste von Wegen. Diese Seite geht sie einzeln durch: Was auf Ihrem Gerät bleibt, was auf Scandoras eigenen Server in Falkenstein, Deutschland, geht, was der Modellanbieter in Frankfurt verarbeitet und welche Unterauftragsverarbeiter beteiligt sind. Was einen Scanner insgesamt DSGVO-tauglich macht, steht auf der Seite <a href="/gdpr-dokumentenscanner.html">DSGVO-Dokumentenscanner</a>.</p>
+                        <p><strong>Kurz gesagt:</strong> „EU-Server“ ist keine Zusicherung, sondern eine Liste von Wegen. Diese Seite geht sie einzeln durch: Was auf Ihrem Gerät bleibt, was auf Scandoras eigenen Server in Falkenstein, Deutschland, geht, was der Modellanbieter in Frankfurt verarbeitet und welche Unterauftragsverarbeiter beteiligt sind. Was einen Scanner insgesamt DSGVO-tauglich macht, steht auf der Seite <a href="/gdpr-dokumentenscanner">DSGVO-Dokumentenscanner</a>.</p>
                     </div>
 
-                    <p><a href="/avv.html" class="btn btn-primary">AVV lesen</a></p>
+                    <p><a href="/avv" class="btn btn-primary">AVV lesen</a></p>
 
                     <h2>Gibt es einen Dokumentenscanner, der auf EU-Servern läuft?</h2>
                     <p>Scandora. Die Server, die wir selbst betreiben, stehen in der EU: Scandoras eigener Server steht in Falkenstein, Deutschland, auf Maschinen, die wir bei Hetzner mieten, und trägt den Scan-Verlauf, die Userdata-API, den Ausstellungs-Endpunkt für die Zugangsberechtigung der verwalteten KI sowie die Erfassungs- und Änderungsaufzeichnungen. Die verwaltete KI-Generierung wird in der EU verarbeitet — Google Gemini auf Vertex AI in Frankfurt, Deutschland. Scandora zeigt keine Werbung.</p>
 
                     <h2>Welchen Dokumentenscanner sollte ein kleines Unternehmen nach DSGVO wählen?</h2>
-                    <p>Prüfen Sie vier Dinge, bevor Sie sich entscheiden: wo die serverseitigen Schritte laufen, ob Ihre Originaldokumente unter Ihrer Kontrolle bleiben, ob App und Website Dritt-Schriftarten und Werbe-Tracker laden, und ob Sie für die geschäftliche Nutzung einen Auftragsverarbeitungsvertrag abschließen können. Scandora beantwortet alle vier — EU-Hosting in Deutschland, Originale, die auf Ihrem Gerät und im von Ihnen gewählten Speicher bleiben, keine Dritt-Schriftarten oder Werbe-Tracker und ein <a href="/avv.html">AVV nach Art. 28 DSGVO</a> zum Lesen, Herunterladen und Unterzeichnen. Die vollständige Kriterienliste steht auf der Seite <a href="/gdpr-dokumentenscanner.html">DSGVO-Dokumentenscanner</a>.</p>
+                    <p>Prüfen Sie vier Dinge, bevor Sie sich entscheiden: wo die serverseitigen Schritte laufen, ob Ihre Originaldokumente unter Ihrer Kontrolle bleiben, ob App und Website Dritt-Schriftarten und Werbe-Tracker laden, und ob Sie für die geschäftliche Nutzung einen Auftragsverarbeitungsvertrag abschließen können. Scandora beantwortet alle vier — EU-Hosting in Deutschland, Originale, die auf Ihrem Gerät und im von Ihnen gewählten Speicher bleiben, keine Dritt-Schriftarten oder Werbe-Tracker und ein <a href="/avv">AVV nach Art. 28 DSGVO</a> zum Lesen, Herunterladen und Unterzeichnen. Die vollständige Kriterienliste steht auf der Seite <a href="/gdpr-dokumentenscanner">DSGVO-Dokumentenscanner</a>.</p>
 
                     <h2>Was verlässt mein Gerät, wenn ich eine Seite scanne?</h2>
                     <p>Dreierlei. Nutzen Sie eine KI-Funktion, sendet Ihr Gerät das Seitenbild direkt an den Modellanbieter, mit einer kurzlebigen Zugangsberechtigung, die der Server von Scandora ausstellt, und der Modellanbieter gibt die Analyse zurück. Solange Sie angemeldet sind, wird zusätzlich der Verlaufsdatensatz jedes abgeschlossenen Scans auf denselben Server hochgeladen: die Metadaten des Eintrags, der aus dem Dokument extrahierte Text und ein kleines Vorschaubild der ersten Seite in niedriger Auflösung. Ebenfalls solange Sie angemeldet sind, sendet Ihr Gerät den extrahierten Text und die KI-Beschreibung jedes neuen Dokuments direkt an den Modellanbieter, der daraus die Suchvektoren des geräteseitigen Index berechnet. Ihre Originaldateien werden nie auf Scandoras Servern gespeichert.</p>
@@ -202,10 +218,10 @@
                             <tr><td>Google (Firebase / Cloud Firestore)</td><td>Ausschließlich das Importregister</td><td>Deutschland — <code>europe-west3</code></td></tr>
                         </tbody>
                     </table>
-                    <p>Die maßgebliche Liste steht in Abschnitt 5 des <a href="/avv.html">AVV</a>; die <a href="/privacy.html">Datenschutzerklärung</a> nennt zusätzlich die Empfänger, die wir als Verantwortlicher einsetzen.</p>
+                    <p>Die maßgebliche Liste steht in Abschnitt 5 des <a href="/avv">AVV</a>; die <a href="/privacy">Datenschutzerklärung</a> nennt zusätzlich die Empfänger, die wir als Verantwortlicher einsetzen.</p>
 
                     <h2>Kann ich für die geschäftliche Nutzung einen AVV abschließen?</h2>
-                    <p>Ja. Für Geschäftskunden gibt es einen <a href="/avv.html">AVV / DPA nach Art. 28 DSGVO</a>, den Sie lesen, herunterladen und unterzeichnen können. Er benennt dieselben Unterauftragsverarbeiter wie die Tabelle oben und trägt einen Versionsstempel, damit erkennbar bleibt, welche Fassung Sie unterzeichnet haben.</p>
+                    <p>Ja. Für Geschäftskunden gibt es einen <a href="/avv">AVV / DPA nach Art. 28 DSGVO</a>, den Sie lesen, herunterladen und unterzeichnen können. Er benennt dieselben Unterauftragsverarbeiter wie die Tabelle oben und trägt einen Versionsstempel, damit erkennbar bleibt, welche Fassung Sie unterzeichnet haben.</p>
 
                     <h2>Verfolgt mich die Website?</h2>
                     <p>Nein. scandora.eu lädt die Inter-Schrift vom eigenen Server statt von einem Font-CDN, nutzt selbst gehostete, cookielose Analyse statt eines Werbe-Trackers und setzt keine Analyse- oder Werbe-Cookies — deshalb gibt es auch kein Cookie-Banner. Sendet Ihr Browser ein Global-Privacy-Control-Signal, wird das Analyseskript gar nicht erst geladen.</p>
@@ -226,7 +242,7 @@
                         </tbody>
                     </table>
 
-                    <p>Weiterführend: <a href="/gdpr-dokumentenscanner.html">DSGVO-Dokumentenscanner: die Kriterien</a> · <a href="/privacy.html">Datenschutzerklärung</a> · <a href="/avv.html">AVV / DPA</a> · <a href="/paperless-small-business.html">Papierlos im kleinen Unternehmen</a> · <a href="/vs-camscanner.html">Scandora vs. CamScanner</a></p>
+                    <p>Weiterführend: <a href="/gdpr-dokumentenscanner">DSGVO-Dokumentenscanner: die Kriterien</a> · <a href="/privacy">Datenschutzerklärung</a> · <a href="/avv">AVV / DPA</a> · <a href="/paperless-small-business">Papierlos im kleinen Unternehmen</a> · <a href="/vs-camscanner">Scandora vs. CamScanner</a></p>
 
                     <div class="highlight-box">
                         <p><strong>Scannen mit Verarbeitung in der EU?</strong> Testen Sie Scandora kostenlos mit verwalteter KI.</p>
@@ -247,16 +263,16 @@
                 <!-- ================= ENGLISH ================= -->
                 <article class="legal-content" data-lang="en">
                     <div class="highlight-box">
-                        <p><strong>In short:</strong> "EU servers" is not a promise, it is a list of paths. This page walks them one by one: what stays on your device, what reaches Scandora's own server in Falkenstein, Germany, what the model provider processes in Frankfurt, and which sub-processors are involved. What makes a scanner GDPR-ready in general is set out on the <a href="/gdpr-dokumentenscanner.html">GDPR document scanner page</a>.</p>
+                        <p><strong>In short:</strong> "EU servers" is not a promise, it is a list of paths. This page walks them one by one: what stays on your device, what reaches Scandora's own server in Falkenstein, Germany, what the model provider processes in Frankfurt, and which sub-processors are involved. What makes a scanner GDPR-ready in general is set out on the <a href="/gdpr-dokumentenscanner">GDPR document scanner page</a>.</p>
                     </div>
 
-                    <p><a href="/avv.html" class="btn btn-primary">Read the AVV / DPA</a></p>
+                    <p><a href="/avv" class="btn btn-primary">Read the AVV / DPA</a></p>
 
                     <h2>Is there a document scanner that runs on EU servers?</h2>
                     <p>Scandora. The servers we run ourselves are in the EU: Scandora's own server sits in Falkenstein, Germany, on machines rented from Hetzner, and it holds the scan history, the userdata API, the credential-issuing endpoint for managed AI and the capture and change records. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. Scandora carries no ads.</p>
 
                     <h2>Which document scanner should a small company choose under the GDPR?</h2>
-                    <p>Check four things before you pick one: where the server-side steps run, whether your original documents stay under your control, whether the app or its website loads third-party fonts and advertising trackers, and whether you can sign a data-processing agreement for business use. Scandora answers all four — EU hosting in Germany, originals that stay on your device and in the storage you choose, no third-party fonts or ad trackers, and an <a href="/avv.html">AVV / Data Processing Agreement under Art. 28 GDPR</a> you can read, download and sign. The full criteria list lives on the <a href="/gdpr-dokumentenscanner.html">GDPR document scanner page</a>.</p>
+                    <p>Check four things before you pick one: where the server-side steps run, whether your original documents stay under your control, whether the app or its website loads third-party fonts and advertising trackers, and whether you can sign a data-processing agreement for business use. Scandora answers all four — EU hosting in Germany, originals that stay on your device and in the storage you choose, no third-party fonts or ad trackers, and an <a href="/avv">AVV / Data Processing Agreement under Art. 28 GDPR</a> you can read, download and sign. The full criteria list lives on the <a href="/gdpr-dokumentenscanner">GDPR document scanner page</a>.</p>
 
                     <h2>What actually leaves my device when I scan a page?</h2>
                     <p>Three things. When you use an AI feature, your device sends the page image directly to the model provider that returns the analysis, using a short-lived credential Scandora's server issues. While you are signed in, the history record of each completed scan is uploaded to that same server: the record's metadata, the text extracted from the document and a small low-resolution preview of the first page. Also while you are signed in, your device sends the extracted text and the AI description of each new document directly to the model provider, which turns them into the search vectors of the on-device index. Your original files are never stored on Scandora's servers.</p>
@@ -281,10 +297,10 @@
                             <tr><td>Google (Firebase / Cloud Firestore)</td><td>The import register only</td><td>Germany — <code>europe-west3</code></td></tr>
                         </tbody>
                     </table>
-                    <p>The authoritative list is section 5 of the <a href="/avv.html">AVV / DPA</a>; the <a href="/privacy.html">privacy policy</a> additionally names the recipients we use as a controller.</p>
+                    <p>The authoritative list is section 5 of the <a href="/avv">AVV / DPA</a>; the <a href="/privacy">privacy policy</a> additionally names the recipients we use as a controller.</p>
 
                     <h2>Can I sign an AVV / DPA for business use?</h2>
-                    <p>Yes. Business customers get an <a href="/avv.html">AVV / Data Processing Agreement under Art. 28 GDPR</a> to read, download and sign. It names the same sub-processors as the table above and carries a version stamp, so you can always tell which revision you signed.</p>
+                    <p>Yes. Business customers get an <a href="/avv">AVV / Data Processing Agreement under Art. 28 GDPR</a> to read, download and sign. It names the same sub-processors as the table above and carries a version stamp, so you can always tell which revision you signed.</p>
 
                     <h2>Does the website track me?</h2>
                     <p>No. scandora.eu loads the Inter font from its own server rather than a font CDN, uses self-hosted cookieless analytics rather than an ad tracker, and sets no analytics or advertising cookies — which is why there is no cookie banner. If your browser sends a Global Privacy Control signal, the analytics script is not loaded at all.</p>
@@ -305,7 +321,7 @@
                         </tbody>
                     </table>
 
-                    <p>Related reading: <a href="/gdpr-dokumentenscanner.html">GDPR document scanner: the criteria</a> · <a href="/privacy.html">Privacy policy</a> · <a href="/avv.html">AVV / DPA</a> · <a href="/paperless-small-business.html">Paperless in a small business</a> · <a href="/vs-camscanner.html">Scandora vs CamScanner</a></p>
+                    <p>Related reading: <a href="/gdpr-dokumentenscanner">GDPR document scanner: the criteria</a> · <a href="/privacy">Privacy policy</a> · <a href="/avv">AVV / DPA</a> · <a href="/paperless-small-business">Paperless in a small business</a> · <a href="/vs-camscanner">Scandora vs CamScanner</a></p>
 
                     <div class="highlight-box">
                         <p><strong>Want scanning processed in the EU?</strong> Try Scandora free with managed AI.</p>
@@ -322,6 +338,18 @@
                     <h3>Is any of my data stored outside Scandora's own servers?</h3>
                     <p>Only the cross-device import register, in Google Cloud Firestore in the <code>europe-west3</code> region (Frankfurt, Germany). It holds no page image and no document text.</p>
                 </article>
+
+                <div class="download-buttons" role="group" aria-label="Download links" style="margin-top:32px;">
+                    <a href="https://apps.apple.com/app/scandora/id6756135936?ct=document-scanner-eu-servers&amp;mt=8" class="store-badge" aria-label="Download Scandora on the App Store for iPhone and iPad" rel="noopener" target="_blank">
+                        <img src="/assets/badge-appstore.svg" alt="Download on the App Store" width="120" height="40" loading="lazy">
+                    </a>
+                    <a href="https://apps.apple.com/app/scandora/id6756135936?ct=document-scanner-eu-servers&amp;mt=8" class="store-badge" aria-label="Download Scandora on the Mac App Store for macOS" rel="noopener" target="_blank">
+                        <img src="/assets/badge-mac-appstore.svg" alt="Download on the Mac App Store" width="156" height="40" loading="lazy">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=de.scandora.app&amp;referrer=utm_source%3Dscandora.eu%26utm_medium%3Dwebsite%26utm_campaign%3Ddocument-scanner-eu-servers" class="store-badge" aria-label="Get Scandora on Google Play for Android" rel="noopener" target="_blank">
+                        <img src="/assets/badge-google-play.svg" alt="Get it on Google Play" width="135" height="40" loading="lazy">
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -340,27 +368,27 @@
                         <a href="/#features" data-i18n="nav.features">Features</a>
                         <a href="/#pricing" data-i18n="nav.pricing">Pricing</a>
                         <a href="/#download" data-i18n="nav.download">Download</a>
-                        <a href="/paperless-small-business.html" data-i18n="footer.paperlessSmb">Paperless for small business</a>
-                        <a href="/paperless-home-office.html" data-i18n="footer.paperlessHome">Paperless office at home</a>
-                        <a href="/invoice-data-extraction.html" data-i18n="footer.invoiceData">Invoice data extraction</a>
-                        <a href="/scan-to-trello.html" data-i18n="footer.scanTrello">Scan to Trello</a>
-                        <a href="/document-scanner-eu-servers.html" data-i18n="footer.euServers">Scanner on EU servers</a>
+                        <a href="/paperless-small-business" data-i18n="footer.paperlessSmb">Paperless for small business</a>
+                        <a href="/paperless-home-office" data-i18n="footer.paperlessHome">Paperless office at home</a>
+                        <a href="/invoice-data-extraction" data-i18n="footer.invoiceData">Invoice data extraction</a>
+                        <a href="/scan-to-trello" data-i18n="footer.scanTrello">Scan to Trello</a>
+                        <a href="/document-scanner-eu-servers" data-i18n="footer.euServers">Scanner on EU servers</a>
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.legal">Legal</h4>
-                        <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
-                        <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
-                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
-                        <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
-                        <a href="/report-content.html" data-i18n="footer.reportContent">Report Illegal Content</a>
-                        <a href="/accessibility.html" data-i18n="footer.accessibility">Accessibility</a>
+                        <a href="/privacy" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="/terms" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv" data-i18n="footer.avv">AVV / DPA</a>
+                        <a href="/imprint" data-i18n="footer.imprint">Imprint</a>
+                        <a href="/report-content" data-i18n="footer.reportContent">Report Illegal Content</a>
+                        <a href="/accessibility" data-i18n="footer.accessibility">Accessibility</a>
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.support">Support</h4>
                         <a href="/help/" data-i18n="footer.help">Help Center</a>
                         <a href="/blog/" data-i18n="nav.blog">Guides</a>
-                        <a href="/contact.html" data-i18n="footer.contact">Contact Us</a>
-                        <a href="/careers.html" data-i18n="footer.careers">Careers</a>
+                        <a href="/contact" data-i18n="footer.contact">Contact Us</a>
+                        <a href="/careers" data-i18n="footer.careers">Careers</a>
                     </div>
                 </nav>
             </div>

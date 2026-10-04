@@ -19,6 +19,11 @@
     <meta property="og:description" content="Scandora's honest GoBD scope: what it provides, and what still depends on your own archiving and retention. Not GoBD-certified.">
     <meta property="og:site_name" content="Scandora">
 
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="What GoBD support means - Scandora Help">
+    <meta name="twitter:description" content="Scandora's honest GoBD scope: what it provides, and what still depends on your own archiving and retention. Not GoBD-certified.">
+    <meta name="twitter:image" content="https://scandora.eu/assets/og-image.png">
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <!-- Preload above-the-fold webfonts -->
     <link rel="preload" href="/assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -27,6 +32,22 @@
     <link rel="preload" href="/assets/fonts/inter-700-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/assets/fonts/inter.css">
     <link rel="stylesheet" href="/styles.css">
+
+    <meta name="apple-itunes-app" content="app-id=6756135936">
+
+    <!-- Umami Analytics -->
+    <script>
+        (function () {
+            if (navigator.globalPrivacyControl === true) {
+                return;
+            }
+            var tracker = document.createElement('script');
+            tracker.src = 'https://analytics.scandora.eu/script.js';
+            tracker.setAttribute('data-website-id', 'f8fdac29-929b-4d5c-b2ff-6a1bd5a5a112');
+            tracker.setAttribute('data-do-not-track', 'true');
+            document.head.appendChild(tracker);
+        })();
+    </script>
 </head>
 <body>
     <header role="banner">
@@ -64,7 +85,7 @@
                 <article class="legal-content" data-lang="en">
                     <div class="highlight-box">
                         <p><strong>The honest scope:</strong> Scandora captures documents with a content hash and a trusted timestamp, and keeps an immutable audit log; the Verfahrensdokumentation is coming soon. <strong>GoBD compliance also depends on your own archiving and retention setup.</strong> Scandora is <strong>not "GoBD-certified"</strong> — there is no such certificate — and this page is not legal or tax advice.</p>
-                        <p>For a fuller walkthrough of scan-and-shred (ersetzendes Scannen), see the guide <a href="/blog/gobd-konform-scannen.html">Scanning for GoBD</a>.</p>
+                        <p>For a fuller walkthrough of scan-and-shred (ersetzendes Scannen), see the guide <a href="/blog/gobd-konform-scannen">Scanning for GoBD</a>.</p>
                     </div>
 
                     <h2>What GoBD is</h2>
@@ -99,7 +120,7 @@
                 <article class="legal-content" data-lang="de" hidden>
                     <div class="highlight-box">
                         <p><strong>Der ehrliche Umfang:</strong> Scandora erfasst Dokumente mit einem Inhalts-Hash und einem vertrauenswürdigen Zeitstempel, und führt ein unveränderbares Änderungsprotokoll; die Verfahrensdokumentation kommt demnächst. <strong>Die GoBD-Konformität hängt zusätzlich von Ihrer eigenen Archivierung und Aufbewahrung ab.</strong> Scandora ist <strong>nicht „GoBD-zertifiziert"</strong> — ein solches Zertifikat gibt es nicht — und diese Seite ist keine Rechts- oder Steuerberatung.</p>
-                        <p>Eine ausführliche Erläuterung zum ersetzenden Scannen finden Sie im Ratgeber <a href="/blog/gobd-konform-scannen.html">GoBD-konform scannen</a>.</p>
+                        <p>Eine ausführliche Erläuterung zum ersetzenden Scannen finden Sie im Ratgeber <a href="/blog/gobd-konform-scannen">GoBD-konform scannen</a>.</p>
                     </div>
 
                     <h2>Was GoBD ist</h2>
@@ -149,18 +170,18 @@
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.legal">Legal</h4>
-                        <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
-                        <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
-                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
-                        <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
-                        <a href="/report-content.html" data-i18n="footer.reportContent">Report Illegal Content</a>
-                        <a href="/accessibility.html" data-i18n="footer.accessibility">Accessibility</a>
+                        <a href="/privacy" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="/terms" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv" data-i18n="footer.avv">AVV / DPA</a>
+                        <a href="/imprint" data-i18n="footer.imprint">Imprint</a>
+                        <a href="/report-content" data-i18n="footer.reportContent">Report Illegal Content</a>
+                        <a href="/accessibility" data-i18n="footer.accessibility">Accessibility</a>
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.support">Support</h4>
                         <a href="/help/" data-i18n="footer.help">Help Center</a>
-                        <a href="/contact.html" data-i18n="footer.contact">Contact Us</a>
-                        <a href="/careers.html" data-i18n="footer.careers">Careers</a>
+                        <a href="/contact" data-i18n="footer.contact">Contact Us</a>
+                        <a href="/careers" data-i18n="footer.careers">Careers</a>
                     </div>
                 </nav>
             </div>

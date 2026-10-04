@@ -77,6 +77,22 @@
         }
     }
     </script>
+
+    <meta name="apple-itunes-app" content="app-id=6756135936">
+
+    <!-- Umami Analytics -->
+    <script>
+        (function () {
+            if (navigator.globalPrivacyControl === true) {
+                return;
+            }
+            var tracker = document.createElement('script');
+            tracker.src = 'https://analytics.scandora.eu/script.js';
+            tracker.setAttribute('data-website-id', 'f8fdac29-929b-4d5c-b2ff-6a1bd5a5a112');
+            tracker.setAttribute('data-do-not-track', 'true');
+            document.head.appendChild(tracker);
+        })();
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -144,11 +160,11 @@
                     <p>Nicht jedes Dokument darf ersetzend gescannt werden — bestimmte Unterlagen sind im Original aufzubewahren. Ob Sie ein konkretes Original vernichten dürfen, klären Sie mit Ihrem Steuerberater.</p>
 
                     <h2 id="scandora-deckt-ab">Wie Scandora die technischen Anforderungen abdeckt</h2>
-                    <p>Diese Bausteine sind bereits in Scandora umgesetzt und decken sich mit dem, was der Hilfe-Artikel <a href="/help/gobd-scope.html">Was GoBD-Unterstützung bedeutet</a> beschreibt:</p>
+                    <p>Diese Bausteine sind bereits in Scandora umgesetzt und decken sich mit dem, was der Hilfe-Artikel <a href="/help/gobd-scope">Was GoBD-Unterstützung bedeutet</a> beschreibt:</p>
                     <ul>
                         <li><strong>Unveränderbarer Erfassungsdatensatz.</strong> Beim Erfassen eines Dokuments speichert Scandora einen einmalig schreibbaren Datensatz mit einem <strong>Inhalts-Hash (SHA-256)</strong> des finalisierten Dokuments und einem <strong>vertrauenswürdigen, serverseitig gesetzten Erfassungszeitstempel</strong> — nicht die Uhrzeit des Geräts und getrennt von den bearbeitbaren Metadaten. So bleibt der Erfassungsnachweis auch dann bestehen, wenn Sie später Datum, Betrag oder Notizen korrigieren.</li>
                         <li><strong>Integrität prüfen.</strong> Eine Aktion „Integrität prüfen“ berechnet den Hash des aufbewahrten Dokuments neu und vergleicht ihn mit dem gespeicherten Wert — so ist belegbar, dass die Datei seit der Erfassung unverändert ist.</li>
-                        <li><strong>Unveränderbares Änderungsprotokoll.</strong> Dokumentereignisse — Erfassung, Metadaten-Änderungen (mit Vorher/Nachher der geänderten Felder), Exporte und Löschung — werden als anhängende Einträge mit Akteur und Server-Zeitstempel festgehalten. Bestehende Einträge werden nicht überschrieben; die einzige Ausnahme ist die Ersetzung bei einer Kontolöschung, die unsere <a href="/privacy.html#de-data-collection">Datenschutzerklärung</a> in Abschnitt 2 beschreibt. So bleibt der Verlauf nachvollziehbar.</li>
+                        <li><strong>Unveränderbares Änderungsprotokoll.</strong> Dokumentereignisse — Erfassung, Metadaten-Änderungen (mit Vorher/Nachher der geänderten Felder), Exporte und Löschung — werden als anhängende Einträge mit Akteur und Server-Zeitstempel festgehalten. Bestehende Einträge werden nicht überschrieben; die einzige Ausnahme ist die Ersetzung bei einer Kontolöschung, die unsere <a href="/privacy#de-data-collection">Datenschutzerklärung</a> in Abschnitt 2 beschreibt. So bleibt der Verlauf nachvollziehbar.</li>
                         <li><strong>Verfahrensdokumentation.</strong> Scandora wird eine Verfahrensdokumentation als PDF erzeugen (demnächst), automatisch befüllt aus Ihren tatsächlichen Profil-, Scanner- und Integrationseinstellungen — die dokumentierte Grundlage für das ersetzende Scannen.</li>
                     </ul>
 
@@ -167,7 +183,7 @@
                     </div>
 
                     <div class="highlight-box">
-                        <p><strong>Bereit für digitale Belege, denen Ihr Steuerberater vertrauen kann?</strong> Die geführte Aufbereitung für den Steuerberater und der DATEV-Export sind für den Tarif Business / DATEV in Vorbereitung und in dieser Version noch nicht verfügbar. Die Datenverarbeitung ist im <a href="/avv.html">AVV / DPA</a> geregelt.</p>
+                        <p><strong>Bereit für digitale Belege, denen Ihr Steuerberater vertrauen kann?</strong> Die geführte Aufbereitung für den Steuerberater und der DATEV-Export sind für den Tarif Business / DATEV in Vorbereitung und in dieser Version noch nicht verfügbar. Die Datenverarbeitung ist im <a href="/avv">AVV / DPA</a> geregelt.</p>
                         <p style="margin-top:16px;"><a href="/#pricing" class="btn btn-primary">Business / DATEV-Tarif ansehen</a></p>
                     </div>
 
@@ -181,7 +197,7 @@
                     <h3>Reicht es, meine Scans in einen Cloud-Ordner zu legen?</h3>
                     <p>Nein. Ein normaler Cloud- oder Dateiordner erfüllt für sich genommen nicht die Anforderungen an Unveränderbarkeit und Verfahren. Der Erfassungsnachweis und das Änderungsprotokoll von Scandora adressieren genau diese Lücke; die Verfahrensdokumentation kommt demnächst und ist in dieser Version noch nicht verfügbar.</p>
                     <h3>In welchem Tarif sind diese Funktionen enthalten?</h3>
-                    <p>Die GoBD-Bausteine gehören zu Scandora; die geführte Aufbereitung für den Steuerberater und der <a href="/blog/datev-export-aus-dem-smartphone.html">DATEV-Export</a> kommen demnächst im Tarif <strong>Business / DATEV</strong> und sind in dieser Version noch nicht verfügbar. Mehr zum ehrlichen Umfang steht im Hilfe-Artikel <a href="/help/gobd-scope.html">Was GoBD-Unterstützung bedeutet</a>.</p>
+                    <p>Die GoBD-Bausteine gehören zu Scandora; die geführte Aufbereitung für den Steuerberater und der <a href="/blog/datev-export-aus-dem-smartphone">DATEV-Export</a> kommen demnächst im Tarif <strong>Business / DATEV</strong> und sind in dieser Version noch nicht verfügbar. Mehr zum ehrlichen Umfang steht im Hilfe-Artikel <a href="/help/gobd-scope">Was GoBD-Unterstützung bedeutet</a>.</p>
                 </article>
 
                 <!-- ================= ENGLISH ================= -->
@@ -216,11 +232,11 @@
                     <p>Not every document may be scanned substitutively — certain records must be kept in the original. Whether you may destroy a specific original is a question for your tax advisor.</p>
 
                     <h2 id="en-covers">How Scandora covers the technical requirements</h2>
-                    <p>These building blocks are already implemented in Scandora and match what the help article <a href="/help/gobd-scope.html">What GoBD support means</a> describes:</p>
+                    <p>These building blocks are already implemented in Scandora and match what the help article <a href="/help/gobd-scope">What GoBD support means</a> describes:</p>
                     <ul>
                         <li><strong>Immutable capture record.</strong> When you capture a document, Scandora stores a write-once record with a <strong>content hash (SHA-256)</strong> of the finalized document and a <strong>trusted, server-set capture timestamp</strong> — not the device clock, and separate from the editable metadata. The capture record survives even if you later correct the date, amount or notes.</li>
                         <li><strong>Verify integrity.</strong> A “verify integrity” action re-hashes the retained document and compares it against the stored value — so you can demonstrate the file is unchanged since capture.</li>
-                        <li><strong>Append-only audit log.</strong> Document events — capture, metadata edits (with before/after of the changed fields), exports, and deletion — are recorded as append-only entries with an actor and a server timestamp. Existing entries are not overwritten; the only exception is the replacement we make when you delete your account, described in section 2 of our <a href="/privacy.html#data-collection">Privacy Policy</a>. That way the history can be traced.</li>
+                        <li><strong>Append-only audit log.</strong> Document events — capture, metadata edits (with before/after of the changed fields), exports, and deletion — are recorded as append-only entries with an actor and a server timestamp. Existing entries are not overwritten; the only exception is the replacement we make when you delete your account, described in section 2 of our <a href="/privacy#data-collection">Privacy Policy</a>. That way the history can be traced.</li>
                         <li><strong>Verfahrensdokumentation.</strong> Scandora will generate a Verfahrensdokumentation PDF (coming soon), auto-filled from your real profile, scanner and integration settings — the documented basis for substitutive scanning.</li>
                     </ul>
 
@@ -239,7 +255,7 @@
                     </div>
 
                     <div class="highlight-box">
-                        <p><strong>Ready for digital receipts your tax advisor can trust?</strong> The guided preparation for your advisor and the DATEV export are in preparation for the Business / DATEV plan and are not available in this version yet. Data processing is governed by the <a href="/avv.html">AVV / DPA</a>.</p>
+                        <p><strong>Ready for digital receipts your tax advisor can trust?</strong> The guided preparation for your advisor and the DATEV export are in preparation for the Business / DATEV plan and are not available in this version yet. Data processing is governed by the <a href="/avv">AVV / DPA</a>.</p>
                         <p style="margin-top:16px;"><a href="/#pricing" class="btn btn-primary">See Business / DATEV pricing</a></p>
                     </div>
 
@@ -253,7 +269,7 @@
                     <h3>Is it enough to put my scans in a cloud folder?</h3>
                     <p>No. A plain cloud or file folder does not, by itself, meet the immutability and process requirements. Scandora's capture record and audit log address exactly that gap; the Verfahrensdokumentation is coming soon and is not available in this version yet.</p>
                     <h3>Which plan includes these features?</h3>
-                    <p>The GoBD building blocks belong to Scandora; the guided preparation for your advisor and the <a href="/blog/datev-export-aus-dem-smartphone.html">DATEV export</a> are coming soon on the <strong>Business / DATEV</strong> plan and are not available in this version yet. More on the honest scope is in the help article <a href="/help/gobd-scope.html">What GoBD support means</a>.</p>
+                    <p>The GoBD building blocks belong to Scandora; the guided preparation for your advisor and the <a href="/blog/datev-export-aus-dem-smartphone">DATEV export</a> are coming soon on the <strong>Business / DATEV</strong> plan and are not available in this version yet. More on the honest scope is in the help article <a href="/help/gobd-scope">What GoBD support means</a>.</p>
                 </article>
             </div>
         </section>
@@ -276,18 +292,18 @@
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.legal">Legal</h4>
-                        <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
-                        <a href="/terms.html" data-i18n="footer.terms">Terms of Service</a>
-                        <a href="/avv.html" data-i18n="footer.avv">AVV / DPA</a>
-                        <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
-                        <a href="/report-content.html" data-i18n="footer.reportContent">Report Illegal Content</a>
-                        <a href="/accessibility.html" data-i18n="footer.accessibility">Accessibility</a>
+                        <a href="/privacy" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="/terms" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="/avv" data-i18n="footer.avv">AVV / DPA</a>
+                        <a href="/imprint" data-i18n="footer.imprint">Imprint</a>
+                        <a href="/report-content" data-i18n="footer.reportContent">Report Illegal Content</a>
+                        <a href="/accessibility" data-i18n="footer.accessibility">Accessibility</a>
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.support">Support</h4>
                         <a href="/help/" data-i18n="footer.help">Help Center</a>
-                        <a href="/contact.html" data-i18n="footer.contact">Contact Us</a>
-                        <a href="/careers.html" data-i18n="footer.careers">Careers</a>
+                        <a href="/contact" data-i18n="footer.contact">Contact Us</a>
+                        <a href="/careers" data-i18n="footer.careers">Careers</a>
                     </div>
                 </nav>
             </div>

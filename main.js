@@ -6,6 +6,8 @@
 (function() {
     'use strict';
 
+    const APPLE_PROVIDER_TOKEN = '121188983';
+
     // Run once the DOM is ready
     function init() {
         initSmoothScroll();
@@ -218,15 +220,44 @@
 
     window.trackEvent = trackEvent;
 
+    function pageSlug() {
+        const canonical = document.querySelector('link[rel="canonical"]');
+        const href = canonical ? canonical.getAttribute('href') : window.location.href;
+        const path = new URL(href, window.location.href).pathname.replace(/(index)?\.html$/, '');
+        return path.replace(/^\/+|\/+$/g, '').replace(/\//g, '-') || 'home';
+    }
+
+    function attributedStoreUrl(href, page) {
+        const url = new URL(href);
+        if (url.hostname === 'apps.apple.com') {
+            if (APPLE_PROVIDER_TOKEN) {
+                url.searchParams.set('pt', APPLE_PROVIDER_TOKEN);
+            }
+            if (!url.searchParams.has('ct')) {
+                url.searchParams.set('ct', page);
+            }
+            if (!url.searchParams.has('mt')) {
+                url.searchParams.set('mt', '8');
+            }
+        } else if (!url.searchParams.has('referrer')) {
+            url.searchParams.set('referrer', 'utm_source=scandora.eu&utm_medium=website&utm_campaign=' + page);
+        }
+        return url.toString();
+    }
+
     function initAnalyticsTracking() {
         document.querySelectorAll('a[href*="apps.apple.com"], a[href*="play.google.com"]').forEach(link => {
             link.addEventListener('click', function() {
                 const platform = this.href.includes('apple.com') ? 'ios' : 'android';
                 const location = this.closest('.hero-actions') ? 'hero' :
-                               this.closest('.download-section') ? 'download_section' : 'other';
+                               this.closest('.download-buttons') ? 'download_section' : 'other';
+                const page = pageSlug();
+                this.href = attributedStoreUrl(this.href, page);
                 trackEvent('download_click', {
                     platform: platform,
-                    location: location
+                    location: location,
+                    page: page,
+                    language: (document.documentElement.lang || '').slice(0, 2).toLowerCase()
                 });
             });
         });

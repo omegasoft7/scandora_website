@@ -516,51 +516,51 @@ const pageMeta = {
     "/paperless-small-business": {
         "en": {
             "title": "Paperless document scanning for a small business | Scandora",
-            "description": "How a small business or home office goes paperless: scan by phone or network scanner, managed AI reads each document, files land in your own Trello and Google Drive."
+            "description": "How a small business goes paperless: scan by phone or network scanner, managed AI reads each document, files land in your own Trello and Google Drive."
         },
         "de": {
             "title": "Papierloses Dokumentenscannen für kleine Unternehmen | Scandora",
-            "description": "Wie kleine Unternehmen und Homeoffices papierlos werden: per Handy oder Netzwerkscanner scannen, verwaltete KI liest jedes Dokument, Ablage in Ihrem Trello und Drive."
+            "description": "Wie kleine Unternehmen papierlos werden: per Handy oder Netzwerkscanner scannen, verwaltete KI liest jedes Dokument, Ablage in Ihrem Trello und Drive."
         }
     },
     "/paperless-home-office": {
         "en": {
             "title": "A paperless office solution for home | Scandora",
-            "description": "How to run a paperless office at home: scan the post with your phone or the Wi-Fi scanner you already own, let managed AI read each page, and keep household and work paperwork in separate profiles."
+            "description": "Run a paperless office at home: scan the post with your phone or Wi-Fi scanner, let managed AI read each page, and keep home and work papers apart."
         },
         "de": {
             "title": "Papierloses Büro für zu Hause | Scandora",
-            "description": "Wie ein papierloses Büro zu Hause funktioniert: Post mit dem Handy oder dem vorhandenen WLAN-Scanner scannen, verwaltete KI liest jede Seite, getrennte Profile für Privates und Berufliches."
+            "description": "Papierloses Büro zu Hause: Post mit dem Handy oder WLAN-Scanner scannen, verwaltete KI liest jede Seite, Privates und Berufliches in getrennten Profilen."
         }
     },
     "/invoice-data-extraction": {
         "en": {
             "title": "Scan invoices and extract the data automatically | Scandora",
-            "description": "An app that scans invoices and reads the data off them: managed AI pulls out supplier, amount, IBAN and due date without a template, and the result can become a Trello card or a Drive file."
+            "description": "An app that scans invoices and reads the data off them: managed AI pulls out supplier, amount, IBAN and due date, ready for a Trello card or Drive file."
         },
         "de": {
             "title": "Rechnungen scannen und Daten automatisch auslesen | Scandora",
-            "description": "Eine App, die Rechnungen scannt und die Daten ausliest: verwaltete KI holt Lieferant, Betrag, IBAN und Fälligkeit ohne Vorlage heraus — als Trello-Karte oder Drive-Dokument."
+            "description": "Eine App, die Rechnungen scannt und die Daten ausliest: verwaltete KI holt Lieferant, Betrag, IBAN und Fälligkeit heraus, als Trello-Karte oder Drive-Datei."
         }
     },
     "/scan-to-trello": {
         "en": {
             "title": "A document scanner that exports to Trello | Scandora",
-            "description": "A document scanner that turns each scan into a Trello card in your own board: the scanned PDF attached, an AI-read title, labels, a due date and a Tasks checklist. Free Trello accounts work."
+            "description": "A document scanner that turns each scan into a Trello card in your own board, with the PDF attached, an AI-read title, labels, a due date and a checklist."
         },
         "de": {
             "title": "Dokumentenscanner mit Trello-Export | Scandora",
-            "description": "Ein Dokumentenscanner, der jeden Scan zur Trello-Karte in Ihrem eigenen Board macht: PDF als Anhang, KI-gelesener Titel, Labels, Fälligkeitsdatum und eine Tasks-Checkliste."
+            "description": "Ein Dokumentenscanner, der jeden Scan zur Trello-Karte in Ihrem Board macht: PDF als Anhang, KI-gelesener Titel, Labels, Fälligkeit und Checkliste."
         }
     },
     "/document-scanner-eu-servers": {
         "en": {
             "title": "Document scanner on EU servers: where your data sits | Scandora",
-            "description": "Which parts of a scan reach a server and which never leave your device, and exactly where each one is processed: Scandora's own servers in Falkenstein, Germany, and managed AI in Frankfurt."
+            "description": "What reaches a server, what stays on your device, and where each is processed: Scandora's own servers in Falkenstein, Germany, and managed AI in Frankfurt."
         },
         "de": {
             "title": "Dokumentenscanner auf EU-Servern: wo Ihre Daten liegen | Scandora",
-            "description": "Welche Teile eines Scans auf einen Server gehen und welche das Gerät nie verlassen — und wo jeder Weg verarbeitet wird: Scandoras Server in Falkenstein und verwaltete KI in Frankfurt."
+            "description": "Was einen Server erreicht, was auf dem Gerät bleibt und wo es verarbeitet wird: Scandoras Server in Falkenstein und verwaltete KI in Frankfurt."
         }
     },
     "/vs-fileee": {
@@ -616,11 +616,11 @@ const pageMeta = {
     "/avv": {
         "en": {
             "title": "AVV / DPA — Data Processing Agreement | Scandora",
-            "description": "Scandora's AVV / Data Processing Agreement (Art. 28 GDPR) for managed AI (document analysis, search and chat), cloud history sync, the server-side DATEV export (coming soon), the GoBD capture and change records and the cross-device import register. Read, download and sign it before business data is processed."
+            "description": "Scandora's AVV / Data Processing Agreement (Art. 28 GDPR) for managed AI, cloud sync and GoBD records: read, download and sign it before business use."
         },
         "de": {
             "title": "AVV / DPA — Auftragsverarbeitungsvertrag | Scandora",
-            "description": "Der Scandora-AVV (Art. 28 DSGVO) für verwaltete KI (Dokumentanalyse, Suche und Chat), Cloud-Verlaufssynchronisation, den serverseitigen DATEV-Export (in Vorbereitung), die GoBD-Erfassungs- und Änderungsaufzeichnungen und das geräteübergreifende Importregister. Lesen, herunterladen und unterzeichnen, bevor Geschäftsdaten verarbeitet werden."
+            "description": "Der Scandora-AVV (Art. 28 DSGVO) für verwaltete KI, Cloud-Sync und GoBD-Aufzeichnungen: lesen, herunterladen und vor geschäftlicher Nutzung unterzeichnen."
         }
     },
     "/privacy": {
@@ -636,21 +636,21 @@ const pageMeta = {
     "/terms": {
         "en": {
             "title": "Terms of Service | Scandora",
-            "description": "Scandora's Terms of Service (AGB): your rights and responsibilities when using our AI-powered document scanning app."
+            "description": "Scandora's Terms of Service (AGB): your rights and responsibilities when using our AI-powered document scanning app, from subscriptions to cancellation."
         },
         "de": {
             "title": "Allgemeine Geschäftsbedingungen | Scandora",
-            "description": "Die Scandora-AGB: Ihre Rechte und Pflichten bei der Nutzung unserer KI-gestützten Dokumentenscanner-App."
+            "description": "Die Scandora-AGB: Ihre Rechte und Pflichten bei der Nutzung unserer KI-gestützten Dokumentenscanner-App, von Abonnements bis zur Kündigung."
         }
     },
     "/imprint": {
         "en": {
             "title": "Imprint | Scandora",
-            "description": "Scandora Imprint (Impressum): legal notice and contact information pursuant to § 5 DDG."
+            "description": "Scandora imprint (Impressum): the legal notice under § 5 DDG with the service provider, postal address, contact email, register entry and VAT status."
         },
         "de": {
             "title": "Impressum | Scandora",
-            "description": "Scandora-Impressum: rechtliche Angaben und Kontakt gemäß § 5 DDG."
+            "description": "Scandora-Impressum: Angaben gemäß § 5 DDG mit Diensteanbieter, Anschrift, Kontakt per E-Mail, Registereintrag und Status zur Umsatzsteuer."
         }
     },
     "/report-content": {
@@ -680,7 +680,7 @@ const pageMeta = {
         },
         "de": {
             "title": "Scandora Ratgeber: Scannen, Exporte & Datenschutz | Scandora",
-            "description": "Der Scandora-Ratgeber: Anleitungen und ehrliche Vergleiche zum DATEV-Export (in Vorbereitung), zu GoBD-konformem Scannen, Netzwerkscannern (eSCL) und Scan-to-Trello."
+            "description": "Scandora-Ratgeber: Anleitungen und ehrliche Vergleiche rund um DATEV-Export (in Vorbereitung), GoBD-konformes Scannen, eSCL-Netzwerkscanner und Scan-to-Trello."
         }
     },
     "/blog/datev-export-aus-dem-smartphone": {
@@ -696,7 +696,7 @@ const pageMeta = {
     "/blog/dsgvo-sichere-camscanner-alternative": {
         "en": {
             "title": "A GDPR-safe CamScanner alternative | Scandora",
-            "description": "A GDPR-safe alternative to CamScanner and Microsoft Lens: documents stay on-device, EU hosting, and managed AI."
+            "description": "A GDPR-safe alternative to CamScanner and Microsoft Lens: documents stay on your device by default, with EU hosting and managed AI."
         },
         "de": {
             "title": "DSGVO-sichere CamScanner-Alternative | Scandora",
@@ -786,7 +786,7 @@ const pageMeta = {
     "/help/lexoffice-export": {
         "en": {
             "title": "lexoffice export — coming soon | Scandora Help",
-            "description": "Connecting lexoffice to Scandora with a public API key and a posting category to send scanned vouchers is coming soon."
+            "description": "Connecting lexoffice to Scandora is coming soon: add a public API key and a posting category, then send your scanned vouchers to lexoffice."
         },
         "de": {
             "title": "lexoffice-Export — in Vorbereitung | Scandora Hilfe",
@@ -806,7 +806,7 @@ const pageMeta = {
     "/help/sevdesk-export": {
         "en": {
             "title": "sevDesk export — coming soon | Scandora Help",
-            "description": "Connecting sevDesk to Scandora with your API token to upload scanned vouchers is coming soon."
+            "description": "Connecting sevDesk to Scandora is coming soon: add your API token, confirm the account and upload your scanned vouchers to sevDesk."
         },
         "de": {
             "title": "sevDesk-Export — in Vorbereitung | Scandora Hilfe",
