@@ -15,8 +15,8 @@ const translations = {
         // Hero
         'hero.brandDescriptor': 'AI document scanner',
         'hero.badge': 'GDPR-first · EU servers · No ads',
-        'hero.titleLine1': 'Scan it with Scandora.',
-        'hero.titleLine2': 'Then ask it anything.',
+        'hero.titleLine1': 'Scan documents with Scandora.',
+        'hero.titleLine2': 'Then ask them anything.',
         'hero.lede': 'Scandora is an AI document scanner for iPhone, iPad, Mac and Android whose output you can talk to.',
         'hero.description': 'Scan an invoice with your phone or your real office scanner, then ask it when the invoice is due or what its IBAN is. The AI pulls out supplier, amount, IBAN, due date and to-dos without a template, your files land in your own Google Drive and Trello, and every scan stays searchable on your device. Scandora is GDPR-first, runs on EU servers and carries no ads.',
         'hero.getStarted': 'Get Started Free',
@@ -256,8 +256,8 @@ const translations = {
         // Hero
         'hero.brandDescriptor': 'KI-Dokumentenscanner',
         'hero.badge': 'DSGVO-freundlich · EU-Server · Keine Werbung',
-        'hero.titleLine1': 'Mit Scandora scannen.',
-        'hero.titleLine2': 'Einfach alles fragen.',
+        'hero.titleLine1': 'Mit Scandora Dokumente scannen.',
+        'hero.titleLine2': 'Dann einfach alles fragen.',
         'hero.lede': 'Scandora ist ein KI-Dokumentenscanner für iPhone, iPad, Mac und Android, der Ihre Fragen zum Dokument beantwortet.',
         'hero.description': 'Scannen Sie eine Rechnung mit dem Handy oder Ihrem echten Büroscanner und fragen Sie dann, wann sie fällig ist oder wie die IBAN lautet. Die KI liest Lieferant, Betrag, IBAN, Fälligkeit und To-dos ohne Vorlage aus, Ihre Dateien landen in Ihrem eigenen Google Drive und Trello, und jeder Scan bleibt auf Ihrem Gerät durchsuchbar. Scandora ist DSGVO-freundlich, läuft auf EU-Servern und enthält keine Werbung.',
         'hero.getStarted': 'Kostenlos starten',
@@ -495,12 +495,12 @@ const translations = {
 const pageMeta = {
     "/": {
         "en": {
-            "title": "Scandora — AI Document Scanner for iOS, macOS & Android",
-            "description": "AI document scanner: scan with your phone or a real network scanner, let managed AI extract the data, and send it to Trello & Google Drive."
+            "title": "Scandora — AI document scanner for receipts and invoices",
+            "description": "Scan receipts, invoices and documents, then ask the AI about them. Originals stay on your device and in storage you choose: Google Drive or Trello."
         },
         "de": {
-            "title": "Scandora — KI-Dokumentenscanner für iOS, macOS & Android",
-            "description": "KI-Dokumentenscanner: Belege per Handy oder Netzwerkscanner scannen, verwaltete KI extrahiert die Daten, Versand an Trello & Google Drive."
+            "title": "Scandora — KI-Dokumentenscanner für Belege und Rechnungen",
+            "description": "Belege, Rechnungen und Dokumente scannen und die KI dazu befragen. Originale bleiben auf Ihrem Gerät und im Speicher Ihrer Wahl: Google Drive oder Trello."
         }
     },
     "/vs-camscanner": {
