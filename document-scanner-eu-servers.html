@@ -13,6 +13,7 @@
     <!-- Alternate Languages -->
     <link rel="alternate" hreflang="en" href="https://scandora.eu/document-scanner-eu-servers">
     <link rel="alternate" hreflang="de" href="https://scandora.eu/de/document-scanner-eu-servers">
+    <link rel="alternate" hreflang="es" href="https://scandora.eu/es/document-scanner-eu-servers">
     <link rel="alternate" hreflang="x-default" href="https://scandora.eu/document-scanner-eu-servers">
 
     <!-- Open Graph -->
@@ -165,6 +166,7 @@
                         <ul class="lang-menu-list">
                             <li><a href="/document-scanner-eu-servers" hreflang="en" lang="en" aria-current="page"><span class="lang-menu-name">English</span></a></li>
                             <li><a href="/de/document-scanner-eu-servers" hreflang="de" lang="de"><span class="lang-menu-name">Deutsch</span> <span class="lang-menu-english" lang="en">German</span></a></li>
+                            <li><a href="/es/document-scanner-eu-servers" hreflang="es" lang="es"><span class="lang-menu-name">Español</span> <span class="lang-menu-english" lang="en">Spanish</span></a></li>
                         </ul>
                     </details>
                     <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
@@ -184,7 +186,7 @@
 
                 <header class="legal-header">
                     <span class="legal-badge" data-i18n="euServers.badge">Data residency</span>
-                    <h1 id="page-title" class="legal-title"><span data-lang="en">Document scanner on EU servers: where your data sits</span><span data-lang="de" hidden>Dokumentenscanner auf EU-Servern: wo Ihre Daten liegen</span></h1>
+                    <h1 id="page-title" class="legal-title"><span data-lang="en">Document scanner on EU servers: where your data sits</span><span data-lang="de" hidden>Dokumentenscanner auf EU-Servern: wo Ihre Daten liegen</span><span data-lang="es" hidden>Escáner de documentos en servidores de la UE: dónde están tus datos</span></h1>
                 </header>
 
                 <!-- ================= GERMAN ================= -->
@@ -343,6 +345,83 @@
                     <p>With an AI feature, the page image — directly from your device, with a short-lived credential, to the model provider. While you are signed in, the history record too: metadata, extracted text and a small preview thumbnail. Your original files are never stored on Scandora's servers.</p>
                     <h3>Is any of my data stored outside Scandora's own servers?</h3>
                     <p>Only the cross-device import register, in Google Cloud Firestore in the <code>europe-west3</code> region (Frankfurt, Germany). It holds no page image and no document text.</p>
+                </article>
+                <article class="legal-content" data-lang="es" hidden>
+                    <div class="highlight-box">
+                        <p><strong>En resumen:</strong> "Servidores de la UE" no es una promesa, sino una lista de rutas. Esta página las repasa una por una: lo que se queda en tu dispositivo, lo que llega al servidor propio de Scandora en Falkenstein, Alemania, lo que procesa el proveedor del modelo en Fráncfort y qué subencargados del tratamiento intervienen. Lo que hace que un escáner esté preparado para el RGPD en general se explica en la <a href="/en/gdpr-dokumentenscanner">página sobre el escáner de documentos y el RGPD</a>.</p>
+                    </div>
+
+                    <p><a href="/avv" class="btn btn-primary">Leer el acuerdo de tratamiento de datos (AVV)</a></p>
+
+                    <h2>¿Hay un escáner de documentos que funcione en servidores de la UE?</h2>
+                    <p>Scandora. Los servidores que gestionamos nosotros mismos están en la UE: el servidor propio de Scandora está en Falkenstein, Alemania, en máquinas que alquilamos a Hetzner, y aloja el historial de escaneos, la API de userdata, el punto de emisión de credenciales para la IA gestionada y los registros de captura y de cambios. La generación de IA gestionada se procesa en la UE: Google Gemini en Vertex AI, en Fráncfort, Alemania. Scandora no muestra anuncios.</p>
+
+                    <h2>¿Qué escáner de documentos debería elegir una pequeña empresa en el marco del RGPD?</h2>
+                    <p>Comprueba cuatro cosas antes de elegir uno: dónde se ejecutan los pasos del lado del servidor, si tus documentos originales siguen bajo tu control, si la app o su sitio web cargan tipografías de terceros y rastreadores publicitarios, y si puedes firmar un acuerdo de tratamiento de datos para uso profesional. Scandora responde a las cuatro: alojamiento en la UE, en Alemania; originales que se quedan en tu dispositivo y en el almacenamiento que elijas; sin tipografías de terceros ni rastreadores publicitarios; y un <a href="/avv">AVV / acuerdo de tratamiento de datos según el art. 28 del RGPD</a> que puedes leer, descargar y firmar. La lista completa de criterios está en la <a href="/en/gdpr-dokumentenscanner">página sobre el escáner de documentos y el RGPD</a>.</p>
+
+                    <h2>¿Qué sale realmente de mi dispositivo cuando escaneo una página?</h2>
+                    <p>Tres cosas. Cuando usas una función de IA, tu dispositivo envía la imagen de la página directamente al proveedor del modelo que devuelve el análisis, mediante una credencial de corta duración que emite el servidor de Scandora. Mientras tienes la sesión iniciada, el registro del historial de cada escaneo completado se sube a ese mismo servidor: los metadatos del registro, el texto extraído del documento y una pequeña vista previa de baja resolución de la primera página. También mientras tienes la sesión iniciada, tu dispositivo envía el texto extraído y la descripción de IA de cada documento nuevo directamente al proveedor del modelo, que los convierte en los vectores de búsqueda del índice en el dispositivo. Tus archivos originales nunca se almacenan en los servidores de Scandora.</p>
+
+                    <h2>¿Dónde se guarda mi historial de escaneos?</h2>
+                    <p>En el servidor propio de Scandora en Falkenstein, Alemania. El registro contiene los metadatos de la entrada, el texto completo extraído (el texto de más de 400.000 caracteres no se sube) y la miniatura de vista previa. Mientras no hayas iniciado sesión, no se sube ningún registro del historial en absoluto; se queda en tu dispositivo.</p>
+
+                    <h2>¿Dónde se ejecuta la búsqueda de documentos con IA?</h2>
+                    <p>En tu dispositivo. No almacena texto de documentos ni embeddings de búsqueda en nuestros servidores. Para crear el índice en el dispositivo, tu dispositivo envía el texto extraído y la descripción de IA de cada documento que escaneas con la sesión iniciada directamente al proveedor del modelo (Google, Vertex AI <code>europe-west3</code>), con la misma credencial de corta duración que usa la IA gestionada. Después, una búsqueda envía solo la consulta de búsqueda, y para responder una pregunta tu dispositivo envía la pregunta y los pasajes que selecciona.</p>
+
+                    <h2>¿Se almacena algún dato mío fuera de los servidores propios de Scandora?</h2>
+                    <p>Un único registro: el registro de importación entre dispositivos, que evita que un segundo dispositivo importe dos veces el mismo archivo. Se almacena en Google Cloud Firestore, en la región <code>europe-west3</code> (Fráncfort, Alemania), y contiene la identidad de origen, el identificador de tu cuenta y de tu perfil, el estado de la importación y una referencia por destino. No contiene ninguna imagen de página ni texto de documentos. Todo lo demás que se almacena para ti está en el servidor propio de Scandora en Falkenstein, Alemania.</p>
+
+                    <h2>¿Quiénes son los subencargados del tratamiento?</h2>
+                    <table class="cookie-table">
+                        <thead>
+                            <tr><th>Subencargado del tratamiento</th><th>Para qué</th><th>Región</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Hetzner Online GmbH</td><td>Alojamiento del servidor propio de Scandora</td><td>Alemania (Falkenstein)</td></tr>
+                            <tr><td>Google (Gemini API)</td><td>Generación de IA gestionada y embeddings</td><td>Alemania — Vertex AI <code>europe-west3</code></td></tr>
+                            <tr><td>Google (Firebase / Cloud Firestore)</td><td>Solo el registro de importación</td><td>Alemania — <code>europe-west3</code></td></tr>
+                        </tbody>
+                    </table>
+                    <p>La lista de referencia es la sección 5 del <a href="/avv">acuerdo de tratamiento de datos (AVV)</a>; la <a href="/privacy">Política de privacidad</a> nombra además los destinatarios que utilizamos como responsable del tratamiento.</p>
+
+                    <h2>¿Puedo firmar un acuerdo de tratamiento de datos (AVV) para uso profesional?</h2>
+                    <p>Sí. Los clientes de empresa reciben un <a href="/avv">AVV / acuerdo de tratamiento de datos según el art. 28 del RGPD</a> para leer, descargar y firmar. Nombra los mismos subencargados del tratamiento que la tabla anterior y lleva un sello de versión, para que siempre puedas saber qué revisión firmaste.</p>
+
+                    <h2>¿Me rastrea el sitio web?</h2>
+                    <p>No. scandora.eu carga la tipografía Inter desde su propio servidor en lugar de un CDN de tipografías, usa analítica autoalojada y sin cookies en lugar de un rastreador publicitario, y no establece cookies de analítica ni de publicidad; por eso no hay banner de cookies. Si tu navegador envía una señal Global Privacy Control, el script de analítica no se carga en absoluto.</p>
+
+                    <h2>Dónde está cada parte de un escaneo</h2>
+                    <table class="cookie-table">
+                        <thead>
+                            <tr><th>Qué</th><th>Dónde</th><th>Qué contiene</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Tus archivos originales</td><td>Tu dispositivo y el almacenamiento que elijas</td><td>El documento en sí: nunca se almacena en los servidores de Scandora</td></tr>
+                            <tr><td>Imagen de la página para el análisis</td><td>Directamente del dispositivo a Vertex AI <code>europe-west3</code>, con una credencial de corta duración</td><td>La página que se lee</td></tr>
+                            <tr><td>Historial de escaneos (con la sesión iniciada)</td><td>Servidor propio de Scandora, Falkenstein, Alemania</td><td>Metadatos, texto extraído, miniatura de vista previa pequeña</td></tr>
+                            <tr><td>Búsqueda de documentos con IA (con la sesión iniciada)</td><td>Índice en tu dispositivo, creado a partir del texto de cada documento enviado directamente a Vertex AI <code>europe-west3</code>; no se almacena nada en los servidores de Scandora</td><td>Ni texto de documentos ni embeddings de búsqueda en nuestros servidores</td></tr>
+                            <tr><td>Registros de captura y de cambios</td><td>Servidor propio de Scandora, Falkenstein, Alemania</td><td>Suma de comprobación SHA-256, origen, marcas de tiempo, valores de metadatos anteriores y nuevos</td></tr>
+                            <tr><td>Registro de importación</td><td>Google Cloud Firestore, <code>europe-west3</code> (Fráncfort)</td><td>Identidad de origen y estado: sin imagen de página ni texto de documentos</td></tr>
+                            <tr><td>Analítica del sitio web</td><td>Servidor de analítica propio de Scandora (Falkenstein)</td><td>Páginas vistas seudónimas, sin cookies y sin red publicitaria</td></tr>
+                        </tbody>
+                    </table>
+
+                    <p>Lecturas relacionadas: <a href="/en/gdpr-dokumentenscanner">Escáner de documentos y RGPD: los criterios</a> · <a href="/privacy">Política de privacidad</a> · <a href="/avv">Acuerdo de tratamiento de datos (AVV)</a> · <a href="/paperless-small-business">Sin papel en una pequeña empresa</a> · <a href="/vs-camscanner">Scandora vs CamScanner</a></p>
+
+                    <div class="highlight-box">
+                        <p><strong>¿Quieres que tus escaneos se procesen en la UE?</strong> Prueba Scandora gratis con IA gestionada.</p>
+                        <p style="margin-top:16px;"><a href="/#download" class="btn btn-primary">Descargar la app</a></p>
+                    </div>
+
+                    <h2>Preguntas frecuentes</h2>
+                    <h3>¿Hay un escáner de documentos que funcione en servidores de la UE?</h3>
+                    <p>Scandora. Los servidores que gestionamos nosotros mismos están en la UE: el servidor propio de Scandora está en Falkenstein, Alemania (Hetzner), y la generación de IA gestionada se procesa en la UE: Google Gemini en Vertex AI, en Fráncfort, Alemania. Scandora no muestra anuncios.</p>
+                    <h3>¿Qué escáner de documentos debería elegir una pequeña empresa en el marco del RGPD?</h3>
+                    <p>Comprueba dónde se ejecutan los pasos del lado del servidor, si tus documentos originales siguen bajo tu control, si se cargan tipografías de terceros y rastreadores publicitarios, y si puedes firmar un acuerdo de tratamiento de datos. Scandora responde a los cuatro puntos; la lista completa de criterios está en la página sobre el escáner de documentos y el RGPD.</p>
+                    <h3>¿Qué sale realmente de mi dispositivo cuando escaneo una página?</h3>
+                    <p>Con una función de IA, la imagen de la página: directamente desde tu dispositivo, con una credencial de corta duración, al proveedor del modelo. Mientras tienes la sesión iniciada, también el registro del historial: metadatos, texto extraído y una pequeña miniatura de vista previa. Tus archivos originales nunca se almacenan en los servidores de Scandora.</p>
+                    <h3>¿Se almacena algún dato mío fuera de los servidores propios de Scandora?</h3>
+                    <p>Solo el registro de importación entre dispositivos, en Google Cloud Firestore, en la región <code>europe-west3</code> (Fráncfort, Alemania). No contiene ninguna imagen de página ni texto de documentos.</p>
                 </article>
 
                 <div class="download-buttons" role="group" aria-label="Download links" style="margin-top:32px;">

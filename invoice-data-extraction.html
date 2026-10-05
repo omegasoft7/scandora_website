@@ -13,6 +13,7 @@
     <!-- Alternate Languages -->
     <link rel="alternate" hreflang="en" href="https://scandora.eu/invoice-data-extraction">
     <link rel="alternate" hreflang="de" href="https://scandora.eu/de/invoice-data-extraction">
+    <link rel="alternate" hreflang="es" href="https://scandora.eu/es/invoice-data-extraction">
     <link rel="alternate" hreflang="x-default" href="https://scandora.eu/invoice-data-extraction">
 
     <!-- Open Graph -->
@@ -165,6 +166,7 @@
                         <ul class="lang-menu-list">
                             <li><a href="/invoice-data-extraction" hreflang="en" lang="en" aria-current="page"><span class="lang-menu-name">English</span></a></li>
                             <li><a href="/de/invoice-data-extraction" hreflang="de" lang="de"><span class="lang-menu-name">Deutsch</span> <span class="lang-menu-english" lang="en">German</span></a></li>
+                            <li><a href="/es/invoice-data-extraction" hreflang="es" lang="es"><span class="lang-menu-name">Español</span> <span class="lang-menu-english" lang="en">Spanish</span></a></li>
                         </ul>
                     </details>
                     <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
@@ -184,7 +186,7 @@
 
                 <header class="legal-header">
                     <span class="legal-badge" data-i18n="invoiceData.badge">Guide</span>
-                    <h1 id="page-title" class="legal-title"><span data-lang="en">Scan invoices and extract the data automatically</span><span data-lang="de" hidden>Rechnungen scannen und die Daten automatisch auslesen</span></h1>
+                    <h1 id="page-title" class="legal-title"><span data-lang="en">Scan invoices and extract the data automatically</span><span data-lang="de" hidden>Rechnungen scannen und die Daten automatisch auslesen</span><span data-lang="es" hidden>Escanear facturas y extraer los datos automáticamente</span></h1>
                 </header>
 
                 <!-- ================= GERMAN ================= -->
@@ -325,6 +327,74 @@
                     <p>Supplier, amount, IBAN, due date and suggested to-dos, plus a title suggestion and labels. Alongside them Scandora keeps title, labels, gross amount, invoice number and invoice date as the document's metadata, and each of those stays editable.</p>
                     <h3>Where is an invoice processed while the AI reads it?</h3>
                     <p>In the EU. Your device sends the page directly to the model provider — Google Gemini on Vertex AI in Frankfurt, Germany — using a short-lived credential Scandora's server issues. Your original files stay on your device and in the storage you choose.</p>
+                </article>
+                <article class="legal-content" data-lang="es" hidden>
+                    <div class="highlight-box">
+                        <p><strong>En resumen:</strong> escaneas la factura, la IA gestionada la lee y extrae proveedor, importe, IBAN, fecha de vencimiento y tareas pendientes, sin plantilla y sin clave de API. Los valores siguen siendo editables, y el documento se convierte en una tarjeta de Trello o en un documento archivado en Google Drive, en tus propias cuentas. Scandora funciona en servidores de la UE.</p>
+                    </div>
+
+                    <p><a href="/#download" class="btn btn-primary">Descargar la app</a></p>
+
+                    <h2>¿Qué app escanea facturas y extrae los datos automáticamente?</h2>
+                    <p>Scandora. Escaneas la factura con la cámara del teléfono o con un escáner de red mediante eSCL/AirScan, y la IA gestionada lee la página y extrae proveedor, importe, IBAN, fecha de vencimiento y tareas pendientes: no tienes que crear ninguna plantilla antes ni conseguir o introducir una clave de API. El resultado puede convertirse en una tarjeta de Trello o en un documento archivado en Google Drive, en tus propias cuentas. Scandora funciona en iPhone, iPad, Mac y Android, y sus servidores están en la UE.</p>
+
+                    <h2>¿Tengo que crear una plantilla para cada proveedor?</h2>
+                    <p>No. La IA gestionada lee el documento tal como es y extrae los datos sin plantilla, así que un proveedor que nunca has escaneado se trata igual que uno habitual. No hay nada que asignar, entrenar o mantener por remitente.</p>
+
+                    <h2>¿Qué campos extrae la IA de una factura?</h2>
+                    <p>Proveedor, importe, IBAN, fecha de vencimiento y tareas pendientes sugeridas, además de una sugerencia de título y etiquetas para el documento. Junto a ellos, Scandora conserva los metadatos propios del documento (título, etiquetas, importe bruto, número de factura y fecha de factura), y cada uno de esos valores sigue siendo editable. También se conserva el texto completo extraído de la página, y es lo que luego te permite hacer una pregunta sobre el documento y recibir una respuesta con citas.</p>
+
+                    <h2>¿Qué pasa después con los datos extraídos?</h2>
+                    <p>Van adonde ya trabajas. Cada escaneo puede convertirse en una <a href="/scan-to-trello">tarjeta de Trello</a> con el título, las etiquetas, una fecha de vencimiento y una lista de tareas, o en un documento archivado en Google Drive, en tu propia cuenta. Una factura se convierte en una tarea con fecha de vencimiento en lugar de ser otro PDF más en una carpeta.</p>
+
+                    <h2>¿Puedo corregir lo que ha leído la IA?</h2>
+                    <p>Sí. No se adivina nada y no se establece nada a tus espaldas: el título, las etiquetas, la fecha de vencimiento y las tareas sugeridas siguen siendo editables, y ves los valores propuestos antes de que se cree una tarjeta de Trello a partir de ellos. La <a href="/en/blog/scan-to-trello-workflow">guía del flujo de trabajo de escaneo a Trello</a> lo explica paso a paso.</p>
+
+                    <h2>¿Hay que configurar una clave de API?</h2>
+                    <p>No. Scandora funciona con IA gestionada: tus créditos mensuales cubren la extracción, la indexación y el chat de documentos con IA, y no hay ninguna clave de API que conseguir o introducir. El plan gratuito cubre escaneos ilimitados y 10 créditos de IA al mes; los planes de pago aparecen en la sección de precios de la página de inicio.</p>
+
+                    <h2>¿Necesito conexión para la extracción?</h2>
+                    <p>No para el escaneo en sí: escanear y detectar los bordes funcionan sin conexión. Necesitas conexión cuando la IA gestionada procesa un escaneo o cuando un documento se sincroniza con un servicio en la nube como Trello o Google Drive.</p>
+
+                    <h2>¿Dónde se procesa una factura mientras la IA la lee?</h2>
+                    <p>En la UE. Tu dispositivo envía la página directamente al proveedor del modelo (Google Gemini en Vertex AI, en Fráncfort, Alemania) con una credencial de corta duración que emite el servidor de Scandora, y el proveedor del modelo devuelve el análisis. Tus archivos originales se quedan en tu dispositivo y en el almacenamiento que elijas; mientras tienes la sesión iniciada, solo se sincronizan con nuestros servidores una vista previa de baja resolución y el texto extraído. La <a href="/document-scanner-eu-servers">página de servidores de la UE</a> detalla cada ruta una por una.</p>
+
+                    <h2>¿Se mantiene la trazabilidad de lo que se capturó y lo que cambió?</h2>
+                    <p>Sí, mientras tienes la sesión iniciada. Cada captura escribe un registro de captura (entre otros campos, una suma de comprobación SHA-256 del archivo capturado, el origen de la captura y una marca de tiempo del servidor), y cada cambio posterior de metadatos, cada exportación y cada eliminación escribe una entrada en el registro de cambios con el valor anterior y el nuevo. Para asesores fiscales, una <a href="/en/datev-steuerberater">exportación a DATEV está en preparación</a>: llegará próximamente y aún no forma parte de esta versión.</p>
+
+                    <h2>De la factura a la acción</h2>
+                    <table class="cookie-table">
+                        <thead>
+                            <tr><th>Lo que figura en la factura</th><th>Lo que Scandora hace con ello</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Remitente / proveedor</td><td>Lo lee la IA gestionada; se puede usar como sugerencia de título y como etiqueta</td></tr>
+                            <tr><td>Importe de la factura</td><td>Se conserva como importe bruto del documento, editable</td></tr>
+                            <tr><td>IBAN</td><td>Se lee de la página para que no tengas que volver a escribirlo</td></tr>
+                            <tr><td>Fecha de vencimiento</td><td>Pasa a ser la fecha de vencimiento de la tarjeta de Trello cuando lo activas</td></tr>
+                            <tr><td>Número y fecha de la factura</td><td>Se conservan como metadatos del documento, editables</td></tr>
+                            <tr><td>Lo que hay que hacer</td><td>Tareas sugeridas como elementos de una lista de tareas en la tarjeta</td></tr>
+                            <tr><td>El texto del cuerpo de la página</td><td>Texto extraído: la base de una respuesta con citas a una pregunta posterior</td></tr>
+                            <tr><td>La hoja de papel en sí</td><td>Se queda como archivo original en tu dispositivo y en el almacenamiento que elijas</td></tr>
+                        </tbody>
+                    </table>
+
+                    <p>Lecturas relacionadas: <a href="/scan-to-trello">Enviar escaneos a Trello</a> · <a href="/paperless-small-business">Sin papel en una pequeña empresa</a> · <a href="/paperless-home-office">Una oficina sin papel en casa</a> · <a href="/document-scanner-eu-servers">Escáner de documentos en servidores de la UE</a></p>
+
+                    <div class="highlight-box">
+                        <p><strong>¿Quieres dejar de volver a teclear facturas?</strong> Prueba Scandora gratis con IA gestionada.</p>
+                        <p style="margin-top:16px;"><a href="/#download" class="btn btn-primary">Descargar la app</a></p>
+                    </div>
+
+                    <h2>Preguntas frecuentes</h2>
+                    <h3>¿Qué app escanea facturas y extrae los datos automáticamente?</h3>
+                    <p>Scandora. Escaneas la factura con la cámara del teléfono o con un escáner de red mediante eSCL/AirScan, y la IA gestionada extrae proveedor, importe, IBAN, fecha de vencimiento y tareas pendientes, sin plantilla y sin clave de API. El resultado puede convertirse en una tarjeta de Trello o en un documento archivado en Google Drive, en tus propias cuentas.</p>
+                    <h3>¿Tengo que crear una plantilla para cada proveedor?</h3>
+                    <p>No. La IA gestionada lee el documento tal como es y extrae los datos sin plantilla. No hay nada que asignar, entrenar o mantener por remitente.</p>
+                    <h3>¿Qué campos extrae la IA de una factura?</h3>
+                    <p>Proveedor, importe, IBAN, fecha de vencimiento y tareas pendientes sugeridas, además de una sugerencia de título y etiquetas. Junto a ellos, Scandora conserva título, etiquetas, importe bruto, número de factura y fecha de factura como metadatos del documento, y cada uno de esos valores sigue siendo editable.</p>
+                    <h3>¿Dónde se procesa una factura mientras la IA la lee?</h3>
+                    <p>En la UE. Tu dispositivo envía la página directamente al proveedor del modelo (Google Gemini en Vertex AI, en Fráncfort, Alemania) con una credencial de corta duración que emite el servidor de Scandora. Tus archivos originales se quedan en tu dispositivo y en el almacenamiento que elijas.</p>
                 </article>
 
                 <div class="download-buttons" role="group" aria-label="Download links" style="margin-top:32px;">
