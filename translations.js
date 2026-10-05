@@ -849,6 +849,273 @@ const translations = {
         'scanDropbox.lead': 'Próximamente: enviar los escaneos terminados a tu Dropbox y traer archivos desde allí. Esta conexión aún no está en la app.',
         'scanDropbox.how': 'La compatibilidad con Dropbox llegará próximamente. Inicias sesión con tu cuenta y eliges una carpeta. Scandora envía un escaneo terminado a esa carpeta como un PDF cuyo nombre es el título del documento, y puedes elegir archivos de tu cuenta para traerlos a la app. Nada de esto está aún en la app.',
         'scanDropbox.trademark': 'Dropbox es una marca comercial de Dropbox, Inc. Scandora no está afiliada a Dropbox, Inc.'
+    },
+    'pt-BR': {
+        'language.name': 'Português (Brasil)',
+        'language.englishName': 'Portuguese (Brazil)',
+        'language.locale': 'pt_BR',
+        'language.menu': 'Idioma',
+        'language.search': 'Buscar idiomas',
+        'languageBanner.text': 'Esta página também está disponível em português.',
+        'languageBanner.link': 'Ler em português',
+        'languageBanner.dismiss': 'Fechar',
+
+        'nav.features': 'Recursos',
+        'nav.howItWorks': 'Como funciona',
+        'nav.pricing': 'Preços',
+        'nav.blog': 'Guias',
+        'nav.download': 'Baixar',
+
+        'hero.brandDescriptor': 'Scanner de documentos com IA',
+        'hero.badge': 'GDPR em primeiro lugar · Servidores na UE · Sem anúncios',
+        'hero.titleLine1': 'Escanear documentos com o Scandora.',
+        'hero.titleLine2': 'Depois, pergunte o que quiser.',
+        'hero.lede': 'Scandora é um scanner de documentos com IA para iPhone, iPad, Mac e Android, e você pode conversar com o que ele digitaliza.',
+        'hero.description': 'Escaneie uma fatura com o celular ou com o scanner real do seu escritório e pergunte quando ela vence ou qual é o IBAN dela. A IA extrai fornecedor, valor, IBAN, data de vencimento e tarefas pendentes sem precisar de template, seus arquivos vão para o seu próprio Google Drive e Trello, e cada digitalização pode ser pesquisada no seu dispositivo. O Scandora coloca o GDPR em primeiro lugar, funciona em servidores na UE e não tem anúncios.',
+        'hero.getStarted': 'Comece grátis',
+        'hero.seeHow': 'Veja como funciona',
+        'hero.stat1': 'Pergunte ao seu documento',
+        'hero.stat1sub': 'Respostas a partir da sua digitalização',
+        'hero.stat2': 'A IA lê os detalhes',
+        'hero.stat2sub': 'Fornecedor, valor, IBAN, vencimento',
+        'hero.stat3': 'Sua nuvem, não a nossa',
+        'hero.stat3sub': 'Direto no Drive e no Trello',
+
+        'features.badge': 'O que diferencia o Scandora',
+        'features.title': 'Feito para agir, não só para escanear',
+        'features.description': 'Deixe a IA ler cada documento, conecte um scanner real e transforme cada digitalização em uma tarefa ou em um arquivo sobre os quais você possa agir — com seus dados sob seu controle.',
+        'features.scan.title': 'Celular ou scanner real',
+        'features.scan.desc': 'Escaneie com a câmera do celular ou conecte um scanner de rede real via eSCL/AirScan (como Brother e Epson). Detecção automática de bordas em cada página.',
+        'features.ai.title': 'IA que lê cada documento',
+        'features.ai.desc': 'A IA gerenciada lê cada digitalização e extrai datas, valores e fornecedores para você não precisar digitar manualmente. Os créditos cobrem leitura de dados, indexação e chat com IA — sem chave para gerenciar.',
+        'features.cloud.title': 'Direto no Trello e no Drive',
+        'features.cloud.desc': 'Cada digitalização pode virar um cartão do Trello ou um documento arquivado no Google Drive, conectados às suas próprias contas. Seus documentos viram ações, não apenas PDFs.',
+        'features.search.title': 'Busca inteligente',
+        'features.search.desc': 'Faça uma pergunta à IA e receba uma resposta com citações dos seus próprios documentos, com um link para a fonte usada.',
+        'features.profiles.title': 'Vários perfis',
+        'features.profiles.desc': 'Separe documentos pessoais e comerciais com perfis distintos. Cada um com suas próprias configurações e conexões de nuvem.',
+        'features.privacy.title': 'Seus dados continuam sendo seus',
+        'features.privacy.desc': 'Seus documentos são seus. Não armazenamos seus documentos completos nem as imagens das páginas em nossos servidores — eles vão apenas para o serviço de IA gerenciada que operamos e para os serviços de nuvem que você escolher. Enquanto você estiver com a sessão iniciada, seu histórico de digitalizações é sincronizado com nossos servidores na Alemanha: os detalhes do histórico, uma pequena pré-visualização de baixa resolução e o texto que extraímos das páginas. O Scandora foi projetado com o GoBD e o GDPR em mente.',
+
+        'howItWorks.badge': 'Da digitalização à ação',
+        'howItWorks.title': 'Do papel à ação em três passos',
+        'howItWorks.description': 'Escaneie, deixe a IA gerenciada entender e envie para as suas próprias ferramentas. Suas digitalizações originais ficam no seu dispositivo e no armazenamento que você escolher.',
+        'howItWorks.step1.title': 'Escaneie',
+        'howItWorks.step1.desc': 'Use a câmera do celular ou um scanner de rede (eSCL/AirScan). A detecção automática de bordas mantém cada página limpa.',
+        'howItWorks.step2.title': 'A IA gerenciada entende',
+        'howItWorks.step2.desc': 'A IA gerenciada do Scandora lê o documento, reconhece o tipo e extrai os principais detalhes. Apenas uma pré-visualização de baixa resolução e o texto extraído ficam armazenados em nossos servidores na UE — nunca seus arquivos originais.',
+        'howItWorks.step3.title': 'Vira uma ação',
+        'howItWorks.step3.desc': 'O resultado é sincronizado direto com o seu Trello e o seu Google Drive — um cartão, um documento arquivado, pronto para agir. O Scandora coloca a privacidade em primeiro lugar e vem com recursos de conservação de registros GoBD.',
+
+        'pricing.badge': 'Preços flexíveis',
+        'pricing.title': 'Escolha o plano ideal',
+        'pricing.description': 'Comece grátis e faça upgrade conforme crescer. IA gerenciada e integrações com a nuvem em todos os planos.',
+        'pricing.perMonth': '/mês',
+        'pricing.perYear': '/ano',
+        'pricing.billingMonthly': 'Mensal',
+        'pricing.billingAnnual': 'Anual · economize até 26%',
+        'pricing.popular': 'Mais popular',
+        'pricing.free.name': 'Free',
+        'pricing.free.tagline': 'Para começar',
+        'pricing.free.f1': 'Extração com IA gerenciada (10 créditos por mês)',
+        'pricing.free.f2': 'Digitalizações ilimitadas, páginas ilimitadas',
+        'pricing.free.f3': '10 créditos de IA por mês (1 crédito = 1 análise de documento ou 1 resposta do chat com IA; compartilhados entre leitura de dados, indexação e chat com IA)',
+        'pricing.free.f4': "Exportações sem marca d'água",
+        'pricing.free.f5': 'Integrações com a nuvem (Trello, Google Drive)',
+        'pricing.free.cta': 'Começar',
+        'pricing.pro.name': 'Pro',
+        'pricing.pro.tagline': 'Para profissionais',
+        'pricing.pro.f1': '1.000 créditos de IA por mês (1 crédito = 1 análise de documento ou 1 resposta do chat com IA; compartilhados entre leitura de dados, indexação e chat com IA)',
+        'pricing.pro.f2': 'Suporte a scanners de rede (eSCL/AirScan)',
+        'pricing.pro.f3': 'Chat de documentos com IA e respostas com citações',
+        'pricing.pro.f4': 'Integrações com a nuvem',
+        'pricing.pro.f5': 'Suporte prioritário',
+        'pricing.pro.cta': 'Obter Pro',
+        'pricing.pro.save': 'Economize 26%',
+        'pricing.business.name': 'Business / DATEV',
+        'pricing.business.tagline': 'Para pequenas empresas e consultores tributários',
+        'pricing.business.f1': '5.000 créditos de IA por mês (1 crédito = 1 análise de documento ou 1 resposta do chat com IA; compartilhados entre leitura de dados, indexação e chat com IA)',
+        'pricing.business.f2': 'Exportação DATEV para o seu consultor tributário (em breve)',
+        'pricing.business.f3': 'Exportação de comprovantes para lexoffice e sevDesk (em breve)',
+        'pricing.business.f4': 'Projetado para a conservação de registros conforme GoBD e GDPR',
+        'pricing.business.f5': 'Suporte dedicado',
+        'pricing.business.cta': 'Obter Business',
+        'pricing.business.save': 'Economize 24%',
+        'pricing.byo': '💡 A IA gerenciada cobre leitura de dados, indexação e chat com IA — sem chave de API para configurar.',
+        'pricing.aiSplit.title': 'O que a IA faz por você',
+        'pricing.aiSplit.ownKey': 'A IA lê cada digitalização e extrai datas, valores e fornecedores — isso é coberto pelos seus créditos mensais.',
+        'pricing.aiSplit.scandoraAi': 'O chat de documentos e a busca rodam no seu dispositivo e na IA do Scandora, e consomem créditos do Scandora.',
+        'pricing.priceNote': 'Os preços exibidos na App Store / Google Play são os preços finais de cada produto (pequeno empresário — o IVA não é exibido separadamente, § 19 UStG); com um período de teste, uma oferta introdutória ou promocional, ou uma mudança de plano com cobrança proporcional, o valor efetivamente cobrado pode ser diferente, e o valor que vale é o que a loja informa no seu recibo. Os preços podem variar conforme a região e a loja.',
+
+        'download.title': 'Pronto para perguntar qualquer coisa aos seus documentos?',
+        'download.description': 'Baixe o Scandora, escaneie seu primeiro documento e faça uma pergunta a ele — seus dados continuam sendo seus. Disponível para iOS, macOS e Android.',
+
+        'footer.tagline': 'Digitalização inteligente de documentos para empresas modernas.',
+        'footer.product': 'Produto',
+        'footer.legal': 'Legal',
+        'footer.support': 'Suporte',
+        'footer.privacy': 'Política de Privacidade',
+        'footer.terms': 'Termos de Serviço',
+        'footer.avv': 'AVV / DPA',
+        'footer.imprint': 'Informações legais',
+        'footer.help': 'Central de Ajuda',
+        'footer.contact': 'Fale conosco',
+        'footer.paperlessSmb': 'Sem papel para pequenas empresas',
+        'footer.paperlessHome': 'Escritório sem papel em casa',
+        'footer.invoiceData': 'Extração de dados de faturas',
+        'footer.scanTrello': 'Escanear para o Trello',
+        'footer.euServers': 'Scanner em servidores na UE',
+        'footer.rights': 'Todos os direitos reservados.',
+        'footer.legalNotice': '{imprint}, {terms} e {avv} estão disponíveis em inglês e alemão.',
+
+        'contact.badge': 'Entre em contato',
+        'contact.title': 'Adoraríamos ouvir você',
+        'contact.subtitle': 'Tem uma pergunta, um comentário ou precisa de suporte? Nossa equipe está aqui para ajudar você a aproveitar ao máximo o Scandora.',
+        'contact.formTitle': 'Envie uma mensagem para nós',
+        'contact.formDesc': 'Preencha o formulário abaixo e responderemos em até 24 horas.',
+        'contact.name': 'Nome completo',
+        'contact.email': 'Endereço de e-mail',
+        'contact.subject': 'Assunto',
+        'contact.selectSubject': 'Selecione um assunto',
+        'contact.subjectGeneral': 'Dúvida geral',
+        'contact.subjectSupport': 'Suporte técnico',
+        'contact.subjectSales': 'Vendas e preços',
+        'contact.subjectPartnership': 'Parceria',
+        'contact.subjectFeedback': 'Feedback',
+        'contact.message': 'Sua mensagem',
+        'contact.send': 'Enviar mensagem',
+        'contact.responseTime': 'Tempo de resposta',
+        'contact.responseValue': 'Em até 24 horas',
+        'contact.responseNote': 'De segunda a sexta, das 9h às 18h CET',
+        'contact.quickLinks': 'Links rápidos',
+        'contact.home': 'Página inicial',
+        'contact.viewPricing': 'Ver planos e preços',
+        'contact.downloadApp': 'Baixar o app',
+        'contact.successTitle': 'Mensagem enviada!',
+        'contact.successMessage': 'Obrigado por entrar em contato. Responderemos em até 24 horas.',
+        'contact.successButton': 'Entendi',
+
+        'blog.badge': 'Guia',
+        'blog.backHome': 'Voltar ao início',
+        'blogFileee.badge': 'Comparativo',
+        'blogFileee.backHome': 'Voltar ao início',
+
+        'features.compareFileee': 'Scandora vs Fileee',
+        'features.compareCamscanner': 'Scandora vs CamScanner',
+        'features.privacyGdprLink': 'Scanner de documentos GDPR',
+        'pricing.business.datevLink': 'Para consultores tributários e DATEV →',
+        'pricing.free.paperlessLink': 'Eliminar o papel em uma pequena empresa →',
+        'gdprScanner.badge': 'Digitalização e GDPR',
+        'gdprScanner.backHome': 'Voltar ao início',
+        'vsFileee.badge': 'Comparativo',
+        'vsFileee.backHome': 'Voltar ao início',
+        'vsCamscanner.badge': 'Comparativo',
+        'vsCamscanner.backHome': 'Voltar ao início',
+        'paperlessSmb.badge': 'Guia',
+        'paperlessSmb.backHome': 'Voltar ao início',
+        'paperlessHome.badge': 'Guia',
+        'paperlessHome.backHome': 'Voltar ao início',
+        'invoiceData.badge': 'Guia',
+        'invoiceData.backHome': 'Voltar ao início',
+        'scanTrello.badge': 'Integração',
+        'scanTrello.backHome': 'Voltar ao início',
+        'euServers.badge': 'Residência de dados',
+        'euServers.backHome': 'Voltar ao início',
+        'datevSteuerberater.badge': 'Para consultores tributários',
+        'datevSteuerberater.backHome': 'Voltar ao início',
+        'blogTrello.homepageLink': 'Leia: o fluxo de escanear para o Trello →',
+
+        'calc.badge': 'Tempo economizado',
+        'calc.title': 'Veja quanto tempo você economizaria',
+        'calc.description': 'A IA do Scandora extrai os dados de cada documento para que você não precise digitá-los de novo. Mova o controle deslizante para estimar a digitação manual de dados que você deixaria de fazer a cada mês.',
+        'calc.docsLabel': 'Documentos escaneados por semana',
+        'calc.docsPerWeek': 'documentos/semana',
+        'calc.hoursUnit': 'horas/mês economizadas',
+        'calc.assumption': 'Com base em cerca de 3 minutos de digitação manual de dados economizados por documento.',
+        'calc.cta': 'Comece grátis',
+
+        'faq.badge': 'FAQ',
+        'faq.title': 'Perguntas frequentes',
+        'faq.description': 'Tudo o que você precisa saber sobre o Scandora — digitalização, privacidade, preços e exportação para o DATEV.',
+        'faq.q1': 'O que é o Scandora?',
+        'faq.a1': 'O Scandora é um app de digitalização de documentos com IA que transforma seus documentos em papel em inteligência digital. Ele extrai automaticamente informações importantes, como datas, valores e nomes, e depois sincroniza tudo com seus serviços de nuvem favoritos, como Trello e Google Drive.',
+        'faq.q2': 'O Scandora é gratuito?',
+        'faq.a2': "Sim! O plano gratuito do Scandora inclui digitalizações ilimitadas, 10 créditos de IA por mês (leitura de dados, indexação e chat de documentos com IA), integrações com a nuvem e exportações sem marca d'água. Os planos pagos já estão disponíveis: o Pro (9,99 €/mês ou 89 €/ano) acrescenta uma cota mensal de créditos de IA muito maior e suporte prioritário, e o Business / DATEV (24,99 €/mês ou 229 €/ano) acrescenta 5.000 créditos de IA por mês, suporte dedicado e uma captura projetada para a guarda de registros de acordo com GoBD e GDPR — em breve chega a exportação para DATEV, lexoffice e sevDesk, que ainda não está disponível nesta versão. Os preços exibidos na App Store ou no Google Play são os preços finais de cada produto; com um período de teste, uma oferta introdutória ou promocional ou uma mudança de plano com cobrança proporcional, o valor efetivamente cobrado pode ser diferente, e o valor que a loja informa no seu recibo é o que se aplica.",
+        'faq.q3': 'Em quais plataformas o Scandora funciona?',
+        'faq.a3': 'O Scandora está disponível para iOS, macOS e Android. Você pode escanear documentos com a câmera do celular ou conectar scanners profissionais no computador.',
+        'faq.q4': 'Meus dados estão seguros no Scandora?',
+        'faq.a4': 'A privacidade faz parte do design do Scandora. Suas digitalizações originais ficam no seu dispositivo e só são enviadas diretamente ao Google Gemini, para extração — usando uma credencial de curta duração emitida pelo nosso servidor — e aos serviços de nuvem que você escolher. Para sincronizar seu histórico entre seus dispositivos, armazenamos uma pré-visualização em baixa resolução e o texto extraído em nossos servidores na UE — nunca seus arquivos originais. A busca e o chat de documentos com IA funcionam no seu dispositivo. Para criar o índice de busca, seu dispositivo envia ao Google (Vertex AI na UE) o texto extraído e a descrição de IA de cada documento que você escanear com a sessão iniciada; depois, uma busca envia apenas a consulta, e uma resposta envia apenas a sua pergunta e as passagens em que se baseia. A geração de IA gerenciada é tratada na UE — Google Gemini no Vertex AI em Frankfurt, na Alemanha. Você mantém o controle dos seus dados.',
+        'faq.q5': 'Preciso de uma chave de API própria para usar a IA?',
+        'faq.a5': 'Não. O Scandora funciona com IA gerenciada — seus créditos mensais cobrem a leitura dos documentos, a indexação e o chat com IA. Não existe modo com chave própria, então não há chave de API para obter nem para inserir.',
+        'faq.q6': 'O Scandora está em conformidade com o GDPR?',
+        'faq.a6': 'O Scandora foi projetado levando em conta o GDPR (DSGVO). Suas digitalizações originais ficam no seu dispositivo e no armazenamento que você escolher, os servidores que de fato operamos ficam na UE e não incorporamos rastreadores publicitários de terceiros. Para uso empresarial, fornecemos um acordo de tratamento de dados (AVV; art. 28 do GDPR) que você pode ler, baixar e assinar.',
+        'faq.q7': 'Preciso de conexão com a internet para escanear?',
+        'faq.a7': 'Não. Tanto a digitalização quanto a detecção de bordas funcionam offline. Você só precisa de conexão quando sincroniza um documento com um serviço de nuvem, como Trello ou Google Drive, ou quando a IA gerenciada processa uma digitalização.',
+        'faq.q8': 'O Scandora pode exportar para o DATEV, para o meu consultor tributário?',
+        'faq.a8': 'Em breve. A exportação para o DATEV (um lote de lançamentos EXTF junto com as imagens dos documentos) e a exportação de comprovantes para lexoffice e sevDesk estão em preparação para o plano Business / DATEV e ainda não estão disponíveis nesta versão. O que o app entrega hoje é uma captura projetada para a guarda de registros de acordo com GoBD e GDPR, para pequenas empresas e consultores tributários.',
+        'faq.q9': 'Qual é uma boa solução de digitalização de documentos sem papel para uma pequena empresa?',
+        'faq.a9': 'O Scandora é um scanner de documentos com IA para iPhone, iPad, Mac e Android, criado exatamente para isso. Você escaneia com a câmera do celular ou com um scanner de rede de verdade, a IA gerenciada extrai fornecedor, valor, IBAN e data de vencimento sem precisar de template, e cada digitalização pode ir para o seu próprio Trello e Google Drive. Ele funciona em servidores na UE e não exibe anúncios. O plano gratuito cobre digitalizações ilimitadas e 10 créditos de IA por mês, então uma empresa de uma única pessoa pode começar sem gastar nada.',
+        'faq.q10': 'Qual app de scanner de documentos funciona com um scanner de escritório de verdade, e não só com a câmera do celular?',
+        'faq.a10': 'O Scandora funciona. Você pode escanear com a câmera do celular ou trazer páginas de um scanner de rede por eSCL/AirScan — dispositivos Brother e Epson, por exemplo. A detecção automática de bordas é executada em cada página, e tanto a digitalização quanto a detecção de bordas funcionam offline.',
+        'faq.q11': 'Como parar de digitar de novo os dados das minhas faturas e recibos?',
+        'faq.a11': 'Deixe a IA gerenciada ler as faturas e os recibos. A IA do Scandora extrai fornecedor, valor, IBAN, data de vencimento e tarefas pendentes de cada digitalização sem precisar de template, então não há nada para digitar à mão. A partir daí, a digitalização pode virar um cartão do Trello ou um documento arquivado no Google Drive, nas suas próprias contas, o que transforma o documento em algo em que você pode agir, em vez de mais um PDF.',
+        'faq.q12': 'Posso fazer perguntas sobre meus próprios documentos escaneados e receber uma resposta com a fonte?',
+        'faq.a12': 'Sim. Faça uma pergunta à IA e você recebe uma resposta com citações, baseada nos seus próprios documentos, com um link para a fonte usada. O chat de documentos faz parte de todos os planos e gasta os mesmos créditos de IA mensais que a leitura dos dados. A recuperação de trechos é executada no seu dispositivo, sobre um índice de busca no dispositivo, que ele cria enviando ao Google o texto extraído e a descrição de IA de cada documento que você escanear com a sessão iniciada; depois, uma resposta envia a sua pergunta e os trechos que ela seleciona, diretamente ao Google — nunca seus arquivos originais.',
+        'faq.q13': 'Posso manter documentos pessoais e comerciais separados em um único app de scanner?',
+        'faq.a13': 'Sim. O Scandora tem vários perfis, para que você separe documentos pessoais e comerciais. Cada perfil tem suas próprias configurações e suas próprias conexões com a nuvem.',
+        'faq.q14': 'Existe um scanner de documentos com acordo de tratamento de dados (AVV) para uso empresarial?',
+        'faq.a14': 'Sim. Para uso empresarial, o Scandora fornece um acordo de tratamento de dados (AVV; art. 28 do GDPR) que você pode ler, baixar e assinar. O próprio app foi projetado levando em conta o GDPR (DSGVO): suas digitalizações originais ficam no seu dispositivo e no armazenamento que você escolher, os servidores que de fato operamos ficam na UE e não incorporamos rastreadores publicitários de terceiros.',
+
+        'footer.reportContent': 'Denunciar conteúdo ilegal',
+        'footer.accessibility': 'Acessibilidade',
+
+        'nav.careers': 'Carreiras',
+        'footer.careers': 'Carreiras',
+        'careers.backHome': 'Voltar ao início',
+        'careers.badge': 'Carreiras',
+        'careers.title': 'Construa o Scandora conosco',
+        'careers.subtitle': 'Somos uma empresa pequena que prioriza o trabalho remoto e desenvolve o Scandora, um scanner de documentos com IA. Os documentos dos clientes ficam na UE, e o trabalho também.',
+        'careers.openRoles': 'Vagas abertas',
+        'careers.responsibilities': 'O que você faria',
+        'careers.requirements': 'O que procuramos',
+        'careers.apply': 'Candidate-se por e-mail',
+        'careers.howTitle': 'Como se candidatar',
+        'careers.howBody': 'Escreva para jobs@scandora.eu com uma nota curta, um currículo ou um link do seu perfil, e indique a vaga no assunto. Sem formulário, sem conta, sem rastreamento.',
+        'careers.emptyTitle': 'Nenhuma vaga aberta no momento',
+        'careers.emptyBody': 'No momento, nenhuma vaga está anunciada. Se você acha que se encaixa aqui mesmo assim, escreva para nós — lemos todas as mensagens.',
+        'careers.generalTitle': 'Nenhuma dessas vagas combina com você?',
+        'careers.generalBody': 'Envie uma nota curta sobre o que você faz e um link para algo que você criou. Lemos todas as candidaturas.',
+        'careers.generalApply': 'Enviar uma candidatura espontânea',
+
+        'footer.comingSoon': 'Em breve',
+        'footer.scanNextcloud': 'Escanear para o Nextcloud (em breve)',
+        'footer.scanOneDrive': 'Escanear para o OneDrive (em breve)',
+        'footer.scanDropbox': 'Escanear para o Dropbox (em breve)',
+        'comingSoon.backHome': 'Voltar ao início',
+        'comingSoon.badge': 'Em breve',
+        'comingSoon.howTitle': 'O que estamos construindo',
+        'comingSoon.interestTitle': 'Você quer isso?',
+        'comingSoon.interestBody': 'Um clique nos avisa. Não há formulário nem campo de e-mail, e o clique não define nenhum cookie.',
+        'comingSoon.interestButton': 'Avise-nos que você quer isso',
+        'comingSoon.interestThanks': 'Obrigado, anotamos. Não há mais nada a fazer.',
+        'comingSoon.interestPrivate': 'Obrigado. A configuração de privacidade do seu navegador desliga nosso contador de visitantes, então este clique não foi contado. Não há mais nada a fazer.',
+        'comingSoon.interestUncounted': 'Obrigado. Este clique não foi contado. Não há mais nada a fazer.',
+        'comingSoon.alsoLead': 'Veja também:',
+        'comingSoon.todayLead': 'Disponível hoje no app:',
+        'comingSoon.todayTrello': 'escanear para o Trello',
+        'comingSoon.todayDrive': 'e para o Google Drive.',
+        'scanNextcloud.title': 'Escanear para o Nextcloud — em breve',
+        'scanNextcloud.lead': 'Em breve: enviar as digitalizações concluídas para o seu Nextcloud e trazer arquivos de lá. Esta conexão ainda não está no app.',
+        'scanNextcloud.how': 'O suporte ao Nextcloud chega em breve. Você informa o endereço do seu servidor, seu nome de usuário e uma senha de aplicativo, e pode indicar uma pasta de destino. O Scandora envia uma digitalização concluída para essa pasta como um PDF com o título do documento como nome, e você pode escolher arquivos do seu servidor para trazer ao app. Nada disso está no app ainda.',
+        'scanNextcloud.trademark': 'Nextcloud é uma marca comercial da Nextcloud GmbH. O Scandora não é afiliado à Nextcloud GmbH.',
+        'scanOneDrive.title': 'Escanear para o OneDrive — em breve',
+        'scanOneDrive.lead': 'Em breve: enviar as digitalizações concluídas para o seu OneDrive e trazer arquivos de lá. Esta conexão ainda não está no app.',
+        'scanOneDrive.how': 'O suporte ao OneDrive chega em breve. Você entra com sua conta e escolhe uma pasta. O Scandora envia uma digitalização concluída para essa pasta como um PDF com o título do documento como nome, e você pode escolher arquivos da sua conta para trazer ao app. Nada disso está no app ainda.',
+        'scanOneDrive.trademark': 'OneDrive é uma marca comercial do grupo de empresas Microsoft. O Scandora não é afiliado à Microsoft.',
+        'scanDropbox.title': 'Escanear para o Dropbox — em breve',
+        'scanDropbox.lead': 'Em breve: enviar as digitalizações concluídas para o seu Dropbox e trazer arquivos de lá. Esta conexão ainda não está no app.',
+        'scanDropbox.how': 'O suporte ao Dropbox chega em breve. Você entra com sua conta e escolhe uma pasta. O Scandora envia uma digitalização concluída para essa pasta como um PDF com o título do documento como nome, e você pode escolher arquivos da sua conta para trazer ao app. Nada disso está no app ainda.',
+        'scanDropbox.trademark': 'Dropbox é uma marca comercial da Dropbox, Inc. O Scandora não é afiliado à Dropbox, Inc.'
     }
 };
 
@@ -869,6 +1136,10 @@ const pageMeta = {
         "es": {
             "title": "Scandora — escáner de documentos para recibos y facturas",
             "description": "Escanea recibos, facturas y documentos y pregunta a la IA sobre ellos. Los originales se quedan en tu dispositivo y en Google Drive o Trello, según elijas."
+        },
+        "pt-BR": {
+            "title": "Scandora — scanner de documentos para recibos e faturas",
+            "description": "Escaneie recibos, faturas e documentos e pergunte à IA sobre eles. Os originais ficam no dispositivo e no armazenamento de sua escolha: Google Drive ou Trello."
         }
     },
     "/vs-camscanner": {
@@ -883,6 +1154,10 @@ const pageMeta = {
         "es": {
             "title": "Scandora vs CamScanner: comparativa honesta | Scandora",
             "description": "Scandora vs CamScanner con datos verificables: desarrollador, ubicación de los datos, IA gestionada, escáneres de red y exportación a DATEV próximamente."
+        },
+        "pt-BR": {
+            "title": "Scandora vs CamScanner: uma comparação honesta | Scandora",
+            "description": "Scandora vs CamScanner com fatos verificáveis: quem desenvolve cada um, local dos dados, IA gerenciada, suporte a scanner de rede e exportação DATEV em breve."
         }
     },
     "/paperless-small-business": {
@@ -897,6 +1172,10 @@ const pageMeta = {
         "es": {
             "title": "Escaneo sin papel para una pequeña empresa | Scandora",
             "description": "Cómo ir sin papel en una pequeña empresa: escanea con teléfono o escáner de red, la IA gestionada lee cada documento y los archivos llegan a tu Trello y Drive."
+        },
+        "pt-BR": {
+            "title": "Digitalização sem papel para uma pequena empresa | Scandora",
+            "description": "Como uma pequena empresa fica sem papel: escaneie no celular ou scanner de rede, a IA gerenciada lê cada documento e arquivos vão ao seu Trello e Google Drive."
         }
     },
     "/paperless-home-office": {
@@ -911,6 +1190,10 @@ const pageMeta = {
         "es": {
             "title": "Una solución de oficina sin papel para el hogar | Scandora",
             "description": "Oficina sin papel en casa: escanea la correspondencia con teléfono o escáner Wi-Fi, que la IA gestionada lea cada página y separa lo personal y lo laboral."
+        },
+        "pt-BR": {
+            "title": "Uma solução de escritório sem papel para casa | Scandora",
+            "description": "Escritório sem papel em casa: escaneie a correspondência com o celular ou scanner Wi-Fi, a IA gerenciada lê cada página e você separa o pessoal do trabalho."
         }
     },
     "/invoice-data-extraction": {
@@ -925,6 +1208,10 @@ const pageMeta = {
         "es": {
             "title": "Escanear facturas y extraer datos automáticamente | Scandora",
             "description": "Una app que escanea facturas y lee sus datos: la IA gestionada extrae proveedor, importe, IBAN y vencimiento, para una tarjeta de Trello o un archivo de Drive."
+        },
+        "pt-BR": {
+            "title": "Escaneie faturas e extraia dados automaticamente | Scandora",
+            "description": "Um app que escaneia faturas e lê os dados: a IA gerenciada extrai fornecedor, valor, IBAN e vencimento, prontos para um cartão do Trello ou arquivo do Drive."
         }
     },
     "/scan-to-trello": {
@@ -939,6 +1226,10 @@ const pageMeta = {
         "es": {
             "title": "Escáner de documentos con exportación a Trello | Scandora",
             "description": "Escáner de documentos que crea una tarjeta de Trello por escaneo en tu tablero: PDF adjunto, título leído por IA, etiquetas, vencimiento y lista de tareas."
+        },
+        "pt-BR": {
+            "title": "Scanner de documentos que exporta para o Trello | Scandora",
+            "description": "Scanner de documentos que gera um cartão do Trello por digitalização no seu quadro, com PDF anexado, título lido pela IA, etiquetas, vencimento e checklist."
         }
     },
     "/scan-to-nextcloud": {
@@ -953,6 +1244,10 @@ const pageMeta = {
         "es": {
             "title": "Escanear a Nextcloud (próximamente) | Scandora",
             "description": "Escanear a Nextcloud llegará próximamente a Scandora: enviar escaneos terminados a una carpeta de tu Nextcloud y traer archivos de allí. Aún no está en la app."
+        },
+        "pt-BR": {
+            "title": "Escanear para Nextcloud (em breve) | Scandora",
+            "description": "Escanear para Nextcloud chega em breve ao Scandora: envie digitalizações prontas para uma pasta do seu Nextcloud e traga arquivos de lá. Ainda não está no app."
         }
     },
     "/scan-to-onedrive": {
@@ -967,6 +1262,10 @@ const pageMeta = {
         "es": {
             "title": "Escanear a OneDrive (próximamente) | Scandora",
             "description": "Escanear a OneDrive llegará próximamente a Scandora: enviar escaneos terminados a una carpeta de tu OneDrive y traer archivos de allí. Aún no está en la app."
+        },
+        "pt-BR": {
+            "title": "Escanear para OneDrive (em breve) | Scandora",
+            "description": "Escanear para OneDrive chega em breve ao Scandora: envie digitalizações prontas para uma pasta do seu OneDrive e traga arquivos de lá. Ainda não está no app."
         }
     },
     "/scan-to-dropbox": {
@@ -981,6 +1280,10 @@ const pageMeta = {
         "es": {
             "title": "Escanear a Dropbox (próximamente) | Scandora",
             "description": "Escanear a Dropbox llegará próximamente a Scandora: enviar escaneos terminados a una carpeta de tu Dropbox y traer archivos de allí. Aún no está en la app."
+        },
+        "pt-BR": {
+            "title": "Escanear para Dropbox (em breve) | Scandora",
+            "description": "Escanear para Dropbox chega em breve ao Scandora: envie digitalizações prontas para uma pasta do seu Dropbox e traga arquivos de lá. Ainda não está no app."
         }
     },
     "/document-scanner-eu-servers": {
@@ -995,6 +1298,10 @@ const pageMeta = {
         "es": {
             "title": "Escáner en servidores de la UE: dónde están tus datos",
             "description": "Qué llega a un servidor, qué queda en tu dispositivo y dónde se procesa: servidores propios de Scandora en Falkenstein, Alemania, y IA gestionada en Fráncfort."
+        },
+        "pt-BR": {
+            "title": "Scanner em servidores da UE: onde ficam os dados | Scandora",
+            "description": "O que vai ao servidor, o que fica no dispositivo e onde são tratados: servidores próprios do Scandora em Falkenstein, Alemanha, e IA gerenciada em Frankfurt."
         }
     },
     "/vs-fileee": {
@@ -1009,6 +1316,10 @@ const pageMeta = {
         "es": {
             "title": "Scandora vs Fileee: comparativa honesta | Scandora",
             "description": "Scandora vs Fileee con funciones verificables: desarrollador, IA gestionada, almacenamiento, escáneres de red y exportación a DATEV próximamente."
+        },
+        "pt-BR": {
+            "title": "Scandora vs Fileee: uma comparação honesta | Scandora",
+            "description": "Scandora vs Fileee com recursos verificáveis: quem desenvolve cada um, IA gerenciada, armazenamento de documentos, scanners de rede e exportação DATEV em breve."
         }
     },
     "/contact": {
@@ -1023,6 +1334,10 @@ const pageMeta = {
         "es": {
             "title": "Contacto con Scandora | Ponte en contacto",
             "description": "Escribe a Scandora para consultas de soporte, de ventas o sobre posibles colaboraciones. Solemos responder en un plazo de 24 horas, de lunes a viernes."
+        },
+        "pt-BR": {
+            "title": "Contato com o Scandora | Fale conosco",
+            "description": "Entre em contato com o Scandora para suporte, consultas de vendas ou oportunidades de parceria. Costumamos responder em até 24 horas, de segunda a sexta-feira."
         }
     },
     "/careers": {
@@ -1037,6 +1352,10 @@ const pageMeta = {
         "es": {
             "title": "Empleo en Scandora | Puestos abiertos",
             "description": "Puestos abiertos en Scandora, escáner de documentos con IA: Flutter, backend TypeScript, alojamiento en la UE y contenido bilingüe. Escribe a jobs@scandora.eu."
+        },
+        "pt-BR": {
+            "title": "Carreiras no Scandora | Vagas abertas",
+            "description": "Vagas no Scandora, scanner de documentos com IA: Flutter, backend TypeScript, hospedagem na UE e conteúdo bilíngue. Candidate-se por e-mail: jobs@scandora.eu."
         }
     },
     "/gdpr-dokumentenscanner": {
@@ -1081,6 +1400,10 @@ const pageMeta = {
         "es": {
             "title": "Política de privacidad | Scandora",
             "description": "Política de privacidad de Scandora: cómo nuestro enfoque centrado en la privacidad y el dispositivo protege tus datos y mantiene tus documentos bajo tu control."
+        },
+        "pt-BR": {
+            "title": "Política de Privacidade | Scandora",
+            "description": "Política de Privacidade do Scandora: como nossa abordagem centrada na privacidade e no dispositivo protege seus dados e mantém seus documentos sob seu controle."
         }
     },
     "/terms": {
