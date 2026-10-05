@@ -11,8 +11,8 @@
     <link rel="canonical" href="https://scandora.eu/paperless-small-business">
 
     <!-- Alternate Languages -->
-    <link rel="alternate" hreflang="de" href="https://scandora.eu/paperless-small-business?lang=de">
     <link rel="alternate" hreflang="en" href="https://scandora.eu/paperless-small-business">
+    <link rel="alternate" hreflang="de" href="https://scandora.eu/de/paperless-small-business">
     <link rel="alternate" hreflang="x-default" href="https://scandora.eu/paperless-small-business">
 
     <!-- Open Graph -->
@@ -160,7 +160,13 @@
                     <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
                 </div>
                 <div class="nav-actions">
-                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
+                    <details class="lang-menu">
+                        <summary class="lang-toggle"><span class="sr-only" data-i18n="language.menu">Language</span> <span id="lang-indicator">EN</span></summary>
+                        <ul class="lang-menu-list">
+                            <li><a href="/paperless-small-business" hreflang="en" lang="en" aria-current="page"><span class="lang-menu-name">English</span></a></li>
+                            <li><a href="/de/paperless-small-business" hreflang="de" lang="de"><span class="lang-menu-name">Deutsch</span> <span class="lang-menu-english" lang="en">German</span></a></li>
+                        </ul>
+                    </details>
                     <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
@@ -299,7 +305,7 @@
                         </tbody>
                     </table>
 
-                    <p>Related reading: <a href="/paperless-home-office">A paperless office at home</a> · <a href="/invoice-data-extraction">Extract invoice data automatically</a> · <a href="/scan-to-trello">Send scans to Trello</a> · <a href="/document-scanner-eu-servers">Document scanner on EU servers</a> · <a href="/gdpr-dokumentenscanner">GDPR document scanner</a> · <a href="/vs-camscanner">Scandora vs CamScanner</a> · <a href="/vs-fileee">Scandora vs Fileee</a> · <a href="/datev-steuerberater">For tax advisors: DATEV export (coming soon)</a></p>
+                    <p>Related reading: <a href="/paperless-home-office">A paperless office at home</a> · <a href="/invoice-data-extraction">Extract invoice data automatically</a> · <a href="/scan-to-trello">Send scans to Trello</a> · <a href="/document-scanner-eu-servers">Document scanner on EU servers</a> · <a href="/en/gdpr-dokumentenscanner">GDPR document scanner</a> · <a href="/vs-camscanner">Scandora vs CamScanner</a> · <a href="/vs-fileee">Scandora vs Fileee</a> · <a href="/en/datev-steuerberater">For tax advisors: DATEV export (coming soon)</a></p>
 
                     <div class="highlight-box">
                         <p><strong>Ready to go paperless?</strong> Try Scandora free with managed AI.</p>
@@ -358,7 +364,7 @@
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.support">Support</h4>
-                        <a href="/help/" data-i18n="footer.help">Help Center</a>
+                        <a href="/en/help/" data-i18n="footer.help">Help Center</a>
                         <a href="/contact" data-i18n="footer.contact">Contact Us</a>
                         <a href="/careers" data-i18n="footer.careers">Careers</a>
                     </div>

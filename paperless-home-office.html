@@ -11,8 +11,8 @@
     <link rel="canonical" href="https://scandora.eu/paperless-home-office">
 
     <!-- Alternate Languages -->
-    <link rel="alternate" hreflang="de" href="https://scandora.eu/paperless-home-office?lang=de">
     <link rel="alternate" hreflang="en" href="https://scandora.eu/paperless-home-office">
+    <link rel="alternate" hreflang="de" href="https://scandora.eu/de/paperless-home-office">
     <link rel="alternate" hreflang="x-default" href="https://scandora.eu/paperless-home-office">
 
     <!-- Open Graph -->
@@ -160,7 +160,13 @@
                     <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
                 </div>
                 <div class="nav-actions">
-                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
+                    <details class="lang-menu">
+                        <summary class="lang-toggle"><span class="sr-only" data-i18n="language.menu">Language</span> <span id="lang-indicator">EN</span></summary>
+                        <ul class="lang-menu-list">
+                            <li><a href="/paperless-home-office" hreflang="en" lang="en" aria-current="page"><span class="lang-menu-name">English</span></a></li>
+                            <li><a href="/de/paperless-home-office" hreflang="de" lang="de"><span class="lang-menu-name">Deutsch</span> <span class="lang-menu-english" lang="en">German</span></a></li>
+                        </ul>
+                    </details>
                     <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
@@ -263,7 +269,7 @@
                     <p>Scandora is an AI document scanner for iPhone, iPad, Mac and Android. You photograph the post with your phone camera, managed AI reads the page and pulls out supplier, amount, IBAN and due date without a template, and each scan can land in your own Google Drive or Trello. The free plan covers unlimited scans, 10 AI credits a month, cloud integrations and watermark-free exports, so a household can go paperless without spending anything. It runs on EU servers and carries no ads.</p>
 
                     <h2>Do I need to buy a scanner for a paperless home office?</h2>
-                    <p>No. A phone camera is enough, and automatic edge detection crops every page. If there is already a Wi-Fi printer or scanner in the house, Scandora can pull pages in from it over eSCL/AirScan — the protocol Brother and Epson devices speak — so the hardware you own keeps working. The <a href="/help/escl-setup">network scanner setup page</a> and the <a href="/blog/netzwerkscanner-escl-einrichten">eSCL guide</a> walk through it step by step.</p>
+                    <p>No. A phone camera is enough, and automatic edge detection crops every page. If there is already a Wi-Fi printer or scanner in the house, Scandora can pull pages in from it over eSCL/AirScan — the protocol Brother and Epson devices speak — so the hardware you own keeps working. The <a href="/en/help/escl-setup">network scanner setup page</a> and the <a href="/en/blog/netzwerkscanner-escl-einrichten">eSCL guide</a> walk through it step by step.</p>
 
                     <h2>What happens to a letter after you scan it?</h2>
                     <p>Managed AI reads it. It pulls out dates, amounts and senders — supplier, amount, IBAN, due date and to-dos — without you building a template first. Your monthly credits cover extraction, indexing and AI document chat, and there is no API key to obtain or enter.</p>
@@ -303,7 +309,7 @@
                         </tbody>
                     </table>
 
-                    <p>Related reading: <a href="/paperless-small-business">Paperless in a small business</a> · <a href="/invoice-data-extraction">Extract invoice data automatically</a> · <a href="/scan-to-trello">Send scans to Trello</a> · <a href="/document-scanner-eu-servers">Document scanner on EU servers</a> · <a href="/gdpr-dokumentenscanner">GDPR document scanner</a></p>
+                    <p>Related reading: <a href="/paperless-small-business">Paperless in a small business</a> · <a href="/invoice-data-extraction">Extract invoice data automatically</a> · <a href="/scan-to-trello">Send scans to Trello</a> · <a href="/document-scanner-eu-servers">Document scanner on EU servers</a> · <a href="/en/gdpr-dokumentenscanner">GDPR document scanner</a></p>
 
                     <div class="highlight-box">
                         <p><strong>Ready to go paperless at home?</strong> Try Scandora free with managed AI.</p>
@@ -367,8 +373,8 @@
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.support">Support</h4>
-                        <a href="/help/" data-i18n="footer.help">Help Center</a>
-                        <a href="/blog/" data-i18n="nav.blog">Guides</a>
+                        <a href="/en/help/" data-i18n="footer.help">Help Center</a>
+                        <a href="/en/blog/" data-i18n="nav.blog">Guides</a>
                         <a href="/contact" data-i18n="footer.contact">Contact Us</a>
                         <a href="/careers" data-i18n="footer.careers">Careers</a>
                     </div>

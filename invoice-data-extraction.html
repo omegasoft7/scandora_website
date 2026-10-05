@@ -11,8 +11,8 @@
     <link rel="canonical" href="https://scandora.eu/invoice-data-extraction">
 
     <!-- Alternate Languages -->
-    <link rel="alternate" hreflang="de" href="https://scandora.eu/invoice-data-extraction?lang=de">
     <link rel="alternate" hreflang="en" href="https://scandora.eu/invoice-data-extraction">
+    <link rel="alternate" hreflang="de" href="https://scandora.eu/de/invoice-data-extraction">
     <link rel="alternate" hreflang="x-default" href="https://scandora.eu/invoice-data-extraction">
 
     <!-- Open Graph -->
@@ -160,7 +160,13 @@
                     <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
                 </div>
                 <div class="nav-actions">
-                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
+                    <details class="lang-menu">
+                        <summary class="lang-toggle"><span class="sr-only" data-i18n="language.menu">Language</span> <span id="lang-indicator">EN</span></summary>
+                        <ul class="lang-menu-list">
+                            <li><a href="/invoice-data-extraction" hreflang="en" lang="en" aria-current="page"><span class="lang-menu-name">English</span></a></li>
+                            <li><a href="/de/invoice-data-extraction" hreflang="de" lang="de"><span class="lang-menu-name">Deutsch</span> <span class="lang-menu-english" lang="en">German</span></a></li>
+                        </ul>
+                    </details>
                     <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
@@ -272,7 +278,7 @@
                     <p>It goes where you already work. Each scan can become a <a href="/scan-to-trello">Trello card</a> carrying the title, the labels, a due date and a checklist, or a filed Google Drive document in your own account. A bill turns into a task with a due date rather than another PDF in a folder.</p>
 
                     <h2>Can I correct what the AI read?</h2>
-                    <p>Yes. Nothing is guessed and nothing is set behind your back: the title, the labels, the due date and the suggested tasks all stay editable, and you see the proposed values before a Trello card is created from them. The <a href="/blog/scan-to-trello-workflow">scan-to-Trello workflow guide</a> walks through that step by step.</p>
+                    <p>Yes. Nothing is guessed and nothing is set behind your back: the title, the labels, the due date and the suggested tasks all stay editable, and you see the proposed values before a Trello card is created from them. The <a href="/en/blog/scan-to-trello-workflow">scan-to-Trello workflow guide</a> walks through that step by step.</p>
 
                     <h2>Is there an API key to set up?</h2>
                     <p>No. Scandora runs on managed AI — your monthly credits cover extraction, indexing and AI document chat, and there is no API key to obtain or enter. The free plan covers unlimited scans and 10 AI credits a month; the plans that cost money are listed in the pricing section of the homepage.</p>
@@ -284,7 +290,7 @@
                     <p>In the EU. Your device sends the page directly to the model provider — Google Gemini on Vertex AI in Frankfurt, Germany — using a short-lived credential Scandora's server issues, and the model provider returns the analysis. Your original files stay on your device and in the storage you choose; while you are signed in, only a low-resolution preview and the extracted text sync to our servers. The <a href="/document-scanner-eu-servers">EU servers page</a> sets out each path one by one.</p>
 
                     <h2>Does it stay traceable what was captured and what changed?</h2>
-                    <p>Yes, while you are signed in. Every capture writes a capture record — a SHA-256 checksum of the captured file, the capture source and a server timestamp among other fields — and every later metadata change, export and deletion writes a change-log entry with the old and the new value. For tax advisors a <a href="/datev-steuerberater">DATEV export is in preparation</a>; it is coming soon and not available in this version yet.</p>
+                    <p>Yes, while you are signed in. Every capture writes a capture record — a SHA-256 checksum of the captured file, the capture source and a server timestamp among other fields — and every later metadata change, export and deletion writes a change-log entry with the old and the new value. For tax advisors a <a href="/en/datev-steuerberater">DATEV export is in preparation</a>; it is coming soon and not available in this version yet.</p>
 
                     <h2>From the invoice to an action</h2>
                     <table class="cookie-table">
@@ -367,8 +373,8 @@
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.support">Support</h4>
-                        <a href="/help/" data-i18n="footer.help">Help Center</a>
-                        <a href="/blog/" data-i18n="nav.blog">Guides</a>
+                        <a href="/en/help/" data-i18n="footer.help">Help Center</a>
+                        <a href="/en/blog/" data-i18n="nav.blog">Guides</a>
                         <a href="/contact" data-i18n="footer.contact">Contact Us</a>
                         <a href="/careers" data-i18n="footer.careers">Careers</a>
                     </div>

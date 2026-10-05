@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-default-lang="de" lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+<html lang="de" dir="ltr" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
@@ -11,15 +11,15 @@
     <link rel="canonical" href="https://scandora.eu/blog/gobd-konform-scannen">
 
     <!-- Alternate Languages -->
-    <link rel="alternate" hreflang="de" href="https://scandora.eu/blog/gobd-konform-scannen?lang=de">
-    <link rel="alternate" hreflang="en" href="https://scandora.eu/blog/gobd-konform-scannen">
-    <link rel="alternate" hreflang="x-default" href="https://scandora.eu/blog/gobd-konform-scannen">
+    <link rel="alternate" hreflang="en" href="https://scandora.eu/en/blog/gobd-konform-scannen">
+    <link rel="alternate" hreflang="de" href="https://scandora.eu/blog/gobd-konform-scannen">
+    <link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/blog/gobd-konform-scannen">
 
     <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://scandora.eu/blog/gobd-konform-scannen">
-    <meta property="og:title" content="GoBD-konform scannen: ersetzendes Scannen mit Scandora">
-    <meta property="og:description" content="Was „GoBD-konform scannen“ bedeutet — und welche technischen Anforderungen Scandora mit Inhalts-Hash, Änderungsprotokoll und Erfassungszeitstempel abdeckt.">
+    <meta property="og:title" content="GoBD-konform scannen: ersetzendes Scannen | Scandora">
+    <meta property="og:description" content="Was „GoBD-konform scannen“ bedeutet und welche Anforderungen Scandora mit Inhalts-Hash, Änderungsprotokoll und Zeitstempel abdeckt. Kein GoBD-Siegel.">
     <meta property="og:image" content="https://scandora.eu/assets/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -30,8 +30,8 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="GoBD-konform scannen mit Scandora">
-    <meta name="twitter:description" content="Ersetzendes Scannen: was die GoBD verlangt und welche Anforderungen Scandora technisch abdeckt.">
+    <meta name="twitter:title" content="GoBD-konform scannen: ersetzendes Scannen | Scandora">
+    <meta name="twitter:description" content="Was „GoBD-konform scannen“ bedeutet und welche Anforderungen Scandora mit Inhalts-Hash, Änderungsprotokoll und Zeitstempel abdeckt. Kein GoBD-Siegel.">
     <meta name="twitter:image" content="https://scandora.eu/assets/og-image.png">
 
     <!-- Favicons -->
@@ -99,15 +99,21 @@
     <header role="banner">
         <nav class="navbar" role="navigation" aria-label="Main navigation">
             <div class="container nav-container">
-                <a href="/" class="logo" aria-label="Scandora Home"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
+                <a href="/de/" class="logo" aria-label="Scandora Home"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
                 <div class="nav-links" role="menubar">
-                    <a href="/#features" role="menuitem" data-i18n="nav.features">Features</a>
-                    <a href="/#how-it-works" role="menuitem" data-i18n="nav.howItWorks">How It Works</a>
-                    <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
+                    <a href="/de/#features" role="menuitem" data-i18n="nav.features">Funktionen</a>
+                    <a href="/de/#how-it-works" role="menuitem" data-i18n="nav.howItWorks">So funktioniert es</a>
+                    <a href="/de/#pricing" role="menuitem" data-i18n="nav.pricing">Preise</a>
                 </div>
                 <div class="nav-actions">
-                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
-                    <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
+                    <details class="lang-menu">
+                        <summary class="lang-toggle"><span class="sr-only" data-i18n="language.menu">Sprache</span> <span id="lang-indicator">DE</span></summary>
+                        <ul class="lang-menu-list">
+                            <li><a href="/blog/gobd-konform-scannen" hreflang="de" lang="de" aria-current="page"><span class="lang-menu-name">Deutsch</span> <span class="lang-menu-english" lang="en">German</span></a></li>
+                            <li><a href="/en/blog/gobd-konform-scannen" hreflang="en" lang="en"><span class="lang-menu-name">English</span></a></li>
+                        </ul>
+                    </details>
+                    <a href="/de/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
             </div>
@@ -117,19 +123,19 @@
     <main id="main-content" role="main">
         <section class="legal-page" aria-labelledby="article-title">
             <div class="legal-container">
-                <a href="/" class="back-home">
+                <a href="/de/" class="back-home">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-                    <span data-i18n="blog.backHome">Back to Home</span>
+                    <span data-i18n="blog.backHome">Zur Startseite</span>
                 </a>
 
                 <header class="legal-header">
-                    <span class="legal-badge" data-i18n="blog.badge">Guide</span>
-                    <h1 id="article-title" class="legal-title"><span data-lang="en">Scanning for GoBD: scan-and-shred with Scandora</span><span data-lang="de" hidden>GoBD-konform scannen mit Scandora</span></h1>
-                    <p class="legal-meta"><span data-lang="en">Published: <time datetime="2026-07-13">July 13, 2026</time></span><span data-lang="de" hidden>Veröffentlicht: <time datetime="2026-07-13">13. Juli 2026</time></span></p>
+                    <span class="legal-badge" data-i18n="blog.badge">Ratgeber</span>
+                    <h1 id="article-title" class="legal-title"><span data-lang="en" hidden>Scanning for GoBD: scan-and-shred with Scandora</span><span data-lang="de">GoBD-konform scannen mit Scandora</span></h1>
+                    <p class="legal-meta"><span data-lang="en" hidden>Published: <time datetime="2026-07-13">July 13, 2026</time></span><span data-lang="de">Veröffentlicht: <time datetime="2026-07-13">13. Juli 2026</time></span></p>
                 </header>
 
                 <!-- ================= GERMAN (DE-first) ================= -->
-                <article class="legal-content" data-lang="de" hidden>
+                <article class="legal-content" data-lang="de">
                     <div class="highlight-box">
                         <p><strong>Kurz gesagt:</strong> „GoBD-konform scannen“ heißt: Ihre digitalen Belege sind unveränderbar, nachvollziehbar und über eine dokumentierte Vorgehensweise erfasst — die Grundlage dafür, Papieroriginale nach dem Scannen zu vernichten (ersetzendes Scannen). Scandora liefert dafür die technischen Bausteine: einen <strong>Inhalts-Hash</strong>, einen <strong>serverseitig gesetzten Erfassungszeitstempel</strong> und ein <strong>unveränderbares Änderungsprotokoll</strong>; die <strong>Verfahrensdokumentation</strong> kommt demnächst und ist in dieser Version noch nicht verfügbar. Die GoBD-Konformität Ihrer gesamten Buchführung hängt zusätzlich von Ihrer Archivierung, Ihren Aufbewahrungsfristen und der Prüfung durch Ihren Steuerberater ab. Scandora führt <strong>kein GoBD-Siegel</strong> — ein solches gibt es nicht — und diese Seite ist keine Rechts- oder Steuerberatung.</p>
                     </div>
@@ -164,7 +170,7 @@
                     <ul>
                         <li><strong>Unveränderbarer Erfassungsdatensatz.</strong> Beim Erfassen eines Dokuments speichert Scandora einen einmalig schreibbaren Datensatz mit einem <strong>Inhalts-Hash (SHA-256)</strong> des finalisierten Dokuments und einem <strong>vertrauenswürdigen, serverseitig gesetzten Erfassungszeitstempel</strong> — nicht die Uhrzeit des Geräts und getrennt von den bearbeitbaren Metadaten. So bleibt der Erfassungsnachweis auch dann bestehen, wenn Sie später Datum, Betrag oder Notizen korrigieren.</li>
                         <li><strong>Integrität prüfen.</strong> Eine Aktion „Integrität prüfen“ berechnet den Hash des aufbewahrten Dokuments neu und vergleicht ihn mit dem gespeicherten Wert — so ist belegbar, dass die Datei seit der Erfassung unverändert ist.</li>
-                        <li><strong>Unveränderbares Änderungsprotokoll.</strong> Dokumentereignisse — Erfassung, Metadaten-Änderungen (mit Vorher/Nachher der geänderten Felder), Exporte und Löschung — werden als anhängende Einträge mit Akteur und Server-Zeitstempel festgehalten. Bestehende Einträge werden nicht überschrieben; die einzige Ausnahme ist die Ersetzung bei einer Kontolöschung, die unsere <a href="/privacy#de-data-collection">Datenschutzerklärung</a> in Abschnitt 2 beschreibt. So bleibt der Verlauf nachvollziehbar.</li>
+                        <li><strong>Unveränderbares Änderungsprotokoll.</strong> Dokumentereignisse — Erfassung, Metadaten-Änderungen (mit Vorher/Nachher der geänderten Felder), Exporte und Löschung — werden als anhängende Einträge mit Akteur und Server-Zeitstempel festgehalten. Bestehende Einträge werden nicht überschrieben; die einzige Ausnahme ist die Ersetzung bei einer Kontolöschung, die unsere <a href="/de/privacy#de-data-collection">Datenschutzerklärung</a> in Abschnitt 2 beschreibt. So bleibt der Verlauf nachvollziehbar.</li>
                         <li><strong>Verfahrensdokumentation.</strong> Scandora wird eine Verfahrensdokumentation als PDF erzeugen (demnächst), automatisch befüllt aus Ihren tatsächlichen Profil-, Scanner- und Integrationseinstellungen — die dokumentierte Grundlage für das ersetzende Scannen.</li>
                     </ul>
 
@@ -184,7 +190,7 @@
 
                     <div class="highlight-box">
                         <p><strong>Bereit für digitale Belege, denen Ihr Steuerberater vertrauen kann?</strong> Die geführte Aufbereitung für den Steuerberater und der DATEV-Export sind für den Tarif Business / DATEV in Vorbereitung und in dieser Version noch nicht verfügbar. Die Datenverarbeitung ist im <a href="/avv">AVV / DPA</a> geregelt.</p>
-                        <p style="margin-top:16px;"><a href="/#pricing" class="btn btn-primary">Business / DATEV-Tarif ansehen</a></p>
+                        <p style="margin-top:16px;"><a href="/de/#pricing" class="btn btn-primary">Business / DATEV-Tarif ansehen</a></p>
                     </div>
 
                     <h2 id="faq">Häufige Fragen</h2>
@@ -201,7 +207,7 @@
                 </article>
 
                 <!-- ================= ENGLISH ================= -->
-                <article class="legal-content" data-lang="en">
+                <article class="legal-content" data-lang="en" hidden>
                     <div class="highlight-box">
                         <p><strong>In short:</strong> “Scanning for GoBD” means your digital receipts are immutable, traceable, and captured through a documented process — the basis for destroying paper originals after scanning (ersetzendes Scannen). Scandora provides the technical building blocks for this: a <strong>content hash</strong>, a <strong>server-set capture timestamp</strong> and an <strong>immutable audit log</strong>; the <strong>Verfahrensdokumentation</strong> is coming soon and is not available in this version yet. The GoBD compliance of your whole bookkeeping also depends on your archiving, your retention periods, and your tax advisor's review. Scandora carries <strong>no GoBD seal</strong> — there is none — and this page is not legal or tax advice.</p>
                     </div>
@@ -280,35 +286,35 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="/" class="logo"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
-                    <p data-i18n="footer.tagline">Intelligent document scanning for modern businesses.</p>
+                    <a href="/de/" class="logo"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
+                    <p data-i18n="footer.tagline">Intelligentes Dokumentenscannen für moderne Unternehmen.</p>
                 </div>
                 <nav class="footer-links" role="navigation" aria-label="Footer navigation">
                     <div class="footer-col">
-                        <h4 data-i18n="footer.product">Product</h4>
-                        <a href="/#features" data-i18n="nav.features">Features</a>
-                        <a href="/#pricing" data-i18n="nav.pricing">Pricing</a>
-                        <a href="/#download" data-i18n="nav.download">Download</a>
+                        <h4 data-i18n="footer.product">Produkt</h4>
+                        <a href="/de/#features" data-i18n="nav.features">Funktionen</a>
+                        <a href="/de/#pricing" data-i18n="nav.pricing">Preise</a>
+                        <a href="/de/#download" data-i18n="nav.download">Download</a>
                     </div>
                     <div class="footer-col">
-                        <h4 data-i18n="footer.legal">Legal</h4>
-                        <a href="/privacy" data-i18n="footer.privacy">Privacy Policy</a>
-                        <a href="/terms" data-i18n="footer.terms">Terms of Service</a>
+                        <h4 data-i18n="footer.legal">Rechtliches</h4>
+                        <a href="/de/privacy" data-i18n="footer.privacy">Datenschutzrichtlinie</a>
+                        <a href="/terms" data-i18n="footer.terms">Nutzungsbedingungen</a>
                         <a href="/avv" data-i18n="footer.avv">AVV / DPA</a>
-                        <a href="/imprint" data-i18n="footer.imprint">Imprint</a>
-                        <a href="/report-content" data-i18n="footer.reportContent">Report Illegal Content</a>
-                        <a href="/accessibility" data-i18n="footer.accessibility">Accessibility</a>
+                        <a href="/imprint" data-i18n="footer.imprint">Impressum</a>
+                        <a href="/report-content" data-i18n="footer.reportContent">Rechtswidrige Inhalte melden</a>
+                        <a href="/accessibility" data-i18n="footer.accessibility">Barrierefreiheit</a>
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.support">Support</h4>
-                        <a href="/help/" data-i18n="footer.help">Help Center</a>
-                        <a href="/contact" data-i18n="footer.contact">Contact Us</a>
-                        <a href="/careers" data-i18n="footer.careers">Careers</a>
+                        <a href="/help/" data-i18n="footer.help">Hilfe-Center</a>
+                        <a href="/de/contact" data-i18n="footer.contact">Kontakt</a>
+                        <a href="/de/careers" data-i18n="footer.careers">Karriere</a>
                     </div>
                 </nav>
             </div>
             <div class="footer-bottom">
-                <p><small>© 2026 Scandora. <span data-i18n="footer.rights">All rights reserved.</span></small></p>
+                <p><small>© 2026 Scandora. <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span></small></p>
             </div>
         </div>
     </footer>

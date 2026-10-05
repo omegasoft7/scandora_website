@@ -7,6 +7,9 @@
     'use strict';
 
     const APPLE_PROVIDER_TOKEN = '121188983';
+    const LANGUAGE_STORAGE_KEY = 'scandora-lang';
+    const LANGUAGE_SEARCH_THRESHOLD = 8;
+    const FOLDED_LETTERS = { 'ß': 'ss', 'æ': 'ae', 'œ': 'oe', 'ø': 'o', 'ł': 'l', 'đ': 'd', 'ð': 'd', 'þ': 'th', 'ı': 'i' };
 
     // Run once the DOM is ready
     function init() {
@@ -20,6 +23,8 @@
         initContactForm();
         initAnalyticsTracking(); // Umami event tracking
         initIntegrationInterest();
+        initLanguageMenu();
+        initLanguageBanner();
         consoleBranding();
     }
 
@@ -202,11 +207,6 @@
 
         slider.addEventListener('input', calcTimeSaved);
         calcTimeSaved();
-
-        const langToggle = document.querySelector('.lang-toggle');
-        if (langToggle) {
-            langToggle.addEventListener('click', calcTimeSaved);
-        }
     }
 
     // ============================================
@@ -364,6 +364,206 @@
             });
         });
     }
+
+    // ============================================
+    // LANGUAGE MENU AND BROWSER-LANGUAGE BANNER
+    // ============================================
+
+    function foldLanguageText(text) {
+        return String(text || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+            .replace(/[ßæœøłđðþı]/g, letter => FOLDED_LETTERS[letter]);
+    }
+
+    function languageMatchesQuery(language, query) {
+        const needle = foldLanguageText(String(query || '').trim());
+        if (!needle) return true;
+        return [language.name, language.englishName, language.code].some(field => {
+            const folded = foldLanguageText(field);
+            return folded.startsWith(needle) || folded.split(/[\s()\-_,./]+/).some(word => word.startsWith(needle));
+        });
+    }
+
+    function languageSearchNeeded(count) {
+        return count > LANGUAGE_SEARCH_THRESHOLD;
+    }
+
+    function matchLanguageTag(tag, codes) {
+        const normalized = String(tag || '').trim().toLowerCase().replace(/_/g, '-');
+        if (!normalized) return null;
+        const exact = codes.find(code => code.toLowerCase() === normalized);
+        if (exact) return exact;
+        const primary = normalized.split('-')[0];
+        return codes.find(code => code.toLowerCase().split('-')[0] === primary) || null;
+    }
+
+    function browserLanguageTags(nav) {
+        if (!nav) return [];
+        if (nav.languages && nav.languages.length) return Array.from(nav.languages);
+        return nav.language ? [nav.language] : [];
+    }
+
+    function suggestedLanguageOrder(languages, current, browserTags) {
+        const codes = languages.map(language => language.code);
+        const leading = [];
+        [current].concat(browserTags.map(tag => matchLanguageTag(tag, codes))).forEach(code => {
+            if (code && codes.includes(code) && !leading.includes(code)) leading.push(code);
+        });
+        const byCode = code => languages.find(language => language.code === code);
+        const rest = languages
+            .filter(language => !leading.includes(language.code))
+            .sort((a, b) => {
+                const left = foldLanguageText(a.name);
+                const right = foldLanguageText(b.name);
+                return left < right ? -1 : left > right ? 1 : 0;
+            });
+        return leading.map(byCode).concat(rest);
+    }
+
+    function bannerLanguage(options) {
+        if (options.storedLanguage) return null;
+        const codes = Object.keys(options.versions || {});
+        for (const tag of options.browserTags || []) {
+            const match = matchLanguageTag(tag, codes);
+            if (match) return match === options.pageLanguage ? null : match;
+        }
+        return null;
+    }
+
+    function readLanguageChoice() {
+        try {
+            return window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
+        } catch (error) {
+            return null;
+        }
+    }
+
+    function rememberLanguage(code) {
+        try {
+            window.localStorage.setItem(LANGUAGE_STORAGE_KEY, code);
+        } catch (error) {
+            return;
+        }
+    }
+
+    function languageStrings() {
+        return typeof translations === 'undefined' ? null : translations;
+    }
+
+    function addLanguageSearch(menu, list, entries) {
+        const strings = languageStrings();
+        const copy = strings && strings[document.documentElement.lang];
+        const search = document.createElement('input');
+        search.type = 'search';
+        search.className = 'lang-menu-search';
+        const label = copy ? copy['language.search'] : '';
+        search.setAttribute('aria-label', label);
+        search.placeholder = label;
+        search.addEventListener('input', () => {
+            entries.forEach(entry => {
+                entry.item.hidden = !languageMatchesQuery(entry, search.value);
+            });
+        });
+        menu.insertBefore(search, list);
+    }
+
+    function initLanguageMenu() {
+        document.querySelectorAll('.lang-menu').forEach(menu => {
+            const list = menu.querySelector('.lang-menu-list');
+            if (!list) return;
+            const entries = Array.from(list.querySelectorAll('li')).map(item => {
+                const link = item.querySelector('a[hreflang]');
+                const name = item.querySelector('.lang-menu-name');
+                const english = item.querySelector('.lang-menu-english');
+                return {
+                    item: item,
+                    link: link,
+                    code: link ? link.getAttribute('hreflang') : '',
+                    name: name ? name.textContent : '',
+                    englishName: english ? english.textContent : (name ? name.textContent : '')
+                };
+            }).filter(entry => entry.link);
+            const current = entries.find(entry => entry.link.getAttribute('aria-current') === 'page');
+            const currentCode = current ? current.code : document.documentElement.lang;
+            suggestedLanguageOrder(entries, currentCode, browserLanguageTags(window.navigator))
+                .forEach(entry => list.appendChild(entry.item));
+            entries.forEach(entry => {
+                entry.link.addEventListener('click', () => {
+                    rememberLanguage(entry.code);
+                    trackEvent('language_switch', {
+                        from_language: document.documentElement.lang,
+                        to_language: entry.code
+                    });
+                });
+            });
+            if (languageSearchNeeded(entries.length)) {
+                addLanguageSearch(menu, list, entries);
+            }
+            menu.addEventListener('keydown', event => {
+                if (event.key === 'Escape' && menu.open) {
+                    menu.open = false;
+                    const summary = menu.querySelector('summary');
+                    if (summary) summary.focus();
+                }
+            });
+            document.addEventListener('click', event => {
+                if (menu.open && !menu.contains(event.target)) menu.open = false;
+            });
+        });
+    }
+
+    function initLanguageBanner() {
+        const strings = languageStrings();
+        if (!strings || !document.body) return;
+        const versions = {};
+        document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(link => {
+            const code = link.getAttribute('hreflang');
+            if (code !== 'x-default') versions[code] = link.getAttribute('href');
+        });
+        const current = document.documentElement.lang;
+        const target = bannerLanguage({
+            pageLanguage: current,
+            versions: versions,
+            browserTags: browserLanguageTags(window.navigator),
+            storedLanguage: readLanguageChoice()
+        });
+        const copy = target && strings[target];
+        if (!copy || !copy['languageBanner.text'] || !copy['languageBanner.link']) return;
+
+        const banner = document.createElement('div');
+        banner.className = 'lang-banner';
+        banner.setAttribute('role', 'region');
+        banner.setAttribute('aria-label', copy['language.name']);
+        banner.setAttribute('lang', target);
+        const text = document.createElement('p');
+        text.textContent = copy['languageBanner.text'] + ' ';
+        const link = document.createElement('a');
+        link.href = versions[target];
+        link.setAttribute('hreflang', target);
+        link.textContent = copy['languageBanner.link'];
+        link.addEventListener('click', () => rememberLanguage(target));
+        text.appendChild(link);
+        const close = document.createElement('button');
+        close.type = 'button';
+        close.className = 'lang-banner-close';
+        close.setAttribute('aria-label', copy['languageBanner.dismiss']);
+        close.textContent = '×';
+        close.addEventListener('click', () => {
+            rememberLanguage(target);
+            banner.remove();
+        });
+        banner.appendChild(text);
+        banner.appendChild(close);
+        document.body.appendChild(banner);
+    }
+
+    window.scandoraLanguages = {
+        foldLanguageText: foldLanguageText,
+        languageMatchesQuery: languageMatchesQuery,
+        languageSearchNeeded: languageSearchNeeded,
+        matchLanguageTag: matchLanguageTag,
+        suggestedLanguageOrder: suggestedLanguageOrder,
+        bannerLanguage: bannerLanguage
+    };
 
     // ============================================
     // CONTACT FORM HANDLING

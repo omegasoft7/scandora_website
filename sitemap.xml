@@ -6,9 +6,9 @@
   <url>
     <loc>https://scandora.eu/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/"/>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -19,325 +19,580 @@
   </url>
   <url>
     <loc>https://scandora.eu/accessibility</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/accessibility"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/accessibility?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/accessibility"/>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://scandora.eu/avv</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/avv"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/avv?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/avv"/>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://scandora.eu/belege-scannen-app</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/blog/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/blog/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/blog/"/>
-    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/blog/"/>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://scandora.eu/blog/datev-export-aus-dem-smartphone</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/blog/datev-export-aus-dem-smartphone"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/datev-export-aus-dem-smartphone?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/blog/datev-export-aus-dem-smartphone"/>
-    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/blog/datev-export-aus-dem-smartphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/datev-export-aus-dem-smartphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/blog/datev-export-aus-dem-smartphone"/>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/blog/dsgvo-sichere-camscanner-alternative</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/blog/dsgvo-sichere-camscanner-alternative"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/dsgvo-sichere-camscanner-alternative?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/blog/dsgvo-sichere-camscanner-alternative"/>
-    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/blog/dsgvo-sichere-camscanner-alternative"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/dsgvo-sichere-camscanner-alternative"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/blog/dsgvo-sichere-camscanner-alternative"/>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/blog/gobd-konform-scannen</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/blog/gobd-konform-scannen"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/gobd-konform-scannen?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/blog/gobd-konform-scannen"/>
-    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/blog/gobd-konform-scannen"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/gobd-konform-scannen"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/blog/gobd-konform-scannen"/>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/blog/netzwerkscanner-escl-einrichten</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/blog/netzwerkscanner-escl-einrichten"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/netzwerkscanner-escl-einrichten?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/blog/netzwerkscanner-escl-einrichten"/>
-    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/blog/netzwerkscanner-escl-einrichten"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/netzwerkscanner-escl-einrichten"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/blog/netzwerkscanner-escl-einrichten"/>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/blog/scan-to-trello-workflow</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/blog/scan-to-trello-workflow"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/scan-to-trello-workflow?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/blog/scan-to-trello-workflow"/>
-    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/blog/scan-to-trello-workflow"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/scan-to-trello-workflow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/blog/scan-to-trello-workflow"/>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/blog/scandora-vs-fileee</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/blog/scandora-vs-fileee"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/scandora-vs-fileee?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/blog/scandora-vs-fileee"/>
-    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/blog/scandora-vs-fileee"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/scandora-vs-fileee"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/blog/scandora-vs-fileee"/>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/careers</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/careers"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/careers?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/careers"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/careers"/>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://scandora.eu/contact</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/contact"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/contact?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/contact"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/contact"/>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://scandora.eu/datev-steuerberater</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/datev-steuerberater"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/datev-steuerberater?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/datev-steuerberater"/>
-    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/datev-steuerberater"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/datev-steuerberater"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/datev-steuerberater"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/de/careers</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/careers"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/careers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/careers"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/de/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/contact"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/de/document-scanner-eu-servers</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/document-scanner-eu-servers"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/document-scanner-eu-servers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/document-scanner-eu-servers"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/de/invoice-data-extraction</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/invoice-data-extraction"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/invoice-data-extraction"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/invoice-data-extraction"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/de/paperless-home-office</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/paperless-home-office"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/paperless-home-office"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/paperless-home-office"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/de/paperless-small-business</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/paperless-small-business"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/paperless-small-business"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/paperless-small-business"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/de/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/privacy"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/de/scan-to-dropbox</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/scan-to-dropbox"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/scan-to-dropbox"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/scan-to-dropbox"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/de/scan-to-nextcloud</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/scan-to-nextcloud"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/scan-to-nextcloud"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/scan-to-nextcloud"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/de/scan-to-onedrive</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/scan-to-onedrive"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/scan-to-onedrive"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/scan-to-onedrive"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/de/scan-to-trello</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/scan-to-trello"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/scan-to-trello"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/scan-to-trello"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/de/vs-camscanner</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/vs-camscanner"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/vs-camscanner"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/vs-camscanner"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/de/vs-fileee</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/vs-fileee"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/vs-fileee"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/vs-fileee"/>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/document-scanner-eu-servers</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/document-scanner-eu-servers"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/document-scanner-eu-servers?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/document-scanner-eu-servers"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/document-scanner-eu-servers"/>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://scandora.eu/en/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/blog/"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/en/blog/datev-export-aus-dem-smartphone</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/blog/datev-export-aus-dem-smartphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/datev-export-aus-dem-smartphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/blog/datev-export-aus-dem-smartphone"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/en/blog/dsgvo-sichere-camscanner-alternative</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/blog/dsgvo-sichere-camscanner-alternative"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/dsgvo-sichere-camscanner-alternative"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/blog/dsgvo-sichere-camscanner-alternative"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/en/blog/gobd-konform-scannen</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/blog/gobd-konform-scannen"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/gobd-konform-scannen"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/blog/gobd-konform-scannen"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/en/blog/netzwerkscanner-escl-einrichten</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/blog/netzwerkscanner-escl-einrichten"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/netzwerkscanner-escl-einrichten"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/blog/netzwerkscanner-escl-einrichten"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/en/blog/scan-to-trello-workflow</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/blog/scan-to-trello-workflow"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/scan-to-trello-workflow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/blog/scan-to-trello-workflow"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/en/blog/scandora-vs-fileee</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/blog/scandora-vs-fileee"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/scandora-vs-fileee"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/blog/scandora-vs-fileee"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/en/datev-steuerberater</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/datev-steuerberater"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/datev-steuerberater"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/datev-steuerberater"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/en/gdpr-dokumentenscanner</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/gdpr-dokumentenscanner"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/gdpr-dokumentenscanner"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/gdpr-dokumentenscanner"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/en/help/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/help/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/help/"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/en/help/datev-export</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/help/datev-export"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/datev-export"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/help/datev-export"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/en/help/escl-setup</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/help/escl-setup"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/escl-setup"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/help/escl-setup"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/en/help/gobd-scope</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/help/gobd-scope"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/gobd-scope"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/help/gobd-scope"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/en/help/lexoffice-export</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/help/lexoffice-export"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/lexoffice-export"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/help/lexoffice-export"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/en/help/managed-ai</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/help/managed-ai"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/managed-ai"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/help/managed-ai"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://scandora.eu/en/help/sevdesk-export</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/help/sevdesk-export"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/sevdesk-export"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/help/sevdesk-export"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://scandora.eu/gdpr-dokumentenscanner</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/gdpr-dokumentenscanner"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/gdpr-dokumentenscanner?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/gdpr-dokumentenscanner"/>
-    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/gdpr-dokumentenscanner"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/gdpr-dokumentenscanner"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/gdpr-dokumentenscanner"/>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/help/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/help/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/help/"/>
-    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/help/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/help/"/>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://scandora.eu/help/datev-export</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/help/datev-export"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/datev-export?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/help/datev-export"/>
-    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/help/datev-export"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/datev-export"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/help/datev-export"/>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://scandora.eu/help/escl-setup</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/help/escl-setup"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/escl-setup?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/help/escl-setup"/>
-    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/help/escl-setup"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/escl-setup"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/help/escl-setup"/>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://scandora.eu/help/gobd-scope</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/help/gobd-scope"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/gobd-scope?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/help/gobd-scope"/>
-    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/help/gobd-scope"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/gobd-scope"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/help/gobd-scope"/>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://scandora.eu/help/lexoffice-export</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/help/lexoffice-export"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/lexoffice-export?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/help/lexoffice-export"/>
-    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/help/lexoffice-export"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/lexoffice-export"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/help/lexoffice-export"/>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://scandora.eu/help/managed-ai</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/help/managed-ai"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/managed-ai?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/help/managed-ai"/>
-    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/help/managed-ai"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/managed-ai"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/help/managed-ai"/>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://scandora.eu/help/sevdesk-export</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/help/sevdesk-export"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/sevdesk-export?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/help/sevdesk-export"/>
-    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/help/sevdesk-export"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/help/sevdesk-export"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/help/sevdesk-export"/>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://scandora.eu/imprint</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/imprint"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/imprint?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/imprint"/>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://scandora.eu/invoice-data-extraction</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/invoice-data-extraction"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/invoice-data-extraction?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/invoice-data-extraction"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/invoice-data-extraction"/>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/paperless-home-office</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/paperless-home-office"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/paperless-home-office?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/paperless-home-office"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/paperless-home-office"/>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/paperless-small-business</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/paperless-small-business"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/paperless-small-business?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/paperless-small-business"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/paperless-small-business"/>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/privacy</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/privacy"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/privacy?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/privacy"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/privacy"/>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://scandora.eu/receipt-scanner</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/report-content</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/report-content"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/report-content?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/report-content"/>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://scandora.eu/scan-to-dropbox</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/scan-to-dropbox"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/scan-to-dropbox?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/scan-to-dropbox"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/scan-to-dropbox"/>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/scan-to-google-drive</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/scan-to-nextcloud</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/scan-to-nextcloud"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/scan-to-nextcloud?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/scan-to-nextcloud"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/scan-to-nextcloud"/>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/scan-to-onedrive</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/scan-to-onedrive"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/scan-to-onedrive?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/scan-to-onedrive"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/scan-to-onedrive"/>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/scan-to-trello</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/scan-to-trello"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/scan-to-trello?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/scan-to-trello"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/scan-to-trello"/>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/terms</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/terms"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/terms?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/terms"/>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://scandora.eu/vs-camscanner</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/vs-camscanner"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/vs-camscanner?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/vs-camscanner"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/vs-camscanner"/>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scandora.eu/vs-fileee</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/vs-fileee"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/vs-fileee?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/de/vs-fileee"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/vs-fileee"/>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

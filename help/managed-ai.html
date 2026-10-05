@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-default-lang="de" lang="en" dir="ltr">
+<html lang="de" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
@@ -9,19 +9,19 @@
     <meta name="description" content="So funktioniert die verwaltete KI von Scandora: Prepaid-Credits, was ein Credit abdeckt, monatliches Kontingent, Aufladungen und wo verarbeitet wird.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://scandora.eu/help/managed-ai">
-    <link rel="alternate" hreflang="en" href="https://scandora.eu/help/managed-ai">
-    <link rel="alternate" hreflang="de" href="https://scandora.eu/help/managed-ai?lang=de">
-    <link rel="alternate" hreflang="x-default" href="https://scandora.eu/help/managed-ai">
+    <link rel="alternate" hreflang="en" href="https://scandora.eu/en/help/managed-ai">
+    <link rel="alternate" hreflang="de" href="https://scandora.eu/help/managed-ai">
+    <link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/help/managed-ai">
 
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://scandora.eu/help/managed-ai">
-    <meta property="og:title" content="Managed AI &amp; credits - Scandora Help">
-    <meta property="og:description" content="Scandora's own prepaid AI credits. What a credit covers, monthly allowances and top-ups.">
+    <meta property="og:title" content="Verwaltete KI &amp; Credits | Scandora Hilfe">
+    <meta property="og:description" content="So funktioniert die verwaltete KI von Scandora: Prepaid-Credits, was ein Credit abdeckt, monatliches Kontingent, Aufladungen und wo verarbeitet wird.">
     <meta property="og:site_name" content="Scandora">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Managed AI &amp; credits - Scandora Help">
-    <meta name="twitter:description" content="Scandora's own prepaid AI credits. What a credit covers, monthly allowances and top-ups.">
+    <meta name="twitter:title" content="Verwaltete KI &amp; Credits | Scandora Hilfe">
+    <meta name="twitter:description" content="So funktioniert die verwaltete KI von Scandora: Prepaid-Credits, was ein Credit abdeckt, monatliches Kontingent, Aufladungen und wo verarbeitet wird.">
     <meta name="twitter:image" content="https://scandora.eu/assets/og-image.png">
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -53,15 +53,21 @@
     <header role="banner">
         <nav class="navbar" role="navigation" aria-label="Main navigation">
             <div class="container nav-container">
-                <a href="/" class="logo" aria-label="Scandora Home"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
+                <a href="/de/" class="logo" aria-label="Scandora Home"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
                 <div class="nav-links" role="menubar">
-                    <a href="/#features" role="menuitem" data-i18n="nav.features">Features</a>
-                    <a href="/#how-it-works" role="menuitem" data-i18n="nav.howItWorks">How It Works</a>
-                    <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
+                    <a href="/de/#features" role="menuitem" data-i18n="nav.features">Funktionen</a>
+                    <a href="/de/#how-it-works" role="menuitem" data-i18n="nav.howItWorks">So funktioniert es</a>
+                    <a href="/de/#pricing" role="menuitem" data-i18n="nav.pricing">Preise</a>
                 </div>
                 <div class="nav-actions">
-                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
-                    <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
+                    <details class="lang-menu">
+                        <summary class="lang-toggle"><span class="sr-only" data-i18n="language.menu">Sprache</span> <span id="lang-indicator">DE</span></summary>
+                        <ul class="lang-menu-list">
+                            <li><a href="/help/managed-ai" hreflang="de" lang="de" aria-current="page"><span class="lang-menu-name">Deutsch</span> <span class="lang-menu-english" lang="en">German</span></a></li>
+                            <li><a href="/en/help/managed-ai" hreflang="en" lang="en"><span class="lang-menu-name">English</span></a></li>
+                        </ul>
+                    </details>
+                    <a href="/de/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
             </div>
@@ -73,16 +79,16 @@
             <div class="legal-container">
                 <a href="/help/" class="back-home">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-                    <span data-lang="en">Back to Help Center</span><span data-lang="de" hidden>Zurück zum Hilfe-Center</span>
+                    <span data-lang="en" hidden>Back to Help Center</span><span data-lang="de">Zurück zum Hilfe-Center</span>
                 </a>
 
                 <header class="legal-header">
-                    <span class="legal-badge" data-lang="en">AI Setup</span><span class="legal-badge" data-lang="de" hidden>KI-Einrichtung</span>
-                    <h1 id="managed-title" class="legal-title"><span data-lang="en">Managed AI &amp; credits</span><span data-lang="de" hidden>Verwaltete KI &amp; Credits</span></h1>
+                    <span class="legal-badge" data-lang="en" hidden>AI Setup</span><span class="legal-badge" data-lang="de">KI-Einrichtung</span>
+                    <h1 id="managed-title" class="legal-title"><span data-lang="en" hidden>Managed AI &amp; credits</span><span data-lang="de">Verwaltete KI &amp; Credits</span></h1>
                 </header>
 
                 <!-- ================= ENGLISH ================= -->
-                <article class="legal-content" data-lang="en">
+                <article class="legal-content" data-lang="en" hidden>
                     <div class="highlight-box">
                         <p><strong>In short:</strong> Managed AI is <strong>Scandora's own prepaid credits</strong>. Your device calls the AI models directly, using a short-lived credential Scandora's server issues, and Scandora meters the usage — there is no third-party AI account for you to manage and no key to enter. It is the zero-setup default when you sign in.</p>
                     </div>
@@ -120,7 +126,7 @@
                 </article>
 
                 <!-- ================= DEUTSCH ================= -->
-                <article class="legal-content" data-lang="de" hidden>
+                <article class="legal-content" data-lang="de">
                     <div class="highlight-box">
                         <p><strong>Kurz gesagt:</strong> Verwaltete KI sind <strong>Scandoras eigene, im Voraus bezahlte Credits</strong>. Ihr Gerät ruft die KI-Modelle direkt auf, mit einer kurzlebigen Zugangsberechtigung, die der Server von Scandora ausstellt, und Scandora erfasst die Nutzung — es gibt kein Drittanbieter-KI-Konto zu verwalten und keinen Schlüssel einzugeben. Es ist die Standardeinstellung ohne Einrichtung, sobald Sie angemeldet sind.</p>
                     </div>
@@ -144,7 +150,7 @@
                         <li><strong>Pro:</strong> 1.000 verwaltete Credits pro Monat.</li>
                         <li><strong>Business / DATEV:</strong> 5.000 verwaltete Credits pro Monat.</li>
                     </ul>
-                    <p>Tarif-Credits werden zu Beginn jedes kostenpflichtigen Abrechnungszeitraums aufgefüllt — also an dem Tag, an dem App Store oder Google Play abrechnet. Im kostenlosen Tarif erfolgt die Auffüllung zu Beginn jedes Kalendermonats (UTC). Nicht genutzte Tarif-Credits verfallen. Aktuelle Beträge finden Sie im <a href="/#pricing">Preisbereich</a> (die im App Store / bei Google Play angezeigten Preise sind die Endpreise für das jeweilige Produkt; bei einer Testphase, einem Einführungs- oder Aktionsangebot oder einem anteilig verrechneten Wechsel kann der tatsächlich berechnete Betrag abweichen, und maßgeblich ist der Betrag, den der Store in Ihrem Kaufbeleg ausweist).</p>
+                    <p>Tarif-Credits werden zu Beginn jedes kostenpflichtigen Abrechnungszeitraums aufgefüllt — also an dem Tag, an dem App Store oder Google Play abrechnet. Im kostenlosen Tarif erfolgt die Auffüllung zu Beginn jedes Kalendermonats (UTC). Nicht genutzte Tarif-Credits verfallen. Aktuelle Beträge finden Sie im <a href="/de/#pricing">Preisbereich</a> (die im App Store / bei Google Play angezeigten Preise sind die Endpreise für das jeweilige Produkt; bei einer Testphase, einem Einführungs- oder Aktionsangebot oder einem anteilig verrechneten Wechsel kann der tatsächlich berechnete Betrag abweichen, und maßgeblich ist der Betrag, den der Store in Ihrem Kaufbeleg ausweist).</p>
 
                     <h2>Aufladungen</h2>
                     <p>Wenn Sie mehr benötigen, können Sie zusätzliche Credits als einmaligen In-App-Kauf erwerben. Gekaufte Credits sind <strong>im Voraus bezahlt und verfallen nicht</strong>. Die genauen Aufladebeträge und Preise werden beim Kauf in der App angezeigt.</p>
@@ -153,8 +159,8 @@
                     <p>Verwaltete KI arbeitet nach dem Prinzip <strong>„erst stoppen, dann nachfragen"</strong>: Erreicht Ihr Guthaben null, pausieren KI-Aktionen und Scandora fordert Sie zum Aufladen auf. <strong>Wir buchen niemals automatisch ab</strong>.</p>
 
                     <h2>Wo die Verarbeitung stattfindet</h2>
-                    <p>Ihr Gerät fragt den Modellanbieter direkt an, mit einer kurzlebigen Zugangsberechtigung, die der Server von Scandora aus unserer eigenen EU-Infrastruktur ausstellt; Dokumentensuche und -Chat laufen auf Ihrem Gerät. Wenn der Frankfurter Regionaldienst genutzt wird, läuft die KI-Generierung auf dem verwalteten Pfad auf <strong>Vertex AI in europe-west3 (Frankfurt, Deutschland)</strong>; die verwaltete KI-Verarbeitung findet dann in Deutschland statt. Die verwaltete KI läuft in dieser Region, weil die App ihre Anfragen an die verwaltete KI dorthin sendet. Vollständige Details, einschließlich unserer Rolle als Auftragsverarbeiter, finden Sie im <a href="/avv">AVV / DPA</a> und in der <a href="/privacy">Datenschutzerklärung</a>.</p>
-                    <p><strong>Missbrauchsüberwachung.</strong> Prompts, die über die verwaltete KI gesendet werden und die Googles automatische Sicherheitssysteme markieren, kann Google bis zu 90 Tage lang in der für die verwaltete KI genutzten Google-Cloud-Region (<code>europe-west3</code>) speichern, ausschließlich zur Missbrauchsüberwachung; Google nutzt sie nicht zum Trainieren von Modellen. Vollständige Details finden Sie in der <a href="/privacy">Datenschutzerklärung</a>.</p>
+                    <p>Ihr Gerät fragt den Modellanbieter direkt an, mit einer kurzlebigen Zugangsberechtigung, die der Server von Scandora aus unserer eigenen EU-Infrastruktur ausstellt; Dokumentensuche und -Chat laufen auf Ihrem Gerät. Wenn der Frankfurter Regionaldienst genutzt wird, läuft die KI-Generierung auf dem verwalteten Pfad auf <strong>Vertex AI in europe-west3 (Frankfurt, Deutschland)</strong>; die verwaltete KI-Verarbeitung findet dann in Deutschland statt. Die verwaltete KI läuft in dieser Region, weil die App ihre Anfragen an die verwaltete KI dorthin sendet. Vollständige Details, einschließlich unserer Rolle als Auftragsverarbeiter, finden Sie im <a href="/avv">AVV / DPA</a> und in der <a href="/de/privacy">Datenschutzerklärung</a>.</p>
+                    <p><strong>Missbrauchsüberwachung.</strong> Prompts, die über die verwaltete KI gesendet werden und die Googles automatische Sicherheitssysteme markieren, kann Google bis zu 90 Tage lang in der für die verwaltete KI genutzten Google-Cloud-Region (<code>europe-west3</code>) speichern, ausschließlich zur Missbrauchsüberwachung; Google nutzt sie nicht zum Trainieren von Modellen. Vollständige Details finden Sie in der <a href="/de/privacy">Datenschutzerklärung</a>.</p>
                 </article>
             </div>
         </section>
@@ -164,35 +170,35 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="/" class="logo"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
-                    <p data-i18n="footer.tagline">Intelligent document scanning for modern businesses.</p>
+                    <a href="/de/" class="logo"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
+                    <p data-i18n="footer.tagline">Intelligentes Dokumentenscannen für moderne Unternehmen.</p>
                 </div>
                 <nav class="footer-links" role="navigation" aria-label="Footer navigation">
                     <div class="footer-col">
-                        <h4 data-i18n="footer.product">Product</h4>
-                        <a href="/#features" data-i18n="nav.features">Features</a>
-                        <a href="/#pricing" data-i18n="nav.pricing">Pricing</a>
-                        <a href="/#download" data-i18n="nav.download">Download</a>
+                        <h4 data-i18n="footer.product">Produkt</h4>
+                        <a href="/de/#features" data-i18n="nav.features">Funktionen</a>
+                        <a href="/de/#pricing" data-i18n="nav.pricing">Preise</a>
+                        <a href="/de/#download" data-i18n="nav.download">Download</a>
                     </div>
                     <div class="footer-col">
-                        <h4 data-i18n="footer.legal">Legal</h4>
-                        <a href="/privacy" data-i18n="footer.privacy">Privacy Policy</a>
-                        <a href="/terms" data-i18n="footer.terms">Terms of Service</a>
+                        <h4 data-i18n="footer.legal">Rechtliches</h4>
+                        <a href="/de/privacy" data-i18n="footer.privacy">Datenschutzrichtlinie</a>
+                        <a href="/terms" data-i18n="footer.terms">Nutzungsbedingungen</a>
                         <a href="/avv" data-i18n="footer.avv">AVV / DPA</a>
-                        <a href="/imprint" data-i18n="footer.imprint">Imprint</a>
-                        <a href="/report-content" data-i18n="footer.reportContent">Report Illegal Content</a>
-                        <a href="/accessibility" data-i18n="footer.accessibility">Accessibility</a>
+                        <a href="/imprint" data-i18n="footer.imprint">Impressum</a>
+                        <a href="/report-content" data-i18n="footer.reportContent">Rechtswidrige Inhalte melden</a>
+                        <a href="/accessibility" data-i18n="footer.accessibility">Barrierefreiheit</a>
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.support">Support</h4>
-                        <a href="/help/" data-i18n="footer.help">Help Center</a>
-                        <a href="/contact" data-i18n="footer.contact">Contact Us</a>
-                        <a href="/careers" data-i18n="footer.careers">Careers</a>
+                        <a href="/help/" data-i18n="footer.help">Hilfe-Center</a>
+                        <a href="/de/contact" data-i18n="footer.contact">Kontakt</a>
+                        <a href="/de/careers" data-i18n="footer.careers">Karriere</a>
                     </div>
                 </nav>
             </div>
             <div class="footer-bottom">
-                <p><small>© 2026 Scandora. <span data-i18n="footer.rights">All rights reserved.</span></small></p>
+                <p><small>© 2026 Scandora. <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span></small></p>
             </div>
         </div>
     </footer>

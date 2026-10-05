@@ -8,9 +8,12 @@ Managed AI covers extraction, indexing and AI document chat out of a monthly cre
 allowance — there is no key to obtain or enter. Free, Pro and Business / DATEV plans exist;
 the store listing is the binding source for what a plan costs.
 
-The site is bilingual: every page serves English by default and German at the same URL with
-`?lang=de`, except three single-language pages — `/receipt-scanner` and
-`/scan-to-google-drive` are English only, `/belege-scannen-app` is German only.
+The site is bilingual, with one URL per language. English pages sit at the site root and their
+German versions under /de/ (the German home page is https://scandora.eu/de/); the German-first
+guides, help pages and German landing pages sit at the root and their English versions under /en/.
+The legal notices (imprint, terms, AVV) show English and German at one URL. Three pages exist in
+one language only — `/receipt-scanner` and `/scan-to-google-drive` are English only,
+`/belege-scannen-app` is German only.
 
 ## Product
 

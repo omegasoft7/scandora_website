@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" data-inline-languages>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
@@ -53,15 +53,21 @@
     <header role="banner">
         <nav class="navbar" role="navigation" aria-label="Main navigation">
             <div class="container nav-container">
-                <a href="/" class="logo" aria-label="Scandora Home"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
+                <a href="/" class="logo" aria-label="Scandora Home" data-href-de="/de/"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
                 <div class="nav-links" role="menubar">
-                    <a href="/#features" role="menuitem" data-i18n="nav.features">Features</a>
-                    <a href="/#how-it-works" role="menuitem" data-i18n="nav.howItWorks">How It Works</a>
-                    <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
+                    <a href="/#features" role="menuitem" data-i18n="nav.features" data-href-de="/de/#features">Features</a>
+                    <a href="/#how-it-works" role="menuitem" data-i18n="nav.howItWorks" data-href-de="/de/#how-it-works">How It Works</a>
+                    <a href="/#pricing" role="menuitem" data-i18n="nav.pricing" data-href-de="/de/#pricing">Pricing</a>
                 </div>
                 <div class="nav-actions">
-                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
-                    <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
+                    <details class="lang-menu">
+                        <summary class="lang-toggle"><span class="sr-only" data-i18n="language.menu">Language</span> <span id="lang-indicator">EN</span></summary>
+                        <ul class="lang-menu-list">
+                            <li><a href="/avv?lang=en" hreflang="en" lang="en" aria-current="page"><span class="lang-menu-name">English</span></a></li>
+                            <li><a href="/avv?lang=de" hreflang="de" lang="de"><span class="lang-menu-name">Deutsch</span> <span class="lang-menu-english" lang="en">German</span></a></li>
+                        </ul>
+                    </details>
+                    <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download" data-href-de="/de/#download">Download</a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
             </div>
@@ -71,7 +77,7 @@
     <main id="main-content" role="main">
         <section class="legal-page" aria-labelledby="avv-title">
             <div class="legal-container">
-                <a href="/" class="back-home">
+                <a href="/" class="back-home" data-href-de="/de/">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
                     <span data-lang="en">Back to Home</span><span data-lang="de" hidden>Zur Startseite</span>
                 </a>
@@ -268,7 +274,7 @@
                     </ul>
                     <p>Nimmt Scandora später einen weiteren Weg hinzu, auf dem Ihre Dokumentinhalte in Ihrem Auftrag verarbeitet werden, informieren wir Sie vor dessen Wirksamwerden in Textform und passen die Abschnitte 3 und 5 entsprechend an. Sie können vor dem Wirksamwerden widersprechen. <strong>Widersprechen Sie, schalten wir den neuen Weg für Ihr Konto nicht frei</strong>, und dieser AVV gilt für die oben genannten Wege unverändert fort. Können wir Ihnen die Leistung ohne diesen Weg nicht erbringen, teilen wir Ihnen das auf Ihren Widerspruch hin mit; Sie können dann diesen AVV <em>und</em> den zugrunde liegenden Vertrag zu dem Zeitpunkt kündigen, zu dem die Erweiterung wirksam geworden wäre. Sie nutzen Scandora zu keinem Zeitpunkt ohne einen wirksamen Vertrag nach Art. 28 DSGVO für Daten Ihrer Mandanten. Widersprechen Sie nicht, gilt dieser AVV ab diesem Zeitpunkt auch für den neuen Weg.</p>
                     <p>Ihre eigenen Kontodaten — Ihre E-Mail-Adresse, Ihr Name, Ihr Abonnement- und Abrechnungsdatensatz — liegen <strong>außerhalb</strong> dieses AVV. Für diese Daten ist Scandora <strong>Verantwortlicher</strong> aufgrund seines eigenen Vertrags mit Ihnen und nicht Ihr Auftragsverarbeiter. Dasselbe gilt für die E-Mail-Korrespondenz; siehe den Hinweis unter Abschnitt 5.</p>
-                    <p><strong>Wer ist Verantwortlicher für den Verlaufseintrag.</strong> Der Verlaufseintrag unterfällt diesem AVV <strong>vollständig</strong> — der extrahierte Dokumenttext, das Vorschaubild <em>und</em> die Metadaten des Eintrags (Titel, Datumsangaben, Seitenzahl, Dateigröße, Labels, Exportziele, extrahierte Felder). Sie entscheiden, welche Dokumente gescannt und warum sie aufbewahrt werden; Scandora speichert den Eintrag daher als Ihr <strong>Auftragsverarbeiter</strong> und nutzt ihn für keine eigenen Zwecke. <a href="/privacy#de-roles">Abschnitt 8 unserer Datenschutzerklärung</a> führt Verlaufs-Metadaten unter der Verantwortlichenrolle von Scandora auf; das beschreibt die Nutzung ohne AVV, bei der die Nutzerin oder der Nutzer betroffene Person und nicht Verantwortlicher ist. Für die von Ihnen nach diesem AVV verarbeiteten Einträge gilt die hier festgelegte Auftragsverarbeiterrolle.</p>
+                    <p><strong>Wer ist Verantwortlicher für den Verlaufseintrag.</strong> Der Verlaufseintrag unterfällt diesem AVV <strong>vollständig</strong> — der extrahierte Dokumenttext, das Vorschaubild <em>und</em> die Metadaten des Eintrags (Titel, Datumsangaben, Seitenzahl, Dateigröße, Labels, Exportziele, extrahierte Felder). Sie entscheiden, welche Dokumente gescannt und warum sie aufbewahrt werden; Scandora speichert den Eintrag daher als Ihr <strong>Auftragsverarbeiter</strong> und nutzt ihn für keine eigenen Zwecke. <a href="/de/privacy#de-roles">Abschnitt 8 unserer Datenschutzerklärung</a> führt Verlaufs-Metadaten unter der Verantwortlichenrolle von Scandora auf; das beschreibt die Nutzung ohne AVV, bei der die Nutzerin oder der Nutzer betroffene Person und nicht Verantwortlicher ist. Für die von Ihnen nach diesem AVV verarbeiteten Einträge gilt die hier festgelegte Auftragsverarbeiterrolle.</p>
                     <ul>
                         <li><strong>Verantwortlicher:</strong> Sie (der Geschäftskunde / der Mandant Ihres Steuerberaters).</li>
                         <li><strong>Auftragsverarbeiter:</strong> Scandora — Farhad Sanaei seresht (Einzelunternehmen, Geschäftsbezeichnung „Scandora“), Burgunderweg 19G, 22453 Hamburg, Deutschland. Siehe unser <a href="/imprint">Impressum</a>.</li>
@@ -310,7 +316,7 @@
                     </ul>
 
                     <h2 id="de-subprocessors">5. Unterauftragsverarbeiter</h2>
-                    <p>Sie genehmigen die folgenden Unterauftragsverarbeiter für die in Abschnitt 1 beschriebene Verarbeitung. <strong>Für die Verarbeitung, die Scandora als Ihr Auftragsverarbeiter durchführt, ist diese Liste maßgeblich.</strong> <a href="/privacy#de-subprocessors">Abschnitt 7 unserer Datenschutzerklärung</a> verfolgt einen anderen Zweck: Er listet sämtliche Empfänger personenbezogener Daten auf, einschließlich der Anbieter, die wir als <em>Verantwortlicher</em> für eigene Zwecke einsetzen, etwa E-Mail (siehe den Hinweis unter dieser Tabelle). Soweit beide denselben Anbieter beschreiben, gilt für die auftragsverarbeitende Seite dieser AVV. Wir informieren über beabsichtigte Änderungen und räumen ein Widerspruchsrecht ein. Wir erlegen jedem Unterauftragsverarbeiter dieselben Datenschutzpflichten auf, die dieser AVV uns auferlegt (Art. 28 Abs. 4 DSGVO).</p>
+                    <p>Sie genehmigen die folgenden Unterauftragsverarbeiter für die in Abschnitt 1 beschriebene Verarbeitung. <strong>Für die Verarbeitung, die Scandora als Ihr Auftragsverarbeiter durchführt, ist diese Liste maßgeblich.</strong> <a href="/de/privacy#de-subprocessors">Abschnitt 7 unserer Datenschutzerklärung</a> verfolgt einen anderen Zweck: Er listet sämtliche Empfänger personenbezogener Daten auf, einschließlich der Anbieter, die wir als <em>Verantwortlicher</em> für eigene Zwecke einsetzen, etwa E-Mail (siehe den Hinweis unter dieser Tabelle). Soweit beide denselben Anbieter beschreiben, gilt für die auftragsverarbeitende Seite dieser AVV. Wir informieren über beabsichtigte Änderungen und räumen ein Widerspruchsrecht ein. Wir erlegen jedem Unterauftragsverarbeiter dieselben Datenschutzpflichten auf, die dieser AVV uns auferlegt (Art. 28 Abs. 4 DSGVO).</p>
                     <div style="overflow-x:auto;">
                     <table class="cookie-table">
                         <thead>
@@ -344,7 +350,7 @@
                         <li><strong>E-Mails, die wir Ihnen senden</strong> — Bestellbestätigungen sowie Konto- und Lifecycle-Nachrichten verlassen die Domain über <strong>Brevo</strong> (Sendinblue SAS, Frankreich; Versand und Speicherung in der EU, mit Zugriff aus den USA und Indien innerhalb der Kette von Brevo auf Grundlage der EU-Standardvertragsklauseln).</li>
                         <li><strong>E-Mails, die Sie uns senden</strong> — Nachrichten an <code>support@</code>, <code>privacy@</code> oder <code>legal@scandora.eu</code> werden von <strong>Cloudflare</strong> in ein gewöhnliches Google-Verbraucherpostfach weitergeleitet, für das <strong>kein Auftragsverarbeitungsvertrag nach Art. 28 DSGVO verfügbar ist</strong>. Eine Nachricht aus dem Website-Kontaktformular landet im selben Postfach — unser eigener Server sendet sie über Brevo an <code>support@scandora.eu</code>, und Cloudflare leitet sie von dort weiter. Unsere Antwort verlässt die Domain über Brevo und zitiert Ihre Nachricht in der Regel.</li>
                     </ul>
-                    <p>Beide sind in <a href="/privacy#de-subprocessors">Abschnitt 7 unserer Datenschutzerklärung</a> aufgeführt. Wenn Sie uns Vertrags- oder personenbezogene Daten nicht per E-Mail senden möchten, nutzen Sie die Postanschrift in unserem <a href="/imprint">Impressum</a>.</p>
+                    <p>Beide sind in <a href="/de/privacy#de-subprocessors">Abschnitt 7 unserer Datenschutzerklärung</a> aufgeführt. Wenn Sie uns Vertrags- oder personenbezogene Daten nicht per E-Mail senden möchten, nutzen Sie die Postanschrift in unserem <a href="/imprint">Impressum</a>.</p>
 
                     <h2 id="de-transfers">6. Drittlandübermittlungen</h2>
                     <p>Soweit ein Unterauftragsverarbeiter Daten außerhalb der EU/EWR (z. B. USA) verarbeitet, sind Übermittlungen durch die EU-Standardvertragsklauseln und/oder die Zertifizierung des Anbieters unter dem EU–US Data Privacy Framework abgesichert. Die verwaltete KI wird von Ihrem Gerät direkt angefragt, mit einer vom Server von Scandora ausgestellten kurzlebigen Zugangsberechtigung; der KI-Aufruf selbst wird in Deutschland verarbeitet, wenn der Frankfurter Regionaldienst (Vertex AI <code>europe-west3</code>) genutzt wird, ist für diesen Schritt keine Drittlandübermittlung und läuft zu keinem Zeitpunkt über den eigenen Server von Scandora. Die OAuth-Komponenten und der Endpunkt zur Ausstellung der Zugangsberechtigung von Scandora laufen auf dem eigenen Server von Scandora in Falkenstein, Deutschland. Der überwiegende Teil der nach diesem AVV gespeicherten Daten — die Verlaufseinträge und die GoBD-Erfassungs- und Änderungsaufzeichnungen — verbleibt auf den eigenen Servern von Scandora in Falkenstein, Deutschland. <strong>Die einzige Ausnahme ist das geräteübergreifende Importregister</strong>, das in Google Cloud Firestore in der Region <code>europe-west3</code> (Frankfurt) gespeichert wird. Beide Orte liegen in Deutschland; keiner der beiden Speicher ist damit eine Drittlandübermittlung. Für die übrige Google-Cloud-Verarbeitung um diesen Speicher herum (Kontrollebene, Supportzugriff) gelten die EU-Standardvertragsklauseln und/oder die DPF-Zertifizierung von Google.</p>
@@ -392,19 +398,19 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="/" class="logo"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
+                    <a href="/" class="logo" data-href-de="/de/"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
                     <p data-i18n="footer.tagline">Intelligent document scanning for modern businesses.</p>
                 </div>
                 <nav class="footer-links" role="navigation" aria-label="Footer navigation">
                     <div class="footer-col">
                         <h4 data-i18n="footer.product">Product</h4>
-                        <a href="/#features" data-i18n="nav.features">Features</a>
-                        <a href="/#pricing" data-i18n="nav.pricing">Pricing</a>
-                        <a href="/#download" data-i18n="nav.download">Download</a>
+                        <a href="/#features" data-i18n="nav.features" data-href-de="/de/#features">Features</a>
+                        <a href="/#pricing" data-i18n="nav.pricing" data-href-de="/de/#pricing">Pricing</a>
+                        <a href="/#download" data-i18n="nav.download" data-href-de="/de/#download">Download</a>
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.legal">Legal</h4>
-                        <a href="/privacy" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="/privacy" data-i18n="footer.privacy" data-href-de="/de/privacy">Privacy Policy</a>
                         <a href="/terms" data-i18n="footer.terms">Terms of Service</a>
                         <a href="/avv" aria-current="page" data-i18n="footer.avv">AVV / DPA</a>
                         <a href="/imprint" data-i18n="footer.imprint">Imprint</a>
@@ -413,9 +419,9 @@
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.support">Support</h4>
-                        <a href="/help/" data-i18n="footer.help">Help Center</a>
-                        <a href="/contact" data-i18n="footer.contact">Contact Us</a>
-                        <a href="/careers" data-i18n="footer.careers">Careers</a>
+                        <a href="/en/help/" data-i18n="footer.help" data-href-de="/help/">Help Center</a>
+                        <a href="/contact" data-i18n="footer.contact" data-href-de="/de/contact">Contact Us</a>
+                        <a href="/careers" data-i18n="footer.careers" data-href-de="/de/careers">Careers</a>
                     </div>
                 </nav>
             </div>

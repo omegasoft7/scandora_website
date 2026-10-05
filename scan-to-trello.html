@@ -11,8 +11,8 @@
     <link rel="canonical" href="https://scandora.eu/scan-to-trello">
 
     <!-- Alternate Languages -->
-    <link rel="alternate" hreflang="de" href="https://scandora.eu/scan-to-trello?lang=de">
     <link rel="alternate" hreflang="en" href="https://scandora.eu/scan-to-trello">
+    <link rel="alternate" hreflang="de" href="https://scandora.eu/de/scan-to-trello">
     <link rel="alternate" hreflang="x-default" href="https://scandora.eu/scan-to-trello">
 
     <!-- Open Graph -->
@@ -160,7 +160,13 @@
                     <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
                 </div>
                 <div class="nav-actions">
-                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
+                    <details class="lang-menu">
+                        <summary class="lang-toggle"><span class="sr-only" data-i18n="language.menu">Language</span> <span id="lang-indicator">EN</span></summary>
+                        <ul class="lang-menu-list">
+                            <li><a href="/scan-to-trello" hreflang="en" lang="en" aria-current="page"><span class="lang-menu-name">English</span></a></li>
+                            <li><a href="/de/scan-to-trello" hreflang="de" lang="de"><span class="lang-menu-name">Deutsch</span> <span class="lang-menu-english" lang="en">German</span></a></li>
+                        </ul>
+                    </details>
                     <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
@@ -259,7 +265,7 @@
                     <p>Scandora. You scan a document with your phone camera or a network scanner over eSCL/AirScan, managed AI reads a title, labels, a possible due date and suggested tasks off the page, and Scandora creates the card in the Trello list you picked — with the scanned PDF attached. The card is created in your own Trello workspace with the Trello credentials you entered.</p>
 
                     <h2>How do I connect Trello to the scanner?</h2>
-                    <p>With your Trello credentials. In Scandora's Trello settings you enter your Trello API key and a token; Scandora checks the connection and shows your Trello name back to you as confirmation. After that you pick the account type, the board and the target list — or create the board and the list from inside the app. Every step is set out in the <a href="/blog/scan-to-trello-workflow">scan-to-Trello workflow guide</a>.</p>
+                    <p>With your Trello credentials. In Scandora's Trello settings you enter your Trello API key and a token; Scandora checks the connection and shows your Trello name back to you as confirmation. After that you pick the account type, the board and the target list — or create the board and the list from inside the app. Every step is set out in the <a href="/en/blog/scan-to-trello-workflow">scan-to-Trello workflow guide</a>.</p>
 
                     <h2>What exactly lands on the Trello card?</h2>
                     <p>The card title comes from the AI title suggestion and stays editable. The scanned PDF is attached to the card. The labels the AI recognised are matched to your board's labels by name, and a label that does not exist yet is created with a colour and added. A due date is set when you switch on due-date extraction, and a checklist called <em>Tasks</em> is filled with one item per suggested task when you switch on task suggestions.</p>
@@ -295,7 +301,7 @@
                         </tbody>
                     </table>
 
-                    <p>Related reading: <a href="/blog/scan-to-trello-workflow">The scan-to-Trello workflow, step by step</a> · <a href="/invoice-data-extraction">Extract invoice data automatically</a> · <a href="/paperless-small-business">Paperless in a small business</a> · <a href="/document-scanner-eu-servers">Document scanner on EU servers</a></p>
+                    <p>Related reading: <a href="/en/blog/scan-to-trello-workflow">The scan-to-Trello workflow, step by step</a> · <a href="/invoice-data-extraction">Extract invoice data automatically</a> · <a href="/paperless-small-business">Paperless in a small business</a> · <a href="/document-scanner-eu-servers">Document scanner on EU servers</a></p>
 
                     <div class="highlight-box">
                         <p><strong>Turn scans into real tasks?</strong> Try Scandora free with managed AI.</p>
@@ -359,8 +365,8 @@
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.support">Support</h4>
-                        <a href="/help/" data-i18n="footer.help">Help Center</a>
-                        <a href="/blog/" data-i18n="nav.blog">Guides</a>
+                        <a href="/en/help/" data-i18n="footer.help">Help Center</a>
+                        <a href="/en/blog/" data-i18n="nav.blog">Guides</a>
                         <a href="/contact" data-i18n="footer.contact">Contact Us</a>
                         <a href="/careers" data-i18n="footer.careers">Careers</a>
                     </div>

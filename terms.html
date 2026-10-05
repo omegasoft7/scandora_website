@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" data-inline-languages>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
@@ -53,15 +53,21 @@
     <header role="banner">
         <nav class="navbar" role="navigation" aria-label="Main navigation">
             <div class="container nav-container">
-                <a href="/" class="logo" aria-label="Scandora Home"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
+                <a href="/" class="logo" aria-label="Scandora Home" data-href-de="/de/"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
                 <div class="nav-links" role="menubar">
-                    <a href="/#features" role="menuitem" data-i18n="nav.features">Features</a>
-                    <a href="/#how-it-works" role="menuitem" data-i18n="nav.howItWorks">How It Works</a>
-                    <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
+                    <a href="/#features" role="menuitem" data-i18n="nav.features" data-href-de="/de/#features">Features</a>
+                    <a href="/#how-it-works" role="menuitem" data-i18n="nav.howItWorks" data-href-de="/de/#how-it-works">How It Works</a>
+                    <a href="/#pricing" role="menuitem" data-i18n="nav.pricing" data-href-de="/de/#pricing">Pricing</a>
                 </div>
                 <div class="nav-actions">
-                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
-                    <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
+                    <details class="lang-menu">
+                        <summary class="lang-toggle"><span class="sr-only" data-i18n="language.menu">Language</span> <span id="lang-indicator">EN</span></summary>
+                        <ul class="lang-menu-list">
+                            <li><a href="/terms?lang=en" hreflang="en" lang="en" aria-current="page"><span class="lang-menu-name">English</span></a></li>
+                            <li><a href="/terms?lang=de" hreflang="de" lang="de"><span class="lang-menu-name">Deutsch</span> <span class="lang-menu-english" lang="en">German</span></a></li>
+                        </ul>
+                    </details>
+                    <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download" data-href-de="/de/#download">Download</a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
             </div>
@@ -71,7 +77,7 @@
     <main id="main-content" role="main">
         <section class="legal-page" aria-labelledby="terms-title">
             <div class="legal-container">
-                <a href="/" class="back-home">
+                <a href="/" class="back-home" data-href-de="/de/">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
                     <span data-lang="en">Back to Home</span><span data-lang="de" hidden>Zur Startseite</span>
                 </a>
@@ -122,7 +128,7 @@
                         <li>Dokumente mit Ihren eigenen Cloud-Diensten (Trello, Google Drive) synchronisieren,</li>
                         <li>Ihr Dokumentenarchiv organisieren und durchsuchen können.</li>
                     </ul>
-                    <p>Scandora ist kein allgemeiner Cloud-Speicher für Ihre Dokumentdateien: Die gescannte Datei selbst bleibt auf Ihrem Gerät. Sie wird an die von Ihnen gewählten Ziele übertragen und, wenn Sie die KI-Auswertung nutzen, direkt von Ihrem Gerät mit einer von unserem Server ausgestellten kurzlebigen Zugangsberechtigung zur Analyse an den Modellanbieter übermittelt (Abschnitt 6). Sind Sie angemeldet, speichern wir Ihren Scan-Verlauf auf Scandoras eigenem Server in der EU (Hetzner); dazu gehören neben Titel, Datum, Seitenzahl, Dateigröße und Zielen auch der aus dem Dokument erkannte Text und ein kleines Vorschaubild. Die KI-Dokumentensuche läuft auf Ihrem Gerät; sie speichert keinen Dokumenttext und keine Such-Embeddings auf unseren Servern. Einzelheiten und Löschfristen: <a href="/privacy">Datenschutzerklärung</a>.</p>
+                    <p>Scandora ist kein allgemeiner Cloud-Speicher für Ihre Dokumentdateien: Die gescannte Datei selbst bleibt auf Ihrem Gerät. Sie wird an die von Ihnen gewählten Ziele übertragen und, wenn Sie die KI-Auswertung nutzen, direkt von Ihrem Gerät mit einer von unserem Server ausgestellten kurzlebigen Zugangsberechtigung zur Analyse an den Modellanbieter übermittelt (Abschnitt 6). Sind Sie angemeldet, speichern wir Ihren Scan-Verlauf auf Scandoras eigenem Server in der EU (Hetzner); dazu gehören neben Titel, Datum, Seitenzahl, Dateigröße und Zielen auch der aus dem Dokument erkannte Text und ein kleines Vorschaubild. Die KI-Dokumentensuche läuft auf Ihrem Gerät; sie speichert keinen Dokumenttext und keine Such-Embeddings auf unseren Servern. Einzelheiten und Löschfristen: <a href="/de/privacy">Datenschutzerklärung</a>.</p>
 
                     <h2 id="de-konto">3. Vertragsschluss &amp; Konto</h2>
                     <p>Für bestimmte Funktionen ist ein Konto erforderlich. Sie verpflichten sich, zutreffende Angaben zu machen, Ihre Zugangsdaten vertraulich zu halten und uns unbefugte Zugriffe unverzüglich zu melden. Ein kostenpflichtiges Abonnement kommt mit Abschluss des Kaufvorgangs im jeweiligen App Store zustande; Verkäufer ist dabei der jeweilige Store (Abschnitt 1).</p>
@@ -178,7 +184,7 @@
 
                     <h2 id="de-nutzung">7. Zulässige Nutzung</h2>
                     <p>Sie verpflichten sich, Scandora nicht zu nutzen, um Gesetze zu verletzen, Rechte Dritter (insb. Urheber- und Persönlichkeitsrechte) zu verletzen, Schadsoftware zu verbreiten, sich unbefugten Zugang zu unseren Systemen zu verschaffen, andere zu belästigen, den Dienst zurückzuentwickeln oder Nutzungsgrenzen bzw. Sicherheitsmaßnahmen zu umgehen.</p>
-                    <p><strong>Durchsetzung dieser Regeln (Art. 14 DSA).</strong> Bei einem Verstoß können wir abgestuft und verhältnismäßig folgende Maßnahmen ergreifen: Hinweis oder Verwarnung, Einschränkung oder Sperrung einzelner Funktionen, vorübergehende Sperrung des Kontos und — bei schweren oder wiederholten Verstößen — Kündigung aus wichtigem Grund nach Abschnitt 12. Wir prüfen jeden Fall einzeln; über eine Maßnahme entscheidet stets ein Mensch. Ihre gespeicherten Dokumente durchsuchen wir dafür nicht automatisiert; wir werden nur anlassbezogen tätig, insbesondere nach einer Meldung oder einer behördlichen Anordnung. Der Anbieter der KI-Modelle führt für Anfragen an die KI eine eigene Missbrauchsprüfung durch (siehe <a href="/privacy">Datenschutzerklärung</a>). Ergreifen wir eine Maßnahme, teilen wir Ihnen die Gründe dafür mit.</p>
+                    <p><strong>Durchsetzung dieser Regeln (Art. 14 DSA).</strong> Bei einem Verstoß können wir abgestuft und verhältnismäßig folgende Maßnahmen ergreifen: Hinweis oder Verwarnung, Einschränkung oder Sperrung einzelner Funktionen, vorübergehende Sperrung des Kontos und — bei schweren oder wiederholten Verstößen — Kündigung aus wichtigem Grund nach Abschnitt 12. Wir prüfen jeden Fall einzeln; über eine Maßnahme entscheidet stets ein Mensch. Ihre gespeicherten Dokumente durchsuchen wir dafür nicht automatisiert; wir werden nur anlassbezogen tätig, insbesondere nach einer Meldung oder einer behördlichen Anordnung. Der Anbieter der KI-Modelle führt für Anfragen an die KI eine eigene Missbrauchsprüfung durch (siehe <a href="/de/privacy">Datenschutzerklärung</a>). Ergreifen wir eine Maßnahme, teilen wir Ihnen die Gründe dafür mit.</p>
                     <p><strong>Widerspruch gegen eine Maßnahme.</strong> Halten Sie eine Maßnahme für unberechtigt, können Sie ihr formlos per E-Mail an <a href="mailto:legal@scandora.eu">legal@scandora.eu</a> widersprechen. Wir bestätigen den Eingang und antworten in der Regel innerhalb von 24 Stunden (werktags Mo–Fr, 9–18 Uhr MEZ). Wir entscheiden zügig, sorgfältig, objektiv und nicht willkürlich und heben die Maßnahme auf, wenn Ihr Widerspruch berechtigt ist. Ihre gesetzlichen Rechte und der Rechtsweg bleiben unberührt.</p>
                     <p><strong>Rechtswidrige Inhalte melden (Art. 16 DSA).</strong> Rechtswidrige Inhalte im Dienst können Sie uns jederzeit über das Meldeformular unter <a href="/report-content">scandora.eu/report-content.html</a> oder per E-Mail an <a href="mailto:legal@scandora.eu">legal@scandora.eu</a> melden. Ihre Meldung sollte enthalten: eine hinreichend begründete Erläuterung, warum Sie den Inhalt für rechtswidrig halten, eine möglichst genaue Angabe des Fundorts, Ihren Namen und eine E-Mail-Adresse für Rückfragen — bei Meldungen zu Straftaten des sexuellen Kindesmissbrauchs sind Name und E-Mail-Adresse nicht erforderlich — sowie eine Erklärung, dass Sie nach bestem Wissen und Gewissen von der Richtigkeit und Vollständigkeit Ihrer Angaben überzeugt sind. Wir bestätigen den Eingang Ihrer Meldung und teilen Ihnen unsere Entscheidung samt Begründung mit; mit der Entscheidung informieren wir Sie auch über die Rechtsbehelfe, die Ihnen dagegen offenstehen.</p>
 
@@ -198,7 +204,7 @@
                     <p>Wir haften unbeschränkt bei Vorsatz und grober Fahrlässigkeit sowie bei Verletzung des Lebens, des Körpers oder der Gesundheit. Bei einfacher Fahrlässigkeit haften wir nur bei Verletzung einer wesentlichen Vertragspflicht (Kardinalpflicht) und der Höhe nach begrenzt auf den vertragstypischen, vorhersehbaren Schaden. Im Übrigen ist die Haftung ausgeschlossen. Die Haftung nach dem Produkthaftungsgesetz und zwingende gesetzliche Verbraucherrechte bleiben unberührt.</p>
 
                     <h2 id="de-kuendigung">12. Laufzeit &amp; Kündigung</h2>
-                    <p>Sie können Ihr Konto jederzeit in den App-Einstellungen löschen; kostenpflichtige Abonnements enden zum Ende des laufenden Abrechnungszeitraums (Verwaltung über den Store, siehe Abschnitt 4). Wir können den Vertrag aus wichtigem Grund kündigen oder das Konto sperren, insbesondere bei Verstößen gegen diese AGB. Bei Kontolöschung werden Ihre personenbezogenen Daten gemäß <a href="/privacy">Datenschutzerklärung</a> entfernt; in Ihre eigenen Cloud-Dienste exportierte Dokumente bleiben dort erhalten.</p>
+                    <p>Sie können Ihr Konto jederzeit in den App-Einstellungen löschen; kostenpflichtige Abonnements enden zum Ende des laufenden Abrechnungszeitraums (Verwaltung über den Store, siehe Abschnitt 4). Wir können den Vertrag aus wichtigem Grund kündigen oder das Konto sperren, insbesondere bei Verstößen gegen diese AGB. Bei Kontolöschung werden Ihre personenbezogenen Daten gemäß <a href="/de/privacy">Datenschutzerklärung</a> entfernt; in Ihre eigenen Cloud-Dienste exportierte Dokumente bleiben dort erhalten.</p>
 
                     <h2 id="de-aenderungen">13. Änderungen der AGB</h2>
                     <p>Wir können diese AGB anpassen, soweit dies aus triftigem Grund erforderlich ist (z. B. geänderte Rechtslage, Rechtsprechung oder technische Rahmenbedingungen) und Sie dadurch nicht unangemessen benachteiligt werden. Über solche Änderungen informieren wir Sie mindestens sechs Wochen vor Inkrafttreten in Textform (z. B. per E-Mail) oder in der App. Ihre Zustimmung gilt als erteilt, wenn Sie nicht innerhalb von sechs Wochen ab Zugang der Mitteilung widersprechen; auf die Bedeutung Ihres Schweigens und Ihr Widerspruchsrecht weisen wir in der Mitteilung gesondert hin. Widersprechen Sie, können Sie den Vertrag bis zum Inkrafttreten der Änderung außerordentlich und kostenfrei kündigen. Änderungen des Preises oder des wesentlichen Leistungsumfangs (Hauptleistungspflichten) werden nicht im Wege dieser Zustimmungsfiktion vereinbart, sondern bedürfen Ihrer ausdrücklichen Zustimmung.</p>
@@ -361,19 +367,19 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="/" class="logo"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
+                    <a href="/" class="logo" data-href-de="/de/"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
                     <p data-i18n="footer.tagline">Intelligent document scanning for modern businesses.</p>
                 </div>
                 <nav class="footer-links" role="navigation" aria-label="Footer navigation">
                     <div class="footer-col">
                         <h4 data-i18n="footer.product">Product</h4>
-                        <a href="/#features" data-i18n="nav.features">Features</a>
-                        <a href="/#pricing" data-i18n="nav.pricing">Pricing</a>
-                        <a href="/#download" data-i18n="nav.download">Download</a>
+                        <a href="/#features" data-i18n="nav.features" data-href-de="/de/#features">Features</a>
+                        <a href="/#pricing" data-i18n="nav.pricing" data-href-de="/de/#pricing">Pricing</a>
+                        <a href="/#download" data-i18n="nav.download" data-href-de="/de/#download">Download</a>
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.legal">Legal</h4>
-                        <a href="/privacy" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="/privacy" data-i18n="footer.privacy" data-href-de="/de/privacy">Privacy Policy</a>
                         <a href="/terms" aria-current="page" data-i18n="footer.terms">Terms of Service</a>
                         <a href="/avv" data-i18n="footer.avv">AVV / DPA</a>
                         <a href="/imprint" data-i18n="footer.imprint">Imprint</a>
@@ -382,9 +388,9 @@
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.support">Support</h4>
-                        <a href="/help/" data-i18n="footer.help">Help Center</a>
-                        <a href="/contact" data-i18n="footer.contact">Contact Us</a>
-                        <a href="/careers" data-i18n="footer.careers">Careers</a>
+                        <a href="/en/help/" data-i18n="footer.help" data-href-de="/help/">Help Center</a>
+                        <a href="/contact" data-i18n="footer.contact" data-href-de="/de/contact">Contact Us</a>
+                        <a href="/careers" data-i18n="footer.careers" data-href-de="/de/careers">Careers</a>
                     </div>
                 </nav>
             </div>

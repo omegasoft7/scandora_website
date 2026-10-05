@@ -5,6 +5,16 @@
 
 const translations = {
     en: {
+        // Language
+        'language.name': 'English',
+        'language.englishName': 'English',
+        'language.locale': 'en_US',
+        'language.menu': 'Language',
+        'language.search': 'Search languages',
+        'languageBanner.text': 'This page is also available in English.',
+        'languageBanner.link': 'Read it in English',
+        'languageBanner.dismiss': 'Close',
+
         // Navigation
         'nav.features': 'Features',
         'nav.howItWorks': 'How It Works',
@@ -118,6 +128,7 @@ const translations = {
         'footer.scanTrello': 'Scan to Trello',
         'footer.euServers': 'Scanner on EU servers',
         'footer.rights': 'All rights reserved.',
+        'footer.legalNotice': '{imprint}, {terms} and {avv} are available in English and German.',
 
         // Contact Page
         'contact.badge': 'Get in Touch',
@@ -276,6 +287,16 @@ const translations = {
         'scanDropbox.trademark': 'Dropbox is a trademark of Dropbox, Inc. Scandora is not affiliated with Dropbox, Inc.'
     },
     de: {
+        // Language
+        'language.name': 'Deutsch',
+        'language.englishName': 'German',
+        'language.locale': 'de_DE',
+        'language.menu': 'Sprache',
+        'language.search': 'Sprachen suchen',
+        'languageBanner.text': 'Diese Seite gibt es auch auf Deutsch.',
+        'languageBanner.link': 'Auf Deutsch lesen',
+        'languageBanner.dismiss': 'Schließen',
+
         // Navigation
         'nav.features': 'Funktionen',
         'nav.howItWorks': 'So funktioniert es',
@@ -389,6 +410,7 @@ const translations = {
         'footer.scanTrello': 'Scan nach Trello',
         'footer.euServers': 'Scanner auf EU-Servern',
         'footer.rights': 'Alle Rechte vorbehalten.',
+        'footer.legalNotice': '{imprint}, {terms} und {avv} gibt es auf Englisch und Deutsch.',
 
         // Contact Page
         'contact.badge': 'Kontakt',
@@ -579,7 +601,7 @@ const pageMeta = {
             "description": "How a small business goes paperless: scan by phone or network scanner, managed AI reads each document, files land in your own Trello and Google Drive."
         },
         "de": {
-            "title": "Papierloses Dokumentenscannen für kleine Unternehmen | Scandora",
+            "title": "Papierloses Dokumentenscannen für kleine Unternehmen",
             "description": "Wie kleine Unternehmen papierlos werden: per Handy oder Netzwerkscanner scannen, verwaltete KI liest jedes Dokument, Ablage in Ihrem Trello und Drive."
         }
     },
@@ -649,7 +671,7 @@ const pageMeta = {
             "description": "What reaches a server, what stays on your device, and where each is processed: Scandora's own servers in Falkenstein, Germany, and managed AI in Frankfurt."
         },
         "de": {
-            "title": "Dokumentenscanner auf EU-Servern: wo Ihre Daten liegen | Scandora",
+            "title": "Dokumentenscanner auf EU-Servern: wo Ihre Daten liegen",
             "description": "Was einen Server erreicht, was auf dem Gerät bleibt und wo es verarbeitet wird: Scandoras Server in Falkenstein und verwaltete KI in Frankfurt."
         }
     },
@@ -905,34 +927,50 @@ const pageMeta = {
     }
 };
 
-// Current language. A `?lang=de`/`?lang=en` query parameter wins for the initial
-// render (so shared/hreflang links land in the right language) without being
-// persisted; otherwise the stored preference wins; otherwise the page's own
-// data-default-lang (DE-first pages), falling back to English.
+// A page with hreflang versions is static: its <html lang> is its language, and `?lang=` sends the
+// visitor to the matching version. A page without versions keeps switching in place: `?lang=`, then
+// the stored preference, then its own <html lang>.
+function isLanguage(code) {
+    return typeof code === 'string' && Object.prototype.hasOwnProperty.call(translations, code);
+}
+
+function languageVersionLinks() {
+    return Array.from(document.querySelectorAll('link[rel="alternate"][hreflang]'))
+        .filter(link => link.getAttribute('hreflang') !== 'x-default');
+}
+
+function pageLanguage() {
+    const declared = document.documentElement.getAttribute('lang');
+    return isLanguage(declared) ? declared : Object.keys(translations)[0];
+}
+
 function initialLanguage() {
+    if (languageVersionLinks().length > 0) {
+        return pageLanguage();
+    }
     const requested = new URLSearchParams(window.location.search).get('lang');
-    if (requested === 'de' || requested === 'en') {
+    if (isLanguage(requested)) {
         return requested;
     }
     const stored = localStorage.getItem('scandora-lang');
-    if (stored === 'de' || stored === 'en') {
+    if (isLanguage(stored)) {
         return stored;
     }
-    return document.documentElement.getAttribute('data-default-lang') === 'de' ? 'de' : 'en';
+    return pageLanguage();
 }
 
-// True when German is reached by an explicit signal (`?lang=de` or the stored
-// preference) rather than a page's DE-first default. The canonical/og/twitter URLs
-// only carry the `?lang=de` suffix in that explicit case.
-function germanSelectedExplicitly() {
+function requestedLanguageVersion() {
     const requested = new URLSearchParams(window.location.search).get('lang');
-    if (requested === 'de') {
-        return true;
+    if (!requested || requested === pageLanguage()) {
+        return null;
     }
-    if (requested === 'en') {
-        return false;
-    }
-    return localStorage.getItem('scandora-lang') === 'de';
+    const version = languageVersionLinks().find(link => link.getAttribute('hreflang') === requested);
+    return version ? version.getAttribute('href') : null;
+}
+
+const requestedVersion = requestedLanguageVersion();
+if (requestedVersion) {
+    window.location.replace(requestedVersion + window.location.hash);
 }
 
 let currentLang = initialLanguage();
@@ -976,25 +1014,6 @@ function applyPageMeta() {
     }
 }
 
-function applyCanonicalUrls() {
-    const enAlt = document.querySelector('link[rel="alternate"][hreflang="en"]');
-    const deAlt = document.querySelector('link[rel="alternate"][hreflang="de"]');
-    if (!enAlt || !deAlt) {
-        return;
-    }
-    const useDe = currentLang === 'de' && germanSelectedExplicitly();
-    const href = (useDe ? deAlt : enAlt).getAttribute('href');
-    if (!href) {
-        return;
-    }
-    const canonical = document.querySelector('link[rel="canonical"]');
-    if (canonical) {
-        canonical.setAttribute('href', href);
-    }
-    setMetaContent('meta[property="og:url"]', href);
-    setMetaContent('meta[name="twitter:url"]', href);
-}
-
 /**
  * Apply translations to all elements with data-i18n attribute
  */
@@ -1018,6 +1037,11 @@ function applyTranslations() {
         el.hidden = el.getAttribute('data-lang') !== currentLang;
     });
 
+    const localizedHref = 'data-href-' + currentLang.toLowerCase();
+    document.querySelectorAll('a[' + localizedHref + ']').forEach(link => {
+        link.setAttribute('href', link.getAttribute(localizedHref));
+    });
+
     // Update language indicator
     const langIndicator = document.getElementById('lang-indicator');
     if (langIndicator) {
@@ -1027,27 +1051,18 @@ function applyTranslations() {
     // Update HTML lang attribute
     document.documentElement.lang = currentLang;
 
-    // Localize the <head>: title/description meta and the canonical/og/twitter URLs.
+    const marked = document.querySelector('.lang-menu a[aria-current]');
+    const marker = marked ? marked.getAttribute('aria-current') : 'page';
+    document.querySelectorAll('.lang-menu a[hreflang]').forEach(link => {
+        if (link.getAttribute('hreflang') === currentLang) {
+            link.setAttribute('aria-current', marker);
+        } else {
+            link.removeAttribute('aria-current');
+        }
+    });
+
+    // Localize the <head>: title and description meta.
     applyPageMeta();
-    applyCanonicalUrls();
-}
-
-/**
- * Toggle between languages
- */
-function toggleLanguage() {
-    const previousLang = currentLang;
-    currentLang = currentLang === 'en' ? 'de' : 'en';
-    localStorage.setItem('scandora-lang', currentLang);
-    applyTranslations();
-
-    // Track language switch event
-    if (typeof window.trackEvent === 'function') {
-        window.trackEvent('language_switch', {
-            from_language: previousLang,
-            to_language: currentLang
-        });
-    }
 }
 
 // Apply translations once the DOM is ready

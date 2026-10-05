@@ -11,8 +11,8 @@
     <link rel="canonical" href="https://scandora.eu/document-scanner-eu-servers">
 
     <!-- Alternate Languages -->
-    <link rel="alternate" hreflang="de" href="https://scandora.eu/document-scanner-eu-servers?lang=de">
     <link rel="alternate" hreflang="en" href="https://scandora.eu/document-scanner-eu-servers">
+    <link rel="alternate" hreflang="de" href="https://scandora.eu/de/document-scanner-eu-servers">
     <link rel="alternate" hreflang="x-default" href="https://scandora.eu/document-scanner-eu-servers">
 
     <!-- Open Graph -->
@@ -160,7 +160,13 @@
                     <a href="/#pricing" role="menuitem" data-i18n="nav.pricing">Pricing</a>
                 </div>
                 <div class="nav-actions">
-                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language" type="button"><span id="lang-indicator">EN</span></button>
+                    <details class="lang-menu">
+                        <summary class="lang-toggle"><span class="sr-only" data-i18n="language.menu">Language</span> <span id="lang-indicator">EN</span></summary>
+                        <ul class="lang-menu-list">
+                            <li><a href="/document-scanner-eu-servers" hreflang="en" lang="en" aria-current="page"><span class="lang-menu-name">English</span></a></li>
+                            <li><a href="/de/document-scanner-eu-servers" hreflang="de" lang="de"><span class="lang-menu-name">Deutsch</span> <span class="lang-menu-english" lang="en">German</span></a></li>
+                        </ul>
+                    </details>
                     <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
@@ -263,7 +269,7 @@
                 <!-- ================= ENGLISH ================= -->
                 <article class="legal-content" data-lang="en">
                     <div class="highlight-box">
-                        <p><strong>In short:</strong> "EU servers" is not a promise, it is a list of paths. This page walks them one by one: what stays on your device, what reaches Scandora's own server in Falkenstein, Germany, what the model provider processes in Frankfurt, and which sub-processors are involved. What makes a scanner GDPR-ready in general is set out on the <a href="/gdpr-dokumentenscanner">GDPR document scanner page</a>.</p>
+                        <p><strong>In short:</strong> "EU servers" is not a promise, it is a list of paths. This page walks them one by one: what stays on your device, what reaches Scandora's own server in Falkenstein, Germany, what the model provider processes in Frankfurt, and which sub-processors are involved. What makes a scanner GDPR-ready in general is set out on the <a href="/en/gdpr-dokumentenscanner">GDPR document scanner page</a>.</p>
                     </div>
 
                     <p><a href="/avv" class="btn btn-primary">Read the AVV / DPA</a></p>
@@ -272,7 +278,7 @@
                     <p>Scandora. The servers we run ourselves are in the EU: Scandora's own server sits in Falkenstein, Germany, on machines rented from Hetzner, and it holds the scan history, the userdata API, the credential-issuing endpoint for managed AI and the capture and change records. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. Scandora carries no ads.</p>
 
                     <h2>Which document scanner should a small company choose under the GDPR?</h2>
-                    <p>Check four things before you pick one: where the server-side steps run, whether your original documents stay under your control, whether the app or its website loads third-party fonts and advertising trackers, and whether you can sign a data-processing agreement for business use. Scandora answers all four — EU hosting in Germany, originals that stay on your device and in the storage you choose, no third-party fonts or ad trackers, and an <a href="/avv">AVV / Data Processing Agreement under Art. 28 GDPR</a> you can read, download and sign. The full criteria list lives on the <a href="/gdpr-dokumentenscanner">GDPR document scanner page</a>.</p>
+                    <p>Check four things before you pick one: where the server-side steps run, whether your original documents stay under your control, whether the app or its website loads third-party fonts and advertising trackers, and whether you can sign a data-processing agreement for business use. Scandora answers all four — EU hosting in Germany, originals that stay on your device and in the storage you choose, no third-party fonts or ad trackers, and an <a href="/avv">AVV / Data Processing Agreement under Art. 28 GDPR</a> you can read, download and sign. The full criteria list lives on the <a href="/en/gdpr-dokumentenscanner">GDPR document scanner page</a>.</p>
 
                     <h2>What actually leaves my device when I scan a page?</h2>
                     <p>Three things. When you use an AI feature, your device sends the page image directly to the model provider that returns the analysis, using a short-lived credential Scandora's server issues. While you are signed in, the history record of each completed scan is uploaded to that same server: the record's metadata, the text extracted from the document and a small low-resolution preview of the first page. Also while you are signed in, your device sends the extracted text and the AI description of each new document directly to the model provider, which turns them into the search vectors of the on-device index. Your original files are never stored on Scandora's servers.</p>
@@ -321,7 +327,7 @@
                         </tbody>
                     </table>
 
-                    <p>Related reading: <a href="/gdpr-dokumentenscanner">GDPR document scanner: the criteria</a> · <a href="/privacy">Privacy policy</a> · <a href="/avv">AVV / DPA</a> · <a href="/paperless-small-business">Paperless in a small business</a> · <a href="/vs-camscanner">Scandora vs CamScanner</a></p>
+                    <p>Related reading: <a href="/en/gdpr-dokumentenscanner">GDPR document scanner: the criteria</a> · <a href="/privacy">Privacy policy</a> · <a href="/avv">AVV / DPA</a> · <a href="/paperless-small-business">Paperless in a small business</a> · <a href="/vs-camscanner">Scandora vs CamScanner</a></p>
 
                     <div class="highlight-box">
                         <p><strong>Want scanning processed in the EU?</strong> Try Scandora free with managed AI.</p>
@@ -385,8 +391,8 @@
                     </div>
                     <div class="footer-col">
                         <h4 data-i18n="footer.support">Support</h4>
-                        <a href="/help/" data-i18n="footer.help">Help Center</a>
-                        <a href="/blog/" data-i18n="nav.blog">Guides</a>
+                        <a href="/en/help/" data-i18n="footer.help">Help Center</a>
+                        <a href="/en/blog/" data-i18n="nav.blog">Guides</a>
                         <a href="/contact" data-i18n="footer.contact">Contact Us</a>
                         <a href="/careers" data-i18n="footer.careers">Careers</a>
                     </div>
