@@ -53,7 +53,7 @@ const translations = {
         'features.profiles.title': 'Multiple Profiles',
         'features.profiles.desc': 'Separate personal and business documents with distinct profiles. Each with its own settings and cloud connections.',
         'features.privacy.title': 'Your Data Stays Yours',
-        'features.privacy.desc': "Your documents are yours. We don't store your full documents or page images on our servers — they go only to the managed AI service we operate and to the cloud services you choose. While you're signed in, your scan history syncs to our servers in Germany: the history details, a small low-resolution preview and the text we extracted from the pages. Scandora is designed with GoBD and DSGVO in mind.",
+        'features.privacy.desc': "Your documents are yours. We don't store your full documents or page images on our servers — they go only to the managed AI (Google Gemini, processed in the EU) and to the cloud services you choose. While you're signed in, your scan history syncs to our servers in Germany: the history details, a small low-resolution preview and the text we extracted from the pages. The text and preview are encrypted on your device before upload; we hold a key to them unless you turn on Advanced Protection in the app, which locks them with your own code. Scandora is designed with GoBD and DSGVO in mind.",
 
         // How It Works
         'howItWorks.badge': 'From Scan to Action',
@@ -62,9 +62,9 @@ const translations = {
         'howItWorks.step1.title': 'Scan It',
         'howItWorks.step1.desc': 'Use your phone camera or a network scanner (eSCL/AirScan). Automatic edge detection keeps every page clean.',
         'howItWorks.step2.title': 'Managed AI Understands It',
-        'howItWorks.step2.desc': 'Scandora\u2019s managed AI reads the document, recognizes its type, and pulls out the key details. Only a low-resolution preview and the extracted text are stored on our EU servers \u2014 never your original files.',
+        'howItWorks.step2.desc': 'Scandora\u2019s managed AI reads the document, recognizes its type, and pulls out the key details. A low-resolution preview, the extracted text and the document\u2019s details are stored on our EU servers \u2014 never your original files.',
         'howItWorks.step3.title': 'It Becomes an Action',
-        'howItWorks.step3.desc': 'The result syncs straight into your own Trello and Google Drive — a card, a filed document, ready to act on. Scandora is privacy-first and comes with GoBD record-keeping features.',
+        'howItWorks.step3.desc': 'The result syncs straight into your own Trello and Google Drive — a card, a filed document, ready to act on. Files go from your device straight to them, never through our servers, and Scandora comes with GoBD record-keeping features.',
 
         // Pricing
         'pricing.badge': 'Flexible Pricing',
@@ -210,7 +210,7 @@ const translations = {
         'faq.q3': 'Which platforms does Scandora support?',
         'faq.a3': 'Scandora is available on iOS, macOS, and Android. You can scan documents using your phone camera or connect professional scanners on desktop.',
         'faq.q4': 'Is my data secure with Scandora?',
-        'faq.a4': "Privacy is built into Scandora's design. Your original scans stay on your device and go only directly to Google Gemini for extraction — using a short-lived credential our server issues — and to the cloud services you choose. So your history syncs across your devices, we store a low-resolution preview and the extracted text on our EU servers — never your original files. AI document search and chat run on your device. To build their index, your device sends Google (Vertex AI in the EU) the extracted text and the AI description of every document you scan while signed in; a search then sends only the search query, and an answer only your question and the passages it draws on. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. You stay in control of your data.",
+        'faq.a4': "Your original scans stay on your device and go only directly to Google Gemini for extraction — using a short-lived credential our server issues — and to the cloud services you choose. So your history syncs across your devices, we store a low-resolution preview, the extracted text and the document's details on our EU servers — never your original files. The text and preview are encrypted on your device before upload; we hold a key to them unless you turn on Advanced Protection in the app, which locks them with your own code. AI document search and chat run on your device. To build their index, your device sends Google (Vertex AI in the EU) the extracted text and the AI description of every document you scan while signed in; a search then sends only the search query, and an answer only your question and the passages it draws on. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. You stay in control of your data.",
         'faq.q5': 'Do I need my own API key to use the AI?',
         'faq.a5': 'No. Scandora runs on managed AI — your monthly credits cover document extraction, indexing, and AI chat. There is no bring-your-own-key mode, so there is no API key to obtain or enter.',
         'faq.q6': 'Is Scandora GDPR-compliant?',
@@ -334,7 +334,7 @@ const translations = {
         'features.profiles.title': 'Mehrere Profile',
         'features.profiles.desc': 'Trennen Sie private und geschäftliche Dokumente mit verschiedenen Profilen. Jedes mit eigenen Einstellungen und Cloud-Verbindungen.',
         'features.privacy.title': 'Ihre Daten bleiben Ihre',
-        'features.privacy.desc': 'Ihre Dokumente gehören Ihnen. Wir speichern Ihre vollständigen Dokumente und Seitenbilder nicht auf unseren Servern — sie gehen nur an unseren verwalteten KI-Dienst und an die von Ihnen gewählten Cloud-Dienste. Solange Sie angemeldet sind, wird Ihr Scan-Verlauf mit unseren Servern in Deutschland synchronisiert: die Verlaufsdaten, eine kleine, niedrig aufgelöste Vorschau und der aus den Seiten extrahierte Text. Scandora ist mit Blick auf GoBD und DSGVO entwickelt.',
+        'features.privacy.desc': 'Ihre Dokumente gehören Ihnen. Wir speichern Ihre vollständigen Dokumente und Seitenbilder nicht auf unseren Servern — sie gehen nur an die verwaltete KI (Google Gemini, verarbeitet in der EU) und an die von Ihnen gewählten Cloud-Dienste. Solange Sie angemeldet sind, wird Ihr Scan-Verlauf mit unseren Servern in Deutschland synchronisiert: die Verlaufsdaten, eine kleine, niedrig aufgelöste Vorschau und der aus den Seiten extrahierte Text. Text und Vorschau werden vor dem Hochladen auf Ihrem Gerät verschlüsselt; wir halten einen Schlüssel dazu, außer Sie schalten in der App den Erweiterten Schutz ein, der sie mit Ihrem eigenen Code sperrt. Scandora ist mit Blick auf GoBD und DSGVO entwickelt.',
 
         // How It Works
         'howItWorks.badge': 'Vom Scan zur Aktion',
@@ -343,9 +343,9 @@ const translations = {
         'howItWorks.step1.title': 'Scannen',
         'howItWorks.step1.desc': 'Nutzen Sie die Handykamera oder einen Netzwerkscanner (eSCL/AirScan). Die automatische Kantenerkennung hält jede Seite sauber.',
         'howItWorks.step2.title': 'Verwaltete KI versteht es',
-        'howItWorks.step2.desc': 'Scandoras verwaltete KI liest das Dokument, erkennt den Typ und holt die wichtigen Angaben heraus. Auf unseren EU-Servern liegen nur eine Vorschau in niedriger Auflösung und der extrahierte Text — niemals Ihre Originaldateien.',
+        'howItWorks.step2.desc': 'Scandoras verwaltete KI liest das Dokument, erkennt den Typ und holt die wichtigen Angaben heraus. Auf unseren EU-Servern liegen eine Vorschau in niedriger Auflösung, der extrahierte Text und die Angaben des Dokuments — niemals Ihre Originaldateien.',
         'howItWorks.step3.title': 'Es wird zur Aktion',
-        'howItWorks.step3.desc': 'Das Ergebnis landet direkt in Ihrem eigenen Trello und Google Drive — eine Karte, ein abgelegtes Dokument, bereit zum Handeln. Scandora stellt den Datenschutz an erste Stelle und bietet GoBD-Funktionen.',
+        'howItWorks.step3.desc': 'Das Ergebnis landet direkt in Ihrem eigenen Trello und Google Drive — eine Karte, ein abgelegtes Dokument, bereit zum Handeln. Dateien gehen direkt von Ihrem Gerät dorthin, nie über unsere Server, und Scandora bietet GoBD-Funktionen.',
 
         // Pricing
         'pricing.badge': 'Flexible Preise',
@@ -491,7 +491,7 @@ const translations = {
         'faq.q3': 'Welche Plattformen unterstützt Scandora?',
         'faq.a3': 'Scandora ist für iOS, macOS und Android verfügbar. Sie können Dokumente mit Ihrer Handykamera scannen oder auf dem Desktop professionelle Scanner verbinden.',
         'faq.q4': 'Sind meine Daten bei Scandora sicher?',
-        'faq.a4': 'Datenschutz ist im Design von Scandora verankert. Ihre Original-Scans bleiben auf Ihrem Gerät und gehen nur direkt an Google Gemini zur Extraktion — mit einer kurzlebigen Zugangsberechtigung, die unser Server ausstellt — und an die von Ihnen gewählten Cloud-Dienste. Damit Ihr Verlauf geräteübergreifend synchronisiert, speichern wir eine Vorschau in niedriger Auflösung und den extrahierten Text auf unseren EU-Servern — niemals Ihre Originaldateien. Die KI-Dokumentensuche und der -Chat laufen auf Ihrem Gerät. Für ihren Index sendet Ihr Gerät den extrahierten Text und die KI-Beschreibung jedes Dokuments, das Sie angemeldet scannen, an Google (Vertex AI in der EU); eine Suche sendet danach nur die Suchanfrage, eine Antwort nur Ihre Frage und die dafür herangezogenen Passagen. Die verwaltete KI-Generierung wird in der EU verarbeitet — Google Gemini auf Vertex AI in Frankfurt, Deutschland. Sie behalten die Kontrolle über Ihre Daten.',
+        'faq.a4': 'Ihre Original-Scans bleiben auf Ihrem Gerät und gehen nur direkt an Google Gemini zur Extraktion — mit einer kurzlebigen Zugangsberechtigung, die unser Server ausstellt — und an die von Ihnen gewählten Cloud-Dienste. Damit Ihr Verlauf geräteübergreifend synchronisiert, speichern wir eine Vorschau in niedriger Auflösung, den extrahierten Text und die Angaben des Dokuments auf unseren EU-Servern — niemals Ihre Originaldateien. Text und Vorschau werden vor dem Hochladen auf Ihrem Gerät verschlüsselt; wir halten einen Schlüssel dazu, außer Sie schalten in der App den Erweiterten Schutz ein, der sie mit Ihrem eigenen Code sperrt. Die KI-Dokumentensuche und der -Chat laufen auf Ihrem Gerät. Für ihren Index sendet Ihr Gerät den extrahierten Text und die KI-Beschreibung jedes Dokuments, das Sie angemeldet scannen, an Google (Vertex AI in der EU); eine Suche sendet danach nur die Suchanfrage, eine Antwort nur Ihre Frage und die dafür herangezogenen Passagen. Die verwaltete KI-Generierung wird in der EU verarbeitet — Google Gemini auf Vertex AI in Frankfurt, Deutschland. Sie behalten die Kontrolle über Ihre Daten.',
         'faq.q5': 'Brauche ich einen eigenen API-Schlüssel für die KI?',
         'faq.a5': 'Nein. Scandora läuft auf verwalteter KI — Ihre monatlichen Credits decken Dokumentextraktion, Indexierung und KI-Chat. Einen Modus für eigene Schlüssel gibt es nicht, Sie müssen also keinen API-Schlüssel besorgen oder eingeben.',
         'faq.q6': 'Ist Scandora DSGVO-konform?',
@@ -615,7 +615,7 @@ const translations = {
         'features.profiles.title': 'Varios perfiles',
         'features.profiles.desc': 'Separa tus documentos personales y de empresa con perfiles distintos. Cada uno con sus propios ajustes y conexiones a la nube.',
         'features.privacy.title': 'Tus datos siguen siendo tuyos',
-        'features.privacy.desc': 'Tus documentos son tuyos. No almacenamos tus documentos completos ni las imágenes de las páginas en nuestros servidores — solo van al servicio de IA gestionada que operamos y a los servicios en la nube que tú elijas. Mientras tengas la sesión iniciada, el historial de tus escaneos se sincroniza con nuestros servidores en Alemania: los detalles del historial, una pequeña vista previa de baja resolución y el texto que extrajimos de las páginas. Scandora se ha diseñado teniendo en cuenta GoBD y el RGPD.',
+        'features.privacy.desc': 'Tus documentos son tuyos. No almacenamos tus documentos completos ni las imágenes de las páginas en nuestros servidores — solo van a la IA gestionada (Google Gemini, procesada en la UE) y a los servicios en la nube que tú elijas. Mientras tengas la sesión iniciada, el historial de tus escaneos se sincroniza con nuestros servidores en Alemania: los detalles del historial, una pequeña vista previa de baja resolución y el texto que extrajimos de las páginas. El texto y la vista previa se cifran en tu dispositivo antes de subirse; tenemos una clave para abrirlos, salvo que actives la Protección avanzada en la app, que los bloquea con tu propio código. Scandora se ha diseñado teniendo en cuenta GoBD y el RGPD.',
 
         // How It Works
         'howItWorks.badge': 'Del escaneo a la acción',
@@ -624,9 +624,9 @@ const translations = {
         'howItWorks.step1.title': 'Escanéalo',
         'howItWorks.step1.desc': 'Usa la cámara de tu teléfono o un escáner de red (eSCL/AirScan). La detección automática de bordes mantiene limpia cada página.',
         'howItWorks.step2.title': 'La IA gestionada lo entiende',
-        'howItWorks.step2.desc': 'La IA gestionada de Scandora lee el documento, reconoce su tipo y extrae los datos clave. En nuestros servidores de la UE solo se guardan una vista previa de baja resolución y el texto extraído — nunca tus archivos originales.',
+        'howItWorks.step2.desc': 'La IA gestionada de Scandora lee el documento, reconoce su tipo y extrae los datos clave. En nuestros servidores de la UE se guardan una vista previa de baja resolución, el texto extraído y los datos del documento — nunca tus archivos originales.',
         'howItWorks.step3.title': 'Se convierte en acción',
-        'howItWorks.step3.desc': 'El resultado se sincroniza directamente con tu propio Trello y Google Drive — una tarjeta, un documento archivado, listo para actuar. Scandora da prioridad a la privacidad y viene con funciones de conservación de registros GoBD.',
+        'howItWorks.step3.desc': 'El resultado se sincroniza directamente con tu propio Trello y Google Drive — una tarjeta, un documento archivado, listo para actuar. Los archivos van directamente desde tu dispositivo, nunca a través de nuestros servidores, y Scandora viene con funciones de conservación de registros GoBD.',
 
         // Pricing
         'pricing.badge': 'Precios flexibles',
@@ -772,7 +772,7 @@ const translations = {
         'faq.q3': '¿Qué plataformas admite Scandora?',
         'faq.a3': 'Scandora está disponible en iOS, macOS y Android. Puedes escanear documentos con la cámara de tu teléfono o conectar escáneres profesionales en el escritorio.',
         'faq.q4': '¿Están seguros mis datos con Scandora?',
-        'faq.a4': 'La privacidad forma parte del diseño de Scandora. Tus escaneos originales se quedan en tu dispositivo y solo van directamente a Google Gemini para la extracción — con una credencial de corta duración que emite nuestro servidor — y a los servicios en la nube que elijas. Para que tu historial se sincronice entre tus dispositivos, guardamos una vista previa de baja resolución y el texto extraído en nuestros servidores de la UE — nunca tus archivos originales. La búsqueda y el chat de documentos con IA se ejecutan en tu dispositivo. Para crear su índice, tu dispositivo envía a Google (Vertex AI en la UE) el texto extraído y la descripción de IA de cada documento que escaneas con la sesión iniciada; después, una búsqueda envía solo la consulta, y una respuesta, solo tu pregunta y los pasajes en los que se basa. La generación de la IA gestionada se procesa en la UE — Google Gemini en Vertex AI en Fráncfort, Alemania. Tú mantienes el control de tus datos.',
+        'faq.a4': 'Tus escaneos originales se quedan en tu dispositivo y solo van directamente a Google Gemini para la extracción — con una credencial de corta duración que emite nuestro servidor — y a los servicios en la nube que elijas. Para que tu historial se sincronice entre tus dispositivos, guardamos una vista previa de baja resolución, el texto extraído y los datos del documento en nuestros servidores de la UE — nunca tus archivos originales. El texto y la vista previa se cifran en tu dispositivo antes de subirse; tenemos una clave para abrirlos, salvo que actives la Protección avanzada en la app, que los bloquea con tu propio código. La búsqueda y el chat de documentos con IA se ejecutan en tu dispositivo. Para crear su índice, tu dispositivo envía a Google (Vertex AI en la UE) el texto extraído y la descripción de IA de cada documento que escaneas con la sesión iniciada; después, una búsqueda envía solo la consulta, y una respuesta, solo tu pregunta y los pasajes en los que se basa. La generación de la IA gestionada se procesa en la UE — Google Gemini en Vertex AI en Fráncfort, Alemania. Tú mantienes el control de tus datos.',
         'faq.q5': '¿Necesito mi propia clave de API para usar la IA?',
         'faq.a5': 'No. Scandora funciona con IA gestionada: tus créditos mensuales cubren la extracción de documentos, la indexación y el chat con IA. No existe un modo para usar tu propia clave, así que no hay ninguna clave de API que obtener ni introducir.',
         'faq.q6': '¿Scandora cumple el RGPD?',
@@ -892,7 +892,7 @@ const translations = {
         'features.profiles.title': 'Vários perfis',
         'features.profiles.desc': 'Separe documentos pessoais e comerciais com perfis distintos. Cada um com suas próprias configurações e conexões de nuvem.',
         'features.privacy.title': 'Seus dados continuam sendo seus',
-        'features.privacy.desc': 'Seus documentos são seus. Não armazenamos seus documentos completos nem as imagens das páginas em nossos servidores — eles vão apenas para o serviço de IA gerenciada que operamos e para os serviços de nuvem que você escolher. Enquanto você estiver com a sessão iniciada, seu histórico de digitalizações é sincronizado com nossos servidores na Alemanha: os detalhes do histórico, uma pequena pré-visualização de baixa resolução e o texto que extraímos das páginas. O Scandora foi projetado com o GoBD e o GDPR em mente.',
+        'features.privacy.desc': 'Seus documentos são seus. Não armazenamos seus documentos completos nem as imagens das páginas em nossos servidores — eles vão apenas para a IA gerenciada (Google Gemini, processada na UE) e para os serviços de nuvem que você escolher. Enquanto você estiver com a sessão iniciada, seu histórico de digitalizações é sincronizado com nossos servidores na Alemanha: os detalhes do histórico, uma pequena pré-visualização de baixa resolução e o texto que extraímos das páginas. O texto e a pré-visualização são criptografados no seu dispositivo antes do envio; temos uma chave para abri-los, a menos que você ative a Proteção avançada no app, que os bloqueia com o seu próprio código. O Scandora foi projetado com o GoBD e o GDPR em mente.',
 
         'howItWorks.badge': 'Da digitalização à ação',
         'howItWorks.title': 'Do papel à ação em três passos',
@@ -900,9 +900,9 @@ const translations = {
         'howItWorks.step1.title': 'Escaneie',
         'howItWorks.step1.desc': 'Use a câmera do celular ou um scanner de rede (eSCL/AirScan). A detecção automática de bordas mantém cada página limpa.',
         'howItWorks.step2.title': 'A IA gerenciada entende',
-        'howItWorks.step2.desc': 'A IA gerenciada do Scandora lê o documento, reconhece o tipo e extrai os principais detalhes. Apenas uma pré-visualização de baixa resolução e o texto extraído ficam armazenados em nossos servidores na UE — nunca seus arquivos originais.',
+        'howItWorks.step2.desc': 'A IA gerenciada do Scandora lê o documento, reconhece o tipo e extrai os principais detalhes. Uma pré-visualização de baixa resolução, o texto extraído e os dados do documento ficam armazenados em nossos servidores na UE — nunca seus arquivos originais.',
         'howItWorks.step3.title': 'Vira uma ação',
-        'howItWorks.step3.desc': 'O resultado é sincronizado direto com o seu Trello e o seu Google Drive — um cartão, um documento arquivado, pronto para agir. O Scandora coloca a privacidade em primeiro lugar e vem com recursos de conservação de registros GoBD.',
+        'howItWorks.step3.desc': 'O resultado é sincronizado direto com o seu Trello e o seu Google Drive — um cartão, um documento arquivado, pronto para agir. Os arquivos vão direto do seu dispositivo, nunca pelos nossos servidores, e o Scandora vem com recursos de conservação de registros GoBD.',
 
         'pricing.badge': 'Preços flexíveis',
         'pricing.title': 'Escolha o plano ideal',
@@ -1040,7 +1040,7 @@ const translations = {
         'faq.q3': 'Em quais plataformas o Scandora funciona?',
         'faq.a3': 'O Scandora está disponível para iOS, macOS e Android. Você pode escanear documentos com a câmera do celular ou conectar scanners profissionais no computador.',
         'faq.q4': 'Meus dados estão seguros no Scandora?',
-        'faq.a4': 'A privacidade faz parte do design do Scandora. Suas digitalizações originais ficam no seu dispositivo e só são enviadas diretamente ao Google Gemini, para extração — usando uma credencial de curta duração emitida pelo nosso servidor — e aos serviços de nuvem que você escolher. Para sincronizar seu histórico entre seus dispositivos, armazenamos uma pré-visualização em baixa resolução e o texto extraído em nossos servidores na UE — nunca seus arquivos originais. A busca e o chat de documentos com IA funcionam no seu dispositivo. Para criar o índice de busca, seu dispositivo envia ao Google (Vertex AI na UE) o texto extraído e a descrição de IA de cada documento que você escanear com a sessão iniciada; depois, uma busca envia apenas a consulta, e uma resposta envia apenas a sua pergunta e as passagens em que se baseia. A geração de IA gerenciada é tratada na UE — Google Gemini no Vertex AI em Frankfurt, na Alemanha. Você mantém o controle dos seus dados.',
+        'faq.a4': 'Suas digitalizações originais ficam no seu dispositivo e só são enviadas diretamente ao Google Gemini, para extração — usando uma credencial de curta duração emitida pelo nosso servidor — e aos serviços de nuvem que você escolher. Para sincronizar seu histórico entre seus dispositivos, armazenamos uma pré-visualização em baixa resolução, o texto extraído e os dados do documento em nossos servidores na UE — nunca seus arquivos originais. O texto e a pré-visualização são criptografados no seu dispositivo antes do envio; temos uma chave para abri-los, a menos que você ative a Proteção avançada no app, que os bloqueia com o seu próprio código. A busca e o chat de documentos com IA funcionam no seu dispositivo. Para criar o índice de busca, seu dispositivo envia ao Google (Vertex AI na UE) o texto extraído e a descrição de IA de cada documento que você escanear com a sessão iniciada; depois, uma busca envia apenas a consulta, e uma resposta envia apenas a sua pergunta e as passagens em que se baseia. A geração de IA gerenciada é tratada na UE — Google Gemini no Vertex AI em Frankfurt, na Alemanha. Você mantém o controle dos seus dados.',
         'faq.q5': 'Preciso de uma chave de API própria para usar a IA?',
         'faq.a5': 'Não. O Scandora funciona com IA gerenciada — seus créditos mensais cobrem a leitura dos documentos, a indexação e o chat com IA. Não existe modo com chave própria, então não há chave de API para obter nem para inserir.',
         'faq.q6': 'O Scandora está em conformidade com o GDPR?',
@@ -1162,7 +1162,7 @@ const translations = {
         'features.profiles.title': 'Più profili',
         'features.profiles.desc': 'Separa i documenti personali e quelli aziendali con profili distinti. Ognuno con le proprie impostazioni e connessioni cloud.',
         'features.privacy.title': 'I tuoi dati restano tuoi',
-        'features.privacy.desc': 'I tuoi documenti sono tuoi. Non conserviamo sui nostri server i tuoi documenti completi né le immagini delle pagine — vanno solo al servizio di IA gestita che operiamo noi e ai servizi cloud che scegli tu. Finché hai effettuato l’accesso, la cronologia delle tue scansioni si sincronizza con i nostri server in Germania: i dettagli della cronologia, una piccola anteprima a bassa risoluzione e il testo che abbiamo estratto dalle pagine. Scandora è progettata tenendo conto di GoBD e DSGVO.',
+        'features.privacy.desc': 'I tuoi documenti sono tuoi. Non conserviamo sui nostri server i tuoi documenti completi né le immagini delle pagine — vanno solo all’IA gestita (Google Gemini, elaborata nell’UE) e ai servizi cloud che scegli tu. Finché hai effettuato l’accesso, la cronologia delle tue scansioni si sincronizza con i nostri server in Germania: i dettagli della cronologia, una piccola anteprima a bassa risoluzione e il testo che abbiamo estratto dalle pagine. Il testo e l’anteprima vengono cifrati sul tuo dispositivo prima del caricamento; ne abbiamo una chiave, a meno che tu non attivi la Protezione avanzata nell’app, che li blocca con il tuo codice. Scandora è progettata tenendo conto di GoBD e DSGVO.',
 
         // How It Works
         'howItWorks.badge': 'Dalla scansione all’azione',
@@ -1171,9 +1171,9 @@ const translations = {
         'howItWorks.step1.title': 'Scansionalo',
         'howItWorks.step1.desc': 'Usa la fotocamera del telefono o uno scanner di rete (eSCL/AirScan). Il rilevamento automatico dei bordi mantiene pulita ogni pagina.',
         'howItWorks.step2.title': 'L’IA gestita lo comprende',
-        'howItWorks.step2.desc': 'L’IA gestita di Scandora legge il documento, ne riconosce il tipo ed estrae i dettagli chiave. Sui nostri server nell’UE vengono conservati solo un’anteprima a bassa risoluzione e il testo estratto — mai i tuoi file originali.',
+        'howItWorks.step2.desc': 'L’IA gestita di Scandora legge il documento, ne riconosce il tipo ed estrae i dettagli chiave. Sui nostri server nell’UE vengono conservati un’anteprima a bassa risoluzione, il testo estratto e i dati del documento — mai i tuoi file originali.',
         'howItWorks.step3.title': 'Diventa un’azione',
-        'howItWorks.step3.desc': 'Il risultato si sincronizza direttamente con il tuo Trello e il tuo Google Drive — una scheda, un documento archiviato, pronti per agire. Scandora mette la privacy al primo posto e include funzioni di tenuta dei registri GoBD.',
+        'howItWorks.step3.desc': 'Il risultato si sincronizza direttamente con il tuo Trello e il tuo Google Drive — una scheda, un documento archiviato, pronti per agire. I file partono direttamente dal tuo dispositivo, mai dai nostri server, e Scandora include funzioni di tenuta dei registri GoBD.',
 
         // Pricing
         'pricing.badge': 'Prezzi flessibili',
@@ -1319,7 +1319,7 @@ const translations = {
         'faq.q3': 'Quali piattaforme supporta Scandora?',
         'faq.a3': 'Scandora è disponibile su iOS, macOS e Android. Puoi scansionare i documenti con la fotocamera del telefono o collegare scanner professionali su desktop.',
         'faq.q4': 'I miei dati sono al sicuro con Scandora?',
-        'faq.a4': 'La privacy è parte integrante del progetto di Scandora. Le tue scansioni originali restano sul tuo dispositivo e vanno solo direttamente a Google Gemini per l’estrazione — con una credenziale di breve durata emessa dal nostro server — e ai servizi cloud che scegli. Affinché la tua cronologia si sincronizzi tra i tuoi dispositivi, conserviamo sui nostri server nell’UE un’anteprima a bassa risoluzione e il testo estratto — mai i tuoi file originali. La ricerca e la chat con l’IA sui documenti funzionano sul tuo dispositivo. Per costruire il loro indice, il tuo dispositivo invia a Google (Vertex AI nell’UE) il testo estratto e la descrizione IA di ogni documento che scansioni con l’accesso effettuato; una ricerca invia poi solo la query di ricerca, e una risposta solo la tua domanda e i passaggi su cui si basa. La generazione dell’IA gestita viene elaborata nell’UE — Google Gemini su Vertex AI a Francoforte, in Germania. Mantieni il controllo dei tuoi dati.',
+        'faq.a4': 'Le tue scansioni originali restano sul tuo dispositivo e vanno solo direttamente a Google Gemini per l’estrazione — con una credenziale di breve durata emessa dal nostro server — e ai servizi cloud che scegli. Affinché la tua cronologia si sincronizzi tra i tuoi dispositivi, conserviamo sui nostri server nell’UE un’anteprima a bassa risoluzione, il testo estratto e i dati del documento — mai i tuoi file originali. Il testo e l’anteprima vengono cifrati sul tuo dispositivo prima del caricamento; ne abbiamo una chiave, a meno che tu non attivi la Protezione avanzata nell’app, che li blocca con il tuo codice. La ricerca e la chat con l’IA sui documenti funzionano sul tuo dispositivo. Per costruire il loro indice, il tuo dispositivo invia a Google (Vertex AI nell’UE) il testo estratto e la descrizione IA di ogni documento che scansioni con l’accesso effettuato; una ricerca invia poi solo la query di ricerca, e una risposta solo la tua domanda e i passaggi su cui si basa. La generazione dell’IA gestita viene elaborata nell’UE — Google Gemini su Vertex AI a Francoforte, in Germania. Mantieni il controllo dei tuoi dati.',
         'faq.q5': 'Mi serve una chiave API personale per usare l’IA?',
         'faq.a5': 'No. Scandora funziona con l’IA gestita: i tuoi crediti mensili coprono estrazione dei documenti, indicizzazione e chat con l’IA. Non esiste una modalità con chiave personale, quindi non c’è nessuna chiave API da ottenere o inserire.',
         'faq.q6': 'Scandora è conforme al GDPR?',
@@ -1440,7 +1440,7 @@ const translations = {
         'features.profiles.title': 'Meerdere profielen',
         'features.profiles.desc': 'Houd persoonlijke en zakelijke documenten gescheiden met aparte profielen. Elk met eigen instellingen en cloudkoppelingen.',
         'features.privacy.title': 'Jouw gegevens blijven van jou',
-        'features.privacy.desc': 'Je documenten zijn van jou. Wij slaan je volledige documenten en pagina-afbeeldingen niet op onze servers op — ze gaan alleen naar de beheerde AI-dienst die wij exploiteren en naar de clouddiensten die je zelf kiest. Zolang je bent ingelogd, wordt je scangeschiedenis gesynchroniseerd met onze servers in Duitsland: de geschiedenisgegevens, een kleine voorvertoning met lage resolutie en de tekst die we uit de pagina\'s hebben gehaald. Scandora is ontworpen met GoBD en AVG in gedachten.',
+        'features.privacy.desc': 'Je documenten zijn van jou. Wij slaan je volledige documenten en pagina-afbeeldingen niet op onze servers op — ze gaan alleen naar de beheerde AI (Google Gemini, verwerkt in de EU) en naar de clouddiensten die je zelf kiest. Zolang je bent ingelogd, wordt je scangeschiedenis gesynchroniseerd met onze servers in Duitsland: de geschiedenisgegevens, een kleine voorvertoning met lage resolutie en de tekst die we uit de pagina\'s hebben gehaald. De tekst en de voorvertoning worden op je apparaat versleuteld voordat ze worden geüpload; wij hebben er een sleutel voor, tenzij je in de app Geavanceerde bescherming inschakelt, die ze met je eigen code vergrendelt. Scandora is ontworpen met GoBD en AVG in gedachten.',
 
         'howItWorks.badge': 'Van scan tot actie',
         'howItWorks.title': 'Van papier naar actie in drie stappen',
@@ -1448,9 +1448,9 @@ const translations = {
         'howItWorks.step1.title': 'Scan het',
         'howItWorks.step1.desc': 'Gebruik je telefooncamera of een netwerkscanner (eSCL/AirScan). Automatische randdetectie houdt elke pagina schoon.',
         'howItWorks.step2.title': 'Beheerde AI begrijpt het',
-        'howItWorks.step2.desc': 'De beheerde AI van Scandora leest het document, herkent het type en haalt de belangrijkste gegevens eruit. Alleen een voorvertoning met lage resolutie en de uitgelezen tekst worden opgeslagen op onze EU-servers — nooit je originele bestanden.',
+        'howItWorks.step2.desc': 'De beheerde AI van Scandora leest het document, herkent het type en haalt de belangrijkste gegevens eruit. Een voorvertoning met lage resolutie, de uitgelezen tekst en de gegevens van het document worden opgeslagen op onze EU-servers — nooit je originele bestanden.',
         'howItWorks.step3.title': 'Het wordt een actie',
-        'howItWorks.step3.desc': 'Het resultaat wordt rechtstreeks gesynchroniseerd met je eigen Trello en Google Drive — een kaart, een opgeslagen document, klaar om mee aan de slag te gaan. Scandora zet privacy voorop en heeft GoBD-functies voor het bijhouden van een administratie.',
+        'howItWorks.step3.desc': 'Het resultaat wordt rechtstreeks gesynchroniseerd met je eigen Trello en Google Drive — een kaart, een opgeslagen document, klaar om mee aan de slag te gaan. Bestanden gaan rechtstreeks vanaf je apparaat, nooit via onze servers, en Scandora heeft GoBD-functies voor het bijhouden van een administratie.',
 
         'pricing.badge': 'Flexibele prijzen',
         'pricing.title': 'Kies je ideale abonnement',
@@ -1600,7 +1600,7 @@ const translations = {
         'faq.q3': 'Welke platforms ondersteunt Scandora?',
         'faq.a3': 'Scandora is beschikbaar op iOS, macOS en Android. Je kunt documenten scannen met de camera van je telefoon of op desktop professionele scanners aansluiten.',
         'faq.q4': 'Zijn mijn gegevens veilig bij Scandora?',
-        'faq.a4': 'Privacy is ingebouwd in het ontwerp van Scandora. Je originele scans blijven op je apparaat en gaan alleen rechtstreeks naar Google Gemini voor extractie — met kortlevende toegangsgegevens die onze server uitgeeft — en naar de cloudservices die je kiest. Om je geschiedenis tussen je apparaten te synchroniseren, slaan we een voorvertoning met lage resolutie en de uitgelezen tekst op onze EU-servers op — nooit je originele bestanden. Het zoeken in documenten met AI en de documentchat draaien op je apparaat. Om hun index op te bouwen, stuurt je apparaat Google (Vertex AI in de EU) de uitgelezen tekst en de AI-beschrijving van elk document dat je scant terwijl je bent ingelogd; bij het zoeken wordt daarna alleen de zoekopdracht verstuurd, en bij een antwoord alleen je vraag en de passages waarop het is gebaseerd. De generatie door beheerde AI wordt in de EU verwerkt — Google Gemini op Vertex AI in Frankfurt, Duitsland. Jij houdt de controle over je gegevens.',
+        'faq.a4': 'Je originele scans blijven op je apparaat en gaan alleen rechtstreeks naar Google Gemini voor extractie — met kortlevende toegangsgegevens die onze server uitgeeft — en naar de cloudservices die je kiest. Om je geschiedenis tussen je apparaten te synchroniseren, slaan we een voorvertoning met lage resolutie, de uitgelezen tekst en de gegevens van het document op onze EU-servers op — nooit je originele bestanden. De tekst en de voorvertoning worden op je apparaat versleuteld voordat ze worden geüpload; wij hebben er een sleutel voor, tenzij je in de app Geavanceerde bescherming inschakelt, die ze met je eigen code vergrendelt. Het zoeken in documenten met AI en de documentchat draaien op je apparaat. Om hun index op te bouwen, stuurt je apparaat Google (Vertex AI in de EU) de uitgelezen tekst en de AI-beschrijving van elk document dat je scant terwijl je bent ingelogd; bij het zoeken wordt daarna alleen de zoekopdracht verstuurd, en bij een antwoord alleen je vraag en de passages waarop het is gebaseerd. De generatie door beheerde AI wordt in de EU verwerkt — Google Gemini op Vertex AI in Frankfurt, Duitsland. Jij houdt de controle over je gegevens.',
         'faq.q5': 'Heb ik een eigen API-sleutel nodig om de AI te gebruiken?',
         'faq.a5': 'Nee. Scandora draait op beheerde AI — je maandelijkse credits dekken documentextractie, indexering en AI-chat. Er is geen modus voor je eigen sleutel, dus je hoeft geen API-sleutel te verkrijgen of in te voeren.',
         'faq.q6': 'Is Scandora AVG-conform?',
@@ -2027,11 +2027,11 @@ const pageMeta = {
     "/gdpr-dokumentenscanner": {
         "en": {
             "title": "GDPR document scanner (DSGVO) | Scandora",
-            "description": "What makes a document scanner GDPR-ready: EU hosting, documents that stay on your device, no third-party trackers and an AVV/DPA."
+            "description": "What makes a document scanner GDPR-ready: EU hosting, original files that stay on your device, no third-party trackers and an AVV/DPA."
         },
         "de": {
             "title": "DSGVO-Dokumentenscanner | Scandora",
-            "description": "Was einen Dokumentenscanner DSGVO-konform macht: EU-Hosting, Dokumente bleiben auf dem Gerät, keine Drittanbieter-Tracker und ein AVV."
+            "description": "Was einen Dokumentenscanner DSGVO-konform macht: EU-Hosting, Originaldateien bleiben auf dem Gerät, keine Drittanbieter-Tracker und ein AVV."
         }
     },
     "/datev-steuerberater": {
@@ -2057,27 +2057,27 @@ const pageMeta = {
     "/privacy": {
         "en": {
             "title": "Privacy Policy | Scandora",
-            "description": "Scandora's Privacy Policy: how our privacy-first, on-device approach protects your data and keeps your documents in your control."
+            "description": "Scandora's Privacy Policy: what we store, where your documents are processed, who can read your scan history and how to delete it."
         },
         "de": {
             "title": "Datenschutzerklärung | Scandora",
-            "description": "Die Scandora-Datenschutzerklärung: wie unser gerätebasierter Ansatz Ihre Daten schützt und Dokumente in Ihrer Kontrolle hält."
+            "description": "Die Scandora-Datenschutzerklärung: was wir speichern, wo Ihre Dokumente verarbeitet werden, wer Ihren Scan-Verlauf lesen kann und wie Sie ihn löschen."
         },
         "es": {
             "title": "Política de privacidad | Scandora",
-            "description": "Política de privacidad de Scandora: cómo nuestro enfoque centrado en la privacidad y el dispositivo protege tus datos y mantiene tus documentos bajo tu control."
+            "description": "Política de privacidad de Scandora: qué guardamos, dónde se procesan tus documentos, quién puede leer tu historial de escaneos y cómo borrarlo."
         },
         "pt-BR": {
             "title": "Política de Privacidade | Scandora",
-            "description": "Política de Privacidade do Scandora: como nossa abordagem centrada na privacidade e no dispositivo protege seus dados e mantém seus documentos sob seu controle."
+            "description": "Política de Privacidade do Scandora: o que armazenamos, onde seus documentos são processados, quem pode ler seu histórico e como excluí-lo."
         },
         "it": {
             "title": "Informativa sulla privacy | Scandora",
-            "description": "Informativa sulla privacy di Scandora: come l’approccio incentrato su privacy e dispositivo protegge i tuoi dati e tiene i documenti sotto il tuo controllo."
+            "description": "Informativa sulla privacy di Scandora: cosa conserviamo, dove vengono elaborati i documenti, chi può leggere la cronologia e come eliminarla."
         },
         "nl": {
             "title": "Privacyverklaring | Scandora",
-            "description": "Privacyverklaring van Scandora: hoe onze aanpak met privacy voorop, op je apparaat, je gegevens beschermt en je documenten onder jouw controle houdt."
+            "description": "Privacyverklaring van Scandora: wat we opslaan, waar je documenten worden verwerkt, wie je scangeschiedenis kan lezen en hoe je die verwijdert."
         }
     },
     "/terms": {
@@ -2143,11 +2143,11 @@ const pageMeta = {
     "/blog/dsgvo-sichere-camscanner-alternative": {
         "en": {
             "title": "A GDPR-safe CamScanner alternative | Scandora",
-            "description": "A GDPR-safe alternative to CamScanner and Microsoft Lens: documents stay on your device by default, with EU hosting and managed AI."
+            "description": "A GDPR-safe alternative to CamScanner and Microsoft Lens: your original files stay on your device, with EU hosting and managed AI."
         },
         "de": {
             "title": "DSGVO-sichere CamScanner-Alternative | Scandora",
-            "description": "DSGVO-sichere Alternative zu CamScanner und Microsoft Lens: Dokumente bleiben auf dem Gerät, EU-Hosting und verwaltete KI."
+            "description": "DSGVO-sichere Alternative zu CamScanner und Microsoft Lens: Originaldateien bleiben auf dem Gerät, EU-Hosting und verwaltete KI."
         }
     },
     "/blog/gobd-konform-scannen": {

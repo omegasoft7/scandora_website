@@ -3,7 +3,7 @@
 > Scandora is an AI document scanner for iPhone, iPad, Mac and Android: scan with your phone camera or a real network scanner, let managed AI pull out the details, and send the result into your own Trello and Google Drive. It is GDPR-first, runs on EU servers and carries no ads.
 
 Scandora keeps original scans on your device and in the storage you choose. While you are
-signed in, only a low-resolution preview and the extracted text sync to our EU servers.
+signed in, a low-resolution preview, the extracted text and the document's details sync to our EU servers.
 Managed AI covers extraction, indexing and AI document chat out of a monthly credit
 allowance — there is no key to obtain or enter. Free, Pro and Business / DATEV plans exist;
 the store listing is the binding source for what a plan costs.

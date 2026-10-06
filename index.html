@@ -180,7 +180,7 @@
             "Trello integration",
             "Google Drive sync",
             "Multi-profile support",
-            "Privacy-first design"
+            "Advanced Protection: saved scans locked with your own code"
         ],
         "screenshot": "https://scandora.eu/assets/screenshot-app.png"
     }
@@ -221,7 +221,7 @@
                 "name": "Is my data secure with Scandora?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Privacy is built into Scandora's design. Your original scans stay on your device and go only directly to Google Gemini for extraction — using a short-lived credential our server issues — and to the cloud services you choose. So your history syncs across your devices, we store a low-resolution preview and the extracted text on our EU servers — never your original files. AI document search and chat run on your device. To build their index, your device sends Google (Vertex AI in the EU) the extracted text and the AI description of every document you scan while signed in; a search then sends only the search query, and an answer only your question and the passages it draws on. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. You stay in control of your data."
+                    "text": "Your original scans stay on your device and go only directly to Google Gemini for extraction — using a short-lived credential our server issues — and to the cloud services you choose. So your history syncs across your devices, we store a low-resolution preview, the extracted text and the document's details on our EU servers — never your original files. The text and preview are encrypted on your device before upload; we hold a key to them unless you turn on Advanced Protection in the app, which locks them with your own code. AI document search and chat run on your device. To build their index, your device sends Google (Vertex AI in the EU) the extracted text and the AI description of every document you scan while signed in; a search then sends only the search query, and an answer only your question and the passages it draws on. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. You stay in control of your data."
                 }
             },
             {
@@ -497,7 +497,7 @@
                     <article class="feature-card" role="listitem" itemscope itemtype="https://schema.org/Service">
                         <div class="feature-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
                         <h3 data-i18n="features.privacy.title" itemprop="name">Your Data Stays Yours</h3>
-                        <p data-i18n="features.privacy.desc" itemprop="description">Your documents are yours. We don't store your full documents or page images on our servers — they go only to the managed AI service we operate and to the cloud services you choose. While you're signed in, your scan history syncs to our servers in Germany: the history details, a small low-resolution preview and the text we extracted from the pages. Scandora is designed with GoBD and DSGVO in mind.</p>
+                        <p data-i18n="features.privacy.desc" itemprop="description">Your documents are yours. We don't store your full documents or page images on our servers — they go only to the managed AI (Google Gemini, processed in the EU) and to the cloud services you choose. While you're signed in, your scan history syncs to our servers in Germany: the history details, a small low-resolution preview and the text we extracted from the pages. The text and preview are encrypted on your device before upload; we hold a key to them unless you turn on Advanced Protection in the app, which locks them with your own code. Scandora is designed with GoBD and DSGVO in mind.</p>
                         <p class="feature-links"><a href="/en/gdpr-dokumentenscanner" data-i18n="features.privacyGdprLink">GDPR document scanner</a> · <a href="/document-scanner-eu-servers"><span data-lang="en">Where your data sits</span><span data-lang="de" hidden>Wo Ihre Daten liegen</span><span data-lang="es" hidden>Dónde están tus datos</span><span data-lang="pt-BR" hidden>Onde ficam os seus dados</span><span data-lang="it" hidden>Dove si trovano i tuoi dati</span><span data-lang="nl" hidden>Waar je gegevens staan</span></a></p>
                     </article>
                 </div>
@@ -525,7 +525,7 @@
                         <div class="step-number" aria-hidden="true">2</div>
                         <div class="step-content">
                             <h3 itemprop="name" data-i18n="howItWorks.step2.title">Managed AI Understands It</h3>
-                            <p itemprop="text" data-i18n="howItWorks.step2.desc">Scandora’s managed AI reads the document, recognizes its type, and pulls out the key details. Only a low-resolution preview and the extracted text are stored on our EU servers — never your original files.</p>
+                            <p itemprop="text" data-i18n="howItWorks.step2.desc">Scandora’s managed AI reads the document, recognizes its type, and pulls out the key details. A low-resolution preview, the extracted text and the document’s details are stored on our EU servers — never your original files.</p>
                         </div>
                     </li>
                     <li class="step-connector" aria-hidden="true"></li>
@@ -533,7 +533,7 @@
                         <div class="step-number" aria-hidden="true">3</div>
                         <div class="step-content">
                             <h3 itemprop="name" data-i18n="howItWorks.step3.title">It Becomes an Action</h3>
-                            <p itemprop="text" data-i18n="howItWorks.step3.desc">The result syncs straight into your own Trello and Google Drive — a card, a filed document, ready to act on. Scandora is privacy-first and comes with GoBD record-keeping features.</p>
+                            <p itemprop="text" data-i18n="howItWorks.step3.desc">The result syncs straight into your own Trello and Google Drive — a card, a filed document, ready to act on. Files go from your device straight to them, never through our servers, and Scandora comes with GoBD record-keeping features.</p>
                         </div>
                     </li>
                 </ol>
@@ -582,7 +582,7 @@
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-4" aria-expanded="false" aria-controls="faq-panel-4"><span data-i18n="faq.q4">Is my data secure with Scandora?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
-                        <div id="faq-panel-4" class="faq-answer" role="region" aria-labelledby="faq-trigger-4"><div class="faq-answer-inner"><p data-i18n="faq.a4">Privacy is built into Scandora's design. Your original scans stay on your device and go only directly to Google Gemini for extraction — using a short-lived credential our server issues — and to the cloud services you choose. So your history syncs across your devices, we store a low-resolution preview and the extracted text on our EU servers — never your original files. AI document search and chat run on your device. To build their index, your device sends Google (Vertex AI in the EU) the extracted text and the AI description of every document you scan while signed in; a search then sends only the search query, and an answer only your question and the passages it draws on. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. You stay in control of your data.</p></div></div>
+                        <div id="faq-panel-4" class="faq-answer" role="region" aria-labelledby="faq-trigger-4"><div class="faq-answer-inner"><p data-i18n="faq.a4">Your original scans stay on your device and go only directly to Google Gemini for extraction — using a short-lived credential our server issues — and to the cloud services you choose. So your history syncs across your devices, we store a low-resolution preview, the extracted text and the document's details on our EU servers — never your original files. The text and preview are encrypted on your device before upload; we hold a key to them unless you turn on Advanced Protection in the app, which locks them with your own code. AI document search and chat run on your device. To build their index, your device sends Google (Vertex AI in the EU) the extracted text and the AI description of every document you scan while signed in; a search then sends only the search query, and an answer only your question and the passages it draws on. Managed AI generation is processed in the EU — Google Gemini on Vertex AI in Frankfurt, Germany. You stay in control of your data.</p></div></div>
                     </div>
                     <div class="faq-item">
                         <h3 class="faq-question"><button type="button" class="faq-trigger" id="faq-trigger-5" aria-expanded="false" aria-controls="faq-panel-5"><span data-i18n="faq.q5">Do I need my own API key to use the AI?</span><svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>

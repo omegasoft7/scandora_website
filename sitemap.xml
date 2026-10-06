@@ -12,7 +12,7 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://scandora.eu/it/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://scandora.eu/nl/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/"/>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -44,7 +44,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/blog/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/blog/"/>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -62,7 +62,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/blog/dsgvo-sichere-camscanner-alternative"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/dsgvo-sichere-camscanner-alternative"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/blog/dsgvo-sichere-camscanner-alternative"/>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -98,7 +98,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/blog/scandora-vs-fileee"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/blog/scandora-vs-fileee"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/blog/scandora-vs-fileee"/>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -133,7 +133,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/datev-steuerberater"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/datev-steuerberater"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/datev-steuerberater"/>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -328,7 +328,7 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://scandora.eu/it/document-scanner-eu-servers"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://scandora.eu/nl/document-scanner-eu-servers"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/document-scanner-eu-servers"/>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -663,7 +663,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://scandora.eu/en/gdpr-dokumentenscanner"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://scandora.eu/gdpr-dokumentenscanner"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/gdpr-dokumentenscanner"/>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -745,7 +745,7 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://scandora.eu/it/invoice-data-extraction"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://scandora.eu/nl/invoice-data-extraction"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/invoice-data-extraction"/>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1148,7 +1148,7 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://scandora.eu/it/privacy"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://scandora.eu/nl/privacy"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/privacy"/>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1400,7 +1400,7 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://scandora.eu/it/scan-to-trello"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://scandora.eu/nl/scan-to-trello"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/scan-to-trello"/>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1419,7 +1419,7 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://scandora.eu/it/vs-camscanner"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://scandora.eu/nl/vs-camscanner"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/vs-camscanner"/>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1432,7 +1432,7 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://scandora.eu/it/vs-fileee"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://scandora.eu/nl/vs-fileee"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scandora.eu/vs-fileee"/>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
