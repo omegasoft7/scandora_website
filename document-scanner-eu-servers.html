@@ -16,6 +16,7 @@
     <link rel="alternate" hreflang="es" href="https://scandora.eu/es/document-scanner-eu-servers">
     <link rel="alternate" hreflang="pt-BR" href="https://scandora.eu/pt-br/document-scanner-eu-servers">
     <link rel="alternate" hreflang="it" href="https://scandora.eu/it/document-scanner-eu-servers">
+    <link rel="alternate" hreflang="nl" href="https://scandora.eu/nl/document-scanner-eu-servers">
     <link rel="alternate" hreflang="x-default" href="https://scandora.eu/document-scanner-eu-servers">
 
     <!-- Open Graph -->
@@ -170,6 +171,7 @@
                             <li><a href="/de/document-scanner-eu-servers" hreflang="de" lang="de"><span class="lang-menu-name">Deutsch</span> <span class="lang-menu-english" lang="en">German</span></a></li>
                             <li><a href="/es/document-scanner-eu-servers" hreflang="es" lang="es"><span class="lang-menu-name">Español</span> <span class="lang-menu-english" lang="en">Spanish</span></a></li>
                             <li><a href="/it/document-scanner-eu-servers" hreflang="it" lang="it"><span class="lang-menu-name">Italiano</span> <span class="lang-menu-english" lang="en">Italian</span></a></li>
+                            <li><a href="/nl/document-scanner-eu-servers" hreflang="nl" lang="nl"><span class="lang-menu-name">Nederlands</span> <span class="lang-menu-english" lang="en">Dutch</span></a></li>
                             <li><a href="/pt-br/document-scanner-eu-servers" hreflang="pt-BR" lang="pt-BR"><span class="lang-menu-name">Português (Brasil)</span> <span class="lang-menu-english" lang="en">Portuguese (Brazil)</span></a></li>
                         </ul>
                     </details>
@@ -190,7 +192,7 @@
 
                 <header class="legal-header">
                     <span class="legal-badge" data-i18n="euServers.badge">Data residency</span>
-                    <h1 id="page-title" class="legal-title"><span data-lang="en">Document scanner on EU servers: where your data sits</span><span data-lang="de" hidden>Dokumentenscanner auf EU-Servern: wo Ihre Daten liegen</span><span data-lang="es" hidden>Escáner de documentos en servidores de la UE: dónde están tus datos</span><span data-lang="pt-BR" hidden>Scanner de documentos em servidores da UE: onde ficam os seus dados</span><span data-lang="it" hidden>Scanner di documenti su server UE: dove si trovano i tuoi dati</span></h1>
+                    <h1 id="page-title" class="legal-title"><span data-lang="en">Document scanner on EU servers: where your data sits</span><span data-lang="de" hidden>Dokumentenscanner auf EU-Servern: wo Ihre Daten liegen</span><span data-lang="es" hidden>Escáner de documentos en servidores de la UE: dónde están tus datos</span><span data-lang="pt-BR" hidden>Scanner de documentos em servidores da UE: onde ficam os seus dados</span><span data-lang="it" hidden>Scanner di documenti su server UE: dove si trovano i tuoi dati</span><span data-lang="nl" hidden>Documentscanner op EU-servers: waar je gegevens staan</span></h1>
                 </header>
 
                 <!-- ================= GERMAN ================= -->
@@ -580,6 +582,84 @@
                     <p>Con una funzione di IA, l’immagine della pagina — direttamente dal tuo dispositivo, con una credenziale di breve durata, al fornitore del modello. Finché hai effettuato l’accesso, anche il record della cronologia: metadati, testo estratto e una piccola miniatura di anteprima. I tuoi file originali non vengono mai archiviati sui server di Scandora.</p>
                     <h3>Alcuni miei dati sono archiviati al di fuori dei server di Scandora?</h3>
                     <p>Solo il registro di importazione tra dispositivi, in Google Cloud Firestore nella regione <code>europe-west3</code> (Francoforte, Germania). Non contiene alcuna immagine di pagina né alcun testo di documento.</p>
+                </article>
+
+                <article class="legal-content" data-lang="nl" hidden>
+                    <div class="highlight-box">
+                        <p><strong>Kort samengevat:</strong> "EU-servers" is geen belofte, maar een lijst met routes. Deze pagina loopt ze een voor een langs: wat op je apparaat blijft, wat op de eigen server van Scandora in Falkenstein, Duitsland, terechtkomt, wat de modelaanbieder in Frankfurt verwerkt en welke subverwerkers erbij betrokken zijn. Wat een scanner in het algemeen AVG-klaar maakt, staat op de <a href="/en/gdpr-dokumentenscanner">pagina over de AVG-documentscanner</a>.</p>
+                    </div>
+
+                    <p><a href="/avv" class="btn btn-primary">Lees de verwerkersovereenkomst (AVV)</a></p>
+
+                    <h2>Is er een documentscanner die op EU-servers draait?</h2>
+                    <p>Scandora. De servers die we zelf beheren staan in de EU: de eigen server van Scandora staat in Falkenstein, Duitsland, op machines die we bij Hetzner huren, en bevat de scangeschiedenis, de userdata-API, het eindpunt dat de toegangsgegevens voor beheerde AI uitgeeft en de vastleggings- en wijzigingsrecords. Beheerde AI-generatie wordt in de EU verwerkt — Google Gemini op Vertex AI in Frankfurt, Duitsland. Scandora toont geen advertenties.</p>
+
+                    <h2>Welke documentscanner moet een klein bedrijf kiezen onder de AVG?</h2>
+                    <p>Controleer vier dingen voordat je kiest: waar de stappen aan de serverkant draaien, of je originele documenten onder jouw controle blijven, of de app of de website lettertypen van derden en advertentietrackers laadt, en of je een verwerkersovereenkomst kunt ondertekenen voor zakelijk gebruik. Scandora beantwoordt alle vier: EU-hosting in Duitsland, originelen die op je apparaat blijven en in de opslag die je kiest, geen lettertypen van derden of advertentietrackers, en een <a href="/avv">verwerkersovereenkomst (AVV) op grond van art. 28 AVG</a> die je kunt lezen, downloaden en ondertekenen. De volledige lijst met criteria staat op de <a href="/en/gdpr-dokumentenscanner">pagina over de AVG-documentscanner</a>.</p>
+
+                    <h2>Wat verlaat mijn apparaat precies als ik een pagina scan?</h2>
+                    <p>Drie dingen. Wanneer je een AI-functie gebruikt, stuurt je apparaat het paginabeeld rechtstreeks naar de modelaanbieder die de analyse teruggeeft, met kortlevende toegangsgegevens die de server van Scandora uitgeeft. Zolang je bent ingelogd, wordt het geschiedenisrecord van elke voltooide scan geüpload naar diezelfde server: de metagegevens van het record, de tekst die uit het document is gehaald en een kleine voorbeeldweergave met lage resolutie van de eerste pagina. Ook zolang je bent ingelogd, stuurt je apparaat de uitgelezen tekst en de AI-beschrijving van elk nieuw document rechtstreeks naar de modelaanbieder, die er de zoekvectoren van de index op je apparaat van maakt. Je originele bestanden worden nooit op de servers van Scandora opgeslagen.</p>
+
+                    <h2>Waar wordt mijn scangeschiedenis opgeslagen?</h2>
+                    <p>Op de eigen server van Scandora in Falkenstein, Duitsland. Het record bevat de metagegevens van het item, de volledige uitgelezen tekst — tekst van meer dan 400.000 tekens wordt niet geüpload — en de kleine voorbeeldminiatuur. Zolang je niet bent ingelogd, wordt er helemaal geen geschiedenisrecord geüpload; het blijft op je apparaat.</p>
+
+                    <h2>Waar draait het AI-zoeken in documenten?</h2>
+                    <p>Op je apparaat. Het slaat geen documenttekst of zoek-embeddings op onze servers op. Om de index op je apparaat op te bouwen, stuurt je apparaat de uitgelezen tekst en de AI-beschrijving van elk document dat je scant terwijl je bent ingelogd rechtstreeks naar de modelaanbieder (Google, Vertex AI <code>europe-west3</code>), met dezelfde kortlevende toegangsgegevens die beheerde AI gebruikt. Bij een zoekactie wordt daarna alleen de zoekopdracht verstuurd, en om een vraag te beantwoorden stuurt je apparaat de vraag en de passages die het selecteert.</p>
+
+                    <h2>Worden er gegevens van mij buiten de eigen servers van Scandora opgeslagen?</h2>
+                    <p>Eén record wel: het importregister voor meerdere apparaten, dat voorkomt dat een tweede apparaat hetzelfde bestand twee keer importeert. Het wordt opgeslagen in Google Cloud Firestore in de regio <code>europe-west3</code> — Frankfurt, Duitsland — en bevat de bronidentiteit, de identificatiecode van je account en profiel, de importstatus en een verwijzing per bestemming. Het bevat geen paginabeeld en geen documenttekst. Het overige dat voor jou wordt opgeslagen, staat op de eigen server van Scandora in Falkenstein, Duitsland.</p>
+
+                    <h2>Wie zijn de subverwerkers?</h2>
+                    <table class="cookie-table">
+                        <thead>
+                            <tr><th>Subverwerker</th><th>Waarvoor</th><th>Regio</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Hetzner Online GmbH</td><td>Hosting van de eigen server van Scandora</td><td>Duitsland (Falkenstein)</td></tr>
+                            <tr><td>Google (Gemini API)</td><td>Beheerde AI-generatie en embeddings</td><td>Duitsland — Vertex AI <code>europe-west3</code></td></tr>
+                            <tr><td>Google (Firebase / Cloud Firestore)</td><td>Alleen het importregister</td><td>Duitsland — <code>europe-west3</code></td></tr>
+                        </tbody>
+                    </table>
+                    <p>De maatgevende lijst staat in sectie 5 van de <a href="/avv">verwerkersovereenkomst (AVV)</a>; de <a href="/privacy">Privacyverklaring</a> noemt daarnaast de ontvangers die we gebruiken als verwerkingsverantwoordelijke.</p>
+
+                    <h2>Kan ik een verwerkersovereenkomst (AVV) ondertekenen voor zakelijk gebruik?</h2>
+                    <p>Ja. Zakelijke klanten krijgen een <a href="/avv">verwerkersovereenkomst (AVV) op grond van art. 28 AVG</a> om te lezen, te downloaden en te ondertekenen. Daarin staan dezelfde subverwerkers als in de tabel hierboven, en er staat een versiestempel op, zodat je altijd kunt zien welke versie je hebt ondertekend.</p>
+
+                    <h2>Volgt de website mij?</h2>
+                    <p>Nee. scandora.eu laadt het lettertype Inter van de eigen server en niet van een CDN voor lettertypen, gebruikt zelfgehoste analyse zonder cookies in plaats van een advertentietracker en plaatst geen analyse- of advertentiecookies — daarom is er geen cookiebanner. Als je browser een Global Privacy Control-signaal verstuurt, wordt het analysescript helemaal niet geladen.</p>
+
+                    <h2>Waar elk onderdeel van een scan zich bevindt</h2>
+                    <table class="cookie-table">
+                        <thead>
+                            <tr><th>Wat</th><th>Waar</th><th>Wat het bevat</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Je originele bestanden</td><td>Je apparaat en de opslag die je kiest</td><td>Het document zelf — nooit opgeslagen op de servers van Scandora</td></tr>
+                            <tr><td>Paginabeeld voor analyse</td><td>Rechtstreeks van het apparaat naar Vertex AI <code>europe-west3</code>, met kortlevende toegangsgegevens</td><td>De pagina die wordt gelezen</td></tr>
+                            <tr><td>Scangeschiedenis (zolang je bent ingelogd)</td><td>Eigen server van Scandora, Falkenstein, Duitsland</td><td>Metagegevens, uitgelezen tekst, kleine voorbeeldminiatuur</td></tr>
+                            <tr><td>AI-zoeken in documenten (ingelogd)</td><td>Index op je apparaat, opgebouwd uit de tekst van elk document, rechtstreeks naar Vertex AI <code>europe-west3</code> gestuurd — er wordt niets opgeslagen op de servers van Scandora</td><td>Geen documenttekst of zoek-embeddings op onze servers</td></tr>
+                            <tr><td>Vastleggings- en wijzigingsrecords</td><td>Eigen server van Scandora, Falkenstein, Duitsland</td><td>SHA-256-controlesom, bron, tijdstempels, oude en nieuwe waarden van metagegevens</td></tr>
+                            <tr><td>Importregister</td><td>Google Cloud Firestore, <code>europe-west3</code> (Frankfurt)</td><td>Bronidentiteit en status — geen paginabeeld, geen documenttekst</td></tr>
+                            <tr><td>Website-analyse</td><td>Eigen analyseserver van Scandora (Falkenstein)</td><td>Pseudonieme paginaweergaven, geen cookie en geen advertentienetwerk</td></tr>
+                        </tbody>
+                    </table>
+
+                    <p>Meer lezen: <a href="/en/gdpr-dokumentenscanner">AVG-documentscanner: de criteria</a> · <a href="/privacy">Privacyverklaring</a> · <a href="/avv">Verwerkersovereenkomst (AVV)</a> · <a href="/paperless-small-business">Papierloos in een klein bedrijf</a> · <a href="/vs-camscanner">Scandora vs CamScanner</a></p>
+
+                    <div class="highlight-box">
+                        <p><strong>Wil je dat je scans in de EU worden verwerkt?</strong> Probeer Scandora gratis met beheerde AI.</p>
+                        <p style="margin-top:16px;"><a href="/#download" class="btn btn-primary">Download de app</a></p>
+                    </div>
+
+                    <h2>Veelgestelde vragen</h2>
+                    <h3>Is er een documentscanner die op EU-servers draait?</h3>
+                    <p>Scandora. De servers die we zelf beheren staan in de EU: de eigen server van Scandora staat in Falkenstein, Duitsland (Hetzner), en beheerde AI-generatie wordt in de EU verwerkt — Google Gemini op Vertex AI in Frankfurt, Duitsland. Scandora toont geen advertenties.</p>
+                    <h3>Welke documentscanner moet een klein bedrijf kiezen onder de AVG?</h3>
+                    <p>Controleer waar de stappen aan de serverkant draaien, of je originele documenten onder jouw controle blijven, of er lettertypen van derden en advertentietrackers worden geladen en of je een verwerkersovereenkomst kunt ondertekenen. Scandora beantwoordt alle vier de punten; de volledige lijst met criteria staat op de pagina over de AVG-documentscanner.</p>
+                    <h3>Wat verlaat mijn apparaat precies als ik een pagina scan?</h3>
+                    <p>Met een AI-functie het paginabeeld — rechtstreeks vanaf je apparaat, met kortlevende toegangsgegevens, naar de modelaanbieder. Zolang je bent ingelogd ook het geschiedenisrecord: metagegevens, uitgelezen tekst en een kleine voorbeeldminiatuur. Je originele bestanden worden nooit op de servers van Scandora opgeslagen.</p>
+                    <h3>Worden er gegevens van mij buiten de eigen servers van Scandora opgeslagen?</h3>
+                    <p>Alleen het importregister voor meerdere apparaten, in Google Cloud Firestore in de regio <code>europe-west3</code> (Frankfurt, Duitsland). Het bevat geen paginabeeld en geen documenttekst.</p>
                 </article>
 
                 <div class="download-buttons" role="group" aria-label="Download links" style="margin-top:32px;">

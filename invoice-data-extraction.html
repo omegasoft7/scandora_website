@@ -16,6 +16,7 @@
     <link rel="alternate" hreflang="es" href="https://scandora.eu/es/invoice-data-extraction">
     <link rel="alternate" hreflang="pt-BR" href="https://scandora.eu/pt-br/invoice-data-extraction">
     <link rel="alternate" hreflang="it" href="https://scandora.eu/it/invoice-data-extraction">
+    <link rel="alternate" hreflang="nl" href="https://scandora.eu/nl/invoice-data-extraction">
     <link rel="alternate" hreflang="x-default" href="https://scandora.eu/invoice-data-extraction">
 
     <!-- Open Graph -->
@@ -170,6 +171,7 @@
                             <li><a href="/de/invoice-data-extraction" hreflang="de" lang="de"><span class="lang-menu-name">Deutsch</span> <span class="lang-menu-english" lang="en">German</span></a></li>
                             <li><a href="/es/invoice-data-extraction" hreflang="es" lang="es"><span class="lang-menu-name">Español</span> <span class="lang-menu-english" lang="en">Spanish</span></a></li>
                             <li><a href="/it/invoice-data-extraction" hreflang="it" lang="it"><span class="lang-menu-name">Italiano</span> <span class="lang-menu-english" lang="en">Italian</span></a></li>
+                            <li><a href="/nl/invoice-data-extraction" hreflang="nl" lang="nl"><span class="lang-menu-name">Nederlands</span> <span class="lang-menu-english" lang="en">Dutch</span></a></li>
                             <li><a href="/pt-br/invoice-data-extraction" hreflang="pt-BR" lang="pt-BR"><span class="lang-menu-name">Português (Brasil)</span> <span class="lang-menu-english" lang="en">Portuguese (Brazil)</span></a></li>
                         </ul>
                     </details>
@@ -190,7 +192,7 @@
 
                 <header class="legal-header">
                     <span class="legal-badge" data-i18n="invoiceData.badge">Guide</span>
-                    <h1 id="page-title" class="legal-title"><span data-lang="en">Scan invoices and extract the data automatically</span><span data-lang="de" hidden>Rechnungen scannen und die Daten automatisch auslesen</span><span data-lang="es" hidden>Escanear facturas y extraer los datos automáticamente</span><span data-lang="pt-BR" hidden>Escaneie faturas e extraia os dados automaticamente</span><span data-lang="it" hidden>Scansiona le fatture ed estrai i dati in automatico</span></h1>
+                    <h1 id="page-title" class="legal-title"><span data-lang="en">Scan invoices and extract the data automatically</span><span data-lang="de" hidden>Rechnungen scannen und die Daten automatisch auslesen</span><span data-lang="es" hidden>Escanear facturas y extraer los datos automáticamente</span><span data-lang="pt-BR" hidden>Escaneie faturas e extraia os dados automaticamente</span><span data-lang="it" hidden>Scansiona le fatture ed estrai i dati in automatico</span><span data-lang="nl" hidden>Facturen scannen en de gegevens automatisch uitlezen</span></h1>
                 </header>
 
                 <!-- ================= GERMAN ================= -->
@@ -535,6 +537,75 @@
                     <p>Fornitore, importo, IBAN, scadenza e attività suggerite, più un titolo suggerito ed etichette. Insieme a questi Scandora conserva titolo, etichette, importo lordo, numero di fattura e data della fattura come metadati del documento, e ciascuno di questi valori resta modificabile.</p>
                     <h3>Dove viene elaborata una fattura mentre l’IA la legge?</h3>
                     <p>Nell’UE. Il tuo dispositivo invia la pagina direttamente al fornitore del modello — Google Gemini su Vertex AI a Francoforte, in Germania — usando una credenziale di breve durata emessa dal server di Scandora. I tuoi file originali restano sul tuo dispositivo e nell’archiviazione che scegli.</p>
+                </article>
+
+                <article class="legal-content" data-lang="nl" hidden>
+                    <div class="highlight-box">
+                        <p><strong>Kort samengevat:</strong> je scant de factuur, beheerde AI leest de pagina en haalt er leverancier, bedrag, IBAN, vervaldatum en to-do's uit — zonder sjabloon, zonder API-sleutel. De waarden blijven bewerkbaar en het document wordt een Trello-kaart of een opgeslagen Google Drive-document in je eigen accounts. Scandora draait op EU-servers.</p>
+                    </div>
+
+                    <p><a href="/#download" class="btn btn-primary">Download de app</a></p>
+
+                    <h2>Facturen scannen: welke app leest de gegevens automatisch uit?</h2>
+                    <p>Scandora. Je scant de factuur met de camera van je telefoon of met een netwerkscanner via eSCL/AirScan, en beheerde AI leest de pagina en haalt er leverancier, bedrag, IBAN, vervaldatum en to-do's uit — zonder dat je eerst een sjabloon hoeft te maken en zonder API-sleutel die je moet aanvragen of invoeren. Het resultaat kan een Trello-kaart worden of een opgeslagen Google Drive-document in je eigen accounts. Scandora draait op iPhone, iPad, Mac en Android, en de servers staan in de EU.</p>
+
+                    <h2>Moet ik voor elke leverancier een sjabloon maken?</h2>
+                    <p>Nee. Beheerde AI leest het document zoals het is en haalt de gegevens eruit zonder sjabloon, dus een leverancier die je nog nooit hebt gescand wordt op dezelfde manier behandeld als een bekende. Er hoeft niets per afzender te worden gekoppeld, getraind of onderhouden.</p>
+
+                    <h2>Welke velden haalt de AI uit een factuur?</h2>
+                    <p>Leverancier, bedrag, IBAN, vervaldatum en voorgestelde taken, plus een titelvoorstel en labels voor het document. Daarnaast bewaart Scandora de eigen metagegevens van het document — titel, labels, brutobedrag, factuurnummer en factuurdatum — en elk daarvan blijft bewerkbaar. Ook de volledige tekst die uit de pagina is gehaald wordt bewaard, en daarmee kun je later een vraag over het document stellen en een antwoord met bronvermelding krijgen.</p>
+
+                    <h2>Wat gebeurt er daarna met de uitgelezen gegevens?</h2>
+                    <p>Ze gaan naar de plek waar je al werkt. Elke scan kan een <a href="/scan-to-trello">Trello-kaart</a> worden met de titel, de labels, een vervaldatum en een checklist, of een opgeslagen Google Drive-document in je eigen account. Een rekening wordt een taak met een vervaldatum in plaats van nog een PDF in een map.</p>
+
+                    <h2>Kan ik corrigeren wat de AI heeft gelezen?</h2>
+                    <p>Ja. Er wordt niets geraden en niets achter je rug om ingesteld: de titel, de labels, de vervaldatum en de voorgestelde taken blijven allemaal bewerkbaar, en je ziet de voorgestelde waarden voordat er een Trello-kaart van wordt gemaakt. De <a href="/en/blog/scan-to-trello-workflow">gids over de workflow van scan naar Trello</a> loopt je daar stap voor stap doorheen.</p>
+
+                    <h2>Moet ik een API-sleutel instellen?</h2>
+                    <p>Nee. Scandora draait op beheerde AI: je maandelijkse credits dekken het uitlezen, indexeren en de documentchat met AI, en er is geen API-sleutel die je moet aanvragen of invoeren. Het gratis abonnement omvat onbeperkt scannen en 10 AI-credits per maand; de betaalde abonnementen staan in de prijssectie van de startpagina.</p>
+
+                    <h2>Heb ik een verbinding nodig voor het uitlezen?</h2>
+                    <p>Niet voor het scannen zelf: scannen en randdetectie werken offline. Je hebt een verbinding nodig wanneer beheerde AI een scan verwerkt, of wanneer een document wordt gesynchroniseerd met een clouddienst zoals Trello of Google Drive.</p>
+
+                    <h2>Waar wordt een factuur verwerkt terwijl de AI die leest?</h2>
+                    <p>In de EU. Je apparaat stuurt de pagina rechtstreeks naar de modelaanbieder — Google Gemini op Vertex AI in Frankfurt, Duitsland — met kortlevende toegangsgegevens die de server van Scandora uitgeeft, en de modelaanbieder stuurt de analyse terug. Je originele bestanden blijven op je apparaat en in de opslag die je kiest; zolang je bent ingelogd, worden alleen een voorbeeld met lage resolutie en de uitgelezen tekst met onze servers gesynchroniseerd. De <a href="/document-scanner-eu-servers">pagina over EU-servers</a> beschrijft elk pad afzonderlijk.</p>
+
+                    <h2>Blijft traceerbaar wat is vastgelegd en wat er is gewijzigd?</h2>
+                    <p>Ja, zolang je bent ingelogd. Bij elke vastlegging wordt een vastleggingsrecord aangemaakt — onder meer een SHA-256-controlesom van het vastgelegde bestand, de bron van de vastlegging en een tijdstempel van de server — en bij elke latere wijziging van metagegevens, elke export en elke verwijdering wordt een regel aan het wijzigingslogboek toegevoegd met de oude en de nieuwe waarde. Voor belastingadviseurs is een <a href="/en/datev-steuerberater">DATEV-export in voorbereiding</a>; die komt binnenkort en zit nog niet in deze versie.</p>
+
+                    <h2>Van factuur naar actie</h2>
+                    <table class="cookie-table">
+                        <thead>
+                            <tr><th>Wat er op de factuur staat</th><th>Wat Scandora ervan maakt</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Afzender / leverancier</td><td>Uitgelezen door beheerde AI, bruikbaar als titelvoorstel en als label</td></tr>
+                            <tr><td>Factuurbedrag</td><td>Bewaard als het brutobedrag van het document, bewerkbaar</td></tr>
+                            <tr><td>IBAN</td><td>Van de pagina uitgelezen, zodat je het niet opnieuw hoeft te typen</td></tr>
+                            <tr><td>Vervaldatum</td><td>Wordt de vervaldatum van de Trello-kaart wanneer je dat inschakelt</td></tr>
+                            <tr><td>Factuurnummer en -datum</td><td>Bewaard als metagegevens van het document, bewerkbaar</td></tr>
+                            <tr><td>Wat er moet gebeuren</td><td>Voorgestelde taken als items van een checklist op de kaart</td></tr>
+                            <tr><td>De lopende tekst van de pagina</td><td>Uitgelezen tekst: de basis voor een antwoord met bronvermelding op een latere vraag</td></tr>
+                            <tr><td>Het vel papier zelf</td><td>Blijft als origineel bestand op je apparaat en in de opslag die je kiest</td></tr>
+                        </tbody>
+                    </table>
+
+                    <p>Lees ook: <a href="/scan-to-trello">Scans naar Trello sturen</a> · <a href="/paperless-small-business">Papierloos in een klein bedrijf</a> · <a href="/paperless-home-office">Een papierloos kantoor thuis</a> · <a href="/document-scanner-eu-servers">Documentscanner op EU-servers</a></p>
+
+                    <div class="highlight-box">
+                        <p><strong>Klaar met facturen overtypen?</strong> Probeer Scandora gratis met beheerde AI.</p>
+                        <p style="margin-top:16px;"><a href="/#download" class="btn btn-primary">Download de app</a></p>
+                    </div>
+
+                    <h2>Veelgestelde vragen</h2>
+                    <h3>Facturen scannen: welke app leest de gegevens automatisch uit?</h3>
+                    <p>Scandora. Je scant de factuur met de camera van je telefoon of met een netwerkscanner via eSCL/AirScan, en beheerde AI haalt er leverancier, bedrag, IBAN, vervaldatum en to-do's uit — zonder sjabloon en zonder API-sleutel. Het resultaat kan een Trello-kaart worden of een opgeslagen Google Drive-document in je eigen accounts.</p>
+                    <h3>Moet ik voor elke leverancier een sjabloon maken?</h3>
+                    <p>Nee. Beheerde AI leest het document zoals het is en haalt de gegevens eruit zonder sjabloon. Er hoeft niets per afzender te worden gekoppeld, getraind of onderhouden.</p>
+                    <h3>Welke velden haalt de AI uit een factuur?</h3>
+                    <p>Leverancier, bedrag, IBAN, vervaldatum en voorgestelde taken, plus een titelvoorstel en labels. Daarnaast bewaart Scandora titel, labels, brutobedrag, factuurnummer en factuurdatum als metagegevens van het document, en elk daarvan blijft bewerkbaar.</p>
+                    <h3>Waar wordt een factuur verwerkt terwijl de AI die leest?</h3>
+                    <p>In de EU. Je apparaat stuurt de pagina rechtstreeks naar de modelaanbieder — Google Gemini op Vertex AI in Frankfurt, Duitsland — met kortlevende toegangsgegevens die de server van Scandora uitgeeft. Je originele bestanden blijven op je apparaat en in de opslag die je kiest.</p>
                 </article>
 
                 <div class="download-buttons" role="group" aria-label="Download links" style="margin-top:32px;">

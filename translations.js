@@ -1393,6 +1393,291 @@ const translations = {
         'scanDropbox.lead': 'Prossimamente: invia le scansioni completate al tuo Dropbox e importa file da lì. Questa connessione non è ancora disponibile nell’app.',
         'scanDropbox.how': 'Il supporto per Dropbox arriva prossimamente. Accedi con il tuo account e scegli una cartella. Scandora invia una scansione completata in quella cartella come PDF che prende il nome dal titolo del documento, e puoi scegliere file dal tuo account da importare nell’app. Tutto questo non è ancora nell’app.',
         'scanDropbox.trademark': 'Dropbox è un marchio di Dropbox, Inc. Scandora non è affiliata a Dropbox, Inc.'
+    },
+    nl: {
+        'language.name': 'Nederlands',
+        'language.englishName': 'Dutch',
+        'language.locale': 'nl_NL',
+        'language.menu': 'Taal',
+        'language.search': 'Talen zoeken',
+
+        'languageBanner.text': 'Deze pagina is ook beschikbaar in het Nederlands.',
+        'languageBanner.link': 'Lees in het Nederlands',
+        'languageBanner.dismiss': 'Sluiten',
+
+        'nav.features': 'Functies',
+        'nav.howItWorks': 'Hoe het werkt',
+        'nav.pricing': 'Prijzen',
+        'nav.blog': 'Handleidingen',
+        'nav.download': 'Downloaden',
+
+        'hero.brandDescriptor': 'AI-documentscanner',
+        'hero.badge': 'AVG voorop · EU-servers · Geen advertenties',
+        'hero.titleLine1': 'Documenten scannen met Scandora.',
+        'hero.titleLine2': 'Vraag er daarna alles over.',
+        'hero.lede': 'Scandora is een AI-documentscanner voor iPhone, iPad, Mac en Android waarvan je het resultaat kunt bevragen.',
+        'hero.description': 'Scan een factuur met je telefoon of met je echte kantoorscanner en vraag vervolgens wanneer de factuur betaald moet zijn of wat het IBAN is. De AI haalt leverancier, bedrag, IBAN, vervaldatum en taken eruit zonder sjabloon, je bestanden komen in je eigen Google Drive en Trello terecht en elke scan blijft doorzoekbaar op je apparaat. Scandora zet de AVG voorop, draait op EU-servers en bevat geen advertenties.',
+        'hero.getStarted': 'Gratis aan de slag',
+        'hero.seeHow': 'Bekijk hoe het werkt',
+        'hero.stat1': 'Vraag het aan je document',
+        'hero.stat1sub': 'Antwoorden uit je scan',
+        'hero.stat2': 'AI leest de details',
+        'hero.stat2sub': 'Leverancier, bedrag, IBAN, vervaldatum',
+        'hero.stat3': 'Jouw cloud, niet de onze',
+        'hero.stat3sub': 'Rechtstreeks naar Drive en Trello',
+
+        'features.badge': 'Wat Scandora anders maakt',
+        'features.title': 'Gemaakt voor actie, niet alleen voor scannen',
+        'features.description': 'AI leest elk document, sluit een echte scanner aan en maak van elke scan een taak of bestand waarmee je aan de slag kunt — met je gegevens onder jouw controle.',
+        'features.scan.title': 'Telefoon of echte scanner',
+        'features.scan.desc': 'Scan met je telefooncamera of sluit een echte netwerkscanner aan via eSCL/AirScan (zoals Brother en Epson). Automatische randdetectie op elke pagina.',
+        'features.ai.title': 'AI die elk document leest',
+        'features.ai.desc': 'Beheerde AI leest elke scan en haalt datums, bedragen en leveranciers eruit, zodat je niets handmatig hoeft in te voeren. Credits dekken extractie, indexering en AI-chat — geen sleutel om te beheren.',
+        'features.cloud.title': 'Rechtstreeks naar Trello en Drive',
+        'features.cloud.desc': 'Elke scan kan een Trello-kaart worden of een in Google Drive opgeslagen document, gekoppeld aan je eigen accounts. Je documenten worden acties, niet alleen PDF-bestanden.',
+        'features.search.title': 'Slim zoeken',
+        'features.search.desc': 'Stel de AI een vraag en krijg een antwoord met bronvermelding uit je eigen documenten, met een link naar de bron die is gebruikt.',
+        'features.profiles.title': 'Meerdere profielen',
+        'features.profiles.desc': 'Houd persoonlijke en zakelijke documenten gescheiden met aparte profielen. Elk met eigen instellingen en cloudkoppelingen.',
+        'features.privacy.title': 'Jouw gegevens blijven van jou',
+        'features.privacy.desc': 'Je documenten zijn van jou. Wij slaan je volledige documenten en pagina-afbeeldingen niet op onze servers op — ze gaan alleen naar de beheerde AI-dienst die wij exploiteren en naar de clouddiensten die je zelf kiest. Zolang je bent ingelogd, wordt je scangeschiedenis gesynchroniseerd met onze servers in Duitsland: de geschiedenisgegevens, een kleine voorvertoning met lage resolutie en de tekst die we uit de pagina\'s hebben gehaald. Scandora is ontworpen met GoBD en AVG in gedachten.',
+
+        'howItWorks.badge': 'Van scan tot actie',
+        'howItWorks.title': 'Van papier naar actie in drie stappen',
+        'howItWorks.description': 'Scan het, laat beheerde AI het begrijpen en stuur het naar je eigen tools. Je originele scans blijven op je apparaat en in de opslag die je kiest.',
+        'howItWorks.step1.title': 'Scan het',
+        'howItWorks.step1.desc': 'Gebruik je telefooncamera of een netwerkscanner (eSCL/AirScan). Automatische randdetectie houdt elke pagina schoon.',
+        'howItWorks.step2.title': 'Beheerde AI begrijpt het',
+        'howItWorks.step2.desc': 'De beheerde AI van Scandora leest het document, herkent het type en haalt de belangrijkste gegevens eruit. Alleen een voorvertoning met lage resolutie en de uitgelezen tekst worden opgeslagen op onze EU-servers — nooit je originele bestanden.',
+        'howItWorks.step3.title': 'Het wordt een actie',
+        'howItWorks.step3.desc': 'Het resultaat wordt rechtstreeks gesynchroniseerd met je eigen Trello en Google Drive — een kaart, een opgeslagen document, klaar om mee aan de slag te gaan. Scandora zet privacy voorop en heeft GoBD-functies voor het bijhouden van een administratie.',
+
+        'pricing.badge': 'Flexibele prijzen',
+        'pricing.title': 'Kies je ideale abonnement',
+        'pricing.description': 'Begin gratis en upgrade naarmate je groeit. Beheerde AI en cloudintegraties in elk abonnement.',
+        'pricing.perMonth': '/maand',
+        'pricing.perYear': '/jaar',
+        'pricing.billingMonthly': 'Maandelijks',
+        'pricing.billingAnnual': 'Jaarlijks · bespaar tot 26%',
+        'pricing.popular': 'Populair',
+        'pricing.free.name': 'Free',
+        'pricing.free.tagline': 'Aan de slag',
+        'pricing.free.f1': 'Beheerde AI-extractie (10 credits/maand)',
+        'pricing.free.f2': 'Onbeperkte scans, onbeperkte pagina\'s',
+        'pricing.free.f3': '10 AI-credits/maand (1 credit = 1 documentanalyse of AI-chatantwoord; gedeeld: extractie, indexering en AI-chat)',
+        'pricing.free.f5': 'Cloudintegraties (Trello, Google Drive)',
+        'pricing.free.cta': 'Aan de slag',
+        'pricing.pro.name': 'Pro',
+        'pricing.pro.tagline': 'Voor professionals',
+        'pricing.pro.f1': '1.000 AI-credits/maand (1 credit = 1 documentanalyse of AI-chatantwoord; gedeeld: extractie, indexering en AI-chat)',
+        'pricing.pro.f2': 'Ondersteuning voor netwerkscanners (eSCL/AirScan)',
+        'pricing.pro.f3': 'AI-documentchat met bronvermelding bij antwoorden',
+        'pricing.pro.f4': 'Cloudintegraties',
+        'pricing.pro.f5': 'Prioriteitsondersteuning',
+        'pricing.pro.cta': 'Pro kiezen',
+        'pricing.pro.save': 'Bespaar 26%',
+        'pricing.business.name': 'Business / DATEV',
+        'pricing.business.tagline': 'Voor kleine bedrijven en belastingadviseurs',
+        'pricing.business.f1': '5.000 AI-credits/maand (1 credit = 1 documentanalyse of AI-chatantwoord; gedeeld: extractie, indexering en AI-chat)',
+        'pricing.business.f2': 'DATEV-export voor je belastingadviseur (binnenkort)',
+        'pricing.business.f3': 'Export van boekstukken naar lexoffice en sevDesk (binnenkort)',
+        'pricing.business.f4': 'Ontworpen voor het bijhouden van een administratie volgens GoBD en AVG',
+        'pricing.business.f5': 'Toegewijde ondersteuning',
+        'pricing.business.cta': 'Business kiezen',
+        'pricing.business.save': 'Bespaar 24%',
+        'pricing.byo': '💡 Beheerde AI dekt extractie, indexering en AI-chat — geen API-sleutel om in te stellen.',
+        'pricing.aiSplit.title': 'Wat de AI voor je doet',
+        'pricing.aiSplit.ownKey': 'AI leest elke scan en haalt datums, bedragen en leveranciers eruit — gedekt door je maandelijkse credits.',
+        'pricing.aiSplit.scandoraAi': 'Documentchat en zoeken draaien op je apparaat en op de AI van Scandora, en verbruiken Scandora-credits.',
+        'pricing.priceNote': 'De prijzen die in de App Store / Google Play worden getoond, zijn de eindprijzen voor het betreffende product (kleine ondernemer — geen aparte btw vermeld, § 19 UStG); bij een proefperiode, een introductie- of actieaanbieding of een naar rato berekende abonnementswijziging kan het bedrag dat daadwerkelijk in rekening wordt gebracht afwijken, en het bedrag dat de store op je aankoopbewijs vermeldt, is het bedrag dat geldt. Prijzen kunnen per regio en store verschillen.',
+
+        'download.title': 'Klaar om je documenten alles te vragen?',
+        'download.description': 'Download Scandora, scan je eerste document en stel er een vraag over — je gegevens blijven van jou. Beschikbaar op iOS, macOS en Android.',
+
+        'footer.tagline': 'Slim documenten scannen voor moderne bedrijven.',
+        'footer.product': 'Product',
+        'footer.legal': 'Juridisch',
+        'footer.support': 'Ondersteuning',
+        'footer.privacy': 'Privacyverklaring',
+        'footer.terms': 'Gebruiksvoorwaarden',
+        'footer.avv': 'Verwerkersovereenkomst (AVV)',
+        'footer.imprint': 'Bedrijfsgegevens',
+        'footer.help': 'Helpcentrum',
+        'footer.contact': 'Contact',
+        'footer.paperlessSmb': 'Papierloos voor kleine bedrijven',
+        'footer.paperlessHome': 'Papierloos kantoor thuis',
+        'footer.invoiceData': 'Factuurgegevens uitlezen',
+        'footer.scanTrello': 'Scannen naar Trello',
+        'footer.euServers': 'Scanner op EU-servers',
+        'footer.rights': 'Alle rechten voorbehouden.',
+        'footer.legalNotice': '{imprint}, {terms} en {avv} zijn beschikbaar in het Engels en Duits.',
+
+        'contact.badge': 'Neem contact met ons op',
+        'contact.title': 'We horen graag van je',
+        'contact.subtitle': 'Heb je een vraag, feedback of ondersteuning nodig? Ons team helpt je graag om Scandora ten volle te benutten.',
+        'contact.formTitle': 'Stuur ons een bericht',
+        'contact.formDesc': 'Vul het onderstaande formulier in en we nemen binnen 24 uur contact met je op.',
+        'contact.name': 'Volledige naam',
+        'contact.email': 'E-mailadres',
+        'contact.subject': 'Onderwerp',
+        'contact.selectSubject': 'Kies een onderwerp',
+        'contact.subjectGeneral': 'Algemene vraag',
+        'contact.subjectSupport': 'Technische ondersteuning',
+        'contact.subjectSales': 'Verkoop en prijzen',
+        'contact.subjectPartnership': 'Samenwerking',
+        'contact.subjectFeedback': 'Feedback',
+        'contact.message': 'Je bericht',
+        'contact.send': 'Bericht verzenden',
+        'contact.responseTime': 'Reactietijd',
+        'contact.responseValue': 'Binnen 24 uur',
+        'contact.responseNote': 'Ma - vr, 9:00 - 18:00 CET',
+        'contact.quickLinks': 'Snelle links',
+        'contact.home': 'Startpagina',
+        'contact.viewPricing': 'Abonnementen bekijken',
+        'contact.downloadApp': 'De app downloaden',
+        'contact.successTitle': 'Bericht verzonden!',
+        'contact.successMessage': 'Bedankt voor je bericht. We nemen binnen 24 uur contact met je op.',
+        'contact.successButton': 'Begrepen',
+
+        'blog.badge': 'Gids',
+        'blog.backHome': 'Terug naar de startpagina',
+
+        'blogFileee.badge': 'Vergelijking',
+        'blogFileee.backHome': 'Terug naar de startpagina',
+
+        'features.compareFileee': 'Scandora vs Fileee',
+        'features.compareCamscanner': 'Scandora vs CamScanner',
+        'features.privacyGdprLink': 'AVG-documentscanner',
+
+        'pricing.business.datevLink': 'Voor belastingadviseurs en DATEV →',
+        'pricing.free.paperlessLink': 'Papierloos werken in een klein bedrijf →',
+
+        'gdprScanner.badge': 'Scannen en AVG',
+        'gdprScanner.backHome': 'Terug naar de startpagina',
+
+        'vsFileee.badge': 'Vergelijking',
+        'vsFileee.backHome': 'Terug naar de startpagina',
+
+        'vsCamscanner.badge': 'Vergelijking',
+        'vsCamscanner.backHome': 'Terug naar de startpagina',
+
+        'paperlessSmb.badge': 'Gids',
+        'paperlessSmb.backHome': 'Terug naar de startpagina',
+
+        'paperlessHome.badge': 'Gids',
+        'paperlessHome.backHome': 'Terug naar de startpagina',
+
+        'invoiceData.badge': 'Gids',
+        'invoiceData.backHome': 'Terug naar de startpagina',
+
+        'scanTrello.badge': 'Integratie',
+        'scanTrello.backHome': 'Terug naar de startpagina',
+
+        'euServers.badge': 'Gegevenslocatie',
+        'euServers.backHome': 'Terug naar de startpagina',
+
+        'datevSteuerberater.badge': 'Voor belastingadviseurs',
+        'datevSteuerberater.backHome': 'Terug naar de startpagina',
+
+        'blogTrello.homepageLink': 'Lees: de scan-naar-Trello-workflow →',
+
+        'calc.badge': 'Bespaarde tijd',
+        'calc.title': 'Zie hoeveel tijd je zou besparen',
+        'calc.description': 'De AI van Scandora haalt de gegevens uit elk document, zodat je ze niet opnieuw hoeft over te typen. Beweeg de schuifregelaar om in te schatten hoeveel handmatige gegevensinvoer je per maand zou overslaan.',
+        'calc.docsLabel': 'Gescande documenten per week',
+        'calc.docsPerWeek': 'documenten/week',
+        'calc.hoursUnit': 'uur/maand bespaard',
+        'calc.assumption': 'Gebaseerd op ongeveer 3 minuten bespaarde handmatige gegevensinvoer per document.',
+        'calc.cta': 'Gratis aan de slag',
+
+        'faq.badge': 'FAQ',
+        'faq.title': 'Veelgestelde vragen',
+        'faq.description': 'Alles wat je moet weten over Scandora — scannen, privacy, prijzen en DATEV-export.',
+        'faq.q1': 'Wat is Scandora?',
+        'faq.a1': 'Scandora is een AI-gestuurde documentscanner-app die je papieren documenten omzet in digitale intelligentie. De app haalt automatisch belangrijke gegevens zoals datums, bedragen en namen eruit en synchroniseert alles met je favoriete cloudservices, zoals Trello en Google Drive.',
+        'faq.q2': 'Is Scandora gratis te gebruiken?',
+        'faq.a2': 'Ja! Het gratis abonnement van Scandora omvat onbeperkte scans, 10 AI-credits per maand (extractie, indexering en documentchat) en cloudintegraties. Betaalde abonnementen zijn nu beschikbaar. Pro (€9,99/maand of €89/jaar) voegt een veel groter maandelijks tegoed aan AI-credits en prioriteitsondersteuning toe. Business / DATEV (€24,99/maand of €229/jaar) voegt 5.000 AI-credits per maand, toegewijde ondersteuning en vastlegging van documenten toe, ontworpen voor het bijhouden van een administratie volgens GoBD en AVG; de DATEV-, lexoffice- en sevDesk-export komt binnenkort en zit nog niet in deze versie. De prijzen die in de App Store of Google Play worden getoond, zijn de eindprijzen voor het betreffende product. Bij een proefperiode, een introductie- of actieaanbieding of een naar rato berekende abonnementswijziging kan het daadwerkelijk in rekening gebrachte bedrag afwijken, en het bedrag dat de store op je aankoopbewijs vermeldt, is het bedrag dat geldt.',
+        'faq.q3': 'Welke platforms ondersteunt Scandora?',
+        'faq.a3': 'Scandora is beschikbaar op iOS, macOS en Android. Je kunt documenten scannen met de camera van je telefoon of op desktop professionele scanners aansluiten.',
+        'faq.q4': 'Zijn mijn gegevens veilig bij Scandora?',
+        'faq.a4': 'Privacy is ingebouwd in het ontwerp van Scandora. Je originele scans blijven op je apparaat en gaan alleen rechtstreeks naar Google Gemini voor extractie — met kortlevende toegangsgegevens die onze server uitgeeft — en naar de cloudservices die je kiest. Om je geschiedenis tussen je apparaten te synchroniseren, slaan we een voorvertoning met lage resolutie en de uitgelezen tekst op onze EU-servers op — nooit je originele bestanden. Het zoeken in documenten met AI en de documentchat draaien op je apparaat. Om hun index op te bouwen, stuurt je apparaat Google (Vertex AI in de EU) de uitgelezen tekst en de AI-beschrijving van elk document dat je scant terwijl je bent ingelogd; bij het zoeken wordt daarna alleen de zoekopdracht verstuurd, en bij een antwoord alleen je vraag en de passages waarop het is gebaseerd. De generatie door beheerde AI wordt in de EU verwerkt — Google Gemini op Vertex AI in Frankfurt, Duitsland. Jij houdt de controle over je gegevens.',
+        'faq.q5': 'Heb ik een eigen API-sleutel nodig om de AI te gebruiken?',
+        'faq.a5': 'Nee. Scandora draait op beheerde AI — je maandelijkse credits dekken documentextractie, indexering en AI-chat. Er is geen modus voor je eigen sleutel, dus je hoeft geen API-sleutel te verkrijgen of in te voeren.',
+        'faq.q6': 'Is Scandora AVG-conform?',
+        'faq.a6': 'Scandora is ontworpen met de AVG (DSGVO) in gedachten. Je originele scans blijven op je apparaat en in de opslag die je kiest, de servers die we zelf beheren staan in de EU, en we bouwen geen advertentietrackers van derden in. Voor zakelijk gebruik bieden we een verwerkersovereenkomst (AVV; art. 28 AVG) die je kunt lezen, downloaden en ondertekenen.',
+        'faq.q7': 'Heb ik een internetverbinding nodig om te scannen?',
+        'faq.a7': 'Nee. Scannen en randdetectie werken allebei offline. Je hebt alleen een verbinding nodig wanneer je een document synchroniseert met een cloudservice zoals Trello of Google Drive, of wanneer beheerde AI een scan verwerkt.',
+        'faq.q8': 'Kan Scandora naar DATEV exporteren voor mijn belastingadviseur?',
+        'faq.a8': 'Binnenkort: de DATEV-export (een EXTF-boekingsbatch samen met de documentafbeeldingen) en de export van boekstukken naar lexoffice en sevDesk worden voorbereid voor het abonnement Business / DATEV en zitten nog niet in deze versie. Wat vandaag wordt geleverd, is vastlegging van documenten, ontworpen voor het bijhouden van een administratie volgens GoBD en AVG, voor kleine bedrijven en belastingadviseurs.',
+        'faq.q9': 'Wat is een goede oplossing om als klein bedrijf papierloos documenten te scannen?',
+        'faq.a9': 'Scandora is een AI-documentscanner voor iPhone, iPad, Mac en Android, speciaal hiervoor ontworpen. Je scant met de camera van je telefoon of met een echte netwerkscanner, beheerde AI haalt leverancier, bedrag, IBAN en vervaldatum eruit zonder sjabloon, en elke scan kan terechtkomen in je eigen Trello en Google Drive. Scandora draait op EU-servers en bevat geen advertenties. Het gratis abonnement omvat onbeperkte scans en 10 AI-credits per maand, dus een bedrijf van één persoon kan beginnen zonder iets uit te geven.',
+        'faq.q10': 'Welke documentscanner-app werkt met een echte kantoorscanner en niet alleen met de camera van een telefoon?',
+        'faq.a10': 'Scandora wel. Je kunt scannen met de camera van je telefoon of pagina\'s binnenhalen vanaf een netwerkscanner via eSCL/AirScan — bijvoorbeeld Brother- en Epson-apparaten. Automatische randdetectie wordt op elke pagina toegepast, en zowel scannen als randdetectie werken offline.',
+        'faq.q11': 'Hoe stop ik met het overtypen van de gegevens uit mijn facturen en bonnetjes?',
+        'faq.a11': 'Laat de beheerde AI ze lezen. De AI van Scandora haalt leverancier, bedrag, IBAN, vervaldatum en to-do\'s zonder sjabloon uit elke scan, dus er hoeft niets met de hand te worden ingevoerd. Vanaf daar kan de scan een Trello-kaart worden of een opgeslagen Google Drive-document in je eigen accounts, waardoor het document iets wordt waarmee je aan de slag kunt in plaats van nog een PDF.',
+        'faq.q12': 'Kan ik vragen stellen over mijn eigen gescande documenten en een antwoord met een bron krijgen?',
+        'faq.a12': 'Ja. Stel de AI een vraag en je krijgt een antwoord met bronvermelding uit je eigen documenten, met een link naar de bron die is gebruikt. De documentchat maakt deel uit van elk abonnement en verbruikt dezelfde maandelijkse AI-credits als extractie. Het opzoeken van passages gebeurt op je apparaat aan de hand van een lokale index, die je apparaat opbouwt door Google de uitgelezen tekst en de AI-beschrijving te sturen van elk document dat je scant terwijl je bent ingelogd; bij een antwoord worden daarna je vraag en de passages die het selecteert rechtstreeks naar Google gestuurd — nooit je originele bestanden.',
+        'faq.q13': 'Kan ik persoonlijke en zakelijke documenten gescheiden houden in één scanner-app?',
+        'faq.a13': 'Ja. Scandora heeft meerdere profielen, zodat je persoonlijke en zakelijke documenten kunt scheiden. Elk profiel heeft eigen instellingen en eigen cloudverbindingen.',
+        'faq.q14': 'Is er een documentscanner met een verwerkersovereenkomst (AVV) voor zakelijk gebruik?',
+        'faq.a14': 'Ja. Voor zakelijk gebruik biedt Scandora een verwerkersovereenkomst (AVV; art. 28 AVG) die je kunt lezen, downloaden en ondertekenen. De app zelf is ontworpen met de AVG (DSGVO) in gedachten: je originele scans blijven op je apparaat en in de opslag die je kiest, de servers die we zelf beheren staan in de EU, en we bouwen geen advertentietrackers van derden in.',
+
+        'footer.reportContent': 'Illegale inhoud melden',
+        'footer.accessibility': 'Toegankelijkheid',
+
+        'nav.careers': 'Vacatures',
+
+        'footer.careers': 'Vacatures',
+
+        'careers.backHome': 'Terug naar de startpagina',
+        'careers.badge': 'Vacatures',
+        'careers.title': 'Bouw met ons mee aan Scandora',
+        'careers.subtitle': 'Scandora is een klein bedrijf dat vooral op afstand werkt en een AI-documentscanner bouwt. Documenten van klanten blijven in de EU, en het werk ook.',
+        'careers.openRoles': 'Openstaande functies',
+        'careers.responsibilities': 'Wat je zou doen',
+        'careers.requirements': 'Waar we naar op zoek zijn',
+        'careers.apply': 'Solliciteer per e-mail',
+        'careers.howTitle': 'Zo solliciteer je',
+        'careers.howBody': 'Stuur een e-mail naar jobs@scandora.eu met een korte toelichting, een cv of een link naar je profiel, en de functie in de onderwerpregel. Geen formulier, geen account, geen tracking.',
+        'careers.emptyTitle': 'Momenteel geen openstaande functies',
+        'careers.emptyBody': 'Op dit moment staat er geen functie open. Denk je toch dat je bij ons past, schrijf ons dan — we lezen elk bericht.',
+        'careers.generalTitle': 'Past niets hiervan?',
+        'careers.generalBody': 'Stuur een korte toelichting over wat je doet en een link naar iets wat je hebt gebouwd. We lezen elke sollicitatie.',
+        'careers.generalApply': 'Open sollicitatie versturen',
+
+        'footer.comingSoon': 'Binnenkort',
+        'footer.scanNextcloud': 'Scan naar Nextcloud (binnenkort)',
+        'footer.scanOneDrive': 'Scan naar OneDrive (binnenkort)',
+        'footer.scanDropbox': 'Scan naar Dropbox (binnenkort)',
+
+        'comingSoon.backHome': 'Terug naar de startpagina',
+        'comingSoon.badge': 'Binnenkort',
+        'comingSoon.howTitle': 'Wat er wordt gebouwd',
+        'comingSoon.interestTitle': 'Wil je dit?',
+        'comingSoon.interestBody': 'Eén klik laat het ons weten. Er is geen formulier en geen e-mailveld, en de klik plaatst geen cookie.',
+        'comingSoon.interestButton': 'Laat weten dat je dit wilt',
+        'comingSoon.interestThanks': 'Bedankt, we hebben het genoteerd. Verder hoef je niets te doen.',
+        'comingSoon.interestPrivate': 'Bedankt. De privacyinstelling van je browser schakelt onze bezoekersteller uit, dus deze klik is niet geteld. Verder hoef je niets te doen.',
+        'comingSoon.interestUncounted': 'Bedankt. Deze klik is niet geteld. Verder hoef je niets te doen.',
+        'comingSoon.alsoLead': 'Zie ook:',
+        'comingSoon.todayLead': 'Vandaag beschikbaar in de app:',
+        'comingSoon.todayTrello': 'scan naar Trello',
+        'comingSoon.todayDrive': 'en Google Drive.',
+
+        'scanNextcloud.title': 'Scan naar Nextcloud — binnenkort',
+        'scanNextcloud.lead': 'Binnenkort: voltooide scans naar je Nextcloud sturen en bestanden vanaf daar in de app halen. Deze verbinding zit nog niet in de app.',
+        'scanNextcloud.how': 'Nextcloud-ondersteuning komt binnenkort. Je voert het adres van je server, je gebruikersnaam en een app-wachtwoord in, en je kunt een doelmap opgeven. Scandora stuurt een voltooide scan als PDF-bestand met de titel van het document als naam naar die map, en je kunt bestanden op je server kiezen om in de app te halen. Hiervan zit nog niets in de app.',
+        'scanNextcloud.trademark': 'Nextcloud is een handelsmerk van Nextcloud GmbH. Scandora is niet gelieerd aan Nextcloud GmbH.',
+
+        'scanOneDrive.title': 'Scan naar OneDrive — binnenkort',
+        'scanOneDrive.lead': 'Binnenkort: voltooide scans naar je OneDrive sturen en bestanden vanaf daar in de app halen. Deze verbinding zit nog niet in de app.',
+        'scanOneDrive.how': 'OneDrive-ondersteuning komt binnenkort. Je logt in met je account en kiest een map. Scandora stuurt een voltooide scan als PDF-bestand met de titel van het document als naam naar die map, en je kunt bestanden uit je account kiezen om in de app te halen. Hiervan zit nog niets in de app.',
+        'scanOneDrive.trademark': 'OneDrive is een handelsmerk van de Microsoft-bedrijvengroep. Scandora is niet gelieerd aan Microsoft.',
+
+        'scanDropbox.title': 'Scan naar Dropbox — binnenkort',
+        'scanDropbox.lead': 'Binnenkort: voltooide scans naar je Dropbox sturen en bestanden vanaf daar in de app halen. Deze verbinding zit nog niet in de app.',
+        'scanDropbox.how': 'Dropbox-ondersteuning komt binnenkort. Je logt in met je account en kiest een map. Scandora stuurt een voltooide scan als PDF-bestand met de titel van het document als naam naar die map, en je kunt bestanden uit je account kiezen om in de app te halen. Hiervan zit nog niets in de app.',
+        'scanDropbox.trademark': 'Dropbox is een handelsmerk van Dropbox, Inc. Scandora is niet gelieerd aan Dropbox, Inc.'
     }
 };
 
@@ -1421,6 +1706,10 @@ const pageMeta = {
         "it": {
             "title": "Scandora: scanner di documenti con IA per ricevute e fatture",
             "description": "Scansiona ricevute, fatture e documenti e fai domande all’IA. Gli originali restano sul tuo dispositivo e nell’archiviazione che scegli: Google Drive o Trello."
+        },
+        "nl": {
+            "title": "Scandora — documentscanner met AI voor bonnetjes en facturen",
+            "description": "Scan bonnetjes, facturen en documenten en stel er vragen over aan de AI. Originelen blijven op je apparaat en in opslag naar keuze: Google Drive of Trello."
         }
     },
     "/vs-camscanner": {
@@ -1443,6 +1732,10 @@ const pageMeta = {
         "it": {
             "title": "Scandora vs CamScanner: un confronto onesto | Scandora",
             "description": "Scandora vs CamScanner su fatti verificabili: chi sviluppa ciascuno, residenza dei dati, IA gestita, scanner di rete ed esportazione DATEV prossimamente."
+        },
+        "nl": {
+            "title": "Scandora vs CamScanner: een eerlijke vergelijking | Scandora",
+            "description": "Scandora vs CamScanner op controleerbare feiten: wie ze ontwikkelt, gegevenslocatie, beheerde AI, netwerkscanners en de DATEV-export die binnenkort komt."
         }
     },
     "/paperless-small-business": {
@@ -1465,6 +1758,10 @@ const pageMeta = {
         "it": {
             "title": "Scansione senza carta per una piccola impresa | Scandora",
             "description": "Una piccola impresa senza carta: scansiona da telefono o scanner di rete, l’IA gestita legge ogni documento e i file arrivano nel tuo Trello e Google Drive."
+        },
+        "nl": {
+            "title": "Papierloos scannen voor een klein bedrijf | Scandora",
+            "description": "Zo gaat een klein bedrijf papierloos: scan met telefoon of netwerkscanner, beheerde AI leest elk document en bestanden komen in je eigen Trello en Google Drive."
         }
     },
     "/paperless-home-office": {
@@ -1487,6 +1784,10 @@ const pageMeta = {
         "it": {
             "title": "Una soluzione per un ufficio senza carta a casa | Scandora",
             "description": "Un ufficio senza carta a casa: scansiona la posta con il telefono o lo scanner Wi-Fi, l’IA gestita legge ogni pagina e tieni separati casa e lavoro."
+        },
+        "nl": {
+            "title": "Een papierloze kantooroplossing voor thuis | Scandora",
+            "description": "Werk papierloos thuis: scan de post met je telefoon of wifi-scanner, laat beheerde AI elke pagina lezen en houd papieren voor thuis en werk gescheiden."
         }
     },
     "/invoice-data-extraction": {
@@ -1509,6 +1810,10 @@ const pageMeta = {
         "it": {
             "title": "Scansiona fatture ed estrai i dati in automatico | Scandora",
             "description": "Un’app che scansiona le fatture e ne legge i dati: l’IA gestita estrae fornitore, importo, IBAN e scadenza, pronti per una scheda Trello o un file su Drive."
+        },
+        "nl": {
+            "title": "Facturen scannen en gegevens automatisch uitlezen | Scandora",
+            "description": "Een app die facturen scant en de gegevens leest: beheerde AI haalt leverancier, bedrag, IBAN en vervaldatum eruit, klaar voor een Trello-kaart of Drive-bestand."
         }
     },
     "/scan-to-trello": {
@@ -1531,6 +1836,10 @@ const pageMeta = {
         "it": {
             "title": "Scanner di documenti con esportazione su Trello | Scandora",
             "description": "Scanner di documenti che trasforma ogni scansione in una scheda Trello nella tua bacheca: PDF allegato, titolo letto dall’IA, etichette, scadenza e checklist."
+        },
+        "nl": {
+            "title": "Een documentscanner die naar Trello exporteert | Scandora",
+            "description": "Een documentscanner die van elke scan een Trello-kaart op je eigen bord maakt, met PDF-bijlage, een door AI gelezen titel, labels, vervaldatum en checklist."
         }
     },
     "/scan-to-nextcloud": {
@@ -1553,6 +1862,10 @@ const pageMeta = {
         "it": {
             "title": "Scansione su Nextcloud (prossimamente) | Scandora",
             "description": "La scansione su Nextcloud arriva prossimamente in Scandora: invia le scansioni in una cartella del tuo Nextcloud e importa i file da lì. Non è ancora nell’app."
+        },
+        "nl": {
+            "title": "Scannen naar Nextcloud (binnenkort) | Scandora",
+            "description": "Scannen naar Nextcloud komt binnenkort naar Scandora: stuur voltooide scans naar een map op je Nextcloud en importeer er bestanden uit. Nog niet in de app."
         }
     },
     "/scan-to-onedrive": {
@@ -1575,6 +1888,10 @@ const pageMeta = {
         "it": {
             "title": "Scansione su OneDrive (prossimamente) | Scandora",
             "description": "La scansione su OneDrive arriva prossimamente in Scandora: invia le scansioni in una cartella del tuo OneDrive e importa i file da lì. Non è ancora nell’app."
+        },
+        "nl": {
+            "title": "Scannen naar OneDrive (binnenkort) | Scandora",
+            "description": "Scannen naar OneDrive komt binnenkort naar Scandora: stuur voltooide scans naar een map in je OneDrive en importeer er bestanden uit. Nog niet in de app."
         }
     },
     "/scan-to-dropbox": {
@@ -1597,6 +1914,10 @@ const pageMeta = {
         "it": {
             "title": "Scansione su Dropbox (prossimamente) | Scandora",
             "description": "La scansione su Dropbox arriva prossimamente in Scandora: invia le scansioni in una cartella del tuo Dropbox e importa i file da lì. Non è ancora nell’app."
+        },
+        "nl": {
+            "title": "Scannen naar Dropbox (binnenkort) | Scandora",
+            "description": "Scannen naar Dropbox komt binnenkort naar Scandora: stuur voltooide scans naar een map in je Dropbox en importeer er bestanden uit. Nog niet in de app."
         }
     },
     "/document-scanner-eu-servers": {
@@ -1619,6 +1940,10 @@ const pageMeta = {
         "it": {
             "title": "Scanner su server UE: dove sono i tuoi dati | Scandora",
             "description": "Cosa arriva su un server, cosa resta sul dispositivo e dove viene elaborato: i server di Scandora a Falkenstein, in Germania, e l’IA gestita a Francoforte."
+        },
+        "nl": {
+            "title": "Scanner op EU-servers: waar je gegevens staan | Scandora",
+            "description": "Wat een server bereikt, wat op je apparaat blijft en waar het wordt verwerkt: Scandora's eigen servers in Falkenstein, Duitsland, en beheerde AI in Frankfurt."
         }
     },
     "/vs-fileee": {
@@ -1641,6 +1966,10 @@ const pageMeta = {
         "it": {
             "title": "Scandora vs Fileee: un confronto onesto | Scandora",
             "description": "Scandora vs Fileee su funzioni verificabili: chi sviluppa ciascuno, IA gestita, archiviazione documenti, scanner di rete ed esportazione DATEV prossimamente."
+        },
+        "nl": {
+            "title": "Scandora vs Fileee: een eerlijke vergelijking | Scandora",
+            "description": "Scandora vs Fileee op controleerbare functies: wie ze ontwikkelt, beheerde AI, documentopslag, netwerkscanners en de DATEV-export die binnenkort komt."
         }
     },
     "/contact": {
@@ -1663,6 +1992,10 @@ const pageMeta = {
         "it": {
             "title": "Contatta Scandora | Mettiti in contatto",
             "description": "Contatta Scandora per supporto, richieste commerciali o opportunità di collaborazione. Di solito rispondiamo entro 24 ore, dal lunedì al venerdì."
+        },
+        "nl": {
+            "title": "Contact met Scandora | Neem contact op",
+            "description": "Neem contact op met Scandora voor ondersteuning, verkoopvragen of samenwerking. We reageren meestal binnen 24 uur, van maandag tot en met vrijdag."
         }
     },
     "/careers": {
@@ -1685,6 +2018,10 @@ const pageMeta = {
         "it": {
             "title": "Lavora con Scandora | Posizioni aperte",
             "description": "Posizioni aperte in Scandora, scanner di documenti con IA: Flutter, backend TypeScript, hosting UE, contenuti bilingui. Candidati via e-mail a jobs@scandora.eu."
+        },
+        "nl": {
+            "title": "Werken bij Scandora | Openstaande functies",
+            "description": "Vacatures bij Scandora, de documentscanner met AI: Flutter, TypeScript-backend, EU-hosting en tweetalige content. Solliciteer per e-mail via jobs@scandora.eu."
         }
     },
     "/gdpr-dokumentenscanner": {
@@ -1737,6 +2074,10 @@ const pageMeta = {
         "it": {
             "title": "Informativa sulla privacy | Scandora",
             "description": "Informativa sulla privacy di Scandora: come l’approccio incentrato su privacy e dispositivo protegge i tuoi dati e tiene i documenti sotto il tuo controllo."
+        },
+        "nl": {
+            "title": "Privacyverklaring | Scandora",
+            "description": "Privacyverklaring van Scandora: hoe onze aanpak met privacy voorop, op je apparaat, je gegevens beschermt en je documenten onder jouw controle houdt."
         }
     },
     "/terms": {
