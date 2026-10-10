@@ -105,7 +105,7 @@
                     <h2>What Scandora provides</h2>
                     <ul>
                         <li><strong>Immutable capture record.</strong> When you capture a document, Scandora stores a write-once record with a content hash (SHA-256) of the finalized document and a trusted, server-set capture timestamp — separate from the metadata you can edit. A "verify integrity" action re-hashes the retained document to show it is unchanged since capture.</li>
-                        <li><strong>Append-only audit log.</strong> Document events — capture, metadata edits (with before/after of the changed fields), exports, and deletion — are recorded as append-only entries with an actor and a server timestamp, so the history can be traced.</li>
+                        <li><strong>Append-only audit log.</strong> Document events — capture, metadata edits (with before/after of the changed fields), exports, and deletion — are recorded as append-only entries with a server timestamp and, for events you trigger in the app, the acting profile, so the history can be traced. Deletions that Scandora's server makes itself — when a retention period runs out, or when you delete documents locked with an Advanced Protection key you can no longer recover — are recorded without a profile.</li>
                         <li><strong>Verfahrensdokumentation.</strong> Scandora will generate a Verfahrensdokumentation PDF (coming soon), auto-filled from your real profile, scanner and integration settings, to document how you capture and process documents — the basis for "ersetzendes Scannen" (destroying paper originals after scanning).</li>
                     </ul>
 
