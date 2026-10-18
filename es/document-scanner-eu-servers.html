@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Escáner en servidores de la UE: dónde están tus datos</title>
-    <meta name="description" content="Qué llega a un servidor, qué queda en tu dispositivo y dónde se procesa: servidores propios de Scandora en Falkenstein, Alemania, y IA gestionada en Fráncfort.">
+    <meta name="description" content="Qué llega a un servidor, qué queda en tu dispositivo y dónde se procesa: servidores de Scandora en Falkenstein e IA gestionada, por defecto en Fráncfort.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="https://scandora.eu/es/document-scanner-eu-servers">
 
@@ -24,7 +24,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://scandora.eu/es/document-scanner-eu-servers">
     <meta property="og:title" content="Escáner en servidores de la UE: dónde están tus datos">
-    <meta property="og:description" content="Qué llega a un servidor, qué queda en tu dispositivo y dónde se procesa: servidores propios de Scandora en Falkenstein, Alemania, y IA gestionada en Fráncfort.">
+    <meta property="og:description" content="Qué llega a un servidor, qué queda en tu dispositivo y dónde se procesa: servidores de Scandora en Falkenstein e IA gestionada, por defecto en Fráncfort.">
     <meta property="og:image" content="https://scandora.eu/assets/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -40,7 +40,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Escáner en servidores de la UE: dónde están tus datos">
-    <meta name="twitter:description" content="Qué llega a un servidor, qué queda en tu dispositivo y dónde se procesa: servidores propios de Scandora en Falkenstein, Alemania, y IA gestionada en Fráncfort.">
+    <meta name="twitter:description" content="Qué llega a un servidor, qué queda en tu dispositivo y dónde se procesa: servidores de Scandora en Falkenstein e IA gestionada, por defecto en Fráncfort.">
     <meta name="twitter:image" content="https://scandora.eu/assets/og-image.png">
 
     <!-- Favicons -->
@@ -131,13 +131,13 @@
                     <p><a href="/avv" class="btn btn-primary">Leer el acuerdo de tratamiento de datos (AVV)</a></p>
 
                     <h2>¿Hay un escáner de documentos que funcione en servidores de la UE?</h2>
-                    <p>Scandora. Los servidores que gestionamos nosotros mismos están en la UE: el servidor propio de Scandora está en Falkenstein, Alemania, en máquinas que alquilamos a Hetzner, y aloja el historial de escaneos, la API de userdata, el punto de emisión de credenciales para la IA gestionada y los registros de captura y de cambios. La generación de IA gestionada se procesa en la UE: Google Gemini en Vertex AI, en Fráncfort, Alemania. Scandora no muestra anuncios.</p>
+                    <p>Scandora. Los servidores que gestionamos nosotros mismos están en la UE: el servidor propio de Scandora está en Falkenstein, Alemania, en máquinas que alquilamos a Hetzner, y aloja el historial de escaneos, la API de userdata, el punto de emisión de credenciales para la IA gestionada y los registros de captura y de cambios. En la ruta de la UE (la predeterminada), la generación de IA gestionada se procesa en la UE: Google Gemini en Vertex AI, en Fráncfort, Alemania. Los modelos de IA fuera de la UE solo se usan si das tu consentimiento (se pregunta una vez; puedes retirarlo cuando quieras en Ajustes → Privacidad y consentimientos): esa solicitud pasa por el servidor de Scandora en Alemania, que solo la mantiene en memoria, hasta Anthropic y se procesa en EE. UU. Scandora no muestra anuncios.</p>
 
                     <h2>¿Qué escáner de documentos debería elegir una pequeña empresa en el marco del RGPD?</h2>
                     <p>Comprueba cuatro cosas antes de elegir uno: dónde se ejecutan los pasos del lado del servidor, si tus documentos originales siguen bajo tu control, si la app o su sitio web cargan tipografías de terceros y rastreadores publicitarios, y si puedes firmar un acuerdo de tratamiento de datos para uso profesional. Scandora responde a las cuatro: alojamiento en la UE, en Alemania; originales que se quedan en tu dispositivo y en el almacenamiento que elijas; sin tipografías de terceros ni rastreadores publicitarios; y un <a href="/avv">AVV / acuerdo de tratamiento de datos según el art. 28 del RGPD</a> que puedes leer, descargar y firmar. La lista completa de criterios está en la <a href="/en/gdpr-dokumentenscanner">página sobre el escáner de documentos y el RGPD</a>.</p>
 
                     <h2>¿Qué sale realmente de mi dispositivo cuando escaneo una página?</h2>
-                    <p>Tres cosas. Cuando usas una función de IA, tu dispositivo envía la imagen de la página directamente al proveedor del modelo que devuelve el análisis, mediante una credencial de corta duración que emite el servidor de Scandora. Mientras tienes la sesión iniciada, el registro del historial de cada escaneo completado se sube a ese mismo servidor: los metadatos del registro, el texto extraído del documento y una pequeña vista previa de baja resolución de la primera página. También mientras tienes la sesión iniciada, tu dispositivo envía el texto extraído y la descripción de IA de cada documento nuevo directamente al proveedor del modelo, que los convierte en los vectores de búsqueda del índice en el dispositivo. Tus archivos originales nunca se almacenan en los servidores de Scandora.</p>
+                    <p>Tres cosas. Cuando usas una función de IA en la ruta de la UE (la predeterminada), tu dispositivo envía la imagen de la página directamente al proveedor del modelo que devuelve el análisis, mediante una credencial de corta duración que emite el servidor de Scandora; solo si has dado tu consentimiento a los modelos de IA fuera de la UE, la página puede ir en su lugar por el servidor de Scandora en Alemania, solo en memoria, hasta Anthropic en EE. UU. Mientras tienes la sesión iniciada, el registro del historial de cada escaneo completado se sube a ese mismo servidor: los metadatos del registro, el texto extraído del documento y una pequeña vista previa de baja resolución de la primera página. También mientras tienes la sesión iniciada, tu dispositivo envía el texto extraído y la descripción de IA de cada documento nuevo directamente al proveedor del modelo, que los convierte en los vectores de búsqueda del índice en el dispositivo. Tus archivos originales nunca se almacenan en los servidores de Scandora.</p>
 
                     <h2>¿Dónde se guarda mi historial de escaneos?</h2>
                     <p>En el servidor propio de Scandora en Falkenstein, Alemania. El registro contiene los metadatos de la entrada, el texto completo extraído (el texto de más de 400.000 caracteres no se sube) y la miniatura de vista previa. Mientras no hayas iniciado sesión, no se sube ningún registro del historial; se queda en tu dispositivo hasta que inicias sesión, y entonces también se suben los escaneos que hiciste sin cuenta.</p>
@@ -156,6 +156,7 @@
                         <tbody>
                             <tr><td>Hetzner Online GmbH</td><td>Alojamiento del servidor propio de Scandora</td><td>Alemania (Falkenstein)</td></tr>
                             <tr><td>Google (Gemini API)</td><td>Generación de IA gestionada y embeddings</td><td>Alemania — Vertex AI <code>europe-west3</code></td></tr>
+                            <tr><td>Anthropic (Claude)</td><td>Opcional: modelos de IA fuera de la UE, solo si das tu consentimiento</td><td>EE. UU. — cláusulas contractuales tipo de la UE</td></tr>
                             <tr><td>Google (Firebase / Cloud Firestore)</td><td>Solo el registro de importación</td><td>Alemania — <code>europe-west3</code></td></tr>
                         </tbody>
                     </table>
@@ -174,7 +175,7 @@
                         </thead>
                         <tbody>
                             <tr><td>Tus archivos originales</td><td>Tu dispositivo y el almacenamiento que elijas</td><td>El documento en sí: nunca se almacena en los servidores de Scandora</td></tr>
-                            <tr><td>Imagen de la página para el análisis</td><td>Directamente del dispositivo a Vertex AI <code>europe-west3</code>, con una credencial de corta duración</td><td>La página que se lee</td></tr>
+                            <tr><td>Imagen de la página para el análisis</td><td>Directamente del dispositivo a Vertex AI <code>europe-west3</code>, con una credencial de corta duración (ruta de la UE, la predeterminada); solo si das tu consentimiento a los modelos de IA fuera de la UE: por el servidor de Scandora en Alemania (solo en memoria) hasta Anthropic, EE. UU.</td><td>La página que se lee</td></tr>
                             <tr><td>Historial de escaneos (con la sesión iniciada)</td><td>Servidor propio de Scandora, Falkenstein, Alemania</td><td>Metadatos, texto extraído, miniatura de vista previa pequeña</td></tr>
                             <tr><td>Búsqueda de documentos con IA (con la sesión iniciada)</td><td>Índice en tu dispositivo, creado a partir del texto de cada documento enviado directamente a Vertex AI <code>europe-west3</code>; no se almacena nada en los servidores de Scandora</td><td>Ni texto de documentos ni embeddings de búsqueda en nuestros servidores</td></tr>
                             <tr><td>Registros de captura y de cambios</td><td>Servidor propio de Scandora, Falkenstein, Alemania</td><td>Suma de comprobación SHA-256, origen, marcas de tiempo, valores de metadatos anteriores y nuevos</td></tr>
@@ -192,11 +193,11 @@
 
                     <h2>Preguntas frecuentes</h2>
                     <h3>¿Hay un escáner de documentos que funcione en servidores de la UE?</h3>
-                    <p>Scandora. Los servidores que gestionamos nosotros mismos están en la UE: el servidor propio de Scandora está en Falkenstein, Alemania (Hetzner), y la generación de IA gestionada se procesa en la UE: Google Gemini en Vertex AI, en Fráncfort, Alemania. Scandora no muestra anuncios.</p>
+                    <p>Scandora. Los servidores que gestionamos nosotros mismos están en la UE: el servidor propio de Scandora está en Falkenstein, Alemania (Hetzner), y en la ruta de la UE (la predeterminada) la generación de IA gestionada se procesa en la UE: Google Gemini en Vertex AI, en Fráncfort, Alemania; los modelos de IA fuera de la UE solo se usan si das tu consentimiento. Scandora no muestra anuncios.</p>
                     <h3>¿Qué escáner de documentos debería elegir una pequeña empresa en el marco del RGPD?</h3>
                     <p>Comprueba dónde se ejecutan los pasos del lado del servidor, si tus documentos originales siguen bajo tu control, si se cargan tipografías de terceros y rastreadores publicitarios, y si puedes firmar un acuerdo de tratamiento de datos. Scandora responde a los cuatro puntos; la lista completa de criterios está en la página sobre el escáner de documentos y el RGPD.</p>
                     <h3>¿Qué sale realmente de mi dispositivo cuando escaneo una página?</h3>
-                    <p>Con una función de IA, la imagen de la página: directamente desde tu dispositivo, con una credencial de corta duración, al proveedor del modelo. Mientras tienes la sesión iniciada, también el registro del historial: metadatos, texto extraído y una pequeña miniatura de vista previa. Tus archivos originales nunca se almacenan en los servidores de Scandora.</p>
+                    <p>Con una función de IA en la ruta de la UE (la predeterminada), la imagen de la página: directamente desde tu dispositivo, con una credencial de corta duración, al proveedor del modelo; solo si das tu consentimiento a los modelos de IA fuera de la UE, por el servidor de Scandora hasta Anthropic en EE. UU. Mientras tienes la sesión iniciada, también el registro del historial: metadatos, texto extraído y una pequeña miniatura de vista previa. Tus archivos originales nunca se almacenan en los servidores de Scandora.</p>
                     <h3>¿Se almacena algún dato mío fuera de los servidores propios de Scandora?</h3>
                     <p>Solo el registro de importación entre dispositivos, en Google Cloud Firestore, en la región <code>europe-west3</code> (Fráncfort, Alemania). No contiene ninguna imagen de página ni texto de documentos.</p>
                 </article>
