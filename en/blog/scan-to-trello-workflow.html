@@ -140,16 +140,15 @@
                         <li><strong>Pick your account type.</strong> You tell Scandora whether your Trello account is free or premium. That sets the maximum attachment size and whether individual checklist items may carry their own due date.</li>
                         <li><strong>Choose or create a board.</strong> Scandora loads your open boards; you pick one or create a new one straight from the app.</li>
                         <li><strong>Choose or create a list.</strong> Finally you choose the list where new cards should land (or create a new one). This list is the target for every future scan.</li>
-                        <li><strong>Enable AI features (optional).</strong> “Extract due date” and “Suggest to-dos” are enabled separately. Both require a connected AI; without an AI connection those toggles stay locked.</li>
                     </ol>
+                    <p>There is nothing to set up for the due date and the tasks: the managed AI looks for them on every scan. If it finds a due date or tasks, the card gets them; if it finds none, the card is created without them.</p>
 
                     <h2 id="en-steps">From scan to card — the steps</h2>
                     <ol>
                         <li><strong>Scan the document.</strong> Capture it with your phone camera or pull it in over a network scanner via eSCL/AirScan (such as Brother or Epson). Automatic edge detection keeps every page clean.</li>
-                        <li><strong>Managed AI reads it.</strong> Scandora recognises a suggested title, matching labels, a possible due date and suggested action items. Nothing is guessed — every field stays fully editable.</li>
-                        <li><strong>Review and adjust.</strong> You see the suggested values and can change them before they become a card.</li>
+                        <li><strong>Managed AI reads it.</strong> Scandora recognises a suggested title, matching labels, a possible due date and suggested action items.</li>
                         <li><strong>Send it to your chosen list.</strong> Scandora creates the card in your configured Trello list and attaches the scanned PDF directly to the card.</li>
-                        <li><strong>Ready to work.</strong> The card carries a title, the PDF attachment, the detected labels, — if enabled — a due date, and a checklist named <code>Tasks</code> with the suggested action items as check items.</li>
+                        <li><strong>Ready to work.</strong> The card carries a title, the PDF attachment, the detected labels, a due date when the document names one, and — when the AI suggests action items — a checklist named <code>Tasks</code> with them as check items.</li>
                     </ol>
 
                     <h2 id="en-mapping">What exactly ends up on the card</h2>
@@ -159,19 +158,19 @@
                             <tr><th>Trello element</th><th>Where it comes from</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td>Card title (<code>name</code>)</td><td>The AI's suggested title for the document (stays editable).</td></tr>
+                            <tr><td>Card title (<code>name</code>)</td><td>The AI's suggested title for the document.</td></tr>
                             <tr><td>Description (<code>desc</code>)</td><td>An optional description, when present.</td></tr>
                             <tr><td>Attachment</td><td>The scanned PDF is attached to the card.</td></tr>
                             <tr><td>Labels</td><td>The AI-detected labels. Existing board labels are matched by name; missing ones are created with a colour and added to the card.</td></tr>
-                            <tr><td>Due date (<code>due</code>)</td><td>The AI-detected date — only when “Extract due date” is enabled.</td></tr>
-                            <tr><td>Checklist <code>Tasks</code></td><td>One check item per suggested action item. Only when “Suggest to-dos” is enabled. A per-item due date is set only on a premium Trello account.</td></tr>
+                            <tr><td>Due date (<code>due</code>)</td><td>The AI-detected date — only when the document names one.</td></tr>
+                            <tr><td>Checklist <code>Tasks</code></td><td>One check item per suggested action item. Only when the AI suggests action items. A per-item due date is set only on a premium Trello account.</td></tr>
                         </tbody>
                     </table>
 
                     <h2 id="en-free-premium">Free and premium Trello, honest scope</h2>
                     <p>Scandora adapts to your Trello account. On a free account a smaller maximum attachment size applies, and checklist items don't get an individual due date. On a premium account the attachment limit is higher and individual check items may carry their own due dates. If a PDF is too large for the applicable limit, Scandora tells you openly instead of silently creating an incomplete card.</p>
                     <div class="highlight-box">
-                        <p>AI-assisted extraction speeds up capture but doesn't replace your judgement: title, labels, due date and action items stay editable until the end, and the card is created exactly as you confirm it.</p>
+                        <p>AI-assisted extraction speeds up capture but doesn't replace your judgement: the card is created straight from the AI's values with no review step first. Look it over in Trello and change anything that is wrong — it is edited there like any other card.</p>
                     </div>
 
                     <h2 id="en-privacy">Where your documents go</h2>
@@ -188,13 +187,13 @@
                     <h3>Do I need a paid Trello plan?</h3>
                     <p>No. The integration works with a free Trello account. On a premium account larger attachments are possible and individual checklist items can carry their own due date.</p>
                     <h3>Does the AI set the values automatically without me seeing them?</h3>
-                    <p>No. The title, labels, due date and action items are suggestions and stay editable before the card is created.</p>
+                    <p>Yes. There is no review step before the card: the title, labels, due date and action items come straight from the AI's reading. You see the finished card in your Trello list and can change it there like any other card.</p>
                     <h3>What happens to labels that don't exist on my board yet?</h3>
                     <p>Existing labels are matched by name. Missing labels are created with a colour on the board and added to the card.</p>
                     <h3>Is the scanned PDF attached to the card?</h3>
                     <p>Yes. The document is uploaded as an attachment on the newly created card — directly into your own Trello account.</p>
                     <h3>What is the checklist on the card called?</h3>
-                    <p><code>Tasks</code>. It holds one check item per suggested action item, provided “Suggest to-dos” is enabled.</p>
+                    <p><code>Tasks</code>. It holds one check item per suggested action item, provided the AI suggests action items.</p>
                 </article>
             </div>
         </section>

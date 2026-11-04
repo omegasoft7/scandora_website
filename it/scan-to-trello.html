@@ -127,7 +127,7 @@
 
                 <article class="legal-content" data-lang="it">
                     <div class="highlight-box">
-                        <p><strong>In breve:</strong> Scandora trasforma ogni scansione in una scheda Trello nella tua bacheca — con il PDF scansionato allegato, un titolo letto dall’IA, le etichette riconosciute e, se vuoi, una data di scadenza e una checklist chiamata <em>Tasks</em>. Basta un account Trello gratuito.</p>
+                        <p><strong>In breve:</strong> Scandora trasforma ogni scansione in una scheda Trello nella tua bacheca — con il PDF scansionato allegato, un titolo letto dall’IA, le etichette riconosciute, una data di scadenza, se il documento ne ha una, e una checklist chiamata <em>Tasks</em>, se contiene attività. Basta un account Trello gratuito.</p>
                     </div>
 
                     <p><a href="/it/#download" class="btn btn-primary">Scarica l’app</a></p>
@@ -139,13 +139,13 @@
                     <p>Con le tue credenziali Trello. Nelle impostazioni Trello di Scandora inserisci la tua chiave API di Trello e un token; Scandora verifica la connessione e ti mostra il tuo nome Trello come conferma. Dopodiché scegli il tipo di account, la bacheca e la lista di destinazione — oppure crei la bacheca e la lista direttamente dall’app. Ogni passaggio è illustrato nella <a href="/en/blog/scan-to-trello-workflow">guida al flusso di lavoro da scansione a Trello</a>.</p>
 
                     <h2>Cosa arriva esattamente sulla scheda Trello?</h2>
-                    <p>Il titolo della scheda deriva dal suggerimento di titolo dell’IA e resta modificabile. Il PDF scansionato è allegato alla scheda. Le etichette riconosciute dall’IA vengono abbinate per nome alle etichette della tua bacheca, e un’etichetta che non esiste ancora viene creata con un colore e aggiunta. Una data di scadenza viene impostata quando attivi l’estrazione della data di scadenza, e una checklist chiamata <em>Tasks</em> viene riempita con una voce per ogni attività suggerita quando attivi i suggerimenti di attività.</p>
+                    <p>Il titolo della scheda deriva dal suggerimento di titolo dell’IA. Il PDF scansionato è allegato alla scheda. Le etichette riconosciute dall’IA vengono abbinate per nome alle etichette della tua bacheca, e un’etichetta che non esiste ancora viene creata con un colore e aggiunta. Una data di scadenza viene impostata quando l’IA ne trova una nel documento, e una checklist chiamata <em>Tasks</em> viene riempita con una voce per ogni attività suggerita quando l’IA propone attività.</p>
 
                     <h2>Mi serve un piano Trello a pagamento?</h2>
                     <p>No. L’integrazione funziona con un account Trello gratuito. Un account Premium aumenta la dimensione massima degli allegati e permette alle singole voci della checklist di avere una data di scadenza propria; su un account gratuito il limite degli allegati è più basso e le voci della checklist non hanno una data di scadenza separata.</p>
 
                     <h2>L’IA crea schede senza che io le veda?</h2>
-                    <p>No. Vedi i valori proposti e puoi modificarli prima che venga creata una scheda. Titolo, etichette, data di scadenza e attività restano modificabili fino alla fine, e la scheda viene creata esattamente come la confermi.</p>
+                    <p>Sì. Quando una scansione viene messa in coda per Trello, Scandora esegue l’IA e poi crea la scheda, senza alcun passaggio di revisione in mezzo. La scheda compare nella bacheca e nella lista che hai scelto, e lì puoi modificarla come qualsiasi altra scheda Trello.</p>
 
                     <h2>Cosa succede se il PDF scansionato è troppo grande?</h2>
                     <p>Scandora lo segnala apertamente invece di creare in silenzio una scheda incompleta. Il limite che si applica dipende dal tipo di account Trello che indichi durante la configurazione.</p>
@@ -162,12 +162,12 @@
                             <tr><th>Elemento di Trello</th><th>Da dove arriva</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td>Titolo della scheda</td><td>Il suggerimento di titolo dell’IA per il documento (resta modificabile)</td></tr>
+                            <tr><td>Titolo della scheda</td><td>Il suggerimento di titolo dell’IA per il documento</td></tr>
                             <tr><td>Descrizione</td><td>Una descrizione facoltativa, se presente</td></tr>
                             <tr><td>Allegato</td><td>Il PDF scansionato</td></tr>
                             <tr><td>Etichette</td><td>Le etichette riconosciute dall’IA; quelle mancanti vengono create con un colore</td></tr>
-                            <tr><td>Data di scadenza</td><td>La data riconosciuta dall’IA — solo con l’estrazione della data di scadenza attivata</td></tr>
-                            <tr><td>Checklist <em>Tasks</em></td><td>Una voce per ogni attività suggerita — solo con i suggerimenti di attività attivati</td></tr>
+                            <tr><td>Data di scadenza</td><td>La data riconosciuta dall’IA — solo se il documento ne ha una</td></tr>
+                            <tr><td>Checklist <em>Tasks</em></td><td>Una voce per ogni attività suggerita — solo se l’IA propone attività</td></tr>
                             <tr><td>Lista di destinazione</td><td>La lista che hai scelto o creato durante la configurazione</td></tr>
                         </tbody>
                     </table>
@@ -183,7 +183,7 @@
                     <h3>Quale scanner di documenti esporta su Trello?</h3>
                     <p>Scandora. Scansioni un documento con la fotocamera del telefono o con uno scanner di rete tramite eSCL/AirScan, l’IA gestita legge dalla pagina un titolo, delle etichette, una possibile data di scadenza e delle attività suggerite, e Scandora crea la scheda nella lista di Trello che hai scelto — con il PDF scansionato allegato.</p>
                     <h3>Cosa arriva esattamente sulla scheda Trello?</h3>
-                    <p>Il titolo dal suggerimento dell’IA (modificabile), il PDF scansionato come allegato, le etichette riconosciute — quelle mancanti vengono create con un colore —, facoltativamente una data di scadenza e una checklist chiamata <em>Tasks</em> con una voce per ogni attività suggerita.</p>
+                    <p>Il titolo dal suggerimento dell’IA, il PDF scansionato come allegato, le etichette riconosciute — quelle mancanti vengono create con un colore —, una data di scadenza, se il documento ne ha una, e una checklist chiamata <em>Tasks</em> con una voce per ogni attività suggerita, se l’IA propone attività.</p>
                     <h3>Mi serve un piano Trello a pagamento?</h3>
                     <p>No. L’integrazione funziona con un account Trello gratuito. Un account Premium consente allegati più grandi e permette alle singole voci della checklist di avere una data di scadenza propria.</p>
                     <h3>Dove vanno i miei documenti in questo flusso di lavoro?</h3>

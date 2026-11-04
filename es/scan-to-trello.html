@@ -126,7 +126,7 @@
 
                 <article class="legal-content" data-lang="es">
                     <div class="highlight-box">
-                        <p><strong>En resumen:</strong> Scandora convierte cada escaneo en una tarjeta de Trello en tu propio tablero — con el PDF escaneado adjunto, un título leído por la IA, las etiquetas reconocidas y, si quieres, una fecha de vencimiento y una lista de tareas llamada <em>Tasks</em>. Basta con una cuenta de Trello gratuita.</p>
+                        <p><strong>En resumen:</strong> Scandora convierte cada escaneo en una tarjeta de Trello en tu propio tablero — con el PDF escaneado adjunto, un título leído por la IA, las etiquetas reconocidas, una fecha de vencimiento si el documento tiene una y una lista de tareas llamada <em>Tasks</em> si contiene tareas. Basta con una cuenta de Trello gratuita.</p>
                     </div>
 
                     <p><a href="/es/#download" class="btn btn-primary">Descargar la app</a></p>
@@ -138,13 +138,13 @@
                     <p>Con tus credenciales de Trello. En los ajustes de Trello de Scandora introduces tu clave de API de Trello y un token; Scandora comprueba la conexión y te muestra tu nombre de Trello como confirmación. Después eliges el tipo de cuenta, el tablero y la lista de destino — o creas el tablero y la lista desde la propia app. Todos los pasos se explican en la <a href="/en/blog/scan-to-trello-workflow">guía del flujo de trabajo de escaneo a Trello</a>.</p>
 
                     <h2>¿Qué llega exactamente a la tarjeta de Trello?</h2>
-                    <p>El título de la tarjeta procede de la sugerencia de título de la IA y se puede editar. El PDF escaneado se adjunta a la tarjeta. Las etiquetas que la IA ha reconocido se emparejan por nombre con las etiquetas de tu tablero, y una etiqueta que todavía no existe se crea con un color y se añade. Se establece una fecha de vencimiento cuando activas la extracción de la fecha de vencimiento, y una lista de tareas llamada <em>Tasks</em> se rellena con un elemento por cada tarea sugerida cuando activas las sugerencias de tareas.</p>
+                    <p>El título de la tarjeta procede de la sugerencia de título de la IA. El PDF escaneado se adjunta a la tarjeta. Las etiquetas que la IA ha reconocido se emparejan por nombre con las etiquetas de tu tablero, y una etiqueta que todavía no existe se crea con un color y se añade. Se establece una fecha de vencimiento cuando la IA encuentra una en el documento, y una lista de tareas llamada <em>Tasks</em> se rellena con un elemento por cada tarea sugerida cuando la IA propone tareas.</p>
 
                     <h2>¿Necesito un plan de pago de Trello?</h2>
                     <p>No. La integración funciona con una cuenta de Trello gratuita. Una cuenta Premium aumenta el tamaño máximo de los adjuntos y permite que cada elemento de la lista de tareas tenga su propia fecha de vencimiento; en una cuenta gratuita el límite de los adjuntos es menor y los elementos de la lista de tareas no tienen una fecha de vencimiento aparte.</p>
 
                     <h2>¿La IA crea tarjetas sin que yo las vea?</h2>
-                    <p>No. Ves los valores propuestos y puedes cambiarlos antes de que se cree una tarjeta. El título, las etiquetas, la fecha de vencimiento y las tareas se pueden editar hasta el final, y la tarjeta se crea exactamente como tú la confirmas.</p>
+                    <p>Sí. Cuando un escaneo se pone en cola para Trello, Scandora ejecuta la IA y después crea la tarjeta, sin ningún paso de revisión entre medias. La tarjeta aparece en el tablero y la lista que elegiste, y allí puedes cambiarla como cualquier otra tarjeta de Trello.</p>
 
                     <h2>¿Qué pasa si el PDF escaneado es demasiado grande?</h2>
                     <p>Scandora lo comunica abiertamente en lugar de crear en silencio una tarjeta incompleta. El límite que se aplica depende del tipo de cuenta de Trello que indicas durante la configuración.</p>
@@ -161,12 +161,12 @@
                             <tr><th>Elemento de Trello</th><th>De dónde sale</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td>Título de la tarjeta</td><td>La sugerencia de título de la IA para el documento (se puede editar)</td></tr>
+                            <tr><td>Título de la tarjeta</td><td>La sugerencia de título de la IA para el documento</td></tr>
                             <tr><td>Descripción</td><td>Una descripción opcional, si la hay</td></tr>
                             <tr><td>Adjunto</td><td>El PDF escaneado</td></tr>
                             <tr><td>Etiquetas</td><td>Las etiquetas que la IA ha reconocido; las que faltan se crean con un color</td></tr>
-                            <tr><td>Fecha de vencimiento</td><td>La fecha que la IA ha reconocido — solo con la extracción de la fecha de vencimiento activada</td></tr>
-                            <tr><td>Lista de tareas <em>Tasks</em></td><td>Un elemento por cada tarea sugerida — solo con las sugerencias de tareas activadas</td></tr>
+                            <tr><td>Fecha de vencimiento</td><td>La fecha que la IA ha reconocido — solo si el documento tiene una</td></tr>
+                            <tr><td>Lista de tareas <em>Tasks</em></td><td>Un elemento por cada tarea sugerida — solo si la IA propone tareas</td></tr>
                             <tr><td>Lista de destino</td><td>La lista que elegiste o creaste durante la configuración</td></tr>
                         </tbody>
                     </table>
@@ -182,7 +182,7 @@
                     <h3>¿Qué escáner de documentos exporta a Trello?</h3>
                     <p>Scandora. Escaneas un documento con la cámara del teléfono o con un escáner de red mediante eSCL/AirScan, la IA gestionada lee de la página un título, etiquetas, una posible fecha de vencimiento y tareas sugeridas, y Scandora crea la tarjeta en la lista de Trello que elegiste — con el PDF escaneado adjunto.</p>
                     <h3>¿Qué llega exactamente a la tarjeta de Trello?</h3>
-                    <p>El título de la sugerencia de la IA (editable), el PDF escaneado como adjunto, las etiquetas reconocidas — las que faltan se crean con un color —, opcionalmente una fecha de vencimiento y una lista de tareas llamada <em>Tasks</em> con un elemento por cada tarea sugerida.</p>
+                    <p>El título de la sugerencia de la IA, el PDF escaneado como adjunto, las etiquetas reconocidas — las que faltan se crean con un color —, una fecha de vencimiento si el documento tiene una y una lista de tareas llamada <em>Tasks</em> con un elemento por cada tarea sugerida si la IA propone tareas.</p>
                     <h3>¿Necesito un plan de pago de Trello?</h3>
                     <p>No. La integración funciona con una cuenta de Trello gratuita. Una cuenta Premium permite adjuntos más grandes y que cada elemento de la lista de tareas tenga su propia fecha de vencimiento.</p>
                     <h3>¿Adónde van mis documentos en este flujo de trabajo?</h3>

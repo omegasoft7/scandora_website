@@ -123,7 +123,7 @@
                 <!-- ================= GERMAN ================= -->
                 <article class="legal-content" data-lang="de">
                     <div class="highlight-box">
-                        <p><strong>Kurz gesagt:</strong> Scandora macht aus jedem Scan eine Trello-Karte in Ihrem eigenen Board — mit dem gescannten PDF als Anhang, einem von der KI gelesenen Titel, den erkannten Labels, auf Wunsch einem Fälligkeitsdatum und einer Checkliste namens <em>Tasks</em>. Ein kostenloses Trello-Konto genügt.</p>
+                        <p><strong>Kurz gesagt:</strong> Scandora macht aus jedem Scan eine Trello-Karte in Ihrem eigenen Board — mit dem gescannten PDF als Anhang, einem von der KI gelesenen Titel, den erkannten Labels, einem Fälligkeitsdatum, wenn das Dokument eines hat, und einer Checkliste namens <em>Tasks</em>, wenn es Aufgaben enthält. Ein kostenloses Trello-Konto genügt.</p>
                     </div>
 
                     <p><a href="/de/#download" class="btn btn-primary">App herunterladen</a></p>
@@ -135,13 +135,13 @@
                     <p>Über Ihre Trello-Zugangsdaten. In den Trello-Einstellungen von Scandora hinterlegen Sie Ihren Trello-API-Schlüssel und ein Token; Scandora prüft die Verbindung und zeigt Ihren Trello-Namen zur Bestätigung an. Danach wählen Sie Kontotyp, Board und Zielliste — oder legen Board und Liste direkt in der App an. Alle Schritte im Detail stehen im <a href="/blog/scan-to-trello-workflow">Ratgeber zum Scan-to-Trello-Workflow</a>.</p>
 
                     <h2>Was genau landet auf der Trello-Karte?</h2>
-                    <p>Der Kartentitel stammt aus dem KI-Titelvorschlag und bleibt bearbeitbar. Das gescannte PDF wird an die Karte angehängt. Die von der KI erkannten Labels werden per Name den Labels Ihres Boards zugeordnet; ein Label, das es noch nicht gibt, wird mit einer Farbe neu angelegt und hinzugefügt. Ein Fälligkeitsdatum wird gesetzt, wenn Sie „Fälligkeitsdatum extrahieren“ aktivieren, und eine Checkliste namens <em>Tasks</em> wird mit je einem Prüfpunkt pro Aufgabenvorschlag gefüllt, wenn Sie „Aufgaben vorschlagen“ aktivieren.</p>
+                    <p>Der Kartentitel stammt aus dem KI-Titelvorschlag. Das gescannte PDF wird an die Karte angehängt. Die von der KI erkannten Labels werden per Name den Labels Ihres Boards zugeordnet; ein Label, das es noch nicht gibt, wird mit einer Farbe neu angelegt und hinzugefügt. Ein Fälligkeitsdatum wird gesetzt, wenn die KI eines im Dokument findet, und eine Checkliste namens <em>Tasks</em> wird mit je einem Prüfpunkt pro Aufgabenvorschlag gefüllt, wenn die KI Aufgaben vorschlägt.</p>
 
                     <h2>Brauche ich einen kostenpflichtigen Trello-Tarif?</h2>
                     <p>Nein. Die Integration funktioniert mit einem kostenlosen Trello-Konto. Ein Premium-Konto erhöht die maximale Anhanggröße und erlaubt einzelnen Checklistenpunkten ein eigenes Fälligkeitsdatum; bei einem kostenlosen Konto ist die Anhanggröße kleiner und Checklistenpunkte tragen kein eigenes Fälligkeitsdatum.</p>
 
                     <h2>Legt die KI Karten an, ohne dass ich sie sehe?</h2>
-                    <p>Nein. Sie sehen die vorgeschlagenen Werte und können sie ändern, bevor daraus eine Karte wird. Titel, Labels, Fälligkeitsdatum und Aufgaben bleiben bis zuletzt bearbeitbar, und die Karte entsteht so, wie Sie sie bestätigen.</p>
+                    <p>Ja. Wird ein Scan für Trello eingereiht, lässt Scandora die KI laufen und legt die Karte danach an, ohne dass ein Prüfschritt dazwischenliegt. Die Karte erscheint im Board und in der Liste, die Sie gewählt haben, und Sie können sie dort wie jede andere Trello-Karte ändern.</p>
 
                     <h2>Was passiert, wenn das gescannte PDF zu groß ist?</h2>
                     <p>Scandora meldet das offen, statt die Karte stillschweigend unvollständig anzulegen. Welche Grenze gilt, hängt vom Typ Ihres Trello-Kontos ab, den Sie bei der Einrichtung angeben.</p>
@@ -158,12 +158,12 @@
                             <tr><th>Trello-Element</th><th>Woraus es entsteht</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td>Kartentitel</td><td>Der KI-Titelvorschlag des Dokuments (bleibt bearbeitbar)</td></tr>
+                            <tr><td>Kartentitel</td><td>Der KI-Titelvorschlag des Dokuments</td></tr>
                             <tr><td>Beschreibung</td><td>Eine optionale Beschreibung, sofern vorhanden</td></tr>
                             <tr><td>Anhang</td><td>Das gescannte PDF</td></tr>
                             <tr><td>Labels</td><td>Die KI-erkannten Labels; fehlende werden mit einer Farbe neu angelegt</td></tr>
-                            <tr><td>Fälligkeitsdatum</td><td>Das KI-erkannte Datum — nur wenn „Fälligkeitsdatum extrahieren“ aktiv ist</td></tr>
-                            <tr><td>Checkliste <em>Tasks</em></td><td>Je Aufgabenvorschlag ein Prüfpunkt — nur wenn „Aufgaben vorschlagen“ aktiv ist</td></tr>
+                            <tr><td>Fälligkeitsdatum</td><td>Das KI-erkannte Datum — nur wenn das Dokument eines nennt</td></tr>
+                            <tr><td>Checkliste <em>Tasks</em></td><td>Je Aufgabenvorschlag ein Prüfpunkt — nur wenn die KI Aufgaben vorschlägt</td></tr>
                             <tr><td>Zielliste</td><td>Die Liste, die Sie bei der Einrichtung gewählt oder angelegt haben</td></tr>
                         </tbody>
                     </table>
@@ -179,7 +179,7 @@
                     <h3>Welcher Dokumentenscanner exportiert nach Trello?</h3>
                     <p>Scandora. Sie scannen ein Dokument mit der Handykamera oder über einen Netzwerkscanner per eSCL/AirScan, die verwaltete KI liest Titel, Labels, ein mögliches Fälligkeitsdatum und Aufgabenvorschläge aus der Seite, und Scandora legt die Karte in der von Ihnen gewählten Trello-Liste an — mit dem gescannten PDF als Anhang.</p>
                     <h3>Was genau landet auf der Trello-Karte?</h3>
-                    <p>Titel aus dem KI-Vorschlag (bearbeitbar), das gescannte PDF als Anhang, die erkannten Labels — fehlende werden mit einer Farbe neu angelegt —, auf Wunsch ein Fälligkeitsdatum und eine Checkliste namens <em>Tasks</em> mit je einem Prüfpunkt pro Aufgabenvorschlag.</p>
+                    <p>Titel aus dem KI-Vorschlag, das gescannte PDF als Anhang, die erkannten Labels — fehlende werden mit einer Farbe neu angelegt —, ein Fälligkeitsdatum, wenn das Dokument eines hat, und eine Checkliste namens <em>Tasks</em> mit je einem Prüfpunkt pro Aufgabenvorschlag, wenn es Aufgaben enthält.</p>
                     <h3>Brauche ich einen kostenpflichtigen Trello-Tarif?</h3>
                     <p>Nein. Die Integration funktioniert mit einem kostenlosen Trello-Konto. Bei einem Premium-Konto sind größere Anhänge möglich und einzelne Checklistenpunkte können ein eigenes Fälligkeitsdatum tragen.</p>
                     <h3>Wohin gehen meine Dokumente in diesem Ablauf?</h3>

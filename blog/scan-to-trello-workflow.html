@@ -55,7 +55,7 @@
         "description": "So wird aus einem gescannten Dokument eine Trello-Karte — mit Titel, angehängtem PDF, Labels, Fälligkeitsdatum und vorbefüllter Checkliste, direkt in Ihrem eigenen Trello-Board.",
         "inLanguage": "de",
         "datePublished": "2026-07-13",
-        "dateModified": "2026-07-13",
+        "dateModified": "2026-11-04",
         "image": "https://scandora.eu/assets/og-image.png",
         "mainEntityOfPage": {
             "@type": "WebPage",
@@ -167,16 +167,15 @@
                         <li><strong>Kontotyp wählen.</strong> Sie geben an, ob Ihr Trello-Konto kostenlos oder Premium ist. Das bestimmt die maximale Anhanggröße und ob einzelne Checklistenpunkte ein eigenes Fälligkeitsdatum tragen dürfen.</li>
                         <li><strong>Board wählen oder anlegen.</strong> Scandora lädt Ihre offenen Boards; Sie wählen eines aus oder legen direkt in der App ein neues an.</li>
                         <li><strong>Liste wählen oder anlegen.</strong> Zum Schluss wählen Sie die Liste, in der neue Karten landen sollen (oder erstellen eine neue). Diese Liste ist das Ziel für alle künftigen Scans.</li>
-                        <li><strong>KI-Funktionen aktivieren (optional).</strong> „Fälligkeitsdatum extrahieren“ und „Aufgaben vorschlagen“ schalten Sie separat frei. Beide setzen eine verbundene KI voraus; ohne KI-Verbindung bleiben die Schalter gesperrt.</li>
                     </ol>
+                    <p>Für Fälligkeitsdatum und Aufgaben gibt es nichts einzustellen: Die verwaltete KI sucht bei jedem Scan automatisch danach. Findet sie ein Fälligkeitsdatum oder Aufgaben, bekommt die Karte sie; findet sie nichts, entsteht die Karte ohne sie.</p>
 
                     <h2 id="schritte">Vom Scan zur Karte — die Schritte</h2>
                     <ol>
                         <li><strong>Dokument scannen.</strong> Fotografieren Sie es mit der Handykamera oder ziehen Sie es über einen Netzwerkscanner per eSCL/AirScan (z. B. Brother oder Epson) ein. Die automatische Kantenerkennung hält jede Seite sauber.</li>
-                        <li><strong>Die verwaltete KI liest das Dokument.</strong> Scandora erkennt einen Titelvorschlag, passende Labels, ein mögliches Fälligkeitsdatum und Aufgaben-Vorschläge. Nichts wird geraten — jede Angabe bleibt vollständig editierbar.</li>
-                        <li><strong>Prüfen und anpassen.</strong> Sie sehen die vorgeschlagenen Werte und können sie ändern, bevor daraus eine Karte wird.</li>
+                        <li><strong>Die verwaltete KI liest das Dokument.</strong> Scandora erkennt einen Titelvorschlag, passende Labels, ein mögliches Fälligkeitsdatum und Aufgaben-Vorschläge.</li>
                         <li><strong>In die gewählte Liste senden.</strong> Scandora erstellt die Karte in Ihrer festgelegten Trello-Liste und hängt das gescannte PDF direkt an die Karte an.</li>
-                        <li><strong>Fertig zum Arbeiten.</strong> Die Karte trägt Titel, PDF-Anhang, die erkannten Labels, — falls aktiviert — ein Fälligkeitsdatum und eine Checkliste namens <code>Tasks</code> mit den vorgeschlagenen Aufgaben als Prüfpunkte.</li>
+                        <li><strong>Fertig zum Arbeiten.</strong> Die Karte trägt Titel, PDF-Anhang, die erkannten Labels, ein Fälligkeitsdatum, wenn das Dokument eines nennt, und — wenn die KI Aufgaben vorschlägt — eine Checkliste namens <code>Tasks</code> mit den vorgeschlagenen Aufgaben als Prüfpunkte.</li>
                     </ol>
 
                     <h2 id="mapping">Was genau auf der Karte landet</h2>
@@ -186,19 +185,19 @@
                             <tr><th>Trello-Element</th><th>Woraus es entsteht</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td>Kartentitel (<code>name</code>)</td><td>Der KI-Titelvorschlag des Dokuments (bleibt bearbeitbar).</td></tr>
+                            <tr><td>Kartentitel (<code>name</code>)</td><td>Der KI-Titelvorschlag des Dokuments.</td></tr>
                             <tr><td>Beschreibung (<code>desc</code>)</td><td>Eine optionale Beschreibung, sofern vorhanden.</td></tr>
                             <tr><td>Anhang</td><td>Das gescannte PDF wird an die Karte angehängt.</td></tr>
                             <tr><td>Labels</td><td>Die KI-erkannten Labels. Bestehende Board-Labels werden per Name zugeordnet; fehlende Labels werden mit einer Farbe neu angelegt und der Karte hinzugefügt.</td></tr>
-                            <tr><td>Fälligkeitsdatum (<code>due</code>)</td><td>Das KI-erkannte Datum — nur wenn „Fälligkeitsdatum extrahieren“ aktiv ist.</td></tr>
-                            <tr><td>Checkliste <code>Tasks</code></td><td>Je KI-Aufgabenvorschlag ein Prüfpunkt. Nur wenn „Aufgaben vorschlagen“ aktiv ist. Ein eigenes Fälligkeitsdatum pro Prüfpunkt setzt Scandora nur bei einem Premium-Trello-Konto.</td></tr>
+                            <tr><td>Fälligkeitsdatum (<code>due</code>)</td><td>Das KI-erkannte Datum — nur wenn das Dokument eines nennt.</td></tr>
+                            <tr><td>Checkliste <code>Tasks</code></td><td>Je KI-Aufgabenvorschlag ein Prüfpunkt. Nur wenn die KI Aufgaben vorschlägt. Ein eigenes Fälligkeitsdatum pro Prüfpunkt setzt Scandora nur bei einem Premium-Trello-Konto.</td></tr>
                         </tbody>
                     </table>
 
                     <h2 id="free-premium">Free- und Premium-Trello, ehrlicher Umfang</h2>
                     <p>Scandora verhält sich passend zu Ihrem Trello-Konto. Bei einem kostenlosen Konto gilt eine kleinere maximale Anhanggröße, und Checklistenpunkte erhalten kein einzelnes Fälligkeitsdatum. Bei einem Premium-Konto ist die Anhanggröße höher und einzelne Prüfpunkte dürfen eigene Fälligkeiten tragen. Ist ein PDF zu groß für das jeweilige Limit, meldet Scandora das offen, statt die Karte stillschweigend unvollständig anzulegen.</p>
                     <div class="highlight-box">
-                        <p>Die KI-gestützte Extraktion beschleunigt die Erfassung, ersetzt aber nicht Ihr Urteil: Titel, Labels, Fälligkeitsdatum und Aufgaben bleiben bis zuletzt bearbeitbar, und die Karte entsteht so, wie Sie sie bestätigen.</p>
+                        <p>Die KI-gestützte Extraktion beschleunigt die Erfassung, ersetzt aber nicht Ihr Urteil: Die Karte entsteht ohne Prüfschritt direkt aus den Werten der KI. Sehen Sie sie in Trello durch und ändern Sie, was nicht stimmt — dort lässt sie sich wie jede andere Karte bearbeiten.</p>
                     </div>
 
                     <h2 id="datenschutz">Wohin Ihre Dokumente gehen</h2>
@@ -215,13 +214,13 @@
                     <h3>Brauche ich einen kostenpflichtigen Trello-Tarif?</h3>
                     <p>Nein. Die Integration funktioniert mit einem kostenlosen Trello-Konto. Bei einem Premium-Konto sind größere Anhänge möglich und einzelne Checklistenpunkte können ein eigenes Fälligkeitsdatum tragen.</p>
                     <h3>Setzt die KI die Werte automatisch, ohne dass ich sie sehe?</h3>
-                    <p>Nein. Titel, Labels, Fälligkeitsdatum und Aufgaben sind Vorschläge und bleiben bearbeitbar, bevor die Karte erstellt wird.</p>
+                    <p>Ja. Vor der Karte gibt es keinen Prüfschritt: Titel, Labels, Fälligkeitsdatum und Aufgaben stammen direkt aus der KI-Auswertung. Die fertige Karte sehen Sie in Ihrer Trello-Liste und können sie dort wie jede andere Karte ändern.</p>
                     <h3>Was passiert mit Labels, die es auf meinem Board noch nicht gibt?</h3>
                     <p>Vorhandene Labels werden anhand des Namens zugeordnet. Fehlende Labels legt Scandora mit einer Farbe neu auf dem Board an und fügt sie der Karte hinzu.</p>
                     <h3>Wird das gescannte PDF an die Karte gehängt?</h3>
                     <p>Ja. Das Dokument wird als Anhang der neu erstellten Karte hochgeladen — direkt in Ihr eigenes Trello-Konto.</p>
                     <h3>Wie heißt die Checkliste auf der Karte?</h3>
-                    <p><code>Tasks</code>. Darin steht je vorgeschlagener Aufgabe ein Prüfpunkt, sofern „Aufgaben vorschlagen“ aktiviert ist.</p>
+                    <p><code>Tasks</code>. Darin steht je vorgeschlagener Aufgabe ein Prüfpunkt, sofern die KI Aufgaben vorschlägt.</p>
                 </article>
 
                 <!-- ================= ENGLISH ================= -->
@@ -253,16 +252,15 @@
                         <li><strong>Pick your account type.</strong> You tell Scandora whether your Trello account is free or premium. That sets the maximum attachment size and whether individual checklist items may carry their own due date.</li>
                         <li><strong>Choose or create a board.</strong> Scandora loads your open boards; you pick one or create a new one straight from the app.</li>
                         <li><strong>Choose or create a list.</strong> Finally you choose the list where new cards should land (or create a new one). This list is the target for every future scan.</li>
-                        <li><strong>Enable AI features (optional).</strong> “Extract due date” and “Suggest to-dos” are enabled separately. Both require a connected AI; without an AI connection those toggles stay locked.</li>
                     </ol>
+                    <p>There is nothing to set up for the due date and the tasks: the managed AI looks for them on every scan. If it finds a due date or tasks, the card gets them; if it finds none, the card is created without them.</p>
 
                     <h2 id="en-steps">From scan to card — the steps</h2>
                     <ol>
                         <li><strong>Scan the document.</strong> Capture it with your phone camera or pull it in over a network scanner via eSCL/AirScan (such as Brother or Epson). Automatic edge detection keeps every page clean.</li>
-                        <li><strong>Managed AI reads it.</strong> Scandora recognises a suggested title, matching labels, a possible due date and suggested action items. Nothing is guessed — every field stays fully editable.</li>
-                        <li><strong>Review and adjust.</strong> You see the suggested values and can change them before they become a card.</li>
+                        <li><strong>Managed AI reads it.</strong> Scandora recognises a suggested title, matching labels, a possible due date and suggested action items.</li>
                         <li><strong>Send it to your chosen list.</strong> Scandora creates the card in your configured Trello list and attaches the scanned PDF directly to the card.</li>
-                        <li><strong>Ready to work.</strong> The card carries a title, the PDF attachment, the detected labels, — if enabled — a due date, and a checklist named <code>Tasks</code> with the suggested action items as check items.</li>
+                        <li><strong>Ready to work.</strong> The card carries a title, the PDF attachment, the detected labels, a due date when the document names one, and — when the AI suggests action items — a checklist named <code>Tasks</code> with them as check items.</li>
                     </ol>
 
                     <h2 id="en-mapping">What exactly ends up on the card</h2>
@@ -272,19 +270,19 @@
                             <tr><th>Trello element</th><th>Where it comes from</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td>Card title (<code>name</code>)</td><td>The AI's suggested title for the document (stays editable).</td></tr>
+                            <tr><td>Card title (<code>name</code>)</td><td>The AI's suggested title for the document.</td></tr>
                             <tr><td>Description (<code>desc</code>)</td><td>An optional description, when present.</td></tr>
                             <tr><td>Attachment</td><td>The scanned PDF is attached to the card.</td></tr>
                             <tr><td>Labels</td><td>The AI-detected labels. Existing board labels are matched by name; missing ones are created with a colour and added to the card.</td></tr>
-                            <tr><td>Due date (<code>due</code>)</td><td>The AI-detected date — only when “Extract due date” is enabled.</td></tr>
-                            <tr><td>Checklist <code>Tasks</code></td><td>One check item per suggested action item. Only when “Suggest to-dos” is enabled. A per-item due date is set only on a premium Trello account.</td></tr>
+                            <tr><td>Due date (<code>due</code>)</td><td>The AI-detected date — only when the document names one.</td></tr>
+                            <tr><td>Checklist <code>Tasks</code></td><td>One check item per suggested action item. Only when the AI suggests action items. A per-item due date is set only on a premium Trello account.</td></tr>
                         </tbody>
                     </table>
 
                     <h2 id="en-free-premium">Free and premium Trello, honest scope</h2>
                     <p>Scandora adapts to your Trello account. On a free account a smaller maximum attachment size applies, and checklist items don't get an individual due date. On a premium account the attachment limit is higher and individual check items may carry their own due dates. If a PDF is too large for the applicable limit, Scandora tells you openly instead of silently creating an incomplete card.</p>
                     <div class="highlight-box">
-                        <p>AI-assisted extraction speeds up capture but doesn't replace your judgement: title, labels, due date and action items stay editable until the end, and the card is created exactly as you confirm it.</p>
+                        <p>AI-assisted extraction speeds up capture but doesn't replace your judgement: the card is created straight from the AI's values with no review step first. Look it over in Trello and change anything that is wrong — it is edited there like any other card.</p>
                     </div>
 
                     <h2 id="en-privacy">Where your documents go</h2>
@@ -301,13 +299,13 @@
                     <h3>Do I need a paid Trello plan?</h3>
                     <p>No. The integration works with a free Trello account. On a premium account larger attachments are possible and individual checklist items can carry their own due date.</p>
                     <h3>Does the AI set the values automatically without me seeing them?</h3>
-                    <p>No. The title, labels, due date and action items are suggestions and stay editable before the card is created.</p>
+                    <p>Yes. There is no review step before the card: the title, labels, due date and action items come straight from the AI's reading. You see the finished card in your Trello list and can change it there like any other card.</p>
                     <h3>What happens to labels that don't exist on my board yet?</h3>
                     <p>Existing labels are matched by name. Missing labels are created with a colour on the board and added to the card.</p>
                     <h3>Is the scanned PDF attached to the card?</h3>
                     <p>Yes. The document is uploaded as an attachment on the newly created card — directly into your own Trello account.</p>
                     <h3>What is the checklist on the card called?</h3>
-                    <p><code>Tasks</code>. It holds one check item per suggested action item, provided “Suggest to-dos” is enabled.</p>
+                    <p><code>Tasks</code>. It holds one check item per suggested action item, provided the AI suggests action items.</p>
                 </article>
             </div>
         </section>
