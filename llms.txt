@@ -1,8 +1,8 @@
 # Scandora
 
-> Scandora is an AI document scanner for iPhone, iPad, Mac and Android: scan with your phone camera or a real network scanner, let managed AI pull out the details, and send the result into your own Trello and Google Drive. It is GDPR-first, runs on EU servers and carries no ads.
+> Scandora knows the documents you add: scan them, upload them or share them, then find anything and ask questions with cited answers.
 
-Scandora keeps original scans on your device and in the storage you choose. While you are
+Scandora runs on iPhone, iPad, Mac and Android and carries no ads. It keeps originals on your device and in the storage you choose. While you are
 signed in, a low-resolution preview, the extracted text and the document's details sync to our EU servers.
 Managed AI covers extraction, indexing and AI document chat out of a monthly credit
 allowance — there is no key to obtain or enter. Free, Pro and Business / DATEV plans exist;
@@ -17,7 +17,7 @@ one language only — `/receipt-scanner` and `/scan-to-google-drive` are English
 
 ## Product
 
-- [Scandora home](https://scandora.eu/): what the app does, the three-step flow, the plan table and the store links.
+- [Scandora home](https://scandora.eu/): what the app does (find and ask, every way to add a document, your storage, export), the plan table and the store links.
 - [Paperless document scanning for a small business](https://scandora.eu/paperless-small-business): the question-and-answer page for a small business or home office going paperless.
 - [A paperless office solution for home](https://scandora.eu/paperless-home-office): the same question-and-answer shape for a household — phone or the Wi-Fi scanner already in the house, separate profiles for private and work paperwork.
 - [Scan invoices and extract the data automatically](https://scandora.eu/invoice-data-extraction): which fields managed AI reads off an invoice, what happens to them, and where the page is processed.
