@@ -4,7 +4,10 @@ const CAREERS_URL = `${CAREERS_SITE}/careers`;
 const CAREERS_POSTED_DATE = '2026-09-15';
 const CAREERS_OFFICE_CITY = 'Hamburg';
 const CAREERS_OFFICE_COUNTRY = 'DE';
-const CAREERS_APPLICANT_AREA = 'European Union';
+const CAREERS_APPLICANT_COUNTRIES = [
+    'AT', 'BE', 'BG', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GR', 'HR', 'HU',
+    'IE', 'IT', 'LT', 'LU', 'LV', 'MT', 'NL', 'PL', 'PT', 'RO', 'SE', 'SI', 'SK',
+];
 const CAREERS_EMPLOYMENT_TYPES = [
     [/full[\s-]?time/i, 'FULL_TIME'],
     [/part[\s-]?time/i, 'PART_TIME'],
@@ -137,7 +140,7 @@ function careersJobPosting(job) {
     }
     if (remote) {
         posting.jobLocationType = 'TELECOMMUTE';
-        posting.applicantLocationRequirements = { '@type': 'AdministrativeArea', name: CAREERS_APPLICANT_AREA };
+        posting.applicantLocationRequirements = CAREERS_APPLICANT_COUNTRIES.map((name) => ({ '@type': 'Country', name }));
     }
     if (!remote || new RegExp(CAREERS_OFFICE_CITY, 'i').test(location)) {
         posting.jobLocation = {

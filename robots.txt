@@ -11,6 +11,7 @@ User-agent: *
 Disallow: /api/
 Disallow: /admin/
 Disallow: /deploy.sh
+Disallow: /cdn-cgi/
 Allow: /
 
 # AI answer engines — live retrieval
@@ -23,6 +24,7 @@ User-agent: YouBot
 Disallow: /api/
 Disallow: /admin/
 Disallow: /deploy.sh
+Disallow: /cdn-cgi/
 Allow: /
 
 # AI answer engines — on-demand fetches
@@ -34,6 +36,7 @@ User-agent: Perplexity-User
 Disallow: /api/
 Disallow: /admin/
 Disallow: /deploy.sh
+Disallow: /cdn-cgi/
 Allow: /
 
 # AI model training
@@ -52,6 +55,7 @@ User-agent: Bytespider
 Disallow: /api/
 Disallow: /admin/
 Disallow: /deploy.sh
+Disallow: /cdn-cgi/
 Allow: /
 
 # Classic search
@@ -67,6 +71,7 @@ User-agent: DuckDuckBot
 Disallow: /api/
 Disallow: /admin/
 Disallow: /deploy.sh
+Disallow: /cdn-cgi/
 Allow: /
 
 Sitemap: https://scandora.eu/sitemap.xml
