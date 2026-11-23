@@ -3,7 +3,8 @@
 > Scandora knows the documents you add: scan them, upload them or share them, then find anything and ask questions with cited answers.
 
 Scandora runs on iPhone, iPad, Mac and Android and carries no ads. It keeps originals on your device and in the storage you choose. While you are
-signed in, a low-resolution preview, the extracted text and the document's details sync to our EU servers.
+signed in, the extracted text, the document's details and a search index built from that
+text are stored on our EU servers; PDFs and page images are never stored on our servers.
 Managed AI covers extraction, indexing and AI document chat out of a monthly credit
 allowance — there is no key to obtain or enter. Free, Pro and Business / DATEV plans exist;
 the store listing is the binding source for what a plan costs.

@@ -138,7 +138,7 @@
 
                     <h2 id="en-architecture">The architecture difference: your storage, not a cloud archive</h2>
                     <p>The most important difference is not a single feature — it's the underlying architecture. Many document apps follow a <strong>hosted-archive</strong> model: your receipts live in the vendor's cloud, and you reach them through the vendor's app.</p>
-                    <p>Scandora deliberately takes the opposite approach. Your original scans stay <strong>on your device</strong> and go only to the storage you choose; they sync directly into <strong>your own</strong> tools and storage — a Trello card, your own cloud drive, or your accounting, for example. On our EU servers we store a low-resolution preview, the extracted text and the document's details so your history syncs across your devices — never your original files. You remain the owner and custodian of your records; Scandora is the tool that captures and sorts them, not the place they live.</p>
+                    <p>Scandora deliberately takes the opposite approach. Your original scans stay <strong>on your device</strong> and go only to the storage you choose; they sync directly into <strong>your own</strong> tools and storage — a Trello card, your own cloud drive, or your accounting, for example. On our EU servers we store the extracted text and the document's details so your history syncs across your devices — never your original files. You remain the owner and custodian of your records; Scandora is the tool that captures and sorts them, not the place they live.</p>
                     <p>What that means in practice:</p>
                     <ul>
                         <li><strong>No vendor lock-in of your documents.</strong> Your receipts sit where they belong — in your services, not in an archive tied to a subscription.</li>
@@ -148,7 +148,7 @@
                     <p>Whether and how Fileee stores documents is a property of that provider — the binding answer is in its <a href="/privacy">privacy policy</a> or on its website.</p>
 
                     <h2 id="en-byoai">Managed AI instead of a chosen-for-you cloud AI</h2>
-                    <p>Scandora uses AI for data extraction — through <strong>managed AI</strong>. Your device calls the model provider directly, using a short-lived credential Scandora's server issues, billed as prepaid credits. You don't need to set up your own key or manage a provider account.</p>
+                    <p>Scandora uses AI for data extraction — through <strong>managed AI</strong>. For extraction, your device calls the model provider with a short-lived credential Scandora's server issues, billed as prepaid credits. You don't need to set up your own key or manage a provider account.</p>
                     <p>With services that run AI through their own backend using a provider you can't choose, that path is less transparent. For how any given provider processes your documents with AI, see its privacy policy. More on Scandora's model is in the help article <a href="/en/help/managed-ai">Managed AI &amp; credits</a>.</p>
 
                     <h2 id="en-scanner">Real network scanners over eSCL/AirScan</h2>
@@ -176,7 +176,7 @@
                         <tbody>
                             <tr><td>Who develops it</td><td>An independent developer (see the <a href="/imprint">Imprint</a>)</td><td>fileee GmbH, Hamburg, Germany (per fileee's imprint)</td></tr>
                             <tr><td>Managed AI</td><td>Yes (managed credits)</td><td>Verify with provider</td></tr>
-                            <tr><td>Documents on the vendor's servers</td><td>Originals stay on device; a preview, the extracted text and document details sync (EU servers)</td><td>See provider's privacy policy</td></tr>
+                            <tr><td>Documents on the vendor's servers</td><td>Originals stay on device; the extracted text and document details sync (EU servers)</td><td>See provider's privacy policy</td></tr>
                             <tr><td>Network scanner support (eSCL/AirScan)</td><td>Yes</td><td>Verify with provider</td></tr>
                             <tr><td>DATEV / lexoffice / sevDesk export</td><td>Coming soon (Business / DATEV plan)</td><td>Verify with provider</td></tr>
                             <tr><td>GoBD record-keeping features</td><td>Content hash and audit log; Verfahrensdokumentation coming soon (not "GoBD-certified")</td><td>Verify with provider</td></tr>
@@ -192,7 +192,7 @@
                     <h3>What is the fundamental difference between Scandora and Fileee?</h3>
                     <p>Fileee is a document app by fileee GmbH in Hamburg. The clearest verifiable difference is the approach: Scandora keeps your original files on your device and syncs directly into your own tools (Trello, Drive, accounting) instead of storing them in a vendor archive. Check fileee's own site for their current feature set.</p>
                     <h3>Can I bring my own AI key?</h3>
-                    <p>With Scandora you don't need your own key — managed AI runs extraction on the EU route (the default) directly from your device to Google Gemini; AI models outside the EU only if you agree. For Fileee, verify the current AI options on the provider's site.</p>
+                    <p>With Scandora you don't need your own key — managed AI runs extraction on the EU route (the default) from your device to Google Gemini; AI models outside the EU only if you agree. For Fileee, verify the current AI options on the provider's site.</p>
                     <h3>When is Fileee the better choice?</h3>
                     <p>If you specifically want a hosted document archive where the provider stores and organises your records for you, a hosted service may suit you better. Scandora deliberately takes the opposite approach: your documents stay in your own storage.</p>
                     <h3>Which one exports to DATEV?</h3>
