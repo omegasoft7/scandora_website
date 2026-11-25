@@ -258,7 +258,7 @@ const translations = {
         'careers.backHome': 'Back to Home',
         'careers.badge': 'Careers',
         'careers.title': 'Build Scandora with us',
-        'careers.subtitle': 'Scandora is a small, remote-first company building an AI document scanner. Customer documents stay in the EU (AI models outside the EU only if a user agrees), and so does the work.',
+        'careers.subtitle': 'Scandora is a small, remote-first company building an AI document scanner. Customer documents stay in the EU unless a user chooses otherwise — AI models outside the EU, or an AI tool they connect themselves, only with their agreement — and so does the work.',
         'careers.openRoles': 'Open roles',
         'careers.responsibilities': 'What you would do',
         'careers.requirements': 'What we look for',
@@ -555,7 +555,7 @@ const translations = {
         'careers.backHome': 'Zur Startseite',
         'careers.badge': 'Karriere',
         'careers.title': 'Scandora mit uns bauen',
-        'careers.subtitle': 'Scandora ist ein kleines, remote arbeitendes Unternehmen, das einen KI-Dokumentenscanner baut. Kundendokumente bleiben in der EU (KI-Modelle außerhalb der EU nur, wenn Nutzer zustimmen) — und die Arbeit ebenso.',
+        'careers.subtitle': 'Scandora ist ein kleines, remote arbeitendes Unternehmen, das einen KI-Dokumentenscanner baut. Kundendokumente bleiben in der EU, sofern Nutzer nichts anderes wählen — KI-Modelle außerhalb der EU oder ein KI-Tool, das sie selbst verbinden, nur mit ihrer Zustimmung — und die Arbeit ebenso.',
         'careers.openRoles': 'Offene Stellen',
         'careers.responsibilities': 'Ihre Aufgaben',
         'careers.requirements': 'Was wir suchen',
@@ -852,7 +852,7 @@ const translations = {
         'careers.backHome': 'Volver al inicio',
         'careers.badge': 'Empleo',
         'careers.title': 'Construye Scandora con nosotros',
-        'careers.subtitle': 'Scandora es una empresa pequeña que prioriza el trabajo remoto y crea un escáner de documentos con IA. Los documentos de los clientes se quedan en la UE (modelos de IA fuera de la UE solo con el consentimiento del usuario), y el trabajo también.',
+        'careers.subtitle': 'Scandora es una empresa pequeña que prioriza el trabajo remoto y crea un escáner de documentos con IA. Los documentos de los clientes se quedan en la UE salvo que el usuario elija otra cosa (modelos de IA fuera de la UE, o una herramienta de IA que conecte él mismo, solo con su consentimiento), y el trabajo también.',
         'careers.openRoles': 'Puestos abiertos',
         'careers.responsibilities': 'Lo que harías',
         'careers.requirements': 'Lo que buscamos',
@@ -1135,7 +1135,7 @@ const translations = {
         'careers.backHome': 'Voltar ao início',
         'careers.badge': 'Carreiras',
         'careers.title': 'Construa o Scandora conosco',
-        'careers.subtitle': 'Somos uma empresa pequena que prioriza o trabalho remoto e desenvolve o Scandora, um scanner de documentos com IA. Os documentos dos clientes ficam na UE (modelos de IA fora da UE só com o consentimento do usuário), e o trabalho também.',
+        'careers.subtitle': 'Somos uma empresa pequena que prioriza o trabalho remoto e desenvolve o Scandora, um scanner de documentos com IA. Os documentos dos clientes ficam na UE, a menos que o usuário escolha outra coisa (modelos de IA fora da UE, ou uma ferramenta de IA que ele mesmo conecte, só com o consentimento dele), e o trabalho também.',
         'careers.openRoles': 'Vagas abertas',
         'careers.responsibilities': 'O que você faria',
         'careers.requirements': 'O que procuramos',
@@ -1432,7 +1432,7 @@ const translations = {
         'careers.backHome': 'Torna alla home',
         'careers.badge': 'Lavora con noi',
         'careers.title': 'Costruisci Scandora con noi',
-        'careers.subtitle': 'Scandora è una piccola azienda che dà priorità al lavoro da remoto e sta costruendo uno scanner di documenti con IA. I documenti dei clienti restano nell’UE (modelli di IA fuori dall’UE solo con il consenso dell’utente), e così anche il lavoro.',
+        'careers.subtitle': 'Scandora è una piccola azienda che dà priorità al lavoro da remoto e sta costruendo uno scanner di documenti con IA. I documenti dei clienti restano nell’UE, salvo diversa scelta dell’utente (modelli di IA fuori dall’UE, o uno strumento di IA che collega lui stesso, solo con il suo consenso), e così anche il lavoro.',
         'careers.openRoles': 'Posizioni aperte',
         'careers.responsibilities': 'Cosa faresti',
         'careers.requirements': 'Cosa cerchiamo',
@@ -1730,7 +1730,7 @@ const translations = {
         'careers.backHome': 'Terug naar de startpagina',
         'careers.badge': 'Vacatures',
         'careers.title': 'Bouw met ons mee aan Scandora',
-        'careers.subtitle': 'Scandora is een klein bedrijf dat vooral op afstand werkt en een AI-documentscanner bouwt. Documenten van klanten blijven in de EU (AI-modellen buiten de EU alleen met toestemming van de gebruiker), en het werk ook.',
+        'careers.subtitle': 'Scandora is een klein bedrijf dat vooral op afstand werkt en een AI-documentscanner bouwt. Documenten van klanten blijven in de EU, tenzij de gebruiker anders kiest (AI-modellen buiten de EU, of een AI-tool die hij zelf verbindt, alleen met zijn toestemming), en het werk ook.',
         'careers.openRoles': 'Openstaande functies',
         'careers.responsibilities': 'Wat je zou doen',
         'careers.requirements': 'Waar we naar op zoek zijn',
@@ -2296,6 +2296,16 @@ const pageMeta = {
         "de": {
             "title": "Hilfe-Center | Scandora",
             "description": "Scandora Hilfe-Center: verwaltete KI-Credits, DATEV-/lexoffice-/sevDesk-Export (in Vorbereitung), eSCL-Scanner und unser ehrlicher GoBD-Umfang."
+        }
+    },
+    "/help/connect-your-ai": {
+        "en": {
+            "title": "Connect your AI: keys & connections | Scandora Help",
+            "description": "Let Claude Code, Cursor, claude.ai or ChatGPT read your Scandora documents: create a personal key, link an AI app, see limits, revoke access, stay safe."
+        },
+        "de": {
+            "title": "Ihre KI verbinden: Schlüssel & Verbindungen | Scandora Hilfe",
+            "description": "So lesen Claude Code, Cursor, claude.ai oder ChatGPT Ihre Scandora-Dokumente: Schlüssel erstellen, Verbindung bestätigen, Limits, Widerruf, Sicherheit."
         }
     },
     "/help/datev-export": {

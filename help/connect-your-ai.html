@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Ihre KI verbinden: Schlüssel &amp; Verbindungen | Scandora Hilfe</title>
+    <meta name="description" content="So lesen Claude Code, Cursor, claude.ai oder ChatGPT Ihre Scandora-Dokumente: Schlüssel erstellen, Verbindung bestätigen, Limits, Widerruf, Sicherheit.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://scandora.eu/help/connect-your-ai">
+    <link rel="alternate" hreflang="en" href="https://scandora.eu/en/help/connect-your-ai">
+    <link rel="alternate" hreflang="de" href="https://scandora.eu/help/connect-your-ai">
+    <link rel="alternate" hreflang="x-default" href="https://scandora.eu/en/help/connect-your-ai">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://scandora.eu/help/connect-your-ai">
+    <meta property="og:title" content="Ihre KI verbinden: Schlüssel &amp; Verbindungen | Scandora Hilfe">
+    <meta property="og:description" content="So lesen Claude Code, Cursor, claude.ai oder ChatGPT Ihre Scandora-Dokumente: Schlüssel erstellen, Verbindung bestätigen, Limits, Widerruf, Sicherheit.">
+    <meta property="og:image" content="https://scandora.eu/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Scandora">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ihre KI verbinden: Schlüssel &amp; Verbindungen | Scandora Hilfe">
+    <meta name="twitter:description" content="So lesen Claude Code, Cursor, claude.ai oder ChatGPT Ihre Scandora-Dokumente: Schlüssel erstellen, Verbindung bestätigen, Limits, Widerruf, Sicherheit.">
+    <meta name="twitter:image" content="https://scandora.eu/assets/og-image.png">
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <!-- Preload above-the-fold webfonts -->
+    <link rel="preload" href="/assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/inter-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/inter-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/fonts/inter.css">
+    <link rel="stylesheet" href="/styles.css">
+
+    <meta name="apple-itunes-app" content="app-id=6756135936">
+
+    <!-- Umami Analytics -->
+    <script>
+        (function () {
+            if (navigator.globalPrivacyControl === true) {
+                return;
+            }
+            var tracker = document.createElement('script');
+            tracker.src = 'https://analytics.scandora.eu/script.js';
+            tracker.setAttribute('data-website-id', 'f8fdac29-929b-4d5c-b2ff-6a1bd5a5a112');
+            tracker.setAttribute('data-do-not-track', 'true');
+            document.head.appendChild(tracker);
+        })();
+    </script>
+</head>
+<body>
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container nav-container">
+                <a href="/de/" class="logo" aria-label="Scandora Home"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
+                <div class="nav-links" role="menubar">
+                    <a href="/de/#features" role="menuitem" data-i18n="nav.features">Funktionen</a>
+                    <a href="/de/#how-it-works" role="menuitem" data-i18n="nav.howItWorks">So funktioniert es</a>
+                    <a href="/de/#pricing" role="menuitem" data-i18n="nav.pricing">Preise</a>
+                </div>
+                <div class="nav-actions">
+                    <details class="lang-menu">
+                        <summary class="lang-toggle"><span class="sr-only" data-i18n="language.menu">Sprache</span> <span id="lang-indicator">DE</span></summary>
+                        <ul class="lang-menu-list">
+                            <li><a href="/help/connect-your-ai" hreflang="de" lang="de" aria-current="page"><span class="lang-menu-name">Deutsch</span> <span class="lang-menu-english" lang="en">German</span></a></li>
+                            <li><a href="/en/help/connect-your-ai" hreflang="en" lang="en"><span class="lang-menu-name">English</span></a></li>
+                            <li><a href="/es/" hreflang="es" lang="es"><span class="lang-menu-name">Español</span> <span class="lang-menu-english" lang="en">Spanish</span></a></li>
+                            <li><a href="/it/" hreflang="it" lang="it"><span class="lang-menu-name">Italiano</span> <span class="lang-menu-english" lang="en">Italian</span></a></li>
+                            <li><a href="/nl/" hreflang="nl" lang="nl"><span class="lang-menu-name">Nederlands</span> <span class="lang-menu-english" lang="en">Dutch</span></a></li>
+                            <li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR"><span class="lang-menu-name">Português (Brasil)</span> <span class="lang-menu-english" lang="en">Portuguese (Brazil)</span></a></li>
+                        </ul>
+                    </details>
+                    <a href="/de/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="legal-page" aria-labelledby="connect-title">
+            <div class="legal-container">
+                <a href="/help/" class="back-home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span data-lang="en" hidden>Back to Help Center</span><span data-lang="de">Zurück zum Hilfe-Center</span>
+                </a>
+
+                <header class="legal-header">
+                    <span class="legal-badge" data-lang="en" hidden>AI Setup</span><span class="legal-badge" data-lang="de">KI-Einrichtung</span>
+                    <h1 id="connect-title" class="legal-title"><span data-lang="en" hidden>Connect your AI: keys &amp; connections</span><span data-lang="de">Ihre KI verbinden: Schlüssel &amp; Verbindungen</span></h1>
+                </header>
+
+                <!-- ================= ENGLISH ================= -->
+                <article class="legal-content" data-lang="en" hidden>
+                    <div class="highlight-box">
+                        <p><strong>In short:</strong> with a personal key or a connection you approve in the app, an AI tool such as Claude Code, Cursor, claude.ai or ChatGPT can read and search your Scandora documents. <strong>It cannot change or delete anything.</strong> For a key, you choose what it may do, which profile it may read and when it expires. For a connection, the app shows what the AI app asks to do, and you choose which profile it may read. You can revoke either at any time.</p>
+                    </div>
+
+                    <h2 id="what-it-is">What it is</h2>
+                    <p>Scandora keeps the text and details of your documents on its servers in the EU. A personal key, or a connection you approve, lets the AI tool you choose read that text: the document list, a document's details and extracted text, and search results. The tool gets data only when it asks Scandora for it. This is separate from Scandora's managed AI and its credits.</p>
+                    <p><strong>PDFs and page images are never stored on our servers</strong>, so no tool can get them from us. What the tool can read, and what Scandora stores about each key, is in the <a href="/privacy#ai-own-tool">Privacy Policy, section 4</a>.</p>
+
+                    <h2 id="who-can-use-it">Who can use it</h2>
+                    <p>Personal keys and connections come with the Pro and Business / DATEV plans. On the Free plan the screen shows <strong>Personal keys are not in your plan</strong>. You need to be signed in.</p>
+
+                    <h2 id="create-a-key">Create a key</h2>
+                    <ol>
+                        <li>In the Scandora app, open <strong>Settings → Connect your AI</strong> and tap <strong>Create key</strong>.</li>
+                        <li>The first time, and again whenever its text changes, the app shows <strong>Before you create a key</strong>: where your document text is stored; that the AI tool can read it, including sensitive data such as health information; and that the company behind the tool may process the text outside the EU, under its own terms, where your data may not be protected as well as in the EU. Tap <strong>I agree</strong> to give your consent and go on, or <strong>Not now</strong>.</li>
+                        <li>In <strong>New key</strong>, enter a <strong>Name</strong> (for example: Laptop) and choose <strong>What the key may do</strong>: <strong>Read your documents</strong>, <strong>Search your documents</strong> or both. Choose the <strong>Profile</strong> it may read; the app preselects your active profile, and <strong>All profiles</strong> also covers profiles you add later. Choose when it <strong>Expires after</strong>: 30, 90 or 365 days (90 is preselected). Tap <strong>Create</strong>.</li>
+                        <li>If you signed in a while ago, the app first asks you to sign in again (<strong>Confirm it's you</strong>).</li>
+                        <li><strong>Your new key</strong> is shown once. Tap <strong>Copy key</strong>, put it into your tool (next section), then tap <strong>I saved it</strong>. Scandora keeps only a one-way hash of the key and cannot show it again: if you lose it, revoke it and create a new one.</li>
+                    </ol>
+                    <p>A key starts with <code>scnd_</code>. In the examples below, replace <code>YOUR_KEY</code> with your key. The app shows the same examples under <strong>Set up your tool</strong> right after you create a key, and later under <strong>How to connect</strong> on each key.</p>
+
+                    <h2 id="claude-code-cursor">Connect Claude Code, Cursor or a script</h2>
+                    <p><strong>Claude Code</strong>, in a terminal:</p>
+                    <p><code>claude mcp add --transport http scandora https://userdata.scandora.eu/mcp --header "Authorization: Bearer YOUR_KEY"</code></p>
+                    <p><strong>Cursor</strong>, in <code>~/.cursor/mcp.json</code> or a project's <code>.cursor/mcp.json</code>:</p>
+                    <p><code>{ "mcpServers": { "scandora": { "url": "https://userdata.scandora.eu/mcp", "headers": { "Authorization": "Bearer YOUR_KEY" } } } }</code></p>
+                    <p><strong>A script</strong> (REST), for example the newest documents:</p>
+                    <p><code>curl -H "Authorization: Bearer YOUR_KEY" https://userdata.scandora.eu/api/v1/documents</code></p>
+
+                    <h2 id="claude-ai-chatgpt">Connect claude.ai or ChatGPT: approve in the app</h2>
+                    <p>claude.ai and ChatGPT do not take a pasted key. You add Scandora as a connector there and approve it in the Scandora app with a short code:</p>
+                    <ol>
+                        <li><strong>claude.ai</strong> (web, desktop or mobile): Settings → Connectors → Add custom connector, URL <code>https://userdata.scandora.eu/mcp</code>, no client ID or secret. <strong>ChatGPT</strong> (developer mode, on plans that allow custom MCP connectors): Settings → Apps and Connectors → Create, MCP server URL <code>https://userdata.scandora.eu/mcp</code>, authentication OAuth. These menus belong to claude.ai and ChatGPT and can change.</li>
+                        <li>The AI app opens a Scandora web page that shows an 8-character code. The page is in English only.</li>
+                        <li>In the Scandora app, open <strong>Settings → Connect your AI</strong>, tap <strong>Approve a connection</strong> and type the code into <strong>Code from the web page</strong>.</li>
+                        <li>Check which app is asking, what it asks to do and where the page will take you back to, choose the <strong>Profile</strong> it may read, and tap <strong>Approve</strong>, or <strong>Deny</strong>. The screen also says that the app can read sensitive data in your documents and that its company may process them outside the EU; tapping <strong>Approve</strong> is your consent to that. If you signed in a while ago, the app first asks you to sign in again.</li>
+                        <li>The web page goes back to the AI app by itself. The code is valid for 10 minutes; if it ran out, start again in the AI app.</li>
+                    </ol>
+                    <div class="highlight-box">
+                        <p><strong>Only approve a code that you started yourself, just now, in the AI app. Never enter a code someone sent you:</strong> whoever started it would get to read your documents.</p>
+                    </div>
+                    <p>An approved connection shows in your list as <strong>Connected app</strong>, named after the AI app. It counts toward your plan's key limit, and it ends after 90 days, when you revoke it in Scandora, or when the AI app asks Scandora to end it. Some AI apps do that when you remove the connector there; others may not, so to be sure, also revoke it in Scandora.</p>
+
+                    <h2 id="usage-and-limits">Usage and limits</h2>
+                    <ul>
+                        <li>Under <strong>Usage</strong> the app shows your requests today across all keys against your plan's daily limit. Each key shows its requests today, how often limits slowed it down in the last 7 days, and a line per day for the last 7 days. Days start at midnight UTC.</li>
+                        <li>Today the Pro and Business / DATEV plans allow up to 5 active keys and connections together, 60 requests a minute and 5,000 requests a day. The minute and day limits apply to each key and to all your keys together. Reading counts as 1 request, a search as 3. Over a limit, the tool is asked to try again after the minute, or after midnight UTC.</li>
+                        <li>Reading and searching through a key uses no credits.</li>
+                    </ul>
+
+                    <h2 id="revoke">Revoke a key or a connection</h2>
+                    <p>Tap <strong>Revoke</strong> on the key and confirm. It stops working with its very next request, in every tool that uses it. Revoked and expired keys move to <strong>Inactive</strong>.</p>
+
+                    <h2 id="safety">Six safety tips</h2>
+                    <ol>
+                        <li><strong>Give each key only what it needs:</strong> one profile instead of all, only the access the tool uses, and the shortest expiry that works for you.</li>
+                        <li><strong>Never paste a key into a chat, an email, a document or a public code repository.</strong> Put it only into the tool's own settings.</li>
+                        <li><strong>Lost a laptop, or think a key leaked?</strong> Revoke it in the app at once and create a new one.</li>
+                        <li><strong>Be careful with documents from strangers.</strong> Scanned documents can contain hidden instructions meant to trick an AI. Scandora marks everything it sends as untrusted document text, but it cannot stop a tool from following such instructions. Check what the AI tool does before you act on its answers.</li>
+                        <li><strong>The company behind the AI tool may process the text outside the EU, under its own terms.</strong> There, your data may not be protected as well as in the EU. Read those terms before you connect a tool. What it has received stays under its terms after you revoke a key.</li>
+                        <li><strong>Keys expire.</strong> A key ends after 90 days unless you chose 30 or 365. When it expires, create a new key and replace it in the tool.</li>
+                    </ol>
+                </article>
+
+                <!-- ================= DEUTSCH ================= -->
+                <article class="legal-content" data-lang="de">
+                    <div class="highlight-box">
+                        <p><strong>Kurz gesagt:</strong> Mit einem persönlichen Schlüssel oder einer Verbindung, die Sie in der App bestätigen, kann ein KI-Tool wie Claude Code, Cursor, claude.ai oder ChatGPT Ihre Scandora-Dokumente lesen und durchsuchen. <strong>Ändern oder löschen kann es nichts.</strong> Bei einem Schlüssel wählen Sie, was er darf, welches Profil er lesen darf und wann er abläuft. Bei einer Verbindung zeigt die App, was die KI-App tun möchte, und Sie wählen, welches Profil sie lesen darf. Beides können Sie jederzeit widerrufen.</p>
+                    </div>
+
+                    <h2 id="de-what-it-is">Worum es geht</h2>
+                    <p>Scandora speichert Text und Details Ihrer Dokumente auf seinen Servern in der EU. Mit einem persönlichen Schlüssel oder einer bestätigten Verbindung kann das KI-Tool Ihrer Wahl diesen Text lesen: die Dokumentliste, die Details und den extrahierten Text eines Dokuments sowie Suchergebnisse. Das Tool erhält Daten nur, wenn es Scandora danach fragt. Das ist getrennt von der verwalteten KI von Scandora und ihren Credits.</p>
+                    <p><strong>PDFs und Seitenbilder werden nie auf unseren Servern gespeichert</strong>, daher kann kein Tool sie von uns erhalten. Was das Tool lesen kann und was Scandora zu jedem Schlüssel speichert, steht in der <a href="/de/privacy#de-ai-own-tool">Datenschutzerklärung, Abschnitt 4</a>.</p>
+
+                    <h2 id="de-who-can-use-it">Wer es nutzen kann</h2>
+                    <p>Persönliche Schlüssel und Verbindungen sind in den Tarifen Pro und Business / DATEV enthalten. Im kostenlosen Tarif zeigt der Bildschirm <strong>Persönliche Schlüssel sind nicht in Ihrem Plan enthalten</strong>. Sie müssen angemeldet sein.</p>
+
+                    <h2 id="de-create-a-key">Schlüssel erstellen</h2>
+                    <ol>
+                        <li>Öffnen Sie in der Scandora-App <strong>Einstellungen → Ihre KI verbinden</strong> und tippen Sie auf <strong>Schlüssel erstellen</strong>.</li>
+                        <li>Beim ersten Mal und erneut, wenn sich sein Text ändert, zeigt die App <strong>Bevor Sie einen Schlüssel erstellen</strong>: wo der Text Ihrer Dokumente gespeichert ist; dass das KI-Tool ihn lesen kann, auch sensible Daten wie Gesundheitsdaten; und dass das Unternehmen hinter dem Tool den Text unter Umständen außerhalb der EU verarbeitet, nach seinen eigenen Bedingungen, wo Ihre Daten womöglich nicht so gut geschützt sind wie in der EU. Tippen Sie auf <strong>Ich stimme zu</strong>, um einzuwilligen und fortzufahren, oder auf <strong>Nicht jetzt</strong>.</li>
+                        <li>Geben Sie unter <strong>Neuer Schlüssel</strong> im Feld <strong>Name</strong> einen Namen ein (zum Beispiel: Laptop) und wählen Sie, <strong>Was der Schlüssel darf</strong>: <strong>Ihre Dokumente lesen</strong>, <strong>Ihre Dokumente durchsuchen</strong> oder beides. Wählen Sie das <strong>Profil</strong>, das er lesen darf; die App wählt Ihr aktives Profil vor, und <strong>Alle Profile</strong> umfasst auch Profile, die Sie später anlegen. Wählen Sie, wann er abläuft (<strong>Läuft ab nach</strong>): 30, 90 oder 365 Tage (90 ist vorgewählt). Tippen Sie auf <strong>Erstellen</strong>.</li>
+                        <li>Liegt Ihre letzte Anmeldung länger zurück, bittet die App Sie zuerst, sich erneut anzumelden (<strong>Bestätigen Sie, dass Sie es sind</strong>).</li>
+                        <li><strong>Ihr neuer Schlüssel</strong> wird einmal angezeigt. Tippen Sie auf <strong>Schlüssel kopieren</strong>, tragen Sie ihn in Ihr Tool ein (nächster Abschnitt) und tippen Sie dann auf <strong>Ich habe ihn gespeichert</strong>. Scandora behält nur einen Einweg-Hash des Schlüssels und kann ihn nicht noch einmal anzeigen: Geht er verloren, widerrufen Sie ihn und erstellen Sie einen neuen.</li>
+                    </ol>
+                    <p>Ein Schlüssel beginnt mit <code>scnd_</code>. Ersetzen Sie in den Beispielen unten <code>YOUR_KEY</code> durch Ihren Schlüssel. Dieselben Beispiele zeigt die App direkt nach dem Erstellen unter <strong>Ihr Tool einrichten</strong> und später bei jedem Schlüssel unter <strong>So verbinden Sie</strong>.</p>
+
+                    <h2 id="de-claude-code-cursor">Claude Code, Cursor oder ein Skript verbinden</h2>
+                    <p><strong>Claude Code</strong>, in einem Terminal:</p>
+                    <p><code>claude mcp add --transport http scandora https://userdata.scandora.eu/mcp --header "Authorization: Bearer YOUR_KEY"</code></p>
+                    <p><strong>Cursor</strong>, in <code>~/.cursor/mcp.json</code> oder in <code>.cursor/mcp.json</code> eines Projekts:</p>
+                    <p><code>{ "mcpServers": { "scandora": { "url": "https://userdata.scandora.eu/mcp", "headers": { "Authorization": "Bearer YOUR_KEY" } } } }</code></p>
+                    <p><strong>Ein Skript</strong> (REST), zum Beispiel für die neuesten Dokumente:</p>
+                    <p><code>curl -H "Authorization: Bearer YOUR_KEY" https://userdata.scandora.eu/api/v1/documents</code></p>
+
+                    <h2 id="de-claude-ai-chatgpt">claude.ai oder ChatGPT verbinden: in der App bestätigen</h2>
+                    <p>claude.ai und ChatGPT nehmen keinen eingefügten Schlüssel an. Sie fügen Scandora dort als Connector hinzu und bestätigen ihn in der Scandora-App mit einem kurzen Code:</p>
+                    <ol>
+                        <li><strong>claude.ai</strong> (Web, Desktop oder Mobil): Settings → Connectors → Add custom connector, URL <code>https://userdata.scandora.eu/mcp</code>, ohne Client-ID und Secret. <strong>ChatGPT</strong> (Entwicklermodus, in Tarifen, die eigene MCP-Connectoren erlauben): Settings → Apps and Connectors → Create, MCP-Server-URL <code>https://userdata.scandora.eu/mcp</code>, Authentifizierung OAuth. Diese Menüs gehören zu claude.ai und ChatGPT und können sich ändern.</li>
+                        <li>Die KI-App öffnet eine Scandora-Webseite mit einem 8-stelligen Code. Die Seite ist nur auf Englisch.</li>
+                        <li>Öffnen Sie in der Scandora-App <strong>Einstellungen → Ihre KI verbinden</strong>, tippen Sie auf <strong>Verbindung bestätigen</strong> und geben Sie den Code unter <strong>Code von der Webseite</strong> ein.</li>
+                        <li>Prüfen Sie, welche App fragt, was sie tun möchte und wohin die Seite Sie zurückführt, wählen Sie das <strong>Profil</strong>, das sie lesen darf, und tippen Sie auf <strong>Bestätigen</strong> oder <strong>Ablehnen</strong>. Der Bildschirm sagt auch, dass die App sensible Daten in Ihren Dokumenten lesen kann und dass ihr Unternehmen sie unter Umständen außerhalb der EU verarbeitet; mit <strong>Bestätigen</strong> willigen Sie darin ein. Liegt Ihre letzte Anmeldung länger zurück, bittet die App Sie zuerst, sich erneut anzumelden.</li>
+                        <li>Die Webseite kehrt von selbst zur KI-App zurück. Der Code gilt 10 Minuten; ist er abgelaufen, starten Sie in der KI-App neu.</li>
+                    </ol>
+                    <div class="highlight-box">
+                        <p><strong>Bestätigen Sie nur einen Code, den Sie gerade selbst in der KI-App gestartet haben. Geben Sie nie einen Code ein, den Ihnen jemand geschickt hat:</strong> Wer ihn gestartet hat, könnte sonst Ihre Dokumente lesen.</p>
+                    </div>
+                    <p>Eine bestätigte Verbindung erscheint in Ihrer Liste als <strong>Verbundene App</strong> mit dem Namen der KI-App. Sie zählt zum Schlüssel-Limit Ihres Tarifs und endet nach 90 Tagen, wenn Sie sie in Scandora widerrufen oder wenn die KI-App Scandora bittet, sie zu beenden. Manche KI-Apps tun das, wenn Sie den Connector dort entfernen, andere womöglich nicht. Widerrufen Sie die Verbindung daher zur Sicherheit auch in Scandora.</p>
+
+                    <h2 id="de-usage-and-limits">Nutzung und Limits</h2>
+                    <ul>
+                        <li>Unter <strong>Nutzung</strong> zeigt die App Ihre heutigen Anfragen über alle Schlüssel im Verhältnis zum Tageslimit Ihres Tarifs. Jeder Schlüssel zeigt seine heutigen Anfragen, wie oft Limits ihn in den letzten 7 Tagen gebremst haben, und eine Zeile pro Tag für die letzten 7 Tage. Tage beginnen um Mitternacht UTC.</li>
+                        <li>Derzeit erlauben die Tarife Pro und Business / DATEV bis zu 5 aktive Schlüssel und Verbindungen zusammen, 60 Anfragen pro Minute und 5.000 Anfragen pro Tag. Die Minuten- und Tageslimits gelten für jeden Schlüssel und für alle Ihre Schlüssel zusammen. Lesen zählt als 1 Anfrage, eine Suche als 3. Über einem Limit wird das Tool gebeten, es nach Ablauf der Minute oder nach Mitternacht UTC erneut zu versuchen.</li>
+                        <li>Lesen und Suchen über einen Schlüssel verbraucht keine Credits.</li>
+                    </ul>
+
+                    <h2 id="de-revoke">Schlüssel oder Verbindung widerrufen</h2>
+                    <p>Tippen Sie beim Schlüssel auf <strong>Widerrufen</strong> und bestätigen Sie. Er funktioniert ab der nächsten Anfrage nicht mehr, in jedem Tool, das ihn nutzt. Widerrufene und abgelaufene Schlüssel stehen danach unter <strong>Inaktiv</strong>.</p>
+
+                    <h2 id="de-safety">Sechs Sicherheitstipps</h2>
+                    <ol>
+                        <li><strong>Geben Sie jedem Schlüssel nur, was er braucht:</strong> ein Profil statt aller, nur den Zugriff, den das Tool nutzt, und die kürzeste Laufzeit, die für Sie passt.</li>
+                        <li><strong>Fügen Sie einen Schlüssel nie in einen Chat, eine E-Mail, ein Dokument oder ein öffentliches Code-Repository ein.</strong> Tragen Sie ihn nur in die Einstellungen des Tools ein.</li>
+                        <li><strong>Laptop verloren oder Verdacht, dass ein Schlüssel bekannt wurde?</strong> Widerrufen Sie ihn gleich in der App und erstellen Sie einen neuen.</li>
+                        <li><strong>Vorsicht bei Dokumenten von Fremden.</strong> Gescannte Dokumente können versteckte Anweisungen enthalten, die eine KI täuschen sollen. Scandora kennzeichnet alles, was es sendet, als nicht vertrauenswürdigen Dokumenttext, kann aber nicht verhindern, dass ein Tool solchen Anweisungen folgt. Prüfen Sie, was das KI-Tool tut, bevor Sie seinen Antworten folgen.</li>
+                        <li><strong>Das Unternehmen hinter dem KI-Tool verarbeitet den Text unter Umständen außerhalb der EU, nach seinen eigenen Bedingungen.</strong> Dort sind Ihre Daten womöglich nicht so gut geschützt wie in der EU. Lesen Sie diese Bedingungen, bevor Sie ein Tool verbinden. Was es erhalten hat, unterliegt auch nach einem Widerruf seinen Bedingungen.</li>
+                        <li><strong>Schlüssel laufen ab.</strong> Ein Schlüssel endet nach 90 Tagen, sofern Sie nicht 30 oder 365 gewählt haben. Ist er abgelaufen, erstellen Sie einen neuen und ersetzen Sie ihn im Tool.</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/de/" class="logo"><img class="logo-icon" src="/assets/logo.png" alt="Scandora app icon" width="34" height="34"><span class="logo-text">Scandora</span></a>
+                    <p data-i18n="footer.tagline">Intelligentes Dokumentenscannen für moderne Unternehmen.</p>
+                </div>
+                <nav class="footer-links" role="navigation" aria-label="Footer navigation">
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.product">Produkt</h4>
+                        <a href="/de/#features" data-i18n="nav.features">Funktionen</a>
+                        <a href="/de/#pricing" data-i18n="nav.pricing">Preise</a>
+                        <a href="/de/#download" data-i18n="nav.download">Download</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.legal">Rechtliches</h4>
+                        <a href="/de/privacy" data-i18n="footer.privacy">Datenschutzrichtlinie</a>
+                        <a href="/terms" data-i18n="footer.terms">Nutzungsbedingungen</a>
+                        <a href="/avv" data-i18n="footer.avv">AVV / DPA</a>
+                        <a href="/imprint" data-i18n="footer.imprint">Impressum</a>
+                        <a href="/report-content" data-i18n="footer.reportContent">Rechtswidrige Inhalte melden</a>
+                        <a href="/accessibility" data-i18n="footer.accessibility">Barrierefreiheit</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.support">Support</h4>
+                        <a href="/help/" data-i18n="footer.help">Hilfe-Center</a>
+                        <a href="/de/contact" data-i18n="footer.contact">Kontakt</a>
+                        <a href="/de/careers" data-i18n="footer.careers">Karriere</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p><small>© 2026 Scandora. <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span></small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/translations.js" defer></script>
+    <script src="/main.js" defer></script>
+</body>
+</html>
