@@ -19,6 +19,7 @@
         initMobileMenu();
         initAnimations();
         initStatsCounter();
+        initDemoClip();
         initFaqAccordion();
         initCalculator();
         initContactForm();
@@ -156,6 +157,88 @@
         }, { threshold: 0.5 });
 
         stats.forEach(stat => statsObserver.observe(stat));
+    }
+
+    // ============================================
+    // DEMO CLIP
+    // ============================================
+
+    function demoClipAction(state) {
+        if (state.visible && state.paused && !state.reducedMotion && !state.userPaused) {
+            return 'play';
+        }
+        if (!state.visible && !state.paused) {
+            return 'pause';
+        }
+        return 'none';
+    }
+
+    function loadDemoClip(video) {
+        video.querySelectorAll('source[data-src]').forEach(source => {
+            source.setAttribute('src', source.getAttribute('data-src'));
+            source.removeAttribute('data-src');
+        });
+        const poster = video.getAttribute('data-poster');
+        if (poster) {
+            video.setAttribute('poster', poster);
+            video.removeAttribute('data-poster');
+        }
+        video.load();
+    }
+
+    function initDemoClip() {
+        const video = document.querySelector('video.demo-video');
+        if (!video) return;
+
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        let loaded = false;
+        let userPaused = false;
+        let scriptPausing = false;
+
+        video.muted = true;
+        video.addEventListener('pause', () => {
+            if (!scriptPausing) {
+                userPaused = true;
+            }
+            scriptPausing = false;
+        });
+        video.addEventListener('play', () => {
+            userPaused = false;
+        });
+
+        const nearObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !loaded) {
+                    loaded = true;
+                    loadDemoClip(video);
+                    nearObserver.unobserve(video);
+                }
+            });
+        }, { rootMargin: '300px 0px' });
+
+        const visibleObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!loaded) return;
+                const action = demoClipAction({
+                    visible: entry.isIntersecting,
+                    paused: video.paused,
+                    reducedMotion: reducedMotion.matches,
+                    userPaused: userPaused
+                });
+                if (action === 'play') {
+                    const playing = video.play();
+                    if (playing && playing.catch) {
+                        playing.catch(() => {});
+                    }
+                } else if (action === 'pause') {
+                    scriptPausing = true;
+                    video.pause();
+                }
+            });
+        }, { threshold: 0.5 });
+
+        nearObserver.observe(video);
+        visibleObserver.observe(video);
     }
 
     // ============================================

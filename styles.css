@@ -513,6 +513,54 @@ img {
     .hero-shot img { width: 60vw; }
 }
 
+.demo {
+    padding: var(--space-3xl) 0;
+    background: var(--background);
+}
+.demo-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: var(--space-3xl);
+    align-items: center;
+}
+.demo-steps {
+    margin: 0 0 var(--space-xl);
+    padding-left: 1.5em;
+    font-size: 18px;
+    color: var(--text-secondary);
+}
+.demo-steps li { margin-bottom: var(--space-sm); }
+.demo-figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.demo-video {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 480 / 1040;
+    background: var(--surface-variant);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-elevated);
+}
+.demo-caption {
+    max-width: 300px;
+    margin-top: var(--space-sm);
+    font-size: 14px;
+    text-align: center;
+    color: var(--text-secondary);
+}
+@media (max-width: 1024px) {
+    .demo-container { grid-template-columns: 1fr; gap: var(--space-2xl); }
+}
+@media (max-width: 640px) {
+    .demo-video { width: 60vw; }
+}
+
 /* ============================================
    SECTION HEADERS
    ============================================ */

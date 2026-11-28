@@ -1,0 +1,71 @@
+{
+  "settings": "ca96b9607b14d5dde0b8cadcc248e0a1dbf3bfe372ce3342a3517db629bc9e40",
+  "locales": {
+    "en": {
+      "seconds": 9.5,
+      "sources": {
+        "store-assets/raw/iphone69/en-US/01_scan.png": "4ebd0bca6f2d9d973fde946021a77ab8371616c503c0266eda81faf553b48bc6",
+        "store-assets/raw/iphone69/en-US/02_chat.png": "834c9bf9fc956678779c1415cfa1164520905d1b6e8bd7c0e5285fc356e8cd32"
+      },
+      "files": {
+        "assets/demo/en/demo.mp4": "a6aa3f54dff18176b1fae27d2a92b5982327d6ac95f534f29fbd4c4e2215a6d5",
+        "assets/demo/en/poster.jpg": "90c5b4195b45e9c58d4836863d20eda8937baaaf89b575490e5ad9a9277ab7f3"
+      }
+    },
+    "de": {
+      "seconds": 9.5,
+      "sources": {
+        "store-assets/raw/iphone69/de-DE/01_scan.png": "4d6675190ddab5ed4ed44e5bf6ace505627689162ad63a062490776ef4798de3",
+        "store-assets/raw/iphone69/de-DE/02_chat.png": "8eccfe0652547907015e2372d97dd537343c2076d8298340849085a8ae1af701"
+      },
+      "files": {
+        "assets/demo/de/demo.mp4": "cda0b0f3c5b202d14ef2d5768dfce63e859bc1e25c48bef65ae2b3feca4e189e",
+        "assets/demo/de/poster.jpg": "b964380e911628917541db89106df38869d2ada2de6c44422822b47889b92267"
+      }
+    },
+    "es": {
+      "seconds": 9.5,
+      "sources": {
+        "store-assets/raw/iphone69/es-ES/01_scan.png": "e84def14fa0a221dfa72842014c778395c3b979d8f240d04570ae6d29147ddc0",
+        "store-assets/raw/iphone69/es-ES/02_chat.png": "f5e171b587972361a152bdbcb0b4cc9694f904df2a6c3a686543f9091600a632"
+      },
+      "files": {
+        "assets/demo/es/demo.mp4": "dd5c9d212f1073c22d567765cbd9e2bd4abbfc6ee314825a17e9731795afcd37",
+        "assets/demo/es/poster.jpg": "ab716d17394e51e9fb44ec3cfbbe10165083293cf808149f58c3c7cd4d592234"
+      }
+    },
+    "it": {
+      "seconds": 9.5,
+      "sources": {
+        "store-assets/raw/iphone69/it-IT/01_scan.png": "8ec44a963a17efc9a07b19475e165a808dbdea8ee945a68143f8586cfce3291f",
+        "store-assets/raw/iphone69/it-IT/02_chat.png": "6a1d0eadcb287290506f32a1232b19ebce8b62ec65a4f4f2ed741a2f17ea6c28"
+      },
+      "files": {
+        "assets/demo/it/demo.mp4": "0df80150c8a61d75dabada1a81edc27092087d8cd3e02d22933294028a119d03",
+        "assets/demo/it/poster.jpg": "f76357f36fdd1d101a37366cdbf6fbdf24fe30e49e65593abf7be84ae544c3d8"
+      }
+    },
+    "nl": {
+      "seconds": 9.5,
+      "sources": {
+        "store-assets/raw/iphone69/nl-NL/01_scan.png": "7ab91e178e3a64f7a784b97dcf43a5a337d0a7af3f0bc67dbb6a59007267853b",
+        "store-assets/raw/iphone69/nl-NL/02_chat.png": "862c1e532672d1e4d454c799ea98573174cc2e1cccfab1d9bc1873f273634778"
+      },
+      "files": {
+        "assets/demo/nl/demo.mp4": "ba5da5c3fc92771c3e037593c2311e123d03bced398a34716f15ec0361304648",
+        "assets/demo/nl/poster.jpg": "6a2979dc47b5c74d32ac8059d941052869683cf904f5988058677fc2d8370d38"
+      }
+    },
+    "pt-br": {
+      "seconds": 9.5,
+      "sources": {
+        "store-assets/raw/iphone69/pt-BR/01_scan.png": "54fa2654ee12862176b4cdf5fd47d19b034e80b12840ff38e1cae752b285867e",
+        "store-assets/raw/iphone69/pt-BR/02_chat.png": "5127ab86969e52477dd41a366dda57703219e2f3c08c1932105297506db74ef1"
+      },
+      "files": {
+        "assets/demo/pt-br/demo.mp4": "c504407a8aa4f63d1f9ae1a17e426ffb30c10395fd72e646df02c29f533fafc9",
+        "assets/demo/pt-br/poster.jpg": "d7301997bfd37352cfafa29fe74eb3c240810c3007ae3a0ab5903c6bca8e1f03"
+      }
+    }
+  }
+}
