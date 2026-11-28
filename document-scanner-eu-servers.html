@@ -3,6 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <script>
+        (function (root) {
+            function storePlatform(userAgent, maxTouchPoints) {
+                var ua = userAgent || '';
+                if (/iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && maxTouchPoints > 1)) {
+                    return 'ios';
+                }
+                if (/Android/.test(ua)) {
+                    return 'android';
+                }
+                if (/Macintosh/.test(ua)) {
+                    return 'macos';
+                }
+                return 'other';
+            }
+            root.scandoraStorePlatform = storePlatform;
+            root.document.documentElement.setAttribute('data-store-platform', storePlatform(root.navigator.userAgent, root.navigator.maxTouchPoints));
+        })(window);
+    </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Document scanner on EU servers: where your data sits | Scandora</title>
@@ -175,7 +194,10 @@
                             <li><a href="/pt-br/document-scanner-eu-servers" hreflang="pt-BR" lang="pt-BR"><span class="lang-menu-name">Português (Brasil)</span> <span class="lang-menu-english" lang="en">Portuguese (Brazil)</span></a></li>
                         </ul>
                     </details>
-                    <a href="/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
+                    <a href="/#download" class="btn btn-primary btn-sm nav-download" role="button" data-i18n="nav.download">Download</a>
+                    <a href="https://apps.apple.com/app/scandora/id6756135936?ct=document-scanner-eu-servers&amp;mt=8" class="store-badge nav-store-badge" data-platform="ios" data-download-location="nav" aria-label="Download Scandora on the App Store for iPhone and iPad" rel="noopener" target="_blank"><img src="/assets/store-badges/en/app-store.svg" alt="Download on the App Store" data-i18n-alt="storeBadge.appStore" width="120" height="40"></a>
+                    <a href="https://play.google.com/store/apps/details?id=de.scandora.app&amp;referrer=utm_source%3Dscandora.eu%26utm_medium%3Dwebsite%26utm_campaign%3Ddocument-scanner-eu-servers" class="store-badge nav-store-badge" data-platform="android" data-download-location="nav" aria-label="Get Scandora on Google Play for Android" rel="noopener" target="_blank"><picture><source type="image/webp" srcset="/assets/store-badges/en/google-play.webp"><img src="/assets/store-badges/en/google-play.png" alt="Get it on Google Play" data-i18n-alt="storeBadge.googlePlay" width="323" height="125"></picture></a>
+                    <a href="https://apps.apple.com/app/scandora/id6756135936?ct=document-scanner-eu-servers&amp;mt=8" class="store-badge nav-store-badge" data-platform="macos" data-download-location="nav" aria-label="Download Scandora on the Mac App Store for macOS" rel="noopener" target="_blank"><img src="/assets/store-badges/en/mac-app-store.svg" alt="Download on the Mac App Store" data-i18n-alt="storeBadge.macAppStore" width="156" height="40"></a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
             </div>
@@ -194,6 +216,18 @@
                     <span class="legal-badge" data-i18n="euServers.badge">Data residency</span>
                     <h1 id="page-title" class="legal-title"><span data-lang="en">Document scanner on EU servers: where your data sits</span><span data-lang="de" hidden>Dokumentenscanner auf EU-Servern: wo Ihre Daten liegen</span><span data-lang="es" hidden>Escáner de documentos en servidores de la UE: dónde están tus datos</span><span data-lang="pt-BR" hidden>Scanner de documentos em servidores da UE: onde ficam os seus dados</span><span data-lang="it" hidden>Scanner di documenti su server UE: dove si trovano i tuoi dati</span><span data-lang="nl" hidden>Documentscanner op EU-servers: waar je gegevens staan</span></h1>
                     <p class="legal-meta"><span data-i18n="intent.brainLine">Scandora is your document brain: scan, upload or share any document, then find it and ask questions with citations.</span> <a href="/" data-i18n="intent.brainLink" style="color:var(--primary);font-weight:600;">See how it works</a></p>
+                    <div class="store-cta" data-download-location="hero">
+                        <div class="store-badges" role="group" aria-label="Download links">
+                            <a href="https://apps.apple.com/app/scandora/id6756135936?ct=document-scanner-eu-servers&amp;mt=8" class="store-badge" data-platform="ios" aria-label="Download Scandora on the App Store for iPhone and iPad" rel="noopener" target="_blank"><img src="/assets/store-badges/en/app-store.svg" alt="Download on the App Store" data-i18n-alt="storeBadge.appStore" width="120" height="40"></a>
+                            <a href="https://play.google.com/store/apps/details?id=de.scandora.app&amp;referrer=utm_source%3Dscandora.eu%26utm_medium%3Dwebsite%26utm_campaign%3Ddocument-scanner-eu-servers" class="store-badge" data-platform="android" aria-label="Get Scandora on Google Play for Android" rel="noopener" target="_blank"><picture><source type="image/webp" srcset="/assets/store-badges/en/google-play.webp"><img src="/assets/store-badges/en/google-play.png" alt="Get it on Google Play" data-i18n-alt="storeBadge.googlePlay" width="323" height="125"></picture></a>
+                            <a href="https://apps.apple.com/app/scandora/id6756135936?ct=document-scanner-eu-servers&amp;mt=8" class="store-badge" data-platform="macos" aria-label="Download Scandora on the Mac App Store for macOS" rel="noopener" target="_blank"><img src="/assets/store-badges/en/mac-app-store.svg" alt="Download on the Mac App Store" data-i18n-alt="storeBadge.macAppStore" width="156" height="40"></a>
+                        </div>
+                        <p class="store-reassurance" data-i18n="hero.reassurance">Free to download · No watermark · No account needed to start</p>
+                        <div class="store-qr">
+                            <figure class="store-qr-code"><img src="/assets/qr-appstore.svg" alt="QR code for Scandora on the App Store" width="112" height="112"><figcaption>App Store</figcaption></figure>
+                            <figure class="store-qr-code"><img src="/assets/qr-google-play.svg" alt="QR code for Scandora on Google Play" width="112" height="112"><figcaption>Google Play</figcaption></figure>
+                        </div>
+                    </div>
                 </header>
 
                 <!-- ================= GERMAN ================= -->
@@ -671,13 +705,13 @@
 
                 <div class="download-buttons" role="group" aria-label="Download links" style="margin-top:32px;">
                     <a href="https://apps.apple.com/app/scandora/id6756135936?ct=document-scanner-eu-servers&amp;mt=8" class="store-badge" aria-label="Download Scandora on the App Store for iPhone and iPad" rel="noopener" target="_blank">
-                        <img src="/assets/badge-appstore.svg" alt="Download on the App Store" width="120" height="40" loading="lazy">
+                        <img src="/assets/store-badges/en/app-store.svg" alt="Download on the App Store" data-i18n-alt="storeBadge.appStore" width="120" height="40" loading="lazy">
                     </a>
                     <a href="https://apps.apple.com/app/scandora/id6756135936?ct=document-scanner-eu-servers&amp;mt=8" class="store-badge" aria-label="Download Scandora on the Mac App Store for macOS" rel="noopener" target="_blank">
-                        <img src="/assets/badge-mac-appstore.svg" alt="Download on the Mac App Store" width="156" height="40" loading="lazy">
+                        <img src="/assets/store-badges/en/mac-app-store.svg" alt="Download on the Mac App Store" data-i18n-alt="storeBadge.macAppStore" width="156" height="40" loading="lazy">
                     </a>
                     <a href="https://play.google.com/store/apps/details?id=de.scandora.app&amp;referrer=utm_source%3Dscandora.eu%26utm_medium%3Dwebsite%26utm_campaign%3Ddocument-scanner-eu-servers" class="store-badge" aria-label="Get Scandora on Google Play for Android" rel="noopener" target="_blank">
-                        <img src="/assets/badge-google-play.svg" alt="Get it on Google Play" width="135" height="40" loading="lazy">
+                        <picture><source type="image/webp" srcset="/assets/store-badges/en/google-play.webp"><img src="/assets/store-badges/en/google-play.png" alt="Get it on Google Play" data-i18n-alt="storeBadge.googlePlay" width="323" height="125" loading="lazy"></picture>
                     </a>
                 </div>
             </div>

@@ -265,7 +265,7 @@
         if (STORE_PLATFORMS.includes(declared)) {
             return declared;
         }
-        if (link.querySelector('img[src*="badge-mac-appstore"]')) {
+        if (link.querySelector('img[src*="mac-app-store"]')) {
             return 'macos';
         }
         return link.href.includes('apple.com') ? 'ios' : 'android';
@@ -335,6 +335,9 @@
         sections.forEach(section => sectionObserver.observe(section));
 
         document.querySelectorAll('nav a, .footer-links a').forEach(link => {
+            if (link.closest('.store-badge')) {
+                return;
+            }
             link.addEventListener('click', function() {
                 const isFooter = this.closest('footer') !== null;
                 trackEvent('navigation_click', {

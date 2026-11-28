@@ -394,7 +394,7 @@ img {
     display: flex;
     align-items: center;
     gap: var(--space-md);
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
 }
 .hero-brand-icon {
     display: block;
@@ -429,11 +429,11 @@ img {
     border-radius: var(--radius-full);
     font-size: 14px;
     font-weight: 600;
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
 }
 
 .hero-title {
-    font-size: 56px;
+    font-size: 42px;
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: -0.5px;
@@ -1078,9 +1078,112 @@ img {
     transform: translateY(-2px);
 }
 .store-badge img, .store-badge svg {
-    height: 50px;
+    height: var(--badge-height, 50px);
     width: auto;
 }
+.store-badge img[src$="/app-store.svg"] { aspect-ratio: 119.66407 / 40; }
+.store-badge img[src$="/mac-app-store.svg"] { aspect-ratio: 156.10054 / 40; }
+.store-badge img[src$="/google-play.png"] {
+    aspect-ratio: 646 / 250;
+    height: calc(var(--badge-height, 50px) * 250 / 192);
+    margin: calc(var(--badge-height, 50px) * -29 / 192) 0;
+}
+.store-badge img[src$="/en/google-play.png"] {
+    height: calc(var(--badge-height, 50px) * 250 / 168);
+    margin: calc(var(--badge-height, 50px) * -41 / 168);
+}
+.download-buttons .store-badge {
+    display: inline-flex;
+    align-items: center;
+}
+.store-badge picture { display: flex; }
+.store-badge:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 4px;
+    border-radius: 8px;
+}
+
+.store-cta { margin-bottom: var(--space-xl); }
+.store-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+}
+.store-badges .store-badge {
+    --badge-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+}
+.store-badges [data-platform="ios"] { order: 1; }
+.store-badges [data-platform="android"] { order: 2; }
+.store-badges [data-platform="macos"] { order: 3; }
+html[data-store-platform="macos"] .store-badges [data-platform="macos"] { order: 2; }
+html[data-store-platform="macos"] .store-badges [data-platform="android"] { order: 3; }
+.store-qr { display: none; }
+@media (hover: hover) and (pointer: fine) {
+    .store-qr {
+        display: flex;
+        gap: var(--space-lg);
+        margin-top: var(--space-md);
+    }
+}
+.store-qr-code {
+    margin: 0;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+.store-qr-code img {
+    display: block;
+    width: 112px;
+    height: 112px;
+    margin-bottom: var(--space-xs);
+}
+.store-reassurance {
+    margin-top: var(--space-md);
+    margin-bottom: 0;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+.legal-header .store-cta { margin: var(--space-lg) 0 0; }
+.legal-header .store-badges,
+.legal-header .store-qr { justify-content: center; }
+@media (hover: hover) and (pointer: fine) and (min-width: 1200px) {
+    .hero .store-cta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        column-gap: var(--space-xl);
+    }
+    .hero .store-badges {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero .store-qr {
+        order: 1;
+        margin-top: 0;
+    }
+    .hero .store-reassurance {
+        order: 2;
+        flex-basis: 100%;
+    }
+}
+
+.nav-store-badge {
+    --badge-height: 40px;
+    display: none;
+    align-items: center;
+    min-height: 44px;
+    margin: 0 2px;
+}
+html[data-store-platform="ios"] .nav-store-badge[data-platform="ios"],
+html[data-store-platform="android"] .nav-store-badge[data-platform="android"],
+html[data-store-platform="macos"] .nav-store-badge[data-platform="macos"] { display: inline-flex; }
+html[data-store-platform="ios"] .nav-download,
+html[data-store-platform="android"] .nav-download,
+html[data-store-platform="macos"] .nav-download { display: none; }
 
 /* ============================================
    FOOTER
@@ -1136,7 +1239,6 @@ img {
 @media (max-width: 1024px) {
     .hero-container { grid-template-columns: 1fr; gap: var(--space-2xl); }
     .hero-title { font-size: 44px; }
-    .hero-visual { order: -1; }
     .features-grid { grid-template-columns: repeat(2, 1fr); }
     .pricing-grid { grid-template-columns: 1fr; max-width: 400px; }
     .pricing-card.popular { transform: none; }
@@ -1241,6 +1343,12 @@ img {
     .nav-actions .btn {
         display: none;
     }
+}
+
+@media (max-width: 440px) {
+    html[data-store-platform="ios"] .logo-text,
+    html[data-store-platform="android"] .logo-text,
+    html[data-store-platform="macos"] .logo-text { display: none; }
 }
 
 /* ============================================

@@ -4,6 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <script>
+        (function (root) {
+            function storePlatform(userAgent, maxTouchPoints) {
+                var ua = userAgent || '';
+                if (/iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && maxTouchPoints > 1)) {
+                    return 'ios';
+                }
+                if (/Android/.test(ua)) {
+                    return 'android';
+                }
+                if (/Macintosh/.test(ua)) {
+                    return 'macos';
+                }
+                return 'other';
+            }
+            root.scandoraStorePlatform = storePlatform;
+            root.document.documentElement.setAttribute('data-store-platform', storePlatform(root.navigator.userAgent, root.navigator.maxTouchPoints));
+        })(window);
+    </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Papierloses Dokumentenscannen für kleine Unternehmen</title>
@@ -100,7 +119,10 @@
                             <li><a href="/pt-br/paperless-small-business" hreflang="pt-BR" lang="pt-BR"><span class="lang-menu-name">Português (Brasil)</span> <span class="lang-menu-english" lang="en">Portuguese (Brazil)</span></a></li>
                         </ul>
                     </details>
-                    <a href="/de/#download" class="btn btn-primary btn-sm" role="button" data-i18n="nav.download">Download</a>
+                    <a href="/de/#download" class="btn btn-primary btn-sm nav-download" role="button" data-i18n="nav.download">Download</a>
+                    <a href="https://apps.apple.com/app/scandora/id6756135936?ct=de-paperless-small-business&amp;mt=8" class="store-badge nav-store-badge" data-platform="ios" data-download-location="nav" aria-label="Download Scandora on the App Store for iPhone and iPad" rel="noopener" target="_blank"><img src="/assets/store-badges/de/app-store.svg" alt="Laden im App Store" data-i18n-alt="storeBadge.appStore" width="120" height="40"></a>
+                    <a href="https://play.google.com/store/apps/details?id=de.scandora.app&amp;referrer=utm_source%3Dscandora.eu%26utm_medium%3Dwebsite%26utm_campaign%3Dde-paperless-small-business" class="store-badge nav-store-badge" data-platform="android" data-download-location="nav" aria-label="Get Scandora on Google Play for Android" rel="noopener" target="_blank"><picture><source type="image/webp" srcset="/assets/store-badges/de/google-play.webp"><img src="/assets/store-badges/de/google-play.png" alt="Jetzt bei Google Play" data-i18n-alt="storeBadge.googlePlay" width="323" height="125"></picture></a>
+                    <a href="https://apps.apple.com/app/scandora/id6756135936?ct=de-paperless-small-business&amp;mt=8" class="store-badge nav-store-badge" data-platform="macos" data-download-location="nav" aria-label="Download Scandora on the Mac App Store for macOS" rel="noopener" target="_blank"><img src="/assets/store-badges/de/mac-app-store.svg" alt="Laden im Mac App Store" data-i18n-alt="storeBadge.macAppStore" width="156" height="40"></a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
             </div>
@@ -118,6 +140,18 @@
                 <header class="legal-header">
                     <span class="legal-badge" data-i18n="paperlessSmb.badge">Ratgeber</span>
                     <h1 id="page-title" class="legal-title"><span data-lang="de">Papierloses Dokumentenscannen für kleine Unternehmen</span></h1>
+                    <div class="store-cta" data-download-location="hero">
+                        <div class="store-badges" role="group" aria-label="Download links">
+                            <a href="https://apps.apple.com/app/scandora/id6756135936?ct=de-paperless-small-business&amp;mt=8" class="store-badge" data-platform="ios" aria-label="Download Scandora on the App Store for iPhone and iPad" rel="noopener" target="_blank"><img src="/assets/store-badges/de/app-store.svg" alt="Laden im App Store" data-i18n-alt="storeBadge.appStore" width="120" height="40"></a>
+                            <a href="https://play.google.com/store/apps/details?id=de.scandora.app&amp;referrer=utm_source%3Dscandora.eu%26utm_medium%3Dwebsite%26utm_campaign%3Dde-paperless-small-business" class="store-badge" data-platform="android" aria-label="Get Scandora on Google Play for Android" rel="noopener" target="_blank"><picture><source type="image/webp" srcset="/assets/store-badges/de/google-play.webp"><img src="/assets/store-badges/de/google-play.png" alt="Jetzt bei Google Play" data-i18n-alt="storeBadge.googlePlay" width="323" height="125"></picture></a>
+                            <a href="https://apps.apple.com/app/scandora/id6756135936?ct=de-paperless-small-business&amp;mt=8" class="store-badge" data-platform="macos" aria-label="Download Scandora on the Mac App Store for macOS" rel="noopener" target="_blank"><img src="/assets/store-badges/de/mac-app-store.svg" alt="Laden im Mac App Store" data-i18n-alt="storeBadge.macAppStore" width="156" height="40"></a>
+                        </div>
+                        <p class="store-reassurance" data-i18n="hero.reassurance">Kostenloser Download · Kein Wasserzeichen · Ohne Konto loslegen</p>
+                        <div class="store-qr">
+                            <figure class="store-qr-code"><img src="/assets/qr-appstore.svg" alt="QR code for Scandora on the App Store" width="112" height="112"><figcaption>App Store</figcaption></figure>
+                            <figure class="store-qr-code"><img src="/assets/qr-google-play.svg" alt="QR code for Scandora on Google Play" width="112" height="112"><figcaption>Google Play</figcaption></figure>
+                        </div>
+                    </div>
                 </header>
 
                 <!-- ================= GERMAN ================= -->
@@ -193,13 +227,13 @@
 
                 <div class="download-buttons" role="group" aria-label="Download links" style="margin-top:32px;">
                     <a href="https://apps.apple.com/app/scandora/id6756135936?ct=de-paperless-small-business&amp;mt=8" class="store-badge" aria-label="Download Scandora on the App Store for iPhone and iPad" rel="noopener" target="_blank">
-                        <img src="/assets/badge-appstore.svg" alt="Download on the App Store" width="120" height="40" loading="lazy">
+                        <img src="/assets/store-badges/de/app-store.svg" alt="Laden im App Store" data-i18n-alt="storeBadge.appStore" width="120" height="40" loading="lazy">
                     </a>
                     <a href="https://apps.apple.com/app/scandora/id6756135936?ct=de-paperless-small-business&amp;mt=8" class="store-badge" aria-label="Download Scandora on the Mac App Store for macOS" rel="noopener" target="_blank">
-                        <img src="/assets/badge-mac-appstore.svg" alt="Download on the Mac App Store" width="156" height="40" loading="lazy">
+                        <img src="/assets/store-badges/de/mac-app-store.svg" alt="Laden im Mac App Store" data-i18n-alt="storeBadge.macAppStore" width="156" height="40" loading="lazy">
                     </a>
                     <a href="https://play.google.com/store/apps/details?id=de.scandora.app&amp;referrer=utm_source%3Dscandora.eu%26utm_medium%3Dwebsite%26utm_campaign%3Dde-paperless-small-business" class="store-badge" aria-label="Get Scandora on Google Play for Android" rel="noopener" target="_blank">
-                        <img src="/assets/badge-google-play.svg" alt="Get it on Google Play" width="135" height="40" loading="lazy">
+                        <picture><source type="image/webp" srcset="/assets/store-badges/de/google-play.webp"><img src="/assets/store-badges/de/google-play.png" alt="Jetzt bei Google Play" data-i18n-alt="storeBadge.googlePlay" width="323" height="125" loading="lazy"></picture>
                     </a>
                 </div>
             </div>

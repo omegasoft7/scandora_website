@@ -5,6 +5,25 @@
     <!-- Essential Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <script>
+        (function (root) {
+            function storePlatform(userAgent, maxTouchPoints) {
+                var ua = userAgent || '';
+                if (/iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && maxTouchPoints > 1)) {
+                    return 'ios';
+                }
+                if (/Android/.test(ua)) {
+                    return 'android';
+                }
+                if (/Macintosh/.test(ua)) {
+                    return 'macos';
+                }
+                return 'other';
+            }
+            root.scandoraStorePlatform = storePlatform;
+            root.document.documentElement.setAttribute('data-store-platform', storePlatform(root.navigator.userAgent, root.navigator.maxTouchPoints));
+        })(window);
+    </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Primary SEO Meta Tags -->
@@ -140,7 +159,10 @@
                             <li><a href="/nl/" hreflang="nl" lang="nl"><span class="lang-menu-name">Nederlands</span> <span class="lang-menu-english" lang="en">Dutch</span></a></li>
                         </ul>
                     </details>
-                    <a href="#download" class="btn btn-primary btn-sm" data-i18n="nav.download" data-download-location="nav" role="button">Baixar</a>
+                    <a href="#download" class="btn btn-primary btn-sm nav-download" data-i18n="nav.download" data-download-location="nav" role="button">Baixar</a>
+                    <a href="https://apps.apple.com/app/scandora/id6756135936?ct=pt-br&amp;mt=8" class="store-badge nav-store-badge" data-platform="ios" data-download-location="nav" aria-label="Download Scandora on the App Store for iPhone and iPad" rel="noopener" target="_blank"><img src="/assets/store-badges/pt-br/app-store.svg" alt="Baixar na App Store" data-i18n-alt="storeBadge.appStore" width="120" height="40"></a>
+                    <a href="https://play.google.com/store/apps/details?id=de.scandora.app&amp;referrer=utm_source%3Dscandora.eu%26utm_medium%3Dwebsite%26utm_campaign%3Dpt-br" class="store-badge nav-store-badge" data-platform="android" data-download-location="nav" aria-label="Get Scandora on Google Play for Android" rel="noopener" target="_blank"><picture><source type="image/webp" srcset="/assets/store-badges/pt-br/google-play.webp"><img src="/assets/store-badges/pt-br/google-play.png" alt="Disponível no Google Play" data-i18n-alt="storeBadge.googlePlay" width="323" height="125"></picture></a>
+                    <a href="https://apps.apple.com/app/scandora/id6756135936?ct=pt-br&amp;mt=8" class="store-badge nav-store-badge" data-platform="macos" data-download-location="nav" aria-label="Download Scandora on the Mac App Store for macOS" rel="noopener" target="_blank"><img src="/assets/store-badges/pt-br/mac-app-store.svg" alt="Baixar na Mac App Store" data-i18n-alt="storeBadge.macAppStore" width="156" height="40"></a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle mobile navigation menu" aria-expanded="false" aria-controls="mobile-menu" type="button"><span></span><span></span><span></span></button>
             </div>
@@ -165,10 +187,21 @@
                         <span data-i18n="hero.titleLine1">Seu cérebro de documentos.</span>
                         <span class="gradient-text" data-i18n="hero.titleLine2">Escanear documentos com o Scandora e perguntar o que quiser.</span>
                     </h1>
+                    <div class="store-cta" data-download-location="hero">
+                        <div class="store-badges" role="group" aria-label="Download links">
+                            <a href="https://apps.apple.com/app/scandora/id6756135936?ct=pt-br&amp;mt=8" class="store-badge" data-platform="ios" aria-label="Download Scandora on the App Store for iPhone and iPad" rel="noopener" target="_blank"><img src="/assets/store-badges/pt-br/app-store.svg" alt="Baixar na App Store" data-i18n-alt="storeBadge.appStore" width="120" height="40"></a>
+                            <a href="https://play.google.com/store/apps/details?id=de.scandora.app&amp;referrer=utm_source%3Dscandora.eu%26utm_medium%3Dwebsite%26utm_campaign%3Dpt-br" class="store-badge" data-platform="android" aria-label="Get Scandora on Google Play for Android" rel="noopener" target="_blank"><picture><source type="image/webp" srcset="/assets/store-badges/pt-br/google-play.webp"><img src="/assets/store-badges/pt-br/google-play.png" alt="Disponível no Google Play" data-i18n-alt="storeBadge.googlePlay" width="323" height="125"></picture></a>
+                            <a href="https://apps.apple.com/app/scandora/id6756135936?ct=pt-br&amp;mt=8" class="store-badge" data-platform="macos" aria-label="Download Scandora on the Mac App Store for macOS" rel="noopener" target="_blank"><img src="/assets/store-badges/pt-br/mac-app-store.svg" alt="Baixar na Mac App Store" data-i18n-alt="storeBadge.macAppStore" width="156" height="40"></a>
+                        </div>
+                        <p class="store-reassurance" data-i18n="hero.reassurance">Download grátis · Sem marca d'água · Comece sem conta</p>
+                        <div class="store-qr">
+                            <figure class="store-qr-code"><img src="/assets/qr-appstore.svg" alt="QR code for Scandora on the App Store" width="112" height="112"><figcaption>App Store</figcaption></figure>
+                            <figure class="store-qr-code"><img src="/assets/qr-google-play.svg" alt="QR code for Scandora on Google Play" width="112" height="112"><figcaption>Google Play</figcaption></figure>
+                        </div>
+                    </div>
                     <p class="hero-lede" itemprop="description" data-i18n="hero.lede">Escaneie, envie ou compartilhe qualquer documento. O Scandora lê, encontra e responde às suas perguntas, com citações.</p>
                     <p class="hero-description" data-i18n="hero.description">Adicione uma fatura pela câmera, por upload ou pelo menu de compartilhamento e pergunte quando ela vence ou qual é o IBAN dela. A IA extrai fornecedor, valor, IBAN, data de vencimento e tarefas pendentes sem precisar de template, seus arquivos vão para o seu próprio Google Drive e Trello, e cada documento que você adiciona pode ser pesquisado no seu dispositivo. O Scandora não tem anúncios.</p>
                 <div class="hero-actions">
-                    <a href="#download" class="btn btn-primary btn-lg" data-download-location="hero"><span data-i18n="hero.getStarted">Comece grátis</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     <a href="#how-it-works" class="btn btn-secondary btn-lg" data-i18n="hero.seeHow">Veja como funciona</a>
                 </div>
                 <div class="hero-stats">
@@ -499,13 +532,13 @@
                     <p class="download-description" data-i18n="download.description">Baixe o Scandora, escaneie seu primeiro documento e faça uma pergunta a ele — seus dados continuam sendo seus. Disponível para iOS, macOS e Android.</p>
                     <div class="download-buttons" role="group" aria-label="Download links">
                         <a href="https://apps.apple.com/app/scandora/id6756135936?ct=pt-br&amp;mt=8" class="store-badge" aria-label="Download Scandora on the App Store for iPhone and iPad" rel="noopener" target="_blank">
-                            <img src="/assets/badge-appstore.svg" alt="Download on the App Store" width="120" height="40" loading="lazy">
+                            <img src="/assets/store-badges/pt-br/app-store.svg" alt="Baixar na App Store" data-i18n-alt="storeBadge.appStore" width="120" height="40" loading="lazy">
                         </a>
                         <a href="https://apps.apple.com/app/scandora/id6756135936?ct=pt-br&amp;mt=8" class="store-badge" data-platform="macos" aria-label="Download Scandora on the Mac App Store for macOS" rel="noopener" target="_blank">
-                            <img src="/assets/badge-mac-appstore.svg" alt="Download on the Mac App Store" width="156" height="40" loading="lazy">
+                            <img src="/assets/store-badges/pt-br/mac-app-store.svg" alt="Baixar na Mac App Store" data-i18n-alt="storeBadge.macAppStore" width="156" height="40" loading="lazy">
                         </a>
                         <a href="https://play.google.com/store/apps/details?id=de.scandora.app&amp;referrer=utm_source%3Dscandora.eu%26utm_medium%3Dwebsite%26utm_campaign%3Dpt-br" class="store-badge" aria-label="Get Scandora on Google Play for Android" rel="noopener" target="_blank">
-                            <img src="/assets/badge-google-play.svg" alt="Get it on Google Play" width="135" height="40" loading="lazy">
+                            <picture><source type="image/webp" srcset="/assets/store-badges/pt-br/google-play.webp"><img src="/assets/store-badges/pt-br/google-play.png" alt="Disponível no Google Play" data-i18n-alt="storeBadge.googlePlay" width="323" height="125" loading="lazy"></picture>
                         </a>
                     </div>
                 </div>
