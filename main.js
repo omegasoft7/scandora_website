@@ -7,6 +7,7 @@
     'use strict';
 
     const APPLE_PROVIDER_TOKEN = '121188983';
+    const STORE_PLATFORMS = ['ios', 'android', 'macos'];
     const LANGUAGE_STORAGE_KEY = 'scandora-lang';
     const LANGUAGE_SEARCH_THRESHOLD = 8;
     const FOLDED_LETTERS = { 'ß': 'ss', 'æ': 'ae', 'œ': 'oe', 'ø': 'o', 'ł': 'l', 'đ': 'd', 'ð': 'd', 'þ': 'th', 'ı': 'i' };
@@ -246,20 +247,56 @@
         return url.toString();
     }
 
+    function pageLanguage() {
+        return (document.documentElement.lang || '').slice(0, 2).toLowerCase();
+    }
+
+    function markedDownloadLocation(element) {
+        const marked = element.closest('[data-download-location]');
+        return marked ? (marked.getAttribute('data-download-location') || '').trim() : '';
+    }
+
+    function storeLinkLocation(link) {
+        return markedDownloadLocation(link) || (link.closest('.download-buttons') ? 'download_section' : 'other');
+    }
+
+    function storeLinkPlatform(link) {
+        const declared = (link.getAttribute('data-platform') || '').trim();
+        if (STORE_PLATFORMS.includes(declared)) {
+            return declared;
+        }
+        if (link.querySelector('img[src*="badge-mac-appstore"]')) {
+            return 'macos';
+        }
+        return link.href.includes('apple.com') ? 'ios' : 'android';
+    }
+
     function initAnalyticsTracking() {
         document.querySelectorAll('a[href*="apps.apple.com"], a[href*="play.google.com"]').forEach(link => {
             link.addEventListener('click', function() {
-                const platform = this.href.includes('apple.com') ? 'ios' : 'android';
-                const location = this.closest('.hero-actions') ? 'hero' :
-                               this.closest('.download-buttons') ? 'download_section' : 'other';
                 const page = pageSlug();
+                const platform = storeLinkPlatform(this);
+                const location = storeLinkLocation(this);
                 this.href = attributedStoreUrl(this.href, page);
                 trackEvent('download_click', {
                     platform: platform,
                     location: location,
                     page: page,
-                    language: (document.documentElement.lang || '').slice(0, 2).toLowerCase()
+                    language: pageLanguage()
                 });
+            });
+        });
+
+        document.querySelectorAll('a[href="#download"]').forEach(anchor => {
+            anchor.addEventListener('click', function() {
+                const location = markedDownloadLocation(this);
+                if (location) {
+                    trackEvent('cta_click', {
+                        location: location,
+                        page: pageSlug(),
+                        language: pageLanguage()
+                    });
+                }
             });
         });
 

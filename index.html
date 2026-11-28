@@ -394,7 +394,7 @@
                             <li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR"><span class="lang-menu-name">Português (Brasil)</span> <span class="lang-menu-english" lang="en">Portuguese (Brazil)</span></a></li>
                         </ul>
                     </details>
-                    <a href="#download" class="btn btn-primary btn-sm" data-i18n="nav.download" role="button">Download</a>
+                    <a href="#download" class="btn btn-primary btn-sm" data-i18n="nav.download" data-download-location="nav" role="button">Download</a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle mobile navigation menu" aria-expanded="false" aria-controls="mobile-menu" type="button"><span></span><span></span><span></span></button>
             </div>
@@ -422,7 +422,7 @@
                     <p class="hero-lede" itemprop="description" data-i18n="hero.lede">Scan, upload or share any document. Scandora reads it, finds it and answers your questions — with citations.</p>
                     <p class="hero-description" data-i18n="hero.description">Add an invoice by camera, upload or share sheet, then ask it when it is due or what its IBAN is. The AI pulls out supplier, amount, IBAN, due date and to-dos without a template, your files land in your own Google Drive and Trello, and every document you add stays searchable on your device. Scandora carries no ads.</p>
                 <div class="hero-actions">
-                    <a href="#download" class="btn btn-primary btn-lg"><span data-i18n="hero.getStarted">Get Started Free</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    <a href="#download" class="btn btn-primary btn-lg" data-download-location="hero"><span data-i18n="hero.getStarted">Get Started Free</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     <a href="#how-it-works" class="btn btn-secondary btn-lg" data-i18n="hero.seeHow">See How It Works</a>
                 </div>
                 <div class="hero-stats">
@@ -590,7 +590,7 @@
                     <p id="calc-docs-readout" class="calc-docs-readout"><span id="calc-docs-value">25</span> <span data-i18n="calc.docsPerWeek">documents/week</span></p>
                     <p class="calc-result" aria-live="polite">~ <output id="calc-hours" for="calc-docs" class="calc-hours-value">5.4</output> <span data-i18n="calc.hoursUnit">hours/month saved</span></p>
                     <p class="calc-assumption" data-i18n="calc.assumption">Based on about 3 minutes of manual data entry saved per document.</p>
-                    <a href="#download" class="btn btn-primary btn-lg" role="button" data-i18n="calc.cta">Get Started Free</a>
+                    <a href="#download" class="btn btn-primary btn-lg" role="button" data-i18n="calc.cta" data-download-location="landing">Get Started Free</a>
                 </div>
             </div>
         </section>
@@ -694,7 +694,7 @@
                             <li data-i18n="pricing.free.f5">Cloud integrations (Trello, Google Drive)</li>
                         </ul>
                         <p class="pricing-datev-link"><a href="/paperless-small-business" data-i18n="pricing.free.paperlessLink">Going paperless in a small business →</a></p>
-                        <a href="#download" class="btn btn-secondary btn-full" role="button" data-i18n="pricing.free.cta">Get Started</a>
+                        <a href="#download" class="btn btn-secondary btn-full" role="button" data-i18n="pricing.free.cta" data-download-location="pricing">Get Started</a>
                     </article>
                     <article class="pricing-card popular" role="listitem" aria-label="Most popular plan">
                         <div class="popular-badge" data-i18n="pricing.popular" aria-label="Recommended">Most Popular</div>
@@ -712,7 +712,7 @@
                             <li data-i18n="pricing.pro.f4">Cloud integrations</li>
                             <li data-i18n="pricing.pro.f5">Priority support</li>
                         </ul>
-                        <a href="#download" class="btn btn-primary btn-full" role="button" data-managed-ai-cta data-plan="pro" data-i18n="pricing.pro.cta">Get Pro</a>
+                        <a href="#download" class="btn btn-primary btn-full" role="button" data-managed-ai-cta data-plan="pro" data-i18n="pricing.pro.cta" data-download-location="pricing">Get Pro</a>
                     </article>
                     <article class="pricing-card" role="listitem">
                         <div class="pricing-header">
@@ -730,7 +730,7 @@
                             <li data-i18n="pricing.business.f5">Dedicated support</li>
                         </ul>
                         <p class="pricing-datev-link"><a href="/en/datev-steuerberater" data-i18n="pricing.business.datevLink">For tax advisors &amp; DATEV →</a></p>
-                        <a href="#download" class="btn btn-secondary btn-full" role="button" data-managed-ai-cta data-plan="business" data-i18n="pricing.business.cta">Get Business</a>
+                        <a href="#download" class="btn btn-secondary btn-full" role="button" data-managed-ai-cta data-plan="business" data-i18n="pricing.business.cta" data-download-location="pricing">Get Business</a>
                     </article>
                 </div>
                 <p class="pricing-note" data-i18n="pricing.byo"><span aria-hidden="true">💡</span> Managed AI covers extraction, indexing, and AI chat — no API key to set up.</p>
@@ -755,7 +755,7 @@
                         <a href="https://apps.apple.com/app/scandora/id6756135936?ct=home&amp;mt=8" class="store-badge" aria-label="Download Scandora on the App Store for iPhone and iPad" rel="noopener" target="_blank">
                             <img src="assets/badge-appstore.svg" alt="Download on the App Store" width="120" height="40" loading="lazy">
                         </a>
-                        <a href="https://apps.apple.com/app/scandora/id6756135936?ct=home&amp;mt=8" class="store-badge" aria-label="Download Scandora on the Mac App Store for macOS" rel="noopener" target="_blank">
+                        <a href="https://apps.apple.com/app/scandora/id6756135936?ct=home&amp;mt=8" class="store-badge" data-platform="macos" aria-label="Download Scandora on the Mac App Store for macOS" rel="noopener" target="_blank">
                             <img src="assets/badge-mac-appstore.svg" alt="Download on the Mac App Store" width="156" height="40" loading="lazy">
                         </a>
                         <a href="https://play.google.com/store/apps/details?id=de.scandora.app&amp;referrer=utm_source%3Dscandora.eu%26utm_medium%3Dwebsite%26utm_campaign%3Dhome" class="store-badge" aria-label="Get Scandora on Google Play for Android" rel="noopener" target="_blank">
