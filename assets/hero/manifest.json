@@ -1,0 +1,26 @@
+{
+  "en": {
+    "source": "store-assets/raw/iphone69/en-US/02_chat.png",
+    "sha256": "834c9bf9fc956678779c1415cfa1164520905d1b6e8bd7c0e5285fc356e8cd32"
+  },
+  "de": {
+    "source": "store-assets/raw/iphone69/de-DE/02_chat.png",
+    "sha256": "8eccfe0652547907015e2372d97dd537343c2076d8298340849085a8ae1af701"
+  },
+  "es": {
+    "source": "store-assets/raw/iphone69/es-ES/02_chat.png",
+    "sha256": "f5e171b587972361a152bdbcb0b4cc9694f904df2a6c3a686543f9091600a632"
+  },
+  "it": {
+    "source": "store-assets/raw/iphone69/it-IT/02_chat.png",
+    "sha256": "6a1d0eadcb287290506f32a1232b19ebce8b62ec65a4f4f2ed741a2f17ea6c28"
+  },
+  "nl": {
+    "source": "store-assets/raw/iphone69/nl-NL/02_chat.png",
+    "sha256": "862c1e532672d1e4d454c799ea98573174cc2e1cccfab1d9bc1873f273634778"
+  },
+  "pt-br": {
+    "source": "store-assets/raw/iphone69/pt-BR/02_chat.png",
+    "sha256": "5127ab86969e52477dd41a366dda57703219e2f3c08c1932105297506db74ef1"
+  }
+}
